@@ -1,0 +1,24 @@
+unit UFrmCadPaciente;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UFrmCRUD, Menus, Buttons, StdCtrls, ExtCtrls;
+
+type
+  TfrmCadPaciente = class(TFrmCRUD)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadPaciente: TfrmCadPaciente;
+
+implementation
+
+{$R *.dfm}
+
+end.

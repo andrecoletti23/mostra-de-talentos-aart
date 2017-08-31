@@ -1,0 +1,50 @@
+unit UFrmPacientes;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UFrmCRUD, ExtCtrls, Menus, Buttons, StdCtrls, Mask;
+
+type
+  TfrmPacientes = class(TFrmCRUD)
+    GroupBox1: TGroupBox;
+    gbLogradouro: TGroupBox;
+    GroupBox3: TGroupBox;
+    edNome: TLabeledEdit;
+    edMae: TLabeledEdit;
+    edEmissor: TLabeledEdit;
+    cbSexo: TComboBox;
+    lbSexo: TLabel;
+    edNascimento: TMaskEdit;
+    lbNasci: TLabel;
+    edCPF: TMaskEdit;
+    lbCPF: TLabel;
+    edRG: TMaskEdit;
+    lbRG: TLabel;
+    edEmisao: TMaskEdit;
+    lbEmisao: TLabel;
+    edEstadoCivil: TComboBox;
+    lbEstadoCivil: TLabel;
+    edPai: TLabeledEdit;
+    edEndereco: TLabeledEdit;
+    cbUF: TComboBox;
+    lbUF: TLabel;
+    cbCidade: TComboBox;
+    lbCidade: TLabel;
+    edBairro: TLabeledEdit;
+    edReferecia: TLabeledEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPacientes: TfrmPacientes;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,28 @@
+unit URegraCRUDPaciente;
+
+interface
+
+uses
+    URegraCRUD
+  , URepositorioDB
+  , URepositorioPACIENTE
+  , UEntidade
+  ;
+
+type
+  TRegraCRUDPACIENTE = class(TRegraCRUD)
+  public
+    constructor Create; override;
+  end;
+
+implementation
+
+{ TRegraCRUDCadPessoa }
+
+constructor TRegraCRUDPACIENTE.Create;
+begin
+  inherited;
+  FRepositorioDB := TRepositorioDB<TENTIDADE>(TRepositorioPACIENTE.Create);
+end;
+
+end.

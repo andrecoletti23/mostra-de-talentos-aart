@@ -1,0 +1,21 @@
+program Bootstrap;
+
+uses
+  Forms,
+  UFrmPrincipal in 'VisaoControle\UFrmPrincipal.pas' {FrmPrincipal},
+  UFrmCRUD in 'VisaoControle\UFrmCRUD.pas' {FrmCRUD},
+  UDM in 'Modelo\Persistencia\UDM.pas' {dmProway: TDataModule},
+  UEntidade in 'Modelo\Persistencia\UEntidade.pas',
+  UCidade in 'Modelo\Persistencia\UCidade.pas',
+  URepositorioCidade in 'Modelo\Persistencia\URepositorioCidade.pas',
+  URegraCRUDCidade in 'Modelo\Regra\URegraCRUDCidade.pas',
+  UFrmCadastroCidade in 'VisaoControle\UFrmCadastroCidade.pas' {FrmCadastroCidade};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TdmProway, dmProway);
+  Application.Run;
+end.

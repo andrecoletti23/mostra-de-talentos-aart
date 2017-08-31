@@ -1,0 +1,34 @@
+unit UFrmTelaInicial;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids, DBGrids;
+
+type
+  TfrmTelaInicial = class(TForm)
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTelaInicial: TfrmTelaInicial;
+
+implementation
+
+uses UFrmPaciente;
+
+{$R *.dfm}
+
+procedure TfrmTelaInicial.Button1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmCadPaciente, frmPaciente);
+end;
+
+end.

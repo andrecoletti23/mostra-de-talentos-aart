@@ -1,0 +1,105 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 245
+  Top = 191
+  Caption = 'Carteirinha Online'
+  ClientHeight = 638
+  ClientWidth = 1082
+  Color = 6176512
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnShow = FormShow
+  DesignSize = (
+    1082
+    638)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sbPrincipal: TStatusBar
+    Left = 0
+    Top = 619
+    Width = 1082
+    Height = 19
+    Panels = <
+      item
+        Width = 50
+      end>
+    ExplicitTop = 380
+    ExplicitWidth = 565
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 1082
+    Height = 105
+    Align = alTop
+    Color = 4142595
+    ParentBackground = False
+    TabOrder = 1
+    object lbTop: TLabel
+      Left = 32
+      Top = 34
+      Width = 592
+      Height = 37
+      Caption = 'Bem Vindo Ao Sistema De Vacina'#231#227'o Online - SUS'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+  object dbgPrincipal: TDBGrid
+    Left = 8
+    Top = 424
+    Width = 1066
+    Height = 189
+    Anchors = [akLeft, akRight, akBottom]
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object btnTeste1: TButton
+    Left = 40
+    Top = 160
+    Width = 153
+    Height = 177
+    Caption = 'Cadastro Teste'
+    TabOrder = 3
+    OnClick = btnTeste1Click
+  end
+  object btnTeste2: TButton
+    Left = 216
+    Top = 160
+    Width = 153
+    Height = 177
+    Caption = 'Button1'
+    TabOrder = 4
+  end
+  object btnTeste3: TButton
+    Left = 392
+    Top = 160
+    Width = 153
+    Height = 177
+    Caption = 'Button1'
+    TabOrder = 5
+  end
+  object pnlUseless: TPanel
+    Left = 0
+    Top = 105
+    Width = 1082
+    Height = 16
+    Align = alTop
+    Color = clBlack
+    ParentBackground = False
+    TabOrder = 6
+  end
+end

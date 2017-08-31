@@ -1,0 +1,32 @@
+unit UCadAgente;
+
+interface
+
+uses
+    UEntidade;
+
+
+type
+  TCad_agente = class(TENTIDADE)
+   public
+   Agente_id    : integer;
+   Agente_nome  : string;
+   Agente_login : string;
+   Agente_senha : string;
+   Agente_email : string;
+   end;
+
+const
+  TBL_Cad_agente       = 'Cad_agente';
+  FDL_agente_id    = 'id';
+  FDL_agente_nome  = 'nome';
+  FDL_agente_login = 'login';
+  FDL_agente_senha = 'senha';
+  FDL_agente_email = 'email';
+
+
+
+
+implementation
+
+end.
