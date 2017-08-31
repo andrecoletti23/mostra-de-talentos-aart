@@ -1,0 +1,60 @@
+unit URepositorioCoren;
+
+interface
+
+uses
+    UCoren
+  , UEntidade
+  , URepositorioDB
+  , SqlExpr
+  ;
+
+type
+  TRepositorioCoren = class(TRepositorioDB<TCOREN>)
+  private
+
+  public
+    constructor Create;
+    //destructor Destroy; override;
+
+    procedure AtribuiDBParaEntidade(const coCOREN: TCOREN); override;
+    procedure AtribuiEntidadeParaDB(const coCOREN: TCOREN;
+                                    const coSQLQuery: TSQLQuery); override;
+  end;
+
+
+implementation
+
+uses
+    UDM
+  , SysUtils
+  , StrUtils
+  ;
+
+{ TRepositorioCoren }
+constructor TRepositorioCoren.Create;
+begin
+  inherited Create(TCOREN, TBL_COREN, FLD_ENTIDADE_ID, STR_COREN);
+end;
+
+procedure TRepositorioCoren.AtribuiDBParaEntidade(const coCOREN: TCOREN);
+begin
+  inherited;
+  with dmProway.SQLSelect do
+  coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
+  coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
+  coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
+  coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
+  coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
+end;
+
+procedure TRepositorioCoren.AtribuiEntidadeParaDB(const coCOREN: TCOREN;
+  const coSQLQuery: TSQLQuery);
+begin
+  inherited;
+  with coSQLQuery do
+end;
+
+
+
+end.

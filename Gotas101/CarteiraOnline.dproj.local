@@ -5,8 +5,8 @@
     <Transaction>2016/08/16 20:34:30.000.043,T:\Entra21DelphiNot\Delphi\Proway Avancado\Modelo\Persistencia\UPersiste.pas=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
     <Transaction>2016/08/18 19:58:25.000.361,=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
     <Transaction>2016/08/18 19:58:36.000.300,=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
-    <Transaction>2016/08/18 19:58:50.000.796,T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas=T:\Entra21DelphiNot\Delphi\Proway Avancado\VisaoControle\UFrmCadastroEstado.pas</Transaction>
     <Transaction>2016/08/18 19:58:50.000.796,T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.dfm=T:\Entra21DelphiNot\Delphi\Proway Avancado\VisaoControle\UFrmCadastroEstado.dfm</Transaction>
+    <Transaction>2016/08/18 19:58:50.000.796,T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas=T:\Entra21DelphiNot\Delphi\Proway Avancado\VisaoControle\UFrmCadastroEstado.pas</Transaction>
     <Transaction>2016/08/19 19:35:33.000.502,=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
     <Transaction>2016/08/19 19:36:23.000.889,T:\Entra21DelphiNot\Delphi\Proway Avancado\Modelo\Regra\URegraCRUD.pas=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
     <Transaction>2016/08/19 19:46:44.000.209,=T:\Entra21DelphiNot\Delphi\Proway Avancado\Unit1.pas</Transaction>
@@ -31,8 +31,8 @@
     <Transaction>2017/08/03 20:55:26.000.055,T:\Projetos\Aeroporto\Unit1.pas=T:\Projetos\Aeroporto\Modelo\Regra\URegraCRUDCidade.pas</Transaction>
     <Transaction>2017/08/03 21:08:42.000.500,=T:\Projetos\Aeroporto\Unit1.pas</Transaction>
     <Transaction>2017/08/03 21:09:03.000.837,=T:\Projetos\Aeroporto\Unit1.pas</Transaction>
-    <Transaction>2017/08/03 21:12:42.000.732,T:\Projetos\Aeroporto\Unit1.dfm=T:\Projetos\Aeroporto\VisaoControle\UFrmCadastroCidade.dfm</Transaction>
     <Transaction>2017/08/03 21:12:42.000.732,T:\Projetos\Aeroporto\Unit1.pas=T:\Projetos\Aeroporto\VisaoControle\UFrmCadastroCidade.pas</Transaction>
+    <Transaction>2017/08/03 21:12:42.000.732,T:\Projetos\Aeroporto\Unit1.dfm=T:\Projetos\Aeroporto\VisaoControle\UFrmCadastroCidade.dfm</Transaction>
     <Transaction>2017/08/09 21:49:51.000.489,T:\Projetos\Bootstrap\Aeroporto.dproj=T:\Projetos\Bootstrap\Bootstrap.dproj</Transaction>
     <Transaction>2017/08/24 19:04:59.000.297,=T:\Anderson\ZeDasGotas 1.0\Gotas\Unit1.pas</Transaction>
     <Transaction>2017/08/24 19:05:16.000.765,T:\Anderson\ZeDasGotas 1.0\Gotas\Modelo\Persistencia\CadPessoa.pas=T:\Anderson\ZeDasGotas 1.0\Gotas\Unit1.pas</Transaction>
@@ -83,6 +83,18 @@
     <Transaction>2017/08/30 14:17:11.000.218,D:\Downloads\Delphi Projetos\Gotas101 Bug\Unit1.pas=D:\Downloads\Delphi Projetos\Gotas101 Bug\UPaciente.pas</Transaction>
     <Transaction>2017/08/30 15:08:01.000.663,D:\Downloads\Delphi Projetos\Gotas101 Bug\VisaoControle\UFrmPaciente.pas=</Transaction>
     <Transaction>2017/08/30 15:14:04.000.487,D:\Downloads\Delphi Projetos\Gotas101 Bug\UPaciente.pas=D:\Downloads\Delphi Projetos\Gotas101 Bug\Modelo\Persistencia\UPaciente.pas</Transaction>
+    <Transaction>2017/08/31 13:15:25.263,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 13:15:34.478,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 13:17:18.421,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 13:18:18.488,C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\URepositorioCarteiraVacinacao.pas=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 13:30:50.335,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 13:35:10.643,C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\URepositorioCoren.pas=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 14:22:32.149,C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\ULoteVacina.pas=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\UDepVacina.pas</Transaction>
+    <Transaction>2017/08/31 14:47:09.792,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 14:55:02.137,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 15:06:59.999,C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\UCidade.pas=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 15:07:21.125,=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
+    <Transaction>2017/08/31 15:10:15.994,C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Modelo\Persistencia\UEstado.pas=C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Gotas101\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Modelo"/>
@@ -90,17 +102,21 @@
     <File Path="Modelo\Persistencia\UAgente.pas"/>
     <File Path="Modelo\Persistencia\UCarteiraVacinacao.pas"/>
     <File Path="Modelo\Persistencia\UCoren.pas"/>
-    <File Path="Modelo\Persistencia\UDepVacina.pas"/>
     <File Path="Modelo\Persistencia\UDM.pas"/>
     <File Path="Modelo\Persistencia\UDM.dfm"/>
     <File Path="Modelo\Persistencia\UEntidade.pas"/>
     <File Path="Modelo\Persistencia\UFaixaEtaria.pas"/>
     <File Path="Modelo\Persistencia\UGenero.pas"/>
+    <File Path="Modelo\Persistencia\ULoteVacina.pas"/>
+    <File Path="Modelo\Persistencia\UPaciente.pas"/>
     <File Path="Modelo\Persistencia\URepositorio.pas"/>
+    <File Path="Modelo\Persistencia\URepositorioCarteiraVacinacao.pas"/>
+    <File Path="Modelo\Persistencia\URepositorioCoren.pas"/>
     <File Path="Modelo\Persistencia\URepositorioDB.pas"/>
     <File Path="Modelo\Persistencia\URepositorioPaciente.pas"/>
     <File Path="Modelo\Persistencia\UVacina.pas"/>
-    <File Path="Modelo\Persistencia\UPaciente.pas"/>
+    <File Path="Modelo\Persistencia\UCidade.pas"/>
+    <File Path="Modelo\Persistencia\UEstado.pas"/>
     <File Path="Modelo\Regra"/>
     <File Path="Modelo\Regra\URegraCRUD.pas"/>
     <File Path="Modelo\Regra\URegraCRUDPaciente.pas"/>

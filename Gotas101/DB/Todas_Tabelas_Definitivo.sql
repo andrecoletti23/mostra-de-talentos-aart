@@ -46,6 +46,7 @@ create table paciente(
   constraint uk_paciente_rg unique (rg)
  
 );
+drop table paciente;
 create generator gen_paciente_id;
 
 create table enfermeira(
@@ -76,6 +77,7 @@ create table carteira_vacinacao (
 	constraint fk_cod_vacinacao foreign key (cod_vacinacao) references paciente(codigo_sus)
 );
 create generator gen_carteira_vacinacao_id;
+drop table carteira_vacinacao;
 	
 create table lote_vacina (
 	id integer not null,
@@ -95,11 +97,12 @@ create table coren (
 	coren varchar (60) not null,
 	nome varchar (60) not null,
 	especificacao varchar (3) not null,
-	data_nasc varchar (10) not null,
+	data_nasc Date not null,
 	
 	constraint pk_coren primary key (id),
 	constraint uk_coren unique (coren)
 );
+drop table coren;
 
 create table faixa_etaria (
 	id integer not null,

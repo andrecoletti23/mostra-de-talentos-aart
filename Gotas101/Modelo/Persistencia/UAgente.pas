@@ -9,24 +9,26 @@ uses
 type
   TAGENTE = class(TENTIDADE)
    public
-   AGENTE_ID    : integer;
-   AGENTE_NOME  : string;
-   AGENTE_LOGIN : string;
-   AGENTE_SENHA : string;
-   AGENTE_EMAIL : string;
+   ID           : Integer;
+   AGENTE_ID    : Integer;
+   AGENTE_NOME  : String;
+   AGENTE_LOGIN : String;
+   AGENTE_SENHA : String;
+   AGENTE_EMAIL : String;
    end;
 
 const
-  TBL_AGENTE   = 'CAD_AGENTE';
-  FDL_AGENTE_ID    = 'AGENTE_ID ';
-  FDL_AGENTE_NOME  = 'AGENTE_NOME';
-  FDL_AGENTE_LOGIN = 'AGENTE_LOGIN';
-  FDL_AGENTE_SENHA = 'AGENTE_SENHA';
-  FDL_AGENTE_EMAIL = 'AGENTE_EMAIL';
+  TBL_AGENTE       = 'CAD_AGENTE';
+  FLD_ID           = 'ID';
+  FLD_AGENTE_ID    = 'AGENTE_ID ';
+  FLD_AGENTE_NOME  = 'AGENTE_NOME';
+  FLD_AGENTE_LOGIN = 'AGENTE_LOGIN';
+  FLD_AGENTE_SENHA = 'AGENTE_SENHA';
+  FLD_AGENTE_EMAIL = 'AGENTE_EMAIL';
 
 
 resourcestring
-  STR_AGENTE ='Agente';
+  STR_AGENTE ='Agente De Saúde';
 
 implementation
 

@@ -134,27 +134,27 @@ begin
 procedure TfrmPacientes.PreencheFormulario;
 begin
   inherited;
-    edCodigoSUS.Text:=FPACIENTE.CODIGO_SUS     ;
-    edNome.Text:=FPACIENTE.NOME           ;
-    edNascimento.Text:= DateToStr(FPACIENTE.NASCIMENTO);
-    cbSexo.Text:=FPACIENTE.SEXO           ;
-    edCPF.Text:=FPACIENTE.CPF            ;
-    edRG.Text:= IntToStr(FPACIENTE.RG )            ;
-    edEndereco.Text :=FPACIENTE.ENDERECO      ;
-    edTelResi.Text :=FPACIENTE.TEL_FIXO       ;
-    edCelular.Text := FPACIENTE.CELULAR       ;
-     edPai.Text := FPACIENTE.PAI          ;
-     edMae.Text := FPACIENTE.MAE          ;
-    cbEstadoCivil.Text := FPACIENTE.ESTADO_CIVIL  ;
-    edEmissor.Text :=FPACIENTE.ORGAO_EMISSOR  ;
-    edEmisao.Text:=DateToStr(FPACIENTE.DATA_EMISSAO)    ;
-    cbUF.Text := FPACIENTE.UF            ;
-    edBairro.Text :=FPACIENTE.BAIRRO         ;
-    edReferecia.Text :=FPACIENTE.REFERENCIA     ;
-     edTelComer.Text :=FPACIENTE.TEL_COMERCIAL ;
-    cbSangue.Text := FPACIENTE.TIPO_SANGUE   ;
-     edRecado.Text:=FPACIENTE.PESSOA_RECADO  ;
-    cbCidade.Text :=FPACIENTE.CIDADE         ;
+    edCodigoSUS.Text      := FPACIENTE.CODIGO_SUS ;
+    edNome.Text           := FPACIENTE.NOME ;
+    edNascimento.Text     := DateToStr(FPACIENTE.NASCIMENTO);
+    cbSexo.Text           := FPACIENTE.SEXO  ;
+    edCPF.Text            := FPACIENTE.CPF  ;
+    edRG.Text             := IntToStr(FPACIENTE.RG) ;
+    edEndereco.Text       := FPACIENTE.ENDERECO ;
+    edTelResi.Text        := FPACIENTE.TEL_FIXO ;
+    edCelular.Text        := FPACIENTE.CELULAR  ;
+    edPai.Text            := FPACIENTE.PAI  ;
+    edMae.Text            := FPACIENTE.MAE  ;
+    cbEstadoCivil.Text    := FPACIENTE.ESTADO_CIVIL ;
+    edEmissor.Text        := FPACIENTE.ORGAO_EMISSOR ;
+    edEmisao.Text         := DateToStr(FPACIENTE.DATA_EMISSAO) ;
+    cbUF.Text             := FPACIENTE.UF ;
+    edBairro.Text         := FPACIENTE.BAIRRO ;
+    edReferecia.Text      := FPACIENTE.REFERENCIA ;
+    edTelComer.Text       := FPACIENTE.TEL_COMERCIAL ;
+    cbSangue.Text         := FPACIENTE.TIPO_SANGUE  ;
+    edRecado.Text         := FPACIENTE.PESSOA_RECADO ;
+    cbCidade.Text         := FPACIENTE.CIDADE ;
 end;
 
 end.

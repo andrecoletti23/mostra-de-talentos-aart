@@ -1,0 +1,34 @@
+unit UCoren;
+
+interface
+
+uses
+    UEntidade;
+
+
+type
+  TCOREN = class(TENTIDADE)
+   public
+   COREN:         string;
+   NOME:          string;
+   ESPECIFICACAO: string;
+   DATA_NASC:     integer;
+
+
+
+   end;
+
+const
+  TBL_COREN          = 'COREN';
+  FLD_COREN          = 'ID';
+  FLD_NOME          = 'NOME';
+  FLD_ESPECIFICACAO  = 'ESPECIFICACAO';
+  FLD_DATA_NASC      = 'DATA_NASC';
+
+
+
+
+
+implementation
+
+end.

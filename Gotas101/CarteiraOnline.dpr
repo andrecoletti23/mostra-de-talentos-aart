@@ -14,7 +14,7 @@ uses
   URepositorio in 'Modelo\Persistencia\URepositorio.pas',
   URepositorioDB in 'Modelo\Persistencia\URepositorioDB.pas',
   URegraCRUD in 'Modelo\Regra\URegraCRUD.pas',
-  UDepVacina in 'Modelo\Persistencia\UDepVacina.pas',
+  ULoteVacina in 'Modelo\Persistencia\ULoteVacina.pas',
   UAgente in 'Modelo\Persistencia\UAgente.pas',
   UCoren in 'Modelo\Persistencia\UCoren.pas',
   UGenero in 'Modelo\Persistencia\UGenero.pas',
@@ -25,7 +25,11 @@ uses
   URegraCRUDPaciente in 'Modelo\Regra\URegraCRUDPaciente.pas',
   UFrmTelaInicial in 'VisaoControle\UFrmTelaInicial.pas' {frmTelaInicial},
   UFrmPacientes in 'VisaoControle\UFrmPacientes.pas' {frmPacientes},
-  UPaciente in 'Modelo\Persistencia\UPaciente.pas';
+  UPaciente in 'Modelo\Persistencia\UPaciente.pas',
+  URepositorioCarteiraVacinacao in 'Modelo\Persistencia\URepositorioCarteiraVacinacao.pas',
+  URepositorioCoren in 'Modelo\Persistencia\URepositorioCoren.pas',
+  UCidade in 'Modelo\Persistencia\UCidade.pas',
+  UEstado in 'Modelo\Persistencia\UEstado.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

@@ -30,8 +30,8 @@ object dmProway: TdmProway
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\Gotas101 Bug\DB\' +
-        'DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:C:\Users\andra\OneDrive\Documentos\GitHub\mos' +
+        'tra-de-talentos-aart\Gotas101\DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

@@ -7,27 +7,27 @@ uses
 
 
 type
-  Tcoren = class(TENTIDADE)
+  TCOREN = class(TENTIDADE)
    public
-   Coren:         string;
-   Nome:          string;
-   Especificacao: string;
-   Data_nasc:     integer;
-
-
+   ID            : Integer;
+   COREN         : String;
+   NOME          : String;
+   ESPECIFICACAO : String;
+   DATA_NASC     : TDateTime;
 
    end;
 
 const
-  TBL_Coren          = 'coren';
-  FDL_Coren          = 'id';
-  FDL_Nome           = 'nome';
-  FDL_Especificacao  = 'especificacao';
-  FDL_Data_nasc      = 'data_nasc';
+  TBL_COREN          = 'COREN';
+  FLD_ID             = 'ID' ;
+  FLD_COREN          = 'COREN';
+  FLD_NOME           = 'NOME';
+  FLD_ESPECIFICACAO  = 'ESPECIFICACAO';
+  FLD_DATA_NASC      = 'DATA_NASC';
 
 
-
-
+resourcestring
+  STR_COREN = 'Certificação do Agente de Saúde';
 
 implementation
 

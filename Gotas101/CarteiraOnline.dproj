@@ -80,7 +80,7 @@
 			<DCCReference Include="Modelo\Persistencia\URepositorio.pas"/>
 			<DCCReference Include="Modelo\Persistencia\URepositorioDB.pas"/>
 			<DCCReference Include="Modelo\Regra\URegraCRUD.pas"/>
-			<DCCReference Include="Modelo\Persistencia\UDepVacina.pas"/>
+			<DCCReference Include="Modelo\Persistencia\ULoteVacina.pas"/>
 			<DCCReference Include="Modelo\Persistencia\UAgente.pas"/>
 			<DCCReference Include="Modelo\Persistencia\UCoren.pas"/>
 			<DCCReference Include="Modelo\Persistencia\UGenero.pas"/>
@@ -96,6 +96,10 @@
 				<Form>frmPacientes</Form>
 			</DCCReference>
 			<DCCReference Include="Modelo\Persistencia\UPaciente.pas"/>
+			<DCCReference Include="Modelo\Persistencia\URepositorioCarteiraVacinacao.pas"/>
+			<DCCReference Include="Modelo\Persistencia\URepositorioCoren.pas"/>
+			<DCCReference Include="Modelo\Persistencia\UCidade.pas"/>
+			<DCCReference Include="Modelo\Persistencia\UEstado.pas"/>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
