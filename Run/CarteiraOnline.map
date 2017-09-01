@@ -1,9 +1,9 @@
 
  Start         Length     Name                   Class
- 0001:00401000 00288F98H .text                   CODE
- 0002:0068A000 000012D8H .itext                  ICODE
- 0003:0068C000 0000534CH .data                   DATA
- 0004:00692000 000053E0H .bss                    BSS
+ 0001:00401000 002892DCH .text                   CODE
+ 0002:0068B000 000012D8H .itext                  ICODE
+ 0003:0068D000 0000534CH .data                   DATA
+ 0004:00693000 000053E0H .bss                    BSS
  0005:00000000 00000048H .tls                    TLS
  000A:00000000 00000000H .xdata                  PDATA
 
@@ -125,21 +125,21 @@ Detailed map of segments
  0001:002608E8 00000728 C=CODE     S=.text    G=(none)   M=DBXInterbaseMetaDataWriter ACBP=A9
  0001:00261010 00000040 C=CODE     S=.text    G=(none)   M=DBXInterbaseMetaData ACBP=A9
  0001:00261050 00000FCC C=CODE     S=.text    G=(none)   M=DbxInterbase ACBP=A9
- 0001:0026201C 000005CC C=CODE     S=.text    G=(none)   M=UDM      ACBP=A9
- 0001:002625E8 000013A4 C=CODE     S=.text    G=(none)   M=URegraCRUD ACBP=A9
- 0001:0026398C 000022E4 C=CODE     S=.text    G=(none)   M=UOpcaoPesquisa ACBP=A9
- 0001:00265C70 00000E78 C=CODE     S=.text    G=(none)   M=UFrmPesquisa ACBP=A9
- 0001:00266AE8 000004A8 C=CODE     S=.text    G=(none)   M=UDialogo ACBP=A9
- 0001:00266F90 00004260 C=CODE     S=.text    G=(none)   M=UFrmCRUD ACBP=A9
- 0001:0026B1F0 000002E8 C=CODE     S=.text    G=(none)   M=UPaciente ACBP=A9
- 0001:0026B4D8 00001B70 C=CODE     S=.text    G=(none)   M=URepositorioPaciente ACBP=A9
- 0001:0026D048 00000140 C=CODE     S=.text    G=(none)   M=URegraCRUDPaciente ACBP=A9
- 0001:0026D188 00000F94 C=CODE     S=.text    G=(none)   M=UFrmPacientes ACBP=A9
- 0001:0026E11C 00000018 C=CODE     S=.text    G=(none)   M=JConsts  ACBP=A9
- 0001:0026E134 00013C9C C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
- 0001:00281DD0 0000043C C=CODE     S=.text    G=(none)   M=UFrmPrincipal ACBP=A9
- 0001:0028220C 00000340 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:0028254C 00006A4C C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:0026201C 00000534 C=CODE     S=.text    G=(none)   M=UDM      ACBP=A9
+ 0001:00262550 00001594 C=CODE     S=.text    G=(none)   M=URegraCRUD ACBP=A9
+ 0001:00263AE4 000022E4 C=CODE     S=.text    G=(none)   M=UOpcaoPesquisa ACBP=A9
+ 0001:00265DC8 00000E78 C=CODE     S=.text    G=(none)   M=UFrmPesquisa ACBP=A9
+ 0001:00266C40 000004A8 C=CODE     S=.text    G=(none)   M=UDialogo ACBP=A9
+ 0001:002670E8 00004260 C=CODE     S=.text    G=(none)   M=UFrmCRUD ACBP=A9
+ 0001:0026B348 000002E8 C=CODE     S=.text    G=(none)   M=UPaciente ACBP=A9
+ 0001:0026B630 00001D5C C=CODE     S=.text    G=(none)   M=URepositorioPaciente ACBP=A9
+ 0001:0026D38C 00000140 C=CODE     S=.text    G=(none)   M=URegraCRUDPaciente ACBP=A9
+ 0001:0026D4CC 00000F94 C=CODE     S=.text    G=(none)   M=UFrmPacientes ACBP=A9
+ 0001:0026E460 00000018 C=CODE     S=.text    G=(none)   M=JConsts  ACBP=A9
+ 0001:0026E478 00013C9C C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:00282114 0000043C C=CODE     S=.text    G=(none)   M=UFrmPrincipal ACBP=A9
+ 0001:00282550 00000340 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:00282890 00006A4C C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -501,7 +501,7 @@ Detailed map of segments
  0001:00100FE0       Buttons.TGlyphList.Destroy
  0003:00002A48       Buttons.WordBreakFlag
  0002:00001260       CarteiraOnline.CarteiraOnline
- 0001:0028254C       CarteiraOnline.Finalization
+ 0001:00282890       CarteiraOnline.Finalization
  0001:0000D6B4       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -10951,187 +10951,187 @@ Detailed map of segments
  0004:00004FCC       IOUtils.TPath.FPathSeparator
  0004:00004FDC       IOUtils.TPath.FPathWildcardChars
  0004:00004FCE       IOUtils.TPath.FVolumeSeparatorChar
- 0001:00274244       jpeg...
- 0001:00273C58       jpeg...
+ 0001:00274588       jpeg...
+ 0001:00273F9C       jpeg...
  0003:00003E90       jpeg...
- 0001:002730CC       jpeg...
+ 0001:00273410       jpeg...
  0003:00003E10       jpeg...
- 0001:002723A4       jpeg...
- 0001:00271C64       jpeg...
- 0001:00281114       jpeg...
- 0001:002747EC       jpeg...
+ 0001:002726E8       jpeg...
+ 0001:00271FA8       jpeg...
+ 0001:00281458       jpeg...
+ 0001:00274B30       jpeg...
  0003:00003F10       jpeg...
- 0001:00275434       jpeg...
- 0001:002800A8       jpeg...
- 0001:002717A0       jpeg...
- 0001:0027123C       jpeg...
+ 0001:00275778       jpeg...
+ 0001:002803EC       jpeg...
+ 0001:00271AE4       jpeg...
+ 0001:00271580       jpeg...
  0003:000045BC       jpeg...
  0003:00003E00       jpeg...
- 0001:002705D8       jpeg...
- 0001:00276734       jpeg...
- 0001:0027FB90       jpeg...
- 0001:00276E0C       jpeg...
- 0001:0027F268       jpeg...
- 0001:00277E9C       jpeg...
- 0001:0027EBE0       jpeg...
- 0001:00278190       jpeg...
- 0001:0027E3DC       jpeg...
+ 0001:0027091C       jpeg...
+ 0001:00276A78       jpeg...
+ 0001:0027FED4       jpeg...
+ 0001:00277150       jpeg...
+ 0001:0027F5AC       jpeg...
+ 0001:002781E0       jpeg...
+ 0001:0027EF24       jpeg...
+ 0001:002784D4       jpeg...
+ 0001:0027E720       jpeg...
  0003:0000401C       jpeg...
- 0001:0027DEA0       jpeg...
- 0001:00278460       jpeg...
- 0001:002799B4       jpeg...
- 0001:0027DD44       jpeg...
- 0001:0027B930       jpeg...
- 0001:0027D214       jpeg...
- 0001:0027BA40       jpeg...
- 0001:0027C9EC       jpeg...
+ 0001:0027E1E4       jpeg...
+ 0001:002787A4       jpeg...
+ 0001:00279CF8       jpeg...
+ 0001:0027E088       jpeg...
+ 0001:0027BC74       jpeg...
+ 0001:0027D558       jpeg...
+ 0001:0027BD84       jpeg...
+ 0001:0027CD30       jpeg...
  0003:0000421C       jpeg...
  0004:000053D4       jpeg..3
- 0001:0026EA30       jpeg..EJPEG
- 0001:0026E134       jpeg..TJPEGData
- 0001:0026E338       jpeg..TJPEGImage
- 0001:0027B880       jpeg.@jcopy_block_row
- 0001:0027B834       jpeg.@jcopy_sample_rows
- 0001:0027B80C       jpeg.@jdiv_round_up
- 0001:002753A0       jpeg.@jinit_1pass_quantizer
- 0001:00276614       jpeg.@jinit_2pass_quantizer
- 0001:0027F01C       jpeg.@jinit_color_converter
- 0001:00274620       jpeg.@jinit_color_deconverter
- 0001:0027C940       jpeg.@jinit_compress_master
- 0001:0027EB18       jpeg.@jinit_c_coef_controller
- 0001:0027DE1C       jpeg.@jinit_c_main_controller
- 0001:0027DC7C       jpeg.@jinit_c_master_control
- 0001:0027E334       jpeg.@jinit_c_prep_controller
- 0001:0027FA08       jpeg.@jinit_downsampler
- 0001:00277D88       jpeg.@jinit_d_coef_controller
- 0001:00276D2C       jpeg.@jinit_d_main_controller
- 0001:002780FC       jpeg.@jinit_d_post_controller
- 0001:0028002C       jpeg.@jinit_forward_dct
- 0001:00273C18       jpeg.@jinit_huff_decoder
- 0001:00281D70       jpeg.@jinit_huff_encoder
- 0001:00271758       jpeg.@jinit_input_controller
- 0001:002783E4       jpeg.@jinit_inverse_dct
- 0001:0027B6B0       jpeg.@jinit_marker_reader
- 0001:0027D1C0       jpeg.@jinit_marker_writer
- 0001:0027236C       jpeg.@jinit_master_decompress
- 0001:00271104       jpeg.@jinit_memory_mgr
- 0001:002741C4       jpeg.@jinit_merged_upsampler
- 0001:00273058       jpeg.@jinit_phuff_decoder
- 0001:00280B38       jpeg.@jinit_phuff_encoder
- 0001:00278944       jpeg.@jinit_upsampler
- 0001:0027B8A0       jpeg.@jpeg_abort
- 0001:0027B918       jpeg.@jpeg_alloc_huff_table
- 0001:0027B900       jpeg.@jpeg_alloc_quant_table
- 0001:00280DE8       jpeg.@jpeg_fdct_float
- 0001:00280B7C       jpeg.@jpeg_fdct_ifast
- 0001:00273500       jpeg.@jpeg_fill_bit_buffer
- 0001:00271210       jpeg.@jpeg_free_large
- 0001:00271200       jpeg.@jpeg_free_small
- 0001:00281AB4       jpeg.@jpeg_gen_optimal_table
- 0001:00271208       jpeg.@jpeg_get_large
- 0001:002711F8       jpeg.@jpeg_get_small
- 0001:0027364C       jpeg.@jpeg_huff_decode
- 0001:00279978       jpeg.@jpeg_idct_1x1
- 0001:00279788       jpeg.@jpeg_idct_2x2
- 0001:002793D4       jpeg.@jpeg_idct_4x4
- 0001:00278B5C       jpeg.@jpeg_idct_float
- 0001:00278FA0       jpeg.@jpeg_idct_ifast
- 0001:002812A4       jpeg.@jpeg_make_c_derived_tbl
- 0001:00273204       jpeg.@jpeg_make_d_derived_tbl
- 0001:00271218       jpeg.@jpeg_mem_available
- 0001:00271234       jpeg.@jpeg_mem_init
- 0001:00271238       jpeg.@jpeg_mem_term
- 0001:00271224       jpeg.@jpeg_open_backing_store
- 0001:0027B57C       jpeg.@jpeg_resync_to_restart
- 0001:0027C704       jpeg.@jpeg_suppress_tables
- 0001:0027B81C       jpeg.@jround_up
- 0001:0027B890       jpeg.@jzero_far
- 0001:0026F578       jpeg.BuildColorMap
- 0001:0026F4CC       jpeg.BuildPalette
- 0001:0026F604       jpeg.CMYKToRGB
- 0001:0026EB44       jpeg.EmitMessage
- 0001:00281DB4       jpeg.Finalization
- 0001:0026EB4C       jpeg.FormatMessage
- 0001:0026EE24       jpeg.InitDecompressor
- 0001:002700A0       jpeg.InitDefaults
- 0001:0026EAB8       jpeg.InvalidOperation
+ 0001:0026ED74       jpeg..EJPEG
+ 0001:0026E478       jpeg..TJPEGData
+ 0001:0026E67C       jpeg..TJPEGImage
+ 0001:0027BBC4       jpeg.@jcopy_block_row
+ 0001:0027BB78       jpeg.@jcopy_sample_rows
+ 0001:0027BB50       jpeg.@jdiv_round_up
+ 0001:002756E4       jpeg.@jinit_1pass_quantizer
+ 0001:00276958       jpeg.@jinit_2pass_quantizer
+ 0001:0027F360       jpeg.@jinit_color_converter
+ 0001:00274964       jpeg.@jinit_color_deconverter
+ 0001:0027CC84       jpeg.@jinit_compress_master
+ 0001:0027EE5C       jpeg.@jinit_c_coef_controller
+ 0001:0027E160       jpeg.@jinit_c_main_controller
+ 0001:0027DFC0       jpeg.@jinit_c_master_control
+ 0001:0027E678       jpeg.@jinit_c_prep_controller
+ 0001:0027FD4C       jpeg.@jinit_downsampler
+ 0001:002780CC       jpeg.@jinit_d_coef_controller
+ 0001:00277070       jpeg.@jinit_d_main_controller
+ 0001:00278440       jpeg.@jinit_d_post_controller
+ 0001:00280370       jpeg.@jinit_forward_dct
+ 0001:00273F5C       jpeg.@jinit_huff_decoder
+ 0001:002820B4       jpeg.@jinit_huff_encoder
+ 0001:00271A9C       jpeg.@jinit_input_controller
+ 0001:00278728       jpeg.@jinit_inverse_dct
+ 0001:0027B9F4       jpeg.@jinit_marker_reader
+ 0001:0027D504       jpeg.@jinit_marker_writer
+ 0001:002726B0       jpeg.@jinit_master_decompress
+ 0001:00271448       jpeg.@jinit_memory_mgr
+ 0001:00274508       jpeg.@jinit_merged_upsampler
+ 0001:0027339C       jpeg.@jinit_phuff_decoder
+ 0001:00280E7C       jpeg.@jinit_phuff_encoder
+ 0001:00278C88       jpeg.@jinit_upsampler
+ 0001:0027BBE4       jpeg.@jpeg_abort
+ 0001:0027BC5C       jpeg.@jpeg_alloc_huff_table
+ 0001:0027BC44       jpeg.@jpeg_alloc_quant_table
+ 0001:0028112C       jpeg.@jpeg_fdct_float
+ 0001:00280EC0       jpeg.@jpeg_fdct_ifast
+ 0001:00273844       jpeg.@jpeg_fill_bit_buffer
+ 0001:00271554       jpeg.@jpeg_free_large
+ 0001:00271544       jpeg.@jpeg_free_small
+ 0001:00281DF8       jpeg.@jpeg_gen_optimal_table
+ 0001:0027154C       jpeg.@jpeg_get_large
+ 0001:0027153C       jpeg.@jpeg_get_small
+ 0001:00273990       jpeg.@jpeg_huff_decode
+ 0001:00279CBC       jpeg.@jpeg_idct_1x1
+ 0001:00279ACC       jpeg.@jpeg_idct_2x2
+ 0001:00279718       jpeg.@jpeg_idct_4x4
+ 0001:00278EA0       jpeg.@jpeg_idct_float
+ 0001:002792E4       jpeg.@jpeg_idct_ifast
+ 0001:002815E8       jpeg.@jpeg_make_c_derived_tbl
+ 0001:00273548       jpeg.@jpeg_make_d_derived_tbl
+ 0001:0027155C       jpeg.@jpeg_mem_available
+ 0001:00271578       jpeg.@jpeg_mem_init
+ 0001:0027157C       jpeg.@jpeg_mem_term
+ 0001:00271568       jpeg.@jpeg_open_backing_store
+ 0001:0027B8C0       jpeg.@jpeg_resync_to_restart
+ 0001:0027CA48       jpeg.@jpeg_suppress_tables
+ 0001:0027BB60       jpeg.@jround_up
+ 0001:0027BBD4       jpeg.@jzero_far
+ 0001:0026F8BC       jpeg.BuildColorMap
+ 0001:0026F810       jpeg.BuildPalette
+ 0001:0026F948       jpeg.CMYKToRGB
+ 0001:0026EE88       jpeg.EmitMessage
+ 0001:002820F8       jpeg.Finalization
+ 0001:0026EE90       jpeg.FormatMessage
+ 0001:0026F168       jpeg.InitDecompressor
+ 0001:002703E4       jpeg.InitDefaults
+ 0001:0026EDFC       jpeg.InvalidOperation
  0002:000011A0       jpeg.jpeg
  0003:00003D24       jpeg.JPEGDefaults
- 0001:0026EAD0       jpeg.JpegError
- 0001:00271CF4       jpeg.jpeg_calc_output_dimensions
- 0001:00270414       jpeg.jpeg_consume_input
- 0001:0027C62C       jpeg.jpeg_CreateCompress
- 0001:002700E0       jpeg.jpeg_CreateDecompress
- 0001:0027B8E0       jpeg.jpeg_destroy
- 0001:002701B0       jpeg.jpeg_destroy_decompress
- 0001:0027C74C       jpeg.jpeg_finish_compress
- 0001:00270528       jpeg.jpeg_finish_decompress
- 0001:00271BDC       jpeg.jpeg_finish_output
- 0001:002704F4       jpeg.jpeg_has_multiple_scans
- 0001:002703A8       jpeg.jpeg_read_header
- 0001:00271A40       jpeg.jpeg_read_scanlines
- 0001:0027B724       jpeg.jpeg_save_markers
- 0001:0027BDCC       jpeg.jpeg_set_colorspace
- 0001:0027BC58       jpeg.jpeg_set_defaults
- 0001:0027BB5C       jpeg.jpeg_set_quality
- 0001:0027C234       jpeg.jpeg_simple_progression
- 0001:0027C44C       jpeg.jpeg_start_compress
- 0001:002718B8       jpeg.jpeg_start_decompress
- 0001:00271B7C       jpeg.jpeg_start_output
- 0001:0027BA00       jpeg.jpeg_stdio_dest
- 0001:0027184C       jpeg.jpeg_stdio_src
+ 0001:0026EE14       jpeg.JpegError
+ 0001:00272038       jpeg.jpeg_calc_output_dimensions
+ 0001:00270758       jpeg.jpeg_consume_input
+ 0001:0027C970       jpeg.jpeg_CreateCompress
+ 0001:00270424       jpeg.jpeg_CreateDecompress
+ 0001:0027BC24       jpeg.jpeg_destroy
+ 0001:002704F4       jpeg.jpeg_destroy_decompress
+ 0001:0027CA90       jpeg.jpeg_finish_compress
+ 0001:0027086C       jpeg.jpeg_finish_decompress
+ 0001:00271F20       jpeg.jpeg_finish_output
+ 0001:00270838       jpeg.jpeg_has_multiple_scans
+ 0001:002706EC       jpeg.jpeg_read_header
+ 0001:00271D84       jpeg.jpeg_read_scanlines
+ 0001:0027BA68       jpeg.jpeg_save_markers
+ 0001:0027C110       jpeg.jpeg_set_colorspace
+ 0001:0027BF9C       jpeg.jpeg_set_defaults
+ 0001:0027BEA0       jpeg.jpeg_set_quality
+ 0001:0027C578       jpeg.jpeg_simple_progression
+ 0001:0027C790       jpeg.jpeg_start_compress
+ 0001:00271BFC       jpeg.jpeg_start_decompress
+ 0001:00271EC0       jpeg.jpeg_start_output
+ 0001:0027BD44       jpeg.jpeg_stdio_dest
+ 0001:00271B90       jpeg.jpeg_stdio_src
  0003:00003D2C       jpeg.jpeg_std_error
- 0001:0027C4C0       jpeg.jpeg_write_scanlines
- 0001:0026EB48       jpeg.OutputMessage
- 0001:0026ED0C       jpeg.ProgressCallback
- 0001:0026EE00       jpeg.ReleaseContext
- 0001:0026EB50       jpeg.ResetErrorMgr
- 0001:0026EB60       jpeg.TJPEGData.Destroy
- 0001:0026EB90       jpeg.TJPEGData.FreeHandle
- 0001:0026EC54       jpeg.TJPEGImage.Assign
- 0001:0026ECD4       jpeg.TJPEGImage.AssignTo
- 0001:0026F034       jpeg.TJPEGImage.CalcOutputDimensions
- 0001:0026F0C0       jpeg.TJPEGImage.Changed
- 0001:0026F0C8       jpeg.TJPEGImage.Compress
- 0001:0026EB94       jpeg.TJPEGImage.Create
- 0001:0026EC10       jpeg.TJPEGImage.Destroy
- 0001:0026F444       jpeg.TJPEGImage.DIBNeeded
- 0001:0026F44C       jpeg.TJPEGImage.Draw
- 0001:0026F470       jpeg.TJPEGImage.Equals
- 0001:0026F4B8       jpeg.TJPEGImage.FreeBitmap
- 0001:0026F658       jpeg.TJPEGImage.GetBitmap
- 0001:0026FB44       jpeg.TJPEGImage.GetEmpty
- 0001:0026FB70       jpeg.TJPEGImage.GetGrayscale
- 0001:0026FBF0       jpeg.TJPEGImage.GetHeight
- 0001:0026FB88       jpeg.TJPEGImage.GetPalette
- 0001:0026FC1C       jpeg.TJPEGImage.GetWidth
- 0001:0026FC48       jpeg.TJPEGImage.JPEGNeeded
- 0001:0026FC58       jpeg.TJPEGImage.LoadFromClipboardFormat
- 0001:0026FC80       jpeg.TJPEGImage.LoadFromStream
- 0001:0026FCA4       jpeg.TJPEGImage.NewBitmap
- 0001:0026FCC0       jpeg.TJPEGImage.NewImage
- 0001:0026FCEC       jpeg.TJPEGImage.ReadData
- 0001:0026FD14       jpeg.TJPEGImage.ReadStream
- 0001:0026FE58       jpeg.TJPEGImage.SaveToClipboardFormat
- 0001:0026FE80       jpeg.TJPEGImage.SaveToStream
- 0001:0026FEA8       jpeg.TJPEGImage.SetGrayscale
- 0001:0026FED0       jpeg.TJPEGImage.SetHeight
- 0001:0026FF18       jpeg.TJPEGImage.SetPalette
- 0001:0026FF70       jpeg.TJPEGImage.SetPerformance
- 0001:0026FF98       jpeg.TJPEGImage.SetPixelFormat
- 0001:0026FFC0       jpeg.TJPEGImage.SetScale
- 0001:0026FFE8       jpeg.TJPEGImage.SetSmoothing
- 0001:0027000C       jpeg.TJPEGImage.SetWidth
- 0001:00270054       jpeg.TJPEGImage.WriteData
- 0001:0026EA10       jpeg._fflush
- 0001:0026E9D8       jpeg._fread
- 0001:0026E9A0       jpeg._free
- 0001:0026E9F4       jpeg._fwrite
+ 0001:0027C804       jpeg.jpeg_write_scanlines
+ 0001:0026EE8C       jpeg.OutputMessage
+ 0001:0026F050       jpeg.ProgressCallback
+ 0001:0026F144       jpeg.ReleaseContext
+ 0001:0026EE94       jpeg.ResetErrorMgr
+ 0001:0026EEA4       jpeg.TJPEGData.Destroy
+ 0001:0026EED4       jpeg.TJPEGData.FreeHandle
+ 0001:0026EF98       jpeg.TJPEGImage.Assign
+ 0001:0026F018       jpeg.TJPEGImage.AssignTo
+ 0001:0026F378       jpeg.TJPEGImage.CalcOutputDimensions
+ 0001:0026F404       jpeg.TJPEGImage.Changed
+ 0001:0026F40C       jpeg.TJPEGImage.Compress
+ 0001:0026EED8       jpeg.TJPEGImage.Create
+ 0001:0026EF54       jpeg.TJPEGImage.Destroy
+ 0001:0026F788       jpeg.TJPEGImage.DIBNeeded
+ 0001:0026F790       jpeg.TJPEGImage.Draw
+ 0001:0026F7B4       jpeg.TJPEGImage.Equals
+ 0001:0026F7FC       jpeg.TJPEGImage.FreeBitmap
+ 0001:0026F99C       jpeg.TJPEGImage.GetBitmap
+ 0001:0026FE88       jpeg.TJPEGImage.GetEmpty
+ 0001:0026FEB4       jpeg.TJPEGImage.GetGrayscale
+ 0001:0026FF34       jpeg.TJPEGImage.GetHeight
+ 0001:0026FECC       jpeg.TJPEGImage.GetPalette
+ 0001:0026FF60       jpeg.TJPEGImage.GetWidth
+ 0001:0026FF8C       jpeg.TJPEGImage.JPEGNeeded
+ 0001:0026FF9C       jpeg.TJPEGImage.LoadFromClipboardFormat
+ 0001:0026FFC4       jpeg.TJPEGImage.LoadFromStream
+ 0001:0026FFE8       jpeg.TJPEGImage.NewBitmap
+ 0001:00270004       jpeg.TJPEGImage.NewImage
+ 0001:00270030       jpeg.TJPEGImage.ReadData
+ 0001:00270058       jpeg.TJPEGImage.ReadStream
+ 0001:0027019C       jpeg.TJPEGImage.SaveToClipboardFormat
+ 0001:002701C4       jpeg.TJPEGImage.SaveToStream
+ 0001:002701EC       jpeg.TJPEGImage.SetGrayscale
+ 0001:00270214       jpeg.TJPEGImage.SetHeight
+ 0001:0027025C       jpeg.TJPEGImage.SetPalette
+ 0001:002702B4       jpeg.TJPEGImage.SetPerformance
+ 0001:002702DC       jpeg.TJPEGImage.SetPixelFormat
+ 0001:00270304       jpeg.TJPEGImage.SetScale
+ 0001:0027032C       jpeg.TJPEGImage.SetSmoothing
+ 0001:00270350       jpeg.TJPEGImage.SetWidth
+ 0001:00270398       jpeg.TJPEGImage.WriteData
+ 0001:0026ED54       jpeg._fflush
+ 0001:0026ED1C       jpeg._fread
+ 0001:0026ECE4       jpeg._free
+ 0001:0026ED38       jpeg._fwrite
  0003:000040DC       jpeg._jpeg_natural_order
- 0001:0026E990       jpeg._malloc
- 0001:0026E9C4       jpeg._memcpy
- 0001:0026E9B0       jpeg._memset
- 0001:0026EA18       jpeg.__ftol
+ 0001:0026ECD4       jpeg._malloc
+ 0001:0026ED08       jpeg._memcpy
+ 0001:0026ECF4       jpeg._memset
+ 0001:0026ED5C       jpeg.__ftol
  0001:000F2794       Mask..EDBEditError
  0001:000F2884       Mask..TCustomMaskEdit
  0001:000F2CBC       Mask..TMaskEdit
@@ -15701,250 +15701,252 @@ Detailed map of segments
  0001:0003732C       TypInfo.TPublishableVariantType.SetProperty
  0002:00000264       TypInfo.TypInfo
  0001:000374A8       TypInfo.UTF8SameText
- 0001:00266AE8       UDialogo..TDialogo
- 0001:00266CE4       UDialogo.TDialogo.Alerta
- 0001:00266D54       UDialogo.TDialogo.Erro
- 0001:00266DC4       UDialogo.TDialogo.Excecao
- 0001:00266E08       UDialogo.TDialogo.Informacao
- 0001:00266E78       UDialogo.TDialogo.Questiona
- 0001:00266F14       UDialogo.TDialogo.Questiona
- 0001:0026201C       UDM..TdmProway
- 0004:000053CC       UDM.dmProway
- 0001:00262378       UDM.TdmProway.AbortaTransacao
- 0001:00262554       UDM.TdmProway.DataModuleCreate
- 0001:00262418       UDM.TdmProway.FinalizaTransacao
- 0001:002624B8       UDM.TdmProway.IniciaTransacao
- 0001:00262534       UDM.TdmProway.TemTransacaoAtiva
- 0001:0026257C       UDM.TdmProway.ValidaTransacaoAtiva
+ 0001:00266C40       UDialogo..TDialogo
+ 0001:00266E3C       UDialogo.TDialogo.Alerta
+ 0001:00266EAC       UDialogo.TDialogo.Erro
+ 0001:00266F1C       UDialogo.TDialogo.Excecao
+ 0001:00266F60       UDialogo.TDialogo.Informacao
+ 0001:00266FD0       UDialogo.TDialogo.Questiona
+ 0001:0026706C       UDialogo.TDialogo.Questiona
+ 0001:0026201C       UDM..TdmEntra21
+ 0004:000053CC       UDM.dmEntra21
+ 0001:002622E0       UDM.TdmEntra21.AbortaTransacao
+ 0001:002624BC       UDM.TdmEntra21.DataModuleCreate
+ 0001:00262380       UDM.TdmEntra21.FinalizaTransacao
+ 0001:00262420       UDM.TdmEntra21.IniciaTransacao
+ 0001:0026249C       UDM.TdmEntra21.TemTransacaoAtiva
+ 0001:002624E4       UDM.TdmEntra21.ValidaTransacaoAtiva
  0001:001499F0       UEntidade..TENTIDADE
  0001:00149B0C       UEntidade.TENTIDADE.Create
- 0001:00266FD0       UFrmCRUD..TFrmCRUD
- 0001:00267AB8       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00267978       UFrmCRUD..{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00267F9C       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00267DE8       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator
- 0001:00268910       UFrmCRUD..{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AE2C       UFrmCRUD..{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026B048       UFrmCRUD..{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AB08       UFrmCRUD.TArray.BinarySearch<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AC64       UFrmCRUD.TArray.QuickSort<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AA84       UFrmCRUD.TArray.Sort<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00269728       UFrmCRUD.TFrmCRUD.AdicionaOpcaoPesquisa
- 0001:00268B94       UFrmCRUD.TFrmCRUD.btnExcluirClick
- 0001:00268D6C       UFrmCRUD.TFrmCRUD.btnGravarClick
- 0001:00268EE0       UFrmCRUD.TFrmCRUD.btnLimparClick
- 0001:00268F94       UFrmCRUD.TFrmCRUD.btnLocalizarClick
- 0001:00268F1C       UFrmCRUD.TFrmCRUD.btnNovoClick
- 0001:00268FD8       UFrmCRUD.TFrmCRUD.btnSairClick
- 0001:00268B3C       UFrmCRUD.TFrmCRUD.DefineEntidade
- 0001:00268FF0       UFrmCRUD.TFrmCRUD.DefineEntidadeInterno
- 0001:00268B68       UFrmCRUD.TFrmCRUD.DefineRegraCRUD
- 0001:00269020       UFrmCRUD.TFrmCRUD.DefineRegraCRUDInterno
- 0001:00269050       UFrmCRUD.TFrmCRUD.edCodigoExit
- 0001:0026974C       UFrmCRUD.TFrmCRUD.edCodigoKeyDown
- 0001:00269678       UFrmCRUD.TFrmCRUD.ExecutaPesquisa
- 0001:00269194       UFrmCRUD.TFrmCRUD.Finaliza
- 0001:00269218       UFrmCRUD.TFrmCRUD.FormClose
- 0001:00269234       UFrmCRUD.TFrmCRUD.FormCreate
- 0001:00269258       UFrmCRUD.TFrmCRUD.FormDestroy
- 0001:00269780       UFrmCRUD.TFrmCRUD.FormShow
- 0001:002697B0       UFrmCRUD.TFrmCRUD.GravaEntidade
- 0001:00269274       UFrmCRUD.TFrmCRUD.HabilitaCampos
- 0001:00269324       UFrmCRUD.TFrmCRUD.Inicializa
- 0001:00269360       UFrmCRUD.TFrmCRUD.InicializaInterno
- 0001:0026943C       UFrmCRUD.TFrmCRUD.LimpaCampos
- 0001:00269494       UFrmCRUD.TFrmCRUD.MostraOpcoesPesquisa
- 0001:002695E0       UFrmCRUD.TFrmCRUD.PesquisaSelecionada
- 0001:0026962C       UFrmCRUD.TFrmCRUD.RemoveEntidade
- 0001:00269650       UFrmCRUD.TFrmCRUD.RetornaEntidade
- 0001:00269800       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
- 0001:0026981C       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
- 0001:002698D8       UFrmCRUD.{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>.MoveNext
- 0001:00269DB8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Add
- 0001:00269E0C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:00269E58       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:00269E34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:0026A6C0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
- 0001:0026A710       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
- 0001:0026A4E0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Clear
- 0001:0026A500       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Contains
- 0001:00269CDC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00269C34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00269BB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A184       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Delete
- 0001:0026A1A4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DeleteRange
- 0001:00269D7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Destroy
- 0001:00269AA0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoDelete
- 0001:00269B60       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoGetEnumerator
- 0001:0026A368       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Exchange
- 0001:0026A31C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Extract
- 0001:0026A49C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.First
- 0001:002698F4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetCapacity
- 0001:0026A7DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
- 0001:002699C8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetItem
- 0001:00269A14       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Grow
- 0001:00269A68       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GrowCheck
- 0001:0026A524       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.IndexOf
- 0001:00269E7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Insert
- 0001:0026A04C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:00269F3C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:0026A0D0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:0026A4BC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Last
- 0001:0026A584       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.LastIndexOf
- 0001:0026A3B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Move
- 0001:00269B7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
- 0001:0026A150       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Remove
- 0001:0026A5E0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Reverse
- 0001:00269914       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCapacity
- 0001:00269958       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCount
- 0001:0026A684       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
- 0001:0026A648       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
- 0001:0026A85C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.Create
- 0001:0026A824       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoGetCurrent
- 0001:0026A840       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoMoveNext
- 0001:0026A800       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.GetCurrent
- 0001:0026A8B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.MoveNext
- 0001:0026A778       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
- 0001:0026A760       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TrimExcess
- 0001:0026A9D0       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A97C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A92C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A8F4       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
- 0001:0026AF8C       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
- 0001:0026AA50       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Construct
- 0001:0026AA24       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
- 0001:0026AC38       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
- 0001:0026ABF0       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026D188       UFrmPacientes..TfrmPacientes
+ 0001:00267128       UFrmCRUD..TFrmCRUD
+ 0001:00267C10       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00267AD0       UFrmCRUD..{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:002680F4       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00267F40       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator
+ 0001:00268A68       UFrmCRUD..{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026AF84       UFrmCRUD..{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026B1A0       UFrmCRUD..{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026AC60       UFrmCRUD.TArray.BinarySearch<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026ADBC       UFrmCRUD.TArray.QuickSort<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026ABDC       UFrmCRUD.TArray.Sort<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00269880       UFrmCRUD.TFrmCRUD.AdicionaOpcaoPesquisa
+ 0001:00268CEC       UFrmCRUD.TFrmCRUD.btnExcluirClick
+ 0001:00268EC4       UFrmCRUD.TFrmCRUD.btnGravarClick
+ 0001:00269038       UFrmCRUD.TFrmCRUD.btnLimparClick
+ 0001:002690EC       UFrmCRUD.TFrmCRUD.btnLocalizarClick
+ 0001:00269074       UFrmCRUD.TFrmCRUD.btnNovoClick
+ 0001:00269130       UFrmCRUD.TFrmCRUD.btnSairClick
+ 0001:00268C94       UFrmCRUD.TFrmCRUD.DefineEntidade
+ 0001:00269148       UFrmCRUD.TFrmCRUD.DefineEntidadeInterno
+ 0001:00268CC0       UFrmCRUD.TFrmCRUD.DefineRegraCRUD
+ 0001:00269178       UFrmCRUD.TFrmCRUD.DefineRegraCRUDInterno
+ 0001:002691A8       UFrmCRUD.TFrmCRUD.edCodigoExit
+ 0001:002698A4       UFrmCRUD.TFrmCRUD.edCodigoKeyDown
+ 0001:002697D0       UFrmCRUD.TFrmCRUD.ExecutaPesquisa
+ 0001:002692EC       UFrmCRUD.TFrmCRUD.Finaliza
+ 0001:00269370       UFrmCRUD.TFrmCRUD.FormClose
+ 0001:0026938C       UFrmCRUD.TFrmCRUD.FormCreate
+ 0001:002693B0       UFrmCRUD.TFrmCRUD.FormDestroy
+ 0001:002698D8       UFrmCRUD.TFrmCRUD.FormShow
+ 0001:00269908       UFrmCRUD.TFrmCRUD.GravaEntidade
+ 0001:002693CC       UFrmCRUD.TFrmCRUD.HabilitaCampos
+ 0001:0026947C       UFrmCRUD.TFrmCRUD.Inicializa
+ 0001:002694B8       UFrmCRUD.TFrmCRUD.InicializaInterno
+ 0001:00269594       UFrmCRUD.TFrmCRUD.LimpaCampos
+ 0001:002695EC       UFrmCRUD.TFrmCRUD.MostraOpcoesPesquisa
+ 0001:00269738       UFrmCRUD.TFrmCRUD.PesquisaSelecionada
+ 0001:00269784       UFrmCRUD.TFrmCRUD.RemoveEntidade
+ 0001:002697A8       UFrmCRUD.TFrmCRUD.RetornaEntidade
+ 0001:00269958       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
+ 0001:00269974       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
+ 0001:00269A30       UFrmCRUD.{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>.MoveNext
+ 0001:00269F10       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Add
+ 0001:00269F64       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:00269FB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:00269F8C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:0026A818       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
+ 0001:0026A868       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
+ 0001:0026A638       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Clear
+ 0001:0026A658       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Contains
+ 0001:00269E34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:00269D8C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:00269D08       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026A2DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Delete
+ 0001:0026A2FC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DeleteRange
+ 0001:00269ED4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Destroy
+ 0001:00269BF8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoDelete
+ 0001:00269CB8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoGetEnumerator
+ 0001:0026A4C0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Exchange
+ 0001:0026A474       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Extract
+ 0001:0026A5F4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.First
+ 0001:00269A4C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetCapacity
+ 0001:0026A934       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
+ 0001:00269B20       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetItem
+ 0001:00269B6C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Grow
+ 0001:00269BC0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GrowCheck
+ 0001:0026A67C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.IndexOf
+ 0001:00269FD4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Insert
+ 0001:0026A1A4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A094       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A228       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A614       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Last
+ 0001:0026A6DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.LastIndexOf
+ 0001:0026A50C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Move
+ 0001:00269CD4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
+ 0001:0026A2A8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Remove
+ 0001:0026A738       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Reverse
+ 0001:00269A6C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCapacity
+ 0001:00269AB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCount
+ 0001:0026A7DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
+ 0001:0026A7A0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
+ 0001:0026A9B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.Create
+ 0001:0026A97C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoGetCurrent
+ 0001:0026A998       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoMoveNext
+ 0001:0026A958       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.GetCurrent
+ 0001:0026AA0C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.MoveNext
+ 0001:0026A8D0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
+ 0001:0026A8B8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TrimExcess
+ 0001:0026AB28       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AAD4       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AA84       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AA4C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
+ 0001:0026B0E4       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
+ 0001:0026ABA8       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Construct
+ 0001:0026AB7C       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
+ 0001:0026AD90       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
+ 0001:0026AD48       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026D4CC       UFrmPacientes..TfrmPacientes
  0004:000053D0       UFrmPacientes.frmPacientes
- 0001:0026D8CC       UFrmPacientes.TfrmPacientes.HabilitaCampos
- 0001:0026D940       UFrmPacientes.TfrmPacientes.Inicializa
- 0001:0026DA78       UFrmPacientes.TfrmPacientes.PosicionaCursorPrimeiroCampo
- 0001:0026DA94       UFrmPacientes.TfrmPacientes.PreencheEntidade
- 0001:0026DE88       UFrmPacientes.TfrmPacientes.PreencheFormulario
- 0001:00265C70       UFrmPesquisa..TfrmPesquisa
- 0001:00266728       UFrmPesquisa.TfrmPesquisa.btnConfirmarClick
- 0001:00266814       UFrmPesquisa.TfrmPesquisa.btnSairClick
- 0001:0026682C       UFrmPesquisa.TfrmPesquisa.cbOpcoesChange
- 0001:00266798       UFrmPesquisa.TfrmPesquisa.dbgClienteDblClick
- 0001:00266A3C       UFrmPesquisa.TfrmPesquisa.dbgClienteKeyDown
- 0001:002669B8       UFrmPesquisa.TfrmPesquisa.edPesquisaKeyUp
- 0001:002668A4       UFrmPesquisa.TfrmPesquisa.FormShow
- 0001:0026651C       UFrmPesquisa.TfrmPesquisa.Inicializa
- 0001:00266420       UFrmPesquisa.TfrmPesquisa.MostrarPesquisa
- 0001:002664C0       UFrmPesquisa.TfrmPesquisa.RetornaDataSet
- 0001:00281DD0       UFrmPrincipal..TFrmPrincipal
+ 0001:0026DC10       UFrmPacientes.TfrmPacientes.HabilitaCampos
+ 0001:0026DC84       UFrmPacientes.TfrmPacientes.Inicializa
+ 0001:0026DDBC       UFrmPacientes.TfrmPacientes.PosicionaCursorPrimeiroCampo
+ 0001:0026DDD8       UFrmPacientes.TfrmPacientes.PreencheEntidade
+ 0001:0026E1CC       UFrmPacientes.TfrmPacientes.PreencheFormulario
+ 0001:00265DC8       UFrmPesquisa..TfrmPesquisa
+ 0001:00266880       UFrmPesquisa.TfrmPesquisa.btnConfirmarClick
+ 0001:0026696C       UFrmPesquisa.TfrmPesquisa.btnSairClick
+ 0001:00266984       UFrmPesquisa.TfrmPesquisa.cbOpcoesChange
+ 0001:002668F0       UFrmPesquisa.TfrmPesquisa.dbgClienteDblClick
+ 0001:00266B94       UFrmPesquisa.TfrmPesquisa.dbgClienteKeyDown
+ 0001:00266B10       UFrmPesquisa.TfrmPesquisa.edPesquisaKeyUp
+ 0001:002669FC       UFrmPesquisa.TfrmPesquisa.FormShow
+ 0001:00266674       UFrmPesquisa.TfrmPesquisa.Inicializa
+ 0001:00266578       UFrmPesquisa.TfrmPesquisa.MostrarPesquisa
+ 0001:00266618       UFrmPesquisa.TfrmPesquisa.RetornaDataSet
+ 0001:00282114       UFrmPrincipal..TFrmPrincipal
  0004:000053D8       UFrmPrincipal.FrmPrincipal
- 0001:00282124       UFrmPrincipal.TFrmPrincipal.FormShow
- 0001:0028210C       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:0028220C       UFrmTelaInicial..TfrmTelaInicial
+ 0001:00282468       UFrmPrincipal.TFrmPrincipal.FormShow
+ 0001:00282450       UFrmPrincipal.TFrmPrincipal.miSairClick
+ 0001:00282550       UFrmTelaInicial..TfrmTelaInicial
  0004:000053DC       UFrmTelaInicial.frmTelaInicial
- 0001:00282514       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:0028253C       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:0026398C       UOpcaoPesquisa..TOpcaoPesquisa
- 0001:00263F88       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
- 0001:00263DF4       UOpcaoPesquisa..{Generics.Collections}TList<System.string>.TEnumerator
- 0001:00264A64       UOpcaoPesquisa.TOpcaoPesquisa.AdicionaFiltro
- 0001:00264900       UOpcaoPesquisa.TOpcaoPesquisa.Create
- 0001:0026494C       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomeCampoRetorno
- 0001:00264974       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomePesquisa
- 0001:0026499C       UOpcaoPesquisa.TOpcaoPesquisa.DefineSQL
- 0001:002649C4       UOpcaoPesquisa.TOpcaoPesquisa.DefineVisao
- 0001:00264F8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Add
- 0001:00265030       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:00264FE4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:0026500C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:002659F8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
- 0001:002659A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
- 0001:00265788       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Clear
- 0001:002657A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Contains
- 0001:00264D84       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:00264E08       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:00264EB0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:002653A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Delete
- 0001:002653C8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DeleteRange
- 0001:00264F50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Destroy
- 0001:00264C3C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoDelete
- 0001:00264D34       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoGetEnumerator
- 0001:00265594       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Exchange
- 0001:00265540       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Extract
- 0001:00265744       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.First
- 0001:00264A8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetCapacity
- 0001:00265AFC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetEnumerator
- 0001:00264B60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetItem
- 0001:00264BB0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Grow
- 0001:00264C04       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GrowCheck
- 0001:002657CC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.IndexOf
- 0001:00265054       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Insert
- 0001:002652C0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:00265230       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:00265118       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:00265764       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Last
- 0001:0026582C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.LastIndexOf
- 0001:00265620       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Move
- 0001:00264D50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Notify
- 0001:00265374       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Remove
- 0001:00265888       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Reverse
- 0001:00264AAC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCapacity
- 0001:00264AF0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCount
- 0001:0026596C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
- 0001:00265930       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
- 0001:00265B7C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.Create
- 0001:00265B44       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoGetCurrent
- 0001:00265B60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoMoveNext
- 0001:00265B20       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.GetCurrent
- 0001:00265BD4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.MoveNext
- 0001:00265A60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.ToArray
- 0001:00265A48       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TrimExcess
- 0001:0026B1F0       UPaciente..TPACIENTE
- 0001:002625E8       URegraCRUD..TRegraCRUD
- 0001:0026295C       URegraCRUD..{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>
- 0001:00262D78       URegraCRUD.TRegraCRUD.Atualiza
- 0001:00262CE0       URegraCRUD.TRegraCRUD.Create
- 0001:00262D24       URegraCRUD.TRegraCRUD.Destroy
- 0001:00262DA0       URegraCRUD.TRegraCRUD.Exclui
- 0001:00262DE0       URegraCRUD.TRegraCRUD.Insere
- 0001:00262E0C       URegraCRUD.TRegraCRUD.Retorna
- 0001:00262E30       URegraCRUD.TRegraCRUD.RetornaNomeEntidade
- 0001:00262E54       URegraCRUD.TRegraCRUD.ValidaAtualizacao
- 0001:00262E74       URegraCRUD.TRegraCRUD.ValidaExclusao
- 0001:00262E84       URegraCRUD.TRegraCRUD.ValidaExistencia
- 0001:00262F18       URegraCRUD.TRegraCRUD.ValidaInsercao
- 0001:00263864       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Achou
- 0001:0026335C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiDBParaEntidade
- 0001:002633A0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiEntidadeParaDB
- 0001:00263794       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Atualiza
- 0001:00263550       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Create
- 0001:0026364C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Exclui
- 0001:00263318       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaAtualizacao
- 0001:0026319C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaInsercao
- 0001:002637E0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Insere
- 0001:002631BC       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaAtualizacao
- 0001:00263050       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaInsercao
- 0001:00263824       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
- 0001:00262F28       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
- 0001:002633E0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
- 0001:0026D048       URegraCRUDPaciente..TRegraCRUDPACIENTES
- 0001:0026D134       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
- 0001:0026B4D8       URepositorioPaciente..TRepositorioPaciente
- 0001:0026B754       URepositorioPaciente..{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>
- 0001:0026BBA0       URepositorioPaciente.TRepositorioPaciente.AtribuiDBParaEntidade
- 0001:0026C144       URepositorioPaciente.TRepositorioPaciente.AtribuiEntidadeParaDB
- 0001:0026BAD8       URepositorioPaciente.TRepositorioPaciente.Create
- 0001:0026CF20       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Achou
- 0001:0026CA18       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiDBParaEntidade
- 0001:0026CA5C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiEntidadeParaDB
- 0001:0026CE50       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Atualiza
- 0001:0026CC0C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Create
- 0001:0026CD08       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Exclui
- 0001:0026C9D4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaAtualizacao
- 0001:0026C858       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaInsercao
- 0001:0026CE9C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Insere
- 0001:0026C878       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaAtualizacao
- 0001:0026C70C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaInsercao
- 0001:0026CEE0       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Retorna
- 0001:0026C5E4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaNovoId
- 0001:0026CA9C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaParametros
+ 0001:00282858       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:00282880       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:00263AE4       UOpcaoPesquisa..TOpcaoPesquisa
+ 0001:002640E0       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
+ 0001:00263F4C       UOpcaoPesquisa..{Generics.Collections}TList<System.string>.TEnumerator
+ 0001:00264BBC       UOpcaoPesquisa.TOpcaoPesquisa.AdicionaFiltro
+ 0001:00264A58       UOpcaoPesquisa.TOpcaoPesquisa.Create
+ 0001:00264AA4       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomeCampoRetorno
+ 0001:00264ACC       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomePesquisa
+ 0001:00264AF4       UOpcaoPesquisa.TOpcaoPesquisa.DefineSQL
+ 0001:00264B1C       UOpcaoPesquisa.TOpcaoPesquisa.DefineVisao
+ 0001:002650E4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Add
+ 0001:00265188       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:0026513C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:00265164       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:00265B50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
+ 0001:00265B00       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
+ 0001:002658E0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Clear
+ 0001:00265900       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Contains
+ 0001:00264EDC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:00264F60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:00265008       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:00265500       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Delete
+ 0001:00265520       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DeleteRange
+ 0001:002650A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Destroy
+ 0001:00264D94       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoDelete
+ 0001:00264E8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoGetEnumerator
+ 0001:002656EC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Exchange
+ 0001:00265698       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Extract
+ 0001:0026589C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.First
+ 0001:00264BE4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetCapacity
+ 0001:00265C54       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetEnumerator
+ 0001:00264CB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetItem
+ 0001:00264D08       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Grow
+ 0001:00264D5C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GrowCheck
+ 0001:00265924       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.IndexOf
+ 0001:002651AC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Insert
+ 0001:00265418       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:00265388       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:00265270       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:002658BC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Last
+ 0001:00265984       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.LastIndexOf
+ 0001:00265778       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Move
+ 0001:00264EA8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Notify
+ 0001:002654CC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Remove
+ 0001:002659E0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Reverse
+ 0001:00264C04       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCapacity
+ 0001:00264C48       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCount
+ 0001:00265AC4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
+ 0001:00265A88       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
+ 0001:00265CD4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.Create
+ 0001:00265C9C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoGetCurrent
+ 0001:00265CB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoMoveNext
+ 0001:00265C78       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.GetCurrent
+ 0001:00265D2C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.MoveNext
+ 0001:00265BB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.ToArray
+ 0001:00265BA0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TrimExcess
+ 0001:0026B348       UPaciente..TPACIENTE
+ 0001:00262550       URegraCRUD..TRegraCRUD
+ 0001:002628C4       URegraCRUD..{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>
+ 0001:00262D7C       URegraCRUD.TRegraCRUD.Atualiza
+ 0001:00262CE4       URegraCRUD.TRegraCRUD.Create
+ 0001:00262D28       URegraCRUD.TRegraCRUD.Destroy
+ 0001:00262DA4       URegraCRUD.TRegraCRUD.Exclui
+ 0001:00262DE4       URegraCRUD.TRegraCRUD.Insere
+ 0001:00262E10       URegraCRUD.TRegraCRUD.Retorna
+ 0001:00262E34       URegraCRUD.TRegraCRUD.RetornaNomeEntidade
+ 0001:00262E58       URegraCRUD.TRegraCRUD.ValidaAtualizacao
+ 0001:00262E78       URegraCRUD.TRegraCRUD.ValidaExclusao
+ 0001:00262E88       URegraCRUD.TRegraCRUD.ValidaExistencia
+ 0001:00262F1C       URegraCRUD.TRegraCRUD.ValidaInsercao
+ 0001:002639D0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Achou
+ 0001:00263324       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiDBParaEntidade
+ 0001:00263364       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiEntidadeParaDB
+ 0001:00263908       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Atualiza
+ 0001:00263504       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Create
+ 0001:00263704       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Destroy
+ 0001:002637D8       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Exclui
+ 0001:002632E8       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaAtualizacao
+ 0001:00263180       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaInsercao
+ 0001:00263950       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Insere
+ 0001:0026319C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaAtualizacao
+ 0001:00263044       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaInsercao
+ 0001:00263990       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
+ 0001:00262F2C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
+ 0001:002633A4       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
+ 0001:0026D38C       URegraCRUDPaciente..TRegraCRUDPACIENTES
+ 0001:0026D478       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
+ 0001:0026B630       URepositorioPaciente..TRepositorioPaciente
+ 0001:0026B8AC       URepositorioPaciente..{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>
+ 0001:0026BD94       URepositorioPaciente.TRepositorioPaciente.AtribuiDBParaEntidade
+ 0001:0026C334       URepositorioPaciente.TRepositorioPaciente.AtribuiEntidadeParaDB
+ 0001:0026BCCC       URepositorioPaciente.TRepositorioPaciente.Create
+ 0001:0026D278       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Achou
+ 0001:0026CBCC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiDBParaEntidade
+ 0001:0026CC0C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiEntidadeParaDB
+ 0001:0026D1B0       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Atualiza
+ 0001:0026CDAC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Create
+ 0001:0026CFAC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Destroy
+ 0001:0026D080       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Exclui
+ 0001:0026CB90       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaAtualizacao
+ 0001:0026CA28       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaInsercao
+ 0001:0026D1F8       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Insere
+ 0001:0026CA44       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaAtualizacao
+ 0001:0026C8EC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaInsercao
+ 0001:0026D238       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Retorna
+ 0001:0026C7D4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaNovoId
+ 0001:0026CC4C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaParametros
  0004:0000533C       UUtilitarios..4
  0001:00149538       UUtilitarios..EValidacaoNegocio
  0001:001495E0       UUtilitarios..TUtilitario
@@ -32175,414 +32177,416 @@ Detailed map of segments
  0001:00261FAC       DbxInterbase.TDBXInterBaseProperties.SetServerCharSet
  0001:00261FE4       DbxInterbase.TDBXInterBaseProperties.SetUserName
  0001:00262014       DbxInterbase.Finalization
- 0001:0026201C       UDM..TdmProway
- 0001:00262378       UDM.TdmProway.AbortaTransacao
- 0001:00262418       UDM.TdmProway.FinalizaTransacao
- 0001:002624B8       UDM.TdmProway.IniciaTransacao
- 0001:00262534       UDM.TdmProway.TemTransacaoAtiva
- 0001:00262554       UDM.TdmProway.DataModuleCreate
- 0001:0026257C       UDM.TdmProway.ValidaTransacaoAtiva
- 0001:002625E8       URegraCRUD..TRegraCRUD
- 0001:0026295C       URegraCRUD..{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>
- 0001:00262CE0       URegraCRUD.TRegraCRUD.Create
- 0001:00262D24       URegraCRUD.TRegraCRUD.Destroy
- 0001:00262D78       URegraCRUD.TRegraCRUD.Atualiza
- 0001:00262DA0       URegraCRUD.TRegraCRUD.Exclui
- 0001:00262DE0       URegraCRUD.TRegraCRUD.Insere
- 0001:00262E0C       URegraCRUD.TRegraCRUD.Retorna
- 0001:00262E30       URegraCRUD.TRegraCRUD.RetornaNomeEntidade
- 0001:00262E54       URegraCRUD.TRegraCRUD.ValidaAtualizacao
- 0001:00262E74       URegraCRUD.TRegraCRUD.ValidaExclusao
- 0001:00262E84       URegraCRUD.TRegraCRUD.ValidaExistencia
- 0001:00262F18       URegraCRUD.TRegraCRUD.ValidaInsercao
- 0001:00262F28       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
- 0001:00263050       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaInsercao
- 0001:0026319C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaInsercao
- 0001:002631BC       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaAtualizacao
- 0001:00263318       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaAtualizacao
- 0001:0026335C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiDBParaEntidade
- 0001:002633A0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiEntidadeParaDB
- 0001:002633E0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
- 0001:00263550       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Create
- 0001:0026364C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Exclui
- 0001:00263794       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Atualiza
- 0001:002637E0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Insere
- 0001:00263824       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
- 0001:00263864       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Achou
- 0001:0026398C       UOpcaoPesquisa..TOpcaoPesquisa
- 0001:00263DF4       UOpcaoPesquisa..{Generics.Collections}TList<System.string>.TEnumerator
- 0001:00263F88       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
- 0001:00264900       UOpcaoPesquisa.TOpcaoPesquisa.Create
- 0001:0026494C       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomeCampoRetorno
- 0001:00264974       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomePesquisa
- 0001:0026499C       UOpcaoPesquisa.TOpcaoPesquisa.DefineSQL
- 0001:002649C4       UOpcaoPesquisa.TOpcaoPesquisa.DefineVisao
- 0001:00264A64       UOpcaoPesquisa.TOpcaoPesquisa.AdicionaFiltro
- 0001:00264A8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetCapacity
- 0001:00264AAC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCapacity
- 0001:00264AF0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCount
- 0001:00264B60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetItem
- 0001:00264BB0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Grow
- 0001:00264C04       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GrowCheck
- 0001:00264C3C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoDelete
- 0001:00264D34       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoGetEnumerator
- 0001:00264D50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Notify
- 0001:00264D84       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:00264E08       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:00264EB0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
- 0001:00264F50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Destroy
- 0001:00264F8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Add
- 0001:00264FE4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:0026500C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:00265030       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
- 0001:00265054       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Insert
- 0001:00265118       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:00265230       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:002652C0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
- 0001:00265374       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Remove
- 0001:002653A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Delete
- 0001:002653C8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DeleteRange
- 0001:00265540       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Extract
- 0001:00265594       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Exchange
- 0001:00265620       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Move
- 0001:00265744       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.First
- 0001:00265764       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Last
- 0001:00265788       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Clear
- 0001:002657A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Contains
- 0001:002657CC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.IndexOf
- 0001:0026582C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.LastIndexOf
- 0001:00265888       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Reverse
- 0001:00265930       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
- 0001:0026596C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
- 0001:002659A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
- 0001:002659F8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
- 0001:00265A48       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TrimExcess
- 0001:00265A60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.ToArray
- 0001:00265AFC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetEnumerator
- 0001:00265B20       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.GetCurrent
- 0001:00265B44       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoGetCurrent
- 0001:00265B60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoMoveNext
- 0001:00265B7C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.Create
- 0001:00265BD4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.MoveNext
- 0001:00265C70       UFrmPesquisa..TfrmPesquisa
- 0001:00266420       UFrmPesquisa.TfrmPesquisa.MostrarPesquisa
- 0001:002664C0       UFrmPesquisa.TfrmPesquisa.RetornaDataSet
- 0001:0026651C       UFrmPesquisa.TfrmPesquisa.Inicializa
- 0001:00266728       UFrmPesquisa.TfrmPesquisa.btnConfirmarClick
- 0001:00266798       UFrmPesquisa.TfrmPesquisa.dbgClienteDblClick
- 0001:00266814       UFrmPesquisa.TfrmPesquisa.btnSairClick
- 0001:0026682C       UFrmPesquisa.TfrmPesquisa.cbOpcoesChange
- 0001:002668A4       UFrmPesquisa.TfrmPesquisa.FormShow
- 0001:002669B8       UFrmPesquisa.TfrmPesquisa.edPesquisaKeyUp
- 0001:00266A3C       UFrmPesquisa.TfrmPesquisa.dbgClienteKeyDown
- 0001:00266AE8       UDialogo..TDialogo
- 0001:00266CE4       UDialogo.TDialogo.Alerta
- 0001:00266D54       UDialogo.TDialogo.Erro
- 0001:00266DC4       UDialogo.TDialogo.Excecao
- 0001:00266E08       UDialogo.TDialogo.Informacao
- 0001:00266E78       UDialogo.TDialogo.Questiona
- 0001:00266F14       UDialogo.TDialogo.Questiona
- 0001:00266FD0       UFrmCRUD..TFrmCRUD
- 0001:00267978       UFrmCRUD..{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00267AB8       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00267DE8       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator
- 0001:00267F9C       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00268910       UFrmCRUD..{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:00268B3C       UFrmCRUD.TFrmCRUD.DefineEntidade
- 0001:00268B68       UFrmCRUD.TFrmCRUD.DefineRegraCRUD
- 0001:00268B94       UFrmCRUD.TFrmCRUD.btnExcluirClick
- 0001:00268D6C       UFrmCRUD.TFrmCRUD.btnGravarClick
- 0001:00268EE0       UFrmCRUD.TFrmCRUD.btnLimparClick
- 0001:00268F1C       UFrmCRUD.TFrmCRUD.btnNovoClick
- 0001:00268F94       UFrmCRUD.TFrmCRUD.btnLocalizarClick
- 0001:00268FD8       UFrmCRUD.TFrmCRUD.btnSairClick
- 0001:00268FF0       UFrmCRUD.TFrmCRUD.DefineEntidadeInterno
- 0001:00269020       UFrmCRUD.TFrmCRUD.DefineRegraCRUDInterno
- 0001:00269050       UFrmCRUD.TFrmCRUD.edCodigoExit
- 0001:00269194       UFrmCRUD.TFrmCRUD.Finaliza
- 0001:00269218       UFrmCRUD.TFrmCRUD.FormClose
- 0001:00269234       UFrmCRUD.TFrmCRUD.FormCreate
- 0001:00269258       UFrmCRUD.TFrmCRUD.FormDestroy
- 0001:00269274       UFrmCRUD.TFrmCRUD.HabilitaCampos
- 0001:00269324       UFrmCRUD.TFrmCRUD.Inicializa
- 0001:00269360       UFrmCRUD.TFrmCRUD.InicializaInterno
- 0001:0026943C       UFrmCRUD.TFrmCRUD.LimpaCampos
- 0001:00269494       UFrmCRUD.TFrmCRUD.MostraOpcoesPesquisa
- 0001:002695E0       UFrmCRUD.TFrmCRUD.PesquisaSelecionada
- 0001:0026962C       UFrmCRUD.TFrmCRUD.RemoveEntidade
- 0001:00269650       UFrmCRUD.TFrmCRUD.RetornaEntidade
- 0001:00269678       UFrmCRUD.TFrmCRUD.ExecutaPesquisa
- 0001:00269728       UFrmCRUD.TFrmCRUD.AdicionaOpcaoPesquisa
- 0001:0026974C       UFrmCRUD.TFrmCRUD.edCodigoKeyDown
- 0001:00269780       UFrmCRUD.TFrmCRUD.FormShow
- 0001:002697B0       UFrmCRUD.TFrmCRUD.GravaEntidade
- 0001:00269800       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
- 0001:0026981C       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
- 0001:002698D8       UFrmCRUD.{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>.MoveNext
- 0001:002698F4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetCapacity
- 0001:00269914       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCapacity
- 0001:00269958       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCount
- 0001:002699C8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetItem
- 0001:00269A14       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Grow
- 0001:00269A68       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GrowCheck
- 0001:00269AA0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoDelete
- 0001:00269B60       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoGetEnumerator
- 0001:00269B7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
- 0001:00269BB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00269C34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00269CDC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00269D7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Destroy
- 0001:00269DB8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Add
- 0001:00269E0C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:00269E34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:00269E58       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
- 0001:00269E7C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Insert
- 0001:00269F3C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:0026A04C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:0026A0D0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
- 0001:0026A150       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Remove
- 0001:0026A184       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Delete
- 0001:0026A1A4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DeleteRange
- 0001:0026A31C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Extract
- 0001:0026A368       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Exchange
- 0001:0026A3B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Move
- 0001:0026A49C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.First
- 0001:0026A4BC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Last
- 0001:0026A4E0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Clear
- 0001:0026A500       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Contains
- 0001:0026A524       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.IndexOf
- 0001:0026A584       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.LastIndexOf
- 0001:0026A5E0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Reverse
- 0001:0026A648       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
- 0001:0026A684       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
- 0001:0026A6C0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
- 0001:0026A710       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
- 0001:0026A760       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TrimExcess
- 0001:0026A778       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
- 0001:0026A7DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
- 0001:0026A800       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.GetCurrent
- 0001:0026A824       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoGetCurrent
- 0001:0026A840       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoMoveNext
- 0001:0026A85C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.Create
- 0001:0026A8B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.MoveNext
- 0001:0026A8F4       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
- 0001:0026A92C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A97C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026A9D0       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026AA24       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
- 0001:0026AA50       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Construct
- 0001:0026AA84       UFrmCRUD.TArray.Sort<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AB08       UFrmCRUD.TArray.BinarySearch<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026ABF0       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:0026AC38       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
- 0001:0026AC64       UFrmCRUD.TArray.QuickSort<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AE2C       UFrmCRUD..{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026AF8C       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
- 0001:0026B048       UFrmCRUD..{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>
- 0001:0026B1F0       UPaciente..TPACIENTE
- 0001:0026B4D8       URepositorioPaciente..TRepositorioPaciente
- 0001:0026B754       URepositorioPaciente..{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>
- 0001:0026BAD8       URepositorioPaciente.TRepositorioPaciente.Create
- 0001:0026BBA0       URepositorioPaciente.TRepositorioPaciente.AtribuiDBParaEntidade
- 0001:0026C144       URepositorioPaciente.TRepositorioPaciente.AtribuiEntidadeParaDB
- 0001:0026C5E4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaNovoId
- 0001:0026C70C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaInsercao
- 0001:0026C858       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaInsercao
- 0001:0026C878       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaAtualizacao
- 0001:0026C9D4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaAtualizacao
- 0001:0026CA18       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiDBParaEntidade
- 0001:0026CA5C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiEntidadeParaDB
- 0001:0026CA9C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaParametros
- 0001:0026CC0C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Create
- 0001:0026CD08       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Exclui
- 0001:0026CE50       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Atualiza
- 0001:0026CE9C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Insere
- 0001:0026CEE0       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Retorna
- 0001:0026CF20       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Achou
- 0001:0026D048       URegraCRUDPaciente..TRegraCRUDPACIENTES
- 0001:0026D134       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
- 0001:0026D188       UFrmPacientes..TfrmPacientes
- 0001:0026D8CC       UFrmPacientes.TfrmPacientes.HabilitaCampos
- 0001:0026D940       UFrmPacientes.TfrmPacientes.Inicializa
- 0001:0026DA78       UFrmPacientes.TfrmPacientes.PosicionaCursorPrimeiroCampo
- 0001:0026DA94       UFrmPacientes.TfrmPacientes.PreencheEntidade
- 0001:0026DE88       UFrmPacientes.TfrmPacientes.PreencheFormulario
- 0001:0026E134       jpeg..TJPEGData
- 0001:0026E338       jpeg..TJPEGImage
- 0001:0026E990       jpeg._malloc
- 0001:0026E9A0       jpeg._free
- 0001:0026E9B0       jpeg._memset
- 0001:0026E9C4       jpeg._memcpy
- 0001:0026E9D8       jpeg._fread
- 0001:0026E9F4       jpeg._fwrite
- 0001:0026EA10       jpeg._fflush
- 0001:0026EA18       jpeg.__ftol
- 0001:0026EA30       jpeg..EJPEG
- 0001:0026EAB8       jpeg.InvalidOperation
- 0001:0026EAD0       jpeg.JpegError
- 0001:0026EB44       jpeg.EmitMessage
- 0001:0026EB48       jpeg.OutputMessage
- 0001:0026EB4C       jpeg.FormatMessage
- 0001:0026EB50       jpeg.ResetErrorMgr
- 0001:0026EB60       jpeg.TJPEGData.Destroy
- 0001:0026EB90       jpeg.TJPEGData.FreeHandle
- 0001:0026EB94       jpeg.TJPEGImage.Create
- 0001:0026EC10       jpeg.TJPEGImage.Destroy
- 0001:0026EC54       jpeg.TJPEGImage.Assign
- 0001:0026ECD4       jpeg.TJPEGImage.AssignTo
- 0001:0026ED0C       jpeg.ProgressCallback
- 0001:0026EE00       jpeg.ReleaseContext
- 0001:0026EE24       jpeg.InitDecompressor
- 0001:0026F034       jpeg.TJPEGImage.CalcOutputDimensions
- 0001:0026F0C0       jpeg.TJPEGImage.Changed
- 0001:0026F0C8       jpeg.TJPEGImage.Compress
- 0001:0026F444       jpeg.TJPEGImage.DIBNeeded
- 0001:0026F44C       jpeg.TJPEGImage.Draw
- 0001:0026F470       jpeg.TJPEGImage.Equals
- 0001:0026F4B8       jpeg.TJPEGImage.FreeBitmap
- 0001:0026F4CC       jpeg.BuildPalette
- 0001:0026F578       jpeg.BuildColorMap
- 0001:0026F604       jpeg.CMYKToRGB
- 0001:0026F658       jpeg.TJPEGImage.GetBitmap
- 0001:0026FB44       jpeg.TJPEGImage.GetEmpty
- 0001:0026FB70       jpeg.TJPEGImage.GetGrayscale
- 0001:0026FB88       jpeg.TJPEGImage.GetPalette
- 0001:0026FBF0       jpeg.TJPEGImage.GetHeight
- 0001:0026FC1C       jpeg.TJPEGImage.GetWidth
- 0001:0026FC48       jpeg.TJPEGImage.JPEGNeeded
- 0001:0026FC58       jpeg.TJPEGImage.LoadFromClipboardFormat
- 0001:0026FC80       jpeg.TJPEGImage.LoadFromStream
- 0001:0026FCA4       jpeg.TJPEGImage.NewBitmap
- 0001:0026FCC0       jpeg.TJPEGImage.NewImage
- 0001:0026FCEC       jpeg.TJPEGImage.ReadData
- 0001:0026FD14       jpeg.TJPEGImage.ReadStream
- 0001:0026FE58       jpeg.TJPEGImage.SaveToClipboardFormat
- 0001:0026FE80       jpeg.TJPEGImage.SaveToStream
- 0001:0026FEA8       jpeg.TJPEGImage.SetGrayscale
- 0001:0026FED0       jpeg.TJPEGImage.SetHeight
- 0001:0026FF18       jpeg.TJPEGImage.SetPalette
- 0001:0026FF70       jpeg.TJPEGImage.SetPerformance
- 0001:0026FF98       jpeg.TJPEGImage.SetPixelFormat
- 0001:0026FFC0       jpeg.TJPEGImage.SetScale
- 0001:0026FFE8       jpeg.TJPEGImage.SetSmoothing
- 0001:0027000C       jpeg.TJPEGImage.SetWidth
- 0001:00270054       jpeg.TJPEGImage.WriteData
- 0001:002700A0       jpeg.InitDefaults
- 0001:002700E0       jpeg.jpeg_CreateDecompress
- 0001:002701B0       jpeg.jpeg_destroy_decompress
- 0001:002703A8       jpeg.jpeg_read_header
- 0001:00270414       jpeg.jpeg_consume_input
- 0001:002704F4       jpeg.jpeg_has_multiple_scans
- 0001:00270528       jpeg.jpeg_finish_decompress
- 0001:002705D8       jpeg...
- 0001:00271104       jpeg.@jinit_memory_mgr
- 0001:002711F8       jpeg.@jpeg_get_small
- 0001:00271200       jpeg.@jpeg_free_small
- 0001:00271208       jpeg.@jpeg_get_large
- 0001:00271210       jpeg.@jpeg_free_large
- 0001:00271218       jpeg.@jpeg_mem_available
- 0001:00271224       jpeg.@jpeg_open_backing_store
- 0001:00271234       jpeg.@jpeg_mem_init
- 0001:00271238       jpeg.@jpeg_mem_term
- 0001:0027123C       jpeg...
- 0001:00271758       jpeg.@jinit_input_controller
- 0001:002717A0       jpeg...
- 0001:0027184C       jpeg.jpeg_stdio_src
- 0001:002718B8       jpeg.jpeg_start_decompress
- 0001:00271A40       jpeg.jpeg_read_scanlines
- 0001:00271B7C       jpeg.jpeg_start_output
- 0001:00271BDC       jpeg.jpeg_finish_output
- 0001:00271C64       jpeg...
- 0001:00271CF4       jpeg.jpeg_calc_output_dimensions
- 0001:0027236C       jpeg.@jinit_master_decompress
- 0001:002723A4       jpeg...
- 0001:00273058       jpeg.@jinit_phuff_decoder
- 0001:002730CC       jpeg...
- 0001:00273204       jpeg.@jpeg_make_d_derived_tbl
- 0001:00273500       jpeg.@jpeg_fill_bit_buffer
- 0001:0027364C       jpeg.@jpeg_huff_decode
- 0001:00273C18       jpeg.@jinit_huff_decoder
- 0001:00273C58       jpeg...
- 0001:002741C4       jpeg.@jinit_merged_upsampler
- 0001:00274244       jpeg...
- 0001:00274620       jpeg.@jinit_color_deconverter
- 0001:002747EC       jpeg...
- 0001:002753A0       jpeg.@jinit_1pass_quantizer
- 0001:00275434       jpeg...
- 0001:00276614       jpeg.@jinit_2pass_quantizer
- 0001:00276734       jpeg...
- 0001:00276D2C       jpeg.@jinit_d_main_controller
- 0001:00276E0C       jpeg...
- 0001:00277D88       jpeg.@jinit_d_coef_controller
- 0001:00277E9C       jpeg...
- 0001:002780FC       jpeg.@jinit_d_post_controller
- 0001:00278190       jpeg...
- 0001:002783E4       jpeg.@jinit_inverse_dct
- 0001:00278460       jpeg...
- 0001:00278944       jpeg.@jinit_upsampler
- 0001:00278B5C       jpeg.@jpeg_idct_float
- 0001:00278FA0       jpeg.@jpeg_idct_ifast
- 0001:002793D4       jpeg.@jpeg_idct_4x4
- 0001:00279788       jpeg.@jpeg_idct_2x2
- 0001:00279978       jpeg.@jpeg_idct_1x1
- 0001:002799B4       jpeg...
- 0001:0027B57C       jpeg.@jpeg_resync_to_restart
- 0001:0027B6B0       jpeg.@jinit_marker_reader
- 0001:0027B724       jpeg.jpeg_save_markers
- 0001:0027B80C       jpeg.@jdiv_round_up
- 0001:0027B81C       jpeg.@jround_up
- 0001:0027B834       jpeg.@jcopy_sample_rows
- 0001:0027B880       jpeg.@jcopy_block_row
- 0001:0027B890       jpeg.@jzero_far
- 0001:0027B8A0       jpeg.@jpeg_abort
- 0001:0027B8E0       jpeg.jpeg_destroy
- 0001:0027B900       jpeg.@jpeg_alloc_quant_table
- 0001:0027B918       jpeg.@jpeg_alloc_huff_table
- 0001:0027B930       jpeg...
- 0001:0027BA00       jpeg.jpeg_stdio_dest
- 0001:0027BA40       jpeg...
- 0001:0027BB5C       jpeg.jpeg_set_quality
- 0001:0027BC58       jpeg.jpeg_set_defaults
- 0001:0027BDCC       jpeg.jpeg_set_colorspace
- 0001:0027C234       jpeg.jpeg_simple_progression
- 0001:0027C44C       jpeg.jpeg_start_compress
- 0001:0027C4C0       jpeg.jpeg_write_scanlines
- 0001:0027C62C       jpeg.jpeg_CreateCompress
- 0001:0027C704       jpeg.@jpeg_suppress_tables
- 0001:0027C74C       jpeg.jpeg_finish_compress
- 0001:0027C940       jpeg.@jinit_compress_master
- 0001:0027C9EC       jpeg...
- 0001:0027D1C0       jpeg.@jinit_marker_writer
- 0001:0027D214       jpeg...
- 0001:0027DC7C       jpeg.@jinit_c_master_control
- 0001:0027DD44       jpeg...
- 0001:0027DE1C       jpeg.@jinit_c_main_controller
- 0001:0027DEA0       jpeg...
- 0001:0027E334       jpeg.@jinit_c_prep_controller
- 0001:0027E3DC       jpeg...
- 0001:0027EB18       jpeg.@jinit_c_coef_controller
- 0001:0027EBE0       jpeg...
- 0001:0027F01C       jpeg.@jinit_color_converter
- 0001:0027F268       jpeg...
- 0001:0027FA08       jpeg.@jinit_downsampler
- 0001:0027FB90       jpeg...
- 0001:0028002C       jpeg.@jinit_forward_dct
- 0001:002800A8       jpeg...
- 0001:00280B38       jpeg.@jinit_phuff_encoder
- 0001:00280B7C       jpeg.@jpeg_fdct_ifast
- 0001:00280DE8       jpeg.@jpeg_fdct_float
- 0001:00281114       jpeg...
- 0001:002812A4       jpeg.@jpeg_make_c_derived_tbl
- 0001:00281AB4       jpeg.@jpeg_gen_optimal_table
- 0001:00281D70       jpeg.@jinit_huff_encoder
- 0001:00281DB4       jpeg.Finalization
- 0001:00281DD0       UFrmPrincipal..TFrmPrincipal
- 0001:0028210C       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:00282124       UFrmPrincipal.TFrmPrincipal.FormShow
- 0001:0028220C       UFrmTelaInicial..TfrmTelaInicial
- 0001:00282514       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:0028253C       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:0028254C       CarteiraOnline.Finalization
+ 0001:0026201C       UDM..TdmEntra21
+ 0001:002622E0       UDM.TdmEntra21.AbortaTransacao
+ 0001:00262380       UDM.TdmEntra21.FinalizaTransacao
+ 0001:00262420       UDM.TdmEntra21.IniciaTransacao
+ 0001:0026249C       UDM.TdmEntra21.TemTransacaoAtiva
+ 0001:002624BC       UDM.TdmEntra21.DataModuleCreate
+ 0001:002624E4       UDM.TdmEntra21.ValidaTransacaoAtiva
+ 0001:00262550       URegraCRUD..TRegraCRUD
+ 0001:002628C4       URegraCRUD..{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>
+ 0001:00262CE4       URegraCRUD.TRegraCRUD.Create
+ 0001:00262D28       URegraCRUD.TRegraCRUD.Destroy
+ 0001:00262D7C       URegraCRUD.TRegraCRUD.Atualiza
+ 0001:00262DA4       URegraCRUD.TRegraCRUD.Exclui
+ 0001:00262DE4       URegraCRUD.TRegraCRUD.Insere
+ 0001:00262E10       URegraCRUD.TRegraCRUD.Retorna
+ 0001:00262E34       URegraCRUD.TRegraCRUD.RetornaNomeEntidade
+ 0001:00262E58       URegraCRUD.TRegraCRUD.ValidaAtualizacao
+ 0001:00262E78       URegraCRUD.TRegraCRUD.ValidaExclusao
+ 0001:00262E88       URegraCRUD.TRegraCRUD.ValidaExistencia
+ 0001:00262F1C       URegraCRUD.TRegraCRUD.ValidaInsercao
+ 0001:00262F2C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
+ 0001:00263044       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaInsercao
+ 0001:00263180       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaInsercao
+ 0001:0026319C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.PreparaAtualizacao
+ 0001:002632E8       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.ExecutaAtualizacao
+ 0001:00263324       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiDBParaEntidade
+ 0001:00263364       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.AtribuiEntidadeParaDB
+ 0001:002633A4       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
+ 0001:00263504       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Create
+ 0001:00263704       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Destroy
+ 0001:002637D8       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Exclui
+ 0001:00263908       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Atualiza
+ 0001:00263950       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Insere
+ 0001:00263990       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
+ 0001:002639D0       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Achou
+ 0001:00263AE4       UOpcaoPesquisa..TOpcaoPesquisa
+ 0001:00263F4C       UOpcaoPesquisa..{Generics.Collections}TList<System.string>.TEnumerator
+ 0001:002640E0       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
+ 0001:00264A58       UOpcaoPesquisa.TOpcaoPesquisa.Create
+ 0001:00264AA4       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomeCampoRetorno
+ 0001:00264ACC       UOpcaoPesquisa.TOpcaoPesquisa.DefineNomePesquisa
+ 0001:00264AF4       UOpcaoPesquisa.TOpcaoPesquisa.DefineSQL
+ 0001:00264B1C       UOpcaoPesquisa.TOpcaoPesquisa.DefineVisao
+ 0001:00264BBC       UOpcaoPesquisa.TOpcaoPesquisa.AdicionaFiltro
+ 0001:00264BE4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetCapacity
+ 0001:00264C04       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCapacity
+ 0001:00264C48       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.SetCount
+ 0001:00264CB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetItem
+ 0001:00264D08       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Grow
+ 0001:00264D5C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GrowCheck
+ 0001:00264D94       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoDelete
+ 0001:00264E8C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DoGetEnumerator
+ 0001:00264EA8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Notify
+ 0001:00264EDC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:00264F60       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:00265008       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Create
+ 0001:002650A8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Destroy
+ 0001:002650E4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Add
+ 0001:0026513C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:00265164       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:00265188       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.AddRange
+ 0001:002651AC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Insert
+ 0001:00265270       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:00265388       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:00265418       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.InsertRange
+ 0001:002654CC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Remove
+ 0001:00265500       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Delete
+ 0001:00265520       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.DeleteRange
+ 0001:00265698       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Extract
+ 0001:002656EC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Exchange
+ 0001:00265778       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Move
+ 0001:0026589C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.First
+ 0001:002658BC       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Last
+ 0001:002658E0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Clear
+ 0001:00265900       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Contains
+ 0001:00265924       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.IndexOf
+ 0001:00265984       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.LastIndexOf
+ 0001:002659E0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Reverse
+ 0001:00265A88       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
+ 0001:00265AC4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.Sort
+ 0001:00265B00       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
+ 0001:00265B50       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.BinarySearch
+ 0001:00265BA0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TrimExcess
+ 0001:00265BB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.ToArray
+ 0001:00265C54       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.GetEnumerator
+ 0001:00265C78       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.GetCurrent
+ 0001:00265C9C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoGetCurrent
+ 0001:00265CB8       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.DoMoveNext
+ 0001:00265CD4       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.Create
+ 0001:00265D2C       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TEnumerator.MoveNext
+ 0001:00265DC8       UFrmPesquisa..TfrmPesquisa
+ 0001:00266578       UFrmPesquisa.TfrmPesquisa.MostrarPesquisa
+ 0001:00266618       UFrmPesquisa.TfrmPesquisa.RetornaDataSet
+ 0001:00266674       UFrmPesquisa.TfrmPesquisa.Inicializa
+ 0001:00266880       UFrmPesquisa.TfrmPesquisa.btnConfirmarClick
+ 0001:002668F0       UFrmPesquisa.TfrmPesquisa.dbgClienteDblClick
+ 0001:0026696C       UFrmPesquisa.TfrmPesquisa.btnSairClick
+ 0001:00266984       UFrmPesquisa.TfrmPesquisa.cbOpcoesChange
+ 0001:002669FC       UFrmPesquisa.TfrmPesquisa.FormShow
+ 0001:00266B10       UFrmPesquisa.TfrmPesquisa.edPesquisaKeyUp
+ 0001:00266B94       UFrmPesquisa.TfrmPesquisa.dbgClienteKeyDown
+ 0001:00266C40       UDialogo..TDialogo
+ 0001:00266E3C       UDialogo.TDialogo.Alerta
+ 0001:00266EAC       UDialogo.TDialogo.Erro
+ 0001:00266F1C       UDialogo.TDialogo.Excecao
+ 0001:00266F60       UDialogo.TDialogo.Informacao
+ 0001:00266FD0       UDialogo.TDialogo.Questiona
+ 0001:0026706C       UDialogo.TDialogo.Questiona
+ 0001:00267128       UFrmCRUD..TFrmCRUD
+ 0001:00267AD0       UFrmCRUD..{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00267C10       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00267F40       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator
+ 0001:002680F4       UFrmCRUD..{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00268A68       UFrmCRUD..{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:00268C94       UFrmCRUD.TFrmCRUD.DefineEntidade
+ 0001:00268CC0       UFrmCRUD.TFrmCRUD.DefineRegraCRUD
+ 0001:00268CEC       UFrmCRUD.TFrmCRUD.btnExcluirClick
+ 0001:00268EC4       UFrmCRUD.TFrmCRUD.btnGravarClick
+ 0001:00269038       UFrmCRUD.TFrmCRUD.btnLimparClick
+ 0001:00269074       UFrmCRUD.TFrmCRUD.btnNovoClick
+ 0001:002690EC       UFrmCRUD.TFrmCRUD.btnLocalizarClick
+ 0001:00269130       UFrmCRUD.TFrmCRUD.btnSairClick
+ 0001:00269148       UFrmCRUD.TFrmCRUD.DefineEntidadeInterno
+ 0001:00269178       UFrmCRUD.TFrmCRUD.DefineRegraCRUDInterno
+ 0001:002691A8       UFrmCRUD.TFrmCRUD.edCodigoExit
+ 0001:002692EC       UFrmCRUD.TFrmCRUD.Finaliza
+ 0001:00269370       UFrmCRUD.TFrmCRUD.FormClose
+ 0001:0026938C       UFrmCRUD.TFrmCRUD.FormCreate
+ 0001:002693B0       UFrmCRUD.TFrmCRUD.FormDestroy
+ 0001:002693CC       UFrmCRUD.TFrmCRUD.HabilitaCampos
+ 0001:0026947C       UFrmCRUD.TFrmCRUD.Inicializa
+ 0001:002694B8       UFrmCRUD.TFrmCRUD.InicializaInterno
+ 0001:00269594       UFrmCRUD.TFrmCRUD.LimpaCampos
+ 0001:002695EC       UFrmCRUD.TFrmCRUD.MostraOpcoesPesquisa
+ 0001:00269738       UFrmCRUD.TFrmCRUD.PesquisaSelecionada
+ 0001:00269784       UFrmCRUD.TFrmCRUD.RemoveEntidade
+ 0001:002697A8       UFrmCRUD.TFrmCRUD.RetornaEntidade
+ 0001:002697D0       UFrmCRUD.TFrmCRUD.ExecutaPesquisa
+ 0001:00269880       UFrmCRUD.TFrmCRUD.AdicionaOpcaoPesquisa
+ 0001:002698A4       UFrmCRUD.TFrmCRUD.edCodigoKeyDown
+ 0001:002698D8       UFrmCRUD.TFrmCRUD.FormShow
+ 0001:00269908       UFrmCRUD.TFrmCRUD.GravaEntidade
+ 0001:00269958       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
+ 0001:00269974       UFrmCRUD.{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
+ 0001:00269A30       UFrmCRUD.{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>.MoveNext
+ 0001:00269A4C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetCapacity
+ 0001:00269A6C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCapacity
+ 0001:00269AB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.SetCount
+ 0001:00269B20       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetItem
+ 0001:00269B6C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Grow
+ 0001:00269BC0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GrowCheck
+ 0001:00269BF8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoDelete
+ 0001:00269CB8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DoGetEnumerator
+ 0001:00269CD4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
+ 0001:00269D08       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:00269D8C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:00269E34       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:00269ED4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Destroy
+ 0001:00269F10       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Add
+ 0001:00269F64       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:00269F8C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:00269FB0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.AddRange
+ 0001:00269FD4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Insert
+ 0001:0026A094       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A1A4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A228       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.InsertRange
+ 0001:0026A2A8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Remove
+ 0001:0026A2DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Delete
+ 0001:0026A2FC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.DeleteRange
+ 0001:0026A474       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Extract
+ 0001:0026A4C0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Exchange
+ 0001:0026A50C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Move
+ 0001:0026A5F4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.First
+ 0001:0026A614       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Last
+ 0001:0026A638       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Clear
+ 0001:0026A658       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Contains
+ 0001:0026A67C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.IndexOf
+ 0001:0026A6DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.LastIndexOf
+ 0001:0026A738       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Reverse
+ 0001:0026A7A0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
+ 0001:0026A7DC       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.Sort
+ 0001:0026A818       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
+ 0001:0026A868       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.BinarySearch
+ 0001:0026A8B8       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TrimExcess
+ 0001:0026A8D0       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.ToArray
+ 0001:0026A934       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.GetEnumerator
+ 0001:0026A958       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.GetCurrent
+ 0001:0026A97C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoGetCurrent
+ 0001:0026A998       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.DoMoveNext
+ 0001:0026A9B4       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.Create
+ 0001:0026AA0C       UFrmCRUD.{Generics.Collections}TList<UOpcaoPesquisa.TOpcaoPesquisa>.TEnumerator.MoveNext
+ 0001:0026AA4C       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Notify
+ 0001:0026AA84       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AAD4       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AB28       UFrmCRUD.{Generics.Collections}TObjectList<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AB7C       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
+ 0001:0026ABA8       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Construct
+ 0001:0026ABDC       UFrmCRUD.TArray.Sort<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026AC60       UFrmCRUD.TArray.BinarySearch<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026AD48       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
+ 0001:0026AD90       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
+ 0001:0026ADBC       UFrmCRUD.TArray.QuickSort<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026AF84       UFrmCRUD..{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026B0E4       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
+ 0001:0026B1A0       UFrmCRUD..{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>
+ 0001:0026B348       UPaciente..TPACIENTE
+ 0001:0026B630       URepositorioPaciente..TRepositorioPaciente
+ 0001:0026B8AC       URepositorioPaciente..{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>
+ 0001:0026BCCC       URepositorioPaciente.TRepositorioPaciente.Create
+ 0001:0026BD94       URepositorioPaciente.TRepositorioPaciente.AtribuiDBParaEntidade
+ 0001:0026C334       URepositorioPaciente.TRepositorioPaciente.AtribuiEntidadeParaDB
+ 0001:0026C7D4       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaNovoId
+ 0001:0026C8EC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaInsercao
+ 0001:0026CA28       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaInsercao
+ 0001:0026CA44       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.PreparaAtualizacao
+ 0001:0026CB90       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.ExecutaAtualizacao
+ 0001:0026CBCC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiDBParaEntidade
+ 0001:0026CC0C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.AtribuiEntidadeParaDB
+ 0001:0026CC4C       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaParametros
+ 0001:0026CDAC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Create
+ 0001:0026CFAC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Destroy
+ 0001:0026D080       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Exclui
+ 0001:0026D1B0       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Atualiza
+ 0001:0026D1F8       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Insere
+ 0001:0026D238       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Retorna
+ 0001:0026D278       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Achou
+ 0001:0026D38C       URegraCRUDPaciente..TRegraCRUDPACIENTES
+ 0001:0026D478       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
+ 0001:0026D4CC       UFrmPacientes..TfrmPacientes
+ 0001:0026DC10       UFrmPacientes.TfrmPacientes.HabilitaCampos
+ 0001:0026DC84       UFrmPacientes.TfrmPacientes.Inicializa
+ 0001:0026DDBC       UFrmPacientes.TfrmPacientes.PosicionaCursorPrimeiroCampo
+ 0001:0026DDD8       UFrmPacientes.TfrmPacientes.PreencheEntidade
+ 0001:0026E1CC       UFrmPacientes.TfrmPacientes.PreencheFormulario
+ 0001:0026E478       jpeg..TJPEGData
+ 0001:0026E67C       jpeg..TJPEGImage
+ 0001:0026ECD4       jpeg._malloc
+ 0001:0026ECE4       jpeg._free
+ 0001:0026ECF4       jpeg._memset
+ 0001:0026ED08       jpeg._memcpy
+ 0001:0026ED1C       jpeg._fread
+ 0001:0026ED38       jpeg._fwrite
+ 0001:0026ED54       jpeg._fflush
+ 0001:0026ED5C       jpeg.__ftol
+ 0001:0026ED74       jpeg..EJPEG
+ 0001:0026EDFC       jpeg.InvalidOperation
+ 0001:0026EE14       jpeg.JpegError
+ 0001:0026EE88       jpeg.EmitMessage
+ 0001:0026EE8C       jpeg.OutputMessage
+ 0001:0026EE90       jpeg.FormatMessage
+ 0001:0026EE94       jpeg.ResetErrorMgr
+ 0001:0026EEA4       jpeg.TJPEGData.Destroy
+ 0001:0026EED4       jpeg.TJPEGData.FreeHandle
+ 0001:0026EED8       jpeg.TJPEGImage.Create
+ 0001:0026EF54       jpeg.TJPEGImage.Destroy
+ 0001:0026EF98       jpeg.TJPEGImage.Assign
+ 0001:0026F018       jpeg.TJPEGImage.AssignTo
+ 0001:0026F050       jpeg.ProgressCallback
+ 0001:0026F144       jpeg.ReleaseContext
+ 0001:0026F168       jpeg.InitDecompressor
+ 0001:0026F378       jpeg.TJPEGImage.CalcOutputDimensions
+ 0001:0026F404       jpeg.TJPEGImage.Changed
+ 0001:0026F40C       jpeg.TJPEGImage.Compress
+ 0001:0026F788       jpeg.TJPEGImage.DIBNeeded
+ 0001:0026F790       jpeg.TJPEGImage.Draw
+ 0001:0026F7B4       jpeg.TJPEGImage.Equals
+ 0001:0026F7FC       jpeg.TJPEGImage.FreeBitmap
+ 0001:0026F810       jpeg.BuildPalette
+ 0001:0026F8BC       jpeg.BuildColorMap
+ 0001:0026F948       jpeg.CMYKToRGB
+ 0001:0026F99C       jpeg.TJPEGImage.GetBitmap
+ 0001:0026FE88       jpeg.TJPEGImage.GetEmpty
+ 0001:0026FEB4       jpeg.TJPEGImage.GetGrayscale
+ 0001:0026FECC       jpeg.TJPEGImage.GetPalette
+ 0001:0026FF34       jpeg.TJPEGImage.GetHeight
+ 0001:0026FF60       jpeg.TJPEGImage.GetWidth
+ 0001:0026FF8C       jpeg.TJPEGImage.JPEGNeeded
+ 0001:0026FF9C       jpeg.TJPEGImage.LoadFromClipboardFormat
+ 0001:0026FFC4       jpeg.TJPEGImage.LoadFromStream
+ 0001:0026FFE8       jpeg.TJPEGImage.NewBitmap
+ 0001:00270004       jpeg.TJPEGImage.NewImage
+ 0001:00270030       jpeg.TJPEGImage.ReadData
+ 0001:00270058       jpeg.TJPEGImage.ReadStream
+ 0001:0027019C       jpeg.TJPEGImage.SaveToClipboardFormat
+ 0001:002701C4       jpeg.TJPEGImage.SaveToStream
+ 0001:002701EC       jpeg.TJPEGImage.SetGrayscale
+ 0001:00270214       jpeg.TJPEGImage.SetHeight
+ 0001:0027025C       jpeg.TJPEGImage.SetPalette
+ 0001:002702B4       jpeg.TJPEGImage.SetPerformance
+ 0001:002702DC       jpeg.TJPEGImage.SetPixelFormat
+ 0001:00270304       jpeg.TJPEGImage.SetScale
+ 0001:0027032C       jpeg.TJPEGImage.SetSmoothing
+ 0001:00270350       jpeg.TJPEGImage.SetWidth
+ 0001:00270398       jpeg.TJPEGImage.WriteData
+ 0001:002703E4       jpeg.InitDefaults
+ 0001:00270424       jpeg.jpeg_CreateDecompress
+ 0001:002704F4       jpeg.jpeg_destroy_decompress
+ 0001:002706EC       jpeg.jpeg_read_header
+ 0001:00270758       jpeg.jpeg_consume_input
+ 0001:00270838       jpeg.jpeg_has_multiple_scans
+ 0001:0027086C       jpeg.jpeg_finish_decompress
+ 0001:0027091C       jpeg...
+ 0001:00271448       jpeg.@jinit_memory_mgr
+ 0001:0027153C       jpeg.@jpeg_get_small
+ 0001:00271544       jpeg.@jpeg_free_small
+ 0001:0027154C       jpeg.@jpeg_get_large
+ 0001:00271554       jpeg.@jpeg_free_large
+ 0001:0027155C       jpeg.@jpeg_mem_available
+ 0001:00271568       jpeg.@jpeg_open_backing_store
+ 0001:00271578       jpeg.@jpeg_mem_init
+ 0001:0027157C       jpeg.@jpeg_mem_term
+ 0001:00271580       jpeg...
+ 0001:00271A9C       jpeg.@jinit_input_controller
+ 0001:00271AE4       jpeg...
+ 0001:00271B90       jpeg.jpeg_stdio_src
+ 0001:00271BFC       jpeg.jpeg_start_decompress
+ 0001:00271D84       jpeg.jpeg_read_scanlines
+ 0001:00271EC0       jpeg.jpeg_start_output
+ 0001:00271F20       jpeg.jpeg_finish_output
+ 0001:00271FA8       jpeg...
+ 0001:00272038       jpeg.jpeg_calc_output_dimensions
+ 0001:002726B0       jpeg.@jinit_master_decompress
+ 0001:002726E8       jpeg...
+ 0001:0027339C       jpeg.@jinit_phuff_decoder
+ 0001:00273410       jpeg...
+ 0001:00273548       jpeg.@jpeg_make_d_derived_tbl
+ 0001:00273844       jpeg.@jpeg_fill_bit_buffer
+ 0001:00273990       jpeg.@jpeg_huff_decode
+ 0001:00273F5C       jpeg.@jinit_huff_decoder
+ 0001:00273F9C       jpeg...
+ 0001:00274508       jpeg.@jinit_merged_upsampler
+ 0001:00274588       jpeg...
+ 0001:00274964       jpeg.@jinit_color_deconverter
+ 0001:00274B30       jpeg...
+ 0001:002756E4       jpeg.@jinit_1pass_quantizer
+ 0001:00275778       jpeg...
+ 0001:00276958       jpeg.@jinit_2pass_quantizer
+ 0001:00276A78       jpeg...
+ 0001:00277070       jpeg.@jinit_d_main_controller
+ 0001:00277150       jpeg...
+ 0001:002780CC       jpeg.@jinit_d_coef_controller
+ 0001:002781E0       jpeg...
+ 0001:00278440       jpeg.@jinit_d_post_controller
+ 0001:002784D4       jpeg...
+ 0001:00278728       jpeg.@jinit_inverse_dct
+ 0001:002787A4       jpeg...
+ 0001:00278C88       jpeg.@jinit_upsampler
+ 0001:00278EA0       jpeg.@jpeg_idct_float
+ 0001:002792E4       jpeg.@jpeg_idct_ifast
+ 0001:00279718       jpeg.@jpeg_idct_4x4
+ 0001:00279ACC       jpeg.@jpeg_idct_2x2
+ 0001:00279CBC       jpeg.@jpeg_idct_1x1
+ 0001:00279CF8       jpeg...
+ 0001:0027B8C0       jpeg.@jpeg_resync_to_restart
+ 0001:0027B9F4       jpeg.@jinit_marker_reader
+ 0001:0027BA68       jpeg.jpeg_save_markers
+ 0001:0027BB50       jpeg.@jdiv_round_up
+ 0001:0027BB60       jpeg.@jround_up
+ 0001:0027BB78       jpeg.@jcopy_sample_rows
+ 0001:0027BBC4       jpeg.@jcopy_block_row
+ 0001:0027BBD4       jpeg.@jzero_far
+ 0001:0027BBE4       jpeg.@jpeg_abort
+ 0001:0027BC24       jpeg.jpeg_destroy
+ 0001:0027BC44       jpeg.@jpeg_alloc_quant_table
+ 0001:0027BC5C       jpeg.@jpeg_alloc_huff_table
+ 0001:0027BC74       jpeg...
+ 0001:0027BD44       jpeg.jpeg_stdio_dest
+ 0001:0027BD84       jpeg...
+ 0001:0027BEA0       jpeg.jpeg_set_quality
+ 0001:0027BF9C       jpeg.jpeg_set_defaults
+ 0001:0027C110       jpeg.jpeg_set_colorspace
+ 0001:0027C578       jpeg.jpeg_simple_progression
+ 0001:0027C790       jpeg.jpeg_start_compress
+ 0001:0027C804       jpeg.jpeg_write_scanlines
+ 0001:0027C970       jpeg.jpeg_CreateCompress
+ 0001:0027CA48       jpeg.@jpeg_suppress_tables
+ 0001:0027CA90       jpeg.jpeg_finish_compress
+ 0001:0027CC84       jpeg.@jinit_compress_master
+ 0001:0027CD30       jpeg...
+ 0001:0027D504       jpeg.@jinit_marker_writer
+ 0001:0027D558       jpeg...
+ 0001:0027DFC0       jpeg.@jinit_c_master_control
+ 0001:0027E088       jpeg...
+ 0001:0027E160       jpeg.@jinit_c_main_controller
+ 0001:0027E1E4       jpeg...
+ 0001:0027E678       jpeg.@jinit_c_prep_controller
+ 0001:0027E720       jpeg...
+ 0001:0027EE5C       jpeg.@jinit_c_coef_controller
+ 0001:0027EF24       jpeg...
+ 0001:0027F360       jpeg.@jinit_color_converter
+ 0001:0027F5AC       jpeg...
+ 0001:0027FD4C       jpeg.@jinit_downsampler
+ 0001:0027FED4       jpeg...
+ 0001:00280370       jpeg.@jinit_forward_dct
+ 0001:002803EC       jpeg...
+ 0001:00280E7C       jpeg.@jinit_phuff_encoder
+ 0001:00280EC0       jpeg.@jpeg_fdct_ifast
+ 0001:0028112C       jpeg.@jpeg_fdct_float
+ 0001:00281458       jpeg...
+ 0001:002815E8       jpeg.@jpeg_make_c_derived_tbl
+ 0001:00281DF8       jpeg.@jpeg_gen_optimal_table
+ 0001:002820B4       jpeg.@jinit_huff_encoder
+ 0001:002820F8       jpeg.Finalization
+ 0001:00282114       UFrmPrincipal..TFrmPrincipal
+ 0001:00282450       UFrmPrincipal.TFrmPrincipal.miSairClick
+ 0001:00282468       UFrmPrincipal.TFrmPrincipal.FormShow
+ 0001:00282550       UFrmTelaInicial..TfrmTelaInicial
+ 0001:00282858       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:00282880       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:00282890       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -33589,7 +33593,7 @@ Detailed map of segments
  0004:000053C0       DBXInterbaseReadOnlyMetaData..2
  0004:000053C4       DBXInterbaseMetaData..1
  0004:000053C8       DbxInterbase..3
- 0004:000053CC       UDM.dmProway
+ 0004:000053CC       UDM.dmEntra21
  0004:000053D0       UFrmPacientes.frmPacientes
  0004:000053D4       jpeg..3
  0004:000053D8       UFrmPrincipal.FrmPrincipal
@@ -33646,180 +33650,188 @@ Line numbers for URepositorio(Modelo\Persistencia\URepositorio.pas) segment .tex
 
 Line numbers for UDM(Modelo\Persistencia\UDM.pas) segment .text
 
-    47 0001:00262378    48 0001:00262397    49 0001:002623A3    51 0001:002623E1
-    52 0001:002623F2    55 0001:00262418    56 0001:00262437    57 0001:00262443
-    59 0001:00262481    60 0001:00262492    63 0001:002624B8    64 0001:002624D4
-    65 0001:002624E0    67 0001:00262501    68 0001:00262512    71 0001:00262534
-    72 0001:0026253D    73 0001:0026254B    76 0001:00262554    77 0001:00262560
-    78 0001:0026256D    79 0001:00262578    82 0001:0026257C    83 0001:00262598
-    84 0001:002625A4    85 0001:002625C5    87 0001:002625ED
+    43 0001:002622E0    44 0001:002622FF    45 0001:0026230B    47 0001:00262349
+    48 0001:0026235A    51 0001:00262380    52 0001:0026239F    53 0001:002623AB
+    55 0001:002623E9    56 0001:002623FA    59 0001:00262420    60 0001:0026243C
+    61 0001:00262448    63 0001:00262469    64 0001:0026247A    67 0001:0026249C
+    68 0001:002624A5    69 0001:002624B3    72 0001:002624BC    73 0001:002624C8
+    74 0001:002624D5    75 0001:002624E0    78 0001:002624E4    79 0001:00262500
+    80 0001:0026250C    81 0001:0026252D    83 0001:00262555
 
 Line numbers for URepositorioDB(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   236 0001:00000000
+   268 0001:00000000
 
 Line numbers for URegraCRUD(Modelo\Regra\URegraCRUD.pas) segment .text
 
-    56 0001:00262CE0    57 0001:00262CF8    58 0001:00262D02    61 0001:00262D24
-    62 0001:00262D35    63 0001:00262D55    64 0001:00262D63    67 0001:00262D78
-    68 0001:00262D84    69 0001:00262D8E    70 0001:00262D9C    73 0001:00262DA0
-    74 0001:00262DAC    75 0001:00262DB7    76 0001:00262DCC    77 0001:00262DDA
-    80 0001:00262DE0    81 0001:00262DEC    82 0001:00262DF7    83 0001:00262E05
-    86 0001:00262E0C    87 0001:00262E18    88 0001:00262E29    91 0001:00262E30
-    92 0001:00262E3C    93 0001:00262E4D    96 0001:00262E54    97 0001:00262E60
-    98 0001:00262E6E   101 0001:00262E74   103 0001:00262E80   106 0001:00262E84
-   107 0001:00262EA3   108 0001:00262EB5   110 0001:00262EF6   113 0001:00262F18
-   115 0001:00262F24
+    56 0001:00262CE4    57 0001:00262CFC    58 0001:00262D06    61 0001:00262D28
+    62 0001:00262D39    63 0001:00262D59    64 0001:00262D67    67 0001:00262D7C
+    68 0001:00262D88    69 0001:00262D92    70 0001:00262DA0    73 0001:00262DA4
+    74 0001:00262DB0    75 0001:00262DBB    76 0001:00262DD0    77 0001:00262DDE
+    80 0001:00262DE4    81 0001:00262DF0    82 0001:00262DFB    83 0001:00262E09
+    86 0001:00262E10    87 0001:00262E1C    88 0001:00262E2D    91 0001:00262E34
+    92 0001:00262E40    93 0001:00262E51    96 0001:00262E58    97 0001:00262E64
+    98 0001:00262E72   101 0001:00262E78   103 0001:00262E84   106 0001:00262E88
+   107 0001:00262EA7   108 0001:00262EB9   110 0001:00262EFA   113 0001:00262F1C
+   115 0001:00262F28
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   189 0001:00262F28   190 0001:00262F44   191 0001:00262F53   192 0001:00262F88
-   194 0001:00262F97   195 0001:00262FB3
+   221 0001:00262F2C   222 0001:00262F48   223 0001:00262F53   224 0001:00262F84
+   226 0001:00262F8F   227 0001:00262FA7
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   156 0001:00263050   157 0001:0026306F   160 0001:0026307D   161 0001:0026308C
-   162 0001:002630A1   165 0001:00263103   166 0001:00263114
+   188 0001:00263044   189 0001:00263063   192 0001:00263071   193 0001:0026307C
+   194 0001:0026308D   197 0001:002630EB   198 0001:002630F8
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   137 0001:0026319C   138 0001:002631A3   139 0001:002631B7
+   169 0001:00263180   170 0001:00263187   171 0001:00263197
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   142 0001:002631BC   143 0001:002631DB   148 0001:002631EA   149 0001:002631FF
-   152 0001:00263261   153 0001:00263272
+   174 0001:0026319C   175 0001:002631BB   180 0001:002631C6   181 0001:002631D7
+   184 0001:00263235   185 0001:00263242
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   131 0001:00263318   132 0001:00263324   133 0001:00263341   134 0001:00263355
+   163 0001:002632E8   164 0001:002632F4   165 0001:0026330D   166 0001:0026331D
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   207 0001:0026335C   208 0001:00263368   209 0001:00263387
+   239 0001:00263324   240 0001:00263330   241 0001:0026334B
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   213 0001:002633A0   214 0001:002633AF   215 0001:002633C7
+   245 0001:00263364   246 0001:00263373   247 0001:0026338B
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   172 0001:002633E0   173 0001:00263406   175 0001:00263416   176 0001:00263427
-   177 0001:0026343C   179 0001:00263450   181 0001:00263480   182 0001:0026348E
-   179 0001:002634B7   183 0001:002634D0   185 0001:002634ED   186 0001:00263525
+   204 0001:002633A4   205 0001:002633CA   207 0001:002633DA   208 0001:002633E7
+   209 0001:002633F8   211 0001:00263408   213 0001:00263434   214 0001:00263442
+   211 0001:0026346B   215 0001:00263484   217 0001:002634A1   218 0001:002634D9
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-    95 0001:00263550    96 0001:0026357F    97 0001:00263588    98 0001:00263596
-    99 0001:002635A4   100 0001:002635B2   101 0001:002635EA
+   101 0001:00263504   102 0001:00263533   103 0001:0026353D   104 0001:00263546
+   105 0001:00263554   106 0001:00263562   107 0001:00263570   109 0001:002635A8
+   110 0001:002635C2   112 0001:002635DA   113 0001:002635F4   115 0001:0026360C
+   116 0001:00263626   118 0001:0026363E   119 0001:00263658   121 0001:00263670
+   122 0001:0026368A   123 0001:002636A2
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   118 0001:0026364C   119 0001:0026366B   121 0001:00263677   122 0001:00263686
-   123 0001:0026369B   125 0001:002636E3   126 0001:002636F4   127 0001:00263711
-   128 0001:00263725
+   126 0001:00263704   127 0001:00263715   128 0001:00263735   129 0001:00263755
+   130 0001:00263775   131 0001:00263795   132 0001:002637B5   133 0001:002637C3
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   218 0001:00263794   219 0001:002637A1   221 0001:002637AD   222 0001:002637B5
-   223 0001:002637CA   224 0001:002637D8
+   150 0001:002637D8   151 0001:002637F7   153 0001:00263803   154 0001:0026380E
+   155 0001:0026381F   157 0001:00263863   158 0001:00263870   159 0001:00263889
+   160 0001:00263899
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   198 0001:002637E0   199 0001:002637ED   200 0001:002637F5   201 0001:0026380A
-   203 0001:00263812   204 0001:0026381E
+   250 0001:00263908   251 0001:00263915   253 0001:00263921   254 0001:00263929
+   255 0001:0026393A   256 0001:00263948
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   227 0001:00263824   228 0001:00263830   229 0001:00263835   231 0001:00263844
-   232 0001:00263851   234 0001:0026385B
+   230 0001:00263950   231 0001:0026395D   232 0001:00263965   233 0001:00263976
+   235 0001:0026397E   236 0001:0026398A
 
 Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   104 0001:00263864   105 0001:00263883   109 0001:00263892   111 0001:002638D7
-   112 0001:002638F4   114 0001:00263903   115 0001:00263918
+   259 0001:00263990   260 0001:0026399C   261 0001:002639A1   263 0001:002639B0
+   264 0001:002639BD   266 0001:002639C7
+
+Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   136 0001:002639D0   137 0001:002639EF   141 0001:002639FA   143 0001:00263A3B
+   144 0001:00263A54   146 0001:00263A5F   147 0001:00263A70
 
 Line numbers for UOpcaoPesquisa(Modelo\UOpcaoPesquisa.pas) segment .text
 
-    42 0001:00264900    43 0001:00264918    44 0001:0026492A    47 0001:0026494C
-    48 0001:00264958    49 0001:00264966    50 0001:0026496C    53 0001:00264974
-    54 0001:00264980    55 0001:0026498E    56 0001:00264994    59 0001:0026499C
-    60 0001:002649A8    61 0001:002649B6    62 0001:002649BC    65 0001:002649C4
-    66 0001:002649E3    67 0001:00264A0E    70 0001:00264A64    71 0001:00264A70
-    72 0001:00264A7E    73 0001:00264A84
+    42 0001:00264A58    43 0001:00264A70    44 0001:00264A82    47 0001:00264AA4
+    48 0001:00264AB0    49 0001:00264ABE    50 0001:00264AC4    53 0001:00264ACC
+    54 0001:00264AD8    55 0001:00264AE6    56 0001:00264AEC    59 0001:00264AF4
+    60 0001:00264B00    61 0001:00264B0E    62 0001:00264B14    65 0001:00264B1C
+    66 0001:00264B3B    67 0001:00264B66    70 0001:00264BBC    71 0001:00264BC8
+    72 0001:00264BD6    73 0001:00264BDC
 
 Line numbers for UFrmPesquisa(UFrmPesquisa.pas) segment .text
 
-    67 0001:00266420    68 0001:0026642F    69 0001:00266446    70 0001:00266454
-    71 0001:00266460    73 0001:00266468    74 0001:00266476    76 0001:00266489
-    78 0001:002664A0    80 0001:002664BB    83 0001:002664C0    84 0001:002664C9
-    88 0001:002664D8    89 0001:002664F6    91 0001:00266505    92 0001:00266512
-    95 0001:0026651C    96 0001:00266538    97 0001:00266550    98 0001:00266563
-   100 0001:0026657B   101 0001:00266593   102 0001:002665A6   103 0001:002665B6
-   105 0001:002665C9   106 0001:002665E1   107 0001:002665F8   109 0001:00266608
-   111 0001:0026661F   112 0001:00266656   114 0001:002666A4   115 0001:002666B5
-   118 0001:00266728   119 0001:00266747   120 0001:00266774   123 0001:00266798
-   124 0001:002667B7   125 0001:002667E4   126 0001:002667F1   129 0001:00266814
-   130 0001:00266820   131 0001:00266828   134 0001:0026682C   135 0001:0026684E
-   136 0001:0026687B   141 0001:002668A4   142 0001:002668C9   143 0001:002668F8
-   142 0001:0026690F   143 0001:00266928   145 0001:00266945   146 0001:00266958
-   147 0001:00266985   150 0001:002669B8   151 0001:002669DB   152 0001:00266A09
-   153 0001:00266A17   156 0001:00266A3C   157 0001:00266A65   160 0001:00266A79
-   161 0001:00266AA6   163 0001:00266AB5   165 0001:00266AC2
+    67 0001:00266578    68 0001:00266587    69 0001:0026659E    70 0001:002665AC
+    71 0001:002665B8    73 0001:002665C0    74 0001:002665CE    76 0001:002665E1
+    78 0001:002665F8    80 0001:00266613    83 0001:00266618    84 0001:00266621
+    88 0001:00266630    89 0001:0026664E    91 0001:0026665D    92 0001:0026666A
+    95 0001:00266674    96 0001:00266690    97 0001:002666A8    98 0001:002666BB
+   100 0001:002666D3   101 0001:002666EB   102 0001:002666FE   103 0001:0026670E
+   105 0001:00266721   106 0001:00266739   107 0001:00266750   109 0001:00266760
+   111 0001:00266777   112 0001:002667AE   114 0001:002667FC   115 0001:0026680D
+   118 0001:00266880   119 0001:0026689F   120 0001:002668CC   123 0001:002668F0
+   124 0001:0026690F   125 0001:0026693C   126 0001:00266949   129 0001:0026696C
+   130 0001:00266978   131 0001:00266980   134 0001:00266984   135 0001:002669A6
+   136 0001:002669D3   141 0001:002669FC   142 0001:00266A21   143 0001:00266A50
+   142 0001:00266A67   143 0001:00266A80   145 0001:00266A9D   146 0001:00266AB0
+   147 0001:00266ADD   150 0001:00266B10   151 0001:00266B33   152 0001:00266B61
+   153 0001:00266B6F   156 0001:00266B94   157 0001:00266BBD   160 0001:00266BD1
+   161 0001:00266BFE   163 0001:00266C0D   165 0001:00266C1A
 
 Line numbers for UDialogo(Modelo\UDialogo.pas) segment .text
 
-    35 0001:00266CE4    36 0001:00266D03    39 0001:00266D32    42 0001:00266D54
-    43 0001:00266D73    46 0001:00266DA2    49 0001:00266DC4    50 0001:00266DD0
-    51 0001:00266DE2    53 0001:00266DF4    54 0001:00266E04    57 0001:00266E08
-    58 0001:00266E27    61 0001:00266E56    64 0001:00266E78    65 0001:00266E9E
-    68 0001:00266EE6    71 0001:00266F14    72 0001:00266F33    75 0001:00266F69
-    77 0001:00266F94
+    35 0001:00266E3C    36 0001:00266E5B    39 0001:00266E8A    42 0001:00266EAC
+    43 0001:00266ECB    46 0001:00266EFA    49 0001:00266F1C    50 0001:00266F28
+    51 0001:00266F3A    53 0001:00266F4C    54 0001:00266F5C    57 0001:00266F60
+    58 0001:00266F7F    61 0001:00266FAE    64 0001:00266FD0    65 0001:00266FF6
+    68 0001:0026703E    71 0001:0026706C    72 0001:0026708B    75 0001:002670C1
+    77 0001:002670EC
 
 Line numbers for UFrmCRUD(VisaoControle\UFrmCRUD.pas) segment .text
 
-   107 0001:00268B3C   108 0001:00268B4B   109 0001:00268B57   110 0001:00268B63
-   114 0001:00268B68   115 0001:00268B77   116 0001:00268B83   117 0001:00268B8F
-   120 0001:00268B94   121 0001:00268BC8   123 0001:00268C0C   124 0001:00268C18
-   125 0001:00268C26   126 0001:00268C31   127 0001:00268C3D   131 0001:00268CC1
-   132 0001:00268CCC   134 0001:00268CD9   136 0001:00268D05   138 0001:00268D08
-   139 0001:00268D14   143 0001:00268D26   146 0001:00268D6C   147 0001:00268D94
-   148 0001:00268D9F   149 0001:00268DAB   150 0001:00268DB9   152 0001:00268DC4
-   153 0001:00268DD0   157 0001:00268E48   158 0001:00268E53   160 0001:00268E60
-   162 0001:00268E8C   164 0001:00268E8F   165 0001:00268E9B   168 0001:00268EAD
-   171 0001:00268EE0   172 0001:00268EEC   173 0001:00268EF7   175 0001:00268F04
-   176 0001:00268F15   179 0001:00268F1C   180 0001:00268F28   181 0001:00268F35
-   183 0001:00268F40   185 0001:00268F4C   186 0001:00268F6E   189 0001:00268F79
-   190 0001:00268F90   193 0001:00268F94   194 0001:00268FA0   195 0001:00268FAF
-   197 0001:00268FCB   198 0001:00268FD3   201 0001:00268FD8   202 0001:00268FE4
-   203 0001:00268FEC   206 0001:00268FF0   207 0001:00268FFC   208 0001:00269008
-   209 0001:0026901C   212 0001:00269020   213 0001:0026902C   214 0001:00269038
-   215 0001:0026904C   218 0001:00269050   219 0001:00269078   220 0001:0026909B
-   221 0001:002690A9   223 0001:002690D4   224 0001:00269106   226 0001:00269111
-   227 0001:0026911E   229 0001:00269144   231 0001:00269147   232 0001:00269154
-   235 0001:0026916A   238 0001:00269194   239 0001:0026919D   241 0001:002691A9
-   242 0001:002691CB   245 0001:002691D8   247 0001:002691E4   248 0001:00269206
-   250 0001:00269213   253 0001:00269218   254 0001:00269227   255 0001:0026922D
-   258 0001:00269234   259 0001:00269240   260 0001:0026924B   261 0001:00269253
-   264 0001:00269258   265 0001:00269264   266 0001:0026926F   269 0001:00269274
-   270 0001:00269280   272 0001:0026928C   273 0001:002692A8   274 0001:002692C6
-   275 0001:002692E3   276 0001:00269301   277 0001:0026931D   280 0001:00269324
-   281 0001:0026932B   282 0001:00269336   284 0001:00269343   285 0001:0026935A
-   288 0001:00269360   289 0001:0026937E   291 0001:00269396   293 0001:002693DC
-   294 0001:00269403   297 0001:0026943C   298 0001:00269445   300 0001:00269452
-   302 0001:0026945E   303 0001:00269480   305 0001:0026948D   313 0001:00269494
-   314 0001:0026949F   315 0001:002694BD   316 0001:002694DB   318 0001:002694F5
-   319 0001:00269506   320 0001:0026950B   322 0001:00269537   323 0001:0026954C
-   324 0001:00269562   325 0001:0026956B   327 0001:00269579   328 0001:0026957C
-   320 0001:00269590   329 0001:002695A9   331 0001:002695C6   332 0001:002695DA
-   338 0001:002695E0   339 0001:002695EC   341 0001:002695FE   342 0001:00269604
-   344 0001:0026961B   346 0001:00269626   349 0001:0026962C   350 0001:00269633
-   351 0001:0026964D   354 0001:00269650   355 0001:0026965C   356 0001:00269670
-   364 0001:00269678   365 0001:00269699   366 0001:002696C5   367 0001:002696E4
-   368 0001:002696F5   371 0001:00269728   372 0001:00269734   373 0001:00269745
-   376 0001:0026974C   377 0001:0026975C   378 0001:00269765   379 0001:00269777
-   382 0001:00269780   383 0001:0026978C   384 0001:002697AA   387 0001:002697B0
-   388 0001:002697B7   389 0001:002697CA   390 0001:002697E4   392 0001:002697FB
+   107 0001:00268C94   108 0001:00268CA3   109 0001:00268CAF   110 0001:00268CBB
+   114 0001:00268CC0   115 0001:00268CCF   116 0001:00268CDB   117 0001:00268CE7
+   120 0001:00268CEC   121 0001:00268D20   123 0001:00268D64   124 0001:00268D70
+   125 0001:00268D7E   126 0001:00268D89   127 0001:00268D95   131 0001:00268E19
+   132 0001:00268E24   134 0001:00268E31   136 0001:00268E5D   138 0001:00268E60
+   139 0001:00268E6C   143 0001:00268E7E   146 0001:00268EC4   147 0001:00268EEC
+   148 0001:00268EF7   149 0001:00268F03   150 0001:00268F11   152 0001:00268F1C
+   153 0001:00268F28   157 0001:00268FA0   158 0001:00268FAB   160 0001:00268FB8
+   162 0001:00268FE4   164 0001:00268FE7   165 0001:00268FF3   168 0001:00269005
+   171 0001:00269038   172 0001:00269044   173 0001:0026904F   175 0001:0026905C
+   176 0001:0026906D   179 0001:00269074   180 0001:00269080   181 0001:0026908D
+   183 0001:00269098   185 0001:002690A4   186 0001:002690C6   189 0001:002690D1
+   190 0001:002690E8   193 0001:002690EC   194 0001:002690F8   195 0001:00269107
+   197 0001:00269123   198 0001:0026912B   201 0001:00269130   202 0001:0026913C
+   203 0001:00269144   206 0001:00269148   207 0001:00269154   208 0001:00269160
+   209 0001:00269174   212 0001:00269178   213 0001:00269184   214 0001:00269190
+   215 0001:002691A4   218 0001:002691A8   219 0001:002691D0   220 0001:002691F3
+   221 0001:00269201   223 0001:0026922C   224 0001:0026925E   226 0001:00269269
+   227 0001:00269276   229 0001:0026929C   231 0001:0026929F   232 0001:002692AC
+   235 0001:002692C2   238 0001:002692EC   239 0001:002692F5   241 0001:00269301
+   242 0001:00269323   245 0001:00269330   247 0001:0026933C   248 0001:0026935E
+   250 0001:0026936B   253 0001:00269370   254 0001:0026937F   255 0001:00269385
+   258 0001:0026938C   259 0001:00269398   260 0001:002693A3   261 0001:002693AB
+   264 0001:002693B0   265 0001:002693BC   266 0001:002693C7   269 0001:002693CC
+   270 0001:002693D8   272 0001:002693E4   273 0001:00269400   274 0001:0026941E
+   275 0001:0026943B   276 0001:00269459   277 0001:00269475   280 0001:0026947C
+   281 0001:00269483   282 0001:0026948E   284 0001:0026949B   285 0001:002694B2
+   288 0001:002694B8   289 0001:002694D6   291 0001:002694EE   293 0001:00269534
+   294 0001:0026955B   297 0001:00269594   298 0001:0026959D   300 0001:002695AA
+   302 0001:002695B6   303 0001:002695D8   305 0001:002695E5   313 0001:002695EC
+   314 0001:002695F7   315 0001:00269615   316 0001:00269633   318 0001:0026964D
+   319 0001:0026965E   320 0001:00269663   322 0001:0026968F   323 0001:002696A4
+   324 0001:002696BA   325 0001:002696C3   327 0001:002696D1   328 0001:002696D4
+   320 0001:002696E8   329 0001:00269701   331 0001:0026971E   332 0001:00269732
+   338 0001:00269738   339 0001:00269744   341 0001:00269756   342 0001:0026975C
+   344 0001:00269773   346 0001:0026977E   349 0001:00269784   350 0001:0026978B
+   351 0001:002697A5   354 0001:002697A8   355 0001:002697B4   356 0001:002697C8
+   364 0001:002697D0   365 0001:002697F1   366 0001:0026981D   367 0001:0026983C
+   368 0001:0026984D   371 0001:00269880   372 0001:0026988C   373 0001:0026989D
+   376 0001:002698A4   377 0001:002698B4   378 0001:002698BD   379 0001:002698CF
+   382 0001:002698D8   383 0001:002698E4   384 0001:00269902   387 0001:00269908
+   388 0001:0026990F   389 0001:00269922   390 0001:0026993C   392 0001:00269953
 
 Line numbers for UPaciente(Modelo\Persistencia\UPaciente.pas) segment .text
 
@@ -33827,119 +33839,127 @@ Line numbers for UPaciente(Modelo\Persistencia\UPaciente.pas) segment .text
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioPaciente.pas) segment .text
 
-    37 0001:0026BAD8    38 0001:0026BB03    39 0001:0026BB2E    49 0001:0026BBA0
-    50 0001:0026BBC4    51 0001:0026BBCF    53 0001:0026BBDC    54 0001:0026BBFF
-    55 0001:0026BC22    56 0001:0026BC3B    57 0001:0026BC5E    58 0001:0026BC81
-    59 0001:0026BC99    60 0001:0026BCBC    61 0001:0026BCDF    62 0001:0026BD02
-    63 0001:0026BD25    64 0001:0026BD48    65 0001:0026BD6B    66 0001:0026BD8E
-    67 0001:0026BDB1    68 0001:0026BDD4    69 0001:0026BDED    70 0001:0026BE10
-    71 0001:0026BE33    72 0001:0026BE56    73 0001:0026BE79    77 0001:0026BE9C
-    81 0001:0026C144    82 0001:0026C153    85 0001:0026C161    86 0001:0026C179
-    87 0001:0026C191    88 0001:0026C1AC    89 0001:0026C1C4    90 0001:0026C1DC
-    91 0001:0026C1F4    92 0001:0026C20C    93 0001:0026C224    94 0001:0026C23C
-    95 0001:0026C254    96 0001:0026C26C    97 0001:0026C284    98 0001:0026C29C
-    99 0001:0026C2B4   100 0001:0026C2CC   101 0001:0026C2E7   102 0001:0026C2FF
-   103 0001:0026C317   104 0001:0026C32F   105 0001:0026C347   107 0001:0026C35F
+    37 0001:0026BCCC    38 0001:0026BCF7    39 0001:0026BD22    49 0001:0026BD94
+    50 0001:0026BDB8    51 0001:0026BDC3    53 0001:0026BDCC    54 0001:0026BDEF
+    55 0001:0026BE12    56 0001:0026BE2B    57 0001:0026BE4E    58 0001:0026BE71
+    59 0001:0026BE89    60 0001:0026BEAC    61 0001:0026BECF    62 0001:0026BEF2
+    63 0001:0026BF15    64 0001:0026BF38    65 0001:0026BF5B    66 0001:0026BF7E
+    67 0001:0026BFA1    68 0001:0026BFC4    69 0001:0026BFDD    70 0001:0026C000
+    71 0001:0026C023    72 0001:0026C046    73 0001:0026C069    77 0001:0026C08C
+    81 0001:0026C334    82 0001:0026C343    85 0001:0026C351    86 0001:0026C369
+    87 0001:0026C381    88 0001:0026C39C    89 0001:0026C3B4    90 0001:0026C3CC
+    91 0001:0026C3E4    92 0001:0026C3FC    93 0001:0026C414    94 0001:0026C42C
+    95 0001:0026C444    96 0001:0026C45C    97 0001:0026C474    98 0001:0026C48C
+    99 0001:0026C4A4   100 0001:0026C4BC   101 0001:0026C4D7   102 0001:0026C4EF
+   103 0001:0026C507   104 0001:0026C51F   105 0001:0026C537   107 0001:0026C54F
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   189 0001:0026C5E4   190 0001:0026C600   191 0001:0026C60F   192 0001:0026C644
-   194 0001:0026C653   195 0001:0026C66F
+   221 0001:0026C7D4   222 0001:0026C7F0   223 0001:0026C7FB   224 0001:0026C82C
+   226 0001:0026C837   227 0001:0026C84F
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   156 0001:0026C70C   157 0001:0026C72B   160 0001:0026C739   161 0001:0026C748
-   162 0001:0026C75D   165 0001:0026C7BF   166 0001:0026C7D0
+   188 0001:0026C8EC   189 0001:0026C90B   192 0001:0026C919   193 0001:0026C924
+   194 0001:0026C935   197 0001:0026C993   198 0001:0026C9A0
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   137 0001:0026C858   138 0001:0026C85F   139 0001:0026C873
+   169 0001:0026CA28   170 0001:0026CA2F   171 0001:0026CA3F
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   142 0001:0026C878   143 0001:0026C897   148 0001:0026C8A6   149 0001:0026C8BB
-   152 0001:0026C91D   153 0001:0026C92E
+   174 0001:0026CA44   175 0001:0026CA63   180 0001:0026CA6E   181 0001:0026CA7F
+   184 0001:0026CADD   185 0001:0026CAEA
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   131 0001:0026C9D4   132 0001:0026C9E0   133 0001:0026C9FD   134 0001:0026CA11
+   163 0001:0026CB90   164 0001:0026CB9C   165 0001:0026CBB5   166 0001:0026CBC5
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   207 0001:0026CA18   208 0001:0026CA24   209 0001:0026CA43
+   239 0001:0026CBCC   240 0001:0026CBD8   241 0001:0026CBF3
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   213 0001:0026CA5C   214 0001:0026CA6B   215 0001:0026CA83
+   245 0001:0026CC0C   246 0001:0026CC1B   247 0001:0026CC33
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   172 0001:0026CA9C   173 0001:0026CAC2   175 0001:0026CAD2   176 0001:0026CAE3
-   177 0001:0026CAF8   179 0001:0026CB0C   181 0001:0026CB3C   182 0001:0026CB4A
-   179 0001:0026CB73   183 0001:0026CB8C   185 0001:0026CBA9   186 0001:0026CBE1
+   204 0001:0026CC4C   205 0001:0026CC72   207 0001:0026CC82   208 0001:0026CC8F
+   209 0001:0026CCA0   211 0001:0026CCB0   213 0001:0026CCDC   214 0001:0026CCEA
+   211 0001:0026CD13   215 0001:0026CD2C   217 0001:0026CD49   218 0001:0026CD81
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-    95 0001:0026CC0C    96 0001:0026CC3B    97 0001:0026CC44    98 0001:0026CC52
-    99 0001:0026CC60   100 0001:0026CC6E   101 0001:0026CCA6
+   101 0001:0026CDAC   102 0001:0026CDDB   103 0001:0026CDE5   104 0001:0026CDEE
+   105 0001:0026CDFC   106 0001:0026CE0A   107 0001:0026CE18   109 0001:0026CE50
+   110 0001:0026CE6A   112 0001:0026CE82   113 0001:0026CE9C   115 0001:0026CEB4
+   116 0001:0026CECE   118 0001:0026CEE6   119 0001:0026CF00   121 0001:0026CF18
+   122 0001:0026CF32   123 0001:0026CF4A
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   118 0001:0026CD08   119 0001:0026CD27   121 0001:0026CD33   122 0001:0026CD42
-   123 0001:0026CD57   125 0001:0026CD9F   126 0001:0026CDB0   127 0001:0026CDCD
-   128 0001:0026CDE1
+   126 0001:0026CFAC   127 0001:0026CFBD   128 0001:0026CFDD   129 0001:0026CFFD
+   130 0001:0026D01D   131 0001:0026D03D   132 0001:0026D05D   133 0001:0026D06B
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   218 0001:0026CE50   219 0001:0026CE5D   221 0001:0026CE69   222 0001:0026CE71
-   223 0001:0026CE86   224 0001:0026CE94
+   150 0001:0026D080   151 0001:0026D09F   153 0001:0026D0AB   154 0001:0026D0B6
+   155 0001:0026D0C7   157 0001:0026D10B   158 0001:0026D118   159 0001:0026D131
+   160 0001:0026D141
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   198 0001:0026CE9C   199 0001:0026CEA9   200 0001:0026CEB1   201 0001:0026CEC6
-   203 0001:0026CECE   204 0001:0026CEDA
+   250 0001:0026D1B0   251 0001:0026D1BD   253 0001:0026D1C9   254 0001:0026D1D1
+   255 0001:0026D1E2   256 0001:0026D1F0
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   227 0001:0026CEE0   228 0001:0026CEEC   229 0001:0026CEF1   231 0001:0026CF00
-   232 0001:0026CF0D   234 0001:0026CF17
+   230 0001:0026D1F8   231 0001:0026D205   232 0001:0026D20D   233 0001:0026D21E
+   235 0001:0026D226   236 0001:0026D232
 
 Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   104 0001:0026CF20   105 0001:0026CF3F   109 0001:0026CF4E   111 0001:0026CF93
-   112 0001:0026CFB0   114 0001:0026CFBF   115 0001:0026CFD4
+   259 0001:0026D238   260 0001:0026D244   261 0001:0026D249   263 0001:0026D258
+   264 0001:0026D265   266 0001:0026D26F
+
+Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   136 0001:0026D278   137 0001:0026D297   141 0001:0026D2A2   143 0001:0026D2E3
+   144 0001:0026D2FC   146 0001:0026D307   147 0001:0026D318
 
 Line numbers for URegraCRUDPaciente(Modelo\Regra\URegraCRUDPaciente.pas) segment .text
 
-    23 0001:0026D134    24 0001:0026D14C    25 0001:0026D156    26 0001:0026D168
+    23 0001:0026D478    24 0001:0026D490    25 0001:0026D49A    26 0001:0026D4AC
 
 Line numbers for URegraCRUDPaciente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   115 0001:0026D18E
+   147 0001:0026D4D2
 
 Line numbers for UFrmPacientes(VisaoControle\UFrmPacientes.pas) segment .text
 
-    79 0001:0026D8CC    80 0001:0026D8D8    81 0001:0026D8E3    82 0001:0026D900
-    83 0001:0026D91D    84 0001:0026D93A    87 0001:0026D940    88 0001:0026D95C
-    89 0001:0026D964    90 0001:0026D97B    92 0001:0026D992   100 0001:0026D9E7
-   103 0001:0026DA78   105 0001:0026DA7F   106 0001:0026DA90   109 0001:0026DA94
-   111 0001:0026DAB5   112 0001:0026DADA   113 0001:0026DAFF   114 0001:0026DB3D
-   115 0001:0026DB62   116 0001:0026DB87   117 0001:0026DBAC   118 0001:0026DBD1
-   119 0001:0026DBF6   120 0001:0026DC1B   121 0001:0026DC40   122 0001:0026DC65
-   123 0001:0026DC8A   124 0001:0026DCAF   125 0001:0026DCED   126 0001:0026DD12
-   127 0001:0026DD37   128 0001:0026DD5C   129 0001:0026DD81   130 0001:0026DDA6
-   131 0001:0026DDCB   132 0001:0026DDF0   135 0001:0026DE88   137 0001:0026DEA2
-   138 0001:0026DEBC   139 0001:0026DED6   140 0001:0026DF03   141 0001:0026DF1D
-   142 0001:0026DF37   143 0001:0026DF5C   144 0001:0026DF76   145 0001:0026DF90
-   146 0001:0026DFAA   147 0001:0026DFC4   148 0001:0026DFDE   149 0001:0026DFF8
-   150 0001:0026E012   151 0001:0026E03F   152 0001:0026E059   153 0001:0026E073
-   154 0001:0026E08D   155 0001:0026E0A7   156 0001:0026E0C1   157 0001:0026E0DB
-   158 0001:0026E0F5   160 0001:0026E122
+    79 0001:0026DC10    80 0001:0026DC1C    81 0001:0026DC27    82 0001:0026DC44
+    83 0001:0026DC61    84 0001:0026DC7E    87 0001:0026DC84    88 0001:0026DCA0
+    89 0001:0026DCA8    90 0001:0026DCBF    92 0001:0026DCD6   100 0001:0026DD2B
+   103 0001:0026DDBC   105 0001:0026DDC3   106 0001:0026DDD4   109 0001:0026DDD8
+   111 0001:0026DDF9   112 0001:0026DE1E   113 0001:0026DE43   114 0001:0026DE81
+   115 0001:0026DEA6   116 0001:0026DECB   117 0001:0026DEF0   118 0001:0026DF15
+   119 0001:0026DF3A   120 0001:0026DF5F   121 0001:0026DF84   122 0001:0026DFA9
+   123 0001:0026DFCE   124 0001:0026DFF3   125 0001:0026E031   126 0001:0026E056
+   127 0001:0026E07B   128 0001:0026E0A0   129 0001:0026E0C5   130 0001:0026E0EA
+   131 0001:0026E10F   132 0001:0026E134   135 0001:0026E1CC   137 0001:0026E1E6
+   138 0001:0026E200   139 0001:0026E21A   140 0001:0026E247   141 0001:0026E261
+   142 0001:0026E27B   143 0001:0026E2A0   144 0001:0026E2BA   145 0001:0026E2D4
+   146 0001:0026E2EE   147 0001:0026E308   148 0001:0026E322   149 0001:0026E33C
+   150 0001:0026E356   151 0001:0026E383   152 0001:0026E39D   153 0001:0026E3B7
+   154 0001:0026E3D1   155 0001:0026E3EB   156 0001:0026E405   157 0001:0026E41F
+   158 0001:0026E439   160 0001:0026E466
 
 Line numbers for UFrmPrincipal(VisaoControle\UFrmPrincipal.pas) segment .text
 
-    41 0001:0028210C    42 0001:00282118    44 0001:00282120    47 0001:00282124
-    48 0001:00282146    50 0001:00282193    52 0001:00282213
+    41 0001:00282450    42 0001:0028245C    44 0001:00282464    47 0001:00282468
+    48 0001:0028248A    50 0001:002824D7    52 0001:00282557
 
 Line numbers for UConstantes(Modelo\UConstantes.pas) segment .text
 
@@ -33975,20 +33995,20 @@ Line numbers for UCarteiraVacinacao(Modelo\Persistencia\UCarteiraVacinacao.pas) 
 
 Line numbers for UFrmTelaInicial(VisaoControle\UFrmTelaInicial.pas) segment .text
 
-    38 0001:00282514    39 0001:00282520    40 0001:00282538    43 0001:0028253C
-    45 0001:00282548    47 0001:00282553
+    38 0001:00282858    39 0001:00282864    40 0001:0028287C    43 0001:00282880
+    45 0001:0028288C    47 0001:00282897
 
 Line numbers for URepositorioCoren(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   115 0001:00000000
+   147 0001:00000000
 
 Line numbers for URepositorioLoteVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   115 0001:00000000
+   147 0001:00000000
 
 Line numbers for URepositorioCarteiraVacinacao(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   115 0001:00000000
+   147 0001:00000000
 
 Line numbers for UCidade(Modelo\Persistencia\UCidade.pas) segment .text
 
