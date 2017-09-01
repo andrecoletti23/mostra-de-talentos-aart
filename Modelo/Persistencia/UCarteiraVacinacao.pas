@@ -11,32 +11,35 @@ uses
 type
   TCARTEIRA_VACINACAO = class(TENTIDADE)
   public
-  CAR_COD_VACINACAO: String;
-	CAR_NOME: String;
-	CAR_VACINA: String;
-	CAR_DOSE: Integer;
-	CAR_DATA: String;
-	CAR_RESPONSAVEL: String;
-	CAR_COD_COREN: TCOREN;
-	CAR_COD_LOTE: TLOTEVACINA;
-	CAR_LOTE_VENCIMENTO: TLOTEVACINA;
+  COD_VACINACAO: String;
+	NOME: String;
+	VACINA: String;
+	DOSE: Integer;
+	DATA: String;
+	RESPONSAVEL: String;
+	COD_COREN: String; //TCOREN;
+	COD_LOTE: String; //TLOTEVACINA;
+	LOTE_VENCIMENTO: String; //TLOTEVACINA;
 
 
-    constructor Create; override;
-    destructor Destroy; override;
+    //constructor Create; override;
+   // destructor Destroy; override;
   end;
 
 const
-  TBL_CARTEIRA_VACINACAO    = 'CATEIRA_VACINACAO';
-  FLD_COD_VACINACAO         = 'CAR_COD_VACINACAO';
-  FLD_NOME                  = 'CAR_NOME';
-  FLD_VACINA                = 'CAR_VACINA';
-  FLD_DOSE                  = 'CAR_DOSE';
-  FLD_DATA                  = 'CAR_DATA';
-  FLD_RESPONSAVEL           = 'CAR_RESPONSAVEL';
-  FLD_COD_COREN             = 'CAR_COD_COREN';
-  FLD_COD_LOTE              = 'CAR_COD_LOTE';
-  FLD_LOTE_VENCIMENTO       = 'CAR_LOTE_VENCIMENTO';
+  TBL_CARTEIRA_VACINACAO        = 'CATEIRA_VACINACAO';
+  FLD_CAR_COD_VACINACAO         = 'COD_VACINACAO';
+  FLD_CAR_NOME                  = 'NOME';
+  FLD_CAR_VACINA                = 'VACINA';
+  FLD_CAR_DOSE                  = 'DOSE';
+  FLD_CAR_DATA                  = 'DATA';
+  FLD_CAR_RESPONSAVEL           = 'RESPONSAVEL';
+  FLD_CAR_COD_COREN             = 'COD_COREN';
+  FLD_CAR_COD_LOTE              = 'COD_LOTE';
+  FLD_CAR_LOTE_VENCIMENTO       = 'LOTE_VENCIMENTO';
+
+resourcestring
+  STR_CARTEIRA_VACINACAO = 'Carteira de Vacinação Online';
 
 implementation
 
@@ -47,20 +50,20 @@ uses
 
 { TCARTEIRA_VACINACAO }
 
-constructor TCARTEIRA_VACINACAO.Create;
+{constructor TCARTEIRA_VACINACAO.Create;
 begin
   inherited;
-  CAR_COD_COREN       := TCOREN.Create;
-  CAR_LOTE_VENCIMENTO := TLOTEVACINA.Create;
-  CAR_COD_LOTE        := TLOTEVACINA.Create;
+  COD_COREN       := TCOREN.Create;
+  LOTE_VENCIMENTO := TLOTEVACINA.Create;
+  COD_LOTE        := TLOTEVACINA.Create;
 end;
 
 destructor TCARTEIRA_VACINACAO.Destroy;
 begin
-  FreeAndNil(CAR_COD_COREN);
-  FreeAndNil(CAR_COD_LOTE);
-  FreeAndNil(CAR_LOTE_VENCIMENTO);
+  FreeAndNil(COD_COREN);
+  FreeAndNil(COD_LOTE);
+  FreeAndNil(LOTE_VENCIMENTO);
   inherited;
-end;
+end; }
 
 end.

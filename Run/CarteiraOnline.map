@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 002870D0H .text                   CODE
+ 0001:00401000 00287100H .text                   CODE
  0002:00689000 000012D8H .itext                  ICODE
  0003:0068B000 0000534CH .data                   DATA
  0004:00691000 000053E0H .bss                    BSS
@@ -139,7 +139,7 @@ Detailed map of segments
  0001:0026C29C 00013C9C C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
  0001:0027FF38 0000043C C=CODE     S=.text    G=(none)   M=UFrmPrincipal ACBP=A9
  0001:00280374 00000340 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:002806B4 00006A1C C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:002806B4 00006A4C C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -33947,7 +33947,7 @@ Line numbers for UConstantes(Modelo\UConstantes.pas) segment .text
 
 Line numbers for ULoteVacina(ULoteVacina.pas) segment .text
 
-    51 0001:00000000
+    53 0001:00000000
 
 Line numbers for UAgente(UAgente.pas) segment .text
 
@@ -33971,18 +33971,22 @@ Line numbers for UVacina(UVacina.pas) segment .text
 
 Line numbers for UCarteiraVacinacao(UCarteiraVacinacao.pas) segment .text
 
-    66 0001:00000000
+    69 0001:00000000
 
 Line numbers for UFrmTelaInicial(UFrmTelaInicial.pas) segment .text
 
     38 0001:0028067C    39 0001:00280688    40 0001:002806A0    43 0001:002806A4
     45 0001:002806B0    47 0001:002806BB
 
-Line numbers for URepositorioCarteiraVacinacao(URepositorioDB.pas) segment .text
+Line numbers for URepositorioCoren(URepositorioDB.pas) segment .text
 
    115 0001:00000000
 
-Line numbers for URepositorioCoren(URepositorioDB.pas) segment .text
+Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
+
+   115 0001:00000000
+
+Line numbers for URepositorioCarteiraVacinacao(URepositorioDB.pas) segment .text
 
    115 0001:00000000
 
@@ -33996,8 +34000,8 @@ Line numbers for UEstado(UEstado.pas) segment .text
 
 Line numbers for CarteiraOnline(CarteiraOnline.dpr) segment .itext
 
-    39 0002:00001260    40 0002:00001270    41 0002:0000127C    42 0002:00001294
-    43 0002:000012AC    44 0002:000012C4    45 0002:000012D0
+    40 0002:00001260    41 0002:00001270    42 0002:0000127C    43 0002:00001294
+    44 0002:000012AC    45 0002:000012C4    46 0002:000012D0
 
 Bound resource files
 

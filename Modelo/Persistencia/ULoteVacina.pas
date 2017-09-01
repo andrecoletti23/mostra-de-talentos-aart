@@ -27,7 +27,9 @@ const
   FLD_LABORATORIO     = 'DEP_LABORATORIO';
   FLD_VENCIMENTO_LOTE = 'DEP_VENCIMENTO_LOTE';
 
+RESOURCESTRING
 
+STR_LOTE_VACINA = 'Deposito de Vacinas';
 
 implementation
  uses

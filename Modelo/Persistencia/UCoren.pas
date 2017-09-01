@@ -13,7 +13,7 @@ type
    COREN         : String;
    NOME          : String;
    ESPECIFICACAO : String;
-   DATA_NASC     : TDateTime;
+   DATA_NASC     : TDate;
 
    end;
 
