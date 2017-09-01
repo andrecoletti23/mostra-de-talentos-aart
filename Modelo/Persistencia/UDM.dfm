@@ -30,8 +30,8 @@ object dmProway: TdmProway
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:C:\Users\andra\OneDrive\Documentos\GitHub\mos' +
-        'tra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
