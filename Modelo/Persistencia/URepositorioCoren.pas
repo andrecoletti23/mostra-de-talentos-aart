@@ -40,7 +40,7 @@ end;
 procedure TRepositorioCOREN.AtribuiDBParaEntidade(const coCOREN: TCOREN);
 begin
   inherited;
-  with dmProway.SQLSelect do
+  with FSQLSelect do
     begin
       coCOREN.COREN               := FieldByName(FLD_COREN).AsString ;
       coCOREN.NOME                := FieldByName(FLD_NOME).AsString ;

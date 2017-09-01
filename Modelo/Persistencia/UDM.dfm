@@ -29,7 +29,9 @@ object dmEntra21: TdmEntra21
       'GetDriverFunc=getSQLDriverINTERBASE'
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
-      'Database=localhost:T:\Projetos\Aeroporto\DB\AEROPORTO.FDB'
+      
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
