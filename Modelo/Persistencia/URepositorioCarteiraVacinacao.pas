@@ -57,7 +57,7 @@ procedure TRepositorioCarteiraVacinacao.AtribuiDBParaEntidade(
   const coCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO);
 begin
   inherited;
-  with dmProway.SQLSelect do
+  with FSQLSelect do
     begin
         coCARTEIRA_VACINACAO.COD_VACINACAO      := FieldByName(FLD_CAR_COD_VACINACAO).AsString ;
         coCARTEIRA_VACINACAO.NOME               := FieldByName(FLD_CAR_NOME).AsString ;
@@ -65,12 +65,12 @@ begin
         coCARTEIRA_VACINACAO.DOSE               := FieldByName(FLD_CAR_DOSE).AsInteger ;
         coCARTEIRA_VACINACAO.DATA               := FieldByName(FLD_CAR_DATA).AsString ;
         coCARTEIRA_VACINACAO.RESPONSAVEL        := FieldByName(FLD_CAR_RESPONSAVEL).AsString  ;
-        coCARTEIRA_VACINACAO.COD_COREN          := //eldByName(FLD_CAR_COD_COREN).AsString   ;
-        TCOREN(FRepositorioCoren.Retorna(FieldByName(FLD_COREN).AsInteger));
-        coCARTEIRA_VACINACAO.COD_LOTE           := //FieldByName(FLD_CAR_COD_LOTE).AsString;
-        TLOTEVACINA(FRepositorioLoteVacina.Retorna(FieldByName(FLD_CAR_COD_LOTE).AsInteger)) ;
-        coCARTEIRA_VACINACAO.LOTE_VENCIMENTO    := //FieldByName(FLD_CAR_LOTE_VENCIMENTO).AsString;
-        TLOTEVACINA(FRepositorioLoteVacina.Retorna(FieldByName(FLD_CAR_LOTE_VENCIMENTO).AsInteger)) ;
+        coCARTEIRA_VACINACAO.COD_COREN          := FieldByName(FLD_CAR_COD_COREN).AsString   ;
+        //TCOREN(FRepositorioCoren.Retorna(FieldByName(FLD_COREN).AsInteger));
+        coCARTEIRA_VACINACAO.COD_LOTE           := FieldByName(FLD_CAR_COD_LOTE).AsString;
+        //TLOTEVACINA(FRepositorioLoteVacina.Retorna(FieldByName(FLD_CAR_COD_LOTE).AsInteger)) ;
+        coCARTEIRA_VACINACAO.LOTE_VENCIMENTO    := FieldByName(FLD_CAR_LOTE_VENCIMENTO).AsString;
+        //TLOTEVACINA(FRepositorioLoteVacina.Retorna(FieldByName(FLD_CAR_LOTE_VENCIMENTO).AsInteger)) ;
     end;
 end;
 

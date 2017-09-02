@@ -48,7 +48,7 @@ procedure TRepositorioPACIENTE.AtribuiDBParaEntidade(
   const coPACIENTE: TPACIENTE);
 begin
   inherited;
-  with dmProway.SQLSelect do
+  with FSQLSelect do
     begin
       coPACIENTE.CODIGO_SUS           := FieldByName(FLD_CODIGO_SUS).AsString;
       coPACIENTE.NOME                 := FieldByName(FLD_NOME).AsString;

@@ -40,7 +40,7 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
-  Application.CreateForm(TdmProway, dmProway);
+  Application.CreateForm(TdmEntra21, dmEntra21);
   Application.CreateForm(TfrmTelaInicial, frmTelaInicial);
   Application.Run;
 end.

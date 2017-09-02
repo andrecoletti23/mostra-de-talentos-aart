@@ -40,7 +40,7 @@ end;
 procedure TRepositorioLoteVacina.AtribuiDBParaEntidade(const coLOTEVACINA: TLOTEVACINA);
 begin
   inherited;
-  with dmProway.SQLSelect do
+  with FSQLSelect do
     begin
       coLOTEVACINA.CODIGO            := FieldByName(FLD_CODIGO).AsInteger ;
       coLOTEVACINA.VACINA_NOME       := FieldByName(FLD_VACINA_NOME ).AsString ;
