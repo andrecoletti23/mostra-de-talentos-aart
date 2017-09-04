@@ -25,6 +25,8 @@ const
   FLD_ESPECIFICACAO  = 'ESPECIFICACAO';
   FLD_DATA_NASC      = 'DATA_NASC';
 
+  //JUNTAR COM TABELA DE AGENTE
+  //DELETAR TABELA
 
 resourcestring
   STR_COREN = 'Certificação do Agente de Saúde';

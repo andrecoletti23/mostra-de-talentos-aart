@@ -1,13 +1,14 @@
 inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
-  ClientHeight = 446
-  ClientWidth = 757
-  ExplicitWidth = 773
-  ExplicitHeight = 485
+  ClientHeight = 616
+  ClientWidth = 747
+  ExplicitWidth = 763
+  ExplicitHeight = 655
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
-    Width = 757
+    Width = 747
+    ExplicitWidth = 757
     inherited lbCabecalho: TLabel
       Width = 219
       Caption = 'Aplicac'#227'o de Vacinas - SUS'
@@ -15,35 +16,40 @@ inherited frmVacinas: TfrmVacinas
     end
   end
   inherited gbLocalizar: TGroupBox
-    Width = 757
+    Width = 747
+    ExplicitWidth = 757
   end
   inherited pnlBotoes: TPanel
-    Top = 405
-    Width = 757
+    Top = 575
+    Width = 747
+    ExplicitTop = 405
+    ExplicitWidth = 757
     inherited btnLimpar: TBitBtn
-      Left = 522
+      Left = 512
+      ExplicitLeft = 522
     end
     inherited btnExcluir: TBitBtn
-      Left = 405
+      Left = 395
+      ExplicitLeft = 405
     end
     inherited btnGravar: TBitBtn
-      Left = 288
+      Left = 278
+      ExplicitLeft = 288
     end
     inherited btnSair: TBitBtn
-      Left = 639
+      Left = 629
+      ExplicitLeft = 639
     end
   end
   object gbVacinacao: TGroupBox [3]
     Left = 0
     Top = 86
-    Width = 757
-    Height = 213
-    Align = alClient
+    Width = 747
+    Height = 227
+    Align = alTop
     Caption = 'Vacina'#231#227'o'
     TabOrder = 3
-    ExplicitLeft = 8
-    ExplicitTop = 80
-    ExplicitHeight = 255
+    ExplicitWidth = 859
     object lbVacina: TLabel
       Left = 8
       Top = 65
@@ -155,17 +161,38 @@ inherited frmVacinas: TfrmVacinas
       TabOrder = 9
     end
   end
-  object dbVacincao: TDBGrid [4]
+  object gbHistorico: TGroupBox [4]
     Left = 0
-    Top = 299
-    Width = 757
-    Height = 106
-    Align = alBottom
+    Top = 433
+    Width = 747
+    Height = 139
+    Align = alTop
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+    ExplicitTop = 448
+    ExplicitHeight = 134
+    object dbVacincao: TDBGrid
+      Left = 2
+      Top = 15
+      Width = 743
+      Height = 122
+      Align = alClient
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+  end
+  object gbRetorno: TGroupBox [5]
+    Left = 0
+    Top = 313
+    Width = 747
+    Height = 120
+    Align = alTop
+    Caption = 'Agendamento de Retorno'
+    TabOrder = 5
   end
 end

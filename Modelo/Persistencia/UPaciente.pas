@@ -58,7 +58,7 @@ type
     FLD_CIDADE        = 'CIDADE';
 
 resourcestring
-  STR_PACIENTE = 'CADASTRO DE PACIENTES';
+  STR_PACIENTE = 'PACIENTES';
 
 implementation
 

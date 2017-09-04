@@ -8,12 +8,13 @@ uses
 type
   TLOTEVACINA= Class (TENTIDADE)
     public
-      ID              : Integer;
-      CODIGO          : Integer;
-      VACINA_NOME     : String;
-      LOTE_VACINA     : String;
-      LABORATORIO     : String;
-      VENCIMENTO_LOTE : String;
+      ID                 : Integer;
+      CODIGO             : Integer;
+      VACINA_NOME        : String;
+      LOTE_VACINA        : String;
+      LABORATORIO        : String;
+      VENCIMENTO_LOTE    : String; //MUDAR PARA DATE E ARRUMAR NOS DTO'S
+    //QUANTIDADE_ESTOQUE : STRING   ADD NO DB E ARRUMAR DTO E REPOSITORIO
 
       {constructor create ; override;
       destructor destroy ; override; }

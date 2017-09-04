@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 0028C814H .text                   CODE
+ 0001:00401000 0028C81CH .text                   CODE
  0002:0068E000 000012D8H .itext                  ICODE
  0003:00690000 0000535CH .data                   DATA
  0004:00696000 000053E4H .bss                    BSS
@@ -145,9 +145,9 @@ Detailed map of segments
  0001:00282030 00001688 C=CODE     S=.text    G=(none)   M=URepositorioLoteVacina ACBP=A9
  0001:002836B8 00001958 C=CODE     S=.text    G=(none)   M=URepositorioCarteiraVacinacao ACBP=A9
  0001:00285010 0000015C C=CODE     S=.text    G=(none)   M=URegraCRUDCarteiraVacinacao ACBP=A9
- 0001:0028516C 000008BC C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
- 0001:00285A28 00000358 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:00285D80 00006A94 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:0028516C 000008C4 C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
+ 0001:00285A30 00000358 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:00285D88 00006A94 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -510,7 +510,7 @@ Detailed map of segments
  0001:0010085C       Buttons.TGlyphList.Destroy
  0003:00002A48       Buttons.WordBreakFlag
  0002:00001260       CarteiraOnline.CarteiraOnline
- 0001:00285D80       CarteiraOnline.Finalization
+ 0001:00285D88       CarteiraOnline.Finalization
  0001:0000D6A8       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -15848,17 +15848,17 @@ Detailed map of segments
  0004:000053D8       UFrmPrincipal.FrmPrincipal
  0001:002805D0       UFrmPrincipal.TFrmPrincipal.FormShow
  0001:002805B8       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:00285A28       UFrmTelaInicial..TfrmTelaInicial
+ 0001:00285A30       UFrmTelaInicial..TfrmTelaInicial
  0004:000053E0       UFrmTelaInicial.frmTelaInicial
- 0001:00285D30       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:00285D58       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:00285D38       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:00285D60       UFrmTelaInicial.TfrmTelaInicial.Button2Click
  0001:0028516C       UfrmVacina..TfrmVacinas
  0004:000053DC       UfrmVacina.frmVacinas
- 0001:002855BC       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:002855F4       UfrmVacina.TfrmVacinas.Inicializa
- 0001:00285744       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:00285760       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:002858F4       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:00285608       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:00285640       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:0028574C       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:00285768       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:002858FC       UfrmVacina.TfrmVacinas.PreencheFormulario
  0001:002806B8       ULoteVacina..TLOTEVACINA
  0001:00261C4C       UOpcaoPesquisa..TOpcaoPesquisa
  0001:00262248       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
@@ -32732,15 +32732,15 @@ Detailed map of segments
  0001:00285010       URegraCRUDCarteiraVacinacao..TRegraCRUDCarteiraVacinacao
  0001:00285118       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.Create
  0001:0028516C       UfrmVacina..TfrmVacinas
- 0001:002855BC       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:002855F4       UfrmVacina.TfrmVacinas.Inicializa
- 0001:00285744       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:00285760       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:002858F4       UfrmVacina.TfrmVacinas.PreencheFormulario
- 0001:00285A28       UFrmTelaInicial..TfrmTelaInicial
- 0001:00285D30       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:00285D58       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:00285D80       CarteiraOnline.Finalization
+ 0001:00285608       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:00285640       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:0028574C       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:00285768       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:002858FC       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:00285A30       UFrmTelaInicial..TfrmTelaInicial
+ 0001:00285D38       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:00285D60       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:00285D88       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -34122,15 +34122,15 @@ Line numbers for UConstantes(Modelo\UConstantes.pas) segment .text
 
 Line numbers for ULoteVacina(ULoteVacina.pas) segment .text
 
-    53 0001:00000000
+    54 0001:00000000
 
 Line numbers for UAgente(UAgente.pas) segment .text
 
-    37 0001:00000000
+    40 0001:00000000
 
 Line numbers for UCoren(UCoren.pas) segment .text
 
-    34 0001:00000000
+    36 0001:00000000
 
 Line numbers for UGenero(Modelo\Persistencia\UGenero.pas) segment .text
 
@@ -34146,7 +34146,7 @@ Line numbers for UVacina(UVacina.pas) segment .text
 
 Line numbers for UCarteiraVacinacao(UCarteiraVacinacao.pas) segment .text
 
-    69 0001:00000000
+    70 0001:00000000
 
 Line numbers for URepositorioCoren(URepositorioCoren.pas) segment .text
 
@@ -34414,20 +34414,20 @@ Line numbers for URegraCRUDCarteiraVacinacao(URepositorioDB.pas) segment .text
 
 Line numbers for UfrmVacina(UfrmVacina.pas) segment .text
 
-    60 0001:002855BC    61 0001:002855C8    62 0001:002855D3    63 0001:002855F0
-    66 0001:002855F4    67 0001:00285610    68 0001:00285618    69 0001:0028562F
-    71 0001:00285646    78 0001:0028569B    81 0001:00285744    83 0001:0028574B
-    84 0001:0028575C    87 0001:00285760    89 0001:00285780    90 0001:002857A5
-    91 0001:002857CA    92 0001:002857EF    93 0001:00285814    94 0001:00285839
-    95 0001:0028585E    96 0001:00285883    97 0001:002858A8    99 0001:002858CD
-   102 0001:002858F4   104 0001:00285910   105 0001:0028592A   106 0001:00285944
-   107 0001:0028595E   108 0001:00285983   109 0001:0028599D   110 0001:002859B7
-   111 0001:002859D1   112 0001:002859EB   114 0001:00285A05   116 0001:00285A2D
+    63 0001:00285608    64 0001:00285614    65 0001:0028561F    66 0001:0028563C
+    69 0001:00285640    70 0001:0028565C    71 0001:00285664    72 0001:0028567B
+    74 0001:00285692    80 0001:002856DD    83 0001:0028574C    85 0001:00285753
+    86 0001:00285764    89 0001:00285768    91 0001:00285788    92 0001:002857AD
+    93 0001:002857D2    94 0001:002857F7    95 0001:0028581C    96 0001:00285841
+    97 0001:00285866    98 0001:0028588B    99 0001:002858B0   101 0001:002858D5
+   104 0001:002858FC   106 0001:00285918   107 0001:00285932   108 0001:0028594C
+   109 0001:00285966   110 0001:0028598B   111 0001:002859A5   112 0001:002859BF
+   113 0001:002859D9   114 0001:002859F3   116 0001:00285A0D   118 0001:00285A35
 
 Line numbers for UFrmTelaInicial(UFrmTelaInicial.pas) segment .text
 
-    38 0001:00285D30    39 0001:00285D3C    40 0001:00285D54    43 0001:00285D58
-    44 0001:00285D64    45 0001:00285D7C    47 0001:00285D87
+    38 0001:00285D38    39 0001:00285D44    40 0001:00285D5C    43 0001:00285D60
+    44 0001:00285D6C    45 0001:00285D84    47 0001:00285D8F
 
 Line numbers for UCidade(UCidade.pas) segment .text
 

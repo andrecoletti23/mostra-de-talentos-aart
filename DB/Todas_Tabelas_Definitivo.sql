@@ -47,8 +47,9 @@ create table paciente(
  
 );
 drop table paciente;
-create generator gen_paciente_id;
-
+create generator gen_carteira_vacinacao_id;
+insert into lote_vacina values (1, '2545','AFJD1452','1551sdg','Bayer', '17/06/1991');
+select * from lote_vacina;
 create table enfermeira(
   id integer not null,
   enfer_nome varchar (60) not null,
@@ -138,6 +139,28 @@ create table vacina (
 	constraint fk_faixa_etaria foreign key (faixa_etaria) references faixa_etaria(codigo)
 
 );
+
+create table prox_vacina(
+  id integer not null,
+  sus_codigo varchar (20) not null,
+  nome varchar (60) not null,
+  data_retorno date not null,
+  vacina_retorno varchar (60) not null,
+  telefone_retorno varchar (20) not null,
+  
+  vacina_aplicada_lote varchar (10) not null,
+  
+  constraint pk_vacina_info_id primary key (id)
+);
+
+
+create table dose(
+  id integer not null,
+  dose_vacina varchar (10) not null,
+  
+  constraint pk_dose_id primary key (id); 
+);
+
 select * from VACINA;
 
 /* MOCKS */

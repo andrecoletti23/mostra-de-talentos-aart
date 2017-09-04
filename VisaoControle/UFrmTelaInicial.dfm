@@ -50,7 +50,7 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 192
     Width = 121
     Height = 129
-    Caption = 'Button1'
+    Caption = 'Cadastro'
     TabOrder = 1
     OnClick = Button1Click
   end
@@ -59,7 +59,7 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 192
     Width = 121
     Height = 129
-    Caption = 'Button1'
+    Caption = 'Vacina'#231#227'o'
     TabOrder = 2
     OnClick = Button2Click
   end

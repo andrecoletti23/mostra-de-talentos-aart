@@ -16,7 +16,7 @@ type
     NOME            : String;
     IDADE_MINIMA    : Double;
     IDADE_MAXIMA    : Double;
-    DOSE            : Integer;
+    DOSE            : Integer; //MUDAR PARA STRING DB
     REFORCO         : Integer;
     GENERO          : TGenero;
     FAIXA_ETARIA    : TFaixa_Etaria;

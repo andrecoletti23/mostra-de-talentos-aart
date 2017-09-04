@@ -11,12 +11,12 @@ uses
   , UUtilitarios
   , UCoren
   , ULoteVacina
+  , UPaciente
   ;
 
 type
   TfrmVacinas = class(TFrmCRUD)
     gbVacinacao: TGroupBox;
-    dbVacincao: TDBGrid;
     edCodSus: TLabeledEdit;
     edNome: TLabeledEdit;
     cbVacinas: TComboBox;
@@ -29,6 +29,9 @@ type
     edLoteVacina: TLabeledEdit;
     edVencimento: TLabeledEdit;
     edUnidadeSaude: TLabeledEdit;
+    gbHistorico: TGroupBox;
+    dbVacincao: TDBGrid;
+    gbRetorno: TGroupBox;
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
 
@@ -70,11 +73,10 @@ begin
 
     AdicionaOpcaoPesquisa(TOpcaoPesquisa
     .Create
-    .AdicionaFiltro(FLD_CAR_COD_VACINACAO)
     .AdicionaFiltro(FLD_NOME)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
-    .DefineNomePesquisa(STR_CARTEIRA_VACINACAO)
-    .DefineVisao(TBL_CARTEIRA_VACINACAO));
+    .DefineNomePesquisa(STR_PACIENTE)
+    .DefineVisao(TBL_PACIENTE));
 end;
 
 procedure TfrmVacinas.PosicionaCursorPrimeiroCampo;
@@ -89,7 +91,7 @@ begin
   FCARTEIRA_VACINACAO.COD_VACINACAO    := edCodSus.Text;
   FCARTEIRA_VACINACAO.NOME             := edNome.Text;
   FCARTEIRA_VACINACAO.VACINA           := cbVacinas.text;
-  FCARTEIRA_VACINACAO.DOSE             := cbDose.Text;
+  FCARTEIRA_VACINACAO.DOSE             := StrToInt(cbDose.Text);//Mudar para String DB
   FCARTEIRA_VACINACAO.DATA             := edDataApli.Text;
   FCARTEIRA_VACINACAO.RESPONSAVEL      := edAplicador.Text;
   FCARTEIRA_VACINACAO.COD_COREN        := edCorenApli.Text;
@@ -104,7 +106,7 @@ begin
   edCodSus.Text         :=FCARTEIRA_VACINACAO.COD_VACINACAO     ;
   edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
-  cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
+  cbDose.Text           :=IntToStr(FCARTEIRA_VACINACAO.DOSE)    ;
   edDataApli.Text       :=FCARTEIRA_VACINACAO.DATA              ;
   edAplicador.Text      :=FCARTEIRA_VACINACAO.RESPONSAVEL       ;
   edCorenApli.Text      :=FCARTEIRA_VACINACAO.COD_COREN         ;

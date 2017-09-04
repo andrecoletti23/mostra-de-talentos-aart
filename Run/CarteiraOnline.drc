@@ -735,7 +735,7 @@ BEGIN
 	SqlConst_SObjectTypenameRequired,	"Object type name required as parameter value"
 	SqlConst_SCannotCreateFile,	"Cannot create file %s"
 	UDialogo_STR_ATENCAO,	"Atenção"
-	UPaciente_STR_PACIENTE,	"CADASTRO DE PACIENTES"
+	UPaciente_STR_PACIENTE,	"PACIENTES"
 	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
 	JConsts_sJPEGError,	"JPEG error #%d"
 	SqlConst_SINVALIDFLDTYPE,	"[0x0003]: Invalid Field Type"
