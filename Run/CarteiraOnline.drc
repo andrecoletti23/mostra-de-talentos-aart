@@ -9,6 +9,9 @@
 */
 
 #define JConsts_sJPEGImageFile 64816
+#define ULoteVacina_STR_LOTE_VACINA 64817
+#define UCoren_STR_COREN 64818
+#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64819
 #define SqlConst_SLOCALTRANSACTIVE 64832
 #define SqlConst_SMULTIPLETRANSNOTENABLED 64833
 #define SqlConst_SCONNECTIONFAILED 64834
@@ -716,6 +719,9 @@
 STRINGTABLE
 BEGIN
 	JConsts_sJPEGImageFile,	"JPEG Image File"
+	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
+	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
+	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
 	SqlConst_SLOCALTRANSACTIVE,	"[0x0013]: Local Transaction already active"
 	SqlConst_SMULTIPLETRANSNOTENABLED,	"[0x0014]: Multiple Transactions not Enabled"
 	SqlConst_SCONNECTIONFAILED,	"[0x0015]: Connection failed"
@@ -1422,17 +1428,18 @@ BEGIN
 	SysConst_SOverflow,	"Floating point overflow"
 END
 
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\Controls.res */
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\Buttons.res */
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBLogDlg.dfm */
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBPWDlg.dfm */
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBCtrls.res */
-/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
-/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\Controls.res */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\Buttons.res */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBLogDlg.dfm */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBPWDlg.dfm */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBCtrls.res */
+/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */

@@ -30,7 +30,9 @@ uses
   URepositorioCoren in 'Modelo\Persistencia\URepositorioCoren.pas',
   UCidade in 'Modelo\Persistencia\UCidade.pas',
   UEstado in 'Modelo\Persistencia\UEstado.pas',
-  URepositorioLoteVacina in 'Modelo\Persistencia\URepositorioLoteVacina.pas';
+  URepositorioLoteVacina in 'Modelo\Persistencia\URepositorioLoteVacina.pas',
+  UfrmVacina in 'VisaoControle\UfrmVacina.pas' {frmVacinas},
+  URegraCRUDCarteiraVacinacao in 'Modelo\Regra\URegraCRUDCarteiraVacinacao.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

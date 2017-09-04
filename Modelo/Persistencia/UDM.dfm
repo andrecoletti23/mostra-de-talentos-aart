@@ -1,8 +1,8 @@
 object dmEntra21: TdmEntra21
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Height = 97
-  Width = 183
+  Height = 117
+  Width = 186
   object SQLConnection: TSQLConnection
     ConnectionName = 'IBConnection'
     DriverName = 'Firebird'
@@ -30,8 +30,8 @@ object dmEntra21: TdmEntra21
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:C:\Users\andra\OneDrive\Documentos\GitHub\mos' +
+        'tra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

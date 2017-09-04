@@ -28,7 +28,7 @@ implementation
 uses
     UDM
   , DB
-  ;
+  , UfrmVacina;
 
 
 
@@ -41,7 +41,7 @@ end;
 
 procedure TfrmTelaInicial.Button2Click(Sender: TObject);
 begin
-  //Application.CreateForm(TfrmPacientes, frmPacientes);
+  Application.CreateForm(TfrmVacinas, frmVacinas);
 end;
 
 end.

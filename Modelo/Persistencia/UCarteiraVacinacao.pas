@@ -27,7 +27,7 @@ type
   end;
 
 const
-  TBL_CARTEIRA_VACINACAO        = 'CATEIRA_VACINACAO';
+  TBL_CARTEIRA_VACINACAO        = 'CARTEIRA_VACINACAO';
   FLD_CAR_COD_VACINACAO         = 'COD_VACINACAO';
   FLD_CAR_NOME                  = 'NOME';
   FLD_CAR_VACINA                = 'VACINA';
