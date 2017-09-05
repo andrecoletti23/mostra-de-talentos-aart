@@ -63,4 +63,13 @@ object frmTelaInicial: TfrmTelaInicial
     TabOrder = 2
     OnClick = Button2Click
   end
+  object Button3: TButton
+    Left = 376
+    Top = 192
+    Width = 129
+    Height = 129
+    Caption = 'Deposito'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
 end

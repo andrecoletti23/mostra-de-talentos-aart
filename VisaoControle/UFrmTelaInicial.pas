@@ -12,8 +12,10 @@ type
     Label1: TLabel;
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,7 +30,8 @@ implementation
 uses
     UDM
   , DB
-  , UfrmVacina;
+  , UfrmVacina
+  , UFrmDeposito;
 
 
 
@@ -42,6 +45,11 @@ end;
 procedure TfrmTelaInicial.Button2Click(Sender: TObject);
 begin
   Application.CreateForm(TfrmVacinas, frmVacinas);
+end;
+
+procedure TfrmTelaInicial.Button3Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmDeposito, FrmDeposito);
 end;
 
 end.

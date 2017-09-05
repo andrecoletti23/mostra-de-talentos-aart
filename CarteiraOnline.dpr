@@ -32,7 +32,9 @@ uses
   UEstado in 'Modelo\Persistencia\UEstado.pas',
   URepositorioLoteVacina in 'Modelo\Persistencia\URepositorioLoteVacina.pas',
   UfrmVacina in 'VisaoControle\UfrmVacina.pas' {frmVacinas},
-  URegraCRUDCarteiraVacinacao in 'Modelo\Regra\URegraCRUDCarteiraVacinacao.pas';
+  URegraCRUDCarteiraVacinacao in 'Modelo\Regra\URegraCRUDCarteiraVacinacao.pas',
+  UFrmDeposito in 'VisaoControle\UFrmDeposito.pas' {frmDeposito},
+  URegraCRUDLoteVacina in 'Modelo\Regra\URegraCRUDLoteVacina.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

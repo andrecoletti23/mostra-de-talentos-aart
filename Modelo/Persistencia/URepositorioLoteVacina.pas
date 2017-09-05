@@ -42,11 +42,12 @@ begin
   inherited;
   with FSQLSelect do
     begin
-      coLOTEVACINA.CODIGO            := FieldByName(FLD_CODIGO).AsInteger ;
+      //coLOTEVACINA.CODIGO            := FieldByName(FLD_CODIGO).AsInteger ;
       coLOTEVACINA.VACINA_NOME       := FieldByName(FLD_VACINA_NOME ).AsString ;
-      coLOTEVACINA.LOTE_VACINA       := FieldByName(FLD_LOTE_VACINA).AsString;
+      coLOTEVACINA.LOTE              := FieldByName(FLD_LOTE_VACINA).AsString;
       coLOTEVACINA.LABORATORIO       := FieldByName(FLD_LABORATORIO ).AsString;
       coLOTEVACINA.VENCIMENTO_LOTE   := FieldByName(FLD_VENCIMENTO_LOTE).AsDateTime;
+      coLOTEVACINA.QUANTIDADE_ESTOQUE:= FieldByName(FLD_QUANTIDADE_ESTOQUE).AsString;
     end;
 end;
 
@@ -56,11 +57,12 @@ begin
   inherited;
   with coSQLQuery do
     begin
-      ParamByName(FLD_CODIGO).AsInteger          := coLOTEVACINA.CODIGO;
-      ParamByName(FLD_VACINA_NOME).AsString      := coLOTEVACINA.VACINA_NOME;
-      ParamByName(FLD_LOTE_VACINA).AsString      := coLOTEVACINA.LOTE_VACINA ;
-      ParamByName(FLD_LABORATORIO).AsString      := coLOTEVACINA.LABORATORIO ;
-      ParamByName(FLD_VENCIMENTO_LOTE).AsDate  := coLOTEVACINA.VENCIMENTO_LOTE;
+      //ParamByName(FLD_CODIGO).AsInteger            := coLOTEVACINA.CODIGO;
+      ParamByName(FLD_VACINA_NOME).AsString        := coLOTEVACINA.VACINA_NOME;
+      ParamByName(FLD_LOTE_VACINA).AsString        := coLOTEVACINA.LOTE ;
+      ParamByName(FLD_LABORATORIO).AsString        := coLOTEVACINA.LABORATORIO ;
+      ParamByName(FLD_VENCIMENTO_LOTE).AsDate      := coLOTEVACINA.VENCIMENTO_LOTE;
+      ParamByName(FLD_QUANTIDADE_ESTOQUE).AsString := coLOTEVACINA.QUANTIDADE_ESTOQUE;
     end;
   end;
 end.

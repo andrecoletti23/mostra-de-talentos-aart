@@ -9,9 +9,8 @@ type
   TLOTEVACINA= Class (TENTIDADE)
     public
       ID                 : Integer;
-      CODIGO             : Integer;
       VACINA_NOME        : String;
-      LOTE_VACINA        : String;
+      LOTE               : String;
       LABORATORIO        : String;
       VENCIMENTO_LOTE    : TDate;
       QUANTIDADE_ESTOQUE : STRING
@@ -22,11 +21,10 @@ type
 
 const
   TBL_LOTE_VACINA        = 'LOTE_VACINA';
-  FLD_CODIGO             = 'DEP_CODIGO';
-  FLD_VACINA_NOME        = 'DEP_VACINA_NOME';
-  FLD_LOTE_VACINA        = 'DEP_LOTE_VACINA';
-  FLD_LABORATORIO        = 'DEP_LABORATORIO';
-  FLD_VENCIMENTO_LOTE    = 'DEP_VENCIMENTO_LOTE';
+  FLD_VACINA_NOME        = 'VACINA_NOME';
+  FLD_LOTE_VACINA        = 'LOTE';
+  FLD_LABORATORIO        = 'LABORATORIO';
+  FLD_VENCIMENTO_LOTE    = 'VENCIMENTO_LOTE';
   FLD_QUANTIDADE_ESTOQUE = 'QUANTIDADE_ESTOQUE';
 
 RESOURCESTRING
