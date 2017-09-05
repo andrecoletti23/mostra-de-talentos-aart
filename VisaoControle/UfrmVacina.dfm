@@ -8,7 +8,7 @@ inherited frmVacinas: TfrmVacinas
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 747
-    ExplicitWidth = 757
+    ExplicitWidth = 747
     inherited lbCabecalho: TLabel
       Width = 219
       Caption = 'Aplicac'#227'o de Vacinas - SUS'
@@ -17,28 +17,28 @@ inherited frmVacinas: TfrmVacinas
   end
   inherited gbLocalizar: TGroupBox
     Width = 747
-    ExplicitWidth = 757
+    ExplicitWidth = 747
   end
   inherited pnlBotoes: TPanel
     Top = 575
     Width = 747
-    ExplicitTop = 405
-    ExplicitWidth = 757
+    ExplicitTop = 575
+    ExplicitWidth = 747
     inherited btnLimpar: TBitBtn
       Left = 512
-      ExplicitLeft = 522
+      ExplicitLeft = 512
     end
     inherited btnExcluir: TBitBtn
       Left = 395
-      ExplicitLeft = 405
+      ExplicitLeft = 395
     end
     inherited btnGravar: TBitBtn
       Left = 278
-      ExplicitLeft = 288
+      ExplicitLeft = 278
     end
     inherited btnSair: TBitBtn
       Left = 629
-      ExplicitLeft = 639
+      ExplicitLeft = 629
     end
   end
   object gbVacinacao: TGroupBox [3]
@@ -49,7 +49,6 @@ inherited frmVacinas: TfrmVacinas
     Align = alTop
     Caption = 'Vacina'#231#227'o'
     TabOrder = 3
-    ExplicitWidth = 859
     object lbVacina: TLabel
       Left = 8
       Top = 65
@@ -170,8 +169,6 @@ inherited frmVacinas: TfrmVacinas
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
-    ExplicitTop = 448
-    ExplicitHeight = 134
     object dbVacincao: TDBGrid
       Left = 2
       Top = 15

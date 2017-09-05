@@ -22,7 +22,7 @@ type
 	COD_LOTE          : String; //TLOTEVACINA; NÃO MEXER
 	LOTE_VENCIMENTO   : TDate; //TLOTEVACINA;  MUDAR PARA DATE QUANDO DB ESTIVER OK
   UNIDADE_SAUDE     : String;
-
+  //TUDO OK, FALTANDO CRIAR COM TENTIDADES
 
     //constructor Create; override;
    // destructor Destroy; override;
