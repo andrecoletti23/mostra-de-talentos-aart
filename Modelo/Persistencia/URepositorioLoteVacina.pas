@@ -46,7 +46,7 @@ begin
       coLOTEVACINA.VACINA_NOME       := FieldByName(FLD_VACINA_NOME ).AsString ;
       coLOTEVACINA.LOTE_VACINA       := FieldByName(FLD_LOTE_VACINA).AsString;
       coLOTEVACINA.LABORATORIO       := FieldByName(FLD_LABORATORIO ).AsString;
-      coLOTEVACINA.VENCIMENTO_LOTE   := FieldByName(FLD_VENCIMENTO_LOTE).AsString;
+      coLOTEVACINA.VENCIMENTO_LOTE   := FieldByName(FLD_VENCIMENTO_LOTE).AsDateTime;
     end;
 end;
 
@@ -60,7 +60,7 @@ begin
       ParamByName(FLD_VACINA_NOME).AsString      := coLOTEVACINA.VACINA_NOME;
       ParamByName(FLD_LOTE_VACINA).AsString      := coLOTEVACINA.LOTE_VACINA ;
       ParamByName(FLD_LABORATORIO).AsString      := coLOTEVACINA.LABORATORIO ;
-      ParamByName(FLD_VENCIMENTO_LOTE).AsString  := coLOTEVACINA.VENCIMENTO_LOTE;
+      ParamByName(FLD_VENCIMENTO_LOTE).AsDate  := coLOTEVACINA.VENCIMENTO_LOTE;
     end;
   end;
 end.

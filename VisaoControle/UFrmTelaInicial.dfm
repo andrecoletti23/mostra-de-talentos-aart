@@ -3,7 +3,7 @@ object frmTelaInicial: TfrmTelaInicial
   Top = 0
   BorderStyle = bsNone
   ClientHeight = 726
-  ClientWidth = 1229
+  ClientWidth = 1012
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,7 +15,7 @@ object frmTelaInicial: TfrmTelaInicial
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    1229
+    1012
     726)
   PixelsPerInch = 96
   TextHeight = 13

@@ -11,16 +11,17 @@ uses
 type
   TCARTEIRA_VACINACAO = class(TENTIDADE)
   public
-  COD_VACINACAO: String; //NÃO PODE SER UNIQUE!!!!! VÁRIAS VACÍNAS PARA PACIENTES
-	NOME: String;
-	VACINA: String;
-	DOSE: Integer; //MUDAR PARA VARCHAR NO DB E ARRUMAR DTO
-	DATA: String; //MUDAR PARA DATE NO DB E ARRUMAR DTO
-	RESPONSAVEL: String;
-	COD_COREN: String; //TCOREN; MÃO MEXER
-	COD_LOTE: String; //TLOTEVACINA; NÃO MEXER
-	LOTE_VENCIMENTO: String; //TLOTEVACINA;  MUDAR PARA DATE QUANDO DB ESTIVER OK
-  //UNIDADE_SAUDE : String; ADD NO DB ESSE CAMPO E ARRUMAR DTO E REPOSITORIO
+  ID                : Integer;
+  COD_VACINACAO     : String; //NÃO PODE SER UNIQUE!!!!! VÁRIAS VACÍNAS PARA PACIENTES
+	NOME              : String;
+	VACINA            : String;
+	DOSE              : String; //MUDAR PARA VARCHAR NO DB E ARRUMAR DTO
+	DATA              : TDate; //MUDAR PARA DATE NO DB E ARRUMAR DTO
+	RESPONSAVEL       : String;
+	COD_COREN         : String; //TCOREN; MÃO MEXER
+	COD_LOTE          : String; //TLOTEVACINA; NÃO MEXER
+	LOTE_VENCIMENTO   : TDate; //TLOTEVACINA;  MUDAR PARA DATE QUANDO DB ESTIVER OK
+  UNIDADE_SAUDE     : String;
 
 
     //constructor Create; override;
@@ -38,7 +39,7 @@ const
   FLD_CAR_COD_COREN             = 'COD_COREN';
   FLD_CAR_COD_LOTE              = 'COD_LOTE';
   FLD_CAR_LOTE_VENCIMENTO       = 'LOTE_VENCIMENTO';
-
+  FLD_UNIDADE_SAUDE             = 'UNIDADE_SAUDE';
 resourcestring
   STR_CARTEIRA_VACINACAO = 'Carteira de Vacinação Online';
 

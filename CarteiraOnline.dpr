@@ -27,7 +27,7 @@ uses
   UFrmPacientes in 'VisaoControle\UFrmPacientes.pas' {frmPacientes},
   UPaciente in 'Modelo\Persistencia\UPaciente.pas',
   URepositorioCarteiraVacinacao in 'Modelo\Persistencia\URepositorioCarteiraVacinacao.pas',
-  URepositorioCoren in 'Modelo\Persistencia\URepositorioCoren.pas',
+  URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas',
   UCidade in 'Modelo\Persistencia\UCidade.pas',
   UEstado in 'Modelo\Persistencia\UEstado.pas',
   URepositorioLoteVacina in 'Modelo\Persistencia\URepositorioLoteVacina.pas',

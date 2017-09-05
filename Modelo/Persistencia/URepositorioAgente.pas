@@ -15,7 +15,7 @@ type
 
   public
     constructor Create;
-    destructor Destroy; override;
+    //destructor Destroy; override;
 
     procedure AtribuiDBParaEntidade(const coAGENTE: TAGENTE); override;
     procedure AtribuiEntidadeParaDB(const coAGENTE: TAGENTE;
@@ -31,44 +31,49 @@ uses
   , StrUtils
   ;
 
-{ TRepositorioCadPessoa }
-
-
-
+{ TRepositorioAgente }
 constructor TRepositorioAGENTE.Create;
 begin
-  Inherited Create(TAGENTE, TBL_AGENTE, FLD_ENTIDADE_ID, STR_AGENTE);
+  inherited Create(TAGENTE, TBL_AGENTE, FLD_ENTIDADE_ID, STR_AGENTE);
 end;
 
-destructor TRepositorioAgente.Destroy;
-begin
-
-  inherited;
-end;
-
-procedure TRepositorioAgente.AtribuiDBParaEntidade(
-  const coAGENTE: TAGENTE);
+procedure TRepositorioAGENTE.AtribuiDBParaEntidade(const coAGENTE: TAGENTE);
 begin
   inherited;
-    with dmProway.SQLSelect do
+  with FSQLSelect do
     begin
-      coAGENTE.AGENTE_NOME    := FieldByName(FDL_AGENTE_NOME).AsString;
-      coAGENTE.AGENTE_LOGIN   := FieldByName(FDL_AGENTE_LOGIN).AsString;
-      coAGENTE.AGENTE_SENHA   := FieldByName(FDL_AGENTE_SENHA).AsString;
-      coAGENTE.AGENTE_EMAIL   := FieldByName(FDL_AGENTE_EMAIL).AsString;
-  end;
+      coAGENTE.AGENTE_NOME            := FieldByName(FLD_AGENTE_NOME).AsString ;
+      coAGENTE.AGENTE_LOGIN           := FieldByName(FLD_AGENTE_LOGIN).AsString ;
+      coAGENTE.AGENTE_SENHA           := FieldByName(FLD_AGENTE_SENHA).AsString;
+      coAGENTE.AGENTE_EMAIL           := FieldByName(FLD_AGENTE_EMAIL).AsString ;
+      coAGENTE.AGENTE_COREN           := FieldByName(FLD_AGENTE_COREN).AsString ;
+      coAGENTE.AGENTE_ESPECIFICACAO   := FieldByName(FLD_AGENTE_ESPECIFICACAO).AsString ;
+      coAGENTE.AGENTE_DATA_NASC       := FieldByName(FLD_AGENTE_DATA_NASC).AsDateTime;
+      coAGENTE.AGENTE_TURNO           := FieldByName(FLD_AGENTE_TURNO).AsString ;
+      coAGENTE.AGENTE_TELEFONE        := FieldByName(FLD_AGENTE_TELEFONE).AsString ;
+    end;
 end;
 
-procedure TRepositorioAgente.AtribuiEntidadeParaDB(
-  const coAGENTE: TAGENTE; const coSQLQuery: TSQLQuery);
+procedure TRepositorioAGENTE.AtribuiEntidadeParaDB(const coAGENTE: TAGENTE;
+  const coSQLQuery: TSQLQuery);
 begin
   inherited;
   with coSQLQuery do
-    {ParamByName(FDL_AGENTE_ID).AsInteger    := coAGENTE.AGENTE_ID ;
-    ParamByName(FDL_AGENTE_NOME).AsString   := coAGENTE.AGENTE_NOME;
-    ParamByName(FDL_AGENTE_LOGIN).AsString  := coAGENTE.AGENTE_LOGIN ;
-    ParamByName(FDL_AGENTE_SENHA).AsString  := coAGENTE.AGENTE_SENHA;
-    ParamByName(FDL_AGENTE_EMAIL).AsString  := coAGENTE.AGENTE_EMAIL ;}
-end;
+    begin
+      ParamByName(FLD_AGENTE_COREN).AsString          := coAGENTE.AGENTE_COREN;
+      ParamByName(FLD_AGENTE_NOME).AsString           := coAGENTE.AGENTE_NOME;
+      ParamByName(FLD_AGENTE_LOGIN).AsString          := coAGENTE.AGENTE_ESPECIFICACAO ;
+      ParamByName(FLD_AGENTE_EMAIL).AsString          := coAGENTE.AGENTE_EMAIL;
+      ParamByName(FLD_AGENTE_SENHA).AsString          := coAGENTE.AGENTE_SENHA;
+      ParamByName(FLD_AGENTE_DATA_NASC).AsDate        := coAGENTE.AGENTE_DATA_NASC ;
+      ParamByName(FLD_AGENTE_ESPECIFICACAO).AsString  := coAGENTE.AGENTE_ESPECIFICACAO;
+      ParamByName(FLD_AGENTE_TURNO).AsString          := coAGENTE.AGENTE_TURNO;
+      ParamByName(FLD_AGENTE_TELEFONE).AsString       := coAGENTE.AGENTE_TELEFONE;
+
+    end;
+
+  end;
+
+
 
 end.

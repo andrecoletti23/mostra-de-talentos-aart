@@ -97,7 +97,7 @@
 			</DCCReference>
 			<DCCReference Include="Modelo\Persistencia\UPaciente.pas"/>
 			<DCCReference Include="Modelo\Persistencia\URepositorioCarteiraVacinacao.pas"/>
-			<DCCReference Include="Modelo\Persistencia\URepositorioCoren.pas"/>
+			<DCCReference Include="Modelo\Persistencia\URepositorioAgente.pas"/>
 			<DCCReference Include="Modelo\Persistencia\UCidade.pas"/>
 			<DCCReference Include="Modelo\Persistencia\UEstado.pas"/>
 			<DCCReference Include="Modelo\Persistencia\URepositorioLoteVacina.pas"/>
@@ -118,7 +118,7 @@
 			</BuildConfiguration>
 		</ItemGroup>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
-		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType>VCLApplication</Borland.ProjectType>

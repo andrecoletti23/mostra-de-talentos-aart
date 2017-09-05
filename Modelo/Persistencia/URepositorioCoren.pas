@@ -10,15 +10,15 @@ uses
   ;
 
 type
-  TRepositorioCoren = class(TRepositorioDB<TCOREN>)
+  TRepositorioCoren = class(TRepositorioDB<TCoren>)
   private
 
   public
     constructor Create;
     //destructor Destroy; override;
 
-    procedure AtribuiDBParaEntidade(const coCOREN: TCOREN); override;
-    procedure AtribuiEntidadeParaDB(const coCOREN: TCOREN;
+    procedure AtribuiDBParaEntidade(const coCOREN: TCoren); override;
+    procedure AtribuiEntidadeParaDB(const coCOREN: TCoren;
                                     const coSQLQuery: TSQLQuery); override;
   end;
 
@@ -32,20 +32,20 @@ uses
   ;
 
 { TRepositorioCoren }
-constructor TRepositorioCOREN.Create;
+constructor TRepositorioCoren.Create;
 begin
-  inherited Create(TCOREN, TBL_COREN, FLD_ENTIDADE_ID, STR_COREN);
+  inherited Create(TCoren, TBL_Coren, FLD_ENTIDADE_ID, STR_Coren);
 end;
 
-procedure TRepositorioCOREN.AtribuiDBParaEntidade(const coCOREN: TCOREN);
+procedure TRepositorioCoren.AtribuiDBParaEntidade(const coCoren: TCoren);
 begin
   inherited;
   with FSQLSelect do
     begin
-      coCOREN.COREN               := FieldByName(FLD_COREN).AsString ;
-      coCOREN.NOME                := FieldByName(FLD_NOME).AsString ;
-      coCOREN.ESPECIFICACAO       := FieldByName(FLD_ESPECIFICACAO).AsString;
-      coCOREN.DATA_NASC           := FieldByName(FLD_DATA_NASC).AsDateTime;
+     {coAGENTE.                    := FieldByName(FLD_AGENTE_NOME).AsString ;
+      coAGENTE.NOME                := FieldByName(FLD_NOME).AsString ;
+      coAGENTE.ESPECIFICACAO       := FieldByName(FLD_ESPECIFICACAO).AsString;
+      coAGENTE.DATA_NASC           := FieldByName(FLD_DATA_NASC).AsDateTime; }
     end;
 end;
 

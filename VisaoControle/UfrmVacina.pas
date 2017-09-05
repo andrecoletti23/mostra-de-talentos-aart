@@ -91,13 +91,13 @@ begin
   FCARTEIRA_VACINACAO.COD_VACINACAO    := edCodSus.Text;
   FCARTEIRA_VACINACAO.NOME             := edNome.Text;
   FCARTEIRA_VACINACAO.VACINA           := cbVacinas.text;
-  FCARTEIRA_VACINACAO.DOSE             := StrToInt(cbDose.Text);//Mudar para String DB
-  FCARTEIRA_VACINACAO.DATA             := edDataApli.Text;
+  FCARTEIRA_VACINACAO.DOSE             := cbDose.Text;//Mudar para String DB
+  FCARTEIRA_VACINACAO.DATA             := StrToDate(edDataApli.Text);
   FCARTEIRA_VACINACAO.RESPONSAVEL      := edAplicador.Text;
   FCARTEIRA_VACINACAO.COD_COREN        := edCorenApli.Text;
   FCARTEIRA_VACINACAO.COD_LOTE         := edLoteVacina.Text;
-  FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := edVencimento.Text;
-  //FCARTEIRA_VACINACAO       := edUnidadeDeSaude;
+  FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
+  FCARTEIRA_VACINACAO.UNIDADE_SAUDE       := edUnidadeSaude;
 end;
 
 procedure TfrmVacinas.PreencheFormulario;
@@ -106,13 +106,13 @@ begin
   edCodSus.Text         :=FCARTEIRA_VACINACAO.COD_VACINACAO     ;
   edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
-  cbDose.Text           :=IntToStr(FCARTEIRA_VACINACAO.DOSE)    ;
-  edDataApli.Text       :=FCARTEIRA_VACINACAO.DATA              ;
+  cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
+  edDataApli.Text       :=DateToStr(FCARTEIRA_VACINACAO.DATA)   ;
   edAplicador.Text      :=FCARTEIRA_VACINACAO.RESPONSAVEL       ;
   edCorenApli.Text      :=FCARTEIRA_VACINACAO.COD_COREN         ;
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
-  edVencimento.Text     :=FCARTEIRA_VACINACAO.LOTE_VENCIMENTO   ;
-  //edUnidadeDeSaude      :=FCARTEIRA_VACINACAO        ;
+  edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
+  edUnidadeSaude        :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
 end;
 
 end.
