@@ -1,18 +1,24 @@
 ﻿drop table agente;
 create table agente(
   id integer not null,
-  agente_id integer not null,
   agente_nome varchar (60) not null,
   agente_login varchar (10) not null,
   agente_senha varchar (6) not null,
   agente_email varchar (60),
-  
+  agente_coren varchar (60) not null,
+  agente_especificacao varchar (20) not null,
+  agente_data_nasc Date not null,
+  agente_turno varchar(10) not null,
+  agente_telefone varchar (15) not null,
   
   constraint pk_cad_agente primary key (id),
   constraint uk_agente_login unique (agente_login),
-  constraint uk_agente_email unique (agente_email)
+  constraint uk_agente_email unique (agente_email),
+  constraint uk_agente_coren unique (agente_coren)
   
 );
+create generator gen_agente_id;
+
 drop table pacientes;
 
 create table paciente(
@@ -58,27 +64,28 @@ create table enfermeira(
   
   constraint pk_enfermeira primary key (id)
 );
+drop table carteira_vacinacao;
 create table carteira_vacinacao (
 	id integer not null,
 	cod_vacinacao varchar (15) not null,
 	nome varchar (60) not null,
 	vacina varchar (60) not null, 
-	dose integer not null,
-	data varchar (10) not null,
+	dose varchar (60) not null,
+	data date not null,
 	responsavel varchar (60) not null,
 	cod_coren varchar (60) not null,
 	cod_lote integer not null,
-	lote_vencimento varchar (10) not null,
+	lote_vencimento date not null,
+	unidade_saude varchar(60) not null,
 	
 	constraint pk_carteira_vacinacao primary key (id),
-	constraint uk_cod_vacinacao unique (cod_vacinacao),
-	constraint fk_cod_coren foreign key (cod_coren) references coren(coren),
+	constraint fk_cod_coren foreign key (cod_coren) references agente(agente_coren),
 	constraint fk_cod_lote foreign key (cod_lote) references lote_vacina(codigo),
 	constraint fk_lote_vencimento foreign key (lote_vencimento) references lote_vacina(vencimento_lote),
 	constraint fk_cod_vacinacao foreign key (cod_vacinacao) references paciente(codigo_sus)
 );
 create generator gen_carteira_vacinacao_id;
-drop table carteira_vacinacao;
+drop table lote_vacina;
 	
 create table lote_vacina (
 	id integer not null,
@@ -86,13 +93,13 @@ create table lote_vacina (
 	vacina_nome varchar (60) not null,
 	lote_vacina varchar (60) not null,
 	laboratorio varchar (60) not null,
-	vencimento_lote varchar (10) not null,
+	vencimento_lote DATE not null,
 	
 	constraint pk_lote_vacina primary key (id),
 	constraint uk_codigo unique (codigo),
 	constraint uk_vencimento_lote unique (vencimento_lote)
 );
-
+drop table coren;
 create table coren (
 	id integer not null,
 	coren varchar (60) not null,
