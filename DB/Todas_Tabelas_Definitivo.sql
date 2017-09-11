@@ -74,14 +74,14 @@ create table carteira_vacinacao (
 	data date not null,
 	responsavel varchar (60) not null,
 	cod_coren varchar (60) not null,
-	cod_lote integer not null,
+	cod_lote varchar(10) not null,
 	lote_vencimento date not null,
 	unidade_saude varchar(60) not null,
 	
 	constraint pk_carteira_vacinacao primary key (id),
 	constraint fk_cod_coren foreign key (cod_coren) references agente(agente_coren),
-	constraint fk_cod_lote foreign key (cod_lote) references lote_vacina(codigo),
-	constraint fk_lote_vencimento foreign key (lote_vencimento) references lote_vacina(vencimento_lote),
+	constraint fk_cod_lote foreign key (cod_lote) references lote_vacina(lote),
+	--constraint fk_lote_vencimento foreign key (lote_vencimento) references lote_vacina(vencimento_lote),
 	constraint fk_cod_vacinacao foreign key (cod_vacinacao) references paciente(codigo_sus)
 );
 create generator gen_carteira_vacinacao_id;
@@ -89,15 +89,14 @@ drop table lote_vacina;
 	
 create table lote_vacina (
 	id integer not null,
-	codigo integer not null,
 	vacina_nome varchar (60) not null,
-	lote_vacina varchar (60) not null,
+	lote varchar (60) not null,
 	laboratorio varchar (60) not null,
 	vencimento_lote DATE not null,
+	quantidade_estoque varchar (10),
 	
 	constraint pk_lote_vacina primary key (id),
-	constraint uk_codigo unique (codigo),
-	constraint uk_vencimento_lote unique (vencimento_lote)
+	constraint uk_vencimento_lote unique (lote)
 );
 drop table coren;
 create table coren (
@@ -167,6 +166,43 @@ create table dose(
   
   constraint pk_dose_id primary key (id); 
 );
+
+create table prox_vacina(
+  id integer not null,
+  sus_codigo varchar (20) not null,
+  nome varchar (60) not null,
+  data_retorno date not null,
+  vacina_retorno varchar (60) not null,
+  
+  constraint pk_vacina_info_id primary key (id)
+);
+create generator gen_lote_vacina_id;
+create generator prox_vacina_id;
+create table dose(
+  id integer not null,
+  dose_vacina varchar (10) not null,
+  
+  constraint pk_dose_id primary key (id)
+  
+);
+ create table todas_vacinas(
+   id integer not null,
+   nome_vacina varchar (60) not null,
+   descricao varchar (120) not null,
+   idade_indicada varchar (60),
+   total_doses varchar (60),
+   restricao varchar (60),
+   
+   constraint pk_vacinas_id primary key (id)
+ );
+
+
+select * from vacina;
+insert into dose values (1, '1° Dose');
+insert into dose values (2, '2° Dose');
+insert into dose values (3, '3° Dose');
+insert into dose values (4, 'Unica');
+insert into dose values (5, 'Reforço');
 
 select * from VACINA;
 
