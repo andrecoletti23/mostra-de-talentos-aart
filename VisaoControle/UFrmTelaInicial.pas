@@ -13,9 +13,11 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    Button4: TButton;
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,7 +33,9 @@ uses
     UDM
   , DB
   , UfrmVacina
-  , UFrmDeposito;
+  , UFrmDeposito
+  , UFrmAgente
+  ;
 
 
 
@@ -50,6 +54,11 @@ end;
 procedure TfrmTelaInicial.Button3Click(Sender: TObject);
 begin
   Application.CreateForm(TFrmDeposito, FrmDeposito);
+end;
+
+procedure TfrmTelaInicial.Button4Click(Sender: TObject);
+begin
+   Application.CreateForm(TfrmAGENTE, frmAGENTE)
 end;
 
 end.

@@ -34,7 +34,14 @@ uses
   UfrmVacina in 'VisaoControle\UfrmVacina.pas' {frmVacinas},
   URegraCRUDCarteiraVacinacao in 'Modelo\Regra\URegraCRUDCarteiraVacinacao.pas',
   UFrmDeposito in 'VisaoControle\UFrmDeposito.pas' {frmDeposito},
-  URegraCRUDLoteVacina in 'Modelo\Regra\URegraCRUDLoteVacina.pas';
+  URegraCRUDLoteVacina in 'Modelo\Regra\URegraCRUDLoteVacina.pas',
+  UProximaVacina in 'Modelo\Persistencia\UProximaVacina.pas',
+  URepositorioProximaVacina in 'Modelo\Persistencia\URepositorioProximaVacina.pas',
+  UTodasVacinas in 'Modelo\Persistencia\UTodasVacinas.pas',
+  URepositorioTodasVacinas in 'Modelo\Persistencia\URepositorioTodasVacinas.pas',
+  UFrmAgente in 'VisaoControle\UFrmAgente.pas' {frmAgente},
+  URegraCRUDTodasVacinas in 'Modelo\Regra\URegraCRUDTodasVacinas.pas',
+  URegraCRUDAgente in 'Modelo\Regra\URegraCRUDAgente.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

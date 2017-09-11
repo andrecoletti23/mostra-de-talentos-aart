@@ -5,12 +5,12 @@ interface
 uses
     URegraCRUD
   , URepositorioDB
-  , URepositorioCadAgente
+  , URepositorioAgente
   , UEntidade
   ;
 
 type
-  TRegraCRUDCadAgente = class(TRegraCRUD)
+  TRegraCRUDAgente = class(TRegraCRUD)
   public
     constructor Create; override;
   end;
@@ -19,10 +19,10 @@ implementation
 
 { TRegraCRUDCadPessoa }
 
-constructor TRegraCRUDCadAgente.Create;
+constructor TRegraCRUDAgente.Create;
 begin
   inherited;
-  FRepositorioDB := TRepositorioDB<TENTIDADE>(TRepositorioCadAgente.Create);
+  FRepositorioDB := TRepositorioDB<TENTIDADE>(TRepositorioAgente.Create);
 end;
 
 end.

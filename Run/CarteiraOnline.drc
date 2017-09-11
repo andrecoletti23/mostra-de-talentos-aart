@@ -10,8 +10,9 @@
 
 #define JConsts_sJPEGImageFile 64816
 #define ULoteVacina_STR_LOTE_VACINA 64817
-#define UCoren_STR_COREN 64818
-#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64819
+#define UAgente_STR_AGENTE 64818
+#define UCoren_STR_COREN 64819
+#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64820
 #define SqlConst_SLOCALTRANSACTIVE 64832
 #define SqlConst_SMULTIPLETRANSNOTENABLED 64833
 #define SqlConst_SCONNECTIONFAILED 64834
@@ -720,6 +721,7 @@ STRINGTABLE
 BEGIN
 	JConsts_sJPEGImageFile,	"JPEG Image File"
 	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
+	UAgente_STR_AGENTE,	"Agente De Saúde"
 	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
 	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
 	SqlConst_SLOCALTRANSACTIVE,	"[0x0013]: Local Transaction already active"
@@ -1441,6 +1443,7 @@ END
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */

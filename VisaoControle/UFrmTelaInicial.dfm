@@ -72,4 +72,13 @@ object frmTelaInicial: TfrmTelaInicial
     TabOrder = 3
     OnClick = Button3Click
   end
+  object Button4: TButton
+    Left = 560
+    Top = 192
+    Width = 129
+    Height = 129
+    Caption = 'Cadastro Usu'#225'rios'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
 end
