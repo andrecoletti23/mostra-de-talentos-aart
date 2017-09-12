@@ -42,15 +42,15 @@ begin
   inherited;
   with FSQLSelect do
     begin
-      coAGENTE.AGENTE_NOME            := FieldByName(FLD_AGENTE_NOME).AsString ;
-      coAGENTE.AGENTE_LOGIN           := FieldByName(FLD_AGENTE_LOGIN).AsString ;
-      coAGENTE.AGENTE_SENHA           := FieldByName(FLD_AGENTE_SENHA).AsString;
-      coAGENTE.AGENTE_EMAIL           := FieldByName(FLD_AGENTE_EMAIL).AsString ;
-      coAGENTE.AGENTE_COREN           := FieldByName(FLD_AGENTE_COREN).AsString ;
-      coAGENTE.AGENTE_ESPECIFICACAO   := FieldByName(FLD_AGENTE_ESPECIFICACAO).AsString ;
-      coAGENTE.AGENTE_DATA_NASC       := FieldByName(FLD_AGENTE_DATA_NASC).AsDateTime;
-      coAGENTE.AGENTE_TURNO           := FieldByName(FLD_AGENTE_TURNO).AsString ;
-      coAGENTE.AGENTE_TELEFONE        := FieldByName(FLD_AGENTE_TELEFONE).AsString ;
+      coAGENTE.AGENTE_NOME           := FieldByName(FLD_AGENTE_NOME).AsString ;
+      coAGENTE.AGENTE_LOGIN          := FieldByName(FLD_AGENTE_LOGIN).AsString ;
+      coAGENTE.AGENTE_SENHA          := FieldByName(FLD_AGENTE_SENHA).AsString;
+      coAGENTE.AGENTE_EMAIL          := FieldByName(FLD_AGENTE_EMAIL).AsString ;
+      coAGENTE.AGENTE_COREN          := FieldByName(FLD_AGENTE_COREN).AsString ;
+      coAGENTE.AGENTE_ESPECIFICACAO  := FieldByName(FLD_AGENTE_ESPECIFICACAO).AsString ;
+      coAGENTE.AGENTE_DATA_NASC      := FieldByName(FLD_AGENTE_DATA_NASC).AsDateTime;
+      coAGENTE.AGENTE_TURNO          := FieldByName(FLD_AGENTE_TURNO).AsString ;
+      coAGENTE.AGENTE_TELEFONE       := FieldByName(FLD_AGENTE_TELEFONE).AsString ;
     end;
 end;
 
