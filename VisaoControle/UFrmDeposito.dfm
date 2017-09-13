@@ -107,6 +107,7 @@ inherited frmDeposito: TfrmDeposito
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
+    ReadOnly = True
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -119,25 +120,25 @@ inherited frmDeposito: TfrmDeposito
     MaxBlobSize = -1
     SQLConnection = SQLConnection1
     TableName = 'LOTE_VACINA'
-    Left = 48
-    Top = 360
+    Left = 208
+    Top = 368
   end
   object DataSetProvider1: TDataSetProvider
     DataSet = tbDeposito
-    Left = 128
-    Top = 360
+    Left = 288
+    Top = 368
   end
   object ClientDataSet1: TClientDataSet
     Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProvider1'
-    Left = 216
-    Top = 360
+    Left = 376
+    Top = 368
   end
   object DataSource1: TDataSource
     DataSet = ClientDataSet1
-    Left = 304
+    Left = 448
     Top = 368
   end
   object SQLConnection1: TSQLConnection
@@ -184,7 +185,12 @@ inherited frmDeposito: TfrmDeposito
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
     Connected = True
-    Left = 48
-    Top = 312
+    Left = 136
+    Top = 368
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 496
+    Top = 368
   end
 end
