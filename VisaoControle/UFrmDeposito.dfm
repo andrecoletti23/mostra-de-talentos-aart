@@ -8,24 +8,32 @@ inherited frmDeposito: TfrmDeposito
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 749
+    ExplicitWidth = 749
   end
   inherited gbLocalizar: TGroupBox
     Width = 749
+    ExplicitWidth = 749
   end
   inherited pnlBotoes: TPanel
     Top = 419
     Width = 749
+    ExplicitTop = 419
+    ExplicitWidth = 749
     inherited btnLimpar: TBitBtn
       Left = 514
+      ExplicitLeft = 514
     end
     inherited btnExcluir: TBitBtn
       Left = 397
+      ExplicitLeft = 397
     end
     inherited btnGravar: TBitBtn
       Left = 280
+      ExplicitLeft = 280
     end
     inherited btnSair: TBitBtn
       Left = 631
+      ExplicitLeft = 631
     end
   end
   object gbDeposito: TGroupBox [3]
@@ -36,7 +44,6 @@ inherited frmDeposito: TfrmDeposito
     Align = alTop
     Caption = 'Deposito de Vacinas'
     TabOrder = 3
-    ExplicitWidth = 776
     object lbVencimento: TLabel
       Left = 235
       Top = 71
@@ -99,11 +106,85 @@ inherited frmDeposito: TfrmDeposito
     Height = 144
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
+    DataSource = DataSource1
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object tbDeposito: TSQLTable
+    Active = True
+    MaxBlobSize = -1
+    SQLConnection = SQLConnection1
+    TableName = 'LOTE_VACINA'
+    Left = 48
+    Top = 360
+  end
+  object DataSetProvider1: TDataSetProvider
+    DataSet = tbDeposito
+    Left = 128
+    Top = 360
+  end
+  object ClientDataSet1: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProvider1'
+    Left = 216
+    Top = 360
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSet1
+    Left = 304
+    Top = 368
+  end
+  object SQLConnection1: TSQLConnection
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=DBXFirebird'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver150.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=15.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXFirebirdMetaDataCommandFactory,DbxFire' +
+        'birdDriver150.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXFirebirdMetaDataCommandF' +
+        'actory,Borland.Data.DbxFirebirdDriver,Version=15.0.0.0,Culture=n' +
+        'eutral,PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverINTERBASE'
+      'LibraryName=dbxfb.dll'
+      'VendorLib=fbclient.DLL'
+      
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Role=RoleName'
+      'MaxBlobSize=-1'
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'SQLDialect=3'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'TrimChar=False'
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'RoleName=RoleName'
+      'ServerCharSet='
+      'Trim Char=False')
+    VendorLib = 'fbclient.DLL'
+    Connected = True
+    Left = 48
+    Top = 312
   end
 end

@@ -1,8 +1,8 @@
 object dmEntra21: TdmEntra21
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Height = 117
-  Width = 186
+  Height = 185
+  Width = 357
   object SQLConnection: TSQLConnection
     ConnectionName = 'IBConnection'
     DriverName = 'Firebird'
@@ -48,6 +48,7 @@ object dmEntra21: TdmEntra21
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.dll'
+    Connected = True
     Left = 32
     Top = 24
   end

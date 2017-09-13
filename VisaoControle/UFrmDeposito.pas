@@ -8,7 +8,7 @@ uses
   , URegraCRUDLoteVacina
   , URepositorioLoteVacina
   , ULoteVacina
-  , UUtilitarios
+  , UUtilitarios, FMTBcd, DBXFirebird, DB, SqlExpr, DBClient, Provider
   ;
 
 type
@@ -21,6 +21,11 @@ type
     edQuantidade: TLabeledEdit;
     edVencimento: TMaskEdit;
     lbVencimento: TLabel;
+    tbDeposito: TSQLTable;
+    DataSetProvider1: TDataSetProvider;
+    ClientDataSet1: TClientDataSet;
+    DataSource1: TDataSource;
+    SQLConnection1: TSQLConnection;
 protected
     FLOTEVACINA: TLOTEVACINA;
 

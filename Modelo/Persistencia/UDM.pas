@@ -5,7 +5,7 @@ interface
 uses
   SysUtils, Classes, DB, SqlExpr, FMTBcd
   , UMensagens, DBXFirebird, DBXInterBase
-  , DBXCommon
+  , DBXCommon, DBClient, Provider
   ;
 
 type
