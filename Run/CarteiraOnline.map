@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 002914F0H .text                   CODE
+ 0001:00401000 00291690H .text                   CODE
  0002:00693000 000012D8H .itext                  ICODE
  0003:00695000 00005368H .data                   DATA
  0004:0069B000 000053ECH .bss                    BSS
@@ -148,12 +148,12 @@ Detailed map of segments
  0001:00286FC4 0000015C C=CODE     S=.text    G=(none)   M=URegraCRUDCarteiraVacinacao ACBP=A9
  0001:00287120 0000095C C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
  0001:00287A7C 00000144 C=CODE     S=.text    G=(none)   M=URegraCRUDLoteVacina ACBP=A9
- 0001:00287BC0 000006F4 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
- 0001:002882B4 0000188C C=CODE     S=.text    G=(none)   M=URepositorioAgente ACBP=A9
- 0001:00289B40 00000138 C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
- 0001:00289C78 000007DC C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
- 0001:0028A454 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:0028A8EC 00006C04 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:00287BC0 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
+ 0001:00288454 0000188C C=CODE     S=.text    G=(none)   M=URepositorioAgente ACBP=A9
+ 0001:00289CE0 00000138 C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
+ 0001:00289E18 000007DC C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
+ 0001:0028A5F4 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:0028AA8C 00006C04 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -518,7 +518,7 @@ Detailed map of segments
  0001:00100FE0       Buttons.TGlyphList.Destroy
  0003:00002A48       Buttons.WordBreakFlag
  0002:00001260       CarteiraOnline.CarteiraOnline
- 0001:0028A8EC       CarteiraOnline.Finalization
+ 0001:0028AA8C       CarteiraOnline.Finalization
  0001:0000D6B4       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -15738,13 +15738,13 @@ Detailed map of segments
  0001:002624E4       UDM.TdmEntra21.ValidaTransacaoAtiva
  0001:001499F0       UEntidade..TENTIDADE
  0001:00149B0C       UEntidade.TENTIDADE.Create
- 0001:00289C78       UFrmAgente..TfrmAgente
+ 0001:00289E18       UFrmAgente..TfrmAgente
  0004:000053E4       UFrmAgente.frmAgente
- 0001:00289FE8       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:0028A020       UFrmAgente.TfrmAgente.Inicializa
- 0001:0028A134       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:0028A150       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:0028A314       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:0028A188       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:0028A1C0       UFrmAgente.TfrmAgente.Inicializa
+ 0001:0028A2D4       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:0028A2F0       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:0028A4B4       UFrmAgente.TfrmAgente.PreencheFormulario
  0001:00267128       UFrmCRUD..TFrmCRUD
  0001:00267C10       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
  0001:00267AD0       UFrmCRUD..{Generics.Collections}TEnumerator<UOpcaoPesquisa.TOpcaoPesquisa>
@@ -15844,11 +15844,12 @@ Detailed map of segments
  0001:0026AD48       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
  0001:00287BC0       UFrmDeposito..TfrmDeposito
  0004:000053E0       UFrmDeposito.frmDeposito
- 0001:00287F40       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:00287F78       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:00288094       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:002880B0       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002881DC       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:002880B4       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:002880EC       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:00288208       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:00288224       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:00288350       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:00288428       UFrmDeposito.TfrmDeposito.Timer1Timer
  0001:0026D4CC       UFrmPacientes..TfrmPacientes
  0004:000053D0       UFrmPacientes.frmPacientes
  0001:0026DC10       UFrmPacientes.TfrmPacientes.HabilitaCampos
@@ -15871,12 +15872,12 @@ Detailed map of segments
  0004:000053D8       UFrmPrincipal.FrmPrincipal
  0001:00282468       UFrmPrincipal.TFrmPrincipal.FormShow
  0001:00282450       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:0028A454       UFrmTelaInicial..TfrmTelaInicial
+ 0001:0028A5F4       UFrmTelaInicial..TfrmTelaInicial
  0004:000053E8       UFrmTelaInicial.frmTelaInicial
- 0001:0028A84C       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:0028A874       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:0028A89C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:0028A8C4       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:0028A9EC       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:0028AA14       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:0028AA3C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:0028AA64       UFrmTelaInicial.TfrmTelaInicial.Button4Click
  0001:00287120       UfrmVacina..TfrmVacinas
  0004:000053DC       UfrmVacina.frmVacinas
  0001:002875BC       UfrmVacina.TfrmVacinas.HabilitaCampos
@@ -15969,34 +15970,34 @@ Detailed map of segments
  0001:00263990       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
  0001:00262F2C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
  0001:002633A4       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
- 0001:00289B40       URegraCRUDAgente..TRegraCRUDAgente
- 0001:00289C24       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:00289CE0       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:00289DC4       URegraCRUDAgente.TRegraCRUDAgente.Create
  0001:00286FC4       URegraCRUDCarteiraVacinacao..TRegraCRUDCarteiraVacinacao
  0001:002870CC       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.Create
  0001:00287A7C       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
  0001:00287B6C       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
  0001:0026D38C       URegraCRUDPaciente..TRegraCRUDPACIENTES
  0001:0026D478       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
- 0001:002882B4       URepositorioAgente..TRepositorioAgente
- 0001:00288520       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
- 0001:002889FC       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
- 0001:00288D0C       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
- 0001:00288938       URepositorioAgente.TRepositorioAgente.Create
- 0001:00289A2C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
- 0001:00289380       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
- 0001:002893C0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
- 0001:00289964       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
- 0001:00289560       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
- 0001:00289760       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
- 0001:00289834       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
- 0001:00289344       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
- 0001:002891DC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
- 0001:002899AC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
- 0001:002891F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
- 0001:002890A0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
- 0001:002899EC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
- 0001:00288F88       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
- 0001:00289400       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
+ 0001:00288454       URepositorioAgente..TRepositorioAgente
+ 0001:002886C0       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
+ 0001:00288B9C       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
+ 0001:00288EAC       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
+ 0001:00288AD8       URepositorioAgente.TRepositorioAgente.Create
+ 0001:00289BCC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
+ 0001:00289520       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
+ 0001:00289560       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
+ 0001:00289B04       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
+ 0001:00289700       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
+ 0001:00289900       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
+ 0001:002899D4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
+ 0001:002894E4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
+ 0001:0028937C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
+ 0001:00289B4C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
+ 0001:00289398       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
+ 0001:00289240       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
+ 0001:00289B8C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
+ 0001:00289128       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
+ 0001:002895A0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
  0001:002855E8       URepositorioCarteiraVacinacao..TRepositorioCarteiraVacinacao
  0001:0028591C       URepositorioCarteiraVacinacao..{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>
  0001:00285EC4       URepositorioCarteiraVacinacao.TRepositorioCarteiraVacinacao.AtribuiDBParaEntidade
@@ -28350,8 +28351,8 @@ Detailed map of segments
  0001:001AF540       Rtti.InsufficientRtti
  0001:001AF554       Rtti.CheckCodeAddress
  0001:001AF568       Rtti..TListHelper
- 0001:001AF610       Rtti.DerefPointer
  0001:001AF610       Rtti.TListHelper.ToArray
+ 0001:001AF610       Rtti.DerefPointer
  0001:001AF618       Rtti.NopRefCount
  0001:001AF624       Rtti.NopQueryInterface
  0001:001AF630       Rtti.NopRet0
@@ -32790,45 +32791,46 @@ Detailed map of segments
  0001:00287A7C       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
  0001:00287B6C       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
  0001:00287BC0       UFrmDeposito..TfrmDeposito
- 0001:00287F40       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:00287F78       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:00288094       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:002880B0       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002881DC       UFrmDeposito.TfrmDeposito.PreencheFormulario
- 0001:002882B4       URepositorioAgente..TRepositorioAgente
- 0001:00288520       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
- 0001:00288938       URepositorioAgente.TRepositorioAgente.Create
- 0001:002889FC       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
- 0001:00288D0C       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
- 0001:00288F88       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
- 0001:002890A0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
- 0001:002891DC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
- 0001:002891F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
- 0001:00289344       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
- 0001:00289380       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
- 0001:002893C0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
- 0001:00289400       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
- 0001:00289560       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
- 0001:00289760       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
- 0001:00289834       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
- 0001:00289964       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
- 0001:002899AC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
- 0001:002899EC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
- 0001:00289A2C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
- 0001:00289B40       URegraCRUDAgente..TRegraCRUDAgente
- 0001:00289C24       URegraCRUDAgente.TRegraCRUDAgente.Create
- 0001:00289C78       UFrmAgente..TfrmAgente
- 0001:00289FE8       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:0028A020       UFrmAgente.TfrmAgente.Inicializa
- 0001:0028A134       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:0028A150       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:0028A314       UFrmAgente.TfrmAgente.PreencheFormulario
- 0001:0028A454       UFrmTelaInicial..TfrmTelaInicial
- 0001:0028A84C       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:0028A874       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:0028A89C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:0028A8C4       UFrmTelaInicial.TfrmTelaInicial.Button4Click
- 0001:0028A8EC       CarteiraOnline.Finalization
+ 0001:002880B4       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:002880EC       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:00288208       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:00288224       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:00288350       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:00288428       UFrmDeposito.TfrmDeposito.Timer1Timer
+ 0001:00288454       URepositorioAgente..TRepositorioAgente
+ 0001:002886C0       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
+ 0001:00288AD8       URepositorioAgente.TRepositorioAgente.Create
+ 0001:00288B9C       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
+ 0001:00288EAC       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
+ 0001:00289128       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
+ 0001:00289240       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
+ 0001:0028937C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
+ 0001:00289398       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
+ 0001:002894E4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
+ 0001:00289520       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
+ 0001:00289560       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
+ 0001:002895A0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
+ 0001:00289700       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
+ 0001:00289900       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
+ 0001:002899D4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
+ 0001:00289B04       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
+ 0001:00289B4C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
+ 0001:00289B8C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
+ 0001:00289BCC       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
+ 0001:00289CE0       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:00289DC4       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:00289E18       UFrmAgente..TfrmAgente
+ 0001:0028A188       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:0028A1C0       UFrmAgente.TfrmAgente.Inicializa
+ 0001:0028A2D4       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:0028A2F0       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:0028A4B4       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:0028A5F4       UFrmTelaInicial..TfrmTelaInicial
+ 0001:0028A9EC       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:0028AA14       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:0028AA3C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:0028AA64       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:0028AA8C       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -34524,126 +34526,127 @@ Line numbers for URegraCRUDLoteVacina(Modelo\Persistencia\URepositorioDB.pas) se
 
 Line numbers for UFrmDeposito(VisaoControle\UFrmDeposito.pas) segment .text
 
-    51 0001:00287F40    52 0001:00287F4C    53 0001:00287F57    54 0001:00287F74
-    57 0001:00287F78    58 0001:00287F94    59 0001:00287F9C    60 0001:00287FB3
-    62 0001:00287FCA    68 0001:00288015    71 0001:00288094    73 0001:0028809B
-    74 0001:002880AC    77 0001:002880B0    80 0001:002880D1    81 0001:002880F6
-    82 0001:0028811B    83 0001:00288140    84 0001:0028817E    86 0001:002881A3
-    89 0001:002881DC    92 0001:002881F8    93 0001:00288212    94 0001:0028822C
-    95 0001:00288246    96 0001:00288277    98 0001:00288291   100 0001:002882B9
+    58 0001:002880B4    59 0001:002880C0    60 0001:002880CB    61 0001:002880E8
+    64 0001:002880EC    65 0001:00288108    66 0001:00288110    67 0001:00288127
+    69 0001:0028813E    75 0001:00288189    78 0001:00288208    80 0001:0028820F
+    81 0001:00288220    84 0001:00288224    87 0001:00288245    88 0001:0028826A
+    89 0001:0028828F    90 0001:002882B4    91 0001:002882F2    93 0001:00288317
+    96 0001:00288350    99 0001:0028836C   100 0001:00288386   101 0001:002883A0
+   102 0001:002883BA   103 0001:002883EB   105 0001:00288405   108 0001:00288428
+   110 0001:00288434   111 0001:00288442   112 0001:00288450   114 0001:0028845B
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioAgente.pas) segment .text
 
-    36 0001:00288938    37 0001:00288963    38 0001:0028898E    41 0001:002889FC
-    42 0001:00288A20    43 0001:00288A2B    45 0001:00288A34    46 0001:00288A57
-    47 0001:00288A7A    48 0001:00288A9D    49 0001:00288AC0    50 0001:00288AE3
-    51 0001:00288B06    52 0001:00288B1F    53 0001:00288B42    55 0001:00288B65
-    59 0001:00288D0C    60 0001:00288D1B    63 0001:00288D29    64 0001:00288D41
-    65 0001:00288D59    66 0001:00288D71    67 0001:00288D89    68 0001:00288DA1
-    69 0001:00288DBC    70 0001:00288DD4    71 0001:00288DEC    75 0001:00288E04
+    36 0001:00288AD8    37 0001:00288B03    38 0001:00288B2E    41 0001:00288B9C
+    42 0001:00288BC0    43 0001:00288BCB    45 0001:00288BD4    46 0001:00288BF7
+    47 0001:00288C1A    48 0001:00288C3D    49 0001:00288C60    50 0001:00288C83
+    51 0001:00288CA6    52 0001:00288CBF    53 0001:00288CE2    55 0001:00288D05
+    59 0001:00288EAC    60 0001:00288EBB    63 0001:00288EC9    64 0001:00288EE1
+    65 0001:00288EF9    66 0001:00288F11    67 0001:00288F29    68 0001:00288F41
+    69 0001:00288F5C    70 0001:00288F74    71 0001:00288F8C    75 0001:00288FA4
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   221 0001:00288F88   222 0001:00288FA4   223 0001:00288FAF   224 0001:00288FE0
-   226 0001:00288FEB   227 0001:00289003
+   221 0001:00289128   222 0001:00289144   223 0001:0028914F   224 0001:00289180
+   226 0001:0028918B   227 0001:002891A3
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   188 0001:002890A0   189 0001:002890BF   192 0001:002890CD   193 0001:002890D8
-   194 0001:002890E9   197 0001:00289147   198 0001:00289154
+   188 0001:00289240   189 0001:0028925F   192 0001:0028926D   193 0001:00289278
+   194 0001:00289289   197 0001:002892E7   198 0001:002892F4
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   169 0001:002891DC   170 0001:002891E3   171 0001:002891F3
+   169 0001:0028937C   170 0001:00289383   171 0001:00289393
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   174 0001:002891F8   175 0001:00289217   180 0001:00289222   181 0001:00289233
-   184 0001:00289291   185 0001:0028929E
+   174 0001:00289398   175 0001:002893B7   180 0001:002893C2   181 0001:002893D3
+   184 0001:00289431   185 0001:0028943E
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   163 0001:00289344   164 0001:00289350   165 0001:00289369   166 0001:00289379
+   163 0001:002894E4   164 0001:002894F0   165 0001:00289509   166 0001:00289519
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   239 0001:00289380   240 0001:0028938C   241 0001:002893A7
+   239 0001:00289520   240 0001:0028952C   241 0001:00289547
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   245 0001:002893C0   246 0001:002893CF   247 0001:002893E7
+   245 0001:00289560   246 0001:0028956F   247 0001:00289587
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   204 0001:00289400   205 0001:00289426   207 0001:00289436   208 0001:00289443
-   209 0001:00289454   211 0001:00289464   213 0001:00289490   214 0001:0028949E
-   211 0001:002894C7   215 0001:002894E0   217 0001:002894FD   218 0001:00289535
+   204 0001:002895A0   205 0001:002895C6   207 0001:002895D6   208 0001:002895E3
+   209 0001:002895F4   211 0001:00289604   213 0001:00289630   214 0001:0028963E
+   211 0001:00289667   215 0001:00289680   217 0001:0028969D   218 0001:002896D5
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   101 0001:00289560   102 0001:0028958F   103 0001:00289599   104 0001:002895A2
-   105 0001:002895B0   106 0001:002895BE   107 0001:002895CC   109 0001:00289604
-   110 0001:0028961E   112 0001:00289636   113 0001:00289650   115 0001:00289668
-   116 0001:00289682   118 0001:0028969A   119 0001:002896B4   121 0001:002896CC
-   122 0001:002896E6   123 0001:002896FE
+   101 0001:00289700   102 0001:0028972F   103 0001:00289739   104 0001:00289742
+   105 0001:00289750   106 0001:0028975E   107 0001:0028976C   109 0001:002897A4
+   110 0001:002897BE   112 0001:002897D6   113 0001:002897F0   115 0001:00289808
+   116 0001:00289822   118 0001:0028983A   119 0001:00289854   121 0001:0028986C
+   122 0001:00289886   123 0001:0028989E
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   126 0001:00289760   127 0001:00289771   128 0001:00289791   129 0001:002897B1
-   130 0001:002897D1   131 0001:002897F1   132 0001:00289811   133 0001:0028981F
+   126 0001:00289900   127 0001:00289911   128 0001:00289931   129 0001:00289951
+   130 0001:00289971   131 0001:00289991   132 0001:002899B1   133 0001:002899BF
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   150 0001:00289834   151 0001:00289853   153 0001:0028985F   154 0001:0028986A
-   155 0001:0028987B   157 0001:002898BF   158 0001:002898CC   159 0001:002898E5
-   160 0001:002898F5
+   150 0001:002899D4   151 0001:002899F3   153 0001:002899FF   154 0001:00289A0A
+   155 0001:00289A1B   157 0001:00289A5F   158 0001:00289A6C   159 0001:00289A85
+   160 0001:00289A95
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   250 0001:00289964   251 0001:00289971   253 0001:0028997D   254 0001:00289985
-   255 0001:00289996   256 0001:002899A4
+   250 0001:00289B04   251 0001:00289B11   253 0001:00289B1D   254 0001:00289B25
+   255 0001:00289B36   256 0001:00289B44
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   230 0001:002899AC   231 0001:002899B9   232 0001:002899C1   233 0001:002899D2
-   235 0001:002899DA   236 0001:002899E6
+   230 0001:00289B4C   231 0001:00289B59   232 0001:00289B61   233 0001:00289B72
+   235 0001:00289B7A   236 0001:00289B86
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   259 0001:002899EC   260 0001:002899F8   261 0001:002899FD   263 0001:00289A0C
-   264 0001:00289A19   266 0001:00289A23
+   259 0001:00289B8C   260 0001:00289B98   261 0001:00289B9D   263 0001:00289BAC
+   264 0001:00289BB9   266 0001:00289BC3
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   136 0001:00289A2C   137 0001:00289A4B   141 0001:00289A56   143 0001:00289A97
-   144 0001:00289AB0   146 0001:00289ABB   147 0001:00289ACC
+   136 0001:00289BCC   137 0001:00289BEB   141 0001:00289BF6   143 0001:00289C37
+   144 0001:00289C50   146 0001:00289C5B   147 0001:00289C6C
 
 Line numbers for URegraCRUDAgente(Modelo\Regra\URegraCRUDAgente.pas) segment .text
 
-    23 0001:00289C24    24 0001:00289C3C    25 0001:00289C46    26 0001:00289C58
+    23 0001:00289DC4    24 0001:00289DDC    25 0001:00289DE6    26 0001:00289DF8
 
 Line numbers for URegraCRUDAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   147 0001:00289C7E
+   147 0001:00289E1E
 
 Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .text
 
-    53 0001:00289FE8    54 0001:00289FF4    55 0001:00289FFF    56 0001:0028A01C
-    59 0001:0028A020    60 0001:0028A03C    61 0001:0028A044    62 0001:0028A05B
-    64 0001:0028A072    70 0001:0028A0BD    73 0001:0028A134    75 0001:0028A13B
-    76 0001:0028A14C    79 0001:0028A150    81 0001:0028A171    82 0001:0028A196
-    83 0001:0028A1BB    84 0001:0028A1E0    85 0001:0028A205    86 0001:0028A22A
-    87 0001:0028A24F    88 0001:0028A28D    89 0001:0028A2B2    90 0001:0028A2D7
-    93 0001:0028A314    95 0001:0028A330    96 0001:0028A34A    97 0001:0028A364
-    98 0001:0028A37E    99 0001:0028A398   100 0001:0028A3B2   101 0001:0028A3CC
-   102 0001:0028A3FD   103 0001:0028A417   104 0001:0028A431   106 0001:0028A459
+    53 0001:0028A188    54 0001:0028A194    55 0001:0028A19F    56 0001:0028A1BC
+    59 0001:0028A1C0    60 0001:0028A1DC    61 0001:0028A1E4    62 0001:0028A1FB
+    64 0001:0028A212    70 0001:0028A25D    73 0001:0028A2D4    75 0001:0028A2DB
+    76 0001:0028A2EC    79 0001:0028A2F0    81 0001:0028A311    82 0001:0028A336
+    83 0001:0028A35B    84 0001:0028A380    85 0001:0028A3A5    86 0001:0028A3CA
+    87 0001:0028A3EF    88 0001:0028A42D    89 0001:0028A452    90 0001:0028A477
+    93 0001:0028A4B4    95 0001:0028A4D0    96 0001:0028A4EA    97 0001:0028A504
+    98 0001:0028A51E    99 0001:0028A538   100 0001:0028A552   101 0001:0028A56C
+   102 0001:0028A59D   103 0001:0028A5B7   104 0001:0028A5D1   106 0001:0028A5F9
 
 Line numbers for UFrmTelaInicial(VisaoControle\UFrmTelaInicial.pas) segment .text
 
-    45 0001:0028A84C    46 0001:0028A858    47 0001:0028A870    50 0001:0028A874
-    51 0001:0028A880    52 0001:0028A898    55 0001:0028A89C    56 0001:0028A8A8
-    57 0001:0028A8C0    60 0001:0028A8C4    61 0001:0028A8D0    62 0001:0028A8E8
-    64 0001:0028A8F3
+    45 0001:0028A9EC    46 0001:0028A9F8    47 0001:0028AA10    50 0001:0028AA14
+    51 0001:0028AA20    52 0001:0028AA38    55 0001:0028AA3C    56 0001:0028AA48
+    57 0001:0028AA60    60 0001:0028AA64    61 0001:0028AA70    62 0001:0028AA88
+    64 0001:0028AA93
 
 Line numbers for UCidade(Modelo\Persistencia\UCidade.pas) segment .text
 

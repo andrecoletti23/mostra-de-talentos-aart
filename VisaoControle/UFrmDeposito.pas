@@ -8,7 +8,7 @@ uses
   , URegraCRUDLoteVacina
   , URepositorioLoteVacina
   , ULoteVacina
-  , UUtilitarios
+  , UUtilitarios, FMTBcd, DBXFirebird, DB, SqlExpr, DBClient, Provider
   ;
 
 type
@@ -21,6 +21,13 @@ type
     edQuantidade: TLabeledEdit;
     edVencimento: TMaskEdit;
     lbVencimento: TLabel;
+    tbDeposito: TSQLTable;
+    DataSetProvider1: TDataSetProvider;
+    ClientDataSet1: TClientDataSet;
+    DataSource1: TDataSource;
+    SQLConnection1: TSQLConnection;
+    Timer1: TTimer;
+    procedure Timer1Timer(Sender: TObject);
 protected
     FLOTEVACINA: TLOTEVACINA;
 
@@ -95,6 +102,13 @@ begin
       edVencimento.Text   := DateToStr(FLOTEVACINA.VENCIMENTO_LOTE) ;
       edQuantidade.Text   := FLOTEVACINA.QUANTIDADE_ESTOQUE  ;
     end;
+end;
+
+procedure TfrmDeposito.Timer1Timer(Sender: TObject);
+begin
+  inherited;
+ tbDeposito.Refresh;
+ ClientDataSet1.Refresh;
 end;
 
 end.
