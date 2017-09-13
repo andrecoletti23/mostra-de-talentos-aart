@@ -8,11 +8,62 @@
   resources were bound to the produced executable.
 */
 
+#define IdResourceStrings_RSStackAlreadyCreated 64768
+#define IdResourceStrings_RSInvalidServiceName 64769
+#define IdResourceStrings_RSIPv6Unavailable 64770
+#define IdResourceStrings_RSInvalidIPv6Address 64771
+#define IdResourceStrings_RSIPVersionUnsupported 64772
+#define IdResourceStrings_RSNotAllBytesSent 64773
+#define IdResourceStrings_RSPackageSizeTooBig 64774
+#define IdResourceStrings_RSSetSizeExceeded 64775
+#define IdResourceStrings_RSStackECONNABORTED 64784
+#define IdResourceStrings_RSStackECONNRESET 64785
+#define IdResourceStrings_RSStackENOBUFS 64786
+#define IdResourceStrings_RSStackEISCONN 64787
+#define IdResourceStrings_RSStackENOTCONN 64788
+#define IdResourceStrings_RSStackESHUTDOWN 64789
+#define IdResourceStrings_RSStackETOOMANYREFS 64790
+#define IdResourceStrings_RSStackETIMEDOUT 64791
+#define IdResourceStrings_RSStackECONNREFUSED 64792
+#define IdResourceStrings_RSStackELOOP 64793
+#define IdResourceStrings_RSStackENAMETOOLONG 64794
+#define IdResourceStrings_RSStackEHOSTDOWN 64795
+#define IdResourceStrings_RSStackEHOSTUNREACH 64796
+#define IdResourceStrings_RSStackENOTEMPTY 64797
+#define IdResourceStrings_RSStackHOST_NOT_FOUND 64798
+#define IdResourceStrings_RSStackClassUndefined 64799
+#define IdResourceStrings_RSStackEALREADY 64800
+#define IdResourceStrings_RSStackENOTSOCK 64801
+#define IdResourceStrings_RSStackEDESTADDRREQ 64802
+#define IdResourceStrings_RSStackEMSGSIZE 64803
+#define IdResourceStrings_RSStackEPROTOTYPE 64804
+#define IdResourceStrings_RSStackENOPROTOOPT 64805
+#define IdResourceStrings_RSStackEPROTONOSUPPORT 64806
+#define IdResourceStrings_RSStackESOCKTNOSUPPORT 64807
+#define IdResourceStrings_RSStackEOPNOTSUPP 64808
+#define IdResourceStrings_RSStackEPFNOSUPPORT 64809
+#define IdResourceStrings_RSStackEAFNOSUPPORT 64810
+#define IdResourceStrings_RSStackEADDRINUSE 64811
+#define IdResourceStrings_RSStackEADDRNOTAVAIL 64812
+#define IdResourceStrings_RSStackENETDOWN 64813
+#define IdResourceStrings_RSStackENETUNREACH 64814
+#define IdResourceStrings_RSStackENETRESET 64815
 #define JConsts_sJPEGImageFile 64816
 #define ULoteVacina_STR_LOTE_VACINA 64817
 #define UAgente_STR_AGENTE 64818
 #define UCoren_STR_COREN 64819
 #define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64820
+#define IdResourceStrings_RSWinsockCallError 64821
+#define IdResourceStrings_RSWinsockLoadError 64822
+#define IdResourceStrings_RSStackError 64823
+#define IdResourceStrings_RSStackEINTR 64824
+#define IdResourceStrings_RSStackEBADF 64825
+#define IdResourceStrings_RSStackEACCES 64826
+#define IdResourceStrings_RSStackEFAULT 64827
+#define IdResourceStrings_RSStackEINVAL 64828
+#define IdResourceStrings_RSStackEMFILE 64829
+#define IdResourceStrings_RSStackEWOULDBLOCK 64830
+#define IdResourceStrings_RSStackEINPROGRESS 64831
 #define SqlConst_SLOCALTRANSACTIVE 64832
 #define SqlConst_SMULTIPLETRANSNOTENABLED 64833
 #define SqlConst_SCONNECTIONFAILED 64834
@@ -719,11 +770,62 @@
 #define SysConst_SOverflow 65535
 STRINGTABLE
 BEGIN
+	IdResourceStrings_RSStackAlreadyCreated,	"Stack already created."
+	IdResourceStrings_RSInvalidServiceName,	"%s is not a valid service."
+	IdResourceStrings_RSIPv6Unavailable,	"IPv6 unavailable"
+	IdResourceStrings_RSInvalidIPv6Address,	"%s is not a valid IPv6 address"
+	IdResourceStrings_RSIPVersionUnsupported,	"The requested IPVersion / Address family is not supported."
+	IdResourceStrings_RSNotAllBytesSent,	"Not all bytes sent."
+	IdResourceStrings_RSPackageSizeTooBig,	"Package Size Too Big."
+	IdResourceStrings_RSSetSizeExceeded,	"Set Size Exceeded."
+	IdResourceStrings_RSStackECONNABORTED,	"Software caused connection abort."
+	IdResourceStrings_RSStackECONNRESET,	"Connection reset by peer."
+	IdResourceStrings_RSStackENOBUFS,	"No buffer space available."
+	IdResourceStrings_RSStackEISCONN,	"Socket is already connected."
+	IdResourceStrings_RSStackENOTCONN,	"Socket is not connected."
+	IdResourceStrings_RSStackESHUTDOWN,	"Cannot send or receive after socket is closed."
+	IdResourceStrings_RSStackETOOMANYREFS,	"Too many references, cannot splice."
+	IdResourceStrings_RSStackETIMEDOUT,	"Connection timed out."
+	IdResourceStrings_RSStackECONNREFUSED,	"Connection refused."
+	IdResourceStrings_RSStackELOOP,	"Too many levels of symbolic links."
+	IdResourceStrings_RSStackENAMETOOLONG,	"File name too long."
+	IdResourceStrings_RSStackEHOSTDOWN,	"Host is down."
+	IdResourceStrings_RSStackEHOSTUNREACH,	"No route to host."
+	IdResourceStrings_RSStackENOTEMPTY,	"Directory not empty"
+	IdResourceStrings_RSStackHOST_NOT_FOUND,	"Host not found."
+	IdResourceStrings_RSStackClassUndefined,	"Stack Class is undefined."
+	IdResourceStrings_RSStackEALREADY,	"Operation already in progress."
+	IdResourceStrings_RSStackENOTSOCK,	"Socket operation on non-socket."
+	IdResourceStrings_RSStackEDESTADDRREQ,	"Destination address required."
+	IdResourceStrings_RSStackEMSGSIZE,	"Message too long."
+	IdResourceStrings_RSStackEPROTOTYPE,	"Protocol wrong type for socket."
+	IdResourceStrings_RSStackENOPROTOOPT,	"Bad protocol option."
+	IdResourceStrings_RSStackEPROTONOSUPPORT,	"Protocol not supported."
+	IdResourceStrings_RSStackESOCKTNOSUPPORT,	"Socket type not supported."
+	IdResourceStrings_RSStackEOPNOTSUPP,	"Operation not supported on socket."
+	IdResourceStrings_RSStackEPFNOSUPPORT,	"Protocol family not supported."
+	IdResourceStrings_RSStackEAFNOSUPPORT,	"Address family not supported by protocol family."
+	IdResourceStrings_RSStackEADDRINUSE,	"Address already in use."
+	IdResourceStrings_RSStackEADDRNOTAVAIL,	"Cannot assign requested address."
+	IdResourceStrings_RSStackENETDOWN,	"Network is down."
+	IdResourceStrings_RSStackENETUNREACH,	"Network is unreachable."
+	IdResourceStrings_RSStackENETRESET,	"Net dropped connection or reset."
 	JConsts_sJPEGImageFile,	"JPEG Image File"
 	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
 	UAgente_STR_AGENTE,	"Agente De Saúde"
 	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
 	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
+	IdResourceStrings_RSWinsockCallError,	"Error on call to Winsock2 library function %s"
+	IdResourceStrings_RSWinsockLoadError,	"Error on loading Winsock2 library (%s)"
+	IdResourceStrings_RSStackError,	"Socket Error # %d\r\n%s"
+	IdResourceStrings_RSStackEINTR,	"Interrupted system call."
+	IdResourceStrings_RSStackEBADF,	"Bad file number."
+	IdResourceStrings_RSStackEACCES,	"Access denied."
+	IdResourceStrings_RSStackEFAULT,	"Buffer fault."
+	IdResourceStrings_RSStackEINVAL,	"Invalid argument."
+	IdResourceStrings_RSStackEMFILE,	"Too many open files."
+	IdResourceStrings_RSStackEWOULDBLOCK,	"Operation would block."
+	IdResourceStrings_RSStackEINPROGRESS,	"Operation now in progress."
 	SqlConst_SLOCALTRANSACTIVE,	"[0x0013]: Local Transaction already active"
 	SqlConst_SMULTIPLETRANSNOTENABLED,	"[0x0014]: Multiple Transactions not Enabled"
 	SqlConst_SCONNECTIONFAILED,	"[0x0015]: Connection failed"
@@ -1445,5 +1547,6 @@ END
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
+/* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmLogin.dfm */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
 /* C:\Users\andra\OneDrive\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */

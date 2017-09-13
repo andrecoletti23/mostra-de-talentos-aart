@@ -20,6 +20,9 @@ type
     procedure AtribuiDBParaEntidade(const coAGENTE: TAGENTE); override;
     procedure AtribuiEntidadeParaDB(const coAGENTE: TAGENTE;
                                     const coSQLQuery: TSQLQuery); override;
+
+    function RetornaPeloLogin(const csAgente_Login: String): TAGENTE;
+
   end;
 
 
@@ -31,11 +34,31 @@ uses
   , StrUtils
   ;
 
+const
+  CNT_SELECT_PELO_LOGIN = 'select * from AGENTE where Agente_login = :login';
+
 { TRepositorioAgente }
 constructor TRepositorioAGENTE.Create;
 begin
   inherited Create(TAGENTE, TBL_AGENTE, FLD_ENTIDADE_ID, STR_AGENTE);
 end;
+
+function TRepositorioAgente.RetornaPeloLogin(const csAgente_Login: String): TAGENTE;
+begin
+  FSQLSelect.Close;
+  FSQLSelect.CommandText := CNT_SELECT_PELO_LOGIN;
+  FSQLSelect.Prepared    := True;
+  FSQLSelect.ParamByName(FLD_AGENTE_LOGIN).AsString := csAgente_Login;
+  FSQLSelect.Open;
+
+  Result := nil;
+  if not FSQLSelect.Eof then
+    begin
+      Result := TAGENTE.Create;
+      AtribuiDBParaEntidade(Result);
+    end;
+end;
+
 
 procedure TRepositorioAGENTE.AtribuiDBParaEntidade(const coAGENTE: TAGENTE);
 begin
@@ -71,9 +94,6 @@ begin
       ParamByName(FLD_AGENTE_TELEFONE).AsString       := coAGENTE.AGENTE_TELEFONE;
 
     end;
-
   end;
-
-
 
 end.

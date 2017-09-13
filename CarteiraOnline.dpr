@@ -2,6 +2,8 @@ program CarteiraOnline;
 
 uses
   Forms,
+  SysUtils,
+  Controls,
   UFrmPrincipal in 'VisaoControle\UFrmPrincipal.pas' {FrmPrincipal},
   UFrmCRUD in 'VisaoControle\UFrmCRUD.pas' {FrmCRUD},
   UUtilitarios in 'Modelo\UUtilitarios.pas',
@@ -41,7 +43,9 @@ uses
   URepositorioTodasVacinas in 'Modelo\Persistencia\URepositorioTodasVacinas.pas',
   UFrmAgente in 'VisaoControle\UFrmAgente.pas' {frmAgente},
   URegraCRUDTodasVacinas in 'Modelo\Regra\URegraCRUDTodasVacinas.pas',
-  URegraCRUDAgente in 'Modelo\Regra\URegraCRUDAgente.pas';
+  URegraCRUDAgente in 'Modelo\Regra\URegraCRUDAgente.pas',
+  UAgenteLogado in 'Modelo\Persistencia\UAgenteLogado.pas',
+  UFrmLogin in 'VisaoControle\UFrmLogin.pas' {FrmLogin};
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';
@@ -49,9 +53,38 @@ uses
 {$R *.res}
 
 begin
+  {$DEFINE DESENV}
   Application.Initialize;
+  Application.CreateForm(TdmEntra21, dmEntra21);
+  {$IFDEF DESENV}
+  FrmLogin := TFrmLogin.Create(nil);
+  if FrmLogin.ShowModal = mrYes then
+    begin
+      FreeAndNil(FrmLogin);
+      Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+      Application.CreateForm(TfrmTelaInicial, frmTelaInicial);
+      Application.Run;
+    end
+  else
+    begin
+      Application.Run;
+      Application.Terminate;
+    end;
+  {$ELSE}
+  TAgenteLogado.Unico.RealizaLogin('admin','admin');
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TfrmTelaInicial, frmTelaInicial);
+  Application.Run;
+  {$ENDIF}
+end.
+
+
+
+
+  {Application.Initialize;
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.CreateForm(TdmEntra21, dmEntra21);
   Application.CreateForm(TfrmTelaInicial, frmTelaInicial);
-  Application.Run;
-end.
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.Run;}
+//end.
