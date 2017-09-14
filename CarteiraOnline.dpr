@@ -71,7 +71,7 @@ begin
       Application.Terminate;
     end;
   {$ELSE}
-  TAgenteLogado.Unico.RealizaLogin('admin','admin');
+  //TAgenteLogado.Unico.RealizaLogin('admin','admin');
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.CreateForm(TfrmTelaInicial, frmTelaInicial);
   Application.Run;

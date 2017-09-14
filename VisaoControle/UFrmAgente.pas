@@ -42,8 +42,12 @@ uses
     UOpcaoPesquisa
   , UEntidade
   , UFrmPesquisa
-  , UDialogo;
-
+  , UDialogo
+  , IdHashMessageDigest
+  ;
+var
+  SenhaHash : String;
+  HashMessageDigest5: TIdHashMessageDigest5;
 {$R *.dfm}
 
 { TfrmTodasVacinas }
@@ -79,8 +83,11 @@ procedure TfrmAgente.PreencheEntidade;
 begin
   inherited;
    FAGENTE.AGENTE_NOME               := edNome.Text;
-   FAGENTE.AGENTE_LOGIN              := edLogin.Text;
-   FAGENTE.AGENTE_SENHA              := edSenha.Text;
+   FAGENTE.LOGIN                     := edLogin.Text;
+   //FAGENTE.SENHA                     := edSenha.Text;
+   HashMessageDigest5 := TIdHashMessageDigest5.Create;
+   SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
+   FAgente.SENHA := SenhaHash ;
    FAGENTE.AGENTE_EMAIL              := edEmail.Text;
    FAGENTE.AGENTE_COREN              := edCoren.Text;
    FAGENTE.AGENTE_ESPECIFICACAO      := edEspec.Text;
@@ -93,8 +100,11 @@ procedure TfrmAgente.PreencheFormulario;
 begin
   inherited;
   edNome.Text       := FAGENTE.AGENTE_NOME ;
-  edLogin.Text      := FAGENTE.AGENTE_LOGIN ;
-  edSenha.Text      := FAGENTE.AGENTE_SENHA ;
+  edLogin.Text      := FAGENTE.LOGIN ;
+  edSenha.Text      := FAGENTE.SENHA ;
+  {HashMessageDigest5 := TIdHashMessageDigest5.Create;
+  SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
+  FAgente.SENHA := SenhaHash ; }
   edEmail.Text      := FAGENTE.AGENTE_EMAIL ;
   edCoren.Text      := FAGENTE.AGENTE_COREN ;
   edEspec.Text      := FAGENTE.AGENTE_ESPECIFICACAO ;

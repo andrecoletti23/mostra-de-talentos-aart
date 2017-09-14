@@ -14,6 +14,8 @@ type
     btnCancelar: TButton;
     procedure btnEntrarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
+    procedure edSenhaKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -52,12 +54,11 @@ begin
   end;
 end;
 
-{procedure TFrmLogin.edSenhaKeyDown(Sender: TObject; var Key: Word;
+procedure TFrmLogin.edSenhaKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if key = VK_RETURN then
+   if key = VK_RETURN then
     btnEntrar.Click;
-end; }
-
+end;
 end.
 

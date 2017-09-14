@@ -20,8 +20,9 @@ type
     procedure AtribuiDBParaEntidade(const coAGENTE: TAGENTE); override;
     procedure AtribuiEntidadeParaDB(const coAGENTE: TAGENTE;
                                     const coSQLQuery: TSQLQuery); override;
+    procedure GravaHashSenha(const csLogin: String;const csSenha: String);
 
-    function RetornaPeloLogin(const csAgente_Login: String): TAGENTE;
+    function RetornaPeloLogin(const csLogin: String): TAGENTE;
 
   end;
 
@@ -32,10 +33,11 @@ uses
     UDM
   , SysUtils
   , StrUtils
+  , IdHashMessageDigest
   ;
 
 const
-  CNT_SELECT_PELO_LOGIN = 'select * from AGENTE where Agente_login = :login';
+  CNT_SELECT_PELO_LOGIN = 'select * from AGENTE where login = :login';
 
 { TRepositorioAgente }
 constructor TRepositorioAGENTE.Create;
@@ -43,12 +45,22 @@ begin
   inherited Create(TAGENTE, TBL_AGENTE, FLD_ENTIDADE_ID, STR_AGENTE);
 end;
 
-function TRepositorioAgente.RetornaPeloLogin(const csAgente_Login: String): TAGENTE;
+procedure TRepositorioAgente.GravaHashSenha(const csLogin, csSenha: String);
+var
+SenhaHash : String;
+HashMessageDigest5: TIdHashMessageDigest5;
+begin
+  //HashMessageDigest5 := TIdHashMessageDigest5.Create;
+  //SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
+end;
+
+
+function TRepositorioAgente.RetornaPeloLogin(const csLogin: String): TAGENTE;
 begin
   FSQLSelect.Close;
   FSQLSelect.CommandText := CNT_SELECT_PELO_LOGIN;
   FSQLSelect.Prepared    := True;
-  FSQLSelect.ParamByName(FLD_AGENTE_LOGIN).AsString := csAgente_Login;
+  FSQLSelect.ParamByName(FLD_LOGIN).AsString := csLogin;
   FSQLSelect.Open;
 
   Result := nil;
@@ -66,8 +78,8 @@ begin
   with FSQLSelect do
     begin
       coAGENTE.AGENTE_NOME            := FieldByName(FLD_AGENTE_NOME).AsString ;
-      coAGENTE.AGENTE_LOGIN           := FieldByName(FLD_AGENTE_LOGIN).AsString ;
-      coAGENTE.AGENTE_SENHA           := FieldByName(FLD_AGENTE_SENHA).AsString;
+      coAGENTE.LOGIN                  := FieldByName(FLD_LOGIN).AsString ;
+      coAGENTE.SENHA                  := FieldByName(FLD_SENHA).AsString;
       coAGENTE.AGENTE_EMAIL           := FieldByName(FLD_AGENTE_EMAIL).AsString ;
       coAGENTE.AGENTE_COREN           := FieldByName(FLD_AGENTE_COREN).AsString ;
       coAGENTE.AGENTE_ESPECIFICACAO   := FieldByName(FLD_AGENTE_ESPECIFICACAO).AsString ;
@@ -85,9 +97,9 @@ begin
     begin
       ParamByName(FLD_AGENTE_COREN).AsString          := coAGENTE.AGENTE_COREN;
       ParamByName(FLD_AGENTE_NOME).AsString           := coAGENTE.AGENTE_NOME;
-      ParamByName(FLD_AGENTE_LOGIN).AsString          := coAGENTE.AGENTE_ESPECIFICACAO ;
+      ParamByName(FLD_LOGIN).AsString                 := coAGENTE.LOGIN ;
       ParamByName(FLD_AGENTE_EMAIL).AsString          := coAGENTE.AGENTE_EMAIL;
-      ParamByName(FLD_AGENTE_SENHA).AsString          := coAGENTE.AGENTE_SENHA;
+      ParamByName(FLD_SENHA).AsString                 := coAGENTE.SENHA;
       ParamByName(FLD_AGENTE_DATA_NASC).AsDate        := coAGENTE.AGENTE_DATA_NASC ;
       ParamByName(FLD_AGENTE_ESPECIFICACAO).AsString  := coAGENTE.AGENTE_ESPECIFICACAO;
       ParamByName(FLD_AGENTE_TURNO).AsString          := coAGENTE.AGENTE_TURNO;

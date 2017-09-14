@@ -11,8 +11,8 @@ type
    public
      ID                           : Integer;
      AGENTE_NOME                  : String;
-     AGENTE_LOGIN                 : String;
-     AGENTE_SENHA                 : String;
+     LOGIN                        : String;
+     SENHA                        : String;
      AGENTE_EMAIL                 : String;
      AGENTE_COREN                 : String;
      AGENTE_ESPECIFICACAO         : String;
@@ -25,8 +25,8 @@ const
     TBL_AGENTE                  = 'AGENTE';
     FLD_ID                      = 'ID';
     FLD_AGENTE_NOME             = 'AGENTE_NOME';
-    FLD_AGENTE_LOGIN            = 'AGENTE_LOGIN';
-    FLD_AGENTE_SENHA            = 'AGENTE_SENHA';
+    FLD_LOGIN                   = 'LOGIN';
+    FLD_SENHA                   = 'SENHA';
     FLD_AGENTE_EMAIL            = 'AGENTE_EMAIL';
     FLD_AGENTE_COREN            = 'AGENTE_COREN';
     FLD_AGENTE_ESPECIFICACAO    = 'AGENTE_ESPECIFICACAO';

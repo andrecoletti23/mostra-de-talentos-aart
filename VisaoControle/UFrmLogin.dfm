@@ -17,15 +17,16 @@ object FrmLogin: TFrmLogin
     Left = 80
     Top = 88
     Width = 233
-    Height = 33
+    Height = 21
     TabOrder = 0
   end
   object edSenha: TEdit
     Left = 400
     Top = 88
     Width = 257
-    Height = 33
+    Height = 21
     TabOrder = 1
+    OnKeyDown = edSenhaKeyDown
   end
   object btnEntrar: TButton
     Left = 80

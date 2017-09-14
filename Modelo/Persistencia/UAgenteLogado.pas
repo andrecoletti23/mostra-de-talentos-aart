@@ -69,9 +69,9 @@ begin
   HashMessageDigest5 := TIdHashMessageDigest5.Create;
   try
     SenhaCriptografada := HashMessageDigest5.HashStringAsHex(csSenha);
-    if FAGENTE.AGENTE_SENHA <> SenhaCriptografada then
+    if FAGENTE.SENHA <> SenhaCriptografada then
       raise EValidacaoNegocio.Create('Usuário ou Senha são inválidos');
-  finally
+  finally  //ALTERAR SOMENTE QUANDO O HASH ESTIVER REGISTRADO NO DB
     FreeAndNil(HashMessageDigest5);
   end;
 end;
