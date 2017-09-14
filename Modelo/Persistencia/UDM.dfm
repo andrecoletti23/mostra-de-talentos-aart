@@ -1,13 +1,8 @@
 object dmEntra21: TdmEntra21
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-<<<<<<< HEAD
   Height = 136
   Width = 175
-=======
-  Height = 128
-  Width = 252
->>>>>>> login-teste
   object SQLConnection: TSQLConnection
     ConnectionName = 'IBConnection'
     DriverName = 'Firebird'
