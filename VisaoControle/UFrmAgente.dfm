@@ -2,30 +2,38 @@ inherited frmAgente: TfrmAgente
   Caption = 'Cadastro Agente do SUS'
   ClientHeight = 558
   ClientWidth = 950
-  ExplicitWidth = 968
-  ExplicitHeight = 605
+  ExplicitWidth = 966
+  ExplicitHeight = 597
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 950
+    ExplicitWidth = 950
   end
   inherited gbLocalizar: TGroupBox
     Width = 950
+    ExplicitWidth = 950
   end
   inherited pnlBotoes: TPanel
     Top = 517
     Width = 950
+    ExplicitTop = 517
+    ExplicitWidth = 950
     inherited btnLimpar: TBitBtn
       Left = 715
+      ExplicitLeft = 715
     end
     inherited btnExcluir: TBitBtn
       Left = 598
+      ExplicitLeft = 598
     end
     inherited btnGravar: TBitBtn
       Left = 481
+      ExplicitLeft = 481
     end
     inherited btnSair: TBitBtn
       Left = 832
+      ExplicitLeft = 832
     end
   end
   object gbUsuarios: TGroupBox [3]
@@ -36,7 +44,6 @@ inherited frmAgente: TfrmAgente
     Align = alClient
     Caption = 'Cadastro de usu'#225'rios do sistema'
     TabOrder = 3
-    ExplicitTop = 92
     object edNome: TLabeledEdit
       Left = 32
       Top = 32
