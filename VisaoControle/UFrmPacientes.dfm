@@ -1,13 +1,13 @@
 inherited frmPacientes: TfrmPacientes
   Caption = 'Cadastro/Altera'#231#227'o de Pacientes - SUS'
   ClientHeight = 572
-  ClientWidth = 1037
+  ClientWidth = 1012
   ExplicitWidth = 1053
   ExplicitHeight = 611
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
-    Width = 1037
+    Width = 1012
     Color = 6176512
     ParentBackground = False
     ExplicitWidth = 1037
@@ -25,7 +25,7 @@ inherited frmPacientes: TfrmPacientes
     end
   end
   inherited gbLocalizar: TGroupBox
-    Width = 1037
+    Width = 1012
     Color = 6176512
     Font.Color = clWhite
     Font.Height = -12
@@ -37,7 +37,7 @@ inherited frmPacientes: TfrmPacientes
   end
   inherited pnlBotoes: TPanel
     Top = 531
-    Width = 1037
+    Width = 1012
     Color = 6176512
     ParentBackground = False
     ExplicitTop = 531
@@ -62,7 +62,7 @@ inherited frmPacientes: TfrmPacientes
   object gbIdentificacao: TGroupBox [3]
     Left = 0
     Top = 86
-    Width = 1037
+    Width = 1012
     Height = 171
     Hint = 'Identifica'#231#227'o do paciente'
     Align = alTop
@@ -79,6 +79,7 @@ inherited frmPacientes: TfrmPacientes
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
+    ExplicitWidth = 1037
     object lbSexo: TLabel
       Left = 836
       Top = 16
@@ -297,7 +298,7 @@ inherited frmPacientes: TfrmPacientes
   object gbLogradouro: TGroupBox [4]
     Left = 0
     Top = 257
-    Width = 1037
+    Width = 1012
     Height = 152
     Align = alTop
     Caption = 'Logradouro'
@@ -311,6 +312,7 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 4
+    ExplicitWidth = 1037
     object lbUF: TLabel
       Left = 582
       Top = 14
@@ -412,7 +414,7 @@ inherited frmPacientes: TfrmPacientes
   object gbAdicionais: TGroupBox [5]
     Left = 0
     Top = 409
-    Width = 1037
+    Width = 1012
     Height = 122
     Align = alClient
     Caption = 'Informa'#231#245'es Adicionais'
@@ -426,6 +428,7 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 5
+    ExplicitWidth = 1037
     object lbCartaoSUS: TLabel
       Left = 8
       Top = 16

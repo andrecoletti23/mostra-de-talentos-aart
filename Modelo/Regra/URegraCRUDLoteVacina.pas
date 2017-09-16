@@ -40,16 +40,16 @@ begin
   inherited;
 
   if Trim(TLOTEVACINA(coENTIDADE).VACINA_NOME) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_VACINA_NAO_INFORMADA);
 
   if (TLOTEVACINA(coENTIDADE).LOTE) = EmptyStr then
-    raise EValidacaoNegocio.Create (STR_CIDADE_POPULACAO_INVALIDA);
+    raise EValidacaoNegocio.Create (STR_LOTE_VACINA_NAO_INFORMADO);
 
   if Trim(TLOTEVACINA(coENTIDADE).LABORATORIO) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_LABORATORIO_NAO_INFORMADO);
 
-  if Trim(TLOTEVACINA(coENTIDADE).VENCIMENTO_LOTE) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+  //if Trim(TLOTEVACINA(coENTIDADE).VENCIMENTO_LOTE) = EmptyStr Then
+    //raise EValidacaoNegocio.Create(STR_LOTE_VENCIMENTO_NAO_INFORMADO);
 
 end;
 

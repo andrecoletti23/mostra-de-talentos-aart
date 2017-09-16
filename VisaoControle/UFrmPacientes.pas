@@ -53,7 +53,7 @@ type
 protected
     FPACIENTE: TPACIENTE;
 
-    FregraCRUDPacienteS: TRegraCRUDPacienteS;
+    FRegraCRUDPaciente: TRegraCRUDPaciente;
 
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -87,7 +87,7 @@ procedure TfrmPacientes.Inicializa;
 begin
   inherited;
   DefineEntidade(@FPACIENTE, TPACIENTE);
-  DefineRegraCRUD(@FregraCRUDPACIENTES, TRegraCRUDPACIENTES);
+  DefineRegraCRUD(@FregraCRUDPACIENTE, TRegraCRUDPACIENTE);
 
     AdicionaOpcaoPesquisa(TOpcaoPesquisa
     .Create

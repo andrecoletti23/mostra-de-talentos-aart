@@ -40,34 +40,34 @@ begin
   inherited;
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).COD_VACINACAO) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_CODIGO_VACINA_NAO_INFORAMADO);
 
   if (TCARTEIRA_VACINACAO(coENTIDADE).NOME) = EmptyStr then
-    raise EValidacaoNegocio.Create (STR_CIDADE_POPULACAO_INVALIDA);
+    raise EValidacaoNegocio.Create (STR_CODIGO_VACINA_NAO_INFORAMADO);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).VACINA) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_VACINA_NAO_INFORMADA);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).DOSE) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_DOSE_NAO_INFORMADA);
 
-  if Trim(TCARTEIRA_VACINACAO(coENTIDADE).DATA) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+  //if Trim(TCARTEIRA_VACINACAO(coENTIDADE).DATA) = EmptyStr Then
+    //raise EValidacaoNegocio.Create(STR_DATA_VACINA_NAO_INFORMADA);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).RESPONSAVEL) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_RESPONSAVEL_NAO_INFORMADO);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).COD_COREN) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_CODIGO_COREN_NAO_INFORMADO);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).COD_LOTE) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_CODIGO_LOTE_NAO_INFORMADO);
 
-  if Trim(TCARTEIRA_VACINACAO(coENTIDADE).LOTE_VENCIMENTO) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+  //if Trim(TCARTEIRA_VACINACAO(coENTIDADE).LOTE_VENCIMENTO) = EmptyStr Then
+    //raise EValidacaoNegocio.Create(STR_LOTE_VENCIMENTO_NAO_INFORMADO);
 
   if Trim(TCARTEIRA_VACINACAO(coENTIDADE).UNIDADE_SAUDE) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CIDADE_NOME_NAO_INFORMADO);
+    raise EValidacaoNegocio.Create(STR_UNIDADE_SAUDE_NAO_INFORMADA);
 end;
 
 end.
