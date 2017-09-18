@@ -232,7 +232,7 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Caption = 'Nome do Paciente'
       TabOrder = 1
     end
-    object MaskEdit1: TMaskEdit
+    object edDataRetorno: TMaskEdit
       Left = 8
       Top = 85
       Width = 120

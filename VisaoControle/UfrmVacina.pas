@@ -34,7 +34,7 @@ type
     gbRetorno: TGroupBox;
     edSusRetorno: TLabeledEdit;
     edNomeRetorno: TLabeledEdit;
-    MaskEdit1: TMaskEdit;
+    edDataRetorno: TMaskEdit;
     cbVacinaRetorno: TComboBox;
     lbDataRetorno: TLabel;
     lbVacinaRetorno: TLabel;
