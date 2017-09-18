@@ -8,56 +8,56 @@
   resources were bound to the produced executable.
 */
 
-#define IdResourceStrings_RSPackageSizeTooBig 64736
-#define IdResourceStrings_RSSetSizeExceeded 64737
-#define IdResourceStrings_RSStackETOOMANYREFS 64752
-#define IdResourceStrings_RSStackETIMEDOUT 64753
-#define IdResourceStrings_RSStackECONNREFUSED 64754
-#define IdResourceStrings_RSStackELOOP 64755
-#define IdResourceStrings_RSStackENAMETOOLONG 64756
-#define IdResourceStrings_RSStackEHOSTDOWN 64757
-#define IdResourceStrings_RSStackEHOSTUNREACH 64758
-#define IdResourceStrings_RSStackENOTEMPTY 64759
-#define IdResourceStrings_RSStackHOST_NOT_FOUND 64760
-#define IdResourceStrings_RSStackClassUndefined 64761
-#define IdResourceStrings_RSStackAlreadyCreated 64762
-#define IdResourceStrings_RSInvalidServiceName 64763
-#define IdResourceStrings_RSIPv6Unavailable 64764
-#define IdResourceStrings_RSInvalidIPv6Address 64765
-#define IdResourceStrings_RSIPVersionUnsupported 64766
-#define IdResourceStrings_RSNotAllBytesSent 64767
-#define IdResourceStrings_RSStackEPROTONOSUPPORT 64768
-#define IdResourceStrings_RSStackESOCKTNOSUPPORT 64769
-#define IdResourceStrings_RSStackEOPNOTSUPP 64770
-#define IdResourceStrings_RSStackEPFNOSUPPORT 64771
-#define IdResourceStrings_RSStackEAFNOSUPPORT 64772
-#define IdResourceStrings_RSStackEADDRINUSE 64773
-#define IdResourceStrings_RSStackEADDRNOTAVAIL 64774
-#define IdResourceStrings_RSStackENETDOWN 64775
-#define IdResourceStrings_RSStackENETUNREACH 64776
-#define IdResourceStrings_RSStackENETRESET 64777
-#define IdResourceStrings_RSStackECONNABORTED 64778
-#define IdResourceStrings_RSStackECONNRESET 64779
-#define IdResourceStrings_RSStackENOBUFS 64780
-#define IdResourceStrings_RSStackEISCONN 64781
-#define IdResourceStrings_RSStackENOTCONN 64782
-#define IdResourceStrings_RSStackESHUTDOWN 64783
-#define IdResourceStrings_RSWinsockLoadError 64784
-#define IdResourceStrings_RSStackError 64785
-#define IdResourceStrings_RSStackEINTR 64786
-#define IdResourceStrings_RSStackEBADF 64787
-#define IdResourceStrings_RSStackEACCES 64788
-#define IdResourceStrings_RSStackEFAULT 64789
-#define IdResourceStrings_RSStackEINVAL 64790
-#define IdResourceStrings_RSStackEMFILE 64791
-#define IdResourceStrings_RSStackEWOULDBLOCK 64792
-#define IdResourceStrings_RSStackEINPROGRESS 64793
-#define IdResourceStrings_RSStackEALREADY 64794
-#define IdResourceStrings_RSStackENOTSOCK 64795
-#define IdResourceStrings_RSStackEDESTADDRREQ 64796
-#define IdResourceStrings_RSStackEMSGSIZE 64797
-#define IdResourceStrings_RSStackEPROTOTYPE 64798
-#define IdResourceStrings_RSStackENOPROTOOPT 64799
+#define UCoren_STR_COREN 64736
+#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64737
+#define IdResourceStrings_RSStackELOOP 64752
+#define IdResourceStrings_RSStackENAMETOOLONG 64753
+#define IdResourceStrings_RSStackEHOSTDOWN 64754
+#define IdResourceStrings_RSStackEHOSTUNREACH 64755
+#define IdResourceStrings_RSStackENOTEMPTY 64756
+#define IdResourceStrings_RSStackHOST_NOT_FOUND 64757
+#define IdResourceStrings_RSStackClassUndefined 64758
+#define IdResourceStrings_RSStackAlreadyCreated 64759
+#define IdResourceStrings_RSInvalidServiceName 64760
+#define IdResourceStrings_RSIPv6Unavailable 64761
+#define IdResourceStrings_RSInvalidIPv6Address 64762
+#define IdResourceStrings_RSIPVersionUnsupported 64763
+#define IdResourceStrings_RSNotAllBytesSent 64764
+#define IdResourceStrings_RSPackageSizeTooBig 64765
+#define IdResourceStrings_RSSetSizeExceeded 64766
+#define ULoteVacina_STR_LOTE_VACINA 64767
+#define IdResourceStrings_RSStackEPFNOSUPPORT 64768
+#define IdResourceStrings_RSStackEAFNOSUPPORT 64769
+#define IdResourceStrings_RSStackEADDRINUSE 64770
+#define IdResourceStrings_RSStackEADDRNOTAVAIL 64771
+#define IdResourceStrings_RSStackENETDOWN 64772
+#define IdResourceStrings_RSStackENETUNREACH 64773
+#define IdResourceStrings_RSStackENETRESET 64774
+#define IdResourceStrings_RSStackECONNABORTED 64775
+#define IdResourceStrings_RSStackECONNRESET 64776
+#define IdResourceStrings_RSStackENOBUFS 64777
+#define IdResourceStrings_RSStackEISCONN 64778
+#define IdResourceStrings_RSStackENOTCONN 64779
+#define IdResourceStrings_RSStackESHUTDOWN 64780
+#define IdResourceStrings_RSStackETOOMANYREFS 64781
+#define IdResourceStrings_RSStackETIMEDOUT 64782
+#define IdResourceStrings_RSStackECONNREFUSED 64783
+#define IdResourceStrings_RSStackEBADF 64784
+#define IdResourceStrings_RSStackEACCES 64785
+#define IdResourceStrings_RSStackEFAULT 64786
+#define IdResourceStrings_RSStackEINVAL 64787
+#define IdResourceStrings_RSStackEMFILE 64788
+#define IdResourceStrings_RSStackEWOULDBLOCK 64789
+#define IdResourceStrings_RSStackEINPROGRESS 64790
+#define IdResourceStrings_RSStackEALREADY 64791
+#define IdResourceStrings_RSStackENOTSOCK 64792
+#define IdResourceStrings_RSStackEDESTADDRREQ 64793
+#define IdResourceStrings_RSStackEMSGSIZE 64794
+#define IdResourceStrings_RSStackEPROTOTYPE 64795
+#define IdResourceStrings_RSStackENOPROTOOPT 64796
+#define IdResourceStrings_RSStackEPROTONOSUPPORT 64797
+#define IdResourceStrings_RSStackESOCKTNOSUPPORT 64798
+#define IdResourceStrings_RSStackEOPNOTSUPP 64799
 #define SqlConst_SNOTABLE 64800
 #define SqlConst_SMISSINGPARAMINSQL 64801
 #define SqlConst_SNOTIMPLEMENTED 64802
@@ -69,11 +69,11 @@
 #define JConsts_sChangeJPGSize 64808
 #define JConsts_sJPEGError 64809
 #define JConsts_sJPEGImageFile 64810
-#define ULoteVacina_STR_LOTE_VACINA 64811
-#define UAgente_STR_AGENTE 64812
-#define UCoren_STR_COREN 64813
-#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64814
-#define IdResourceStrings_RSWinsockCallError 64815
+#define UAgente_STR_AGENTE 64811
+#define IdResourceStrings_RSWinsockCallError 64812
+#define IdResourceStrings_RSWinsockLoadError 64813
+#define IdResourceStrings_RSStackError 64814
+#define IdResourceStrings_RSStackEINTR 64815
 #define SqlConst_SINVALIDPARAM 64816
 #define SqlConst_SEOF 64817
 #define SqlConst_SSQLPARAMNOTSET 64818
@@ -796,11 +796,8 @@
 #define SysConst_SOverflow 65535
 STRINGTABLE
 BEGIN
-	IdResourceStrings_RSPackageSizeTooBig,	"Package Size Too Big."
-	IdResourceStrings_RSSetSizeExceeded,	"Set Size Exceeded."
-	IdResourceStrings_RSStackETOOMANYREFS,	"Too many references, cannot splice."
-	IdResourceStrings_RSStackETIMEDOUT,	"Connection timed out."
-	IdResourceStrings_RSStackECONNREFUSED,	"Connection refused."
+	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
+	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
 	IdResourceStrings_RSStackELOOP,	"Too many levels of symbolic links."
 	IdResourceStrings_RSStackENAMETOOLONG,	"File name too long."
 	IdResourceStrings_RSStackEHOSTDOWN,	"Host is down."
@@ -814,9 +811,9 @@ BEGIN
 	IdResourceStrings_RSInvalidIPv6Address,	"%s is not a valid IPv6 address"
 	IdResourceStrings_RSIPVersionUnsupported,	"The requested IPVersion / Address family is not supported."
 	IdResourceStrings_RSNotAllBytesSent,	"Not all bytes sent."
-	IdResourceStrings_RSStackEPROTONOSUPPORT,	"Protocol not supported."
-	IdResourceStrings_RSStackESOCKTNOSUPPORT,	"Socket type not supported."
-	IdResourceStrings_RSStackEOPNOTSUPP,	"Operation not supported on socket."
+	IdResourceStrings_RSPackageSizeTooBig,	"Package Size Too Big."
+	IdResourceStrings_RSSetSizeExceeded,	"Set Size Exceeded."
+	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
 	IdResourceStrings_RSStackEPFNOSUPPORT,	"Protocol family not supported."
 	IdResourceStrings_RSStackEAFNOSUPPORT,	"Address family not supported by protocol family."
 	IdResourceStrings_RSStackEADDRINUSE,	"Address already in use."
@@ -830,9 +827,9 @@ BEGIN
 	IdResourceStrings_RSStackEISCONN,	"Socket is already connected."
 	IdResourceStrings_RSStackENOTCONN,	"Socket is not connected."
 	IdResourceStrings_RSStackESHUTDOWN,	"Cannot send or receive after socket is closed."
-	IdResourceStrings_RSWinsockLoadError,	"Error on loading Winsock2 library (%s)"
-	IdResourceStrings_RSStackError,	"Socket Error # %d\r\n%s"
-	IdResourceStrings_RSStackEINTR,	"Interrupted system call."
+	IdResourceStrings_RSStackETOOMANYREFS,	"Too many references, cannot splice."
+	IdResourceStrings_RSStackETIMEDOUT,	"Connection timed out."
+	IdResourceStrings_RSStackECONNREFUSED,	"Connection refused."
 	IdResourceStrings_RSStackEBADF,	"Bad file number."
 	IdResourceStrings_RSStackEACCES,	"Access denied."
 	IdResourceStrings_RSStackEFAULT,	"Buffer fault."
@@ -846,6 +843,9 @@ BEGIN
 	IdResourceStrings_RSStackEMSGSIZE,	"Message too long."
 	IdResourceStrings_RSStackEPROTOTYPE,	"Protocol wrong type for socket."
 	IdResourceStrings_RSStackENOPROTOOPT,	"Bad protocol option."
+	IdResourceStrings_RSStackEPROTONOSUPPORT,	"Protocol not supported."
+	IdResourceStrings_RSStackESOCKTNOSUPPORT,	"Socket type not supported."
+	IdResourceStrings_RSStackEOPNOTSUPP,	"Operation not supported on socket."
 	SqlConst_SNOTABLE,	"[0x0019]: No table found"
 	SqlConst_SMISSINGPARAMINSQL,	"[0x001A] Missing parameter marker in SQL"
 	SqlConst_SNOTIMPLEMENTED,	"[0x001B] Not implemented"
@@ -857,11 +857,11 @@ BEGIN
 	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
 	JConsts_sJPEGError,	"JPEG error #%d"
 	JConsts_sJPEGImageFile,	"JPEG Image File"
-	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
 	UAgente_STR_AGENTE,	"Agente De Saúde"
-	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
-	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
 	IdResourceStrings_RSWinsockCallError,	"Error on call to Winsock2 library function %s"
+	IdResourceStrings_RSWinsockLoadError,	"Error on loading Winsock2 library (%s)"
+	IdResourceStrings_RSStackError,	"Socket Error # %d\r\n%s"
+	IdResourceStrings_RSStackEINTR,	"Interrupted system call."
 	SqlConst_SINVALIDPARAM,	"[0x0009]: Invalid Parameter"
 	SqlConst_SEOF,	"[0x000A]: Result set at EOF"
 	SqlConst_SSQLPARAMNOTSET,	"dbExpress Error [0x000B]: Parameter Not Set"

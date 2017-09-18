@@ -13,6 +13,15 @@ uses
   ;
 
 type
+   TPapelUsuario = (tpluAgente,
+                   tpluAdministrador);
+
+  TListaPapeisUsuario = set of TPapelUsuario;
+
+  TPermissaoUsuario = (tpruRegistrarAgente);
+
+  TListaPermissoesUsuario = set of TPermissaoUsuario;
+
   TTipoOperacaoUsuario = (touIndefinida
                         , touInsercao
                         , touAtualizacao

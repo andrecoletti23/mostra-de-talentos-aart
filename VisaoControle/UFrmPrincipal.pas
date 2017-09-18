@@ -14,8 +14,8 @@ type
     sbPrincipal: TStatusBar;
     Panel1: TPanel;
     Image1: TImage;
-    Label1: TLabel;
-    Label2: TLabel;
+    lbNome: TLabel;
+    lbCoren: TLabel;
     Panel2: TPanel;
     procedure miSairClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -23,6 +23,8 @@ type
     { Private declaration }
   public
     { Public declarations }
+    procedure AtualizaUsuarioLogado;
+
   end;
 
 var
@@ -33,6 +35,9 @@ implementation
 uses
     UDM
   , DB
+  , UAgenteLogado
+  , UAgente
+  , UrepositorioAgente
   ;
 
 {$R *.dfm}
@@ -43,10 +48,18 @@ begin
 
 end;
 
+procedure TFrmPrincipal.AtualizaUsuarioLogado;
+begin
+  lbNome.Caption := TAgenteLogado.Unico.UAgente.AGENTE_NOME;
+  lbCoren.Caption := TAgenteLogado.Unico.UAgente.AGENTE_COREN;
+end;
+
 procedure TFrmPrincipal.FormShow(Sender: TObject);
 begin
   sbPrincipal.Panels[0].Text :=
     'Banco de Dados: ' + dmEntra21.SQLConnection.Params.Values[CNT_DATA_BASE];
+
+    AtualizaUsuarioLogado;
 end;
 
 end.

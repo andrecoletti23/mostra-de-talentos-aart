@@ -1126,19 +1126,19 @@ object FrmPrincipal: TFrmPrincipal
         FD63EB1FDA7FF4E3D97B0FF97BED7F77FFD9}
       Stretch = True
     end
-    object Label1: TLabel
+    object lbNome: TLabel
       Left = 152
       Top = 24
-      Width = 95
+      Width = 51
       Height = 13
-      Caption = 'Nome da enfermeira'
+      AutoSize = False
     end
-    object Label2: TLabel
+    object lbCoren: TLabel
       Left = 152
       Top = 62
       Width = 51
       Height = 13
-      Caption = 'Coren dela'
+      AutoSize = False
     end
   end
   object Panel2: TPanel

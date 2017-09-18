@@ -46,7 +46,10 @@ uses
   URegraCRUDAgente in 'Modelo\Regra\URegraCRUDAgente.pas',
   UAgenteLogado in 'Modelo\Persistencia\UAgenteLogado.pas',
   UFrmLogin in 'VisaoControle\UFrmLogin.pas' {FrmLogin},
-  URegraCRUDProximaVacina in 'Modelo\Regra\URegraCRUDProximaVacina.pas';
+  URegraCRUDProximaVacina in 'Modelo\Regra\URegraCRUDProximaVacina.pas',
+  URepositorioPapel in 'Modelo\Persistencia\URepositorioPapel.pas',
+  URepositorioPapelPermissao in 'Modelo\Persistencia\URepositorioPapelPermissao.pas',
+  UPapel in 'Modelo\Persistencia\UPapel.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';
