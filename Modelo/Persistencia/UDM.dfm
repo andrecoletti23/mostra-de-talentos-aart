@@ -30,8 +30,8 @@ object dmEntra21: TdmEntra21
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
@@ -48,8 +48,7 @@ object dmEntra21: TdmEntra21
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.dll'
-    Connected = True
-    Left = 32
+    Left = 40
     Top = 24
   end
   object SQLSelect: TSQLDataSet

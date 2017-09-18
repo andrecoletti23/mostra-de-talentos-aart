@@ -2,8 +2,8 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 747
-  ExplicitWidth = 763
-  ExplicitHeight = 655
+  ExplicitWidth = 765
+  ExplicitHeight = 663
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -191,5 +191,70 @@ inherited frmVacinas: TfrmVacinas
     Align = alTop
     Caption = 'Agendamento de Retorno'
     TabOrder = 5
+    object lbDataRetorno: TLabel
+      Left = 8
+      Top = 68
+      Width = 80
+      Height = 13
+      Caption = 'Data de Retorno'
+    end
+    object lbVacinaRetorno: TLabel
+      Left = 145
+      Top = 68
+      Width = 73
+      Height = 13
+      Caption = 'Vacina Retorno'
+    end
+    object lbDoseRetorno: TLabel
+      Left = 603
+      Top = 67
+      Width = 66
+      Height = 13
+      Caption = 'Dose Retorno'
+    end
+    object edSusRetorno: TLabeledEdit
+      Left = 8
+      Top = 40
+      Width = 177
+      Height = 21
+      EditLabel.Width = 55
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Codigo SUS'
+      TabOrder = 0
+    end
+    object edNomeRetorno: TLabeledEdit
+      Left = 216
+      Top = 40
+      Width = 520
+      Height = 21
+      EditLabel.Width = 86
+      EditLabel.Height = 13
+      EditLabel.Caption = 'Nome do Paciente'
+      TabOrder = 1
+    end
+    object MaskEdit1: TMaskEdit
+      Left = 8
+      Top = 85
+      Width = 120
+      Height = 21
+      EditMask = '!99/99/0000;1;_'
+      MaxLength = 10
+      TabOrder = 2
+      Text = '  /  /    '
+    end
+    object cbVacinaRetorno: TComboBox
+      Left = 144
+      Top = 85
+      Width = 453
+      Height = 21
+      TabOrder = 3
+    end
+    object cbDoseRetorno: TComboBox
+      Left = 603
+      Top = 85
+      Width = 133
+      Height = 21
+      TabOrder = 4
+    end
   end
 end

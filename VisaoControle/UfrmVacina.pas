@@ -11,7 +11,7 @@ uses
   , UUtilitarios
   , UCoren
   , ULoteVacina
-  , UPaciente
+  , UPaciente, Mask
   ;
 
 type
@@ -32,6 +32,14 @@ type
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
     gbRetorno: TGroupBox;
+    edSusRetorno: TLabeledEdit;
+    edNomeRetorno: TLabeledEdit;
+    MaskEdit1: TMaskEdit;
+    cbVacinaRetorno: TComboBox;
+    lbDataRetorno: TLabel;
+    lbVacinaRetorno: TLabel;
+    cbDoseRetorno: TComboBox;
+    lbDoseRetorno: TLabel;
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
 
