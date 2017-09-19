@@ -1,9 +1,9 @@
 
  Start         Length     Name                   Class
- 0001:00401000 002B06DCH .text                   CODE
- 0002:006B2000 000016FCH .itext                  ICODE
- 0003:006B4000 00006C88H .data                   DATA
- 0004:006BB000 000054DCH .bss                    BSS
+ 0001:00401000 002B20A0H .text                   CODE
+ 0002:006B4000 000016FCH .itext                  ICODE
+ 0003:006B6000 00006C8CH .data                   DATA
+ 0004:006BD000 000054DCH .bss                    BSS
  0005:00000000 00000048H .tls                    TLS
  000A:00000000 00000000H .xdata                  PDATA
 
@@ -146,30 +146,33 @@ Detailed map of segments
  0001:00284080 00001650 C=CODE     S=.text    G=(none)   M=URepositorioLoteVacina ACBP=A9
  0001:002856D0 000019DC C=CODE     S=.text    G=(none)   M=URepositorioCarteiraVacinacao ACBP=A9
  0001:002870AC 0000015C C=CODE     S=.text    G=(none)   M=URegraCRUDCarteiraVacinacao ACBP=A9
- 0001:00287208 00000AD0 C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
- 0001:00287CD8 00000144 C=CODE     S=.text    G=(none)   M=URegraCRUDLoteVacina ACBP=A9
- 0001:00287E1C 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
- 0001:002886B0 00000380 C=CODE     S=.text    G=(none)   M=IdException ACBP=A9
- 0001:00288A30 00000198 C=CODE     S=.text    G=(none)   M=IdResourceStrings ACBP=A9
- 0001:00288BC8 000003BC C=CODE     S=.text    G=(none)   M=IdStreamVCL ACBP=A9
- 0001:00288F84 00001C00 C=CODE     S=.text    G=(none)   M=IdGlobal ACBP=A9
- 0001:0028AB84 00000068 C=CODE     S=.text    G=(none)   M=IdFIPS   ACBP=A9
- 0001:0028ABEC 000081B8 C=CODE     S=.text    G=(none)   M=IdCharsets ACBP=A9
- 0001:00292DA4 00008D70 C=CODE     S=.text    G=(none)   M=IdWinsock2 ACBP=A9
- 0001:0029BB14 00000534 C=CODE     S=.text    G=(none)   M=IdWship6 ACBP=A9
- 0001:0029C048 0000124C C=CODE     S=.text    G=(none)   M=IdStackBSDBase ACBP=A9
- 0001:0029D294 000032AC C=CODE     S=.text    G=(none)   M=IdStackWindows ACBP=A9
- 0001:002A0540 00002B38 C=CODE     S=.text    G=(none)   M=IdStack  ACBP=A9
- 0001:002A3078 000011C4 C=CODE     S=.text    G=(none)   M=IdGlobalProtocols ACBP=A9
- 0001:002A423C 00000BE4 C=CODE     S=.text    G=(none)   M=IdHash   ACBP=A9
- 0001:002A4E20 000011DC C=CODE     S=.text    G=(none)   M=IdHashMessageDigest ACBP=A9
- 0001:002A5FFC 00001A3C C=CODE     S=.text    G=(none)   M=URepositorioAgente ACBP=A9
- 0001:002A7A38 00000138 C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
- 0001:002A7B70 00000860 C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
- 0001:002A83D0 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:002A8868 00000480 C=CODE     S=.text    G=(none)   M=UAgenteLogado ACBP=A9
- 0001:002A8CE8 000004BC C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
- 0001:002A91A4 00007538 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:00287208 00000158 C=CODE     S=.text    G=(none)   M=UProximaVacina ACBP=A9
+ 0001:00287360 000015E4 C=CODE     S=.text    G=(none)   M=URepositorioProximaVacina ACBP=A9
+ 0001:00288944 00000150 C=CODE     S=.text    G=(none)   M=URegraCRUDProximaVacina ACBP=A9
+ 0001:00288A94 00000BE0 C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
+ 0001:00289674 00000144 C=CODE     S=.text    G=(none)   M=URegraCRUDLoteVacina ACBP=A9
+ 0001:002897B8 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
+ 0001:0028A04C 00000380 C=CODE     S=.text    G=(none)   M=IdException ACBP=A9
+ 0001:0028A3CC 00000198 C=CODE     S=.text    G=(none)   M=IdResourceStrings ACBP=A9
+ 0001:0028A564 000003BC C=CODE     S=.text    G=(none)   M=IdStreamVCL ACBP=A9
+ 0001:0028A920 00001C00 C=CODE     S=.text    G=(none)   M=IdGlobal ACBP=A9
+ 0001:0028C520 00000068 C=CODE     S=.text    G=(none)   M=IdFIPS   ACBP=A9
+ 0001:0028C588 000081B8 C=CODE     S=.text    G=(none)   M=IdCharsets ACBP=A9
+ 0001:00294740 00008D70 C=CODE     S=.text    G=(none)   M=IdWinsock2 ACBP=A9
+ 0001:0029D4B0 00000534 C=CODE     S=.text    G=(none)   M=IdWship6 ACBP=A9
+ 0001:0029D9E4 0000124C C=CODE     S=.text    G=(none)   M=IdStackBSDBase ACBP=A9
+ 0001:0029EC30 000032AC C=CODE     S=.text    G=(none)   M=IdStackWindows ACBP=A9
+ 0001:002A1EDC 00002B38 C=CODE     S=.text    G=(none)   M=IdStack  ACBP=A9
+ 0001:002A4A14 000011C4 C=CODE     S=.text    G=(none)   M=IdGlobalProtocols ACBP=A9
+ 0001:002A5BD8 00000BE4 C=CODE     S=.text    G=(none)   M=IdHash   ACBP=A9
+ 0001:002A67BC 000011DC C=CODE     S=.text    G=(none)   M=IdHashMessageDigest ACBP=A9
+ 0001:002A7998 00001A3C C=CODE     S=.text    G=(none)   M=URepositorioAgente ACBP=A9
+ 0001:002A93D4 00000138 C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
+ 0001:002A950C 00000860 C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
+ 0001:002A9D6C 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:002AA204 00000480 C=CODE     S=.text    G=(none)   M=UAgenteLogado ACBP=A9
+ 0001:002AA684 000004BC C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
+ 0001:002AAB40 00007560 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -562,7 +565,7 @@ Detailed map of segments
  0001:001010D8       Buttons.TGlyphList.Destroy
  0003:00002A48       Buttons.WordBreakFlag
  0002:00001628       CarteiraOnline.CarteiraOnline
- 0001:002A91A4       CarteiraOnline.Finalization
+ 0001:002AAB40       CarteiraOnline.Finalization
  0001:0000D704       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -10835,31 +10838,31 @@ Detailed map of segments
  0001:000B2ED4       HelpIntfs.THelpManager.UnderstandsKeyword
  0001:000B2304       HelpIntfs.THelpViewerNode.Create
  0004:0000547C       IdCharsets..2
- 0001:00292D5C       IdCharsets.Finalization
+ 0001:002946F8       IdCharsets.Finalization
  0003:000046F4       IdCharsets.IdCharsetNames
  0002:0000142C       IdCharsets.IdCharsets
- 0001:002886B0       IdException..EIdException
- 0001:00288934       IdException..EIdNotAllBytesSent
- 0001:00288880       IdException..EIdPackageSizeTooBig
- 0001:002887CC       IdException..EIdSocketHandleError
- 0001:002889E0       IdException.EIdException.Create
- 0001:00288A18       IdException.EIdException.Toss
+ 0001:0028A04C       IdException..EIdException
+ 0001:0028A2D0       IdException..EIdNotAllBytesSent
+ 0001:0028A21C       IdException..EIdPackageSizeTooBig
+ 0001:0028A168       IdException..EIdSocketHandleError
+ 0001:0028A37C       IdException.EIdException.Create
+ 0001:0028A3B4       IdException.EIdException.Toss
  0004:00005478       IdFIPS..2
- 0001:0028AB9C       IdFIPS.DefFinalHashInst
- 0001:0028ABC8       IdFIPS.DefFinalHMACInst
- 0001:0028AB84       IdFIPS.DefGetFIPSMode
- 0001:0028AB94       IdFIPS.DefGetHashInst
- 0001:0028ABC0       IdFIPS.DefGetHMACInst
- 0001:0028AB8C       IdFIPS.DefIsHashingIntfAvail
- 0001:0028AB90       IdFIPS.DefIsHashIntfAvail
- 0001:0028ABB8       IdFIPS.DefIsHMACAvail
- 0001:0028ABBC       IdFIPS.DefIsHMACIntfAvail
- 0001:0028AB88       IdFIPS.DefSetFIPSMode
- 0001:0028AB98       IdFIPS.DefUpdateHashInst
- 0001:0028ABC4       IdFIPS.DefUpdateHMACInst
+ 0001:0028C538       IdFIPS.DefFinalHashInst
+ 0001:0028C564       IdFIPS.DefFinalHMACInst
+ 0001:0028C520       IdFIPS.DefGetFIPSMode
+ 0001:0028C530       IdFIPS.DefGetHashInst
+ 0001:0028C55C       IdFIPS.DefGetHMACInst
+ 0001:0028C528       IdFIPS.DefIsHashingIntfAvail
+ 0001:0028C52C       IdFIPS.DefIsHashIntfAvail
+ 0001:0028C554       IdFIPS.DefIsHMACAvail
+ 0001:0028C558       IdFIPS.DefIsHMACIntfAvail
+ 0001:0028C524       IdFIPS.DefSetFIPSMode
+ 0001:0028C534       IdFIPS.DefUpdateHashInst
+ 0001:0028C560       IdFIPS.DefUpdateHMACInst
  0004:00005438       IdFIPS.FinalHashInst
  0004:00005474       IdFIPS.FinalHMACInst
- 0001:0028ABE4       IdFIPS.Finalization
+ 0001:0028C580       IdFIPS.Finalization
  0004:000053E8       IdFIPS.GetFIPSMode
  0004:00005444       IdFIPS.GetHMACMD5HashInst
  0004:0000544C       IdFIPS.GetHMACSHA1HashInst
@@ -10896,53 +10899,53 @@ Detailed map of segments
  0004:00005434       IdFIPS.UpdateHashInst
  0004:00005470       IdFIPS.UpdateHMACInst
  0004:000053E4       IdGlobal..51
- 0001:00289030       IdGlobal..EIdInvalidIPv6Address
- 0001:00288F84       IdGlobal..TIdCriticalSection
- 0001:0028A788       IdGlobal.BytesToWord
- 0001:00289258       IdGlobal.CopyTIdBytes
- 0001:00289368       IdGlobal.CopyTIdLongWord
- 0001:00289360       IdGlobal.CopyTIdWord
- 0001:00289144       IdGlobal.EnsureEncoding
- 0001:00289370       IdGlobal.Fetch
- 0001:00289428       IdGlobal.FetchCaseInsensitive
- 0001:00289194       IdGlobal.FillBytes
- 0001:0028AB04       IdGlobal.Finalization
+ 0001:0028A9CC       IdGlobal..EIdInvalidIPv6Address
+ 0001:0028A920       IdGlobal..TIdCriticalSection
+ 0001:0028C124       IdGlobal.BytesToWord
+ 0001:0028ABF4       IdGlobal.CopyTIdBytes
+ 0001:0028AD04       IdGlobal.CopyTIdLongWord
+ 0001:0028ACFC       IdGlobal.CopyTIdWord
+ 0001:0028AAE0       IdGlobal.EnsureEncoding
+ 0001:0028AD0C       IdGlobal.Fetch
+ 0001:0028ADC4       IdGlobal.FetchCaseInsensitive
+ 0001:0028AB30       IdGlobal.FillBytes
+ 0001:0028C4A0       IdGlobal.Finalization
  0003:000046A4       IdGlobal.GId8BitEncoding
  0003:000046A0       IdGlobal.GIdPorts
- 0001:00289190       IdGlobal.HostToLittleEndian
+ 0001:0028AB2C       IdGlobal.HostToLittleEndian
  0002:00001260       IdGlobal.IdGlobal
  0003:0000467C       IdGlobal.IdHexDigits
- 0001:00289514       IdGlobal.iif
- 0001:00289EA8       IdGlobal.IndyFormat
- 0001:0028A544       IdGlobal.IndyIncludeTrailingPathDelimiter
- 0001:00289C4C       IdGlobal.IndyLength
- 0001:00289BFC       IdGlobal.IndyMin
+ 0001:0028AEB0       IdGlobal.iif
+ 0001:0028B844       IdGlobal.IndyFormat
+ 0001:0028BEE0       IdGlobal.IndyIncludeTrailingPathDelimiter
+ 0001:0028B5E8       IdGlobal.IndyLength
+ 0001:0028B598       IdGlobal.IndyMin
  0003:0000469C       IdGlobal.IndyPos
- 0001:00289180       IdGlobal.IndyRaiseLastError
- 0001:0028AAFC       IdGlobal.IndyRegisterExpectedMemoryLeak
- 0001:0028A5A8       IdGlobal.IndyStrToInt
- 0001:0028A558       IdGlobal.IndyStrToInt
- 0001:00289188       IdGlobal.InterlockedExchangeTHandle
- 0001:00289C44       IdGlobal.InternalAnsiPos
- 0001:00289AD0       IdGlobal.IPv6ToIdIPv6Address
- 0001:00289A54       IdGlobal.IPv6ToIdIPv6Address
- 0001:00289520       IdGlobal.MakeCanonicalIPv6Address
+ 0001:0028AB1C       IdGlobal.IndyRaiseLastError
+ 0001:0028C498       IdGlobal.IndyRegisterExpectedMemoryLeak
+ 0001:0028BF44       IdGlobal.IndyStrToInt
+ 0001:0028BEF4       IdGlobal.IndyStrToInt
+ 0001:0028AB24       IdGlobal.InterlockedExchangeTHandle
+ 0001:0028B5E0       IdGlobal.InternalAnsiPos
+ 0001:0028B46C       IdGlobal.IPv6ToIdIPv6Address
+ 0001:0028B3F0       IdGlobal.IPv6ToIdIPv6Address
+ 0001:0028AEBC       IdGlobal.MakeCanonicalIPv6Address
  0003:000046C4       IdGlobal.monthnames
- 0001:0028A85C       IdGlobal.ReadTIdBytesFromStream
- 0001:00289C3C       IdGlobal.SBPos
- 0001:0028AA94       IdGlobal.TextEndsWith
- 0001:0028AA28       IdGlobal.TextIsSame
- 0001:0028AA40       IdGlobal.TextStartsWith
- 0001:0028A5FC       IdGlobal.ToBytes
- 0001:002891AC       IdGlobal.ToHex
+ 0001:0028C1F8       IdGlobal.ReadTIdBytesFromStream
+ 0001:0028B5D8       IdGlobal.SBPos
+ 0001:0028C430       IdGlobal.TextEndsWith
+ 0001:0028C3C4       IdGlobal.TextIsSame
+ 0001:0028C3DC       IdGlobal.TextStartsWith
+ 0001:0028BF98       IdGlobal.ToBytes
+ 0001:0028AB48       IdGlobal.ToHex
  0003:000046A8       IdGlobal.wdays
- 0001:0028A8B0       IdGlobal.WriteStringToStream
- 0001:0028A8BC       IdGlobal.WriteStringToStream
- 0001:0028A894       IdGlobal.WriteTIdBytesToStream
+ 0001:0028C24C       IdGlobal.WriteStringToStream
+ 0001:0028C258       IdGlobal.WriteStringToStream
+ 0001:0028C230       IdGlobal.WriteTIdBytesToStream
  0004:000054BC       IdGlobalProtocols..8
  0004:000054C0       IdGlobalProtocols.ATempPath
  0003:000059E8       IdGlobalProtocols.cTimeZones
- 0001:002A40EC       IdGlobalProtocols.Finalization
+ 0001:002A5A88       IdGlobalProtocols.Finalization
  0003:00005CCC       IdGlobalProtocols.HTML_HeadDocAttrs
  0003:00005CC0       IdGlobalProtocols.HTML_MainDocParts
  0002:0000154C       IdGlobalProtocols.IdGlobalProtocols
@@ -10951,55 +10954,55 @@ Detailed map of segments
  0003:00005838       IdGlobalProtocols.monthnames
  0003:00005868       IdGlobalProtocols.Months
  0003:00005CDC       IdGlobalProtocols.QuoteSpecials
- 0001:002A40E4       IdGlobalProtocols.ROL
- 0001:002A3254       IdGlobalProtocols.TempPath
+ 0001:002A5A80       IdGlobalProtocols.ROL
+ 0001:002A4BF0       IdGlobalProtocols.TempPath
  0003:0000581C       IdGlobalProtocols.wdays
- 0001:002A423C       IdHash..TIdHash
- 0001:002A44E0       IdHash..TIdHashIntF
- 0001:002A45F4       IdHash..TIdHashNativeAndIntF
- 0001:002A46B4       IdHash.TIdHash.Create
- 0001:002A481C       IdHash.TIdHash.HashBytes
- 0001:002A48E0       IdHash.TIdHash.HashBytesAsHex
- 0001:002A4944       IdHash.TIdHash.HashStream
- 0001:002A4A14       IdHash.TIdHash.HashStream
- 0001:002A49B0       IdHash.TIdHash.HashStreamAsHex
- 0001:002A4AF4       IdHash.TIdHash.HashStreamAsHex
- 0001:002A46EC       IdHash.TIdHash.HashString
- 0001:002A47B0       IdHash.TIdHash.HashStringAsHex
- 0001:002A4B94       IdHash.TIdHash.IsAvailable
- 0001:002A4B68       IdHash.TIdHash.LongWordHashToHex
- 0001:002A4B98       IdHash.TIdHashIntF.FinalHash
- 0001:002A4BFC       IdHash.TIdHashIntF.GetHashBytes
- 0001:002A4D34       IdHash.TIdHashIntF.HashToHex
- 0001:002A4D4C       IdHash.TIdHashIntF.IsAvailable
- 0001:002A4D50       IdHash.TIdHashIntF.IsIntfAvailable
- 0001:002A4D60       IdHash.TIdHashIntF.UpdateHash
- 0001:002A4D74       IdHash.TIdHashNativeAndIntF.GetHashBytes
- 0001:002A4E18       IdHash.TIdHashNativeAndIntF.NativeGetHashBytes
- 0001:002A4E4C       IdHashMessageDigest..TIdHashMessageDigest
- 0001:002A4F4C       IdHashMessageDigest..TIdHashMessageDigest4
- 0001:002A50A4       IdHashMessageDigest..TIdHashMessageDigest5
+ 0001:002A5BD8       IdHash..TIdHash
+ 0001:002A5E7C       IdHash..TIdHashIntF
+ 0001:002A5F90       IdHash..TIdHashNativeAndIntF
+ 0001:002A6050       IdHash.TIdHash.Create
+ 0001:002A61B8       IdHash.TIdHash.HashBytes
+ 0001:002A627C       IdHash.TIdHash.HashBytesAsHex
+ 0001:002A62E0       IdHash.TIdHash.HashStream
+ 0001:002A63B0       IdHash.TIdHash.HashStream
+ 0001:002A634C       IdHash.TIdHash.HashStreamAsHex
+ 0001:002A6490       IdHash.TIdHash.HashStreamAsHex
+ 0001:002A6088       IdHash.TIdHash.HashString
+ 0001:002A614C       IdHash.TIdHash.HashStringAsHex
+ 0001:002A6530       IdHash.TIdHash.IsAvailable
+ 0001:002A6504       IdHash.TIdHash.LongWordHashToHex
+ 0001:002A6534       IdHash.TIdHashIntF.FinalHash
+ 0001:002A6598       IdHash.TIdHashIntF.GetHashBytes
+ 0001:002A66D0       IdHash.TIdHashIntF.HashToHex
+ 0001:002A66E8       IdHash.TIdHashIntF.IsAvailable
+ 0001:002A66EC       IdHash.TIdHashIntF.IsIntfAvailable
+ 0001:002A66FC       IdHash.TIdHashIntF.UpdateHash
+ 0001:002A6710       IdHash.TIdHashNativeAndIntF.GetHashBytes
+ 0001:002A67B4       IdHash.TIdHashNativeAndIntF.NativeGetHashBytes
+ 0001:002A67E8       IdHashMessageDigest..TIdHashMessageDigest
+ 0001:002A68E8       IdHashMessageDigest..TIdHashMessageDigest4
+ 0001:002A6A40       IdHashMessageDigest..TIdHashMessageDigest5
  0003:00005CEC       IdHashMessageDigest.MD4_INIT_VALUES
  0003:00005CFC       IdHashMessageDigest.MD5_SINE
- 0001:002A51B4       IdHashMessageDigest.TIdHashMessageDigest.Reset
- 0001:002A51D0       IdHashMessageDigest.TIdHashMessageDigest4.Create
- 0001:002A5720       IdHashMessageDigest.TIdHashMessageDigest4.HashToHex
- 0001:002A5710       IdHashMessageDigest.TIdHashMessageDigest4.InitHash
- 0001:002A573C       IdHashMessageDigest.TIdHashMessageDigest4.IsIntfAvailable
- 0001:002A5220       IdHashMessageDigest.TIdHashMessageDigest4.MDCoder
- 0001:002A55B0       IdHashMessageDigest.TIdHashMessageDigest4.NativeGetHashBytes
- 0001:002A5764       IdHashMessageDigest.TIdHashMessageDigest5.InitHash
- 0001:002A5774       IdHashMessageDigest.TIdHashMessageDigest5.IsIntfAvailable
- 0001:002A579C       IdHashMessageDigest.TIdHashMessageDigest5.MDCoder
+ 0001:002A6B50       IdHashMessageDigest.TIdHashMessageDigest.Reset
+ 0001:002A6B6C       IdHashMessageDigest.TIdHashMessageDigest4.Create
+ 0001:002A70BC       IdHashMessageDigest.TIdHashMessageDigest4.HashToHex
+ 0001:002A70AC       IdHashMessageDigest.TIdHashMessageDigest4.InitHash
+ 0001:002A70D8       IdHashMessageDigest.TIdHashMessageDigest4.IsIntfAvailable
+ 0001:002A6BBC       IdHashMessageDigest.TIdHashMessageDigest4.MDCoder
+ 0001:002A6F4C       IdHashMessageDigest.TIdHashMessageDigest4.NativeGetHashBytes
+ 0001:002A7100       IdHashMessageDigest.TIdHashMessageDigest5.InitHash
+ 0001:002A7110       IdHashMessageDigest.TIdHashMessageDigest5.IsIntfAvailable
+ 0001:002A7138       IdHashMessageDigest.TIdHashMessageDigest5.MDCoder
  0004:000054B0       IdStack..9
- 0001:002A0720       IdStack..EIdIPVersionUnsupported
- 0001:002A07D4       IdStack..EIdNotASocket
- 0001:002A0540       IdStack..EIdSocketError
- 0001:002A0680       IdStack..EIdStackError
- 0001:002A0878       IdStack..TIdSocketList
- 0001:002A0CE8       IdStack..TIdStack
- 0001:002A206C       IdStack.EIdSocketError.CreateError
- 0001:002A3070       IdStack.Finalization
+ 0001:002A20BC       IdStack..EIdIPVersionUnsupported
+ 0001:002A2170       IdStack..EIdNotASocket
+ 0001:002A1EDC       IdStack..EIdSocketError
+ 0001:002A201C       IdStack..EIdStackError
+ 0001:002A2214       IdStack..TIdSocketList
+ 0001:002A2684       IdStack..TIdStack
+ 0001:002A3A08       IdStack.EIdSocketError.CreateError
+ 0001:002A4A0C       IdStack.Finalization
  0003:00005814       IdStack.GInstanceCount
  0003:0000580C       IdStack.GServeFileProc
  0004:000054AC       IdStack.GSocketListClass
@@ -11007,180 +11010,180 @@ Detailed map of segments
  0003:00005810       IdStack.GStackClass
  0003:00005818       IdStack.GStackCriticalSection
  0002:0000151C       IdStack.IdStack
- 0001:002A1F04       IdStack.TIdPacketInfo.Reset
- 0001:002A0CA8       IdStack.TIdSocketList.Add
- 0001:002A0CC8       IdStack.TIdSocketList.Clear
- 0001:002A0CB0       IdStack.TIdSocketList.Clone
- 0001:002A0CD0       IdStack.TIdSocketList.ContainsSocket
- 0001:002A0CB8       IdStack.TIdSocketList.Count
- 0001:002A1F5C       IdStack.TIdSocketList.Create
- 0001:002A1FB0       IdStack.TIdSocketList.CreateSocketList
- 0001:002A1FD0       IdStack.TIdSocketList.Destroy
- 0001:002A2024       IdStack.TIdSocketList.Lock
- 0001:002A0CC0       IdStack.TIdSocketList.Remove
- 0001:002A2038       IdStack.TIdSocketList.Select
- 0001:002A0CD8       IdStack.TIdSocketList.SelectRead
- 0001:002A0CE0       IdStack.TIdSocketList.SelectReadList
- 0001:002A2054       IdStack.TIdSocketList.Unlock
- 0001:002A21B8       IdStack.TIdStack.Accept
- 0001:002A1E04       IdStack.TIdStack.Accept
- 0001:002A1EFC       IdStack.TIdStack.AddLocalAddressesToList
- 0001:002A1EEC       IdStack.TIdStack.AddMulticastMembership
- 0001:002A1E0C       IdStack.TIdStack.Bind
- 0001:002A2FE4       IdStack.TIdStack.CalcCheckSum
- 0001:002A2898       IdStack.TIdStack.CheckForSocketError
- 0001:002A28C0       IdStack.TIdStack.CheckForSocketError
- 0001:002A1E14       IdStack.TIdStack.Connect
- 0001:002A20C0       IdStack.TIdStack.Create
- 0001:002A25D8       IdStack.TIdStack.DecUsage
- 0001:002A2104       IdStack.TIdStack.Destroy
- 0001:002A1E1C       IdStack.TIdStack.Disconnect
- 0001:002A1EE4       IdStack.TIdStack.DropMulticastMembership
- 0001:002A229C       IdStack.TIdStack.GetLocalAddress
- 0001:002A224C       IdStack.TIdStack.GetLocalAddresses
- 0001:002A21EC       IdStack.TIdStack.GetPeerName
- 0001:002A1E2C       IdStack.TIdStack.GetPeerName
- 0001:002A221C       IdStack.TIdStack.GetSocketName
- 0001:002A1E34       IdStack.TIdStack.GetSocketName
- 0001:002A1E94       IdStack.TIdStack.GetSocketOption
- 0001:002A1E3C       IdStack.TIdStack.HostByAddress
- 0001:002A1E54       IdStack.TIdStack.HostToNetwork
- 0001:002A1E4C       IdStack.TIdStack.HostToNetwork
- 0001:002A1E44       IdStack.TIdStack.HostToNetwork
- 0001:002A2E24       IdStack.TIdStack.HostToNetwork
- 0001:002A2704       IdStack.TIdStack.IncUsage
- 0001:002A1E24       IdStack.TIdStack.IOControl
- 0001:002A2158       IdStack.TIdStack.IPVersionUnsupported
- 0001:002A2318       IdStack.TIdStack.IsIP
- 0001:002A2EA4       IdStack.TIdStack.IsValidIPv4MulticastGroup
- 0001:002A2F60       IdStack.TIdStack.IsValidIPv6MulticastGroup
- 0001:002A1E5C       IdStack.TIdStack.Listen
- 0001:002A2490       IdStack.TIdStack.MakeCanonicalIPv6Address
- 0001:002A1E7C       IdStack.TIdStack.NetworkToHost
- 0001:002A1E84       IdStack.TIdStack.NetworkToHost
- 0001:002A1E8C       IdStack.TIdStack.NetworkToHost
- 0001:002A2E64       IdStack.TIdStack.NetworkToHost
- 0001:002A1E74       IdStack.TIdStack.NewSocketHandle
- 0001:002A292C       IdStack.TIdStack.RaiseLastSocketError
- 0001:002A2948       IdStack.TIdStack.RaiseSocketError
- 0001:002A1EA4       IdStack.TIdStack.Receive
- 0001:002A1EB4       IdStack.TIdStack.ReceiveFrom
- 0001:002A1EC4       IdStack.TIdStack.ReceiveMsg
- 0001:002A24B0       IdStack.TIdStack.ResolveHost
- 0001:002A1EAC       IdStack.TIdStack.Send
- 0001:002A1EBC       IdStack.TIdStack.SendTo
- 0001:002A2598       IdStack.TIdStack.SendTo
- 0001:002A1EDC       IdStack.TIdStack.SetLoopBack
- 0001:002A1ED4       IdStack.TIdStack.SetMulticastTTL
- 0001:002A1E9C       IdStack.TIdStack.SetSocketOption
- 0001:002A1ECC       IdStack.TIdStack.SupportsIPv6
- 0001:002A1EF4       IdStack.TIdStack.WriteChecksum
- 0001:002A1E64       IdStack.TIdStack.WSGetLastError
- 0001:002A1E6C       IdStack.TIdStack.WSSetLastError
- 0001:002A29E8       IdStack.TIdStack.WSTranslateSocketErrorMsg
- 0001:0029CA44       IdStackBSDBase..EIdInvalidServiceName
- 0001:0029CAFC       IdStackBSDBase..EIdStackInitializationFailed
- 0001:0029CBC4       IdStackBSDBase..EIdStackSetSizeExceeded
- 0001:0029C048       IdStackBSDBase..TIdStackBSDBase
+ 0001:002A38A0       IdStack.TIdPacketInfo.Reset
+ 0001:002A2644       IdStack.TIdSocketList.Add
+ 0001:002A2664       IdStack.TIdSocketList.Clear
+ 0001:002A264C       IdStack.TIdSocketList.Clone
+ 0001:002A266C       IdStack.TIdSocketList.ContainsSocket
+ 0001:002A2654       IdStack.TIdSocketList.Count
+ 0001:002A38F8       IdStack.TIdSocketList.Create
+ 0001:002A394C       IdStack.TIdSocketList.CreateSocketList
+ 0001:002A396C       IdStack.TIdSocketList.Destroy
+ 0001:002A39C0       IdStack.TIdSocketList.Lock
+ 0001:002A265C       IdStack.TIdSocketList.Remove
+ 0001:002A39D4       IdStack.TIdSocketList.Select
+ 0001:002A2674       IdStack.TIdSocketList.SelectRead
+ 0001:002A267C       IdStack.TIdSocketList.SelectReadList
+ 0001:002A39F0       IdStack.TIdSocketList.Unlock
+ 0001:002A3B54       IdStack.TIdStack.Accept
+ 0001:002A37A0       IdStack.TIdStack.Accept
+ 0001:002A3898       IdStack.TIdStack.AddLocalAddressesToList
+ 0001:002A3888       IdStack.TIdStack.AddMulticastMembership
+ 0001:002A37A8       IdStack.TIdStack.Bind
+ 0001:002A4980       IdStack.TIdStack.CalcCheckSum
+ 0001:002A4234       IdStack.TIdStack.CheckForSocketError
+ 0001:002A425C       IdStack.TIdStack.CheckForSocketError
+ 0001:002A37B0       IdStack.TIdStack.Connect
+ 0001:002A3A5C       IdStack.TIdStack.Create
+ 0001:002A3F74       IdStack.TIdStack.DecUsage
+ 0001:002A3AA0       IdStack.TIdStack.Destroy
+ 0001:002A37B8       IdStack.TIdStack.Disconnect
+ 0001:002A3880       IdStack.TIdStack.DropMulticastMembership
+ 0001:002A3C38       IdStack.TIdStack.GetLocalAddress
+ 0001:002A3BE8       IdStack.TIdStack.GetLocalAddresses
+ 0001:002A3B88       IdStack.TIdStack.GetPeerName
+ 0001:002A37C8       IdStack.TIdStack.GetPeerName
+ 0001:002A3BB8       IdStack.TIdStack.GetSocketName
+ 0001:002A37D0       IdStack.TIdStack.GetSocketName
+ 0001:002A3830       IdStack.TIdStack.GetSocketOption
+ 0001:002A37D8       IdStack.TIdStack.HostByAddress
+ 0001:002A37F0       IdStack.TIdStack.HostToNetwork
+ 0001:002A37E8       IdStack.TIdStack.HostToNetwork
+ 0001:002A37E0       IdStack.TIdStack.HostToNetwork
+ 0001:002A47C0       IdStack.TIdStack.HostToNetwork
+ 0001:002A40A0       IdStack.TIdStack.IncUsage
+ 0001:002A37C0       IdStack.TIdStack.IOControl
+ 0001:002A3AF4       IdStack.TIdStack.IPVersionUnsupported
+ 0001:002A3CB4       IdStack.TIdStack.IsIP
+ 0001:002A4840       IdStack.TIdStack.IsValidIPv4MulticastGroup
+ 0001:002A48FC       IdStack.TIdStack.IsValidIPv6MulticastGroup
+ 0001:002A37F8       IdStack.TIdStack.Listen
+ 0001:002A3E2C       IdStack.TIdStack.MakeCanonicalIPv6Address
+ 0001:002A3818       IdStack.TIdStack.NetworkToHost
+ 0001:002A3820       IdStack.TIdStack.NetworkToHost
+ 0001:002A3828       IdStack.TIdStack.NetworkToHost
+ 0001:002A4800       IdStack.TIdStack.NetworkToHost
+ 0001:002A3810       IdStack.TIdStack.NewSocketHandle
+ 0001:002A42C8       IdStack.TIdStack.RaiseLastSocketError
+ 0001:002A42E4       IdStack.TIdStack.RaiseSocketError
+ 0001:002A3840       IdStack.TIdStack.Receive
+ 0001:002A3850       IdStack.TIdStack.ReceiveFrom
+ 0001:002A3860       IdStack.TIdStack.ReceiveMsg
+ 0001:002A3E4C       IdStack.TIdStack.ResolveHost
+ 0001:002A3848       IdStack.TIdStack.Send
+ 0001:002A3858       IdStack.TIdStack.SendTo
+ 0001:002A3F34       IdStack.TIdStack.SendTo
+ 0001:002A3878       IdStack.TIdStack.SetLoopBack
+ 0001:002A3870       IdStack.TIdStack.SetMulticastTTL
+ 0001:002A3838       IdStack.TIdStack.SetSocketOption
+ 0001:002A3868       IdStack.TIdStack.SupportsIPv6
+ 0001:002A3890       IdStack.TIdStack.WriteChecksum
+ 0001:002A3800       IdStack.TIdStack.WSGetLastError
+ 0001:002A3808       IdStack.TIdStack.WSSetLastError
+ 0001:002A4384       IdStack.TIdStack.WSTranslateSocketErrorMsg
+ 0001:0029E3E0       IdStackBSDBase..EIdInvalidServiceName
+ 0001:0029E498       IdStackBSDBase..EIdStackInitializationFailed
+ 0001:0029E560       IdStackBSDBase..EIdStackSetSizeExceeded
+ 0001:0029D9E4       IdStackBSDBase..TIdStackBSDBase
  0003:000057F0       IdStackBSDBase.GBSDStack
  0003:000057F4       IdStackBSDBase.IdIPFamily
- 0001:0029D0C8       IdStackBSDBase.TIdStackBSDBase.AddMulticastMembership
- 0001:0029C9F4       IdStackBSDBase.TIdStackBSDBase.CheckIPVersionSupport
- 0001:0029CF4C       IdStackBSDBase.TIdStackBSDBase.Create
- 0001:0029D088       IdStackBSDBase.TIdStackBSDBase.DropMulticastMembership
- 0001:0029D1D0       IdStackBSDBase.TIdStackBSDBase.MembershipSockOpt
- 0001:0029CF08       IdStackBSDBase.TIdStackBSDBase.NewSocketHandle
- 0001:0029CF88       IdStackBSDBase.TIdStackBSDBase.Receive
- 0001:0029CFF4       IdStackBSDBase.TIdStackBSDBase.ReceiveFrom
- 0001:0029CA14       IdStackBSDBase.TIdStackBSDBase.RecvFrom
- 0001:0029CFB8       IdStackBSDBase.TIdStackBSDBase.Send
- 0001:0029D038       IdStackBSDBase.TIdStackBSDBase.SendTo
- 0001:0029CA34       IdStackBSDBase.TIdStackBSDBase.SetBlocking
- 0001:0029D16C       IdStackBSDBase.TIdStackBSDBase.SetLoopBack
- 0001:0029D108       IdStackBSDBase.TIdStackBSDBase.SetMulticastTTL
- 0001:0029C9FC       IdStackBSDBase.TIdStackBSDBase.SetSocketOption
- 0001:0029CDD0       IdStackBSDBase.TIdStackBSDBase.TranslateStringToTInAddr
- 0001:0029CC7C       IdStackBSDBase.TIdStackBSDBase.TranslateTInAddrToString
- 0001:0029CA3C       IdStackBSDBase.TIdStackBSDBase.WouldBlock
- 0001:0029CA04       IdStackBSDBase.TIdStackBSDBase.WSGetServByName
- 0001:0029CA0C       IdStackBSDBase.TIdStackBSDBase.WSGetServByPort
- 0001:0029CA2C       IdStackBSDBase.TIdStackBSDBase.WSGetSockOpt
- 0001:0029CA1C       IdStackBSDBase.TIdStackBSDBase.WSSendTo
- 0001:0029CA24       IdStackBSDBase.TIdStackBSDBase.WSSocket
+ 0001:0029EA64       IdStackBSDBase.TIdStackBSDBase.AddMulticastMembership
+ 0001:0029E390       IdStackBSDBase.TIdStackBSDBase.CheckIPVersionSupport
+ 0001:0029E8E8       IdStackBSDBase.TIdStackBSDBase.Create
+ 0001:0029EA24       IdStackBSDBase.TIdStackBSDBase.DropMulticastMembership
+ 0001:0029EB6C       IdStackBSDBase.TIdStackBSDBase.MembershipSockOpt
+ 0001:0029E8A4       IdStackBSDBase.TIdStackBSDBase.NewSocketHandle
+ 0001:0029E924       IdStackBSDBase.TIdStackBSDBase.Receive
+ 0001:0029E990       IdStackBSDBase.TIdStackBSDBase.ReceiveFrom
+ 0001:0029E3B0       IdStackBSDBase.TIdStackBSDBase.RecvFrom
+ 0001:0029E954       IdStackBSDBase.TIdStackBSDBase.Send
+ 0001:0029E9D4       IdStackBSDBase.TIdStackBSDBase.SendTo
+ 0001:0029E3D0       IdStackBSDBase.TIdStackBSDBase.SetBlocking
+ 0001:0029EB08       IdStackBSDBase.TIdStackBSDBase.SetLoopBack
+ 0001:0029EAA4       IdStackBSDBase.TIdStackBSDBase.SetMulticastTTL
+ 0001:0029E398       IdStackBSDBase.TIdStackBSDBase.SetSocketOption
+ 0001:0029E76C       IdStackBSDBase.TIdStackBSDBase.TranslateStringToTInAddr
+ 0001:0029E618       IdStackBSDBase.TIdStackBSDBase.TranslateTInAddrToString
+ 0001:0029E3D8       IdStackBSDBase.TIdStackBSDBase.WouldBlock
+ 0001:0029E3A0       IdStackBSDBase.TIdStackBSDBase.WSGetServByName
+ 0001:0029E3A8       IdStackBSDBase.TIdStackBSDBase.WSGetServByPort
+ 0001:0029E3C8       IdStackBSDBase.TIdStackBSDBase.WSGetSockOpt
+ 0001:0029E3B8       IdStackBSDBase.TIdStackBSDBase.WSSendTo
+ 0001:0029E3C0       IdStackBSDBase.TIdStackBSDBase.WSSocket
  0004:000054A8       IdStackWindows..4
- 0001:0029D294       IdStackWindows..EIdIPv6Unavailable
- 0001:0029D344       IdStackWindows..TIdSocketListWindows
- 0001:0029D71C       IdStackWindows..TIdStackWindows
- 0001:002A051C       IdStackWindows.Finalization
+ 0001:0029EC30       IdStackWindows..EIdIPv6Unavailable
+ 0001:0029ECE0       IdStackWindows..TIdSocketListWindows
+ 0001:0029F0B8       IdStackWindows..TIdStackWindows
+ 0001:002A1EB8       IdStackWindows.Finalization
  0003:00005804       IdStackWindows.GetFileSizeEx
  0003:00005800       IdStackWindows.GStarted
  0003:000057FC       IdStackWindows.GWindowsStack
  0002:00001494       IdStackWindows.IdStackWindows
- 0001:0029F7B8       IdStackWindows.ReadSet
- 0001:002A042C       IdStackWindows.ServeFile
- 0001:0029F32C       IdStackWindows.TIdSocketListWindows.Add
- 0001:0029F3E0       IdStackWindows.TIdSocketListWindows.Clear
- 0001:0029F950       IdStackWindows.TIdSocketListWindows.Clone
- 0001:0029F428       IdStackWindows.TIdSocketListWindows.ContainsSocket
- 0001:0029F480       IdStackWindows.TIdSocketListWindows.Count
- 0001:0029F6F0       IdStackWindows.TIdSocketListWindows.FDSelect
- 0001:0029F8CC       IdStackWindows.TIdSocketListWindows.GetFDSet
- 0001:0029F4CC       IdStackWindows.TIdSocketListWindows.GetItem
- 0001:0029F584       IdStackWindows.TIdSocketListWindows.Remove
- 0001:0029F7D8       IdStackWindows.TIdSocketListWindows.Select
- 0001:0029F6B8       IdStackWindows.TIdSocketListWindows.SelectRead
- 0001:0029F75C       IdStackWindows.TIdSocketListWindows.SelectReadList
- 0001:0029F878       IdStackWindows.TIdSocketListWindows.SetFDSet
- 0001:0029E5C4       IdStackWindows.TIdStackWindows.Accept
- 0001:0029EFF8       IdStackWindows.TIdStackWindows.AddLocalAddressesToList
- 0001:0029E6D0       IdStackWindows.TIdStackWindows.Bind
- 0001:002A03EC       IdStackWindows.TIdStackWindows.CheckIPVersionSupport
- 0001:0029FBE0       IdStackWindows.TIdStackWindows.Connect
- 0001:0029E4FC       IdStackWindows.TIdStackWindows.Create
- 0001:0029E59C       IdStackWindows.TIdStackWindows.Destroy
- 0001:0029FD90       IdStackWindows.TIdStackWindows.Disconnect
- 0001:0029FC94       IdStackWindows.TIdStackWindows.GetPeerName
- 0001:0029F1FC       IdStackWindows.TIdStackWindows.GetSocketName
- 0001:0029FDEC       IdStackWindows.TIdStackWindows.GetSocketOption
- 0001:0029E798       IdStackWindows.TIdStackWindows.HostByAddress
- 0001:0029FA14       IdStackWindows.TIdStackWindows.HostByName
- 0001:0029EF58       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029EF40       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029EF28       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029FECC       IdStackWindows.TIdStackWindows.IOControl
- 0001:0029EA00       IdStackWindows.TIdStackWindows.Listen
- 0001:0029EFA8       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029EF34       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029EF4C       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029E990       IdStackWindows.TIdStackWindows.ReadHostName
- 0001:002A0130       IdStackWindows.TIdStackWindows.ReceiveMsg
- 0001:0029EA40       IdStackWindows.TIdStackWindows.RecvFrom
- 0001:0029F920       IdStackWindows.TIdStackWindows.SetBlocking
- 0001:0029ECD4       IdStackWindows.TIdStackWindows.SetSocketOption
- 0001:0029FDB8       IdStackWindows.TIdStackWindows.SetSocketOption
- 0001:0029FE2C       IdStackWindows.TIdStackWindows.SupportsIPv6
- 0001:0029F9EC       IdStackWindows.TIdStackWindows.WouldBlock
- 0001:0029FFA0       IdStackWindows.TIdStackWindows.WriteChecksum
- 0001:0029FFF8       IdStackWindows.TIdStackWindows.WriteChecksumIPv6
- 0001:0029E78C       IdStackWindows.TIdStackWindows.WSCloseSocket
- 0001:0029ED08       IdStackWindows.TIdStackWindows.WSGetLastError
- 0001:0029ED50       IdStackWindows.TIdStackWindows.WSGetServByName
- 0001:0029EE44       IdStackWindows.TIdStackWindows.WSGetServByPort
- 0001:0029F2F8       IdStackWindows.TIdStackWindows.WSGetSockOpt
- 0001:0029FEE4       IdStackWindows.TIdStackWindows.WSQuerryIPv6Route
- 0001:0029EA24       IdStackWindows.TIdStackWindows.WSRecv
- 0001:0029EB4C       IdStackWindows.TIdStackWindows.WSSend
- 0001:0029EB7C       IdStackWindows.TIdStackWindows.WSSendTo
- 0001:0029ED14       IdStackWindows.TIdStackWindows.WSSetLastError
- 0001:0029F1F0       IdStackWindows.TIdStackWindows.WSShutdown
- 0001:0029ED20       IdStackWindows.TIdStackWindows.WSSocket
- 0001:0029F614       IdStackWindows.TIdStackWindows.WSTranslateSocketErrorMsg
- 0001:00288BC8       IdStreamVCL..TIdStreamHelperVCL
- 0001:00288CF8       IdStreamVCL.TIdStreamHelperVCL.ReadBytes
- 0001:00288F5C       IdStreamVCL.TIdStreamHelperVCL.Seek
- 0001:00288E60       IdStreamVCL.TIdStreamHelperVCL.Write
+ 0001:002A1154       IdStackWindows.ReadSet
+ 0001:002A1DC8       IdStackWindows.ServeFile
+ 0001:002A0CC8       IdStackWindows.TIdSocketListWindows.Add
+ 0001:002A0D7C       IdStackWindows.TIdSocketListWindows.Clear
+ 0001:002A12EC       IdStackWindows.TIdSocketListWindows.Clone
+ 0001:002A0DC4       IdStackWindows.TIdSocketListWindows.ContainsSocket
+ 0001:002A0E1C       IdStackWindows.TIdSocketListWindows.Count
+ 0001:002A108C       IdStackWindows.TIdSocketListWindows.FDSelect
+ 0001:002A1268       IdStackWindows.TIdSocketListWindows.GetFDSet
+ 0001:002A0E68       IdStackWindows.TIdSocketListWindows.GetItem
+ 0001:002A0F20       IdStackWindows.TIdSocketListWindows.Remove
+ 0001:002A1174       IdStackWindows.TIdSocketListWindows.Select
+ 0001:002A1054       IdStackWindows.TIdSocketListWindows.SelectRead
+ 0001:002A10F8       IdStackWindows.TIdSocketListWindows.SelectReadList
+ 0001:002A1214       IdStackWindows.TIdSocketListWindows.SetFDSet
+ 0001:0029FF60       IdStackWindows.TIdStackWindows.Accept
+ 0001:002A0994       IdStackWindows.TIdStackWindows.AddLocalAddressesToList
+ 0001:002A006C       IdStackWindows.TIdStackWindows.Bind
+ 0001:002A1D88       IdStackWindows.TIdStackWindows.CheckIPVersionSupport
+ 0001:002A157C       IdStackWindows.TIdStackWindows.Connect
+ 0001:0029FE98       IdStackWindows.TIdStackWindows.Create
+ 0001:0029FF38       IdStackWindows.TIdStackWindows.Destroy
+ 0001:002A172C       IdStackWindows.TIdStackWindows.Disconnect
+ 0001:002A1630       IdStackWindows.TIdStackWindows.GetPeerName
+ 0001:002A0B98       IdStackWindows.TIdStackWindows.GetSocketName
+ 0001:002A1788       IdStackWindows.TIdStackWindows.GetSocketOption
+ 0001:002A0134       IdStackWindows.TIdStackWindows.HostByAddress
+ 0001:002A13B0       IdStackWindows.TIdStackWindows.HostByName
+ 0001:002A08F4       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A08DC       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A08C4       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A1868       IdStackWindows.TIdStackWindows.IOControl
+ 0001:002A039C       IdStackWindows.TIdStackWindows.Listen
+ 0001:002A0944       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A08D0       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A08E8       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A032C       IdStackWindows.TIdStackWindows.ReadHostName
+ 0001:002A1ACC       IdStackWindows.TIdStackWindows.ReceiveMsg
+ 0001:002A03DC       IdStackWindows.TIdStackWindows.RecvFrom
+ 0001:002A12BC       IdStackWindows.TIdStackWindows.SetBlocking
+ 0001:002A0670       IdStackWindows.TIdStackWindows.SetSocketOption
+ 0001:002A1754       IdStackWindows.TIdStackWindows.SetSocketOption
+ 0001:002A17C8       IdStackWindows.TIdStackWindows.SupportsIPv6
+ 0001:002A1388       IdStackWindows.TIdStackWindows.WouldBlock
+ 0001:002A193C       IdStackWindows.TIdStackWindows.WriteChecksum
+ 0001:002A1994       IdStackWindows.TIdStackWindows.WriteChecksumIPv6
+ 0001:002A0128       IdStackWindows.TIdStackWindows.WSCloseSocket
+ 0001:002A06A4       IdStackWindows.TIdStackWindows.WSGetLastError
+ 0001:002A06EC       IdStackWindows.TIdStackWindows.WSGetServByName
+ 0001:002A07E0       IdStackWindows.TIdStackWindows.WSGetServByPort
+ 0001:002A0C94       IdStackWindows.TIdStackWindows.WSGetSockOpt
+ 0001:002A1880       IdStackWindows.TIdStackWindows.WSQuerryIPv6Route
+ 0001:002A03C0       IdStackWindows.TIdStackWindows.WSRecv
+ 0001:002A04E8       IdStackWindows.TIdStackWindows.WSSend
+ 0001:002A0518       IdStackWindows.TIdStackWindows.WSSendTo
+ 0001:002A06B0       IdStackWindows.TIdStackWindows.WSSetLastError
+ 0001:002A0B8C       IdStackWindows.TIdStackWindows.WSShutdown
+ 0001:002A06BC       IdStackWindows.TIdStackWindows.WSSocket
+ 0001:002A0FB0       IdStackWindows.TIdStackWindows.WSTranslateSocketErrorMsg
+ 0001:0028A564       IdStreamVCL..TIdStreamHelperVCL
+ 0001:0028A694       IdStreamVCL.TIdStreamHelperVCL.ReadBytes
+ 0001:0028A8F8       IdStreamVCL.TIdStreamHelperVCL.Seek
+ 0001:0028A7FC       IdStreamVCL.TIdStreamHelperVCL.Write
  0004:000054A0       IdWinsock2..2
- 0001:00292DA4       IdWinsock2..EIdWinsockStubError
+ 0001:00294740       IdWinsock2..EIdWinsockStubError
  0003:000055CC       IdWinsock2.accept
  0003:0000577C       IdWinsock2.AcceptEx
  0003:000055D0       IdWinsock2.bind
@@ -11188,11 +11191,11 @@ Detailed map of segments
  0003:000055D8       IdWinsock2.connect
  0003:00005788       IdWinsock2.ConnectEx
  0003:0000578C       IdWinsock2.DisconnectEx
- 0001:00293100       IdWinsock2.EIdWinsockStubError.Build
- 0001:0029BA90       IdWinsock2.FD_ISSET
- 0001:0029BAA8       IdWinsock2.FD_ZERO
- 0001:0029BB0C       IdWinsock2.Finalization
- 0001:0029320C       IdWinsock2.FixupStubEx
+ 0001:00294A9C       IdWinsock2.EIdWinsockStubError.Build
+ 0001:0029D42C       IdWinsock2.FD_ISSET
+ 0001:0029D444       IdWinsock2.FD_ZERO
+ 0001:0029D4A8       IdWinsock2.Finalization
+ 0001:00294BA8       IdWinsock2.FixupStubEx
  0003:00005780       IdWinsock2.GetAcceptExSockaddrs
  0003:00005628       IdWinsock2.gethostbyaddr
  0003:0000562C       IdWinsock2.gethostbyname
@@ -11213,8 +11216,8 @@ Detailed map of segments
  0004:00005490       IdWinsock2.in6addr_loopback
  0003:000055F4       IdWinsock2.inet_addr
  0003:000055F8       IdWinsock2.inet_ntoa
- 0001:0029B5E8       IdWinsock2.InitializeStubs
- 0001:00292FB4       IdWinsock2.InitializeWinSock
+ 0001:0029CF84       IdWinsock2.InitializeStubs
+ 0001:00294950       IdWinsock2.InitializeWinSock
  0003:000055DC       IdWinsock2.ioctlsocket
  0003:000055FC       IdWinsock2.listen
  0003:00005600       IdWinsock2.ntohl
@@ -11227,130 +11230,130 @@ Detailed map of segments
  0003:0000561C       IdWinsock2.setsockopt
  0003:00005620       IdWinsock2.shutdown
  0003:00005624       IdWinsock2.socket
- 0001:002934CC       IdWinsock2.Stub_accept
- 0001:0029B150       IdWinsock2.Stub_AcceptEx
- 0001:002935E0       IdWinsock2.Stub_bind
- 0001:002936F0       IdWinsock2.Stub_closesocket
- 0001:00293804       IdWinsock2.Stub_connect
- 0001:0029B3A4       IdWinsock2.Stub_ConnectEx
- 0001:0029B408       IdWinsock2.Stub_DisconnectEx
- 0001:00294DB0       IdWinsock2.Stub_gethostbyaddr
- 0001:00294ED0       IdWinsock2.Stub_gethostbyname
- 0001:00294FE8       IdWinsock2.Stub_gethostname
- 0001:00293A34       IdWinsock2.Stub_getpeername
- 0001:00295458       IdWinsock2.Stub_getprotobyname
- 0001:00295338       IdWinsock2.Stub_getprotobynumber
- 0001:0029521C       IdWinsock2.Stub_getservbyname
- 0001:00295100       IdWinsock2.Stub_getservbyport
- 0001:00293B50       IdWinsock2.Stub_getsockname
- 0001:00293C6C       IdWinsock2.Stub_getsockopt
- 0001:00293D90       IdWinsock2.Stub_htonl
- 0001:00293E98       IdWinsock2.Stub_htons
- 0001:00293FA0       IdWinsock2.Stub_inet_addr
- 0001:002940B0       IdWinsock2.Stub_inet_ntoa
- 0001:00293918       IdWinsock2.Stub_ioctlsocket
- 0001:002941BC       IdWinsock2.Stub_listen
- 0001:002942CC       IdWinsock2.Stub_ntohl
- 0001:002943D4       IdWinsock2.Stub_ntohs
- 0001:002944DC       IdWinsock2.Stub_recv
- 0001:002945F0       IdWinsock2.Stub_recvfrom
- 0001:00294714       IdWinsock2.Stub_select
- 0001:00294830       IdWinsock2.Stub_send
- 0001:00294944       IdWinsock2.Stub_sendto
- 0001:00294A64       IdWinsock2.Stub_setsockopt
- 0001:00294B88       IdWinsock2.Stub_shutdown
- 0001:00294C9C       IdWinsock2.Stub_socket
- 0001:0029B0E4       IdWinsock2.Stub_TransmitFile
- 0001:0029B4C8       IdWinsock2.Stub_TransmitPackets
- 0001:002966EC       IdWinsock2.Stub_WSAAccept
- 0001:00298E14       IdWinsock2.Stub_WSAAddressToString
- 0001:00298BAC       IdWinsock2.Stub_WSAAddressToStringA
- 0001:00298CE0       IdWinsock2.Stub_WSAAddressToStringW
- 0001:00296240       IdWinsock2.Stub_WSAAsyncGetHostByAddr
- 0001:00296108       IdWinsock2.Stub_WSAAsyncGetHostByName
- 0001:00295E8C       IdWinsock2.Stub_WSAAsyncGetProtoByName
- 0001:00295FC8       IdWinsock2.Stub_WSAAsyncGetProtoByNumber
- 0001:00295C14       IdWinsock2.Stub_WSAAsyncGetServByName
- 0001:00295D50       IdWinsock2.Stub_WSAAsyncGetServByPort
- 0001:002964A8       IdWinsock2.Stub_WSAAsyncSelect
- 0001:00296380       IdWinsock2.Stub_WSACancelAsyncRequest
- 0001:00295AF4       IdWinsock2.Stub_WSACancelBlockingCall
- 0001:002933C0       IdWinsock2.Stub_WSACleanup
- 0001:0029680C       IdWinsock2.Stub_WSACloseEvent
- 0001:00296924       IdWinsock2.Stub_WSAConnect
- 0001:00296A50       IdWinsock2.Stub_WSACreateEvent
- 0001:00296DBC       IdWinsock2.Stub_WSADuplicateSocket
- 0001:00296B64       IdWinsock2.Stub_WSADuplicateSocketA
- 0001:00296C90       IdWinsock2.Stub_WSADuplicateSocketW
- 0001:0029A734       IdWinsock2.Stub_WSAEnumNameSpaceProviders
- 0001:0029A4C4       IdWinsock2.Stub_WSAEnumNameSpaceProvidersA
- 0001:0029A5FC       IdWinsock2.Stub_WSAEnumNameSpaceProvidersW
- 0001:00296EE8       IdWinsock2.Stub_WSAEnumNetworkEvents
- 0001:00297268       IdWinsock2.Stub_WSAEnumProtocols
- 0001:00297018       IdWinsock2.Stub_WSAEnumProtocolsA
- 0001:00297140       IdWinsock2.Stub_WSAEnumProtocolsW
- 0001:00297390       IdWinsock2.Stub_WSAEventSelect
- 0001:0029568C       IdWinsock2.Stub_WSAGetLastError
- 0001:002974B4       IdWinsock2.Stub_WSAGetOverlappedResult
- 0001:002975F0       IdWinsock2.Stub_WSAGetQOSByName
- 0001:0029A38C       IdWinsock2.Stub_WSAGetServiceClassInfo
- 0001:0029A11C       IdWinsock2.Stub_WSAGetServiceClassInfoA
- 0001:0029A254       IdWinsock2.Stub_WSAGetServiceClassInfoW
- 0001:0029AAFC       IdWinsock2.Stub_WSAGetServiceClassNameByClassId
- 0001:0029A86C       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdA
- 0001:0029A9B4       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdW
- 0001:00297714       IdWinsock2.Stub_WSAHtonl
- 0001:0029782C       IdWinsock2.Stub_WSAHtons
- 0001:00299EC8       IdWinsock2.Stub_WSAInstallServiceClass
- 0001:00299C70       IdWinsock2.Stub_WSAInstallServiceClassA
- 0001:00299D9C       IdWinsock2.Stub_WSAInstallServiceClassW
- 0001:00297944       IdWinsock2.Stub_WSAIoctl
- 0001:002957A0       IdWinsock2.Stub_WSAIsBlocking
- 0001:00297A74       IdWinsock2.Stub_WSAJoinLeaf
- 0001:0029954C       IdWinsock2.Stub_WSALookupServiceBegin
- 0001:002992E4       IdWinsock2.Stub_WSALookupServiceBeginA
- 0001:00299418       IdWinsock2.Stub_WSALookupServiceBeginW
- 0001:00299A1C       IdWinsock2.Stub_WSALookupServiceEnd
- 0001:002998E8       IdWinsock2.Stub_WSALookupServiceNext
- 0001:00299680       IdWinsock2.Stub_WSALookupServiceNextA
- 0001:002997B4       IdWinsock2.Stub_WSALookupServiceNextW
- 0001:00299B40       IdWinsock2.Stub_WSANSPIoctl
- 0001:00297BA4       IdWinsock2.Stub_WSANtohl
- 0001:00297CBC       IdWinsock2.Stub_WSANtohs
- 0001:0029B598       IdWinsock2.Stub_WSAPoll
- 0001:0029AFB0       IdWinsock2.Stub_WSAProviderConfigChange
- 0001:00297DD4       IdWinsock2.Stub_WSARecv
- 0001:00297EF8       IdWinsock2.Stub_WSARecvDisconnect
- 0001:0029B204       IdWinsock2.Stub_WSARecvEx
- 0001:0029801C       IdWinsock2.Stub_WSARecvFrom
- 0001:0029B468       IdWinsock2.Stub_WSARecvMsg
- 0001:00299FF4       IdWinsock2.Stub_WSARemoveServiceClass
- 0001:00298150       IdWinsock2.Stub_WSAResetEvent
- 0001:00298268       IdWinsock2.Stub_WSASend
- 0001:0029838C       IdWinsock2.Stub_WSASendDisconnect
- 0001:0029B534       IdWinsock2.Stub_WSASendMsg
- 0001:002984B0       IdWinsock2.Stub_WSASendTo
- 0001:002959D0       IdWinsock2.Stub_WSASetBlockingHook
- 0001:002985E0       IdWinsock2.Stub_WSASetEvent
- 0001:00295574       IdWinsock2.Stub_WSASetLastError
- 0001:0029AE8C       IdWinsock2.Stub_WSASetService
- 0001:0029AC44       IdWinsock2.Stub_WSASetServiceA
- 0001:0029AD68       IdWinsock2.Stub_WSASetServiceW
- 0001:00298944       IdWinsock2.Stub_WSASocket
- 0001:002986F4       IdWinsock2.Stub_WSASocketA
- 0001:0029881C       IdWinsock2.Stub_WSASocketW
- 0001:002932A8       IdWinsock2.Stub_WSAStartup
- 0001:002991B0       IdWinsock2.Stub_WSAStringToAddress
- 0001:00298F48       IdWinsock2.Stub_WSAStringToAddressA
- 0001:0029907C       IdWinsock2.Stub_WSAStringToAddressW
- 0001:002958B0       IdWinsock2.Stub_WSAUnhookBlockingHook
- 0001:00298A6C       IdWinsock2.Stub_WSAWaitForMultipleEvents
- 0001:002965D0       IdWinsock2.Stub___WSAFDIsSet
+ 0001:00294E68       IdWinsock2.Stub_accept
+ 0001:0029CAEC       IdWinsock2.Stub_AcceptEx
+ 0001:00294F7C       IdWinsock2.Stub_bind
+ 0001:0029508C       IdWinsock2.Stub_closesocket
+ 0001:002951A0       IdWinsock2.Stub_connect
+ 0001:0029CD40       IdWinsock2.Stub_ConnectEx
+ 0001:0029CDA4       IdWinsock2.Stub_DisconnectEx
+ 0001:0029674C       IdWinsock2.Stub_gethostbyaddr
+ 0001:0029686C       IdWinsock2.Stub_gethostbyname
+ 0001:00296984       IdWinsock2.Stub_gethostname
+ 0001:002953D0       IdWinsock2.Stub_getpeername
+ 0001:00296DF4       IdWinsock2.Stub_getprotobyname
+ 0001:00296CD4       IdWinsock2.Stub_getprotobynumber
+ 0001:00296BB8       IdWinsock2.Stub_getservbyname
+ 0001:00296A9C       IdWinsock2.Stub_getservbyport
+ 0001:002954EC       IdWinsock2.Stub_getsockname
+ 0001:00295608       IdWinsock2.Stub_getsockopt
+ 0001:0029572C       IdWinsock2.Stub_htonl
+ 0001:00295834       IdWinsock2.Stub_htons
+ 0001:0029593C       IdWinsock2.Stub_inet_addr
+ 0001:00295A4C       IdWinsock2.Stub_inet_ntoa
+ 0001:002952B4       IdWinsock2.Stub_ioctlsocket
+ 0001:00295B58       IdWinsock2.Stub_listen
+ 0001:00295C68       IdWinsock2.Stub_ntohl
+ 0001:00295D70       IdWinsock2.Stub_ntohs
+ 0001:00295E78       IdWinsock2.Stub_recv
+ 0001:00295F8C       IdWinsock2.Stub_recvfrom
+ 0001:002960B0       IdWinsock2.Stub_select
+ 0001:002961CC       IdWinsock2.Stub_send
+ 0001:002962E0       IdWinsock2.Stub_sendto
+ 0001:00296400       IdWinsock2.Stub_setsockopt
+ 0001:00296524       IdWinsock2.Stub_shutdown
+ 0001:00296638       IdWinsock2.Stub_socket
+ 0001:0029CA80       IdWinsock2.Stub_TransmitFile
+ 0001:0029CE64       IdWinsock2.Stub_TransmitPackets
+ 0001:00298088       IdWinsock2.Stub_WSAAccept
+ 0001:0029A7B0       IdWinsock2.Stub_WSAAddressToString
+ 0001:0029A548       IdWinsock2.Stub_WSAAddressToStringA
+ 0001:0029A67C       IdWinsock2.Stub_WSAAddressToStringW
+ 0001:00297BDC       IdWinsock2.Stub_WSAAsyncGetHostByAddr
+ 0001:00297AA4       IdWinsock2.Stub_WSAAsyncGetHostByName
+ 0001:00297828       IdWinsock2.Stub_WSAAsyncGetProtoByName
+ 0001:00297964       IdWinsock2.Stub_WSAAsyncGetProtoByNumber
+ 0001:002975B0       IdWinsock2.Stub_WSAAsyncGetServByName
+ 0001:002976EC       IdWinsock2.Stub_WSAAsyncGetServByPort
+ 0001:00297E44       IdWinsock2.Stub_WSAAsyncSelect
+ 0001:00297D1C       IdWinsock2.Stub_WSACancelAsyncRequest
+ 0001:00297490       IdWinsock2.Stub_WSACancelBlockingCall
+ 0001:00294D5C       IdWinsock2.Stub_WSACleanup
+ 0001:002981A8       IdWinsock2.Stub_WSACloseEvent
+ 0001:002982C0       IdWinsock2.Stub_WSAConnect
+ 0001:002983EC       IdWinsock2.Stub_WSACreateEvent
+ 0001:00298758       IdWinsock2.Stub_WSADuplicateSocket
+ 0001:00298500       IdWinsock2.Stub_WSADuplicateSocketA
+ 0001:0029862C       IdWinsock2.Stub_WSADuplicateSocketW
+ 0001:0029C0D0       IdWinsock2.Stub_WSAEnumNameSpaceProviders
+ 0001:0029BE60       IdWinsock2.Stub_WSAEnumNameSpaceProvidersA
+ 0001:0029BF98       IdWinsock2.Stub_WSAEnumNameSpaceProvidersW
+ 0001:00298884       IdWinsock2.Stub_WSAEnumNetworkEvents
+ 0001:00298C04       IdWinsock2.Stub_WSAEnumProtocols
+ 0001:002989B4       IdWinsock2.Stub_WSAEnumProtocolsA
+ 0001:00298ADC       IdWinsock2.Stub_WSAEnumProtocolsW
+ 0001:00298D2C       IdWinsock2.Stub_WSAEventSelect
+ 0001:00297028       IdWinsock2.Stub_WSAGetLastError
+ 0001:00298E50       IdWinsock2.Stub_WSAGetOverlappedResult
+ 0001:00298F8C       IdWinsock2.Stub_WSAGetQOSByName
+ 0001:0029BD28       IdWinsock2.Stub_WSAGetServiceClassInfo
+ 0001:0029BAB8       IdWinsock2.Stub_WSAGetServiceClassInfoA
+ 0001:0029BBF0       IdWinsock2.Stub_WSAGetServiceClassInfoW
+ 0001:0029C498       IdWinsock2.Stub_WSAGetServiceClassNameByClassId
+ 0001:0029C208       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdA
+ 0001:0029C350       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdW
+ 0001:002990B0       IdWinsock2.Stub_WSAHtonl
+ 0001:002991C8       IdWinsock2.Stub_WSAHtons
+ 0001:0029B864       IdWinsock2.Stub_WSAInstallServiceClass
+ 0001:0029B60C       IdWinsock2.Stub_WSAInstallServiceClassA
+ 0001:0029B738       IdWinsock2.Stub_WSAInstallServiceClassW
+ 0001:002992E0       IdWinsock2.Stub_WSAIoctl
+ 0001:0029713C       IdWinsock2.Stub_WSAIsBlocking
+ 0001:00299410       IdWinsock2.Stub_WSAJoinLeaf
+ 0001:0029AEE8       IdWinsock2.Stub_WSALookupServiceBegin
+ 0001:0029AC80       IdWinsock2.Stub_WSALookupServiceBeginA
+ 0001:0029ADB4       IdWinsock2.Stub_WSALookupServiceBeginW
+ 0001:0029B3B8       IdWinsock2.Stub_WSALookupServiceEnd
+ 0001:0029B284       IdWinsock2.Stub_WSALookupServiceNext
+ 0001:0029B01C       IdWinsock2.Stub_WSALookupServiceNextA
+ 0001:0029B150       IdWinsock2.Stub_WSALookupServiceNextW
+ 0001:0029B4DC       IdWinsock2.Stub_WSANSPIoctl
+ 0001:00299540       IdWinsock2.Stub_WSANtohl
+ 0001:00299658       IdWinsock2.Stub_WSANtohs
+ 0001:0029CF34       IdWinsock2.Stub_WSAPoll
+ 0001:0029C94C       IdWinsock2.Stub_WSAProviderConfigChange
+ 0001:00299770       IdWinsock2.Stub_WSARecv
+ 0001:00299894       IdWinsock2.Stub_WSARecvDisconnect
+ 0001:0029CBA0       IdWinsock2.Stub_WSARecvEx
+ 0001:002999B8       IdWinsock2.Stub_WSARecvFrom
+ 0001:0029CE04       IdWinsock2.Stub_WSARecvMsg
+ 0001:0029B990       IdWinsock2.Stub_WSARemoveServiceClass
+ 0001:00299AEC       IdWinsock2.Stub_WSAResetEvent
+ 0001:00299C04       IdWinsock2.Stub_WSASend
+ 0001:00299D28       IdWinsock2.Stub_WSASendDisconnect
+ 0001:0029CED0       IdWinsock2.Stub_WSASendMsg
+ 0001:00299E4C       IdWinsock2.Stub_WSASendTo
+ 0001:0029736C       IdWinsock2.Stub_WSASetBlockingHook
+ 0001:00299F7C       IdWinsock2.Stub_WSASetEvent
+ 0001:00296F10       IdWinsock2.Stub_WSASetLastError
+ 0001:0029C828       IdWinsock2.Stub_WSASetService
+ 0001:0029C5E0       IdWinsock2.Stub_WSASetServiceA
+ 0001:0029C704       IdWinsock2.Stub_WSASetServiceW
+ 0001:0029A2E0       IdWinsock2.Stub_WSASocket
+ 0001:0029A090       IdWinsock2.Stub_WSASocketA
+ 0001:0029A1B8       IdWinsock2.Stub_WSASocketW
+ 0001:00294C44       IdWinsock2.Stub_WSAStartup
+ 0001:0029AB4C       IdWinsock2.Stub_WSAStringToAddress
+ 0001:0029A8E4       IdWinsock2.Stub_WSAStringToAddressA
+ 0001:0029AA18       IdWinsock2.Stub_WSAStringToAddressW
+ 0001:0029724C       IdWinsock2.Stub_WSAUnhookBlockingHook
+ 0001:0029A408       IdWinsock2.Stub_WSAWaitForMultipleEvents
+ 0001:00297F6C       IdWinsock2.Stub___WSAFDIsSet
  0003:00005778       IdWinsock2.TransmitFile
  0003:00005794       IdWinsock2.TransmitPackets
- 0001:002930C0       IdWinsock2.UninitializeWinSock
- 0001:00292FA8       IdWinsock2.Winsock2Loaded
- 0001:00292FA0       IdWinsock2.WinsockHandle
+ 0001:00294A5C       IdWinsock2.UninitializeWinSock
+ 0001:00294944       IdWinsock2.Winsock2Loaded
+ 0001:0029493C       IdWinsock2.WinsockHandle
  0003:00005680       IdWinsock2.WSAAccept
  0003:0000568C       IdWinsock2.WSAAddressToString
  0003:00005684       IdWinsock2.WSAAddressToStringA
@@ -11443,17 +11446,17 @@ Detailed map of segments
  0003:00005768       IdWinsock2.WSAStringToAddressW
  0003:00005650       IdWinsock2.WSAUnhookBlockingHook
  0003:00005770       IdWinsock2.WSAWaitForMultipleEvents
- 0001:0029BAB0       IdWinsock2.WSA_CMSGHDR_ALIGN
- 0001:0029BB04       IdWinsock2.WSA_CMSG_DATA
- 0001:0029BB08       IdWinsock2.WSA_CMSG_LEN
- 0001:0029BAC0       IdWinsock2.WSA_CMSG_NXTHDR
+ 0001:0029D44C       IdWinsock2.WSA_CMSGHDR_ALIGN
+ 0001:0029D4A0       IdWinsock2.WSA_CMSG_DATA
+ 0001:0029D4A4       IdWinsock2.WSA_CMSG_LEN
+ 0001:0029D45C       IdWinsock2.WSA_CMSG_NXTHDR
  0003:0000567C       IdWinsock2.__WSAFDIsSet
  0004:000054A4       IdWship6..1
- 0001:0029BBAC       IdWship6.CloseLibrary
- 0001:0029C038       IdWship6.Finalization
+ 0001:0029D548       IdWship6.CloseLibrary
+ 0001:0029D9D4       IdWship6.Finalization
  0003:000057B4       IdWship6.freeaddrinfo
  0003:000057C8       IdWship6.FreeAddrInfoEx
- 0001:0029BB14       IdWship6.gaiErrorToWsaError
+ 0001:0029D4B0       IdWship6.gaiErrorToWsaError
  0003:000057AC       IdWship6.getaddrinfo
  0003:000057C0       IdWship6.GetAddrInfoEx
  0003:000057B0       IdWship6.getnameinfo
@@ -11464,7 +11467,7 @@ Detailed map of segments
  0002:0000148C       IdWship6.IdWship6
  0003:000057BC       IdWship6.inet_ntop
  0003:000057B8       IdWship6.inet_pton
- 0001:0029BC2C       IdWship6.InitLibrary
+ 0001:0029D5C8       IdWship6.InitLibrary
  0003:000057C4       IdWship6.SetAddrInfoEx
  0003:000057D0       IdWship6.WSADeleteSocketPeerTargetName
  0003:000057D4       IdWship6.WSAImpersonateSocketPeer
@@ -16405,14 +16408,14 @@ Detailed map of segments
  0002:00000264       TypInfo.TypInfo
  0001:00037594       TypInfo.UTF8SameText
  0001:002827A0       UAgente..TAGENTE
- 0001:002A8868       UAgenteLogado..TAgenteLogado
+ 0001:002AA204       UAgenteLogado..TAgenteLogado
  0003:00005DFC       UAgenteLogado.AgenteLogado
- 0001:002A8A7C       UAgenteLogado.TAgenteLogado.Create
- 0001:002A8AC8       UAgenteLogado.TAgenteLogado.Destroy
- 0001:002A8B1C       UAgenteLogado.TAgenteLogado.Logoff
- 0001:002A8B54       UAgenteLogado.TAgenteLogado.RealizaLogin
- 0001:002A8CCC       UAgenteLogado.TAgenteLogado.UAgente
- 0001:002A8C98       UAgenteLogado.TAgenteLogado.Unico
+ 0001:002AA418       UAgenteLogado.TAgenteLogado.Create
+ 0001:002AA464       UAgenteLogado.TAgenteLogado.Destroy
+ 0001:002AA4B8       UAgenteLogado.TAgenteLogado.Logoff
+ 0001:002AA4F0       UAgenteLogado.TAgenteLogado.RealizaLogin
+ 0001:002AA668       UAgenteLogado.TAgenteLogado.UAgente
+ 0001:002AA634       UAgenteLogado.TAgenteLogado.Unico
  0001:00282A84       UCarteiraVacinacao..TCARTEIRA_VACINACAO
  0001:0028296C       UCoren..TCOREN
  0001:00266D38       UDialogo..TDialogo
@@ -16433,16 +16436,16 @@ Detailed map of segments
  0001:00149AE8       UEntidade..TENTIDADE
  0001:00149C04       UEntidade.TENTIDADE.Create
  0004:000054C8       UFrmAgente..2
- 0001:002A7B70       UFrmAgente..TfrmAgente
- 0001:002A8394       UFrmAgente.Finalization
+ 0001:002A950C       UFrmAgente..TfrmAgente
+ 0001:002A9D30       UFrmAgente.Finalization
  0004:000054C4       UFrmAgente.frmAgente
  0004:000054D0       UFrmAgente.HashMessageDigest5
  0004:000054CC       UFrmAgente.SenhaHash
- 0001:002A7EE0       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:002A7F18       UFrmAgente.TfrmAgente.Inicializa
- 0001:002A802C       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:002A8048       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:002A8254       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:002A987C       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:002A98B4       UFrmAgente.TfrmAgente.Inicializa
+ 0001:002A99C8       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:002A99E4       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:002A9BF0       UFrmAgente.TfrmAgente.PreencheFormulario
  0002:00001620       UFrmAgente.UFrmAgente
  0001:00267220       UFrmCRUD..TFrmCRUD
  0001:00267D08       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
@@ -16541,19 +16544,19 @@ Detailed map of segments
  0001:0026AC74       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
  0001:0026AE88       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
  0001:0026AE40       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:00287E1C       UFrmDeposito..TfrmDeposito
+ 0001:002897B8       UFrmDeposito..TfrmDeposito
  0004:000053E0       UFrmDeposito.frmDeposito
- 0001:00288310       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:00288348       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:00288464       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:00288480       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002885AC       UFrmDeposito.TfrmDeposito.PreencheFormulario
- 0001:00288684       UFrmDeposito.TfrmDeposito.Timer1Timer
- 0001:002A8CE8       UFrmLogin..TFrmLogin
+ 0001:00289CAC       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:00289CE4       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:00289E00       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:00289E1C       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:00289F48       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:0028A020       UFrmDeposito.TfrmDeposito.Timer1Timer
+ 0001:002AA684       UFrmLogin..TFrmLogin
  0004:000054D8       UFrmLogin.FrmLogin
- 0001:002A906C       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002A9094       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002A9170       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002AAA08       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002AAA30       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002AAB0C       UFrmLogin.TFrmLogin.edSenhaKeyDown
  0001:0026D5C4       UFrmPacientes..TfrmPacientes
  0004:000053D0       UFrmPacientes.frmPacientes
  0001:0026DD08       UFrmPacientes.TfrmPacientes.HabilitaCampos
@@ -16576,19 +16579,19 @@ Detailed map of segments
  0004:000053D8       UFrmPrincipal.FrmPrincipal
  0001:00282560       UFrmPrincipal.TFrmPrincipal.FormShow
  0001:00282548       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:002A83D0       UFrmTelaInicial..TfrmTelaInicial
+ 0001:002A9D6C       UFrmTelaInicial..TfrmTelaInicial
  0004:000054D4       UFrmTelaInicial.frmTelaInicial
- 0001:002A87C8       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002A87F0       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:002A8818       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:002A8840       UFrmTelaInicial.TfrmTelaInicial.Button4Click
- 0001:00287208       UfrmVacina..TfrmVacinas
+ 0001:002AA164       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002AA18C       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:002AA1B4       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:002AA1DC       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:00288A94       UfrmVacina..TfrmVacinas
  0004:000053DC       UfrmVacina.frmVacinas
- 0001:00287818       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:00287850       UfrmVacina.TfrmVacinas.Inicializa
- 0001:0028795C       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:00287978       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:00287B64       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:002890E0       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:00289138       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:00289248       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:00289264       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:00289450       UfrmVacina.TfrmVacinas.PreencheFormulario
  0001:00282648       ULoteVacina..TLOTEVACINA
  0001:00263BDC       UOpcaoPesquisa..TOpcaoPesquisa
  0001:002641D8       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
@@ -16646,6 +16649,7 @@ Detailed map of segments
  0001:00265CB0       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.ToArray
  0001:00265C98       UOpcaoPesquisa.{Generics.Collections}TList<System.string>.TrimExcess
  0001:0026B440       UPaciente..TPACIENTE
+ 0001:00287208       UProximaVacina..TPROXIMAVACINA
  0001:00262648       URegraCRUD..TRegraCRUD
  0001:002629BC       URegraCRUD..{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>
  0001:00262E74       URegraCRUD.TRegraCRUD.Atualiza
@@ -16674,36 +16678,38 @@ Detailed map of segments
  0001:00263A88       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
  0001:00263024       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
  0001:0026349C       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
- 0001:002A7A38       URegraCRUDAgente..TRegraCRUDAgente
- 0001:002A7B1C       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:002A93D4       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:002A94B8       URegraCRUDAgente.TRegraCRUDAgente.Create
  0001:002870AC       URegraCRUDCarteiraVacinacao..TRegraCRUDCarteiraVacinacao
  0001:002871B4       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.Create
- 0001:00287CD8       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
- 0001:00287DC8       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
+ 0001:00289674       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
+ 0001:00289764       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
  0001:0026D484       URegraCRUDPaciente..TRegraCRUDPACIENTES
  0001:0026D570       URegraCRUDPaciente.TRegraCRUDPACIENTES.Create
- 0001:002A5FFC       URepositorioAgente..TRepositorioAgente
- 0001:002A6308       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
- 0001:002A6934       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
- 0001:002A6C24       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
- 0001:002A6720       URepositorioAgente.TRepositorioAgente.Create
- 0001:002A67E4       URepositorioAgente.TRepositorioAgente.GravaHashSenha
- 0001:002A682C       URepositorioAgente.TRepositorioAgente.RetornaPeloLogin
- 0001:002A7924       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
- 0001:002A7278       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
- 0001:002A72B8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
- 0001:002A785C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
- 0001:002A7458       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
- 0001:002A7658       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
- 0001:002A772C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
- 0001:002A723C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
- 0001:002A70D4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
- 0001:002A78A4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
- 0001:002A70F0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
- 0001:002A6F98       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
- 0001:002A78E4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
- 0001:002A6E80       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
- 0001:002A72F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
+ 0001:00288944       URegraCRUDProximaVacina..TRegraCRUDProximaVacina
+ 0001:00288A40       URegraCRUDProximaVacina.TRegraCRUDProximaVacina.Create
+ 0001:002A7998       URepositorioAgente..TRepositorioAgente
+ 0001:002A7CA4       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
+ 0001:002A82D0       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
+ 0001:002A85C0       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
+ 0001:002A80BC       URepositorioAgente.TRepositorioAgente.Create
+ 0001:002A8180       URepositorioAgente.TRepositorioAgente.GravaHashSenha
+ 0001:002A81C8       URepositorioAgente.TRepositorioAgente.RetornaPeloLogin
+ 0001:002A92C0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
+ 0001:002A8C14       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
+ 0001:002A8C54       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
+ 0001:002A91F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
+ 0001:002A8DF4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
+ 0001:002A8FF4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
+ 0001:002A90C8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
+ 0001:002A8BD8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
+ 0001:002A8A70       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
+ 0001:002A9240       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
+ 0001:002A8A8C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
+ 0001:002A8934       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
+ 0001:002A9280       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
+ 0001:002A881C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
+ 0001:002A8C94       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
  0001:002856D0       URepositorioCarteiraVacinacao..TRepositorioCarteiraVacinacao
  0001:00285A04       URepositorioCarteiraVacinacao..{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>
  0001:00285FAC       URepositorioCarteiraVacinacao.TRepositorioCarteiraVacinacao.AtribuiDBParaEntidade
@@ -16785,6 +16791,26 @@ Detailed map of segments
  0001:0026D330       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.Retorna
  0001:0026C8CC       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaNovoId
  0001:0026CD44       URepositorioPaciente.{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>.RetornaParametros
+ 0001:00287360       URepositorioProximaVacina..TRepositorioProximaVacina
+ 0001:00287600       URepositorioProximaVacina..{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>
+ 0001:00287B04       URepositorioProximaVacina.TRepositorioProximaVacina.AtribuiDBParaEntidade
+ 0001:00287C78       URepositorioProximaVacina.TRepositorioProximaVacina.AtribuiEntidadeParaDB
+ 0001:00287A38       URepositorioProximaVacina.TRepositorioProximaVacina.Create
+ 0001:00288830       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Achou
+ 0001:00288184       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.AtribuiDBParaEntidade
+ 0001:002881C4       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.AtribuiEntidadeParaDB
+ 0001:00288768       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Atualiza
+ 0001:00288364       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Create
+ 0001:00288564       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Destroy
+ 0001:00288638       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Exclui
+ 0001:00288148       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.ExecutaAtualizacao
+ 0001:00287FE0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.ExecutaInsercao
+ 0001:002887B0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Insere
+ 0001:00287FFC       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.PreparaAtualizacao
+ 0001:00287EA4       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.PreparaInsercao
+ 0001:002887F0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Retorna
+ 0001:00287D8C       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.RetornaNovoId
+ 0001:00288204       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.RetornaParametros
  0004:0000533C       UUtilitarios..4
  0001:00149630       UUtilitarios..EValidacaoNegocio
  0001:001496D8       UUtilitarios..TUtilitario
@@ -29066,8 +29092,8 @@ Detailed map of segments
  0001:001AF638       Rtti.InsufficientRtti
  0001:001AF64C       Rtti.CheckCodeAddress
  0001:001AF660       Rtti..TListHelper
- 0001:001AF708       Rtti.TListHelper.ToArray
  0001:001AF708       Rtti.DerefPointer
+ 0001:001AF708       Rtti.TListHelper.ToArray
  0001:001AF710       Rtti.NopRefCount
  0001:001AF71C       Rtti.NopQueryInterface
  0001:001AF728       Rtti.NopRet0
@@ -33497,474 +33523,497 @@ Detailed map of segments
  0001:00286F98       URepositorioCarteiraVacinacao.{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>.Achou
  0001:002870AC       URegraCRUDCarteiraVacinacao..TRegraCRUDCarteiraVacinacao
  0001:002871B4       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.Create
- 0001:00287208       UfrmVacina..TfrmVacinas
- 0001:00287818       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:00287850       UfrmVacina.TfrmVacinas.Inicializa
- 0001:0028795C       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:00287978       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:00287B64       UfrmVacina.TfrmVacinas.PreencheFormulario
- 0001:00287CD8       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
- 0001:00287DC8       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
- 0001:00287E1C       UFrmDeposito..TfrmDeposito
- 0001:00288310       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:00288348       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:00288464       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:00288480       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002885AC       UFrmDeposito.TfrmDeposito.PreencheFormulario
- 0001:00288684       UFrmDeposito.TfrmDeposito.Timer1Timer
- 0001:002886B0       IdException..EIdException
- 0001:002887CC       IdException..EIdSocketHandleError
- 0001:00288880       IdException..EIdPackageSizeTooBig
- 0001:00288934       IdException..EIdNotAllBytesSent
- 0001:002889E0       IdException.EIdException.Create
- 0001:00288A18       IdException.EIdException.Toss
- 0001:00288BC8       IdStreamVCL..TIdStreamHelperVCL
- 0001:00288CF8       IdStreamVCL.TIdStreamHelperVCL.ReadBytes
- 0001:00288E60       IdStreamVCL.TIdStreamHelperVCL.Write
- 0001:00288F5C       IdStreamVCL.TIdStreamHelperVCL.Seek
- 0001:00288F84       IdGlobal..TIdCriticalSection
- 0001:00289030       IdGlobal..EIdInvalidIPv6Address
- 0001:00289144       IdGlobal.EnsureEncoding
- 0001:00289180       IdGlobal.IndyRaiseLastError
- 0001:00289188       IdGlobal.InterlockedExchangeTHandle
- 0001:00289190       IdGlobal.HostToLittleEndian
- 0001:00289194       IdGlobal.FillBytes
- 0001:002891AC       IdGlobal.ToHex
- 0001:00289258       IdGlobal.CopyTIdBytes
- 0001:00289360       IdGlobal.CopyTIdWord
- 0001:00289368       IdGlobal.CopyTIdLongWord
- 0001:00289370       IdGlobal.Fetch
- 0001:00289428       IdGlobal.FetchCaseInsensitive
- 0001:00289514       IdGlobal.iif
- 0001:00289520       IdGlobal.MakeCanonicalIPv6Address
- 0001:00289A54       IdGlobal.IPv6ToIdIPv6Address
- 0001:00289AD0       IdGlobal.IPv6ToIdIPv6Address
- 0001:00289BFC       IdGlobal.IndyMin
- 0001:00289C3C       IdGlobal.SBPos
- 0001:00289C44       IdGlobal.InternalAnsiPos
- 0001:00289C4C       IdGlobal.IndyLength
- 0001:00289EA8       IdGlobal.IndyFormat
- 0001:0028A544       IdGlobal.IndyIncludeTrailingPathDelimiter
- 0001:0028A558       IdGlobal.IndyStrToInt
- 0001:0028A5A8       IdGlobal.IndyStrToInt
- 0001:0028A5FC       IdGlobal.ToBytes
- 0001:0028A788       IdGlobal.BytesToWord
- 0001:0028A85C       IdGlobal.ReadTIdBytesFromStream
- 0001:0028A894       IdGlobal.WriteTIdBytesToStream
- 0001:0028A8B0       IdGlobal.WriteStringToStream
- 0001:0028A8BC       IdGlobal.WriteStringToStream
- 0001:0028AA28       IdGlobal.TextIsSame
- 0001:0028AA40       IdGlobal.TextStartsWith
- 0001:0028AA94       IdGlobal.TextEndsWith
- 0001:0028AAFC       IdGlobal.IndyRegisterExpectedMemoryLeak
- 0001:0028AB04       IdGlobal.Finalization
- 0001:0028AB84       IdFIPS.DefGetFIPSMode
- 0001:0028AB88       IdFIPS.DefSetFIPSMode
- 0001:0028AB8C       IdFIPS.DefIsHashingIntfAvail
- 0001:0028AB90       IdFIPS.DefIsHashIntfAvail
- 0001:0028AB94       IdFIPS.DefGetHashInst
- 0001:0028AB98       IdFIPS.DefUpdateHashInst
- 0001:0028AB9C       IdFIPS.DefFinalHashInst
- 0001:0028ABB8       IdFIPS.DefIsHMACAvail
- 0001:0028ABBC       IdFIPS.DefIsHMACIntfAvail
- 0001:0028ABC0       IdFIPS.DefGetHMACInst
- 0001:0028ABC4       IdFIPS.DefUpdateHMACInst
- 0001:0028ABC8       IdFIPS.DefFinalHMACInst
- 0001:0028ABE4       IdFIPS.Finalization
- 0001:00292D5C       IdCharsets.Finalization
- 0001:00292DA4       IdWinsock2..EIdWinsockStubError
- 0001:00292FA0       IdWinsock2.WinsockHandle
- 0001:00292FA8       IdWinsock2.Winsock2Loaded
- 0001:00292FB4       IdWinsock2.InitializeWinSock
- 0001:002930C0       IdWinsock2.UninitializeWinSock
- 0001:00293100       IdWinsock2.EIdWinsockStubError.Build
- 0001:0029320C       IdWinsock2.FixupStubEx
- 0001:002932A8       IdWinsock2.Stub_WSAStartup
- 0001:002933C0       IdWinsock2.Stub_WSACleanup
- 0001:002934CC       IdWinsock2.Stub_accept
- 0001:002935E0       IdWinsock2.Stub_bind
- 0001:002936F0       IdWinsock2.Stub_closesocket
- 0001:00293804       IdWinsock2.Stub_connect
- 0001:00293918       IdWinsock2.Stub_ioctlsocket
- 0001:00293A34       IdWinsock2.Stub_getpeername
- 0001:00293B50       IdWinsock2.Stub_getsockname
- 0001:00293C6C       IdWinsock2.Stub_getsockopt
- 0001:00293D90       IdWinsock2.Stub_htonl
- 0001:00293E98       IdWinsock2.Stub_htons
- 0001:00293FA0       IdWinsock2.Stub_inet_addr
- 0001:002940B0       IdWinsock2.Stub_inet_ntoa
- 0001:002941BC       IdWinsock2.Stub_listen
- 0001:002942CC       IdWinsock2.Stub_ntohl
- 0001:002943D4       IdWinsock2.Stub_ntohs
- 0001:002944DC       IdWinsock2.Stub_recv
- 0001:002945F0       IdWinsock2.Stub_recvfrom
- 0001:00294714       IdWinsock2.Stub_select
- 0001:00294830       IdWinsock2.Stub_send
- 0001:00294944       IdWinsock2.Stub_sendto
- 0001:00294A64       IdWinsock2.Stub_setsockopt
- 0001:00294B88       IdWinsock2.Stub_shutdown
- 0001:00294C9C       IdWinsock2.Stub_socket
- 0001:00294DB0       IdWinsock2.Stub_gethostbyaddr
- 0001:00294ED0       IdWinsock2.Stub_gethostbyname
- 0001:00294FE8       IdWinsock2.Stub_gethostname
- 0001:00295100       IdWinsock2.Stub_getservbyport
- 0001:0029521C       IdWinsock2.Stub_getservbyname
- 0001:00295338       IdWinsock2.Stub_getprotobynumber
- 0001:00295458       IdWinsock2.Stub_getprotobyname
- 0001:00295574       IdWinsock2.Stub_WSASetLastError
- 0001:0029568C       IdWinsock2.Stub_WSAGetLastError
- 0001:002957A0       IdWinsock2.Stub_WSAIsBlocking
- 0001:002958B0       IdWinsock2.Stub_WSAUnhookBlockingHook
- 0001:002959D0       IdWinsock2.Stub_WSASetBlockingHook
- 0001:00295AF4       IdWinsock2.Stub_WSACancelBlockingCall
- 0001:00295C14       IdWinsock2.Stub_WSAAsyncGetServByName
- 0001:00295D50       IdWinsock2.Stub_WSAAsyncGetServByPort
- 0001:00295E8C       IdWinsock2.Stub_WSAAsyncGetProtoByName
- 0001:00295FC8       IdWinsock2.Stub_WSAAsyncGetProtoByNumber
- 0001:00296108       IdWinsock2.Stub_WSAAsyncGetHostByName
- 0001:00296240       IdWinsock2.Stub_WSAAsyncGetHostByAddr
- 0001:00296380       IdWinsock2.Stub_WSACancelAsyncRequest
- 0001:002964A8       IdWinsock2.Stub_WSAAsyncSelect
- 0001:002965D0       IdWinsock2.Stub___WSAFDIsSet
- 0001:002966EC       IdWinsock2.Stub_WSAAccept
- 0001:0029680C       IdWinsock2.Stub_WSACloseEvent
- 0001:00296924       IdWinsock2.Stub_WSAConnect
- 0001:00296A50       IdWinsock2.Stub_WSACreateEvent
- 0001:00296B64       IdWinsock2.Stub_WSADuplicateSocketA
- 0001:00296C90       IdWinsock2.Stub_WSADuplicateSocketW
- 0001:00296DBC       IdWinsock2.Stub_WSADuplicateSocket
- 0001:00296EE8       IdWinsock2.Stub_WSAEnumNetworkEvents
- 0001:00297018       IdWinsock2.Stub_WSAEnumProtocolsA
- 0001:00297140       IdWinsock2.Stub_WSAEnumProtocolsW
- 0001:00297268       IdWinsock2.Stub_WSAEnumProtocols
- 0001:00297390       IdWinsock2.Stub_WSAEventSelect
- 0001:002974B4       IdWinsock2.Stub_WSAGetOverlappedResult
- 0001:002975F0       IdWinsock2.Stub_WSAGetQOSByName
- 0001:00297714       IdWinsock2.Stub_WSAHtonl
- 0001:0029782C       IdWinsock2.Stub_WSAHtons
- 0001:00297944       IdWinsock2.Stub_WSAIoctl
- 0001:00297A74       IdWinsock2.Stub_WSAJoinLeaf
- 0001:00297BA4       IdWinsock2.Stub_WSANtohl
- 0001:00297CBC       IdWinsock2.Stub_WSANtohs
- 0001:00297DD4       IdWinsock2.Stub_WSARecv
- 0001:00297EF8       IdWinsock2.Stub_WSARecvDisconnect
- 0001:0029801C       IdWinsock2.Stub_WSARecvFrom
- 0001:00298150       IdWinsock2.Stub_WSAResetEvent
- 0001:00298268       IdWinsock2.Stub_WSASend
- 0001:0029838C       IdWinsock2.Stub_WSASendDisconnect
- 0001:002984B0       IdWinsock2.Stub_WSASendTo
- 0001:002985E0       IdWinsock2.Stub_WSASetEvent
- 0001:002986F4       IdWinsock2.Stub_WSASocketA
- 0001:0029881C       IdWinsock2.Stub_WSASocketW
- 0001:00298944       IdWinsock2.Stub_WSASocket
- 0001:00298A6C       IdWinsock2.Stub_WSAWaitForMultipleEvents
- 0001:00298BAC       IdWinsock2.Stub_WSAAddressToStringA
- 0001:00298CE0       IdWinsock2.Stub_WSAAddressToStringW
- 0001:00298E14       IdWinsock2.Stub_WSAAddressToString
- 0001:00298F48       IdWinsock2.Stub_WSAStringToAddressA
- 0001:0029907C       IdWinsock2.Stub_WSAStringToAddressW
- 0001:002991B0       IdWinsock2.Stub_WSAStringToAddress
- 0001:002992E4       IdWinsock2.Stub_WSALookupServiceBeginA
- 0001:00299418       IdWinsock2.Stub_WSALookupServiceBeginW
- 0001:0029954C       IdWinsock2.Stub_WSALookupServiceBegin
- 0001:00299680       IdWinsock2.Stub_WSALookupServiceNextA
- 0001:002997B4       IdWinsock2.Stub_WSALookupServiceNextW
- 0001:002998E8       IdWinsock2.Stub_WSALookupServiceNext
- 0001:00299A1C       IdWinsock2.Stub_WSALookupServiceEnd
- 0001:00299B40       IdWinsock2.Stub_WSANSPIoctl
- 0001:00299C70       IdWinsock2.Stub_WSAInstallServiceClassA
- 0001:00299D9C       IdWinsock2.Stub_WSAInstallServiceClassW
- 0001:00299EC8       IdWinsock2.Stub_WSAInstallServiceClass
- 0001:00299FF4       IdWinsock2.Stub_WSARemoveServiceClass
- 0001:0029A11C       IdWinsock2.Stub_WSAGetServiceClassInfoA
- 0001:0029A254       IdWinsock2.Stub_WSAGetServiceClassInfoW
- 0001:0029A38C       IdWinsock2.Stub_WSAGetServiceClassInfo
- 0001:0029A4C4       IdWinsock2.Stub_WSAEnumNameSpaceProvidersA
- 0001:0029A5FC       IdWinsock2.Stub_WSAEnumNameSpaceProvidersW
- 0001:0029A734       IdWinsock2.Stub_WSAEnumNameSpaceProviders
- 0001:0029A86C       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdA
- 0001:0029A9B4       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdW
- 0001:0029AAFC       IdWinsock2.Stub_WSAGetServiceClassNameByClassId
- 0001:0029AC44       IdWinsock2.Stub_WSASetServiceA
- 0001:0029AD68       IdWinsock2.Stub_WSASetServiceW
- 0001:0029AE8C       IdWinsock2.Stub_WSASetService
- 0001:0029AFB0       IdWinsock2.Stub_WSAProviderConfigChange
- 0001:0029B0E4       IdWinsock2.Stub_TransmitFile
- 0001:0029B150       IdWinsock2.Stub_AcceptEx
- 0001:0029B204       IdWinsock2.Stub_WSARecvEx
- 0001:0029B3A4       IdWinsock2.Stub_ConnectEx
- 0001:0029B408       IdWinsock2.Stub_DisconnectEx
- 0001:0029B468       IdWinsock2.Stub_WSARecvMsg
- 0001:0029B4C8       IdWinsock2.Stub_TransmitPackets
- 0001:0029B534       IdWinsock2.Stub_WSASendMsg
- 0001:0029B598       IdWinsock2.Stub_WSAPoll
- 0001:0029B5E8       IdWinsock2.InitializeStubs
- 0001:0029BA90       IdWinsock2.FD_ISSET
- 0001:0029BAA8       IdWinsock2.FD_ZERO
- 0001:0029BAB0       IdWinsock2.WSA_CMSGHDR_ALIGN
- 0001:0029BAC0       IdWinsock2.WSA_CMSG_NXTHDR
- 0001:0029BB04       IdWinsock2.WSA_CMSG_DATA
- 0001:0029BB08       IdWinsock2.WSA_CMSG_LEN
- 0001:0029BB0C       IdWinsock2.Finalization
- 0001:0029BB14       IdWship6.gaiErrorToWsaError
- 0001:0029BBAC       IdWship6.CloseLibrary
- 0001:0029BC2C       IdWship6.InitLibrary
- 0001:0029C038       IdWship6.Finalization
- 0001:0029C048       IdStackBSDBase..TIdStackBSDBase
- 0001:0029C9F4       IdStackBSDBase.TIdStackBSDBase.CheckIPVersionSupport
- 0001:0029C9FC       IdStackBSDBase.TIdStackBSDBase.SetSocketOption
- 0001:0029CA04       IdStackBSDBase.TIdStackBSDBase.WSGetServByName
- 0001:0029CA0C       IdStackBSDBase.TIdStackBSDBase.WSGetServByPort
- 0001:0029CA14       IdStackBSDBase.TIdStackBSDBase.RecvFrom
- 0001:0029CA1C       IdStackBSDBase.TIdStackBSDBase.WSSendTo
- 0001:0029CA24       IdStackBSDBase.TIdStackBSDBase.WSSocket
- 0001:0029CA2C       IdStackBSDBase.TIdStackBSDBase.WSGetSockOpt
- 0001:0029CA34       IdStackBSDBase.TIdStackBSDBase.SetBlocking
- 0001:0029CA3C       IdStackBSDBase.TIdStackBSDBase.WouldBlock
- 0001:0029CA44       IdStackBSDBase..EIdInvalidServiceName
- 0001:0029CAFC       IdStackBSDBase..EIdStackInitializationFailed
- 0001:0029CBC4       IdStackBSDBase..EIdStackSetSizeExceeded
- 0001:0029CC7C       IdStackBSDBase.TIdStackBSDBase.TranslateTInAddrToString
- 0001:0029CDD0       IdStackBSDBase.TIdStackBSDBase.TranslateStringToTInAddr
- 0001:0029CF08       IdStackBSDBase.TIdStackBSDBase.NewSocketHandle
- 0001:0029CF4C       IdStackBSDBase.TIdStackBSDBase.Create
- 0001:0029CF88       IdStackBSDBase.TIdStackBSDBase.Receive
- 0001:0029CFB8       IdStackBSDBase.TIdStackBSDBase.Send
- 0001:0029CFF4       IdStackBSDBase.TIdStackBSDBase.ReceiveFrom
- 0001:0029D038       IdStackBSDBase.TIdStackBSDBase.SendTo
- 0001:0029D088       IdStackBSDBase.TIdStackBSDBase.DropMulticastMembership
- 0001:0029D0C8       IdStackBSDBase.TIdStackBSDBase.AddMulticastMembership
- 0001:0029D108       IdStackBSDBase.TIdStackBSDBase.SetMulticastTTL
- 0001:0029D16C       IdStackBSDBase.TIdStackBSDBase.SetLoopBack
- 0001:0029D1D0       IdStackBSDBase.TIdStackBSDBase.MembershipSockOpt
- 0001:0029D294       IdStackWindows..EIdIPv6Unavailable
- 0001:0029D344       IdStackWindows..TIdSocketListWindows
- 0001:0029D71C       IdStackWindows..TIdStackWindows
- 0001:0029E4FC       IdStackWindows.TIdStackWindows.Create
- 0001:0029E59C       IdStackWindows.TIdStackWindows.Destroy
- 0001:0029E5C4       IdStackWindows.TIdStackWindows.Accept
- 0001:0029E6D0       IdStackWindows.TIdStackWindows.Bind
- 0001:0029E78C       IdStackWindows.TIdStackWindows.WSCloseSocket
- 0001:0029E798       IdStackWindows.TIdStackWindows.HostByAddress
- 0001:0029E990       IdStackWindows.TIdStackWindows.ReadHostName
- 0001:0029EA00       IdStackWindows.TIdStackWindows.Listen
- 0001:0029EA24       IdStackWindows.TIdStackWindows.WSRecv
- 0001:0029EA40       IdStackWindows.TIdStackWindows.RecvFrom
- 0001:0029EB4C       IdStackWindows.TIdStackWindows.WSSend
- 0001:0029EB7C       IdStackWindows.TIdStackWindows.WSSendTo
- 0001:0029ECD4       IdStackWindows.TIdStackWindows.SetSocketOption
- 0001:0029ED08       IdStackWindows.TIdStackWindows.WSGetLastError
- 0001:0029ED14       IdStackWindows.TIdStackWindows.WSSetLastError
- 0001:0029ED20       IdStackWindows.TIdStackWindows.WSSocket
- 0001:0029ED50       IdStackWindows.TIdStackWindows.WSGetServByName
- 0001:0029EE44       IdStackWindows.TIdStackWindows.WSGetServByPort
- 0001:0029EF28       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029EF34       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029EF40       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029EF4C       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029EF58       IdStackWindows.TIdStackWindows.HostToNetwork
- 0001:0029EFA8       IdStackWindows.TIdStackWindows.NetworkToHost
- 0001:0029EFF8       IdStackWindows.TIdStackWindows.AddLocalAddressesToList
- 0001:0029F1F0       IdStackWindows.TIdStackWindows.WSShutdown
- 0001:0029F1FC       IdStackWindows.TIdStackWindows.GetSocketName
- 0001:0029F2F8       IdStackWindows.TIdStackWindows.WSGetSockOpt
- 0001:0029F32C       IdStackWindows.TIdSocketListWindows.Add
- 0001:0029F3E0       IdStackWindows.TIdSocketListWindows.Clear
- 0001:0029F428       IdStackWindows.TIdSocketListWindows.ContainsSocket
- 0001:0029F480       IdStackWindows.TIdSocketListWindows.Count
- 0001:0029F4CC       IdStackWindows.TIdSocketListWindows.GetItem
- 0001:0029F584       IdStackWindows.TIdSocketListWindows.Remove
- 0001:0029F614       IdStackWindows.TIdStackWindows.WSTranslateSocketErrorMsg
- 0001:0029F6B8       IdStackWindows.TIdSocketListWindows.SelectRead
- 0001:0029F6F0       IdStackWindows.TIdSocketListWindows.FDSelect
- 0001:0029F75C       IdStackWindows.TIdSocketListWindows.SelectReadList
- 0001:0029F7B8       IdStackWindows.ReadSet
- 0001:0029F7D8       IdStackWindows.TIdSocketListWindows.Select
- 0001:0029F878       IdStackWindows.TIdSocketListWindows.SetFDSet
- 0001:0029F8CC       IdStackWindows.TIdSocketListWindows.GetFDSet
- 0001:0029F920       IdStackWindows.TIdStackWindows.SetBlocking
- 0001:0029F950       IdStackWindows.TIdSocketListWindows.Clone
- 0001:0029F9EC       IdStackWindows.TIdStackWindows.WouldBlock
- 0001:0029FA14       IdStackWindows.TIdStackWindows.HostByName
- 0001:0029FBE0       IdStackWindows.TIdStackWindows.Connect
- 0001:0029FC94       IdStackWindows.TIdStackWindows.GetPeerName
- 0001:0029FD90       IdStackWindows.TIdStackWindows.Disconnect
- 0001:0029FDB8       IdStackWindows.TIdStackWindows.SetSocketOption
- 0001:0029FDEC       IdStackWindows.TIdStackWindows.GetSocketOption
- 0001:0029FE2C       IdStackWindows.TIdStackWindows.SupportsIPv6
- 0001:0029FECC       IdStackWindows.TIdStackWindows.IOControl
- 0001:0029FEE4       IdStackWindows.TIdStackWindows.WSQuerryIPv6Route
- 0001:0029FFA0       IdStackWindows.TIdStackWindows.WriteChecksum
- 0001:0029FFF8       IdStackWindows.TIdStackWindows.WriteChecksumIPv6
- 0001:002A0130       IdStackWindows.TIdStackWindows.ReceiveMsg
- 0001:002A03EC       IdStackWindows.TIdStackWindows.CheckIPVersionSupport
- 0001:002A042C       IdStackWindows.ServeFile
- 0001:002A051C       IdStackWindows.Finalization
- 0001:002A0540       IdStack..EIdSocketError
- 0001:002A0680       IdStack..EIdStackError
- 0001:002A0720       IdStack..EIdIPVersionUnsupported
- 0001:002A07D4       IdStack..EIdNotASocket
- 0001:002A0878       IdStack..TIdSocketList
- 0001:002A0CA8       IdStack.TIdSocketList.Add
- 0001:002A0CB0       IdStack.TIdSocketList.Clone
- 0001:002A0CB8       IdStack.TIdSocketList.Count
- 0001:002A0CC0       IdStack.TIdSocketList.Remove
- 0001:002A0CC8       IdStack.TIdSocketList.Clear
- 0001:002A0CD0       IdStack.TIdSocketList.ContainsSocket
- 0001:002A0CD8       IdStack.TIdSocketList.SelectRead
- 0001:002A0CE0       IdStack.TIdSocketList.SelectReadList
- 0001:002A0CE8       IdStack..TIdStack
- 0001:002A1E04       IdStack.TIdStack.Accept
- 0001:002A1E0C       IdStack.TIdStack.Bind
- 0001:002A1E14       IdStack.TIdStack.Connect
- 0001:002A1E1C       IdStack.TIdStack.Disconnect
- 0001:002A1E24       IdStack.TIdStack.IOControl
- 0001:002A1E2C       IdStack.TIdStack.GetPeerName
- 0001:002A1E34       IdStack.TIdStack.GetSocketName
- 0001:002A1E3C       IdStack.TIdStack.HostByAddress
- 0001:002A1E44       IdStack.TIdStack.HostToNetwork
- 0001:002A1E4C       IdStack.TIdStack.HostToNetwork
- 0001:002A1E54       IdStack.TIdStack.HostToNetwork
- 0001:002A1E5C       IdStack.TIdStack.Listen
- 0001:002A1E64       IdStack.TIdStack.WSGetLastError
- 0001:002A1E6C       IdStack.TIdStack.WSSetLastError
- 0001:002A1E74       IdStack.TIdStack.NewSocketHandle
- 0001:002A1E7C       IdStack.TIdStack.NetworkToHost
- 0001:002A1E84       IdStack.TIdStack.NetworkToHost
- 0001:002A1E8C       IdStack.TIdStack.NetworkToHost
- 0001:002A1E94       IdStack.TIdStack.GetSocketOption
- 0001:002A1E9C       IdStack.TIdStack.SetSocketOption
- 0001:002A1EA4       IdStack.TIdStack.Receive
- 0001:002A1EAC       IdStack.TIdStack.Send
- 0001:002A1EB4       IdStack.TIdStack.ReceiveFrom
- 0001:002A1EBC       IdStack.TIdStack.SendTo
- 0001:002A1EC4       IdStack.TIdStack.ReceiveMsg
- 0001:002A1ECC       IdStack.TIdStack.SupportsIPv6
- 0001:002A1ED4       IdStack.TIdStack.SetMulticastTTL
- 0001:002A1EDC       IdStack.TIdStack.SetLoopBack
- 0001:002A1EE4       IdStack.TIdStack.DropMulticastMembership
- 0001:002A1EEC       IdStack.TIdStack.AddMulticastMembership
- 0001:002A1EF4       IdStack.TIdStack.WriteChecksum
- 0001:002A1EFC       IdStack.TIdStack.AddLocalAddressesToList
- 0001:002A1F04       IdStack.TIdPacketInfo.Reset
- 0001:002A1F5C       IdStack.TIdSocketList.Create
- 0001:002A1FB0       IdStack.TIdSocketList.CreateSocketList
- 0001:002A1FD0       IdStack.TIdSocketList.Destroy
- 0001:002A2024       IdStack.TIdSocketList.Lock
- 0001:002A2038       IdStack.TIdSocketList.Select
- 0001:002A2054       IdStack.TIdSocketList.Unlock
- 0001:002A206C       IdStack.EIdSocketError.CreateError
- 0001:002A20C0       IdStack.TIdStack.Create
- 0001:002A2104       IdStack.TIdStack.Destroy
- 0001:002A2158       IdStack.TIdStack.IPVersionUnsupported
- 0001:002A21B8       IdStack.TIdStack.Accept
- 0001:002A21EC       IdStack.TIdStack.GetPeerName
- 0001:002A221C       IdStack.TIdStack.GetSocketName
- 0001:002A224C       IdStack.TIdStack.GetLocalAddresses
- 0001:002A229C       IdStack.TIdStack.GetLocalAddress
- 0001:002A2318       IdStack.TIdStack.IsIP
- 0001:002A2490       IdStack.TIdStack.MakeCanonicalIPv6Address
- 0001:002A24B0       IdStack.TIdStack.ResolveHost
- 0001:002A2598       IdStack.TIdStack.SendTo
- 0001:002A25D8       IdStack.TIdStack.DecUsage
- 0001:002A2704       IdStack.TIdStack.IncUsage
- 0001:002A2898       IdStack.TIdStack.CheckForSocketError
- 0001:002A28C0       IdStack.TIdStack.CheckForSocketError
- 0001:002A292C       IdStack.TIdStack.RaiseLastSocketError
- 0001:002A2948       IdStack.TIdStack.RaiseSocketError
- 0001:002A29E8       IdStack.TIdStack.WSTranslateSocketErrorMsg
- 0001:002A2E24       IdStack.TIdStack.HostToNetwork
- 0001:002A2E64       IdStack.TIdStack.NetworkToHost
- 0001:002A2EA4       IdStack.TIdStack.IsValidIPv4MulticastGroup
- 0001:002A2F60       IdStack.TIdStack.IsValidIPv6MulticastGroup
- 0001:002A2FE4       IdStack.TIdStack.CalcCheckSum
- 0001:002A3070       IdStack.Finalization
- 0001:002A3254       IdGlobalProtocols.TempPath
- 0001:002A40E4       IdGlobalProtocols.ROL
- 0001:002A40EC       IdGlobalProtocols.Finalization
- 0001:002A423C       IdHash..TIdHash
- 0001:002A44E0       IdHash..TIdHashIntF
- 0001:002A45F4       IdHash..TIdHashNativeAndIntF
- 0001:002A46B4       IdHash.TIdHash.Create
- 0001:002A46EC       IdHash.TIdHash.HashString
- 0001:002A47B0       IdHash.TIdHash.HashStringAsHex
- 0001:002A481C       IdHash.TIdHash.HashBytes
- 0001:002A48E0       IdHash.TIdHash.HashBytesAsHex
- 0001:002A4944       IdHash.TIdHash.HashStream
- 0001:002A49B0       IdHash.TIdHash.HashStreamAsHex
- 0001:002A4A14       IdHash.TIdHash.HashStream
- 0001:002A4AF4       IdHash.TIdHash.HashStreamAsHex
- 0001:002A4B68       IdHash.TIdHash.LongWordHashToHex
- 0001:002A4B94       IdHash.TIdHash.IsAvailable
- 0001:002A4B98       IdHash.TIdHashIntF.FinalHash
- 0001:002A4BFC       IdHash.TIdHashIntF.GetHashBytes
- 0001:002A4D34       IdHash.TIdHashIntF.HashToHex
- 0001:002A4D4C       IdHash.TIdHashIntF.IsAvailable
- 0001:002A4D50       IdHash.TIdHashIntF.IsIntfAvailable
- 0001:002A4D60       IdHash.TIdHashIntF.UpdateHash
- 0001:002A4D74       IdHash.TIdHashNativeAndIntF.GetHashBytes
- 0001:002A4E18       IdHash.TIdHashNativeAndIntF.NativeGetHashBytes
- 0001:002A4E4C       IdHashMessageDigest..TIdHashMessageDigest
- 0001:002A4F4C       IdHashMessageDigest..TIdHashMessageDigest4
- 0001:002A50A4       IdHashMessageDigest..TIdHashMessageDigest5
- 0001:002A51B4       IdHashMessageDigest.TIdHashMessageDigest.Reset
- 0001:002A51D0       IdHashMessageDigest.TIdHashMessageDigest4.Create
- 0001:002A5220       IdHashMessageDigest.TIdHashMessageDigest4.MDCoder
- 0001:002A55B0       IdHashMessageDigest.TIdHashMessageDigest4.NativeGetHashBytes
- 0001:002A5710       IdHashMessageDigest.TIdHashMessageDigest4.InitHash
- 0001:002A5720       IdHashMessageDigest.TIdHashMessageDigest4.HashToHex
- 0001:002A573C       IdHashMessageDigest.TIdHashMessageDigest4.IsIntfAvailable
- 0001:002A5764       IdHashMessageDigest.TIdHashMessageDigest5.InitHash
- 0001:002A5774       IdHashMessageDigest.TIdHashMessageDigest5.IsIntfAvailable
- 0001:002A579C       IdHashMessageDigest.TIdHashMessageDigest5.MDCoder
- 0001:002A5FFC       URepositorioAgente..TRepositorioAgente
- 0001:002A6308       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
- 0001:002A6720       URepositorioAgente.TRepositorioAgente.Create
- 0001:002A67E4       URepositorioAgente.TRepositorioAgente.GravaHashSenha
- 0001:002A682C       URepositorioAgente.TRepositorioAgente.RetornaPeloLogin
- 0001:002A6934       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
- 0001:002A6C24       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
- 0001:002A6E80       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
- 0001:002A6F98       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
- 0001:002A70D4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
- 0001:002A70F0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
- 0001:002A723C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
- 0001:002A7278       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
- 0001:002A72B8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
- 0001:002A72F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
- 0001:002A7458       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
- 0001:002A7658       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
- 0001:002A772C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
- 0001:002A785C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
- 0001:002A78A4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
- 0001:002A78E4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
- 0001:002A7924       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
- 0001:002A7A38       URegraCRUDAgente..TRegraCRUDAgente
- 0001:002A7B1C       URegraCRUDAgente.TRegraCRUDAgente.Create
- 0001:002A7B70       UFrmAgente..TfrmAgente
- 0001:002A7EE0       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:002A7F18       UFrmAgente.TfrmAgente.Inicializa
- 0001:002A802C       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:002A8048       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:002A8254       UFrmAgente.TfrmAgente.PreencheFormulario
- 0001:002A8394       UFrmAgente.Finalization
- 0001:002A83D0       UFrmTelaInicial..TfrmTelaInicial
- 0001:002A87C8       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002A87F0       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:002A8818       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:002A8840       UFrmTelaInicial.TfrmTelaInicial.Button4Click
- 0001:002A8868       UAgenteLogado..TAgenteLogado
- 0001:002A8A7C       UAgenteLogado.TAgenteLogado.Create
- 0001:002A8AC8       UAgenteLogado.TAgenteLogado.Destroy
- 0001:002A8B1C       UAgenteLogado.TAgenteLogado.Logoff
- 0001:002A8B54       UAgenteLogado.TAgenteLogado.RealizaLogin
- 0001:002A8C98       UAgenteLogado.TAgenteLogado.Unico
- 0001:002A8CCC       UAgenteLogado.TAgenteLogado.UAgente
- 0001:002A8CE8       UFrmLogin..TFrmLogin
- 0001:002A906C       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002A9094       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002A9170       UFrmLogin.TFrmLogin.edSenhaKeyDown
- 0001:002A91A4       CarteiraOnline.Finalization
+ 0001:00287208       UProximaVacina..TPROXIMAVACINA
+ 0001:00287360       URepositorioProximaVacina..TRepositorioProximaVacina
+ 0001:00287600       URepositorioProximaVacina..{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>
+ 0001:00287A38       URepositorioProximaVacina.TRepositorioProximaVacina.Create
+ 0001:00287B04       URepositorioProximaVacina.TRepositorioProximaVacina.AtribuiDBParaEntidade
+ 0001:00287C78       URepositorioProximaVacina.TRepositorioProximaVacina.AtribuiEntidadeParaDB
+ 0001:00287D8C       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.RetornaNovoId
+ 0001:00287EA4       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.PreparaInsercao
+ 0001:00287FE0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.ExecutaInsercao
+ 0001:00287FFC       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.PreparaAtualizacao
+ 0001:00288148       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.ExecutaAtualizacao
+ 0001:00288184       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.AtribuiDBParaEntidade
+ 0001:002881C4       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.AtribuiEntidadeParaDB
+ 0001:00288204       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.RetornaParametros
+ 0001:00288364       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Create
+ 0001:00288564       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Destroy
+ 0001:00288638       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Exclui
+ 0001:00288768       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Atualiza
+ 0001:002887B0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Insere
+ 0001:002887F0       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Retorna
+ 0001:00288830       URepositorioProximaVacina.{URepositorioDB}TRepositorioDB<UProximaVacina.TPROXIMAVACINA>.Achou
+ 0001:00288944       URegraCRUDProximaVacina..TRegraCRUDProximaVacina
+ 0001:00288A40       URegraCRUDProximaVacina.TRegraCRUDProximaVacina.Create
+ 0001:00288A94       UfrmVacina..TfrmVacinas
+ 0001:002890E0       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:00289138       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:00289248       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:00289264       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:00289450       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:00289674       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
+ 0001:00289764       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
+ 0001:002897B8       UFrmDeposito..TfrmDeposito
+ 0001:00289CAC       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:00289CE4       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:00289E00       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:00289E1C       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:00289F48       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:0028A020       UFrmDeposito.TfrmDeposito.Timer1Timer
+ 0001:0028A04C       IdException..EIdException
+ 0001:0028A168       IdException..EIdSocketHandleError
+ 0001:0028A21C       IdException..EIdPackageSizeTooBig
+ 0001:0028A2D0       IdException..EIdNotAllBytesSent
+ 0001:0028A37C       IdException.EIdException.Create
+ 0001:0028A3B4       IdException.EIdException.Toss
+ 0001:0028A564       IdStreamVCL..TIdStreamHelperVCL
+ 0001:0028A694       IdStreamVCL.TIdStreamHelperVCL.ReadBytes
+ 0001:0028A7FC       IdStreamVCL.TIdStreamHelperVCL.Write
+ 0001:0028A8F8       IdStreamVCL.TIdStreamHelperVCL.Seek
+ 0001:0028A920       IdGlobal..TIdCriticalSection
+ 0001:0028A9CC       IdGlobal..EIdInvalidIPv6Address
+ 0001:0028AAE0       IdGlobal.EnsureEncoding
+ 0001:0028AB1C       IdGlobal.IndyRaiseLastError
+ 0001:0028AB24       IdGlobal.InterlockedExchangeTHandle
+ 0001:0028AB2C       IdGlobal.HostToLittleEndian
+ 0001:0028AB30       IdGlobal.FillBytes
+ 0001:0028AB48       IdGlobal.ToHex
+ 0001:0028ABF4       IdGlobal.CopyTIdBytes
+ 0001:0028ACFC       IdGlobal.CopyTIdWord
+ 0001:0028AD04       IdGlobal.CopyTIdLongWord
+ 0001:0028AD0C       IdGlobal.Fetch
+ 0001:0028ADC4       IdGlobal.FetchCaseInsensitive
+ 0001:0028AEB0       IdGlobal.iif
+ 0001:0028AEBC       IdGlobal.MakeCanonicalIPv6Address
+ 0001:0028B3F0       IdGlobal.IPv6ToIdIPv6Address
+ 0001:0028B46C       IdGlobal.IPv6ToIdIPv6Address
+ 0001:0028B598       IdGlobal.IndyMin
+ 0001:0028B5D8       IdGlobal.SBPos
+ 0001:0028B5E0       IdGlobal.InternalAnsiPos
+ 0001:0028B5E8       IdGlobal.IndyLength
+ 0001:0028B844       IdGlobal.IndyFormat
+ 0001:0028BEE0       IdGlobal.IndyIncludeTrailingPathDelimiter
+ 0001:0028BEF4       IdGlobal.IndyStrToInt
+ 0001:0028BF44       IdGlobal.IndyStrToInt
+ 0001:0028BF98       IdGlobal.ToBytes
+ 0001:0028C124       IdGlobal.BytesToWord
+ 0001:0028C1F8       IdGlobal.ReadTIdBytesFromStream
+ 0001:0028C230       IdGlobal.WriteTIdBytesToStream
+ 0001:0028C24C       IdGlobal.WriteStringToStream
+ 0001:0028C258       IdGlobal.WriteStringToStream
+ 0001:0028C3C4       IdGlobal.TextIsSame
+ 0001:0028C3DC       IdGlobal.TextStartsWith
+ 0001:0028C430       IdGlobal.TextEndsWith
+ 0001:0028C498       IdGlobal.IndyRegisterExpectedMemoryLeak
+ 0001:0028C4A0       IdGlobal.Finalization
+ 0001:0028C520       IdFIPS.DefGetFIPSMode
+ 0001:0028C524       IdFIPS.DefSetFIPSMode
+ 0001:0028C528       IdFIPS.DefIsHashingIntfAvail
+ 0001:0028C52C       IdFIPS.DefIsHashIntfAvail
+ 0001:0028C530       IdFIPS.DefGetHashInst
+ 0001:0028C534       IdFIPS.DefUpdateHashInst
+ 0001:0028C538       IdFIPS.DefFinalHashInst
+ 0001:0028C554       IdFIPS.DefIsHMACAvail
+ 0001:0028C558       IdFIPS.DefIsHMACIntfAvail
+ 0001:0028C55C       IdFIPS.DefGetHMACInst
+ 0001:0028C560       IdFIPS.DefUpdateHMACInst
+ 0001:0028C564       IdFIPS.DefFinalHMACInst
+ 0001:0028C580       IdFIPS.Finalization
+ 0001:002946F8       IdCharsets.Finalization
+ 0001:00294740       IdWinsock2..EIdWinsockStubError
+ 0001:0029493C       IdWinsock2.WinsockHandle
+ 0001:00294944       IdWinsock2.Winsock2Loaded
+ 0001:00294950       IdWinsock2.InitializeWinSock
+ 0001:00294A5C       IdWinsock2.UninitializeWinSock
+ 0001:00294A9C       IdWinsock2.EIdWinsockStubError.Build
+ 0001:00294BA8       IdWinsock2.FixupStubEx
+ 0001:00294C44       IdWinsock2.Stub_WSAStartup
+ 0001:00294D5C       IdWinsock2.Stub_WSACleanup
+ 0001:00294E68       IdWinsock2.Stub_accept
+ 0001:00294F7C       IdWinsock2.Stub_bind
+ 0001:0029508C       IdWinsock2.Stub_closesocket
+ 0001:002951A0       IdWinsock2.Stub_connect
+ 0001:002952B4       IdWinsock2.Stub_ioctlsocket
+ 0001:002953D0       IdWinsock2.Stub_getpeername
+ 0001:002954EC       IdWinsock2.Stub_getsockname
+ 0001:00295608       IdWinsock2.Stub_getsockopt
+ 0001:0029572C       IdWinsock2.Stub_htonl
+ 0001:00295834       IdWinsock2.Stub_htons
+ 0001:0029593C       IdWinsock2.Stub_inet_addr
+ 0001:00295A4C       IdWinsock2.Stub_inet_ntoa
+ 0001:00295B58       IdWinsock2.Stub_listen
+ 0001:00295C68       IdWinsock2.Stub_ntohl
+ 0001:00295D70       IdWinsock2.Stub_ntohs
+ 0001:00295E78       IdWinsock2.Stub_recv
+ 0001:00295F8C       IdWinsock2.Stub_recvfrom
+ 0001:002960B0       IdWinsock2.Stub_select
+ 0001:002961CC       IdWinsock2.Stub_send
+ 0001:002962E0       IdWinsock2.Stub_sendto
+ 0001:00296400       IdWinsock2.Stub_setsockopt
+ 0001:00296524       IdWinsock2.Stub_shutdown
+ 0001:00296638       IdWinsock2.Stub_socket
+ 0001:0029674C       IdWinsock2.Stub_gethostbyaddr
+ 0001:0029686C       IdWinsock2.Stub_gethostbyname
+ 0001:00296984       IdWinsock2.Stub_gethostname
+ 0001:00296A9C       IdWinsock2.Stub_getservbyport
+ 0001:00296BB8       IdWinsock2.Stub_getservbyname
+ 0001:00296CD4       IdWinsock2.Stub_getprotobynumber
+ 0001:00296DF4       IdWinsock2.Stub_getprotobyname
+ 0001:00296F10       IdWinsock2.Stub_WSASetLastError
+ 0001:00297028       IdWinsock2.Stub_WSAGetLastError
+ 0001:0029713C       IdWinsock2.Stub_WSAIsBlocking
+ 0001:0029724C       IdWinsock2.Stub_WSAUnhookBlockingHook
+ 0001:0029736C       IdWinsock2.Stub_WSASetBlockingHook
+ 0001:00297490       IdWinsock2.Stub_WSACancelBlockingCall
+ 0001:002975B0       IdWinsock2.Stub_WSAAsyncGetServByName
+ 0001:002976EC       IdWinsock2.Stub_WSAAsyncGetServByPort
+ 0001:00297828       IdWinsock2.Stub_WSAAsyncGetProtoByName
+ 0001:00297964       IdWinsock2.Stub_WSAAsyncGetProtoByNumber
+ 0001:00297AA4       IdWinsock2.Stub_WSAAsyncGetHostByName
+ 0001:00297BDC       IdWinsock2.Stub_WSAAsyncGetHostByAddr
+ 0001:00297D1C       IdWinsock2.Stub_WSACancelAsyncRequest
+ 0001:00297E44       IdWinsock2.Stub_WSAAsyncSelect
+ 0001:00297F6C       IdWinsock2.Stub___WSAFDIsSet
+ 0001:00298088       IdWinsock2.Stub_WSAAccept
+ 0001:002981A8       IdWinsock2.Stub_WSACloseEvent
+ 0001:002982C0       IdWinsock2.Stub_WSAConnect
+ 0001:002983EC       IdWinsock2.Stub_WSACreateEvent
+ 0001:00298500       IdWinsock2.Stub_WSADuplicateSocketA
+ 0001:0029862C       IdWinsock2.Stub_WSADuplicateSocketW
+ 0001:00298758       IdWinsock2.Stub_WSADuplicateSocket
+ 0001:00298884       IdWinsock2.Stub_WSAEnumNetworkEvents
+ 0001:002989B4       IdWinsock2.Stub_WSAEnumProtocolsA
+ 0001:00298ADC       IdWinsock2.Stub_WSAEnumProtocolsW
+ 0001:00298C04       IdWinsock2.Stub_WSAEnumProtocols
+ 0001:00298D2C       IdWinsock2.Stub_WSAEventSelect
+ 0001:00298E50       IdWinsock2.Stub_WSAGetOverlappedResult
+ 0001:00298F8C       IdWinsock2.Stub_WSAGetQOSByName
+ 0001:002990B0       IdWinsock2.Stub_WSAHtonl
+ 0001:002991C8       IdWinsock2.Stub_WSAHtons
+ 0001:002992E0       IdWinsock2.Stub_WSAIoctl
+ 0001:00299410       IdWinsock2.Stub_WSAJoinLeaf
+ 0001:00299540       IdWinsock2.Stub_WSANtohl
+ 0001:00299658       IdWinsock2.Stub_WSANtohs
+ 0001:00299770       IdWinsock2.Stub_WSARecv
+ 0001:00299894       IdWinsock2.Stub_WSARecvDisconnect
+ 0001:002999B8       IdWinsock2.Stub_WSARecvFrom
+ 0001:00299AEC       IdWinsock2.Stub_WSAResetEvent
+ 0001:00299C04       IdWinsock2.Stub_WSASend
+ 0001:00299D28       IdWinsock2.Stub_WSASendDisconnect
+ 0001:00299E4C       IdWinsock2.Stub_WSASendTo
+ 0001:00299F7C       IdWinsock2.Stub_WSASetEvent
+ 0001:0029A090       IdWinsock2.Stub_WSASocketA
+ 0001:0029A1B8       IdWinsock2.Stub_WSASocketW
+ 0001:0029A2E0       IdWinsock2.Stub_WSASocket
+ 0001:0029A408       IdWinsock2.Stub_WSAWaitForMultipleEvents
+ 0001:0029A548       IdWinsock2.Stub_WSAAddressToStringA
+ 0001:0029A67C       IdWinsock2.Stub_WSAAddressToStringW
+ 0001:0029A7B0       IdWinsock2.Stub_WSAAddressToString
+ 0001:0029A8E4       IdWinsock2.Stub_WSAStringToAddressA
+ 0001:0029AA18       IdWinsock2.Stub_WSAStringToAddressW
+ 0001:0029AB4C       IdWinsock2.Stub_WSAStringToAddress
+ 0001:0029AC80       IdWinsock2.Stub_WSALookupServiceBeginA
+ 0001:0029ADB4       IdWinsock2.Stub_WSALookupServiceBeginW
+ 0001:0029AEE8       IdWinsock2.Stub_WSALookupServiceBegin
+ 0001:0029B01C       IdWinsock2.Stub_WSALookupServiceNextA
+ 0001:0029B150       IdWinsock2.Stub_WSALookupServiceNextW
+ 0001:0029B284       IdWinsock2.Stub_WSALookupServiceNext
+ 0001:0029B3B8       IdWinsock2.Stub_WSALookupServiceEnd
+ 0001:0029B4DC       IdWinsock2.Stub_WSANSPIoctl
+ 0001:0029B60C       IdWinsock2.Stub_WSAInstallServiceClassA
+ 0001:0029B738       IdWinsock2.Stub_WSAInstallServiceClassW
+ 0001:0029B864       IdWinsock2.Stub_WSAInstallServiceClass
+ 0001:0029B990       IdWinsock2.Stub_WSARemoveServiceClass
+ 0001:0029BAB8       IdWinsock2.Stub_WSAGetServiceClassInfoA
+ 0001:0029BBF0       IdWinsock2.Stub_WSAGetServiceClassInfoW
+ 0001:0029BD28       IdWinsock2.Stub_WSAGetServiceClassInfo
+ 0001:0029BE60       IdWinsock2.Stub_WSAEnumNameSpaceProvidersA
+ 0001:0029BF98       IdWinsock2.Stub_WSAEnumNameSpaceProvidersW
+ 0001:0029C0D0       IdWinsock2.Stub_WSAEnumNameSpaceProviders
+ 0001:0029C208       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdA
+ 0001:0029C350       IdWinsock2.Stub_WSAGetServiceClassNameByClassIdW
+ 0001:0029C498       IdWinsock2.Stub_WSAGetServiceClassNameByClassId
+ 0001:0029C5E0       IdWinsock2.Stub_WSASetServiceA
+ 0001:0029C704       IdWinsock2.Stub_WSASetServiceW
+ 0001:0029C828       IdWinsock2.Stub_WSASetService
+ 0001:0029C94C       IdWinsock2.Stub_WSAProviderConfigChange
+ 0001:0029CA80       IdWinsock2.Stub_TransmitFile
+ 0001:0029CAEC       IdWinsock2.Stub_AcceptEx
+ 0001:0029CBA0       IdWinsock2.Stub_WSARecvEx
+ 0001:0029CD40       IdWinsock2.Stub_ConnectEx
+ 0001:0029CDA4       IdWinsock2.Stub_DisconnectEx
+ 0001:0029CE04       IdWinsock2.Stub_WSARecvMsg
+ 0001:0029CE64       IdWinsock2.Stub_TransmitPackets
+ 0001:0029CED0       IdWinsock2.Stub_WSASendMsg
+ 0001:0029CF34       IdWinsock2.Stub_WSAPoll
+ 0001:0029CF84       IdWinsock2.InitializeStubs
+ 0001:0029D42C       IdWinsock2.FD_ISSET
+ 0001:0029D444       IdWinsock2.FD_ZERO
+ 0001:0029D44C       IdWinsock2.WSA_CMSGHDR_ALIGN
+ 0001:0029D45C       IdWinsock2.WSA_CMSG_NXTHDR
+ 0001:0029D4A0       IdWinsock2.WSA_CMSG_DATA
+ 0001:0029D4A4       IdWinsock2.WSA_CMSG_LEN
+ 0001:0029D4A8       IdWinsock2.Finalization
+ 0001:0029D4B0       IdWship6.gaiErrorToWsaError
+ 0001:0029D548       IdWship6.CloseLibrary
+ 0001:0029D5C8       IdWship6.InitLibrary
+ 0001:0029D9D4       IdWship6.Finalization
+ 0001:0029D9E4       IdStackBSDBase..TIdStackBSDBase
+ 0001:0029E390       IdStackBSDBase.TIdStackBSDBase.CheckIPVersionSupport
+ 0001:0029E398       IdStackBSDBase.TIdStackBSDBase.SetSocketOption
+ 0001:0029E3A0       IdStackBSDBase.TIdStackBSDBase.WSGetServByName
+ 0001:0029E3A8       IdStackBSDBase.TIdStackBSDBase.WSGetServByPort
+ 0001:0029E3B0       IdStackBSDBase.TIdStackBSDBase.RecvFrom
+ 0001:0029E3B8       IdStackBSDBase.TIdStackBSDBase.WSSendTo
+ 0001:0029E3C0       IdStackBSDBase.TIdStackBSDBase.WSSocket
+ 0001:0029E3C8       IdStackBSDBase.TIdStackBSDBase.WSGetSockOpt
+ 0001:0029E3D0       IdStackBSDBase.TIdStackBSDBase.SetBlocking
+ 0001:0029E3D8       IdStackBSDBase.TIdStackBSDBase.WouldBlock
+ 0001:0029E3E0       IdStackBSDBase..EIdInvalidServiceName
+ 0001:0029E498       IdStackBSDBase..EIdStackInitializationFailed
+ 0001:0029E560       IdStackBSDBase..EIdStackSetSizeExceeded
+ 0001:0029E618       IdStackBSDBase.TIdStackBSDBase.TranslateTInAddrToString
+ 0001:0029E76C       IdStackBSDBase.TIdStackBSDBase.TranslateStringToTInAddr
+ 0001:0029E8A4       IdStackBSDBase.TIdStackBSDBase.NewSocketHandle
+ 0001:0029E8E8       IdStackBSDBase.TIdStackBSDBase.Create
+ 0001:0029E924       IdStackBSDBase.TIdStackBSDBase.Receive
+ 0001:0029E954       IdStackBSDBase.TIdStackBSDBase.Send
+ 0001:0029E990       IdStackBSDBase.TIdStackBSDBase.ReceiveFrom
+ 0001:0029E9D4       IdStackBSDBase.TIdStackBSDBase.SendTo
+ 0001:0029EA24       IdStackBSDBase.TIdStackBSDBase.DropMulticastMembership
+ 0001:0029EA64       IdStackBSDBase.TIdStackBSDBase.AddMulticastMembership
+ 0001:0029EAA4       IdStackBSDBase.TIdStackBSDBase.SetMulticastTTL
+ 0001:0029EB08       IdStackBSDBase.TIdStackBSDBase.SetLoopBack
+ 0001:0029EB6C       IdStackBSDBase.TIdStackBSDBase.MembershipSockOpt
+ 0001:0029EC30       IdStackWindows..EIdIPv6Unavailable
+ 0001:0029ECE0       IdStackWindows..TIdSocketListWindows
+ 0001:0029F0B8       IdStackWindows..TIdStackWindows
+ 0001:0029FE98       IdStackWindows.TIdStackWindows.Create
+ 0001:0029FF38       IdStackWindows.TIdStackWindows.Destroy
+ 0001:0029FF60       IdStackWindows.TIdStackWindows.Accept
+ 0001:002A006C       IdStackWindows.TIdStackWindows.Bind
+ 0001:002A0128       IdStackWindows.TIdStackWindows.WSCloseSocket
+ 0001:002A0134       IdStackWindows.TIdStackWindows.HostByAddress
+ 0001:002A032C       IdStackWindows.TIdStackWindows.ReadHostName
+ 0001:002A039C       IdStackWindows.TIdStackWindows.Listen
+ 0001:002A03C0       IdStackWindows.TIdStackWindows.WSRecv
+ 0001:002A03DC       IdStackWindows.TIdStackWindows.RecvFrom
+ 0001:002A04E8       IdStackWindows.TIdStackWindows.WSSend
+ 0001:002A0518       IdStackWindows.TIdStackWindows.WSSendTo
+ 0001:002A0670       IdStackWindows.TIdStackWindows.SetSocketOption
+ 0001:002A06A4       IdStackWindows.TIdStackWindows.WSGetLastError
+ 0001:002A06B0       IdStackWindows.TIdStackWindows.WSSetLastError
+ 0001:002A06BC       IdStackWindows.TIdStackWindows.WSSocket
+ 0001:002A06EC       IdStackWindows.TIdStackWindows.WSGetServByName
+ 0001:002A07E0       IdStackWindows.TIdStackWindows.WSGetServByPort
+ 0001:002A08C4       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A08D0       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A08DC       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A08E8       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A08F4       IdStackWindows.TIdStackWindows.HostToNetwork
+ 0001:002A0944       IdStackWindows.TIdStackWindows.NetworkToHost
+ 0001:002A0994       IdStackWindows.TIdStackWindows.AddLocalAddressesToList
+ 0001:002A0B8C       IdStackWindows.TIdStackWindows.WSShutdown
+ 0001:002A0B98       IdStackWindows.TIdStackWindows.GetSocketName
+ 0001:002A0C94       IdStackWindows.TIdStackWindows.WSGetSockOpt
+ 0001:002A0CC8       IdStackWindows.TIdSocketListWindows.Add
+ 0001:002A0D7C       IdStackWindows.TIdSocketListWindows.Clear
+ 0001:002A0DC4       IdStackWindows.TIdSocketListWindows.ContainsSocket
+ 0001:002A0E1C       IdStackWindows.TIdSocketListWindows.Count
+ 0001:002A0E68       IdStackWindows.TIdSocketListWindows.GetItem
+ 0001:002A0F20       IdStackWindows.TIdSocketListWindows.Remove
+ 0001:002A0FB0       IdStackWindows.TIdStackWindows.WSTranslateSocketErrorMsg
+ 0001:002A1054       IdStackWindows.TIdSocketListWindows.SelectRead
+ 0001:002A108C       IdStackWindows.TIdSocketListWindows.FDSelect
+ 0001:002A10F8       IdStackWindows.TIdSocketListWindows.SelectReadList
+ 0001:002A1154       IdStackWindows.ReadSet
+ 0001:002A1174       IdStackWindows.TIdSocketListWindows.Select
+ 0001:002A1214       IdStackWindows.TIdSocketListWindows.SetFDSet
+ 0001:002A1268       IdStackWindows.TIdSocketListWindows.GetFDSet
+ 0001:002A12BC       IdStackWindows.TIdStackWindows.SetBlocking
+ 0001:002A12EC       IdStackWindows.TIdSocketListWindows.Clone
+ 0001:002A1388       IdStackWindows.TIdStackWindows.WouldBlock
+ 0001:002A13B0       IdStackWindows.TIdStackWindows.HostByName
+ 0001:002A157C       IdStackWindows.TIdStackWindows.Connect
+ 0001:002A1630       IdStackWindows.TIdStackWindows.GetPeerName
+ 0001:002A172C       IdStackWindows.TIdStackWindows.Disconnect
+ 0001:002A1754       IdStackWindows.TIdStackWindows.SetSocketOption
+ 0001:002A1788       IdStackWindows.TIdStackWindows.GetSocketOption
+ 0001:002A17C8       IdStackWindows.TIdStackWindows.SupportsIPv6
+ 0001:002A1868       IdStackWindows.TIdStackWindows.IOControl
+ 0001:002A1880       IdStackWindows.TIdStackWindows.WSQuerryIPv6Route
+ 0001:002A193C       IdStackWindows.TIdStackWindows.WriteChecksum
+ 0001:002A1994       IdStackWindows.TIdStackWindows.WriteChecksumIPv6
+ 0001:002A1ACC       IdStackWindows.TIdStackWindows.ReceiveMsg
+ 0001:002A1D88       IdStackWindows.TIdStackWindows.CheckIPVersionSupport
+ 0001:002A1DC8       IdStackWindows.ServeFile
+ 0001:002A1EB8       IdStackWindows.Finalization
+ 0001:002A1EDC       IdStack..EIdSocketError
+ 0001:002A201C       IdStack..EIdStackError
+ 0001:002A20BC       IdStack..EIdIPVersionUnsupported
+ 0001:002A2170       IdStack..EIdNotASocket
+ 0001:002A2214       IdStack..TIdSocketList
+ 0001:002A2644       IdStack.TIdSocketList.Add
+ 0001:002A264C       IdStack.TIdSocketList.Clone
+ 0001:002A2654       IdStack.TIdSocketList.Count
+ 0001:002A265C       IdStack.TIdSocketList.Remove
+ 0001:002A2664       IdStack.TIdSocketList.Clear
+ 0001:002A266C       IdStack.TIdSocketList.ContainsSocket
+ 0001:002A2674       IdStack.TIdSocketList.SelectRead
+ 0001:002A267C       IdStack.TIdSocketList.SelectReadList
+ 0001:002A2684       IdStack..TIdStack
+ 0001:002A37A0       IdStack.TIdStack.Accept
+ 0001:002A37A8       IdStack.TIdStack.Bind
+ 0001:002A37B0       IdStack.TIdStack.Connect
+ 0001:002A37B8       IdStack.TIdStack.Disconnect
+ 0001:002A37C0       IdStack.TIdStack.IOControl
+ 0001:002A37C8       IdStack.TIdStack.GetPeerName
+ 0001:002A37D0       IdStack.TIdStack.GetSocketName
+ 0001:002A37D8       IdStack.TIdStack.HostByAddress
+ 0001:002A37E0       IdStack.TIdStack.HostToNetwork
+ 0001:002A37E8       IdStack.TIdStack.HostToNetwork
+ 0001:002A37F0       IdStack.TIdStack.HostToNetwork
+ 0001:002A37F8       IdStack.TIdStack.Listen
+ 0001:002A3800       IdStack.TIdStack.WSGetLastError
+ 0001:002A3808       IdStack.TIdStack.WSSetLastError
+ 0001:002A3810       IdStack.TIdStack.NewSocketHandle
+ 0001:002A3818       IdStack.TIdStack.NetworkToHost
+ 0001:002A3820       IdStack.TIdStack.NetworkToHost
+ 0001:002A3828       IdStack.TIdStack.NetworkToHost
+ 0001:002A3830       IdStack.TIdStack.GetSocketOption
+ 0001:002A3838       IdStack.TIdStack.SetSocketOption
+ 0001:002A3840       IdStack.TIdStack.Receive
+ 0001:002A3848       IdStack.TIdStack.Send
+ 0001:002A3850       IdStack.TIdStack.ReceiveFrom
+ 0001:002A3858       IdStack.TIdStack.SendTo
+ 0001:002A3860       IdStack.TIdStack.ReceiveMsg
+ 0001:002A3868       IdStack.TIdStack.SupportsIPv6
+ 0001:002A3870       IdStack.TIdStack.SetMulticastTTL
+ 0001:002A3878       IdStack.TIdStack.SetLoopBack
+ 0001:002A3880       IdStack.TIdStack.DropMulticastMembership
+ 0001:002A3888       IdStack.TIdStack.AddMulticastMembership
+ 0001:002A3890       IdStack.TIdStack.WriteChecksum
+ 0001:002A3898       IdStack.TIdStack.AddLocalAddressesToList
+ 0001:002A38A0       IdStack.TIdPacketInfo.Reset
+ 0001:002A38F8       IdStack.TIdSocketList.Create
+ 0001:002A394C       IdStack.TIdSocketList.CreateSocketList
+ 0001:002A396C       IdStack.TIdSocketList.Destroy
+ 0001:002A39C0       IdStack.TIdSocketList.Lock
+ 0001:002A39D4       IdStack.TIdSocketList.Select
+ 0001:002A39F0       IdStack.TIdSocketList.Unlock
+ 0001:002A3A08       IdStack.EIdSocketError.CreateError
+ 0001:002A3A5C       IdStack.TIdStack.Create
+ 0001:002A3AA0       IdStack.TIdStack.Destroy
+ 0001:002A3AF4       IdStack.TIdStack.IPVersionUnsupported
+ 0001:002A3B54       IdStack.TIdStack.Accept
+ 0001:002A3B88       IdStack.TIdStack.GetPeerName
+ 0001:002A3BB8       IdStack.TIdStack.GetSocketName
+ 0001:002A3BE8       IdStack.TIdStack.GetLocalAddresses
+ 0001:002A3C38       IdStack.TIdStack.GetLocalAddress
+ 0001:002A3CB4       IdStack.TIdStack.IsIP
+ 0001:002A3E2C       IdStack.TIdStack.MakeCanonicalIPv6Address
+ 0001:002A3E4C       IdStack.TIdStack.ResolveHost
+ 0001:002A3F34       IdStack.TIdStack.SendTo
+ 0001:002A3F74       IdStack.TIdStack.DecUsage
+ 0001:002A40A0       IdStack.TIdStack.IncUsage
+ 0001:002A4234       IdStack.TIdStack.CheckForSocketError
+ 0001:002A425C       IdStack.TIdStack.CheckForSocketError
+ 0001:002A42C8       IdStack.TIdStack.RaiseLastSocketError
+ 0001:002A42E4       IdStack.TIdStack.RaiseSocketError
+ 0001:002A4384       IdStack.TIdStack.WSTranslateSocketErrorMsg
+ 0001:002A47C0       IdStack.TIdStack.HostToNetwork
+ 0001:002A4800       IdStack.TIdStack.NetworkToHost
+ 0001:002A4840       IdStack.TIdStack.IsValidIPv4MulticastGroup
+ 0001:002A48FC       IdStack.TIdStack.IsValidIPv6MulticastGroup
+ 0001:002A4980       IdStack.TIdStack.CalcCheckSum
+ 0001:002A4A0C       IdStack.Finalization
+ 0001:002A4BF0       IdGlobalProtocols.TempPath
+ 0001:002A5A80       IdGlobalProtocols.ROL
+ 0001:002A5A88       IdGlobalProtocols.Finalization
+ 0001:002A5BD8       IdHash..TIdHash
+ 0001:002A5E7C       IdHash..TIdHashIntF
+ 0001:002A5F90       IdHash..TIdHashNativeAndIntF
+ 0001:002A6050       IdHash.TIdHash.Create
+ 0001:002A6088       IdHash.TIdHash.HashString
+ 0001:002A614C       IdHash.TIdHash.HashStringAsHex
+ 0001:002A61B8       IdHash.TIdHash.HashBytes
+ 0001:002A627C       IdHash.TIdHash.HashBytesAsHex
+ 0001:002A62E0       IdHash.TIdHash.HashStream
+ 0001:002A634C       IdHash.TIdHash.HashStreamAsHex
+ 0001:002A63B0       IdHash.TIdHash.HashStream
+ 0001:002A6490       IdHash.TIdHash.HashStreamAsHex
+ 0001:002A6504       IdHash.TIdHash.LongWordHashToHex
+ 0001:002A6530       IdHash.TIdHash.IsAvailable
+ 0001:002A6534       IdHash.TIdHashIntF.FinalHash
+ 0001:002A6598       IdHash.TIdHashIntF.GetHashBytes
+ 0001:002A66D0       IdHash.TIdHashIntF.HashToHex
+ 0001:002A66E8       IdHash.TIdHashIntF.IsAvailable
+ 0001:002A66EC       IdHash.TIdHashIntF.IsIntfAvailable
+ 0001:002A66FC       IdHash.TIdHashIntF.UpdateHash
+ 0001:002A6710       IdHash.TIdHashNativeAndIntF.GetHashBytes
+ 0001:002A67B4       IdHash.TIdHashNativeAndIntF.NativeGetHashBytes
+ 0001:002A67E8       IdHashMessageDigest..TIdHashMessageDigest
+ 0001:002A68E8       IdHashMessageDigest..TIdHashMessageDigest4
+ 0001:002A6A40       IdHashMessageDigest..TIdHashMessageDigest5
+ 0001:002A6B50       IdHashMessageDigest.TIdHashMessageDigest.Reset
+ 0001:002A6B6C       IdHashMessageDigest.TIdHashMessageDigest4.Create
+ 0001:002A6BBC       IdHashMessageDigest.TIdHashMessageDigest4.MDCoder
+ 0001:002A6F4C       IdHashMessageDigest.TIdHashMessageDigest4.NativeGetHashBytes
+ 0001:002A70AC       IdHashMessageDigest.TIdHashMessageDigest4.InitHash
+ 0001:002A70BC       IdHashMessageDigest.TIdHashMessageDigest4.HashToHex
+ 0001:002A70D8       IdHashMessageDigest.TIdHashMessageDigest4.IsIntfAvailable
+ 0001:002A7100       IdHashMessageDigest.TIdHashMessageDigest5.InitHash
+ 0001:002A7110       IdHashMessageDigest.TIdHashMessageDigest5.IsIntfAvailable
+ 0001:002A7138       IdHashMessageDigest.TIdHashMessageDigest5.MDCoder
+ 0001:002A7998       URepositorioAgente..TRepositorioAgente
+ 0001:002A7CA4       URepositorioAgente..{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>
+ 0001:002A80BC       URepositorioAgente.TRepositorioAgente.Create
+ 0001:002A8180       URepositorioAgente.TRepositorioAgente.GravaHashSenha
+ 0001:002A81C8       URepositorioAgente.TRepositorioAgente.RetornaPeloLogin
+ 0001:002A82D0       URepositorioAgente.TRepositorioAgente.AtribuiDBParaEntidade
+ 0001:002A85C0       URepositorioAgente.TRepositorioAgente.AtribuiEntidadeParaDB
+ 0001:002A881C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaNovoId
+ 0001:002A8934       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaInsercao
+ 0001:002A8A70       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaInsercao
+ 0001:002A8A8C       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.PreparaAtualizacao
+ 0001:002A8BD8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.ExecutaAtualizacao
+ 0001:002A8C14       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiDBParaEntidade
+ 0001:002A8C54       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.AtribuiEntidadeParaDB
+ 0001:002A8C94       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.RetornaParametros
+ 0001:002A8DF4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Create
+ 0001:002A8FF4       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Destroy
+ 0001:002A90C8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Exclui
+ 0001:002A91F8       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Atualiza
+ 0001:002A9240       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Insere
+ 0001:002A9280       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Retorna
+ 0001:002A92C0       URepositorioAgente.{URepositorioDB}TRepositorioDB<UAgente.TAGENTE>.Achou
+ 0001:002A93D4       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:002A94B8       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:002A950C       UFrmAgente..TfrmAgente
+ 0001:002A987C       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:002A98B4       UFrmAgente.TfrmAgente.Inicializa
+ 0001:002A99C8       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:002A99E4       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:002A9BF0       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:002A9D30       UFrmAgente.Finalization
+ 0001:002A9D6C       UFrmTelaInicial..TfrmTelaInicial
+ 0001:002AA164       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002AA18C       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:002AA1B4       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:002AA1DC       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:002AA204       UAgenteLogado..TAgenteLogado
+ 0001:002AA418       UAgenteLogado.TAgenteLogado.Create
+ 0001:002AA464       UAgenteLogado.TAgenteLogado.Destroy
+ 0001:002AA4B8       UAgenteLogado.TAgenteLogado.Logoff
+ 0001:002AA4F0       UAgenteLogado.TAgenteLogado.RealizaLogin
+ 0001:002AA634       UAgenteLogado.TAgenteLogado.Unico
+ 0001:002AA668       UAgenteLogado.TAgenteLogado.UAgente
+ 0001:002AA684       UFrmLogin..TFrmLogin
+ 0001:002AAA08       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002AAA30       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002AAB0C       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002AAB40       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -35875,148 +35924,246 @@ Line numbers for URegraCRUDCarteiraVacinacao(Modelo\Persistencia\URepositorioDB.
 
    147 0001:0028720E
 
+Line numbers for UProximaVacina(Modelo\Persistencia\UProximaVacina.pas) segment .text
+
+    34 0001:00000000
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioProximaVacina.pas) segment .text
+
+    36 0001:00287A38    37 0001:00287A63    38 0001:00287A8E    41 0001:00287B04
+    42 0001:00287B29    43 0001:00287B34    45 0001:00287B3D    46 0001:00287B60
+    47 0001:00287B83    48 0001:00287B9C    50 0001:00287BBF    54 0001:00287C78
+    55 0001:00287C87    58 0001:00287C95    59 0001:00287CAD    60 0001:00287CC5
+    61 0001:00287CE0    63 0001:00287CF8
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   221 0001:00287D8C   222 0001:00287DA8   223 0001:00287DB3   224 0001:00287DE4
+   226 0001:00287DEF   227 0001:00287E07
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   188 0001:00287EA4   189 0001:00287EC3   192 0001:00287ED1   193 0001:00287EDC
+   194 0001:00287EED   197 0001:00287F4B   198 0001:00287F58
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   169 0001:00287FE0   170 0001:00287FE7   171 0001:00287FF7
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   174 0001:00287FFC   175 0001:0028801B   180 0001:00288026   181 0001:00288037
+   184 0001:00288095   185 0001:002880A2
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   163 0001:00288148   164 0001:00288154   165 0001:0028816D   166 0001:0028817D
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   239 0001:00288184   240 0001:00288190   241 0001:002881AB
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   245 0001:002881C4   246 0001:002881D3   247 0001:002881EB
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   204 0001:00288204   205 0001:0028822A   207 0001:0028823A   208 0001:00288247
+   209 0001:00288258   211 0001:00288268   213 0001:00288294   214 0001:002882A2
+   211 0001:002882CB   215 0001:002882E4   217 0001:00288301   218 0001:00288339
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   101 0001:00288364   102 0001:00288393   103 0001:0028839D   104 0001:002883A6
+   105 0001:002883B4   106 0001:002883C2   107 0001:002883D0   109 0001:00288408
+   110 0001:00288422   112 0001:0028843A   113 0001:00288454   115 0001:0028846C
+   116 0001:00288486   118 0001:0028849E   119 0001:002884B8   121 0001:002884D0
+   122 0001:002884EA   123 0001:00288502
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   126 0001:00288564   127 0001:00288575   128 0001:00288595   129 0001:002885B5
+   130 0001:002885D5   131 0001:002885F5   132 0001:00288615   133 0001:00288623
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   150 0001:00288638   151 0001:00288657   153 0001:00288663   154 0001:0028866E
+   155 0001:0028867F   157 0001:002886C3   158 0001:002886D0   159 0001:002886E9
+   160 0001:002886F9
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   250 0001:00288768   251 0001:00288775   253 0001:00288781   254 0001:00288789
+   255 0001:0028879A   256 0001:002887A8
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   230 0001:002887B0   231 0001:002887BD   232 0001:002887C5   233 0001:002887D6
+   235 0001:002887DE   236 0001:002887EA
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   259 0001:002887F0   260 0001:002887FC   261 0001:00288801   263 0001:00288810
+   264 0001:0028881D   266 0001:00288827
+
+Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   136 0001:00288830   137 0001:0028884F   141 0001:0028885A   143 0001:0028889B
+   144 0001:002888B4   146 0001:002888BF   147 0001:002888D0
+
+Line numbers for URegraCRUDProximaVacina(Modelo\Regra\URegraCRUDProximaVacina.pas) segment .text
+
+    23 0001:00288A40    24 0001:00288A58    25 0001:00288A62    26 0001:00288A74
+
+Line numbers for URegraCRUDProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
+
+   147 0001:00288A9A
+
 Line numbers for UfrmVacina(VisaoControle\UfrmVacina.pas) segment .text
 
-    71 0001:00287818    72 0001:00287824    73 0001:0028782F    74 0001:0028784C
-    77 0001:00287850    78 0001:0028786C    79 0001:00287874    80 0001:0028788B
-    82 0001:002878A2    88 0001:002878ED    91 0001:0028795C    93 0001:00287963
-    94 0001:00287974    97 0001:00287978    99 0001:00287998   100 0001:002879BD
-   101 0001:002879E2   102 0001:00287A07   103 0001:00287A2C   104 0001:00287A6A
-   105 0001:00287A8F   106 0001:00287AB4   107 0001:00287AD9   108 0001:00287B17
-   109 0001:00287B3C   112 0001:00287B64   114 0001:00287B7E   115 0001:00287B98
-   116 0001:00287BB2   117 0001:00287BCC   118 0001:00287BE6   119 0001:00287C17
-   120 0001:00287C31   121 0001:00287C4B   122 0001:00287C65   123 0001:00287C96
-   124 0001:00287CB0   126 0001:00287CDD
+    76 0001:002890E0    77 0001:002890EC    78 0001:002890F7    79 0001:00289114
+    80 0001:00289131    83 0001:00289138    84 0001:00289154    85 0001:0028915C
+    86 0001:00289173    88 0001:0028918A    94 0001:002891D5    97 0001:00289248
+    99 0001:0028924F   100 0001:00289260   103 0001:00289264   105 0001:00289284
+   106 0001:002892A9   107 0001:002892CE   108 0001:002892F3   109 0001:00289318
+   110 0001:00289356   111 0001:0028937B   112 0001:002893A0   113 0001:002893C5
+   114 0001:00289403   128 0001:00289428   131 0001:00289450   133 0001:0028946A
+   134 0001:00289484   135 0001:0028949E   136 0001:002894B8   137 0001:002894D2
+   138 0001:00289503   139 0001:0028951D   140 0001:00289537   141 0001:00289551
+   142 0001:00289582   143 0001:0028959C   145 0001:002895B2   146 0001:002895CC
+   147 0001:002895E6   148 0001:00289617   149 0001:00289631   151 0001:0028964B
+   153 0001:00289678
 
 Line numbers for URegraCRUDLoteVacina(Modelo\Regra\URegraCRUDLoteVacina.pas) segment .text
 
-    23 0001:00287DC8    24 0001:00287DE0    25 0001:00287DEA    26 0001:00287DFC
+    23 0001:00289764    24 0001:0028977C    25 0001:00289786    26 0001:00289798
 
 Line numbers for URegraCRUDLoteVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   147 0001:00287E22
+   147 0001:002897BE
 
 Line numbers for UFrmDeposito(VisaoControle\UFrmDeposito.pas) segment .text
 
-    58 0001:00288310    59 0001:0028831C    60 0001:00288327    61 0001:00288344
-    64 0001:00288348    65 0001:00288364    66 0001:0028836C    67 0001:00288383
-    69 0001:0028839A    75 0001:002883E5    78 0001:00288464    80 0001:0028846B
-    81 0001:0028847C    84 0001:00288480    87 0001:002884A1    88 0001:002884C6
-    89 0001:002884EB    90 0001:00288510    91 0001:0028854E    93 0001:00288573
-    96 0001:002885AC    99 0001:002885C8   100 0001:002885E2   101 0001:002885FC
-   102 0001:00288616   103 0001:00288647   105 0001:00288661   108 0001:00288684
-   110 0001:00288690   111 0001:0028869E   112 0001:002886AC   114 0001:002886B7
+    58 0001:00289CAC    59 0001:00289CB8    60 0001:00289CC3    61 0001:00289CE0
+    64 0001:00289CE4    65 0001:00289D00    66 0001:00289D08    67 0001:00289D1F
+    69 0001:00289D36    75 0001:00289D81    78 0001:00289E00    80 0001:00289E07
+    81 0001:00289E18    84 0001:00289E1C    87 0001:00289E3D    88 0001:00289E62
+    89 0001:00289E87    90 0001:00289EAC    91 0001:00289EEA    93 0001:00289F0F
+    96 0001:00289F48    99 0001:00289F64   100 0001:00289F7E   101 0001:00289F98
+   102 0001:00289FB2   103 0001:00289FE3   105 0001:00289FFD   108 0001:0028A020
+   110 0001:0028A02C   111 0001:0028A03A   112 0001:0028A048   114 0001:0028A053
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioAgente.pas) segment .text
 
-    44 0001:002A6720    45 0001:002A674B    46 0001:002A6776    52 0001:002A67E4
-    55 0001:002A6807    59 0001:002A682C    60 0001:002A6838    61 0001:002A6843
-    62 0001:002A6856    63 0001:002A6863    64 0001:002A687B    66 0001:002A6886
-    67 0001:002A688B    69 0001:002A689A    70 0001:002A68A9    72 0001:002A68B3
-    76 0001:002A6934    77 0001:002A6958    78 0001:002A6963    80 0001:002A696C
-    81 0001:002A698F    82 0001:002A69B2    83 0001:002A69D5    84 0001:002A69F8
-    85 0001:002A6A1B    86 0001:002A6A3E    87 0001:002A6A57    88 0001:002A6A7A
-    90 0001:002A6A9D    94 0001:002A6C24    95 0001:002A6C33    98 0001:002A6C41
-    99 0001:002A6C59   100 0001:002A6C71   101 0001:002A6C89   102 0001:002A6CA1
-   103 0001:002A6CB9   104 0001:002A6CD4   105 0001:002A6CEC   106 0001:002A6D04
-   109 0001:002A6D1C
+    44 0001:002A80BC    45 0001:002A80E7    46 0001:002A8112    52 0001:002A8180
+    55 0001:002A81A3    59 0001:002A81C8    60 0001:002A81D4    61 0001:002A81DF
+    62 0001:002A81F2    63 0001:002A81FF    64 0001:002A8217    66 0001:002A8222
+    67 0001:002A8227    69 0001:002A8236    70 0001:002A8245    72 0001:002A824F
+    76 0001:002A82D0    77 0001:002A82F4    78 0001:002A82FF    80 0001:002A8308
+    81 0001:002A832B    82 0001:002A834E    83 0001:002A8371    84 0001:002A8394
+    85 0001:002A83B7    86 0001:002A83DA    87 0001:002A83F3    88 0001:002A8416
+    90 0001:002A8439    94 0001:002A85C0    95 0001:002A85CF    98 0001:002A85DD
+    99 0001:002A85F5   100 0001:002A860D   101 0001:002A8625   102 0001:002A863D
+   103 0001:002A8655   104 0001:002A8670   105 0001:002A8688   106 0001:002A86A0
+   109 0001:002A86B8
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   221 0001:002A6E80   222 0001:002A6E9C   223 0001:002A6EA7   224 0001:002A6ED8
-   226 0001:002A6EE3   227 0001:002A6EFB
+   221 0001:002A881C   222 0001:002A8838   223 0001:002A8843   224 0001:002A8874
+   226 0001:002A887F   227 0001:002A8897
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   188 0001:002A6F98   189 0001:002A6FB7   192 0001:002A6FC5   193 0001:002A6FD0
-   194 0001:002A6FE1   197 0001:002A703F   198 0001:002A704C
+   188 0001:002A8934   189 0001:002A8953   192 0001:002A8961   193 0001:002A896C
+   194 0001:002A897D   197 0001:002A89DB   198 0001:002A89E8
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   169 0001:002A70D4   170 0001:002A70DB   171 0001:002A70EB
+   169 0001:002A8A70   170 0001:002A8A77   171 0001:002A8A87
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   174 0001:002A70F0   175 0001:002A710F   180 0001:002A711A   181 0001:002A712B
-   184 0001:002A7189   185 0001:002A7196
+   174 0001:002A8A8C   175 0001:002A8AAB   180 0001:002A8AB6   181 0001:002A8AC7
+   184 0001:002A8B25   185 0001:002A8B32
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   163 0001:002A723C   164 0001:002A7248   165 0001:002A7261   166 0001:002A7271
+   163 0001:002A8BD8   164 0001:002A8BE4   165 0001:002A8BFD   166 0001:002A8C0D
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   239 0001:002A7278   240 0001:002A7284   241 0001:002A729F
+   239 0001:002A8C14   240 0001:002A8C20   241 0001:002A8C3B
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   245 0001:002A72B8   246 0001:002A72C7   247 0001:002A72DF
+   245 0001:002A8C54   246 0001:002A8C63   247 0001:002A8C7B
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   204 0001:002A72F8   205 0001:002A731E   207 0001:002A732E   208 0001:002A733B
-   209 0001:002A734C   211 0001:002A735C   213 0001:002A7388   214 0001:002A7396
-   211 0001:002A73BF   215 0001:002A73D8   217 0001:002A73F5   218 0001:002A742D
+   204 0001:002A8C94   205 0001:002A8CBA   207 0001:002A8CCA   208 0001:002A8CD7
+   209 0001:002A8CE8   211 0001:002A8CF8   213 0001:002A8D24   214 0001:002A8D32
+   211 0001:002A8D5B   215 0001:002A8D74   217 0001:002A8D91   218 0001:002A8DC9
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   101 0001:002A7458   102 0001:002A7487   103 0001:002A7491   104 0001:002A749A
-   105 0001:002A74A8   106 0001:002A74B6   107 0001:002A74C4   109 0001:002A74FC
-   110 0001:002A7516   112 0001:002A752E   113 0001:002A7548   115 0001:002A7560
-   116 0001:002A757A   118 0001:002A7592   119 0001:002A75AC   121 0001:002A75C4
-   122 0001:002A75DE   123 0001:002A75F6
+   101 0001:002A8DF4   102 0001:002A8E23   103 0001:002A8E2D   104 0001:002A8E36
+   105 0001:002A8E44   106 0001:002A8E52   107 0001:002A8E60   109 0001:002A8E98
+   110 0001:002A8EB2   112 0001:002A8ECA   113 0001:002A8EE4   115 0001:002A8EFC
+   116 0001:002A8F16   118 0001:002A8F2E   119 0001:002A8F48   121 0001:002A8F60
+   122 0001:002A8F7A   123 0001:002A8F92
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   126 0001:002A7658   127 0001:002A7669   128 0001:002A7689   129 0001:002A76A9
-   130 0001:002A76C9   131 0001:002A76E9   132 0001:002A7709   133 0001:002A7717
+   126 0001:002A8FF4   127 0001:002A9005   128 0001:002A9025   129 0001:002A9045
+   130 0001:002A9065   131 0001:002A9085   132 0001:002A90A5   133 0001:002A90B3
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   150 0001:002A772C   151 0001:002A774B   153 0001:002A7757   154 0001:002A7762
-   155 0001:002A7773   157 0001:002A77B7   158 0001:002A77C4   159 0001:002A77DD
-   160 0001:002A77ED
+   150 0001:002A90C8   151 0001:002A90E7   153 0001:002A90F3   154 0001:002A90FE
+   155 0001:002A910F   157 0001:002A9153   158 0001:002A9160   159 0001:002A9179
+   160 0001:002A9189
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   250 0001:002A785C   251 0001:002A7869   253 0001:002A7875   254 0001:002A787D
-   255 0001:002A788E   256 0001:002A789C
+   250 0001:002A91F8   251 0001:002A9205   253 0001:002A9211   254 0001:002A9219
+   255 0001:002A922A   256 0001:002A9238
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   230 0001:002A78A4   231 0001:002A78B1   232 0001:002A78B9   233 0001:002A78CA
-   235 0001:002A78D2   236 0001:002A78DE
+   230 0001:002A9240   231 0001:002A924D   232 0001:002A9255   233 0001:002A9266
+   235 0001:002A926E   236 0001:002A927A
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   259 0001:002A78E4   260 0001:002A78F0   261 0001:002A78F5   263 0001:002A7904
-   264 0001:002A7911   266 0001:002A791B
+   259 0001:002A9280   260 0001:002A928C   261 0001:002A9291   263 0001:002A92A0
+   264 0001:002A92AD   266 0001:002A92B7
 
 Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   136 0001:002A7924   137 0001:002A7943   141 0001:002A794E   143 0001:002A798F
-   144 0001:002A79A8   146 0001:002A79B3   147 0001:002A79C4
+   136 0001:002A92C0   137 0001:002A92DF   141 0001:002A92EA   143 0001:002A932B
+   144 0001:002A9344   146 0001:002A934F   147 0001:002A9360
 
 Line numbers for URegraCRUDAgente(Modelo\Regra\URegraCRUDAgente.pas) segment .text
 
-    23 0001:002A7B1C    24 0001:002A7B34    25 0001:002A7B3E    26 0001:002A7B50
+    23 0001:002A94B8    24 0001:002A94D0    25 0001:002A94DA    26 0001:002A94EC
 
 Line numbers for URegraCRUDAgente(Modelo\Persistencia\URepositorioDB.pas) segment .text
 
-   147 0001:002A7B76
+   147 0001:002A9512
 
 Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .text
 
-    57 0001:002A7EE0    58 0001:002A7EEC    59 0001:002A7EF7    60 0001:002A7F14
-    63 0001:002A7F18    64 0001:002A7F34    65 0001:002A7F3C    66 0001:002A7F53
-    68 0001:002A7F6A    74 0001:002A7FB5    77 0001:002A802C    79 0001:002A8033
-    80 0001:002A8044    83 0001:002A8048    85 0001:002A8068    86 0001:002A808D
-    88 0001:002A80B2    89 0001:002A80C3    90 0001:002A80F4    91 0001:002A810B
-    92 0001:002A8130    93 0001:002A8155    94 0001:002A817A    95 0001:002A81B8
-    96 0001:002A81DD    97 0001:002A8202   100 0001:002A8254   102 0001:002A8270
-   103 0001:002A828A   104 0001:002A82A4   105 0001:002A82BE   106 0001:002A82D8
-   107 0001:002A82F2   108 0001:002A830C   109 0001:002A833D   110 0001:002A8357
-   111 0001:002A8371
+    57 0001:002A987C    58 0001:002A9888    59 0001:002A9893    60 0001:002A98B0
+    63 0001:002A98B4    64 0001:002A98D0    65 0001:002A98D8    66 0001:002A98EF
+    68 0001:002A9906    74 0001:002A9951    77 0001:002A99C8    79 0001:002A99CF
+    80 0001:002A99E0    83 0001:002A99E4    85 0001:002A9A04    86 0001:002A9A29
+    88 0001:002A9A4E    89 0001:002A9A5F    90 0001:002A9A90    91 0001:002A9AA7
+    92 0001:002A9ACC    93 0001:002A9AF1    94 0001:002A9B16    95 0001:002A9B54
+    96 0001:002A9B79    97 0001:002A9B9E   100 0001:002A9BF0   102 0001:002A9C0C
+   103 0001:002A9C26   104 0001:002A9C40   105 0001:002A9C5A   106 0001:002A9C74
+   107 0001:002A9C8E   108 0001:002A9CA8   109 0001:002A9CD9   110 0001:002A9CF3
+   111 0001:002A9D0D
 
 Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .itext
 
@@ -36024,10 +36171,10 @@ Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .itext
 
 Line numbers for UFrmTelaInicial(VisaoControle\UFrmTelaInicial.pas) segment .text
 
-    45 0001:002A87C8    46 0001:002A87D4    47 0001:002A87EC    50 0001:002A87F0
-    51 0001:002A87FC    52 0001:002A8814    55 0001:002A8818    56 0001:002A8824
-    57 0001:002A883C    60 0001:002A8840    61 0001:002A884C    62 0001:002A8864
-    64 0001:002A886F
+    45 0001:002AA164    46 0001:002AA170    47 0001:002AA188    50 0001:002AA18C
+    51 0001:002AA198    52 0001:002AA1B0    55 0001:002AA1B4    56 0001:002AA1C0
+    57 0001:002AA1D8    60 0001:002AA1DC    61 0001:002AA1E8    62 0001:002AA200
+    64 0001:002AA20B
 
 Line numbers for UCidade(Modelo\Persistencia\UCidade.pas) segment .text
 
@@ -36036,14 +36183,6 @@ Line numbers for UCidade(Modelo\Persistencia\UCidade.pas) segment .text
 Line numbers for UEstado(Modelo\Persistencia\UEstado.pas) segment .text
 
     29 0001:00000000
-
-Line numbers for UProximaVacina(Modelo\Persistencia\UProximaVacina.pas) segment .text
-
-    34 0001:00000000
-
-Line numbers for URepositorioProximaVacina(Modelo\Persistencia\URepositorioDB.pas) segment .text
-
-   147 0001:00000000
 
 Line numbers for UTodasVacinas(Modelo\Persistencia\UTodasVacinas.pas) segment .text
 
@@ -36059,28 +36198,28 @@ Line numbers for URegraCRUDTodasVacinas(Modelo\Persistencia\URepositorioDB.pas) 
 
 Line numbers for UAgenteLogado(Modelo\Persistencia\UAgenteLogado.pas) segment .text
 
-    43 0001:002A8A7C    44 0001:002A8A94    45 0001:002A8AA6    48 0001:002A8AC8
-    49 0001:002A8AD9    50 0001:002A8AF9    51 0001:002A8B07    54 0001:002A8B1C
-    55 0001:002A8B25    56 0001:002A8B2E    57 0001:002A8B4E    63 0001:002A8B54
-    64 0001:002A8B77    66 0001:002A8B8B    67 0001:002A8B94    69 0001:002A8BAA
-    70 0001:002A8BB9    71 0001:002A8BC7    72 0001:002A8BD8    73 0001:002A8BEB
-    75 0001:002A8C0E    77 0001:002A8C29    80 0001:002A8C98    81 0001:002A8CA1
-    82 0001:002A8CAA    84 0001:002A8CBB    85 0001:002A8CC3    88 0001:002A8CCC
-    89 0001:002A8CD5    90 0001:002A8CDE    92 0001:002A8CEC
+    43 0001:002AA418    44 0001:002AA430    45 0001:002AA442    48 0001:002AA464
+    49 0001:002AA475    50 0001:002AA495    51 0001:002AA4A3    54 0001:002AA4B8
+    55 0001:002AA4C1    56 0001:002AA4CA    57 0001:002AA4EA    63 0001:002AA4F0
+    64 0001:002AA513    66 0001:002AA527    67 0001:002AA530    69 0001:002AA546
+    70 0001:002AA555    71 0001:002AA563    72 0001:002AA574    73 0001:002AA587
+    75 0001:002AA5AA    77 0001:002AA5C5    80 0001:002AA634    81 0001:002AA63D
+    82 0001:002AA646    84 0001:002AA657    85 0001:002AA65F    88 0001:002AA668
+    89 0001:002AA671    90 0001:002AA67A    92 0001:002AA688
 
 Line numbers for UFrmLogin(VisaoControle\UFrmLogin.pas) segment .text
 
-    39 0001:002A906C    40 0001:002A9078    41 0001:002A9085    42 0001:002A908D
-    45 0001:002A9094    46 0001:002A90B9    47 0001:002A90C7    49 0001:002A9102
-    50 0001:002A910F    52 0001:002A9132    53 0001:002A9135    55 0001:002A9147
-    59 0001:002A9170    60 0001:002A9180    61 0001:002A9189    62 0001:002A919B
-    63 0001:002A91A9
+    39 0001:002AAA08    40 0001:002AAA14    41 0001:002AAA21    42 0001:002AAA29
+    45 0001:002AAA30    46 0001:002AAA55    47 0001:002AAA63    49 0001:002AAA9E
+    50 0001:002AAAAB    52 0001:002AAACE    53 0001:002AAAD1    55 0001:002AAAE3
+    59 0001:002AAB0C    60 0001:002AAB1C    61 0001:002AAB25    62 0001:002AAB37
+    63 0001:002AAB45
 
 Line numbers for CarteiraOnline(CarteiraOnline.dpr) segment .itext
 
-    55 0002:00001628    57 0002:00001638    58 0002:00001644    60 0002:0000165C
-    61 0002:00001672    63 0002:00001686    64 0002:000016A1    65 0002:000016B9
-    66 0002:000016D1    70 0002:000016DF    71 0002:000016EB    79 0002:000016F7
+    56 0002:00001628    58 0002:00001638    59 0002:00001644    61 0002:0000165C
+    62 0002:00001672    64 0002:00001686    65 0002:000016A1    66 0002:000016B9
+    67 0002:000016D1    71 0002:000016DF    72 0002:000016EB    80 0002:000016F7
 
 Bound resource files
 

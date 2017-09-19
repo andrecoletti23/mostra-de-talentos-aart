@@ -2,8 +2,8 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 747
-  ExplicitWidth = 765
-  ExplicitHeight = 663
+  ExplicitWidth = 763
+  ExplicitHeight = 655
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -175,6 +175,9 @@ inherited frmVacinas: TfrmVacinas
       Width = 743
       Height = 122
       Align = alClient
+      Color = clWhite
+      FixedColor = clBtnShadow
+      GradientEndColor = clBlack
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
