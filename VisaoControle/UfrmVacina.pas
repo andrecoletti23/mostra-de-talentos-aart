@@ -12,6 +12,9 @@ uses
   , UCoren
   , ULoteVacina
   , UPaciente
+  , Mask
+  , UProximaVacina
+  , URegraCRUDProximaVacina
   ;
 
 type
@@ -32,10 +35,20 @@ type
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
     gbRetorno: TGroupBox;
+    edSusRetorno: TLabeledEdit;
+    edNomeRetorno: TLabeledEdit;
+    edDataRetorno: TMaskEdit;
+    cbVacinaRetorno: TComboBox;
+    lbDataRetorno: TLabel;
+    lbVacinaRetorno: TLabel;
+    cbDoseRetorno: TComboBox;
+    lbDoseRetorno: TLabel;
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
+    FPROXIMAVACINA : TPROXIMAVACINA;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
+    FRegraCRUDProximaVacina: TRegraCRUDProximaVacina;
 
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -63,6 +76,7 @@ procedure TfrmVacinas.HabilitaCampos(
 begin
   inherited;
   gbVacinacao.Enabled := FTipoOperacaoUsuario In [touInsercao, touAtualizacao];
+  gbRetorno.Enabled :=  FTipoOperacaoUsuario In [touInsercao];
 end;
 
 procedure TfrmVacinas.Inicializa;
@@ -75,8 +89,8 @@ begin
     .Create
     .AdicionaFiltro(FLD_NOME)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
-    .DefineNomePesquisa(STR_PACIENTE)
-    .DefineVisao(TBL_PACIENTE));
+    .DefineNomePesquisa(STR_PROX_VACINA)
+    .DefineVisao(TBL_PROX_VACINA));
 end;
 
 procedure TfrmVacinas.PosicionaCursorPrimeiroCampo;
@@ -98,6 +112,19 @@ begin
   FCARTEIRA_VACINACAO.COD_LOTE         := edLoteVacina.Text;
   FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
   FCARTEIRA_VACINACAO.UNIDADE_SAUDE    := edUnidadeSaude.Text;
+  {if gbRetorno.Enabled = false then
+      begin
+      inherited;
+      DefineEntidade(@FPROXIMAVACINA, TPROXIMAVACINA);
+      DefineRegraCRUD(@FregraCRUDPROXIMAVACINA, TRegraCRUDPROXIMAVACINA);
+      FPROXIMAVACINA.SUS_CODIGO        := edCodSus.Text;
+      FPROXIMAVACINA.NOME              := edNome.Text;
+      FPROXIMAVACINA.DATA_RETORNO      := StrToDate(edDataApli.Text);
+      FPROXIMAVACINA.VACINA_RETORNO    := cbVacinaRetorno.Text;
+      FPROXIMAVACINA.DOSE_RETORNO      := cbDoseRetorno.Text;
+    end;}
+
+
 end;
 
 procedure TfrmVacinas.PreencheFormulario;
@@ -113,6 +140,14 @@ begin
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
   edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
   edUnidadeSaude.Text   :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
+  if gbRetorno.Enabled = true then
+    begin
+      edCodSus.Text:=FPROXIMAVACINA.SUS_CODIGO         ;
+      edNome.Text:=FPROXIMAVACINA.NOME               ;
+      edDataApli.Text      := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
+      cbVacinaRetorno.Text:=FPROXIMAVACINA.VACINA_RETORNO     ;
+      cbDoseRetorno.Text:= FPROXIMAVACINA.DOSE_RETORNO      ;
+    end;
 end;
 
 end.

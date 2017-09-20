@@ -87,7 +87,7 @@ begin
    //FAGENTE.SENHA                     := edSenha.Text;
    HashMessageDigest5 := TIdHashMessageDigest5.Create;
    SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
-   FAgente.SENHA := SenhaHash ;
+   FAGENTE.SENHA := SenhaHash ;
    FAGENTE.AGENTE_EMAIL              := edEmail.Text;
    FAGENTE.AGENTE_COREN              := edCoren.Text;
    FAGENTE.AGENTE_ESPECIFICACAO      := edEspec.Text;
@@ -102,9 +102,6 @@ begin
   edNome.Text       := FAGENTE.AGENTE_NOME ;
   edLogin.Text      := FAGENTE.LOGIN ;
   edSenha.Text      := FAGENTE.SENHA ;
-  {HashMessageDigest5 := TIdHashMessageDigest5.Create;
-  SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
-  FAgente.SENHA := SenhaHash ; }
   edEmail.Text      := FAGENTE.AGENTE_EMAIL ;
   edCoren.Text      := FAGENTE.AGENTE_COREN ;
   edEspec.Text      := FAGENTE.AGENTE_ESPECIFICACAO ;

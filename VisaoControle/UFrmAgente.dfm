@@ -2,8 +2,8 @@ inherited frmAgente: TfrmAgente
   Caption = 'Cadastro Agente do SUS'
   ClientHeight = 558
   ClientWidth = 950
-  ExplicitWidth = 966
-  ExplicitHeight = 597
+  ExplicitWidth = 968
+  ExplicitHeight = 605
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
