@@ -8,7 +8,6 @@
   resources were bound to the produced executable.
 */
 
-<<<<<<< HEAD
 #define UCoren_STR_COREN 64736
 #define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64737
 #define IdResourceStrings_RSStackELOOP 64752
@@ -363,337 +362,6 @@
 #define UMensagens_STR_ENDERECO_NAO_INFORMADO 65101
 #define UMensagens_STR_PAI_NAO_INFORMADO 65102
 #define UMensagens_STR_MAE_NAO_INFORMADA 65103
-=======
-#define IdResourceStrings_RSStackClassUndefined 64768
-#define IdResourceStrings_RSStackAlreadyCreated 64769
-#define IdResourceStrings_RSInvalidServiceName 64770
-#define IdResourceStrings_RSIPv6Unavailable 64771
-#define IdResourceStrings_RSInvalidIPv6Address 64772
-#define IdResourceStrings_RSIPVersionUnsupported 64773
-#define IdResourceStrings_RSNotAllBytesSent 64774
-#define IdResourceStrings_RSPackageSizeTooBig 64775
-#define IdResourceStrings_RSSetSizeExceeded 64776
-#define IdResourceStrings_RSStackENETRESET 64784
-#define IdResourceStrings_RSStackECONNABORTED 64785
-#define IdResourceStrings_RSStackECONNRESET 64786
-#define IdResourceStrings_RSStackENOBUFS 64787
-#define IdResourceStrings_RSStackEISCONN 64788
-#define IdResourceStrings_RSStackENOTCONN 64789
-#define IdResourceStrings_RSStackESHUTDOWN 64790
-#define IdResourceStrings_RSStackETOOMANYREFS 64791
-#define IdResourceStrings_RSStackETIMEDOUT 64792
-#define IdResourceStrings_RSStackECONNREFUSED 64793
-#define IdResourceStrings_RSStackELOOP 64794
-#define IdResourceStrings_RSStackENAMETOOLONG 64795
-#define IdResourceStrings_RSStackEHOSTDOWN 64796
-#define IdResourceStrings_RSStackEHOSTUNREACH 64797
-#define IdResourceStrings_RSStackENOTEMPTY 64798
-#define IdResourceStrings_RSStackHOST_NOT_FOUND 64799
-#define IdResourceStrings_RSStackEINPROGRESS 64800
-#define IdResourceStrings_RSStackEALREADY 64801
-#define IdResourceStrings_RSStackENOTSOCK 64802
-#define IdResourceStrings_RSStackEDESTADDRREQ 64803
-#define IdResourceStrings_RSStackEMSGSIZE 64804
-#define IdResourceStrings_RSStackEPROTOTYPE 64805
-#define IdResourceStrings_RSStackENOPROTOOPT 64806
-#define IdResourceStrings_RSStackEPROTONOSUPPORT 64807
-#define IdResourceStrings_RSStackESOCKTNOSUPPORT 64808
-#define IdResourceStrings_RSStackEOPNOTSUPP 64809
-#define IdResourceStrings_RSStackEPFNOSUPPORT 64810
-#define IdResourceStrings_RSStackEAFNOSUPPORT 64811
-#define IdResourceStrings_RSStackEADDRINUSE 64812
-#define IdResourceStrings_RSStackEADDRNOTAVAIL 64813
-#define IdResourceStrings_RSStackENETDOWN 64814
-#define IdResourceStrings_RSStackENETUNREACH 64815
-#define JConsts_sJPEGImageFile 64816
-#define ULoteVacina_STR_LOTE_VACINA 64817
-#define UAgente_STR_AGENTE 64818
-#define UCoren_STR_COREN 64819
-#define UCarteiraVacinacao_STR_CARTEIRA_VACINACAO 64820
-#define UProximaVacina_STR_PROX_VACINA 64821
-#define IdResourceStrings_RSWinsockCallError 64822
-#define IdResourceStrings_RSWinsockLoadError 64823
-#define IdResourceStrings_RSStackError 64824
-#define IdResourceStrings_RSStackEINTR 64825
-#define IdResourceStrings_RSStackEBADF 64826
-#define IdResourceStrings_RSStackEACCES 64827
-#define IdResourceStrings_RSStackEFAULT 64828
-#define IdResourceStrings_RSStackEINVAL 64829
-#define IdResourceStrings_RSStackEMFILE 64830
-#define IdResourceStrings_RSStackEWOULDBLOCK 64831
-#define SqlConst_SLOCALTRANSACTIVE 64832
-#define SqlConst_SMULTIPLETRANSNOTENABLED 64833
-#define SqlConst_SCONNECTIONFAILED 64834
-#define SqlConst_SDRIVERINITFAILED 64835
-#define SqlConst_SOPTLOCKFAILED 64836
-#define SqlConst_SINVALIDREF 64837
-#define SqlConst_SNOTABLE 64838
-#define SqlConst_SMISSINGPARAMINSQL 64839
-#define SqlConst_SNOTIMPLEMENTED 64840
-#define SqlConst_SDRIVERINCOMPATIBLE 64841
-#define SqlConst_SObjectTypenameRequired 64842
-#define SqlConst_SCannotCreateFile 64843
-#define UDialogo_STR_ATENCAO 64844
-#define UPaciente_STR_PACIENTE 64845
-#define JConsts_sChangeJPGSize 64846
-#define JConsts_sJPEGError 64847
-#define SqlConst_SINVALIDFLDTYPE 64848
-#define SqlConst_SINVALIDHNDL 64849
-#define SqlConst_SNOTSUPPORTED 64850
-#define SqlConst_SINVALIDTIME 64851
-#define SqlConst_SINVALIDXLATION 64852
-#define SqlConst_SOUTOFRANGE 64853
-#define SqlConst_SINVALIDPARAM 64854
-#define SqlConst_SEOF 64855
-#define SqlConst_SSQLPARAMNOTSET 64856
-#define SqlConst_SINVALIDUSRPASS 64857
-#define SqlConst_SINVALIDPRECISION 64858
-#define SqlConst_SINVALIDLEN 64859
-#define SqlConst_SINVALIDXISOLEVEL 64860
-#define SqlConst_SINVALIDTXNID 64861
-#define SqlConst_SDUPLICATETXNID 64862
-#define SqlConst_SDRIVERRESTRICTED 64863
-#define SqlConst_SNoSqlStatement 64864
-#define SqlConst_SMissingDriverName 64865
-#define SqlConst_SPrepareError 64866
-#define SqlConst_SObjectNameError 64867
-#define SqlConst_SSQLDataSetOpen 64868
-#define SqlConst_SNoActiveTrans 64869
-#define SqlConst_SActiveTrans 64870
-#define SqlConst_SMissingDriverRegFile 64871
-#define SqlConst_SNoCursor 64872
-#define SqlConst_SErrorMappingError 64873
-#define SqlConst_SStoredProcsNotSupported 64874
-#define SqlConst_SPackagesNotSupported 64875
-#define SqlConst_STooManyActualParam 64876
-#define SqlConst_SNOERROR 64877
-#define SqlConst_SWARNING 64878
-#define SqlConst_SNOMEMORY 64879
-#define MidConst_SNoTableName 64880
-#define MidConst_SNoEditsAllowed 64881
-#define MidConst_SNoDeletesAllowed 64882
-#define MidConst_SNoInsertsAllowed 64883
-#define MidConst_SCannotChangeCommandText 64884
-#define MidConst_SConnectionMissing 64885
-#define MidConst_SNoCircularConnection 64886
-#define SqlConst_SLoginError 64887
-#define SqlConst_SMonitorActive 64888
-#define SqlConst_SDatabaseOpen 64889
-#define SqlConst_SDatabaseClosed 64890
-#define SqlConst_SMissingSQLConnection 64891
-#define SqlConst_SConnectionNameMissing 64892
-#define SqlConst_SEmptySQLStatement 64893
-#define SqlConst_SNoParameterValue 64894
-#define SqlConst_SNoTableName 64895
-#define MidConst_SCannotCreateDataSet 64896
-#define MidConst_SNoConnectToBroker 64897
-#define MidConst_SNoParentConnection 64898
-#define MidConst_SInvalidResponse 64899
-#define MidConst_STooManyRecordsModified 64900
-#define MidConst_SInvalidOptParamType 64901
-#define MidConst_SMissingDataSet 64902
-#define MidConst_SConstraintFailed 64903
-#define MidConst_SField 64904
-#define MidConst_SReadOnlyProvider 64905
-#define MidConst_SNoKeySpecified 64906
-#define MidConst_SNoDataSets 64907
-#define MidConst_SRecConstFail 64908
-#define MidConst_SFieldConstFail 64909
-#define MidConst_SDefExprFail 64910
-#define MidConst_SArrayElementError 64911
-#define DBXCommonResStrs_SNoBlobTypeFound 64912
-#define DBXCommonResStrs_STypeNameNotFound 64913
-#define DBXCommonResStrs_SWrongViewDefinition 64914
-#define DBXCommonResStrs_SNoSignedTypeFound 64915
-#define DBXCommonResStrs_SCannotHoldWantedPrecision 64916
-#define DBXCommonResStrs_SCannotHoldWantedScale 64917
-#define DBXCommonResStrs_STypeNotFound 64918
-#define DBXCommonResStrs_SCannotHoldUnicodeChars 64919
-#define DBXCommonResStrs_SCannotRecreateConstraint 64920
-#define DBXCommonResStrs_SUnknownColumnName 64921
-#define MidConst_SNoDataProvider 64922
-#define MidConst_SInvalidDataPacket 64923
-#define MidConst_SRefreshError 64924
-#define MidConst_SAggsNoSuchLevel 64925
-#define MidConst_SNoCircularReference 64926
-#define MidConst_SErrorLoadingMidas 64927
-#define DBXCommonResStrs_SRoleName 64928
-#define DBXCommonResStrs_STableCatalogName 64929
-#define DBXCommonResStrs_SMaximumScale 64930
-#define DBXCommonResStrs_SPrimarySchemaName 64931
-#define DBXCommonResStrs_SMustCallNextFirst 64932
-#define DBXCommonResStrs_SDbxDataType 64933
-#define DBXCommonResStrs_SIsLong 64934
-#define DBXCommonResStrs_SPrimaryTableName 64935
-#define DBXCommonResStrs_SMaxInline 64936
-#define DBXCommonResStrs_STableName 64937
-#define DBXCommonResStrs_SProcedureName 64938
-#define DBXCommonResStrs_SIsAutoIncrementable 64939
-#define DBXCommonResStrs_SPastEndOfCursor 64940
-#define DBXCommonResStrs_SDefinition 64941
-#define DBXCommonResStrs_SNoTypeWithEnoughPrecision 64942
-#define DBXCommonResStrs_SCannotBeUsedForAutoIncrement 64943
-#define DBXCommonResStrs_SIsFixedLength 64944
-#define DBXCommonResStrs_SIsSearchable 64945
-#define DBXCommonResStrs_SConstraintName 64946
-#define DBXCommonResStrs_SParameterName 64947
-#define DBXCommonResStrs_STableType 64948
-#define DBXCommonResStrs_SViewName 64949
-#define DBXCommonResStrs_SMinimumScale 64950
-#define DBXCommonResStrs_SColumnSize 64951
-#define DBXCommonResStrs_SIsUnicode 64952
-#define DBXCommonResStrs_SIsFixedPrecisionScale 64953
-#define DBXCommonResStrs_SUnexpectedSymbol 64954
-#define DBXCommonResStrs_SUnknownTableType 64955
-#define DBXCommonResStrs_SMetaDataCommandExpected 64956
-#define DBXCommonResStrs_SLiteralPrefix 64957
-#define DBXCommonResStrs_SIsPrimary 64958
-#define DBXCommonResStrs_SSynonymName 64959
-#define DBXCommonResStrs_SPrecision 64960
-#define DBXCommonResStrs_SIsBestMatch 64961
-#define DBXCommonResStrs_SMissingImplementation 64962
-#define DBXCommonResStrs_SMaximumVersion 64963
-#define DBXCommonResStrs_SIsAutoIncrement 64964
-#define DBXCommonResStrs_SLiteralSuffix 64965
-#define DBXCommonResStrs_SCreateFormat 64966
-#define DBXCommonResStrs_SSchemaName 64967
-#define DBXCommonResStrs_SIsConcurrencyType 64968
-#define DBXCommonResStrs_SReservedWord 64969
-#define DBXCommonResStrs_SPrimaryCatalogName 64970
-#define DBXCommonResStrs_SUserName 64971
-#define DBXCommonResStrs_SExternalDefinition 64972
-#define DBXCommonResStrs_STypeName 64973
-#define DBXCommonResStrs_SIsNullable 64974
-#define DBXCommonResStrs_SProviderDbType 64975
-#define DBXCommonResStrs_SIsUnsigned 64976
-#define DBXCommonResStrs_SIsUnique 64977
-#define DBXCommonResStrs_SPrimaryKeyName 64978
-#define DBXCommonResStrs_SIsAscending 64979
-#define DBXCommonResStrs_SOrdinalOutOfRange 64980
-#define DBXCommonResStrs_SScale 64981
-#define DBXCommonResStrs_SColumnName 64982
-#define DBXCommonResStrs_STableSchemaName 64983
-#define DBXCommonResStrs_SPrimaryColumnName 64984
-#define DBXCommonResStrs_SOrdinal 64985
-#define DBXCommonResStrs_SIsCaseSensitive 64986
-#define DBXCommonResStrs_SMinimumVersion 64987
-#define DBXCommonResStrs_SIsSearchableWithLike 64988
-#define DBXCommonResStrs_SCreateParameters 64989
-#define DBXCommonResStrs_SPackageName 64990
-#define DBXCommonResStrs_SParameterMode 64991
-#define DBXCommonResStrs_SDBXErrGetDriverFuncUnspecified 64992
-#define DBXCommonResStrs_SDBXErrVendorLibUnspecified 64993
-#define DBXCommonResStrs_SIllegalArgument 64994
-#define DBXCommonResStrs_SUnsupportedOperation 64995
-#define DBXCommonResStrs_SUnexpectedStringOverflow 64996
-#define DBXCommonResStrs_SUTF8InvalidHeaderByte 64997
-#define DBXCommonResStrs_SUTF8UnexpectedByte 64998
-#define DBXCommonResStrs_SUTF8Start 64999
-#define DBXCommonResStrs_SIsLiteralSupported 65000
-#define DBXCommonResStrs_SDataType 65001
-#define DBXCommonResStrs_SCatalogName 65002
-#define DBXCommonResStrs_SProcedureType 65003
-#define DBXCommonResStrs_SUnclosedQuotes 65004
-#define DBXCommonResStrs_SDefaultValue 65005
-#define DBXCommonResStrs_SForeignKeyName 65006
-#define DBXCommonResStrs_SIndexName 65007
-#define DBXCommonResStrs_SDBXErrMultipleTransactionNotEnabled 65008
-#define DBXCommonResStrs_SDBXErrConnectionFailed 65009
-#define DBXCommonResStrs_SDBXErrDriverInitFailed 65010
-#define DBXCommonResStrs_SDBXErrOptimisticLockFailed 65011
-#define DBXCommonResStrs_SDBXErrInvalidReference 65012
-#define DBXCommonResStrs_SDBXErrNoTable 65013
-#define DBXCommonResStrs_SDBXErrMissingParameterMarker 65014
-#define DBXCommonResStrs_SDBXErrNotImplemented 65015
-#define DBXCommonResStrs_SDBXErrDriverIncompatible 65016
-#define DBXCommonResStrs_SDBXErrInvalidArgument 65017
-#define DBXCommonResStrs_SDBXErrNoData 65018
-#define DBXCommonResStrs_SDBXErrVendorError 65019
-#define DBXCommonResStrs_SDBXErrUnrecognizedCommandType 65020
-#define DBXCommonResStrs_SDBXErrSchemaNameUnspecified 65021
-#define DBXCommonResStrs_SDBXErrDatabaseUnspecified 65022
-#define DBXCommonResStrs_SDBXErrLibraryNameUnspecified 65023
-#define DBXCommonResStrs_SDBXErrInvalidHandle 65024
-#define DBXCommonResStrs_SDBXErrNotSupported 65025
-#define DBXCommonResStrs_SDBXErrInvalidTime 65026
-#define DBXCommonResStrs_SDBXErrInvalidType 65027
-#define DBXCommonResStrs_SDBXErrInvalidOrdinal 65028
-#define DBXCommonResStrs_SDBXErrInvalidParameter 65029
-#define DBXCommonResStrs_SDBXErrEOF 65030
-#define DBXCommonResStrs_SDBXErrParameterNotSet 65031
-#define DBXCommonResStrs_SDBXErrInvalidUserOrPassword 65032
-#define DBXCommonResStrs_SDBXErrInvalidPrecision 65033
-#define DBXCommonResStrs_SDBXErrInvalidLength 65034
-#define DBXCommonResStrs_SDBXErrInvalidIsolationLevel 65035
-#define DBXCommonResStrs_SDBXErrInvalidTransactionId 65036
-#define DBXCommonResStrs_SDBXErrDuplicateTransactionId 65037
-#define DBXCommonResStrs_SDBXErrDriverRestricted 65038
-#define DBXCommonResStrs_SDBXErrTransactionActive 65039
-#define DBXCommonResStrs_SStringExpectedInArray 65040
-#define DBXCommonResStrs_SArrayExpectedForField 65041
-#define DBXCommonResStrs_SObjectExpectedForField 65042
-#define DBXCommonResStrs_SUnknownDataType 65043
-#define DBXCommonResStrs_SNoMetadataProvider 65044
-#define DBXCommonResStrs_SUnexpectedMetaDataType 65045
-#define DBXCommonResStrs_SInsertNotCalled 65046
-#define DBXCommonResStrs_SPostNotCalled 65047
-#define DBXCommonResStrs_SMustKeepOriginalColumnOrder 65048
-#define DBXCommonResStrs_SUnexpectedDataType 65049
-#define DBXCommonResStrs_SDriverAlreadyRegistered 65050
-#define DBXCommonResStrs_SNotDefinedIn 65051
-#define DBXCommonResStrs_SDBXErrNone 65052
-#define DBXCommonResStrs_SDBXErrWarning 65053
-#define DBXCommonResStrs_SDBXErrNoMemory 65054
-#define DBXCommonResStrs_SDBXErrUnsupportedFieldType 65055
-#define DBXCommonResStrs_SInvalidContext 65056
-#define DBXCommonResStrs_SObjectExpectedForPair 65057
-#define DBXCommonResStrs_SInvalidContextForPair 65058
-#define DBXCommonResStrs_STypeNotSupported 65059
-#define DBXCommonResStrs_SNoTypeInterceptorExpected 65060
-#define DBXCommonResStrs_SInconsistentConversion 65061
-#define DBXCommonResStrs_SNoConversionForType 65062
-#define DBXCommonResStrs_SNoFieldFoundForType 65063
-#define DBXCommonResStrs_SNoValueConversionForField 65064
-#define DBXCommonResStrs_SNoConversionAvailableForValue 65065
-#define DBXCommonResStrs_SInvalidTypeForField 65066
-#define DBXCommonResStrs_SCannotCreateType 65067
-#define DBXCommonResStrs_SObjectNotFound 65068
-#define DBXCommonResStrs_SUnexpectedPairName 65069
-#define DBXCommonResStrs_SInvalidJSONFieldType 65070
-#define DBXCommonResStrs_SObjectExpectedInArray 65071
-#define DBXCommonResStrs_SInvalidTypeAccess 65072
-#define DBXCommonResStrs_SConnectionClosed 65073
-#define DBXCommonResStrs_SMetaDataLoadError 65074
-#define DBXCommonResStrs_SJSONByteStream 65075
-#define DBXCommonResStrs_SNoStatementToExecute 65076
-#define DBXCommonResStrs_SAdditionalInfo 65077
-#define DBXCommonResStrs_SInvalidDataType 65078
-#define DBXCommonResStrs_SUnmatchedBrace 65079
-#define DBXCommonResStrs_SParameterIndexOutOfRange 65080
-#define DBXCommonResStrs_SFieldValueMissing 65081
-#define DBXCommonResStrs_SFieldExpected 65082
-#define DBXCommonResStrs_SArrayExpected 65083
-#define DBXCommonResStrs_SNoArray 65084
-#define DBXCommonResStrs_STypeExpected 65085
-#define DBXCommonResStrs_STypeFieldsPairExpected 65086
-#define DBXCommonResStrs_SValueExpected 65087
-#define DBXCommonResStrs_SDllProcLoadError 65088
-#define DBXCommonResStrs_SUnknownDriver 65089
-#define DBXCommonResStrs_SInvalidArgument 65090
-#define DBXCommonResStrs_SInvalidTransaction 65091
-#define DBXCommonResStrs_SNotImplemented 65092
-#define DBXCommonResStrs_SRequiredProperty 65093
-#define DBXCommonResStrs_SReaderNew 65094
-#define DBXCommonResStrs_SReaderClosed 65095
-#define DBXCommonResStrs_SReadOnlyType 65096
-#define DBXCommonResStrs_SSetSingletonOnce 65097
-#define DBXCommonResStrs_SConnectionFactoryInitFailed 65098
-#define DBXCommonResStrs_SInvalidDelegationDepth 65099
-#define DBXCommonResStrs_SInvalidOrdinal 65100
-#define DBXCommonResStrs_SDefaultErrorMessage 65101
-#define DBXCommonResStrs_SErrorCode 65102
-#define DBXCommonResStrs_SAlreadyPrepared 65103
->>>>>>> Prox-vacina
 #define UMensagens_STR_EXCLUIDO 65104
 #define UMensagens_STR_OPERACAO_COM_SUCESSO 65105
 #define UMensagens_STR_ENTIDADE_NAO_ENCONTRADA 65106
@@ -1128,7 +796,6 @@
 #define SysConst_SOverflow 65535
 STRINGTABLE
 BEGIN
-<<<<<<< HEAD
 	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
 	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
 	IdResourceStrings_RSStackELOOP,	"Too many levels of symbolic links."
@@ -1137,8 +804,6 @@ BEGIN
 	IdResourceStrings_RSStackEHOSTUNREACH,	"No route to host."
 	IdResourceStrings_RSStackENOTEMPTY,	"Directory not empty"
 	IdResourceStrings_RSStackHOST_NOT_FOUND,	"Host not found."
-=======
->>>>>>> Prox-vacina
 	IdResourceStrings_RSStackClassUndefined,	"Stack Class is undefined."
 	IdResourceStrings_RSStackAlreadyCreated,	"Stack already created."
 	IdResourceStrings_RSInvalidServiceName,	"%s is not a valid service."
@@ -1148,7 +813,6 @@ BEGIN
 	IdResourceStrings_RSNotAllBytesSent,	"Not all bytes sent."
 	IdResourceStrings_RSPackageSizeTooBig,	"Package Size Too Big."
 	IdResourceStrings_RSSetSizeExceeded,	"Set Size Exceeded."
-<<<<<<< HEAD
 	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
 	IdResourceStrings_RSStackEPFNOSUPPORT,	"Protocol family not supported."
 	IdResourceStrings_RSStackEAFNOSUPPORT,	"Address family not supported by protocol family."
@@ -1156,8 +820,6 @@ BEGIN
 	IdResourceStrings_RSStackEADDRNOTAVAIL,	"Cannot assign requested address."
 	IdResourceStrings_RSStackENETDOWN,	"Network is down."
 	IdResourceStrings_RSStackENETUNREACH,	"Network is unreachable."
-=======
->>>>>>> Prox-vacina
 	IdResourceStrings_RSStackENETRESET,	"Net dropped connection or reset."
 	IdResourceStrings_RSStackECONNABORTED,	"Software caused connection abort."
 	IdResourceStrings_RSStackECONNRESET,	"Connection reset by peer."
@@ -1168,21 +830,12 @@ BEGIN
 	IdResourceStrings_RSStackETOOMANYREFS,	"Too many references, cannot splice."
 	IdResourceStrings_RSStackETIMEDOUT,	"Connection timed out."
 	IdResourceStrings_RSStackECONNREFUSED,	"Connection refused."
-<<<<<<< HEAD
 	IdResourceStrings_RSStackEBADF,	"Bad file number."
 	IdResourceStrings_RSStackEACCES,	"Access denied."
 	IdResourceStrings_RSStackEFAULT,	"Buffer fault."
 	IdResourceStrings_RSStackEINVAL,	"Invalid argument."
 	IdResourceStrings_RSStackEMFILE,	"Too many open files."
 	IdResourceStrings_RSStackEWOULDBLOCK,	"Operation would block."
-=======
-	IdResourceStrings_RSStackELOOP,	"Too many levels of symbolic links."
-	IdResourceStrings_RSStackENAMETOOLONG,	"File name too long."
-	IdResourceStrings_RSStackEHOSTDOWN,	"Host is down."
-	IdResourceStrings_RSStackEHOSTUNREACH,	"No route to host."
-	IdResourceStrings_RSStackENOTEMPTY,	"Directory not empty"
-	IdResourceStrings_RSStackHOST_NOT_FOUND,	"Host not found."
->>>>>>> Prox-vacina
 	IdResourceStrings_RSStackEINPROGRESS,	"Operation now in progress."
 	IdResourceStrings_RSStackEALREADY,	"Operation already in progress."
 	IdResourceStrings_RSStackENOTSOCK,	"Socket operation on non-socket."
@@ -1193,37 +846,6 @@ BEGIN
 	IdResourceStrings_RSStackEPROTONOSUPPORT,	"Protocol not supported."
 	IdResourceStrings_RSStackESOCKTNOSUPPORT,	"Socket type not supported."
 	IdResourceStrings_RSStackEOPNOTSUPP,	"Operation not supported on socket."
-<<<<<<< HEAD
-=======
-	IdResourceStrings_RSStackEPFNOSUPPORT,	"Protocol family not supported."
-	IdResourceStrings_RSStackEAFNOSUPPORT,	"Address family not supported by protocol family."
-	IdResourceStrings_RSStackEADDRINUSE,	"Address already in use."
-	IdResourceStrings_RSStackEADDRNOTAVAIL,	"Cannot assign requested address."
-	IdResourceStrings_RSStackENETDOWN,	"Network is down."
-	IdResourceStrings_RSStackENETUNREACH,	"Network is unreachable."
-	JConsts_sJPEGImageFile,	"JPEG Image File"
-	ULoteVacina_STR_LOTE_VACINA,	"Deposito de Vacinas"
-	UAgente_STR_AGENTE,	"Agente De Saúde"
-	UCoren_STR_COREN,	"Certificação do Agente de Saúde"
-	UCarteiraVacinacao_STR_CARTEIRA_VACINACAO,	"Carteira de Vacinação Online"
-	UProximaVacina_STR_PROX_VACINA,	"Agendamento de retorno de pacientes"
-	IdResourceStrings_RSWinsockCallError,	"Error on call to Winsock2 library function %s"
-	IdResourceStrings_RSWinsockLoadError,	"Error on loading Winsock2 library (%s)"
-	IdResourceStrings_RSStackError,	"Socket Error # %d\r\n%s"
-	IdResourceStrings_RSStackEINTR,	"Interrupted system call."
-	IdResourceStrings_RSStackEBADF,	"Bad file number."
-	IdResourceStrings_RSStackEACCES,	"Access denied."
-	IdResourceStrings_RSStackEFAULT,	"Buffer fault."
-	IdResourceStrings_RSStackEINVAL,	"Invalid argument."
-	IdResourceStrings_RSStackEMFILE,	"Too many open files."
-	IdResourceStrings_RSStackEWOULDBLOCK,	"Operation would block."
-	SqlConst_SLOCALTRANSACTIVE,	"[0x0013]: Local Transaction already active"
-	SqlConst_SMULTIPLETRANSNOTENABLED,	"[0x0014]: Multiple Transactions not Enabled"
-	SqlConst_SCONNECTIONFAILED,	"[0x0015]: Connection failed"
-	SqlConst_SDRIVERINITFAILED,	"[0x0016]: Driver initialization failed"
-	SqlConst_SOPTLOCKFAILED,	"[0x0017]: Optimistic Locking failed"
-	SqlConst_SINVALIDREF,	"[0x0018]: Invalid REF"
->>>>>>> Prox-vacina
 	SqlConst_SNOTABLE,	"[0x0019]: No table found"
 	SqlConst_SMISSINGPARAMINSQL,	"[0x001A] Missing parameter marker in SQL"
 	SqlConst_SNOTIMPLEMENTED,	"[0x001B] Not implemented"
@@ -1968,15 +1590,15 @@ END
 /* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBPWDlg.dfm */
 /* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBCtrls.res */
 /* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\VisaoControle\UFrmLogin.dfm */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\CarteiraOnline.res */
-/* C:\Users\Alunos\Desktop\mostra-de-talentos-aart\CarteiraOnline.drf */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmLogin.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */

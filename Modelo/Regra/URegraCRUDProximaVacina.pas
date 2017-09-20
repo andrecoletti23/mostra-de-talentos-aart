@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> Prox-vacina
 unit URegraCRUDProximaVacina;
 
 interface
@@ -11,26 +8,19 @@ uses
   , URepositorioDB
   , URepositorioProximaVacina
   , UEntidade
-<<<<<<< HEAD
   , UProximaVacina
-=======
->>>>>>> Prox-vacina
   ;
 
 type
   TRegraCRUDProximaVacina = class(TRegraCRUD)
-<<<<<<< HEAD
   protected
     procedure ValidaInsercao(const coENTIDADE: TENTIDADE); override;
-=======
->>>>>>> Prox-vacina
   public
     constructor Create; override;
   end;
 
 implementation
 
-<<<<<<< HEAD
 { TRegraCRUDCidade }
 
 uses
@@ -39,9 +29,6 @@ uses
   , UMensagens
   , UConstantes
   ;
-=======
-{ TRegraCRUDCadPessoa }
->>>>>>> Prox-vacina
 
 constructor TRegraCRUDProximaVacina.Create;
 begin
@@ -49,7 +36,6 @@ begin
   FRepositorioDB := TRepositorioDB<TENTIDADE>(TRepositorioProximaVacina.Create);
 end;
 
-<<<<<<< HEAD
 procedure TRegraCRUDProximaVacina.ValidaInsercao(const coENTIDADE: TENTIDADE);
 begin
   inherited;
@@ -68,6 +54,4 @@ begin
 
 end;
 
-=======
->>>>>>> Prox-vacina
 end.

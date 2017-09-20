@@ -48,11 +48,7 @@ object dmEntra21: TdmEntra21
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.dll'
-<<<<<<< HEAD
     Left = 32
-=======
-    Left = 40
->>>>>>> Prox-vacina
     Top = 24
   end
   object SQLSelect: TSQLDataSet
