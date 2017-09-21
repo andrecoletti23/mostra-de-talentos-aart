@@ -33,6 +33,7 @@ type
     dbVacincao: TDBGrid;
     gbRetorno: TGroupBox;
     procedure FormCreate(Sender: TObject);
+    procedure cbVacinasExit(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
 
@@ -60,6 +61,19 @@ implementation
 {$R *.dfm}
 
 { TfrmVacinas }
+procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
+begin
+  inherited;
+  dmEntra21.SQLSelect.CommandText := 'select dose_vacina from dose';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('dose_vacina').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+end;
+
 procedure TfrmVacinas.FormCreate(Sender: TObject);
 begin
   inherited;
@@ -71,14 +85,6 @@ begin
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
-  inherited;
-  dmEntra21.SQLSelect.CommandText := 'select nome from vacina group by nome';
-  dmEntra21.SQLSelect.Open;
-  while not dmEntra21.SQLSelect.Eof do
-    begin
-      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Nome').AsString);
-      dmEntra21.SQLSelect.Next;
-    end;
 end;
 
 procedure TfrmVacinas.HabilitaCampos(

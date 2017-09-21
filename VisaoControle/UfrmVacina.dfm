@@ -86,11 +86,12 @@ inherited frmVacinas: TfrmVacinas
       TabOrder = 1
     end
     object cbVacinas: TComboBox
-      Left = 8
-      Top = 81
+      Left = 3
+      Top = 84
       Width = 353
       Height = 21
       TabOrder = 2
+      OnExit = cbVacinasExit
     end
     object cbDose: TComboBox
       Left = 385
