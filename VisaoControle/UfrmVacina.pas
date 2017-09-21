@@ -32,6 +32,7 @@ type
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
     gbRetorno: TGroupBox;
+    procedure FormCreate(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
 
@@ -53,10 +54,32 @@ implementation
     UOpcaoPesquisa
   , UEntidade
   , UFrmPesquisa
-  , UDialogo;
+  , UDialogo
+  , UDM
+  ;
 {$R *.dfm}
 
 { TfrmVacinas }
+procedure TfrmVacinas.FormCreate(Sender: TObject);
+begin
+  inherited;
+  dmEntra21.SQLSelect.CommandText := 'select nome from vacina group by nome';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Nome').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+  inherited;
+  dmEntra21.SQLSelect.CommandText := 'select nome from vacina group by nome';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Nome').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+end;
 
 procedure TfrmVacinas.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);
