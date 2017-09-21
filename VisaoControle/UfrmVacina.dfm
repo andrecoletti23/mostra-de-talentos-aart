@@ -2,8 +2,8 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 747
-  ExplicitWidth = 765
-  ExplicitHeight = 663
+  ExplicitWidth = 763
+  ExplicitHeight = 655
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -86,7 +86,7 @@ inherited frmVacinas: TfrmVacinas
       TabOrder = 1
     end
     object cbVacinas: TComboBox
-      Left = 3
+      Left = 8
       Top = 84
       Width = 353
       Height = 21
@@ -163,18 +163,20 @@ inherited frmVacinas: TfrmVacinas
   end
   object gbHistorico: TGroupBox [4]
     Left = 0
-    Top = 433
+    Top = 313
     Width = 747
     Height = 139
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
+    ExplicitTop = 433
     object dbVacincao: TDBGrid
-      Left = 2
-      Top = 15
-      Width = 743
-      Height = 122
+      AlignWithMargins = True
+      Left = 5
+      Top = 18
+      Width = 737
+      Height = 116
       Align = alClient
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
@@ -183,14 +185,5 @@ inherited frmVacinas: TfrmVacinas
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
     end
-  end
-  object gbRetorno: TGroupBox [5]
-    Left = 0
-    Top = 313
-    Width = 747
-    Height = 120
-    Align = alTop
-    Caption = 'Agendamento de Retorno'
-    TabOrder = 5
   end
 end

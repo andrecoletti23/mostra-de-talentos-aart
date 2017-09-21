@@ -49,7 +49,8 @@ uses
   URegraCRUDProximaVacina in 'Modelo\Regra\URegraCRUDProximaVacina.pas',
   URepositorioPapel in 'Modelo\Persistencia\URepositorioPapel.pas',
   URepositorioPapelPermissao in 'Modelo\Persistencia\URepositorioPapelPermissao.pas',
-  UPapel in 'Modelo\Persistencia\UPapel.pas';
+  UPapel in 'Modelo\Persistencia\UPapel.pas',
+  UFrmAgendaVacina in 'VisaoControle\UFrmAgendaVacina.pas' {FrmAgendaVacina};
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';
@@ -60,6 +61,7 @@ begin
   {$DEFINE DESENV}
   Application.Initialize;
   Application.CreateForm(TdmEntra21, dmEntra21);
+  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
   {$IFDEF DESENV}
   FrmLogin := TFrmLogin.Create(nil);
   if FrmLogin.ShowModal = mrYes then

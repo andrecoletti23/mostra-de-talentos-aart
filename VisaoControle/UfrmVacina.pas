@@ -12,6 +12,9 @@ uses
   , UCoren
   , ULoteVacina
   , UPaciente
+  , UProximaVacina
+  , URepositorioProximaVacina
+  , URegraCRUDProximaVacina
   ;
 
 type
@@ -31,13 +34,14 @@ type
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
-    gbRetorno: TGroupBox;
     procedure FormCreate(Sender: TObject);
     procedure cbVacinasExit(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
+    FPROXIMAVACINA  : TPROXIMAVACINA;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
+    FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
 
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -127,6 +131,11 @@ begin
   FCARTEIRA_VACINACAO.COD_LOTE         := edLoteVacina.Text;
   FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
   FCARTEIRA_VACINACAO.UNIDADE_SAUDE    := edUnidadeSaude.Text;
+
+  {FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
+  FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
+  FPROXIMAVACINA.DATA_RETORNO       := edSusRetorno.Text;
+  FPROXIMAVACINA.VACINA_RETORNO     := cbProximaVacina.Text; }
 end;
 
 procedure TfrmVacinas.PreencheFormulario;
@@ -142,6 +151,12 @@ begin
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
   edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
   edUnidadeSaude.Text   :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
+
+  {edSusRetorno.Text :=FPROXIMAVACINA.SUS_CODIGO;
+  edNomeRetorno.Text:=FPROXIMAVACINA.NOME ;
+  edSusRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
+  cbProximaVacina.Text:=FPROXIMAVACINA.VACINA_RETORNO  ;  }
 end;
 
 end.
+{}

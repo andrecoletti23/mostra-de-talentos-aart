@@ -134,5 +134,13 @@ inherited frmAgente: TfrmAgente
       TabOrder = 8
       Text = '  /  /    '
     end
+    object Editao: TEdit
+      Left = 392
+      Top = 32
+      Width = 121
+      Height = 21
+      TabOrder = 9
+      Text = 'Editao'
+    end
   end
 end
