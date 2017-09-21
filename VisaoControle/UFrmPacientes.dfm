@@ -2,15 +2,15 @@ inherited frmPacientes: TfrmPacientes
   Caption = 'Cadastro/Altera'#231#227'o de Pacientes - SUS'
   ClientHeight = 572
   ClientWidth = 1012
-  ExplicitWidth = 1053
-  ExplicitHeight = 611
+  ExplicitWidth = 1030
+  ExplicitHeight = 619
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 1012
     Color = 6176512
     ParentBackground = False
-    ExplicitWidth = 1037
+    ExplicitWidth = 1012
     inherited lbCabecalho: TLabel
       Top = 2
       Width = 429
@@ -33,7 +33,7 @@ inherited frmPacientes: TfrmPacientes
     Font.Style = []
     ParentBackground = False
     ParentColor = False
-    ExplicitWidth = 1037
+    ExplicitWidth = 1012
   end
   inherited pnlBotoes: TPanel
     Top = 531
@@ -41,7 +41,7 @@ inherited frmPacientes: TfrmPacientes
     Color = 6176512
     ParentBackground = False
     ExplicitTop = 531
-    ExplicitWidth = 1037
+    ExplicitWidth = 1012
     inherited btnLimpar: TBitBtn
       Left = 802
       ExplicitLeft = 802
@@ -79,7 +79,6 @@ inherited frmPacientes: TfrmPacientes
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
-    ExplicitWidth = 1037
     object lbSexo: TLabel
       Left = 836
       Top = 16
@@ -312,7 +311,6 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 4
-    ExplicitWidth = 1037
     object lbUF: TLabel
       Left = 582
       Top = 14
@@ -428,7 +426,6 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 5
-    ExplicitWidth = 1037
     object lbCartaoSUS: TLabel
       Left = 8
       Top = 16
