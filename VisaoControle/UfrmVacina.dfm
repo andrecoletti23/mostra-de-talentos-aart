@@ -2,6 +2,7 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 747
+  ExplicitTop = -202
   ExplicitWidth = 763
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -170,7 +171,6 @@ inherited frmVacinas: TfrmVacinas
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
-    ExplicitTop = 433
     object dbVacincao: TDBGrid
       AlignWithMargins = True
       Left = 5

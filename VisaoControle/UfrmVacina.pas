@@ -15,6 +15,7 @@ uses
   , UProximaVacina
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
+  //, UFrmAgendaVacina
   ;
 
 type
@@ -36,6 +37,7 @@ type
     dbVacincao: TDBGrid;
     procedure FormCreate(Sender: TObject);
     procedure cbVacinasExit(Sender: TObject);
+    procedure btnGravarClick(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
     FPROXIMAVACINA  : TPROXIMAVACINA;
@@ -65,6 +67,12 @@ implementation
 {$R *.dfm}
 
 { TfrmVacinas }
+procedure TfrmVacinas.btnGravarClick(Sender: TObject);
+begin
+  inherited;
+  //Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+end;
+
 procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
 begin
   inherited;
@@ -154,7 +162,7 @@ begin
 
   {edSusRetorno.Text :=FPROXIMAVACINA.SUS_CODIGO;
   edNomeRetorno.Text:=FPROXIMAVACINA.NOME ;
-  edSusRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
+  edDataRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
   cbProximaVacina.Text:=FPROXIMAVACINA.VACINA_RETORNO  ;  }
 end;
 
