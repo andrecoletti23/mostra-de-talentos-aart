@@ -13,6 +13,7 @@ type
      NOME             : String;
      DATA_RETORNO     : TDate;
      VACINA_RETORNO   : String;
+     DOSE             : String;
    end;
 
 const
@@ -22,6 +23,7 @@ const
    FLD_NOME             = 'NOME';
    FLD_DATA_RETORNO     = 'DATA_RETORNO';
    FLD_VACINA_RETORNO   = 'VACINA_RETORNO';
+   FLD_DOSE             = 'DOSE' ;
 
 resourcestring
 

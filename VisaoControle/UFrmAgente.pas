@@ -22,6 +22,7 @@ type
     edTurno: TLabeledEdit;
     edContato: TLabeledEdit;
     edDataNasc: TMaskEdit;
+    Editao: TEdit;
 protected
     FAgente: TAgente;
 
@@ -102,9 +103,6 @@ begin
   edNome.Text       := FAGENTE.AGENTE_NOME ;
   edLogin.Text      := FAGENTE.LOGIN ;
   edSenha.Text      := FAGENTE.SENHA ;
-  {HashMessageDigest5 := TIdHashMessageDigest5.Create;
-  SenhaHash := HashMessageDigest5.HashStringAsHex(edSenha.Text);
-  FAgente.SENHA := SenhaHash ; }
   edEmail.Text      := FAGENTE.AGENTE_EMAIL ;
   edCoren.Text      := FAGENTE.AGENTE_COREN ;
   edEspec.Text      := FAGENTE.AGENTE_ESPECIFICACAO ;

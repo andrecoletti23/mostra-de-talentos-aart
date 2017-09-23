@@ -87,10 +87,11 @@ inherited frmVacinas: TfrmVacinas
     end
     object cbVacinas: TComboBox
       Left = 8
-      Top = 81
+      Top = 84
       Width = 353
       Height = 21
       TabOrder = 2
+      OnExit = cbVacinasExit
     end
     object cbDose: TComboBox
       Left = 385
@@ -162,7 +163,7 @@ inherited frmVacinas: TfrmVacinas
   end
   object gbHistorico: TGroupBox [4]
     Left = 0
-    Top = 433
+    Top = 313
     Width = 747
     Height = 139
     Align = alTop
@@ -182,14 +183,5 @@ inherited frmVacinas: TfrmVacinas
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
     end
-  end
-  object gbRetorno: TGroupBox [5]
-    Left = 0
-    Top = 313
-    Width = 747
-    Height = 120
-    Align = alTop
-    Caption = 'Agendamento de Retorno'
-    TabOrder = 5
   end
 end

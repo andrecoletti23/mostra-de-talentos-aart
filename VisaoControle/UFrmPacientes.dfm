@@ -362,6 +362,7 @@ inherited frmPacientes: TfrmPacientes
       Width = 136
       Height = 23
       TabOrder = 1
+      OnSelect = cbUFSelect
     end
     object cbCidade: TComboBox
       Left = 744

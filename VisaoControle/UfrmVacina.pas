@@ -12,6 +12,10 @@ uses
   , UCoren
   , ULoteVacina
   , UPaciente
+  , UProximaVacina
+  , URepositorioProximaVacina
+  , URegraCRUDProximaVacina
+  , UFrmAgendaVacina
   ;
 
 type
@@ -31,11 +35,16 @@ type
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
-    gbRetorno: TGroupBox;
+    procedure FormCreate(Sender: TObject);
+    procedure cbVacinasExit(Sender: TObject);
+    procedure btnGravarClick(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
+    FPROXIMAVACINA  : TPROXIMAVACINA;
+    FFRMAGENDAVACINA : TFRMAGENDAVACINA;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
+    FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
 
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -53,10 +62,43 @@ implementation
     UOpcaoPesquisa
   , UEntidade
   , UFrmPesquisa
-  , UDialogo;
+  , UDialogo
+  , UDM
+  ;
 {$R *.dfm}
 
 { TfrmVacinas }
+procedure TfrmVacinas.btnGravarClick(Sender: TObject);
+begin
+  inherited;
+  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+end;
+
+procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
+begin
+  inherited;
+  dmEntra21.SQLSelect.CommandText := 'select dose_vacina from dose';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('dose_vacina').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+end;
+
+procedure TfrmVacinas.FormCreate(Sender: TObject);
+begin
+  inherited;
+  dmEntra21.SQLSelect.CommandText := 'select nome from vacina group by nome';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Nome').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+end;
 
 procedure TfrmVacinas.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);
@@ -98,6 +140,11 @@ begin
   FCARTEIRA_VACINACAO.COD_LOTE         := edLoteVacina.Text;
   FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
   FCARTEIRA_VACINACAO.UNIDADE_SAUDE    := edUnidadeSaude.Text;
+
+  {FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
+  FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
+  FPROXIMAVACINA.DATA_RETORNO       := edSusRetorno.Text;
+  FPROXIMAVACINA.VACINA_RETORNO     := cbProximaVacina.Text; }
 end;
 
 procedure TfrmVacinas.PreencheFormulario;
@@ -113,6 +160,12 @@ begin
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
   edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
   edUnidadeSaude.Text   :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
+
+  {edSusRetorno.Text :=FPROXIMAVACINA.SUS_CODIGO;
+  edNomeRetorno.Text:=FPROXIMAVACINA.NOME ;
+  edDataRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
+  cbProximaVacina.Text:=FPROXIMAVACINA.VACINA_RETORNO  ;  }
 end;
 
 end.
+{}

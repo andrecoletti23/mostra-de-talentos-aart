@@ -9,6 +9,7 @@ uses
   , UUtilitarios
   , URegraCRUDPaciente
   , UDM
+  , UCidade
 
   ;
 
@@ -52,6 +53,7 @@ type
     cbSangue: TComboBox;
     Label4: TLabel;
     procedure FormCreate(Sender: TObject);
+    procedure cbUFSelect(Sender: TObject);
 protected
     FPACIENTE: TPACIENTE;
 
@@ -62,12 +64,10 @@ protected
     procedure PreencheFormulario; override;
     procedure PosicionaCursorPrimeiroCampo; override;
     procedure HabilitaCampos(const ceTipoOperacaoUsuario: TTipoOperacaoUsuario); override;
-    procedure EstadoSelect (Sender: TObject);
   end;
 
 var
   frmPacientes: TfrmPacientes;
-
 implementation
  uses
     UOpcaoPesquisa
@@ -77,21 +77,22 @@ implementation
  {$R *.DFM}
 { TfrmPacientes }
 
-procedure TfrmPacientes.EstadoSelect(Sender: TObject);
+procedure TfrmPacientes.cbUFSelect(Sender: TObject);
 var
   EstadoAux: string;
 begin
+inherited;
   with dmEntra21.SQLSelect do
     begin
       CommandText := '';
-      CommandText := 'select nome,uf from cidade where nome = :nome';
+      CommandText := 'select Nome, UF from cidade where UF = :UF';
       Prepared:= true;
-      ParamByName('nome').AsString := cbUF.Text;
+      ParamByName('UF').AsString := cbUF.Text;
       Open;
     end;
   while not dmEntra21.SQLSelect.Eof do
     begin
-      EstadoAux := dmEntra21.SQLSelect.FieldByName('uf').AsString;
+      EstadoAux := dmEntra21.SQLSelect.FieldByName('UF').AsString;
       dmEntra21.SQLSelect.Next;
     end;
   with dmEntra21.SQLSelect do
@@ -115,11 +116,11 @@ end;
 procedure TfrmPacientes.FormCreate(Sender: TObject);
 begin
   inherited;
-  dmEntra21.SQLSelect.CommandText := 'select nome from estado';
+  dmEntra21.SQLSelect.CommandText := 'select UF from cidade group by uf';
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do
     begin
-      cbUF.Items.Add(dmEntra21.SQLSelect.FieldByName('nome').AsString);
+      cbUF.Items.Add(dmEntra21.SQLSelect.FieldByName('UF').AsString);
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
