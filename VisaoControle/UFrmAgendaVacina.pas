@@ -51,14 +51,14 @@ procedure TFrmAgendaVacina.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);
 begin
   inherited;
-
+  gbProximaVacina.Enabled := FTipoOperacaoUsuario In [touInsercao, touAtualizacao];
 end;
 
 procedure TFrmAgendaVacina.Inicializa;
 begin
   inherited;
   DefineEntidade(@FProximaVacina, TProximaVacina);
-  DefineRegraCRUD(@FRegraCRUDProximaVacina, TRegraCRUDProximaVacina;
+  DefineRegraCRUD(@FRegraCRUDProximaVacina, TRegraCRUDProximaVacina);
 
     AdicionaOpcaoPesquisa(TOpcaoPesquisa
     .Create
@@ -80,18 +80,18 @@ begin
   inherited;
   FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
   FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
-  FPROXIMAVACINA.DATA_RETORNO       := edSusRetorno.Text;
+  FPROXIMAVACINA.DATA_RETORNO       := StrToDate(edSusRetorno.Text);
   FPROXIMAVACINA.VACINA_RETORNO     := cbVacinaRetorno.Text;
-  FPROXIMAVACINA.DOSE               := cbDoseRetorno;
+  FPROXIMAVACINA.DOSE               := cbDoseRetorno.Text;
 end;
 
 procedure TFrmAgendaVacina.PreencheFormulario;
 begin
   inherited;
-  edSusRetorno.Text     :=FPROXIMAVACINA.SUS_CODIGO;
-  edNomeRetorno.Text    :=FPROXIMAVACINA.NOME ;
-  edDataRetorno.Text    :=FPROXIMAVACINA.DATA_RETORNO;
-  cbVacinaRetorno.Text  :=FPROXIMAVACINA.VACINA_RETORNO  ;
+  edSusRetorno.Text     := FPROXIMAVACINA.SUS_CODIGO;
+  edNomeRetorno.Text    := FPROXIMAVACINA.NOME ;
+  edDataRetorno.Text    := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
+  cbVacinaRetorno.Text  := FPROXIMAVACINA.VACINA_RETORNO  ;
   cbDoseRetorno.Text    := FPROXIMAVACINA.DOSE;
 end;
 

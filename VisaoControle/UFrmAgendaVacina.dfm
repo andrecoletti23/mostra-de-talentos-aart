@@ -2,40 +2,39 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
   Caption = 'Agendamento de Vacinas - SUS'
   ClientHeight = 406
   ClientWidth = 575
-  ExplicitTop = 0
   ExplicitWidth = 591
   ExplicitHeight = 445
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 575
-    ExplicitWidth = 120
+    ExplicitWidth = 575
   end
   inherited gbLocalizar: TGroupBox
     Width = 575
-    ExplicitWidth = 120
+    ExplicitWidth = 575
   end
   inherited pnlBotoes: TPanel
     Top = 365
     Width = 575
-    ExplicitTop = -41
-    ExplicitWidth = 120
+    ExplicitTop = 365
+    ExplicitWidth = 575
     inherited btnLimpar: TBitBtn
       Left = 340
-      ExplicitLeft = -115
+      ExplicitLeft = 340
     end
     inherited btnExcluir: TBitBtn
       Left = 223
-      ExplicitLeft = -232
+      ExplicitLeft = 223
     end
     inherited btnGravar: TBitBtn
       Left = 106
       OnClick = nil
-      ExplicitLeft = -349
+      ExplicitLeft = 106
     end
     inherited btnSair: TBitBtn
       Left = 457
-      ExplicitLeft = 2
+      ExplicitLeft = 457
     end
   end
   object gbProximaVacina: TGroupBox [3]
@@ -46,8 +45,9 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     Align = alClient
     Caption = 'Agendamento de Vacinas'
     TabOrder = 3
-    ExplicitWidth = 120
-    ExplicitHeight = 252
+    DesignSize = (
+      575
+      279)
     object lbData: TLabel
       Left = 8
       Top = 69
@@ -119,6 +119,7 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       Top = 136
       Width = 521
       Height = 120
+      Anchors = [akLeft, akTop, akRight, akBottom]
       TabOrder = 5
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText

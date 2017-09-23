@@ -15,7 +15,7 @@ uses
   , UProximaVacina
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
-  //, UFrmAgendaVacina
+  , UFrmAgendaVacina
   ;
 
 type
@@ -41,6 +41,7 @@ type
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
     FPROXIMAVACINA  : TPROXIMAVACINA;
+    FFRMAGENDAVACINA : TFRMAGENDAVACINA;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
     FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
@@ -70,7 +71,7 @@ implementation
 procedure TfrmVacinas.btnGravarClick(Sender: TObject);
 begin
   inherited;
-  //Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
 end;
 
 procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
