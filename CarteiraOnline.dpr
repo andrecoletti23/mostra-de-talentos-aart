@@ -50,7 +50,9 @@ uses
   URepositorioPapel in 'Modelo\Persistencia\URepositorioPapel.pas',
   URepositorioPapelPermissao in 'Modelo\Persistencia\URepositorioPapelPermissao.pas',
   UPapel in 'Modelo\Persistencia\UPapel.pas',
-  UFrmAgendaVacina in 'VisaoControle\UFrmAgendaVacina.pas' {FrmAgendaVacina};
+  UFrmAgendaVacina in 'VisaoControle\UFrmAgendaVacina.pas' {FrmAgendaVacina},
+  UVacinaNova in 'Modelo\Persistencia\UVacinaNova.pas',
+  URepositorioVacinaNova in 'Modelo\Persistencia\URepositorioVacinaNova.pas';
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

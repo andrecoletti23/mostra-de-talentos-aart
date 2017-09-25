@@ -1,53 +1,53 @@
 inherited FrmAgendaVacina: TFrmAgendaVacina
   Caption = 'Agendamento de Vacinas - SUS'
-  ClientHeight = 406
-  ClientWidth = 575
-  ExplicitWidth = 591
-  ExplicitHeight = 445
+  ClientHeight = 543
+  ClientWidth = 819
+  ExplicitWidth = 837
+  ExplicitHeight = 590
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
-    Width = 575
-    ExplicitWidth = 575
+    Width = 819
+    ExplicitWidth = 819
   end
   inherited gbLocalizar: TGroupBox
-    Width = 575
-    ExplicitWidth = 575
+    Width = 819
+    ExplicitWidth = 819
   end
   inherited pnlBotoes: TPanel
-    Top = 365
-    Width = 575
-    ExplicitTop = 365
-    ExplicitWidth = 575
+    Top = 502
+    Width = 819
+    ExplicitTop = 502
+    ExplicitWidth = 819
     inherited btnLimpar: TBitBtn
-      Left = 340
-      ExplicitLeft = 340
+      Left = 584
+      ExplicitLeft = 584
     end
     inherited btnExcluir: TBitBtn
-      Left = 223
-      ExplicitLeft = 223
+      Left = 467
+      ExplicitLeft = 467
     end
     inherited btnGravar: TBitBtn
-      Left = 106
+      Left = 350
       OnClick = nil
-      ExplicitLeft = 106
+      ExplicitLeft = 350
     end
     inherited btnSair: TBitBtn
-      Left = 457
-      ExplicitLeft = 457
+      Left = 701
+      ExplicitLeft = 701
     end
   end
   object gbProximaVacina: TGroupBox [3]
     Left = 0
     Top = 86
-    Width = 575
-    Height = 279
+    Width = 819
+    Height = 416
     Align = alClient
     Caption = 'Agendamento de Vacinas'
     TabOrder = 3
     DesignSize = (
-      575
-      279)
+      819
+      416)
     object lbData: TLabel
       Left = 8
       Top = 69
@@ -115,17 +115,94 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     end
     object dbgProxVacina: TDBGrid
       AlignWithMargins = True
-      Left = 8
+      Left = 3
       Top = 136
-      Width = 521
-      Height = 120
+      Width = 765
+      Height = 257
       Anchors = [akLeft, akTop, akRight, akBottom]
+      DataSource = DataSourceagenda
       TabOrder = 5
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnDrawColumnCell = dbgProxVacinaDrawColumnCell
     end
+  end
+  object SQLConnAgenda: TSQLConnection
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=DBXFirebird'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver150.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=15.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXFirebirdMetaDataCommandFactory,DbxFire' +
+        'birdDriver150.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXFirebirdMetaDataCommandF' +
+        'actory,Borland.Data.DbxFirebirdDriver,Version=15.0.0.0,Culture=n' +
+        'eutral,PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverINTERBASE'
+      'LibraryName=dbxfb.dll'
+      'VendorLib=fbclient.DLL'
+      
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Role=RoleName'
+      'MaxBlobSize=-1'
+      'LocaleCode=0000'
+      'IsolationLevel=ReadCommitted'
+      'SQLDialect=3'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'TrimChar=False'
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'RoleName=RoleName'
+      'ServerCharSet='
+      'Trim Char=False')
+    VendorLib = 'fbclient.DLL'
+    Left = 120
+    Top = 392
+  end
+  object tbVacinaNova: TSQLTable
+    MaxBlobSize = -1
+    SQLConnection = SQLConnAgenda
+    TableName = 'LOTE_VACINA'
+    Left = 192
+    Top = 392
+  end
+  object DataSetProviderAgenda: TDataSetProvider
+    DataSet = tbVacinaNova
+    Left = 272
+    Top = 392
+  end
+  object ClientDataSetAgenda: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProviderAgenda'
+    Left = 360
+    Top = 392
+  end
+  object DataSourceagenda: TDataSource
+    DataSet = ClientDataSetAgenda
+    Left = 432
+    Top = 392
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 480
+    Top = 392
   end
 end

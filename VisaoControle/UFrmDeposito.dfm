@@ -2,8 +2,8 @@ inherited frmDeposito: TfrmDeposito
   Caption = 'Deposito Vacina'#231#227'o'
   ClientHeight = 460
   ClientWidth = 749
-  ExplicitWidth = 765
-  ExplicitHeight = 499
+  ExplicitWidth = 767
+  ExplicitHeight = 507
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -116,7 +116,6 @@ inherited frmDeposito: TfrmDeposito
     TitleFont.Style = []
   end
   object tbDeposito: TSQLTable
-    Active = True
     MaxBlobSize = -1
     SQLConnection = SQLConnection1
     TableName = 'LOTE_VACINA'
@@ -129,7 +128,6 @@ inherited frmDeposito: TfrmDeposito
     Top = 368
   end
   object ClientDataSet1: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProvider1'
@@ -166,8 +164,8 @@ inherited frmDeposito: TfrmDeposito
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
@@ -184,7 +182,6 @@ inherited frmDeposito: TfrmDeposito
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 136
     Top = 368
   end
