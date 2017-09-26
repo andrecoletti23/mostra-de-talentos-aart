@@ -12,6 +12,8 @@ uses
   , URepositorioVacinaNova
   , UCarteiraVacinacao
   , URepositorioCarteiraVacinacao
+  , URepositorioPaciente
+  , UPaciente
   , UUtilitarios, Mask, Grids, DBGrids, DBXFirebird, FMTBcd, DB, DBClient,
   Provider, SqlExpr
   ;
@@ -101,7 +103,7 @@ begin
     .AdicionaFiltro(FLD_SUS_CODIGO)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
     .DefineNomePesquisa(STR_PROX_VACINA)
-    .DefineVisao(TBL_PROX_VACINA));
+    .DefineVisao(TBL_PACIENTE));
 end;
 
 procedure TFrmAgendaVacina.PosicionaCursorPrimeiroCampo;
