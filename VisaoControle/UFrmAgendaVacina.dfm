@@ -2,8 +2,8 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
   Caption = 'Agendamento de Vacinas - SUS'
   ClientHeight = 543
   ClientWidth = 819
-  ExplicitWidth = 837
-  ExplicitHeight = 590
+  ExplicitWidth = 835
+  ExplicitHeight = 582
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -155,8 +155,8 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
@@ -173,36 +173,38 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Left = 120
-    Top = 392
+    Connected = True
+    Left = 64
+    Top = 408
   end
   object tbVacinaNova: TSQLTable
     MaxBlobSize = -1
     SQLConnection = SQLConnAgenda
-    TableName = 'LOTE_VACINA'
-    Left = 192
-    Top = 392
+    TableName = 'VACINA_NOVA'
+    Left = 160
+    Top = 376
   end
   object DataSetProviderAgenda: TDataSetProvider
     DataSet = tbVacinaNova
-    Left = 272
-    Top = 392
+    Left = 256
+    Top = 416
   end
   object ClientDataSetAgenda: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProviderAgenda'
-    Left = 360
-    Top = 392
+    Left = 368
+    Top = 360
   end
   object DataSourceagenda: TDataSource
     DataSet = ClientDataSetAgenda
-    Left = 432
-    Top = 392
+    Left = 440
+    Top = 416
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    Left = 480
-    Top = 392
+    Left = 504
+    Top = 384
   end
 end
