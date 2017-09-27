@@ -4,7 +4,7 @@ object FrmLogin: TFrmLogin
   Caption = 'FrmLogin'
   ClientHeight = 201
   ClientWidth = 346
-  Color = clBtnFace
+  Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -40,6 +40,7 @@ object FrmLogin: TFrmLogin
     Top = 109
     Width = 257
     Height = 21
+    PasswordChar = '*'
     TabOrder = 1
     OnKeyDown = edSenhaKeyDown
   end

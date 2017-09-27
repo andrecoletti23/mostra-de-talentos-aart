@@ -2,12 +2,15 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 747
+  Color = 6176512
   ExplicitWidth = 763
   ExplicitHeight = 655
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 747
+    Color = 6176512
+    ParentBackground = False
     ExplicitWidth = 747
     inherited lbCabecalho: TLabel
       Width = 219
@@ -17,6 +20,9 @@ inherited frmVacinas: TfrmVacinas
   end
   inherited gbLocalizar: TGroupBox
     Width = 747
+    Color = 6176512
+    ParentBackground = False
+    ParentColor = False
     ExplicitWidth = 747
   end
   inherited pnlBotoes: TPanel
@@ -48,6 +54,9 @@ inherited frmVacinas: TfrmVacinas
     Height = 227
     Align = alTop
     Caption = 'Vacina'#231#227'o'
+    Color = 6176512
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 3
     object lbVacina: TLabel
       Left = 8

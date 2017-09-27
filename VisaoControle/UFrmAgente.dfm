@@ -2,7 +2,8 @@ inherited frmAgente: TfrmAgente
   Caption = 'Cadastro Agente do SUS'
   ClientHeight = 558
   ClientWidth = 950
-  ExplicitTop = -152
+  ExplicitLeft = -224
+  ExplicitTop = -126
   ExplicitWidth = 966
   ExplicitHeight = 597
   PixelsPerInch = 96
@@ -18,6 +19,8 @@ inherited frmAgente: TfrmAgente
   inherited pnlBotoes: TPanel
     Top = 517
     Width = 950
+    Color = 6176512
+    ParentBackground = False
     ExplicitTop = 517
     ExplicitWidth = 950
     inherited btnLimpar: TBitBtn
@@ -44,6 +47,9 @@ inherited frmAgente: TfrmAgente
     Height = 131
     Align = alTop
     Caption = 'Informa'#231#245'es de Login'
+    Color = 6176512
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 3
     object edLogin: TLabeledEdit
       Left = 16
@@ -88,8 +94,10 @@ inherited frmAgente: TfrmAgente
     Height = 215
     Align = alClient
     Caption = 'Informa'#231#245'es do Agente'
+    Color = 6176512
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 4
-    ExplicitHeight = 209
     object Label1: TLabel
       Left = 16
       Top = 116
@@ -115,9 +123,9 @@ inherited frmAgente: TfrmAgente
       Text = '  /  /    '
     end
     object edContato: TLabeledEdit
-      Left = 481
+      Left = 471
       Top = 100
-      Width = 296
+      Width = 314
       Height = 21
       EditLabel.Width = 39
       EditLabel.Height = 13
@@ -188,13 +196,16 @@ inherited frmAgente: TfrmAgente
     Height = 85
     Align = alBottom
     Caption = 'Informa'#231#245'es Adicionais'
+    Color = 6176512
+    ParentBackground = False
+    ParentColor = False
     TabOrder = 5
     object meInformacoes: TMemo
       Left = 16
       Top = 22
       Width = 225
       Height = 57
-      Color = clSilver
+      Color = 6176512
       Lines.Strings = (
         '* Aten'#231#227'o ao preencher as informa'#231#245'es'
         ''
