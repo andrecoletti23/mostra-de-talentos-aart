@@ -36,6 +36,7 @@ type
     ClientDataSetAgenda: TClientDataSet;
     DataSourceagenda: TDataSource;
     Timer1: TTimer;
+    StaticText1: TStaticText;
     procedure dbgProxVacinaDrawColumnCell(Sender: TObject; const Rect: TRect;
       DataCol: Integer; Column: TColumn; State: TGridDrawState);
     procedure Timer1Timer(Sender: TObject);
@@ -51,6 +52,7 @@ var
   FrmAgendaVacina: TFrmAgendaVacina;
   FProximaVacina: TProximaVacina;
   FRegraCRUDProximaVacina: TRegraCRUDProximaVacina;
+  FPACIENTE : TPACIENTE;
 implementation
  uses
     UOpcaoPesquisa
@@ -116,7 +118,7 @@ end;
 procedure TFrmAgendaVacina.PreencheEntidade;
 begin
   inherited;
-  //FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
+  FPROXIMAVACINA.SUS_CODIGO         := FPACIENTE.CODIGO_SUS;
   FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
   FPROXIMAVACINA.DATA_RETORNO       := StrToDate(edSusRetorno.Text);
   FPROXIMAVACINA.VACINA_RETORNO     := cbVacinaRetorno.Text;
@@ -126,7 +128,8 @@ end;
 procedure TFrmAgendaVacina.PreencheFormulario;
 begin
   inherited;
-  //edSusRetorno.Text     := FPROXIMAVACINA.SUS_CODIGO;
+  edSusRetorno.Text     := inttostr(FPROXIMAVACINA.ID);
+  StaticText1.Caption   := FPACIENTE.CODIGO_SUS;
   edNomeRetorno.Text    := FPROXIMAVACINA.NOME ;
   edDataRetorno.Text    := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
   cbVacinaRetorno.Text  := FPROXIMAVACINA.VACINA_RETORNO  ;

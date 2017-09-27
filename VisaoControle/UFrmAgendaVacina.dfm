@@ -129,6 +129,14 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       TitleFont.Style = []
       OnDrawColumnCell = dbgProxVacinaDrawColumnCell
     end
+    object StaticText1: TStaticText
+      Left = 568
+      Top = 40
+      Width = 59
+      Height = 17
+      Caption = 'StaticText1'
+      TabOrder = 6
+    end
   end
   object SQLConnAgenda: TSQLConnection
     DriverName = 'Firebird'
