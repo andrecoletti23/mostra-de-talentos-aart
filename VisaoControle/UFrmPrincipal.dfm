@@ -1127,18 +1127,28 @@ object FrmPrincipal: TFrmPrincipal
       Stretch = True
     end
     object lbNome: TLabel
-      Left = 152
-      Top = 24
-      Width = 51
-      Height = 13
-      AutoSize = False
+      Left = 143
+      Top = 16
+      Width = 7
+      Height = 24
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -19
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
     object lbCoren: TLabel
-      Left = 152
-      Top = 62
-      Width = 51
-      Height = 13
-      AutoSize = False
+      Left = 143
+      Top = 85
+      Width = 7
+      Height = 24
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -19
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
     end
   end
   object Panel2: TPanel
