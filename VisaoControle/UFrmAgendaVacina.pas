@@ -115,7 +115,7 @@ end;
 procedure TFrmAgendaVacina.PreencheEntidade;
 begin
   inherited;
-  FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
+  //FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
   FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
   FPROXIMAVACINA.DATA_RETORNO       := StrToDate(edSusRetorno.Text);
   FPROXIMAVACINA.VACINA_RETORNO     := cbVacinaRetorno.Text;
@@ -125,7 +125,7 @@ end;
 procedure TFrmAgendaVacina.PreencheFormulario;
 begin
   inherited;
-  edSusRetorno.Text     := FPROXIMAVACINA.SUS_CODIGO;
+  //edSusRetorno.Text     := FPROXIMAVACINA.SUS_CODIGO;
   edNomeRetorno.Text    := FPROXIMAVACINA.NOME ;
   edDataRetorno.Text    := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
   cbVacinaRetorno.Text  := FPROXIMAVACINA.VACINA_RETORNO  ;
