@@ -12,6 +12,8 @@ type
     edSenha: TEdit;
     btnEntrar: TButton;
     btnCancelar: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
     procedure btnEntrarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure edSenhaKeyDown(Sender: TObject; var Key: Word;

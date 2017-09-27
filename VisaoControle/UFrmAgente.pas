@@ -19,10 +19,15 @@ type
     edEmail: TLabeledEdit;
     edCoren: TLabeledEdit;
     edEspec: TLabeledEdit;
-    edTurno: TLabeledEdit;
     edContato: TLabeledEdit;
     edDataNasc: TMaskEdit;
-    Editao: TEdit;
+    GroupBox1: TGroupBox;
+    lbConfirmacaoSenha: TLabeledEdit;
+    gbInformacoesAdicionais: TGroupBox;
+    meInformacoes: TMemo;
+    Label1: TLabel;
+    edTurno: TComboBox;
+    Label2: TLabel;
 protected
     FAgente: TAgente;
 
