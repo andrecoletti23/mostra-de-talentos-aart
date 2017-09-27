@@ -16,6 +16,8 @@ uses
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
   , UFrmAgendaVacina
+  , UVacinaNova
+  , URepositorioVacinaNova
   ;
 
 type
@@ -38,10 +40,13 @@ type
     procedure FormCreate(Sender: TObject);
     procedure cbVacinasExit(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
+    procedure dbVacincaoDrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TColumn; State: TGridDrawState);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
     FPROXIMAVACINA  : TPROXIMAVACINA;
     FFRMAGENDAVACINA : TFRMAGENDAVACINA;
+    FVACINANOVA : TVACINANOVA;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
     FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
@@ -85,6 +90,27 @@ begin
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
+end;
+
+procedure TfrmVacinas.dbVacincaoDrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TColumn; State: TGridDrawState);
+begin
+  inherited;
+  if (Column.Field.FieldName = 'VACINA') then
+      begin
+         if FLD_VACINA = FLD_CAR_VACINA then
+            begin
+               dbVacincao.Canvas.Font.Color:=clGreen ;
+               dbVacincao.Canvas.FillRect(Rect);
+               dbVacincao.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+            end
+         else
+             begin
+               dbVacincao.Canvas.Font.Color:= clRed ;
+               dbVacincao.Canvas.FillRect(Rect);
+               dbVacincao.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+             end;
+      end;
 end;
 
 procedure TfrmVacinas.FormCreate(Sender: TObject);

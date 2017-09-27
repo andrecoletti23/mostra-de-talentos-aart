@@ -67,6 +67,7 @@ procedure TFrmAgendaVacina.dbgProxVacinaDrawColumnCell(Sender: TObject;
   const Rect: TRect; DataCol: Integer; Column: TColumn; State: TGridDrawState);
 begin
   inherited;
+
   if (Column.Field.FieldName = 'VACINA') then
       begin
          if FLD_VACINA = FLD_CAR_VACINA then
