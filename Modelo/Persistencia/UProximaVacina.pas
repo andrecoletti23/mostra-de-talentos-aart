@@ -3,17 +3,22 @@ unit UProximaVacina;
 interface
 
 uses
-    UEntidade;
+    UEntidade
+,   UPaciente
+    ;
 
 type
   TPROXIMAVACINA = class(TENTIDADE)
    public
      ID               : Integer;
-     SUS_CODIGO       : String; //CRIAR UM REFERENCE NA TABELA TALVEZ
+     SUS_CODIGO       : TPACIENTE; //CRIAR UM REFERENCE NA TABELA TALVEZ
      NOME             : String;
      DATA_RETORNO     : TDate;
      VACINA_RETORNO   : String;
      DOSE             : String;
+
+     constructor create ; override;
+     destructor destroy ; override;
    end;
 
 const
@@ -30,5 +35,22 @@ resourcestring
   STR_PROX_VACINA = 'Agendamento de retorno de pacientes';
 
 implementation
+USES
+    SysUtils
+  , Dialogs
+  ;
+{ TPROXIMAVACINA }
+
+constructor TPROXIMAVACINA.create;
+begin
+  inherited;
+  SUS_CODIGO := TPACIENTE.Create;
+end;
+
+destructor TPROXIMAVACINA.destroy;
+begin
+  FREEANDNIL(SUS_CODIGO);
+  inherited;
+end;
 
 end.

@@ -4,6 +4,8 @@ interface
 
 uses
     UProximaVacina
+  , URepositorioPaciente
+  , UPAciente
   , UEntidade
   , URepositorioDB
   , SqlExpr
@@ -12,7 +14,7 @@ uses
 type
   TRepositorioProximaVacina = class(TRepositorioDB<TPROXIMAVACINA>)
   private
-
+   FRepositorioPaciente: TRepositorioPaciente;
   public
     constructor Create;
     //destructor Destroy; override;
@@ -31,7 +33,7 @@ uses
   , StrUtils
   ;
 
-{ TRepositorioCoren }
+{ TRepositorioProximaVacina }
 constructor TRepositorioPROXIMAVACINA.Create;
 begin
   inherited Create(TPROXIMAVACINA, TBL_PROX_VACINA, FLD_ENTIDADE_ID, STR_PROX_VACINA);
@@ -42,7 +44,8 @@ begin
   inherited;
   with FSQLSelect do
     begin
-      coPROXIMAVACINA.SUS_CODIGO         := FieldByName(FLD_SUS_CODIGO ).AsString ;
+      coPROXIMAVACINA.SUS_CODIGO         := TPACIENTE(
+      FRepositorioPaciente.Retorna(FieldByName(FLD_CODIGO_SUS).AsInteger));
       coPROXIMAVACINA.NOME               := FieldByName(FLD_NOME).AsString;
       coPROXIMAVACINA.DATA_RETORNO       := FieldByName(FLD_DATA_RETORNO).AsDateTime;
       coPROXIMAVACINA.VACINA_RETORNO     := FieldByName(FLD_VACINA_RETORNO).AsString;
@@ -55,7 +58,7 @@ begin
   inherited;
   with coSQLQuery do
     begin
-      ParamByName(FLD_SUS_CODIGO).AsString          := coPROXIMAVACINA.SUS_CODIGO;
+      //ParamByName(FLD_SUS_CODIGO).AsString          := coPROXIMAVACINA.SUS_CODIGO;
       ParamByName(FLD_NOME).AsString                := coPROXIMAVACINA.NOME  ;
       ParamByName(FLD_DATA_RETORNO).AsDate          := coPROXIMAVACINA.DATA_RETORNO ;
       ParamByName(FLD_VACINA_RETORNO).AsString      := coPROXIMAVACINA.VACINA_RETORNO;

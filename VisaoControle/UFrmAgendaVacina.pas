@@ -8,7 +8,14 @@ uses
   , URepositorioProximaVacina
   , URegraCrudProximaVacina
   , UProximaVacina
-  , UUtilitarios, Mask, Grids, DBGrids
+  , UVacinaNova
+  , URepositorioVacinaNova
+  , UCarteiraVacinacao
+  , URepositorioCarteiraVacinacao
+  , URepositorioPaciente
+  , UPaciente
+  , UUtilitarios, Mask, Grids, DBGrids, DBXFirebird, FMTBcd, DB, DBClient,
+  Provider, SqlExpr
   ;
 
 type
@@ -23,6 +30,15 @@ type
     lbDose: TLabel;
     lbVacina: TLabel;
     dbgProxVacina: TDBGrid;
+    SQLConnAgenda: TSQLConnection;
+    tbVacinaNova: TSQLTable;
+    DataSetProviderAgenda: TDataSetProvider;
+    ClientDataSetAgenda: TClientDataSet;
+    DataSourceagenda: TDataSource;
+    Timer1: TTimer;
+    procedure dbgProxVacinaDrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TColumn; State: TGridDrawState);
+    procedure Timer1Timer(Sender: TObject);
 private
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -47,6 +63,27 @@ implementation
 
 { TFrmAgendaVacina }
 
+procedure TFrmAgendaVacina.dbgProxVacinaDrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TColumn; State: TGridDrawState);
+begin
+  inherited;
+  if (Column.Field.FieldName = 'VACINA') then
+      begin
+         if FLD_VACINA = FLD_CAR_VACINA then
+            begin
+               dbgProxVacina.Canvas.Font.Color:=clGreen ;
+               dbgProxVacina.Canvas.FillRect(Rect);
+               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+            end
+         else
+             begin
+               dbgProxVacina.Canvas.Font.Color:= clRed ;
+               dbgProxVacina.Canvas.FillRect(Rect);
+               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+             end;
+      end;
+end;
+
 procedure TFrmAgendaVacina.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);
 begin
@@ -66,7 +103,7 @@ begin
     .AdicionaFiltro(FLD_SUS_CODIGO)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
     .DefineNomePesquisa(STR_PROX_VACINA)
-    .DefineVisao(TBL_PROX_VACINA));
+    .DefineVisao(TBL_PACIENTE));
 end;
 
 procedure TFrmAgendaVacina.PosicionaCursorPrimeiroCampo;
@@ -93,6 +130,13 @@ begin
   edDataRetorno.Text    := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
   cbVacinaRetorno.Text  := FPROXIMAVACINA.VACINA_RETORNO  ;
   cbDoseRetorno.Text    := FPROXIMAVACINA.DOSE;
+end;
+
+procedure TFrmAgendaVacina.Timer1Timer(Sender: TObject);
+begin
+  inherited;
+ tbVacinaNova.Refresh;
+ ClientDataSetAgenda.Refresh;
 end;
 
 end.

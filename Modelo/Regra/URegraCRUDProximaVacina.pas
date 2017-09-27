@@ -39,8 +39,8 @@ procedure TRegraCRUDProximaVacina.ValidaInsercao(const coENTIDADE: TENTIDADE);
 begin
   inherited;
 
-  if Trim(TPROXIMAVACINA(coENTIDADE).SUS_CODIGO) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CODIGO_SUS_NAO_INFORMADO);
+  //if Trim(TPROXIMAVACINA(coENTIDADE).SUS_CODIGO) = EmptyStr Then
+    //raise EValidacaoNegocio.Create(STR_CODIGO_SUS_NAO_INFORMADO);
 
   if (TPROXIMAVACINA(coENTIDADE).NOME) = EmptyStr then
     raise EValidacaoNegocio.Create (STR_VACINA_NAO_INFORMADA);
