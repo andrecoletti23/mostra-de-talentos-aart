@@ -11,6 +11,8 @@ uses
   , ULoteVacina
   , URepositorioDB
   , SqlExpr
+  , UPaciente
+  , URepositorioPaciente
   ;
 
 type
@@ -18,6 +20,7 @@ type
   private
     FRepositorioCoren: TRepositorioCoren;
     FRepositorioLoteVacina: TRepositorioLoteVacina;
+    FRepositorioPaciente : TRepositorioPaciente;
 
   public
     constructor Create;
@@ -43,12 +46,12 @@ constructor TRepositorioCarteiraVacinacao.Create;
 begin
  inherited
    Create(TCARTEIRA_VACINACAO, TBL_CARTEIRA_VACINACAO, FLD_ENTIDADE_ID, STR_CARTEIRA_VACINACAO);
-   FRepositorioCoren := TRepositorioCoren.Create;
+   FRepositorioPaciente := TRepositorioPaciente.Create;
  end;
 
 destructor TRepositorioCarteiraVacinacao.Destroy;
 begin
-  FreeAndNil(FRepositorioCoren) ;
+  FreeAndNil(FRepositorioPaciente) ;
   FreeAndNil(FRepositorioLoteVacina);
   inherited;
 end;
@@ -59,7 +62,8 @@ begin
   inherited;
   with FSQLSelect do
     begin
-        coCARTEIRA_VACINACAO.COD_VACINACAO      := FieldByName(FLD_CAR_COD_VACINACAO).AsString ;
+        coCARTEIRA_VACINACAO.COD_VACINACAO      := FRepositorioPaciente.Retorna
+                                (FieldByName(FLD_ID).AsInteger) ;
         coCARTEIRA_VACINACAO.NOME               := FieldByName(FLD_CAR_NOME).AsString ;
         coCARTEIRA_VACINACAO.VACINA             := FieldByName(FLD_CAR_VACINA).AsString ;
         coCARTEIRA_VACINACAO.DOSE               := FieldByName(FLD_CAR_DOSE).AsString ;

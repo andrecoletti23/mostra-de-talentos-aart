@@ -127,7 +127,6 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
-      OnDrawColumnCell = dbgProxVacinaDrawColumnCell
     end
     object StaticText1: TStaticText
       Left = 568

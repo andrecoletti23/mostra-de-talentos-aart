@@ -6,13 +6,14 @@ uses
     UEntidade
   , UCoren
   , ULoteVacina
+  , UPaciente
   ;
 
 type
   TCARTEIRA_VACINACAO = class(TENTIDADE)
   public
   ID                : Integer;
-  COD_VACINACAO     : String; //NÃO PODE SER UNIQUE!!!!! VÁRIAS VACÍNAS PARA PACIENTES
+  COD_VACINACAO     : TPACIENTE; //NÃO PODE SER UNIQUE!!!!! VÁRIAS VACÍNAS PARA PACIENTES
 	NOME              : String;
 	VACINA            : String;
 	DOSE              : String; //MUDAR PARA VARCHAR NO DB E ARRUMAR DTO
@@ -24,8 +25,8 @@ type
   UNIDADE_SAUDE     : String;
   //TUDO OK, FALTANDO CRIAR COM TENTIDADES
 
-    //constructor Create; override;
-   // destructor Destroy; override;
+    constructor Create; override;
+    destructor Destroy; override;
   end;
 
 const
@@ -52,20 +53,20 @@ uses
 
 { TCARTEIRA_VACINACAO }
 
-{constructor TCARTEIRA_VACINACAO.Create;
+constructor TCARTEIRA_VACINACAO.Create;
 begin
   inherited;
-  COD_COREN       := TCOREN.Create;
-  LOTE_VENCIMENTO := TLOTEVACINA.Create;
-  COD_LOTE        := TLOTEVACINA.Create;
+  COD_VACINACAO       := TPACIENTE.Create;
+  {LOTE_VENCIMENTO := TLOTEVACINA.Create;
+  COD_LOTE        := TLOTEVACINA.Create;}
 end;
 
 destructor TCARTEIRA_VACINACAO.Destroy;
 begin
-  FreeAndNil(COD_COREN);
-  FreeAndNil(COD_LOTE);
-  FreeAndNil(LOTE_VENCIMENTO);
+  FreeAndNil(COD_VACINACAO);
+  {FreeAndNil(COD_LOTE);
+  FreeAndNil(LOTE_VENCIMENTO);}
   inherited;
-end; }
+end;
 
 end.

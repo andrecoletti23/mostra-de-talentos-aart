@@ -37,8 +37,6 @@ type
     DataSourceagenda: TDataSource;
     Timer1: TTimer;
     StaticText1: TStaticText;
-    procedure dbgProxVacinaDrawColumnCell(Sender: TObject; const Rect: TRect;
-      DataCol: Integer; Column: TColumn; State: TGridDrawState);
     procedure Timer1Timer(Sender: TObject);
 private
     procedure Inicializa; override;
@@ -65,28 +63,6 @@ implementation
 
 { TFrmAgendaVacina }
 
-procedure TFrmAgendaVacina.dbgProxVacinaDrawColumnCell(Sender: TObject;
-  const Rect: TRect; DataCol: Integer; Column: TColumn; State: TGridDrawState);
-begin
-  inherited;
-
-  if (Column.Field.FieldName = 'VACINA') then
-      begin
-         if FLD_VACINA = FLD_CAR_VACINA then
-            begin
-               dbgProxVacina.Canvas.Font.Color:=clGreen ;
-               dbgProxVacina.Canvas.FillRect(Rect);
-               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-            end
-         else
-             begin
-               dbgProxVacina.Canvas.Font.Color:= clRed ;
-               dbgProxVacina.Canvas.FillRect(Rect);
-               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-             end;
-      end;
-end;
-
 procedure TFrmAgendaVacina.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);
 begin
@@ -106,7 +82,7 @@ begin
     .AdicionaFiltro(FLD_SUS_CODIGO)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
     .DefineNomePesquisa(STR_PROX_VACINA)
-    .DefineVisao(TBL_PACIENTE));
+    .DefineVisao(TBL_PROX_VACINA));
 end;
 
 procedure TFrmAgendaVacina.PosicionaCursorPrimeiroCampo;
@@ -118,7 +94,7 @@ end;
 procedure TFrmAgendaVacina.PreencheEntidade;
 begin
   inherited;
-  FPROXIMAVACINA.SUS_CODIGO         := FPACIENTE.CODIGO_SUS;
+  FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
   FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
   FPROXIMAVACINA.DATA_RETORNO       := StrToDate(edSusRetorno.Text);
   FPROXIMAVACINA.VACINA_RETORNO     := cbVacinaRetorno.Text;
@@ -128,8 +104,8 @@ end;
 procedure TFrmAgendaVacina.PreencheFormulario;
 begin
   inherited;
-  edSusRetorno.Text     := inttostr(FPROXIMAVACINA.ID);
-  StaticText1.Caption   := FPACIENTE.CODIGO_SUS;
+  edSusRetorno.Text     := FPROXIMAVACINA.SUS_CODIGO;
+  StaticText1.Caption   := inttostr(FPACIENTE.ID);
   edNomeRetorno.Text    := FPROXIMAVACINA.NOME ;
   edDataRetorno.Text    := DateToStr(FPROXIMAVACINA.DATA_RETORNO);
   cbVacinaRetorno.Text  := FPROXIMAVACINA.VACINA_RETORNO  ;

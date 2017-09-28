@@ -143,8 +143,8 @@ begin
     .Create
     .AdicionaFiltro(FLD_NOME)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
-    .DefineNomePesquisa(STR_PACIENTE)
-    .DefineVisao(TBL_PACIENTE));
+    .DefineNomePesquisa(STR_CARTEIRA_VACINACAO)
+    .DefineVisao(TBL_CARTEIRA_VACINACAO));
 end;
 
 procedure TfrmVacinas.PosicionaCursorPrimeiroCampo;
