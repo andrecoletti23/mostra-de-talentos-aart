@@ -18,6 +18,7 @@ uses
   , UFrmAgendaVacina
   , UVacinaNova
   , URepositorioVacinaNova
+  , URepositorioPaciente
   ;
 
 type
@@ -47,6 +48,7 @@ protected
     FPROXIMAVACINA  : TPROXIMAVACINA;
     FFRMAGENDAVACINA : TFRMAGENDAVACINA;
     FVACINANOVA : TVACINANOVA;
+    FPACIENTE : TPACIENTE;
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
     FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
@@ -176,7 +178,7 @@ end;
 procedure TfrmVacinas.PreencheFormulario;
 begin
   inherited;
-  edCodSus.Text         :=FCARTEIRA_VACINACAO.COD_VACINACAO     ;
+  edCodSus.Text         :=IntToStr(FCARTEIRA_VACINACAO.COD_VACINACAO );
   edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
   cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
@@ -186,7 +188,6 @@ begin
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
   edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
   edUnidadeSaude.Text   :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
-
   {edSusRetorno.Text :=FPROXIMAVACINA.SUS_CODIGO;
   edNomeRetorno.Text:=FPROXIMAVACINA.NOME ;
   edDataRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
