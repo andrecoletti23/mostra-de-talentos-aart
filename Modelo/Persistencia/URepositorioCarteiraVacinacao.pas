@@ -52,7 +52,6 @@ begin
 destructor TRepositorioCarteiraVacinacao.Destroy;
 begin
   FreeAndNil(FRepositorioPaciente) ;
-  FreeAndNil(FRepositorioLoteVacina);
   inherited;
 end;
 
@@ -63,7 +62,7 @@ begin
   with FSQLSelect do
     begin
         coCARTEIRA_VACINACAO.COD_VACINACAO      := FRepositorioPaciente.Retorna
-                                (FieldByName(FLD_ID).AsInteger) ;
+                                (FieldByName(FLD_CAR_COD_VACINACAO).AsInteger) ;
         coCARTEIRA_VACINACAO.NOME               := FieldByName(FLD_CAR_NOME).AsString ;
         coCARTEIRA_VACINACAO.VACINA             := FieldByName(FLD_CAR_VACINA).AsString ;
         coCARTEIRA_VACINACAO.DOSE               := FieldByName(FLD_CAR_DOSE).AsString ;
