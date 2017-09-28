@@ -1,9 +1,10 @@
 object frmTelaInicial: TfrmTelaInicial
   Left = 0
   Top = 0
+  Anchors = [akLeft, akTop, akRight, akBottom]
   BorderStyle = bsNone
-  ClientHeight = 726
-  ClientWidth = 1012
+  ClientHeight = 426
+  ClientWidth = 839
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,16 +13,17 @@ object frmTelaInicial: TfrmTelaInicial
   Font.Style = []
   FormStyle = fsMDIChild
   OldCreateOrder = False
+  Position = poDesktopCenter
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    1012
-    726)
+    839
+    426)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 24
-    Top = 421
+    Left = 0
+    Top = 229
     Width = 244
     Height = 37
     Caption = 'Pr'#243'ximos Pacientes '
@@ -33,10 +35,11 @@ object frmTelaInicial: TfrmTelaInicial
     ParentFont = False
   end
   object DBGrid1: TDBGrid
-    Left = 24
-    Top = 464
-    Width = 1153
-    Height = 225
+    AlignWithMargins = True
+    Left = 3
+    Top = 280
+    Width = 828
+    Height = 132
     Anchors = [akLeft, akTop, akRight, akBottom]
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
@@ -46,8 +49,8 @@ object frmTelaInicial: TfrmTelaInicial
     TitleFont.Style = []
   end
   object Button1: TButton
-    Left = 64
-    Top = 192
+    Left = 32
+    Top = 48
     Width = 121
     Height = 129
     Caption = 'Cadastro'
@@ -55,8 +58,8 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 224
-    Top = 192
+    Left = 208
+    Top = 48
     Width = 121
     Height = 129
     Caption = 'Vacina'#231#227'o'
@@ -64,8 +67,8 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 376
-    Top = 192
+    Left = 384
+    Top = 48
     Width = 129
     Height = 129
     Caption = 'Deposito'
@@ -73,8 +76,8 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 560
-    Top = 192
+    Left = 584
+    Top = 48
     Width = 129
     Height = 129
     Caption = 'Cadastro Usu'#225'rios'

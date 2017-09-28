@@ -1,4 +1,6 @@
 inherited frmPacientes: TfrmPacientes
+  AlignWithMargins = True
+  Anchors = [akLeft, akTop, akRight, akBottom]
   Caption = 'Cadastro/Altera'#231#227'o de Pacientes - SUS'
   ClientHeight = 572
   ClientWidth = 1012
@@ -38,20 +40,20 @@ inherited frmPacientes: TfrmPacientes
     ExplicitTop = 531
     ExplicitWidth = 1012
     inherited btnLimpar: TBitBtn
-      Left = 802
-      ExplicitLeft = 802
+      Left = 774
+      ExplicitLeft = 774
     end
     inherited btnExcluir: TBitBtn
-      Left = 685
-      ExplicitLeft = 685
+      Left = 657
+      ExplicitLeft = 657
     end
     inherited btnGravar: TBitBtn
-      Left = 568
-      ExplicitLeft = 568
+      Left = 539
+      ExplicitLeft = 539
     end
     inherited btnSair: TBitBtn
-      Left = 919
-      ExplicitLeft = 919
+      Left = 891
+      ExplicitLeft = 891
     end
   end
   object gbIdentificacao: TGroupBox [3]

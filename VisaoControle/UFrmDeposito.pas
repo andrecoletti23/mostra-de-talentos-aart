@@ -107,8 +107,8 @@ end;
 procedure TfrmDeposito.Timer1Timer(Sender: TObject);
 begin
   inherited;
- //tbDeposito.Refresh;
- //ClientDataSet1.Refresh;
+ tbDeposito.Refresh;
+ ClientDataSet1.Refresh;
 end;
 
 end.

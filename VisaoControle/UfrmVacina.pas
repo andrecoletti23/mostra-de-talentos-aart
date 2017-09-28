@@ -39,7 +39,7 @@ type
     stCodigoSUS: TStaticText;
     stNome: TStaticText;
     procedure FormCreate(Sender: TObject);
-    procedure cbVacinasExit(Sender: TObject);
+    //procedure cbVacinasExit(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
     procedure btnLocalizarCidadeClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);
@@ -116,9 +116,10 @@ begin
     end;
 end;
 
-procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
+{procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
 begin
   inherited;
+  dmEntra21.SQLSelect.Close;
   dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do
@@ -127,7 +128,7 @@ begin
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
-end;
+end;}
 
 procedure TfrmVacinas.Finaliza;
 begin
@@ -143,6 +144,14 @@ begin
   while not dmEntra21.SQLSelect.Eof do
     begin
       cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Vacina').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+  dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('Dose').AsString);
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
@@ -180,7 +189,7 @@ end;
 procedure TfrmVacinas.PreencheEntidade;
 begin
   inherited;
-  //FCARTEIRA_VACINACAO.ID_SUS           := edCodSus.Text;
+  FCARTEIRA_VACINACAO.ID_SUS.ID           := StrToInt(edCodSus.Text);
   FCARTEIRA_VACINACAO.NOME             := stNome.Caption;
   FCARTEIRA_VACINACAO.VACINA           := cbVacinas.text;
   FCARTEIRA_VACINACAO.DOSE             := cbDose.Text;

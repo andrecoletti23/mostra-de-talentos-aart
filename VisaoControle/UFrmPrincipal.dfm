@@ -1,9 +1,12 @@
 object FrmPrincipal: TFrmPrincipal
   Left = 245
   Top = 191
+  Align = alClient
+  AutoSize = True
+  BorderStyle = bsToolWindow
   Caption = 'Carteirinha Online'
-  ClientHeight = 627
-  ClientWidth = 755
+  ClientHeight = 637
+  ClientWidth = 898
   Color = 4142595
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,29 +15,33 @@ object FrmPrincipal: TFrmPrincipal
   Font.Style = []
   FormStyle = fsMDIForm
   OldCreateOrder = False
+  Position = poDesktopCenter
   WindowState = wsMaximized
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object sbPrincipal: TStatusBar
     Left = 0
-    Top = 608
-    Width = 755
+    Top = 618
+    Width = 898
     Height = 19
     Panels = <
       item
         Width = 50
       end>
+    ExplicitTop = 608
+    ExplicitWidth = 755
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 755
+    Width = 898
     Height = 121
     Align = alTop
     Color = 4142595
     ParentBackground = False
     TabOrder = 1
+    ExplicitWidth = 755
     object Image1: TImage
       Left = 16
       Top = 16
@@ -1154,12 +1161,13 @@ object FrmPrincipal: TFrmPrincipal
   object Panel2: TPanel
     Left = 0
     Top = 121
-    Width = 755
+    Width = 898
     Height = 16
     Align = alTop
     Caption = 'Panel2'
     Color = clBackground
     ParentBackground = False
     TabOrder = 2
+    ExplicitWidth = 755
   end
 end
