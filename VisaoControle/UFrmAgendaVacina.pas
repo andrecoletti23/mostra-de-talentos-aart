@@ -69,20 +69,25 @@ begin
   inherited;
   if (Column.Field.FieldName = 'VACINA') then
       begin
-         if FLD_VACINA = FLD_CAR_VACINA then
-            begin
-               dbgProxVacina.Canvas.Font.Color:=clGreen ;
-               dbgProxVacina.Canvas.FillRect(Rect);
-               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-            end
-         else
-             begin
-               dbgProxVacina.Canvas.Font.Color:= clRed ;
-               dbgProxVacina.Canvas.FillRect(Rect);
-               dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
-             end;
-      end;
+         TPACIENTE.Create;
+         TCARTEIRA_VACINACAO.Create;
+           begin
+             if FLD_CAR_VACINA = FLD_VACINA  then
+                begin
+                   dbgProxVacina.Canvas.Font.Color:=clGreen ;
+                   dbgProxVacina.Canvas.FillRect(Rect);
+                   dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+                end
+             else
+                 begin
+                   dbgProxVacina.Canvas.Font.Color:= clRed ;
+                   dbgProxVacina.Canvas.FillRect(Rect);
+                   dbgProxVacina.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+                 end;
+          end;
+    end;
 end;
+
 
 procedure TFrmAgendaVacina.HabilitaCampos(
   const ceTipoOperacaoUsuario: TTipoOperacaoUsuario);

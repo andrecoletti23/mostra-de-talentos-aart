@@ -173,7 +173,6 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 64
     Top = 408
   end
@@ -190,7 +189,6 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     Top = 416
   end
   object ClientDataSetAgenda: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProviderAgenda'
