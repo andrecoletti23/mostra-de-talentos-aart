@@ -2,37 +2,27 @@ inherited frmPacientes: TfrmPacientes
   Caption = 'Cadastro/Altera'#231#227'o de Pacientes - SUS'
   ClientHeight = 572
   ClientWidth = 1012
-  ExplicitWidth = 1030
-  ExplicitHeight = 619
+  ExplicitWidth = 1028
+  ExplicitHeight = 611
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 1012
-    Color = 6176512
-    ParentBackground = False
     ExplicitWidth = 1012
     inherited lbCabecalho: TLabel
       Top = 2
       Width = 429
-      Height = 23
       Caption = 'CADASTRO DE PACIENTES - SISTEMA '#218'NICO DE SA'#218'DE'
-      Font.Height = -17
-      Font.Name = 'Segoe UI'
-      Font.Style = []
       ExplicitTop = 2
       ExplicitWidth = 429
-      ExplicitHeight = 23
     end
   end
   inherited gbLocalizar: TGroupBox
     Width = 1012
-    Color = 6176512
     Font.Color = clWhite
     Font.Height = -12
     Font.Name = 'Segoe UI Semilight'
     Font.Style = []
-    ParentBackground = False
-    ParentColor = False
     ExplicitWidth = 1012
   end
   inherited pnlBotoes: TPanel

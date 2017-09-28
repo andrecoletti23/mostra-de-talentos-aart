@@ -8,19 +8,13 @@ inherited frmDeposito: TfrmDeposito
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 749
-    Color = 6176512
-    ParentBackground = False
     ExplicitWidth = 749
     inherited lbCabecalho: TLabel
-      Color = 6176512
       ParentColor = False
     end
   end
   inherited gbLocalizar: TGroupBox
     Width = 749
-    Color = 6176512
-    ParentBackground = False
-    ParentColor = False
     ExplicitWidth = 749
   end
   inherited pnlBotoes: TPanel
@@ -58,29 +52,47 @@ inherited frmDeposito: TfrmDeposito
     TabOrder = 3
     object lbVencimento: TLabel
       Left = 235
-      Top = 71
-      Width = 79
-      Height = 13
+      Top = 68
+      Width = 111
+      Height = 20
       Caption = 'Vencimento Lote'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object edNomeVacina: TLabeledEdit
       Left = 8
       Top = 37
       Width = 726
       Height = 21
-      EditLabel.Width = 76
-      EditLabel.Height = 13
+      EditLabel.Width = 109
+      EditLabel.Height = 20
       EditLabel.Caption = 'Nome da Vacina'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 0
     end
     object edLaboratorio: TLabeledEdit
       Left = 8
-      Top = 133
+      Top = 136
       Width = 726
       Height = 21
-      EditLabel.Width = 119
-      EditLabel.Height = 13
+      EditLabel.Width = 164
+      EditLabel.Height = 20
       EditLabel.Caption = 'Laborat'#243'rio Respons'#225'vel'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 1
     end
     object edLoteVacina: TLabeledEdit
@@ -88,9 +100,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 169
       Height = 21
-      EditLabel.Width = 21
-      EditLabel.Height = 13
+      EditLabel.Width = 29
+      EditLabel.Height = 20
       EditLabel.Caption = 'Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 2
     end
     object edQuantidade: TLabeledEdit
@@ -98,9 +116,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 284
       Height = 21
-      EditLabel.Width = 95
-      EditLabel.Height = 13
+      EditLabel.Width = 133
+      EditLabel.Height = 20
       EditLabel.Caption = 'Quantidade do Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 3
     end
     object edVencimento: TMaskEdit

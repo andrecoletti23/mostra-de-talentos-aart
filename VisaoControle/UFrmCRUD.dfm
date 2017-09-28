@@ -39,14 +39,14 @@ object FrmCRUD: TFrmCRUD
     object lbCabecalho: TLabel
       Left = 8
       Top = 5
-      Width = 119
-      Height = 19
+      Width = 112
+      Height = 23
       Caption = 'CADASTRO DE'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Height = -17
+      Font.Name = 'Segoe UI'
+      Font.Style = []
       ParentFont = False
     end
   end
@@ -70,15 +70,15 @@ object FrmCRUD: TFrmCRUD
     ParentFont = False
     TabOrder = 1
     object lbCodigo: TLabel
-      Left = 65
-      Top = 24
-      Width = 33
-      Height = 13
+      Left = 55
+      Top = 21
+      Width = 49
+      Height = 20
       Caption = 'C'#243'digo'
       Font.Charset = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end

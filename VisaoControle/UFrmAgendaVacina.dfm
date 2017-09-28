@@ -13,6 +13,10 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
   inherited gbLocalizar: TGroupBox
     Width = 819
     ExplicitWidth = 819
+    inherited lbCodigo: TLabel
+      Top = 23
+      ExplicitTop = 23
+    end
   end
   inherited pnlBotoes: TPanel
     Top = 502
@@ -51,32 +55,56 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     object lbData: TLabel
       Left = 8
       Top = 69
-      Width = 23
-      Height = 13
+      Width = 32
+      Height = 20
       Caption = 'Data'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object lbDose: TLabel
-      Left = 423
-      Top = 71
-      Width = 24
-      Height = 13
+      Left = 422
+      Top = 69
+      Width = 34
+      Height = 20
       Caption = 'Dose'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object lbVacina: TLabel
       Left = 148
-      Top = 70
-      Width = 31
-      Height = 13
+      Top = 69
+      Width = 42
+      Height = 18
       Caption = 'Vacina'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
     end
     object edSusRetorno: TLabeledEdit
       Left = 8
       Top = 40
       Width = 121
       Height = 21
-      EditLabel.Width = 55
-      EditLabel.Height = 13
+      EditLabel.Width = 79
+      EditLabel.Height = 20
       EditLabel.Caption = 'Codigo SUS'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 0
     end
     object edNomeRetorno: TLabeledEdit
@@ -84,9 +112,15 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       Top = 40
       Width = 385
       Height = 21
-      EditLabel.Width = 27
-      EditLabel.Height = 13
+      EditLabel.Width = 41
+      EditLabel.Height = 20
       EditLabel.Caption = 'Nome'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 1
     end
     object edDataRetorno: TMaskEdit
@@ -104,6 +138,12 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       Top = 88
       Width = 273
       Height = 21
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 3
     end
     object cbDoseRetorno: TComboBox

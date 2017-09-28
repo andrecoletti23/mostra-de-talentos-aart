@@ -2,7 +2,7 @@ object FrmLogin: TFrmLogin
   Left = 0
   Top = 0
   Caption = 'FrmLogin'
-  ClientHeight = 201
+  ClientHeight = 178
   ClientWidth = 346
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
@@ -15,18 +15,30 @@ object FrmLogin: TFrmLogin
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 18
-    Top = 43
-    Width = 40
-    Height = 13
+    Left = 7
+    Top = 39
+    Width = 53
+    Height = 20
     Caption = 'Usu'#225'rio:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 24
-    Top = 112
-    Width = 34
-    Height = 13
+    Left = 11
+    Top = 91
+    Width = 43
+    Height = 20
     Caption = 'Senha:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object edLogin: TEdit
     Left = 64
@@ -36,17 +48,17 @@ object FrmLogin: TFrmLogin
     TabOrder = 0
   end
   object edSenha: TEdit
-    Left = 64
-    Top = 109
-    Width = 257
+    Left = 60
+    Top = 93
+    Width = 261
     Height = 21
     PasswordChar = '*'
     TabOrder = 1
     OnKeyDown = edSenhaKeyDown
   end
   object btnEntrar: TButton
-    Left = 64
-    Top = 152
+    Left = 60
+    Top = 128
     Width = 75
     Height = 25
     Caption = 'Entrar'
@@ -55,7 +67,7 @@ object FrmLogin: TFrmLogin
   end
   object btnCancelar: TButton
     Left = 246
-    Top = 152
+    Top = 128
     Width = 75
     Height = 25
     Caption = 'Cancelar'
