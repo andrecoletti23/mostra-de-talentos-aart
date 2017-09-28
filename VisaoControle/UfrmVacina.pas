@@ -19,6 +19,7 @@ uses
   , UVacinaNova
   , URepositorioVacinaNova
   , URepositorioPaciente
+  , URegraCRUDPaciente
   ;
 
 type
@@ -38,11 +39,16 @@ type
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
+    edID: TLabeledEdit;
+    btnLocalizarCidade: TButton;
+    stNomeCidade: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure cbVacinasExit(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
     procedure dbVacincaoDrawColumnCell(Sender: TObject; const Rect: TRect;
       DataCol: Integer; Column: TColumn; State: TGridDrawState);
+    procedure btnLocalizarCidadeClick(Sender: TObject);
+    procedure btnLocalizarCidadeExit(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
     FPROXIMAVACINA  : TPROXIMAVACINA;
@@ -52,6 +58,7 @@ protected
 
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
     FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina;
+    FRegraCRUDPaciente : TRegraCRUDPaciente;
 
     procedure Inicializa; override;
     procedure PreencheEntidade; override;
@@ -71,6 +78,7 @@ implementation
   , UFrmPesquisa
   , UDialogo
   , UDM
+  , URegraCRUD
   ;
 {$R *.dfm}
 
@@ -79,6 +87,38 @@ procedure TfrmVacinas.btnGravarClick(Sender: TObject);
 begin
   inherited;
   Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+end;
+
+procedure TfrmVacinas.btnLocalizarCidadeClick(Sender: TObject);
+begin
+  edID.Text := TfrmPesquisa.MostrarPesquisa(TOpcaoPesquisa
+    .Create
+    .DefineVisao(TBL_PACIENTE)
+    .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
+    .DefineNomePesquisa(STR_PACIENTE)
+    .AdicionaFiltro(FLD_ENTIDADE_ID));
+
+  if Trim(edCodSus.Text) <> EmptyStr then
+    edCodSus.OnExit(btnLocalizarCidade);
+end;
+
+procedure TfrmVacinas.btnLocalizarCidadeExit(Sender: TObject);
+begin
+  stNomeCidade.Caption := EmptyStr;
+  if Trim(edID.Text) <> EmptyStr then
+    try
+      FRegraCRUDPaciente.ValidaExistencia(StrToIntDef(edID.Text, 0));
+      FCARTEIRA_VACINACAO.ID_SUS := TPACIENTE(
+        FRegraCRUDPaciente.Retorna(StrToIntDef(edID.Text, 0)));
+
+      stNomeCidade.Caption := FCARTEIRA_VACINACAO.ID_SUS.CODIGO_SUS;
+    except
+      on E: Exception do
+        begin
+          TDialogo.Excecao(E);
+          edID.SetFocus;
+        end;
+    end;
 end;
 
 procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
@@ -158,7 +198,8 @@ end;
 procedure TfrmVacinas.PreencheEntidade;
 begin
   inherited;
-  FCARTEIRA_VACINACAO.COD_VACINACAO    := edCodSus.Text;
+  //FCARTEIRA_VACINACAO.ID_SUS           := edID.Text;
+  //FCARTEIRA_VACINACAO.COD_VACINACAO    := edCodSus.Text;
   FCARTEIRA_VACINACAO.NOME             := edNome.Text;
   FCARTEIRA_VACINACAO.VACINA           := cbVacinas.text;
   FCARTEIRA_VACINACAO.DOSE             := cbDose.Text;
@@ -169,16 +210,13 @@ begin
   FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
   FCARTEIRA_VACINACAO.UNIDADE_SAUDE    := edUnidadeSaude.Text;
 
-  {FPROXIMAVACINA.SUS_CODIGO         := edSusRetorno.Text;
-  FPROXIMAVACINA.NOME               := edNomeRetorno.Text;
-  FPROXIMAVACINA.DATA_RETORNO       := edSusRetorno.Text;
-  FPROXIMAVACINA.VACINA_RETORNO     := cbProximaVacina.Text; }
 end;
 
 procedure TfrmVacinas.PreencheFormulario;
 begin
   inherited;
-  edCodSus.Text         :=IntToStr(FCARTEIRA_VACINACAO.COD_VACINACAO );
+  //edID.Text             := IntToStr(FCARTEIRA_VACINACAO.ID_SUS.ID);
+  //edCodSus.Text         :=FCARTEIRA_VACINACAO.COD_VACINACAO;
   edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
   cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
@@ -188,10 +226,6 @@ begin
   edLoteVacina.Text     :=FCARTEIRA_VACINACAO.COD_LOTE          ;
   edVencimento.Text     :=DateToStr(FCARTEIRA_VACINACAO.LOTE_VENCIMENTO)  ;
   edUnidadeSaude.Text   :=FCARTEIRA_VACINACAO.UNIDADE_SAUDE        ;
-  {edSusRetorno.Text :=FPROXIMAVACINA.SUS_CODIGO;
-  edNomeRetorno.Text:=FPROXIMAVACINA.NOME ;
-  edDataRetorno.Text:=FPROXIMAVACINA.DATA_RETORNO;
-  cbProximaVacina.Text:=FPROXIMAVACINA.VACINA_RETORNO  ;  }
 end;
 
 end.

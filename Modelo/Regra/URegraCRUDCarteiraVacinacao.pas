@@ -39,8 +39,8 @@ procedure TRegraCRUDCarteiraVacinacao.ValidaInsercao(const coENTIDADE: TENTIDADE
 begin
   inherited;
 
-  if Trim(TCARTEIRA_VACINACAO(coENTIDADE).COD_VACINACAO) = EmptyStr Then
-    raise EValidacaoNegocio.Create(STR_CODIGO_VACINA_NAO_INFORAMADO);
+  //if Trim(TCARTEIRA_VACINACAO(coENTIDADE).COD_VACINACAO) = EmptyStr Then
+   // raise EValidacaoNegocio.Create(STR_CODIGO_VACINA_NAO_INFORAMADO);
 
   if (TCARTEIRA_VACINACAO(coENTIDADE).NOME) = EmptyStr then
     raise EValidacaoNegocio.Create (STR_CODIGO_VACINA_NAO_INFORAMADO);

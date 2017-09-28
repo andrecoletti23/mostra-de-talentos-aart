@@ -13,7 +13,7 @@ uses
 type
   TRegraCRUDPaciente = class(TRegraCRUD)
   protected
-    procedure ValidaInsercao(const coENTIDADE: TENTIDADE); override;
+   // procedure ValidaInsercao(const coENTIDADE: TENTIDADE); override;
   public
     constructor Create; override;
   end;
@@ -35,7 +35,7 @@ begin
   FRepositorioDB := TRepositorioDB<TENTIDADE>(TRepositorioPaciente.Create);
 end;
 
-procedure TRegraCRUDPaciente.ValidaInsercao(const coENTIDADE: TENTIDADE);
+{procedure TRegraCRUDPaciente.ValidaInsercao(const coENTIDADE: TENTIDADE);
 begin
   inherited;
 
@@ -71,6 +71,6 @@ begin
 
   if Trim(TPACIENTE(coENTIDADE).CIDADE) = EmptyStr Then
     raise EValidacaoNegocio.Create(STR_CIDADE_NAO_INFORMADA);
-end;
+end;}
 
 end.

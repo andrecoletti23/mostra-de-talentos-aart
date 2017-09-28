@@ -11,7 +11,7 @@ type
   TPROXIMAVACINA = class(TENTIDADE)
    public
      ID               : Integer;
-     SUS_CODIGO       : TPACIENTE; //CRIAR UM REFERENCE NA TABELA TALVEZ
+     SUS_CODIGO       : String; //CRIAR UM REFERENCE NA TABELA TALVEZ
      NOME             : String;
      DATA_RETORNO     : TDate;
      VACINA_RETORNO   : String;
@@ -44,12 +44,12 @@ USES
 constructor TPROXIMAVACINA.create;
 begin
   inherited;
-  SUS_CODIGO := TPACIENTE.Create;
+  //SUS_CODIGO := TPACIENTE.Create;
 end;
 
 destructor TPROXIMAVACINA.destroy;
 begin
-  FREEANDNIL(SUS_CODIGO);
+  //FREEANDNIL(SUS_CODIGO);
   inherited;
 end;
 

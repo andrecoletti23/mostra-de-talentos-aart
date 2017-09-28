@@ -44,8 +44,8 @@ begin
   inherited;
   with FSQLSelect do
     begin
-      coPROXIMAVACINA.SUS_CODIGO         := TPACIENTE(
-      FRepositorioPaciente.Retorna(FieldByName(FLD_ID).AsInteger));
+      coPROXIMAVACINA.SUS_CODIGO         := FieldByName(FLD_SUS_CODIGO).AsString;
+      //TPACIENTE( FRepositorioPaciente.Retorna(FieldByName(FLD_ID).AsInteger));
       coPROXIMAVACINA.NOME               := FieldByName(FLD_NOME).AsString;
       coPROXIMAVACINA.DATA_RETORNO       := FieldByName(FLD_DATA_RETORNO).AsDateTime;
       coPROXIMAVACINA.VACINA_RETORNO     := FieldByName(FLD_VACINA_RETORNO).AsString;
