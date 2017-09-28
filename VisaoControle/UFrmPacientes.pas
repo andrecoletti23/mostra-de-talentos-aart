@@ -60,6 +60,7 @@ protected
     FRegraCRUDPaciente: TRegraCRUDPaciente;
 
     procedure Inicializa; override;
+    //procedure Finaliza; override;
     procedure PreencheEntidade; override;
     procedure PreencheFormulario; override;
     procedure PosicionaCursorPrimeiroCampo; override;

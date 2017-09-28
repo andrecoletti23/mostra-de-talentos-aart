@@ -5,10 +5,8 @@ interface
 uses
     UCarteiraVacinacao
   , UEntidade
-  , UCoren
-  , URepositorioCoren
-  , URepositorioLoteVacina
-  , ULoteVacina
+  , UPaciente
+  , URepositorioPaciente
   , URepositorioDB
   , SqlExpr
   ;
@@ -16,9 +14,7 @@ uses
 type
   TRepositorioCarteiraVacinacao = class(TRepositorioDB<TCARTEIRA_VACINACAO>)
   private
-    FRepositorioCoren: TRepositorioCoren;
-    FRepositorioLoteVacina: TRepositorioLoteVacina;
-
+    FRepositorioPaciente : TRepositorioPaciente;
   public
     constructor Create;
     destructor Destroy; override;
@@ -43,13 +39,12 @@ constructor TRepositorioCarteiraVacinacao.Create;
 begin
  inherited
    Create(TCARTEIRA_VACINACAO, TBL_CARTEIRA_VACINACAO, FLD_ENTIDADE_ID, STR_CARTEIRA_VACINACAO);
-   FRepositorioCoren := TRepositorioCoren.Create;
+   FRepositorioPaciente := TRepositorioPaciente.Create;
  end;
 
 destructor TRepositorioCarteiraVacinacao.Destroy;
 begin
-  FreeAndNil(FRepositorioCoren) ;
-  FreeAndNil(FRepositorioLoteVacina);
+  FreeAndNil(FRepositorioPaciente) ;
   inherited;
 end;
 
@@ -59,7 +54,9 @@ begin
   inherited;
   with FSQLSelect do
     begin
-        coCARTEIRA_VACINACAO.COD_VACINACAO      := FieldByName(FLD_CAR_COD_VACINACAO).AsString ;
+        //coCARTEIRA_VACINACAO.COD_VACINACAO      := FieldByName(FLD_CAR_COD_VACINACAO).AsString ;
+        coCARTEIRA_VACINACAO.ID_SUS             :=  TPACIENTE
+        (FRepositorioPaciente.Retorna(FieldByName(FLD_ENTIDADE_ID).AsInteger));
         coCARTEIRA_VACINACAO.NOME               := FieldByName(FLD_CAR_NOME).AsString ;
         coCARTEIRA_VACINACAO.VACINA             := FieldByName(FLD_CAR_VACINA).AsString ;
         coCARTEIRA_VACINACAO.DOSE               := FieldByName(FLD_CAR_DOSE).AsString ;
@@ -81,7 +78,7 @@ begin
   inherited;
   with coSQLQuery do
     begin
-      ParamByName(FLD_CAR_COD_VACINACAO).AsString 	:= coCARTEIRA_VACINACAO.COD_VACINACAO ;
+      //ParamByName(FLD_CAR_COD_VACINACAO).AsString 	:= coCARTEIRA_VACINACAO.COD_VACINACAO ;
       ParamByName(FLD_CAR_NOME).AsString 			      := coCARTEIRA_VACINACAO.NOME ;
       ParamByName(FLD_CAR_VACINA).AsString 			    := coCARTEIRA_VACINACAO.VACINA ;
       ParamByName(FLD_CAR_DOSE).AsString  		      := coCARTEIRA_VACINACAO.DOSE ;

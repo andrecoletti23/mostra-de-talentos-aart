@@ -10,7 +10,7 @@ uses
 type
   TPROXIMAVACINA = class(TENTIDADE)
    public
-     ID               : Integer;
+     //ID               : Integer;
      SUS_CODIGO       : TPACIENTE; //CRIAR UM REFERENCE NA TABELA TALVEZ
      NOME             : String;
      DATA_RETORNO     : TDate;
@@ -23,7 +23,7 @@ type
 
 const
    TBL_PROX_VACINA      = 'PROX_VACINA';
-   FLD_ID               = 'ID';
+   //FLD_ID               = 'ID';
    FLD_SUS_CODIGO       = 'SUS_COGIDO';
    FLD_NOME             = 'NOME';
    FLD_DATA_RETORNO     = 'DATA_RETORNO';

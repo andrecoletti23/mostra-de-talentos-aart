@@ -8,7 +8,7 @@ uses
 type
   TPACIENTE = class(TENTIDADE)
     public
-      ID : Integer ;
+      //ID : Integer ;
       CODIGO_SUS : String;
       NOME : String ;
       NASCIMENTO : TDateTime ;
@@ -34,7 +34,7 @@ type
 
   const
     TBL_PACIENTE      = 'PACIENTE';
-    FLD_ID            = 'ID';
+    //FLD_ID            = 'ID';
     FLD_CODIGO_SUS	  = 'CODIGO_SUS';
     FLD_NOME	        = 'NOME';
     FLD_NASCIMENTO    = 'NASCIMENTO';

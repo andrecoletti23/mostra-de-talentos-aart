@@ -9,7 +9,7 @@ uses
 type
   TCOREN = class(TENTIDADE)
    public
-   ID            : Integer;
+   //ID            : Integer;
    COREN         : String;
    NOME          : String;
    ESPECIFICACAO : String;
@@ -19,7 +19,7 @@ type
 
 const
   TBL_COREN          = 'COREN';
-  FLD_ID             = 'ID' ;
+  //FLD_ID             = 'ID' ;
   FLD_COREN          = 'COREN';
   FLD_NOME           = 'NOME';
   FLD_ESPECIFICACAO  = 'ESPECIFICACAO';

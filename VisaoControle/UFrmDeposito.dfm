@@ -8,19 +8,13 @@ inherited frmDeposito: TfrmDeposito
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 749
-    Color = 6176512
-    ParentBackground = False
     ExplicitWidth = 749
     inherited lbCabecalho: TLabel
-      Color = 6176512
       ParentColor = False
     end
   end
   inherited gbLocalizar: TGroupBox
     Width = 749
-    Color = 6176512
-    ParentBackground = False
-    ParentColor = False
     ExplicitWidth = 749
   end
   inherited pnlBotoes: TPanel

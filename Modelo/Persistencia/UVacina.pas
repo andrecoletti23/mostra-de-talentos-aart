@@ -11,7 +11,7 @@ uses
 type
   TVACINA = class(TENTIDADE)
   public
-    ID              : Integer;
+   // ID              : Integer;
     CODIGO          : Integer;
     NOME            : String;
     IDADE_MINIMA    : Double;
@@ -28,7 +28,7 @@ type
 
 const
   TBL_VACINA       = 'VACINA';
-  FLD_ID           = 'ID';
+  //FLD_ID           = 'ID';
   FLD_CODIGO       = 'CODIGO';
   FLD_NOME         = 'NOME';
   FLD_IDADE_MINIMA = 'IDADE_MINIMA';
