@@ -218,8 +218,8 @@ inherited frmDeposito: TfrmDeposito
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

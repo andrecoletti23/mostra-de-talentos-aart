@@ -232,9 +232,6 @@ inherited frmVacinas: TfrmVacinas
     Align = alClient
     Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
-    ExplicitLeft = -3
-    ExplicitTop = 353
-    ExplicitHeight = 139
     object dbVacinacao: TDBGrid
       AlignWithMargins = True
       Left = 5
@@ -279,8 +276,8 @@ inherited frmVacinas: TfrmVacinas
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -299,6 +296,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 392
   end
   object tbVacinaNova: TSQLTable
+    Active = True
     MasterSource = DataSourceVacina
     MaxBlobSize = -1
     SQLConnection = SQLConVacina

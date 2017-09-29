@@ -1586,22 +1586,22 @@ BEGIN
 	SysConst_SOverflow,	"Floating point overflow"
 END
 
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\Controls.res */
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\Buttons.res */
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBLogDlg.dfm */
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBPWDlg.dfm */
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBCtrls.res */
-/* d:\programas instalados\delphi\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmAgendaVacina.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\VisaoControle\UFrmLogin.dfm */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\CarteiraOnline.res */
-/* D:\Downloads\Delphi Projetos\PROJETO TCC\mostra-de-talentos-aart\CarteiraOnline.drf */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\Controls.res */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\Buttons.res */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBLogDlg.dfm */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBPWDlg.dfm */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBCtrls.res */
+/* c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\Modelo\Persistencia\UDM.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPesquisa.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmCRUD.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPacientes.DFM */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmPrincipal.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmAgendaVacina.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UfrmVacina.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmDeposito.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmAgente.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmTelaInicial.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\VisaoControle\UFrmLogin.dfm */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.res */
+/* T:\Documentos\GitHub\mostra-de-talentos-aart\CarteiraOnline.drf */
