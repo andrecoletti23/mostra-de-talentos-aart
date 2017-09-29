@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Grids, DBGrids,UFrmPacientes, Buttons;
+  Dialogs, StdCtrls, Grids, DBGrids,UFrmPacientes, Buttons, DBXFirebird, FMTBcd,
+  DB, Provider, DBClient, SqlExpr;
 
 type
   TfrmTelaInicial = class(TForm)
@@ -14,10 +15,11 @@ type
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
     SpeedButton4: TSpeedButton;
-    procedure Button2Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
+    SQLConInicio: TSQLConnection;
+    tbProxInicio: TSQLTable;
+    ClientDataSetInicio: TClientDataSet;
+    DataSetPInicio: TDataSetProvider;
+    DataSource1: TDataSource;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
@@ -35,7 +37,6 @@ implementation
 
 uses
     UDM
-  , DB
   , UfrmVacina
   , UFrmDeposito
   , UFrmAgente
@@ -44,26 +45,6 @@ uses
 
 
 {$R *.dfm}
-
-procedure TfrmTelaInicial.Button1Click(Sender: TObject);
-begin
-  Application.CreateForm(TfrmPacientes, frmPacientes);
-end;
-
-procedure TfrmTelaInicial.Button2Click(Sender: TObject);
-begin
-  Application.CreateForm(TfrmVacinas, frmVacinas);
-end;
-
-procedure TfrmTelaInicial.Button3Click(Sender: TObject);
-begin
-  Application.CreateForm(TFrmDeposito, FrmDeposito);
-end;
-
-procedure TfrmTelaInicial.Button4Click(Sender: TObject);
-begin
-   Application.CreateForm(TfrmAGENTE, frmAGENTE)
-end;
 
 procedure TfrmTelaInicial.SpeedButton1Click(Sender: TObject);
 begin

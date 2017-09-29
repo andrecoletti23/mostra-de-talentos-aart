@@ -49,6 +49,7 @@ begin
       coPROXIMAVACINA.NOME               := FieldByName(FLD_NOME).AsString;
       coPROXIMAVACINA.DATA_RETORNO       := FieldByName(FLD_DATA_RETORNO).AsDateTime;
       coPROXIMAVACINA.VACINA_RETORNO     := FieldByName(FLD_VACINA_RETORNO).AsString;
+      coPROXIMAVACINA.DOSE               := FieldByName(FLD_DOSE).AsString;
     end;
 end;
 
@@ -62,6 +63,7 @@ begin
       ParamByName(FLD_NOME).AsString                := coPROXIMAVACINA.NOME  ;
       ParamByName(FLD_DATA_RETORNO).AsDate          := coPROXIMAVACINA.DATA_RETORNO ;
       ParamByName(FLD_VACINA_RETORNO).AsString      := coPROXIMAVACINA.VACINA_RETORNO;
+      ParamByName(FLD_DOSE).AsString                := coPROXIMAVACINA.DOSE ;
     end;
   end;
 end.

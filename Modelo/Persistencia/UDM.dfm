@@ -30,8 +30,8 @@ object dmEntra21: TdmEntra21
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:C:\Users\Alunos\Desktop\OMG\mostra-de-talento' +
-        's-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

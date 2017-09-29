@@ -1143,19 +1143,19 @@ object FrmPrincipal: TFrmPrincipal
       ParentFont = False
     end
     object lbCoren: TLabel
-      Left = 143
-      Top = 85
-      Width = 53
-      Height = 24
+      Left = 199
+      Top = 68
+      Width = 42
+      Height = 25
       Caption = 'Teste'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
       Font.Height = -19
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
+      Font.Name = 'Segoe UI'
+      Font.Style = []
       ParentFont = False
     end
-    object Label1: TLabel
+    object lbSaudacao: TLabel
       Left = 671
       Top = 68
       Width = 78

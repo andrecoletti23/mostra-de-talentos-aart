@@ -6169,15 +6169,70 @@ object frmTelaInicial: TfrmTelaInicial
   object DBGrid1: TDBGrid
     AlignWithMargins = True
     Left = 3
-    Top = 280
+    Top = 286
     Width = 994
     Height = 132
     Anchors = [akLeft, akTop, akRight, akBottom]
+    DataSource = DataSource1
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object SQLConInicio: TSQLConnection
+    ConnectionName = 'FBConnection'
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=Firebird'
+      
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    VendorLib = 'fbclient.DLL'
+    Connected = True
+    Left = 112
+    Top = 320
+  end
+  object tbProxInicio: TSQLTable
+    Active = True
+    MaxBlobSize = -1
+    SQLConnection = SQLConInicio
+    TableName = 'PROX_VACINA'
+    Left = 184
+    Top = 320
+  end
+  object ClientDataSetInicio: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetPInicio'
+    Left = 376
+    Top = 328
+  end
+  object DataSetPInicio: TDataSetProvider
+    DataSet = tbProxInicio
+    Left = 288
+    Top = 328
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSetInicio
+    Left = 448
+    Top = 328
   end
 end
