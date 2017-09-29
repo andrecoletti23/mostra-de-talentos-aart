@@ -16,7 +16,6 @@ object FrmPrincipal: TFrmPrincipal
   FormStyle = fsMDIForm
   OldCreateOrder = False
   Position = poDesktopCenter
-  WindowState = wsMaximized
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -29,8 +28,6 @@ object FrmPrincipal: TFrmPrincipal
       item
         Width = 50
       end>
-    ExplicitTop = 608
-    ExplicitWidth = 755
   end
   object Panel1: TPanel
     Left = 0
@@ -41,7 +38,6 @@ object FrmPrincipal: TFrmPrincipal
     Color = 4142595
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 755
     object Image1: TImage
       Left = 16
       Top = 16
@@ -1136,8 +1132,22 @@ object FrmPrincipal: TFrmPrincipal
     object lbNome: TLabel
       Left = 143
       Top = 16
-      Width = 7
+      Width = 78
+      Height = 47
+      Caption = 'Teste'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbCoren: TLabel
+      Left = 143
+      Top = 85
+      Width = 53
       Height = 24
+      Caption = 'Teste'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -19
@@ -1145,16 +1155,17 @@ object FrmPrincipal: TFrmPrincipal
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object lbCoren: TLabel
-      Left = 143
-      Top = 85
-      Width = 7
-      Height = 24
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -19
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
+    object Label1: TLabel
+      Left = 671
+      Top = 68
+      Width = 78
+      Height = 47
+      Caption = 'Teste'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Segoe UI'
+      Font.Style = []
       ParentFont = False
     end
   end
@@ -1168,6 +1179,5 @@ object FrmPrincipal: TFrmPrincipal
     Color = clBackground
     ParentBackground = False
     TabOrder = 2
-    ExplicitWidth = 755
   end
 end

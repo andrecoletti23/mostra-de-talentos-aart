@@ -4,7 +4,7 @@ object frmTelaInicial: TfrmTelaInicial
   Anchors = [akLeft, akTop, akRight, akBottom]
   BorderStyle = bsNone
   ClientHeight = 426
-  ClientWidth = 839
+  ClientWidth = 1005
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object frmTelaInicial: TfrmTelaInicial
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    839
+    1005
     426)
   PixelsPerInch = 96
   TextHeight = 13
@@ -38,7 +38,7 @@ object frmTelaInicial: TfrmTelaInicial
     AlignWithMargins = True
     Left = 3
     Top = 280
-    Width = 828
+    Width = 994
     Height = 132
     Anchors = [akLeft, akTop, akRight, akBottom]
     TabOrder = 0
