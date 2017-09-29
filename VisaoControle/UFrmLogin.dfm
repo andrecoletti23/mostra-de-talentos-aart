@@ -15,18 +15,30 @@ object FrmLogin: TFrmLogin
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 18
-    Top = 43
-    Width = 40
-    Height = 13
+    Left = 8
+    Top = 38
+    Width = 53
+    Height = 20
     Caption = 'Usu'#225'rio:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 24
-    Top = 112
-    Width = 34
-    Height = 13
+    Left = 15
+    Top = 107
+    Width = 43
+    Height = 20
     Caption = 'Senha:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -15
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object edLogin: TEdit
     Left = 64

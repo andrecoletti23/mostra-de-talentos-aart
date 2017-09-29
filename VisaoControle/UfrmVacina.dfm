@@ -2,6 +2,7 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
+  ExplicitTop = -210
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -10,9 +11,14 @@ inherited frmVacinas: TfrmVacinas
     Width = 1012
     ExplicitWidth = 1012
     inherited lbCabecalho: TLabel
-      Width = 219
+      Width = 206
+      Height = 23
       Caption = 'Aplicac'#227'o de Vacinas - SUS'
-      ExplicitWidth = 219
+      Font.Height = -17
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ExplicitWidth = 206
+      ExplicitHeight = 23
     end
   end
   inherited gbLocalizar: TGroupBox
@@ -24,6 +30,8 @@ inherited frmVacinas: TfrmVacinas
     Left = 3
     Top = 572
     Width = 1006
+    Color = 6176512
+    ParentBackground = False
     ExplicitLeft = 3
     ExplicitTop = 572
     ExplicitWidth = 1006
@@ -58,31 +66,43 @@ inherited frmVacinas: TfrmVacinas
     TabOrder = 3
     object lbVacina: TLabel
       Left = 8
-      Top = 65
-      Width = 36
-      Height = 13
+      Top = 60
+      Width = 49
+      Height = 20
       Caption = 'Vacinas'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object lbDose: TLabel
-      Left = 388
-      Top = 64
-      Width = 24
-      Height = 13
+      Left = 385
+      Top = 57
+      Width = 34
+      Height = 20
       BiDiMode = bdLeftToRight
       Caption = 'Dose'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
       ParentBiDiMode = False
+      ParentFont = False
     end
     object Label1: TLabel
-      Left = 560
-      Top = 64
-      Width = 71
-      Height = 13
+      Left = 558
+      Top = 60
+      Width = 102
+      Height = 20
       Caption = 'Data Aplica'#231#227'o'
       Color = 6176512
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -11
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -90,14 +110,14 @@ inherited frmVacinas: TfrmVacinas
     object Label2: TLabel
       Left = 227
       Top = 149
-      Width = 79
-      Height = 13
+      Width = 111
+      Height = 20
       Caption = 'Vencimento Lote'
       Color = 6176512
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -11
-      Font.Name = 'Tahoma'
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -107,9 +127,15 @@ inherited frmVacinas: TfrmVacinas
       Top = 36
       Width = 57
       Height = 21
-      EditLabel.Width = 55
-      EditLabel.Height = 13
+      EditLabel.Width = 74
+      EditLabel.Height = 20
       EditLabel.Caption = 'ID Paciente'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 0
       OnExit = edCodSusExit
     end
@@ -129,12 +155,18 @@ inherited frmVacinas: TfrmVacinas
     end
     object edAplicador: TLabeledEdit
       Left = 8
-      Top = 124
+      Top = 127
       Width = 520
       Height = 21
-      EditLabel.Width = 44
-      EditLabel.Height = 13
+      EditLabel.Width = 65
+      EditLabel.Height = 20
       EditLabel.Caption = 'Aplicador'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 5
     end
     object edCorenApli: TLabeledEdit
@@ -142,29 +174,47 @@ inherited frmVacinas: TfrmVacinas
       Top = 124
       Width = 177
       Height = 21
-      EditLabel.Width = 76
-      EditLabel.Height = 13
+      EditLabel.Width = 108
+      EditLabel.Height = 20
       EditLabel.Caption = 'Coren Aplicador'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 6
     end
     object edLoteVacina: TLabeledEdit
       Left = 8
-      Top = 164
+      Top = 172
       Width = 177
       Height = 21
-      EditLabel.Width = 70
-      EditLabel.Height = 13
+      EditLabel.Width = 97
+      EditLabel.Height = 20
       EditLabel.Caption = 'Lote da Vacina'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 7
     end
     object edUnidadeSaude: TLabeledEdit
       Left = 416
-      Top = 164
+      Top = 172
       Width = 320
       Height = 21
-      EditLabel.Width = 130
-      EditLabel.Height = 13
+      EditLabel.Width = 185
+      EditLabel.Height = 20
       EditLabel.Caption = 'Unidade de Sa'#250'de Aplicada'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 9
     end
     object btnLocalizarPaciente: TButton
@@ -215,7 +265,7 @@ inherited frmVacinas: TfrmVacinas
     end
     object edVencimento: TMaskEdit
       Left = 227
-      Top = 164
+      Top = 172
       Width = 176
       Height = 21
       EditMask = '!99/99/0000;1;_'
@@ -296,7 +346,6 @@ inherited frmVacinas: TfrmVacinas
     Top = 392
   end
   object tbVacinaNova: TSQLTable
-    Active = True
     MasterSource = DataSourceVacina
     MaxBlobSize = -1
     SQLConnection = SQLConVacina
@@ -315,7 +364,6 @@ inherited frmVacinas: TfrmVacinas
     Top = 400
   end
   object ClientDataSetVacina: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetVacinaNova'

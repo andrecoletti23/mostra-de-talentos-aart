@@ -70,15 +70,15 @@ object FrmCRUD: TFrmCRUD
     ParentFont = False
     TabOrder = 1
     object lbCodigo: TLabel
-      Left = 65
-      Top = 24
-      Width = 33
-      Height = 13
+      Left = 49
+      Top = 21
+      Width = 49
+      Height = 20
       Caption = 'C'#243'digo'
       Font.Charset = ANSI_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'Tahoma'
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end

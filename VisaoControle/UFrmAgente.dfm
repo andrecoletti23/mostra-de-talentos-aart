@@ -46,17 +46,29 @@ inherited frmAgente: TfrmAgente
     Align = alTop
     Caption = 'Informa'#231#245'es de Login'
     Color = 6176512
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
     ParentBackground = False
     ParentColor = False
+    ParentFont = False
     TabOrder = 3
     object edLogin: TLabeledEdit
       Left = 16
       Top = 32
       Width = 225
-      Height = 21
-      EditLabel.Width = 25
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 37
+      EditLabel.Height = 20
       EditLabel.Caption = 'Login'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 20
       TabOrder = 0
     end
@@ -64,10 +76,16 @@ inherited frmAgente: TfrmAgente
       Left = 272
       Top = 32
       Width = 225
-      Height = 21
-      EditLabel.Width = 30
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 40
+      EditLabel.Height = 20
       EditLabel.Caption = 'Senha'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 12
       PasswordChar = '*'
       TabOrder = 1
@@ -76,10 +94,16 @@ inherited frmAgente: TfrmAgente
       Left = 525
       Top = 32
       Width = 188
-      Height = 21
-      EditLabel.Width = 108
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 150
+      EditLabel.Height = 20
       EditLabel.Caption = 'Confirma'#231#227'o de Senha'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 12
       PasswordChar = '*'
       TabOrder = 2
@@ -88,10 +112,16 @@ inherited frmAgente: TfrmAgente
       Left = 16
       Top = 78
       Width = 345
-      Height = 21
-      EditLabel.Width = 28
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 43
+      EditLabel.Height = 20
       EditLabel.Caption = 'E-Mail'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 60
       TabOrder = 3
     end
@@ -104,41 +134,65 @@ inherited frmAgente: TfrmAgente
     Align = alTop
     Caption = 'Informa'#231#245'es do Agente'
     Color = 6176512
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
     ParentBackground = False
     ParentColor = False
+    ParentFont = False
     TabOrder = 4
     object Label1: TLabel
       Left = 421
       Top = 23
-      Width = 96
-      Height = 13
+      Width = 136
+      Height = 20
       Caption = 'Data de Nascimento'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object Label2: TLabel
       Left = 495
-      Top = 70
-      Width = 28
-      Height = 13
+      Top = 65
+      Width = 38
+      Height = 20
       Caption = 'Turno'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object edDataNasc: TMaskEdit
       Left = 421
       Top = 40
       Width = 103
-      Height = 21
+      Height = 23
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
       TabOrder = 0
       Text = '  /  /    '
     end
     object edContato: TLabeledEdit
-      Left = 539
+      Left = 571
       Top = 40
       Width = 174
-      Height = 21
-      EditLabel.Width = 39
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 53
+      EditLabel.Height = 20
       EditLabel.Caption = 'Contato'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 15
       TabOrder = 1
     end
@@ -146,10 +200,16 @@ inherited frmAgente: TfrmAgente
       Left = 16
       Top = 87
       Width = 161
-      Height = 21
-      EditLabel.Width = 29
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 39
+      EditLabel.Height = 20
       EditLabel.Caption = 'Coren'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 60
       TabOrder = 2
     end
@@ -157,10 +217,16 @@ inherited frmAgente: TfrmAgente
       Left = 16
       Top = 40
       Width = 385
-      Height = 21
-      EditLabel.Width = 27
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 41
+      EditLabel.Height = 20
       EditLabel.Caption = 'Nome'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 60
       TabOrder = 3
     end
@@ -168,10 +234,16 @@ inherited frmAgente: TfrmAgente
       Left = 201
       Top = 87
       Width = 264
-      Height = 21
-      EditLabel.Width = 64
-      EditLabel.Height = 13
+      Height = 23
+      EditLabel.Width = 90
+      EditLabel.Height = 20
       EditLabel.Caption = 'Especifica'#231#227'o'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       MaxLength = 60
       TabOrder = 4
     end
@@ -179,7 +251,7 @@ inherited frmAgente: TfrmAgente
       Left = 495
       Top = 87
       Width = 218
-      Height = 21
+      Height = 23
       TabOrder = 5
       Items.Strings = (
         'Matutino'
@@ -195,20 +267,26 @@ inherited frmAgente: TfrmAgente
     Align = alBottom
     Caption = 'Informa'#231#245'es Adicionais'
     Color = 6176512
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
     ParentBackground = False
     ParentColor = False
+    ParentFont = False
     TabOrder = 5
     object lbAviso1: TLabel
       Left = 124
       Top = 42
-      Width = 683
-      Height = 21
+      Width = 652
+      Height = 20
       Caption = 
         'Recomendamos que n'#227'o compartilhe esses dados com ningu'#233'm. Seu us' +
         'o '#233' pessoal e intransfer'#237'vel'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -16
+      Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
@@ -216,14 +294,14 @@ inherited frmAgente: TfrmAgente
     object LbAviso2: TLabel
       Left = 176
       Top = 123
-      Width = 560
-      Height = 21
+      Width = 536
+      Height = 20
       Caption = 
         'Qualquer d'#250'vida entrar em contato com o Administrador : admin@ad' +
         'min.com.br'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -16
+      Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
@@ -231,14 +309,14 @@ inherited frmAgente: TfrmAgente
     object Label3: TLabel
       Left = 127
       Top = 69
-      Width = 671
-      Height = 21
+      Width = 639
+      Height = 20
       Caption = 
         'Use uma senha forte, contendo letras, n'#250'meros e caracteres espec' +
         'ias. Seguran'#231'a nunca '#233' demais!'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -16
+      Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
@@ -246,14 +324,14 @@ inherited frmAgente: TfrmAgente
     object Label4: TLabel
       Left = 98
       Top = 15
-      Width = 751
-      Height = 21
+      Width = 720
+      Height = 20
       Caption = 
         'Antes de registrar um cadastro novo, consulte se o mesmo j'#225' n'#227'o ' +
         'possue de alguma outra unidade de sa'#250'de.'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -16
+      Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
