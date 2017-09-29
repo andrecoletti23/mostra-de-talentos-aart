@@ -1,14 +1,15 @@
 inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
-  ClientWidth = 1053
-  ExplicitWidth = 1069
+  ClientWidth = 1012
+  ExplicitTop = -99
+  ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
-    Width = 1053
-    ExplicitWidth = 1053
+    Width = 1012
+    ExplicitWidth = 1012
     inherited lbCabecalho: TLabel
       Width = 219
       Caption = 'Aplicac'#227'o de Vacinas - SUS'
@@ -16,14 +17,14 @@ inherited frmVacinas: TfrmVacinas
     end
   end
   inherited gbLocalizar: TGroupBox
-    Width = 1053
-    ExplicitWidth = 1053
+    Width = 1012
+    ExplicitWidth = 1012
   end
   inherited pnlBotoes: TPanel
     Top = 575
-    Width = 1053
+    Width = 1012
     ExplicitTop = 575
-    ExplicitWidth = 1053
+    ExplicitWidth = 1012
     inherited btnLimpar: TBitBtn
       Left = 818
       ExplicitLeft = 818
@@ -44,7 +45,7 @@ inherited frmVacinas: TfrmVacinas
   object gbVacinacao: TGroupBox [3]
     Left = 0
     Top = 86
-    Width = 1053
+    Width = 1012
     Height = 227
     Align = alTop
     Caption = 'Vacina'#231#227'o'
@@ -68,6 +69,36 @@ inherited frmVacinas: TfrmVacinas
       Caption = 'Dose'
       ParentBiDiMode = False
     end
+    object Label1: TLabel
+      Left = 560
+      Top = 64
+      Width = 71
+      Height = 13
+      Caption = 'Data Aplica'#231#227'o'
+      Color = 6176512
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 227
+      Top = 149
+      Width = 79
+      Height = 13
+      Caption = 'Vencimento Lote'
+      Color = 6176512
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
     object edCodSus: TLabeledEdit
       Left = 8
       Top = 36
@@ -84,23 +115,13 @@ inherited frmVacinas: TfrmVacinas
       Top = 84
       Width = 353
       Height = 21
-      TabOrder = 1
+      TabOrder = 2
     end
     object cbDose: TComboBox
       Left = 385
       Top = 80
       Width = 145
       Height = 21
-      TabOrder = 2
-    end
-    object edDataApli: TLabeledEdit
-      Left = 559
-      Top = 80
-      Width = 177
-      Height = 21
-      EditLabel.Width = 86
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Data de Aplica'#231#227'o'
       TabOrder = 3
     end
     object edAplicador: TLabeledEdit
@@ -111,7 +132,7 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Width = 44
       EditLabel.Height = 13
       EditLabel.Caption = 'Aplicador'
-      TabOrder = 4
+      TabOrder = 5
     end
     object edCorenApli: TLabeledEdit
       Left = 559
@@ -121,7 +142,7 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Width = 76
       EditLabel.Height = 13
       EditLabel.Caption = 'Coren Aplicador'
-      TabOrder = 5
+      TabOrder = 6
     end
     object edLoteVacina: TLabeledEdit
       Left = 8
@@ -131,16 +152,6 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Width = 70
       EditLabel.Height = 13
       EditLabel.Caption = 'Lote da Vacina'
-      TabOrder = 6
-    end
-    object edVencimento: TLabeledEdit
-      Left = 216
-      Top = 164
-      Width = 177
-      Height = 21
-      EditLabel.Width = 94
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Vencimento do Lote'
       TabOrder = 7
     end
     object edUnidadeSaude: TLabeledEdit
@@ -151,7 +162,7 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Width = 130
       EditLabel.Height = 13
       EditLabel.Caption = 'Unidade de Sa'#250'de Aplicada'
-      TabOrder = 8
+      TabOrder = 9
     end
     object btnLocalizarCidade: TButton
       Left = 71
@@ -166,7 +177,7 @@ inherited frmVacinas: TfrmVacinas
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 1
       TabStop = False
       OnClick = btnLocalizarCidadeClick
     end
@@ -189,11 +200,38 @@ inherited frmVacinas: TfrmVacinas
       TabOrder = 10
       Transparent = False
     end
+    object edDataApli: TMaskEdit
+      Left = 559
+      Top = 80
+      Width = 176
+      Height = 21
+      EditMask = '!99/99/0000;1;_'
+      MaxLength = 10
+      TabOrder = 4
+      Text = '  /  /    '
+    end
+    object edVencimento: TMaskEdit
+      Left = 227
+      Top = 164
+      Width = 176
+      Height = 21
+      EditMask = '!99/99/0000;1;_'
+      MaxLength = 10
+      TabOrder = 8
+      Text = '  /  /    '
+    end
+    object edNome: TEdit
+      Left = 424
+      Top = 191
+      Width = 347
+      Height = 21
+      TabOrder = 11
+    end
   end
   object gbHistorico: TGroupBox [4]
     Left = 0
     Top = 313
-    Width = 1053
+    Width = 1012
     Height = 139
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
@@ -202,7 +240,7 @@ inherited frmVacinas: TfrmVacinas
     object dbVacincao: TDBGrid
       Left = 2
       Top = 15
-      Width = 1049
+      Width = 1008
       Height = 122
       Align = alClient
       TabOrder = 0
@@ -231,5 +269,29 @@ inherited frmVacinas: TfrmVacinas
     ParentFont = False
     TabOrder = 5
     Transparent = False
+  end
+  object SQLConVacina: TSQLConnection
+    ConnectionName = 'FBConnection'
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    Params.Strings = (
+      'DriverName=Firebird'
+      'Database=database.fdb'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    VendorLib = 'fbclient.DLL'
+    Left = 24
+    Top = 384
   end
 end

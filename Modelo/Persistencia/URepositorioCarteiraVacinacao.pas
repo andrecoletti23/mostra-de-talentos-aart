@@ -78,7 +78,7 @@ begin
   inherited;
   with coSQLQuery do
     begin
-      //ParamByName(FLD_CAR_COD_VACINACAO).AsString 	:= coCARTEIRA_VACINACAO.COD_VACINACAO ;
+      ParamByName(FLD_CAR_ID_SUS).AsInteger	      := coCARTEIRA_VACINACAO.ID_SUS.ID;
       ParamByName(FLD_CAR_NOME).AsString 			      := coCARTEIRA_VACINACAO.NOME ;
       ParamByName(FLD_CAR_VACINA).AsString 			    := coCARTEIRA_VACINACAO.VACINA ;
       ParamByName(FLD_CAR_DOSE).AsString  		      := coCARTEIRA_VACINACAO.DOSE ;

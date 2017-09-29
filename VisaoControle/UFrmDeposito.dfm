@@ -2,6 +2,7 @@ inherited frmDeposito: TfrmDeposito
   Caption = 'Deposito Vacina'#231#227'o'
   ClientHeight = 460
   ClientWidth = 749
+  ExplicitTop = -54
   ExplicitWidth = 765
   ExplicitHeight = 499
   PixelsPerInch = 96
@@ -16,6 +17,22 @@ inherited frmDeposito: TfrmDeposito
   inherited gbLocalizar: TGroupBox
     Width = 749
     ExplicitWidth = 749
+    inherited lbCodigo: TLabel
+      Left = 58
+      Top = 22
+      Width = 43
+      Height = 17
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      ExplicitLeft = 58
+      ExplicitTop = 22
+      ExplicitWidth = 43
+      ExplicitHeight = 17
+    end
+    inherited edCodigo: TEdit
+      Color = clWindow
+    end
   end
   inherited pnlBotoes: TPanel
     Top = 419
@@ -53,18 +70,30 @@ inherited frmDeposito: TfrmDeposito
     object lbVencimento: TLabel
       Left = 235
       Top = 71
-      Width = 79
-      Height = 13
+      Width = 96
+      Height = 17
       Caption = 'Vencimento Lote'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object edNomeVacina: TLabeledEdit
       Left = 8
       Top = 37
       Width = 726
       Height = 21
-      EditLabel.Width = 76
-      EditLabel.Height = 13
+      EditLabel.Width = 96
+      EditLabel.Height = 17
       EditLabel.Caption = 'Nome da Vacina'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 0
     end
     object edLaboratorio: TLabeledEdit
@@ -72,9 +101,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 133
       Width = 726
       Height = 21
-      EditLabel.Width = 119
-      EditLabel.Height = 13
+      EditLabel.Width = 146
+      EditLabel.Height = 17
       EditLabel.Caption = 'Laborat'#243'rio Respons'#225'vel'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 1
     end
     object edLoteVacina: TLabeledEdit
@@ -82,9 +117,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 169
       Height = 21
-      EditLabel.Width = 21
-      EditLabel.Height = 13
+      EditLabel.Width = 25
+      EditLabel.Height = 17
       EditLabel.Caption = 'Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 2
     end
     object edQuantidade: TLabeledEdit
@@ -92,9 +133,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 284
       Height = 21
-      EditLabel.Width = 95
-      EditLabel.Height = 13
+      EditLabel.Width = 117
+      EditLabel.Height = 17
       EditLabel.Caption = 'Quantidade do Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 3
     end
     object edVencimento: TMaskEdit
@@ -172,8 +219,8 @@ inherited frmDeposito: TfrmDeposito
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

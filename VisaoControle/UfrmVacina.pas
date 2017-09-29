@@ -16,7 +16,7 @@ uses
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
   , UFrmAgendaVacina
-  , URegraCRUDPaciente
+  , URegraCRUDPaciente, Mask, DBXFirebird, DB, SqlExpr
   ;
 
 type
@@ -27,17 +27,21 @@ type
     lbVacina: TLabel;
     cbDose: TComboBox;
     lbDose: TLabel;
-    edDataApli: TLabeledEdit;
     edAplicador: TLabeledEdit;
     edCorenApli: TLabeledEdit;
     edLoteVacina: TLabeledEdit;
-    edVencimento: TLabeledEdit;
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
     btnLocalizarCidade: TButton;
     stCodigoSUS: TStaticText;
     stNome: TStaticText;
+    edNome: TEdit;
+    edDataApli: TMaskEdit;
+    Label1: TLabel;
+    edVencimento: TMaskEdit;
+    Label2: TLabel;
+    SQLConVacina: TSQLConnection;
     procedure FormCreate(Sender: TObject);
     //procedure cbVacinasExit(Sender: TObject);
     procedure btnGravarClick(Sender: TObject);
@@ -73,6 +77,10 @@ implementation
   , UDialogo
   , UDM
   ;
+const
+CNT_SELECIONA_VACINA = 'select vacina from vacina_nova group by Vacina';
+CNT_SELECIONA_DOSE = 'select dose from vacina_nova group by dose';
+
 {$R *.dfm}
 
 { TfrmVacinas }
@@ -106,7 +114,7 @@ begin
         FRegraCRUDPaciente.Retorna(StrToIntDef(edCodSus.Text, 0)));
 
       stCodigoSUS.Caption := FCARTEIRA_VACINACAO.ID_SUS.CODIGO_SUS;
-      stNome.Caption := FCARTEIRA_VACINACAO.ID_SUS.NOME;
+      edNome.Text:= FCARTEIRA_VACINACAO.ID_SUS.NOME;
     except
       on E: Exception do
         begin
@@ -139,19 +147,11 @@ end;
 procedure TfrmVacinas.FormCreate(Sender: TObject);
 begin
   inherited;
-  dmEntra21.SQLSelect.CommandText := 'select Vacina from vacina_nova group by Vacina';
+  dmEntra21.SQLSelect.CommandText := CNT_SELECIONA_VACINA;
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do
     begin
-      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('Vacina').AsString);
-      dmEntra21.SQLSelect.Next;
-    end;
-  dmEntra21.SQLSelect.Close;
-  dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
-  dmEntra21.SQLSelect.Open;
-  while not dmEntra21.SQLSelect.Eof do
-    begin
-      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('Dose').AsString);
+      cbVacinas.Items.Add(dmEntra21.SQLSelect.FieldByName('vacina').AsString);
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
@@ -189,16 +189,16 @@ end;
 procedure TfrmVacinas.PreencheEntidade;
 begin
   inherited;
-  FCARTEIRA_VACINACAO.ID_SUS.ID           := StrToInt(edCodSus.Text);
-  FCARTEIRA_VACINACAO.NOME             := stNome.Caption;
-  FCARTEIRA_VACINACAO.VACINA           := cbVacinas.text;
-  FCARTEIRA_VACINACAO.DOSE             := cbDose.Text;
-  FCARTEIRA_VACINACAO.DATA             := StrToDate(edDataApli.Text);
-  FCARTEIRA_VACINACAO.RESPONSAVEL      := edAplicador.Text;
-  FCARTEIRA_VACINACAO.COD_COREN        := edCorenApli.Text;
-  FCARTEIRA_VACINACAO.COD_LOTE         := edLoteVacina.Text;
-  FCARTEIRA_VACINACAO.LOTE_VENCIMENTO  := StrToDate(edVencimento.Text);
-  FCARTEIRA_VACINACAO.UNIDADE_SAUDE    := edUnidadeSaude.Text;
+  FCARTEIRA_VACINACAO.ID_SUS.ID         := StrToInt(edCodSus.Text);
+  FCARTEIRA_VACINACAO.NOME              := edNome.text;
+  FCARTEIRA_VACINACAO.VACINA            := cbVacinas.text;
+  FCARTEIRA_VACINACAO.DOSE              := cbDose.Text;
+  FCARTEIRA_VACINACAO.DATA              := StrToDate(edDataApli.Text);
+  FCARTEIRA_VACINACAO.RESPONSAVEL       := edAplicador.Text;
+  FCARTEIRA_VACINACAO.COD_COREN         := edCorenApli.Text;
+  FCARTEIRA_VACINACAO.COD_LOTE          := edLoteVacina.Text;
+  FCARTEIRA_VACINACAO.LOTE_VENCIMENTO   := StrToDate(edVencimento.Text);
+  FCARTEIRA_VACINACAO.UNIDADE_SAUDE     := edUnidadeSaude.Text;
 
 end;
 
@@ -206,7 +206,7 @@ procedure TfrmVacinas.PreencheFormulario;
 begin
   inherited;
   //edCodSus.Text         :=FCARTEIRA_VACINACAO.ID_SUS          ;
-  stNome.Caption        :=FCARTEIRA_VACINACAO.NOME              ;
+  edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
   cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
   edDataApli.Text       :=DateToStr(FCARTEIRA_VACINACAO.DATA)   ;
