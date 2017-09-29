@@ -167,7 +167,7 @@ inherited frmVacinas: TfrmVacinas
       EditLabel.Caption = 'Unidade de Sa'#250'de Aplicada'
       TabOrder = 9
     end
-    object btnLocalizarCidade: TButton
+    object btnLocalizarPaciente: TButton
       Left = 71
       Top = 37
       Width = 30
@@ -182,7 +182,7 @@ inherited frmVacinas: TfrmVacinas
       ParentFont = False
       TabOrder = 1
       TabStop = False
-      OnClick = btnLocalizarCidadeClick
+      OnClick = btnLocalizarPacienteClick
     end
     object stCodigoSUS: TStaticText
       Left = 110
@@ -228,17 +228,21 @@ inherited frmVacinas: TfrmVacinas
     Left = 0
     Top = 313
     Width = 1012
-    Height = 139
-    Align = alTop
-    Anchors = [akLeft, akTop, akRight, akBottom]
+    Height = 256
+    Align = alClient
     Caption = 'Hist'#243'rico de Vacina'#231#227'o'
     TabOrder = 4
+    ExplicitLeft = -3
+    ExplicitTop = 353
+    ExplicitHeight = 139
     object dbVacincao: TDBGrid
-      Left = 2
-      Top = 15
-      Width = 1008
-      Height = 122
+      AlignWithMargins = True
+      Left = 5
+      Top = 18
+      Width = 1002
+      Height = 233
       Align = alClient
+      DataSource = DataSourceVacina
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
@@ -271,9 +275,12 @@ inherited frmVacinas: TfrmVacinas
     DriverName = 'Firebird'
     GetDriverFunc = 'getSQLDriverINTERBASE'
     LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
     Params.Strings = (
       'DriverName=Firebird'
-      'Database=database.fdb'
+      
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -287,7 +294,34 @@ inherited frmVacinas: TfrmVacinas
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Left = 64
-    Top = 384
+    Connected = True
+    Left = 32
+    Top = 392
+  end
+  object tbVacinaNova: TSQLTable
+    MasterSource = DataSourceVacina
+    MaxBlobSize = -1
+    SQLConnection = SQLConVacina
+    TableName = 'VACINA_NOVA'
+    Left = 136
+    Top = 400
+  end
+  object DataSourceVacina: TDataSource
+    DataSet = ClientDataSetVacina
+    Left = 472
+    Top = 392
+  end
+  object DataSetVacinaNova: TDataSetProvider
+    DataSet = tbVacinaNova
+    Left = 232
+    Top = 400
+  end
+  object ClientDataSetVacina: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetVacinaNova'
+    Left = 352
+    Top = 400
   end
 end

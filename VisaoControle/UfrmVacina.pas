@@ -16,7 +16,8 @@ uses
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
   , UFrmAgendaVacina
-  , URegraCRUDPaciente, Mask, DBXFirebird, DB, SqlExpr
+  , URegraCRUDPaciente, Mask, DBXFirebird, DB, SqlExpr, FMTBcd, DBClient,
+  Provider
   ;
 
 type
@@ -33,7 +34,7 @@ type
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
     dbVacincao: TDBGrid;
-    btnLocalizarCidade: TButton;
+    btnLocalizarPaciente: TButton;
     stCodigoSUS: TStaticText;
     stNome: TStaticText;
     edDataApli: TMaskEdit;
@@ -41,9 +42,13 @@ type
     edVencimento: TMaskEdit;
     Label2: TLabel;
     SQLConVacina: TSQLConnection;
+    tbVacinaNova: TSQLTable;
+    DataSourceVacina: TDataSource;
+    DataSetVacinaNova: TDataSetProvider;
+    ClientDataSetVacina: TClientDataSet;
     procedure FormCreate(Sender: TObject);
     //procedure cbVacinasExit(Sender: TObject);
-    procedure btnLocalizarCidadeClick(Sender: TObject);
+    procedure btnLocalizarPacienteClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);
     procedure btnGravarExit(Sender: TObject);
 protected
@@ -89,11 +94,11 @@ begin
   inherited;
    If(MessageBox(Handle,PChar('Deseja registrar retorno?'),'Confirmar',Mb_YesNo + MB_ICONINFORMATION)) = IDYes then
      begin
-      Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+       Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
      end;
 end;
 
-procedure TfrmVacinas.btnLocalizarCidadeClick(Sender: TObject);
+procedure TfrmVacinas.btnLocalizarPacienteClick(Sender: TObject);
 begin
   edCodSus.Text := TfrmPesquisa.MostrarPesquisa(TOpcaoPesquisa
     .Create
@@ -104,7 +109,7 @@ begin
     .AdicionaFiltro(FLD_NOME));
 
   if Trim(edCodSus.Text) <> EmptyStr then
-    edCodSus.OnExit(btnLocalizarCidade);
+    edCodSus.OnExit(btnLocalizarPaciente);
 end;
 
 procedure TfrmVacinas.edCodSusExit(Sender: TObject);
@@ -126,20 +131,6 @@ begin
         end;
     end;
 end;
-
-{procedure TfrmVacinas.cbVacinasExit(Sender: TObject);
-begin
-  inherited;
-  dmEntra21.SQLSelect.Close;
-  dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
-  dmEntra21.SQLSelect.Open;
-  while not dmEntra21.SQLSelect.Eof do
-    begin
-      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('Dose').AsString);
-      dmEntra21.SQLSelect.Next;
-    end;
-  dmEntra21.SQLSelect.Close;
-end;}
 
 procedure TfrmVacinas.Finaliza;
 begin
