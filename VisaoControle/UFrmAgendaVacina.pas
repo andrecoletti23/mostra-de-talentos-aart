@@ -135,8 +135,8 @@ end;
 procedure TFrmAgendaVacina.Timer1Timer(Sender: TObject);
 begin
   inherited;
-// tbVacinaNova.Refresh;
- //ClientDataSetAgenda.Refresh;
+tbVacinaNova.Refresh;
+ClientDataSetAgenda.Refresh;
 end;
 
 end.

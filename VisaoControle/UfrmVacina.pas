@@ -36,7 +36,6 @@ type
     btnLocalizarCidade: TButton;
     stCodigoSUS: TStaticText;
     stNome: TStaticText;
-    edNome: TEdit;
     edDataApli: TMaskEdit;
     Label1: TLabel;
     edVencimento: TMaskEdit;
@@ -44,9 +43,9 @@ type
     SQLConVacina: TSQLConnection;
     procedure FormCreate(Sender: TObject);
     //procedure cbVacinasExit(Sender: TObject);
-    procedure btnGravarClick(Sender: TObject);
     procedure btnLocalizarCidadeClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);
+    procedure btnGravarExit(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
     {FPROXIMAVACINA  : TPROXIMAVACINA;
@@ -84,10 +83,14 @@ CNT_SELECIONA_DOSE = 'select dose from vacina_nova group by dose';
 {$R *.dfm}
 
 { TfrmVacinas }
-procedure TfrmVacinas.btnGravarClick(Sender: TObject);
+
+procedure TfrmVacinas.btnGravarExit(Sender: TObject);
 begin
   inherited;
-  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+   If(MessageBox(Handle,PChar('Deseja registrar retorno?'),'Confirmar',Mb_YesNo + MB_ICONINFORMATION)) = IDYes then
+     begin
+      Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+     end;
 end;
 
 procedure TfrmVacinas.btnLocalizarCidadeClick(Sender: TObject);
@@ -114,7 +117,7 @@ begin
         FRegraCRUDPaciente.Retorna(StrToIntDef(edCodSus.Text, 0)));
 
       stCodigoSUS.Caption := FCARTEIRA_VACINACAO.ID_SUS.CODIGO_SUS;
-      edNome.Text:= FCARTEIRA_VACINACAO.ID_SUS.NOME;
+      stNome.Caption:= FCARTEIRA_VACINACAO.ID_SUS.NOME;
     except
       on E: Exception do
         begin
@@ -147,6 +150,7 @@ end;
 procedure TfrmVacinas.FormCreate(Sender: TObject);
 begin
   inherited;
+  dmEntra21.SQLSelect.Close;
   dmEntra21.SQLSelect.CommandText := CNT_SELECIONA_VACINA;
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do
@@ -155,6 +159,15 @@ begin
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
+  dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
+  dmEntra21.SQLSelect.Open;
+  while not dmEntra21.SQLSelect.Eof do
+    begin
+      cbDose.Items.Add(dmEntra21.SQLSelect.FieldByName('Dose').AsString);
+      dmEntra21.SQLSelect.Next;
+    end;
+  dmEntra21.SQLSelect.Close;
+
 end;
 
 procedure TfrmVacinas.HabilitaCampos(
@@ -190,7 +203,7 @@ procedure TfrmVacinas.PreencheEntidade;
 begin
   inherited;
   FCARTEIRA_VACINACAO.ID_SUS.ID         := StrToInt(edCodSus.Text);
-  FCARTEIRA_VACINACAO.NOME              := edNome.text;
+  FCARTEIRA_VACINACAO.NOME              := stNome.Caption;
   FCARTEIRA_VACINACAO.VACINA            := cbVacinas.text;
   FCARTEIRA_VACINACAO.DOSE              := cbDose.Text;
   FCARTEIRA_VACINACAO.DATA              := StrToDate(edDataApli.Text);
@@ -205,8 +218,8 @@ end;
 procedure TfrmVacinas.PreencheFormulario;
 begin
   inherited;
-  //edCodSus.Text         :=FCARTEIRA_VACINACAO.ID_SUS          ;
-  edNome.Text           :=FCARTEIRA_VACINACAO.NOME              ;
+  //edCodSus.Text         :=IntToStr(FCARTEIRA_VACINACAO.ID_SUS.ID)          ;
+  stNome.Caption           :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
   cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
   edDataApli.Text       :=DateToStr(FCARTEIRA_VACINACAO.DATA)   ;

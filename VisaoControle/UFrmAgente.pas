@@ -24,10 +24,13 @@ type
     GroupBox1: TGroupBox;
     lbConfirmacaoSenha: TLabeledEdit;
     gbInformacoesAdicionais: TGroupBox;
-    meInformacoes: TMemo;
     Label1: TLabel;
     edTurno: TComboBox;
     Label2: TLabel;
+    lbAviso1: TLabel;
+    LbAviso2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
 protected
     FAgente: TAgente;
 

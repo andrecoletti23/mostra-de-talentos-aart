@@ -2,7 +2,6 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
-  ExplicitTop = -99
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -21,25 +20,29 @@ inherited frmVacinas: TfrmVacinas
     ExplicitWidth = 1012
   end
   inherited pnlBotoes: TPanel
-    Top = 575
-    Width = 1012
-    ExplicitTop = 575
-    ExplicitWidth = 1012
+    AlignWithMargins = True
+    Left = 3
+    Top = 572
+    Width = 1006
+    ExplicitLeft = 3
+    ExplicitTop = 572
+    ExplicitWidth = 1006
     inherited btnLimpar: TBitBtn
-      Left = 818
-      ExplicitLeft = 818
+      Left = 762
+      ExplicitLeft = 762
     end
     inherited btnExcluir: TBitBtn
-      Left = 701
-      ExplicitLeft = 701
+      Left = 642
+      ExplicitLeft = 642
     end
     inherited btnGravar: TBitBtn
-      Left = 584
-      ExplicitLeft = 584
+      Left = 523
+      OnExit = btnGravarExit
+      ExplicitLeft = 523
     end
     inherited btnSair: TBitBtn
-      Left = 935
-      ExplicitLeft = 935
+      Left = 883
+      ExplicitLeft = 883
     end
   end
   object gbVacinacao: TGroupBox [3]
@@ -220,13 +223,6 @@ inherited frmVacinas: TfrmVacinas
       TabOrder = 8
       Text = '  /  /    '
     end
-    object edNome: TEdit
-      Left = 424
-      Top = 191
-      Width = 347
-      Height = 21
-      TabOrder = 11
-    end
   end
   object gbHistorico: TGroupBox [4]
     Left = 0
@@ -291,7 +287,7 @@ inherited frmVacinas: TfrmVacinas
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Left = 24
+    Left = 64
     Top = 384
   end
 end

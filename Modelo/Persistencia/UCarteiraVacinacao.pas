@@ -13,17 +13,17 @@ type
   TCARTEIRA_VACINACAO = class(TENTIDADE)
   public
   ID_SUS            : TPACIENTE;
-  //COD_VACINACAO     : String; //NÃO PODE SER UNIQUE!!!!! VÁRIAS VACÍNAS PARA PACIENTES
+  //COD_VACINACAO     : String;
 	NOME              : String;
 	VACINA            : String;
-	DOSE              : String; //MUDAR PARA VARCHAR NO DB E ARRUMAR DTO
-	DATA              : TDate; //MUDAR PARA DATE NO DB E ARRUMAR DTO
+	DOSE              : String;
+	DATA              : TDate;
 	RESPONSAVEL       : String;
-	COD_COREN         : String; //TCOREN; MÃO MEXER
-	COD_LOTE          : String; //TLOTEVACINA; NÃO MEXER
-	LOTE_VENCIMENTO   : TDate; //TLOTEVACINA;  MUDAR PARA DATE QUANDO DB ESTIVER OK
+	COD_COREN         : String;
+	COD_LOTE          : String;
+	LOTE_VENCIMENTO   : TDate;
   UNIDADE_SAUDE     : String;
-  //TUDO OK, FALTANDO CRIAR COM TENTIDADES
+
 
     constructor Create; override;
     destructor Destroy; override;
