@@ -17,7 +17,7 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
   inherited pnlBotoes: TPanel
     Top = 221
     Width = 819
-    ExplicitTop = 502
+    ExplicitTop = 221
     ExplicitWidth = 819
     inherited btnLimpar: TBitBtn
       Left = 584
@@ -45,9 +45,6 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     Align = alClient
     Caption = 'Agendamento de Vacinas'
     TabOrder = 3
-    ExplicitLeft = -64
-    ExplicitTop = 84
-    ExplicitHeight = 416
     object lbData: TLabel
       Left = 8
       Top = 69
@@ -56,8 +53,8 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       Caption = 'Data'
     end
     object lbDose: TLabel
-      Left = 423
-      Top = 71
+      Left = 511
+      Top = 69
       Width = 24
       Height = 13
       Caption = 'Dose'
@@ -70,9 +67,9 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       Caption = 'Vacina'
     end
     object edSusRetorno: TLabeledEdit
-      Left = 9
+      Left = 8
       Top = 40
-      Width = 64
+      Width = 153
       Height = 21
       EditLabel.Width = 55
       EditLabel.Height = 13
@@ -80,7 +77,7 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
       TabOrder = 0
     end
     object edNomeRetorno: TLabeledEdit
-      Left = 96
+      Left = 184
       Top = 40
       Width = 433
       Height = 21
@@ -102,12 +99,12 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     object cbVacinaRetorno: TComboBox
       Left = 144
       Top = 88
-      Width = 273
+      Width = 353
       Height = 21
       TabOrder = 3
     end
     object cbDoseRetorno: TComboBox
-      Left = 423
+      Left = 511
       Top = 88
       Width = 106
       Height = 21
