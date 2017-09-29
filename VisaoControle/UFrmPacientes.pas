@@ -60,6 +60,7 @@ protected
     FRegraCRUDPaciente: TRegraCRUDPaciente;
 
     procedure Inicializa; override;
+    //procedure Finaliza; override;
     procedure PreencheEntidade; override;
     procedure PreencheFormulario; override;
     procedure PosicionaCursorPrimeiroCampo; override;
@@ -84,6 +85,7 @@ begin
 inherited;
   with dmEntra21.SQLSelect do
     begin
+      Close;
       CommandText := '';
       CommandText := 'select Nome, UF from cidade where UF = :UF';
       Prepared:= true;
@@ -95,8 +97,10 @@ inherited;
       EstadoAux := dmEntra21.SQLSelect.FieldByName('UF').AsString;
       dmEntra21.SQLSelect.Next;
     end;
+    dmEntra21.SQLSelect.Close;
   with dmEntra21.SQLSelect do
     begin
+      cbCidade.Clear;
       Close;
       CommandText := '';
       CommandText := 'select nome from cidade where uf = :uf';
@@ -116,6 +120,7 @@ end;
 procedure TfrmPacientes.FormCreate(Sender: TObject);
 begin
   inherited;
+  dmEntra21.SQLSelect.Close;
   dmEntra21.SQLSelect.CommandText := 'select UF from cidade group by uf';
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do

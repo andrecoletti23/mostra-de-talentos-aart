@@ -1,9 +1,12 @@
 object FrmPrincipal: TFrmPrincipal
   Left = 245
   Top = 191
+  Align = alClient
+  AutoSize = True
+  BorderStyle = bsToolWindow
   Caption = 'Carteirinha Online'
-  ClientHeight = 627
-  ClientWidth = 755
+  ClientHeight = 637
+  ClientWidth = 898
   Color = 4142595
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,14 +15,14 @@ object FrmPrincipal: TFrmPrincipal
   Font.Style = []
   FormStyle = fsMDIForm
   OldCreateOrder = False
-  WindowState = wsMaximized
+  Position = poDesktopCenter
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object sbPrincipal: TStatusBar
     Left = 0
-    Top = 608
-    Width = 755
+    Top = 618
+    Width = 898
     Height = 19
     Panels = <
       item
@@ -29,7 +32,7 @@ object FrmPrincipal: TFrmPrincipal
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 755
+    Width = 898
     Height = 121
     Align = alTop
     Color = 4142595
@@ -1129,8 +1132,22 @@ object FrmPrincipal: TFrmPrincipal
     object lbNome: TLabel
       Left = 143
       Top = 16
-      Width = 7
+      Width = 78
+      Height = 47
+      Caption = 'Teste'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbCoren: TLabel
+      Left = 143
+      Top = 85
+      Width = 53
       Height = 24
+      Caption = 'Teste'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -19
@@ -1138,23 +1155,24 @@ object FrmPrincipal: TFrmPrincipal
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object lbCoren: TLabel
-      Left = 143
-      Top = 85
-      Width = 7
-      Height = 24
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -19
-      Font.Name = 'MS Sans Serif'
-      Font.Style = [fsBold]
+    object Label1: TLabel
+      Left = 671
+      Top = 68
+      Width = 78
+      Height = 47
+      Caption = 'Teste'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -35
+      Font.Name = 'Segoe UI'
+      Font.Style = []
       ParentFont = False
     end
   end
   object Panel2: TPanel
     Left = 0
     Top = 121
-    Width = 755
+    Width = 898
     Height = 16
     Align = alTop
     Caption = 'Panel2'

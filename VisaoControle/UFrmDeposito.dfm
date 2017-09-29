@@ -8,20 +8,30 @@ inherited frmDeposito: TfrmDeposito
   TextHeight = 13
   inherited pnlCabecalho: TPanel
     Width = 749
-    Color = 6176512
-    ParentBackground = False
     ExplicitWidth = 749
     inherited lbCabecalho: TLabel
-      Color = 6176512
       ParentColor = False
     end
   end
   inherited gbLocalizar: TGroupBox
     Width = 749
-    Color = 6176512
-    ParentBackground = False
-    ParentColor = False
     ExplicitWidth = 749
+    inherited lbCodigo: TLabel
+      Left = 58
+      Top = 22
+      Width = 43
+      Height = 17
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      ExplicitLeft = 58
+      ExplicitTop = 22
+      ExplicitWidth = 43
+      ExplicitHeight = 17
+    end
+    inherited edCodigo: TEdit
+      Color = clWindow
+    end
   end
   inherited pnlBotoes: TPanel
     Top = 419
@@ -59,18 +69,30 @@ inherited frmDeposito: TfrmDeposito
     object lbVencimento: TLabel
       Left = 235
       Top = 71
-      Width = 79
-      Height = 13
+      Width = 96
+      Height = 17
       Caption = 'Vencimento Lote'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
     end
     object edNomeVacina: TLabeledEdit
       Left = 8
       Top = 37
       Width = 726
       Height = 21
-      EditLabel.Width = 76
-      EditLabel.Height = 13
+      EditLabel.Width = 96
+      EditLabel.Height = 17
       EditLabel.Caption = 'Nome da Vacina'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 0
     end
     object edLaboratorio: TLabeledEdit
@@ -78,9 +100,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 133
       Width = 726
       Height = 21
-      EditLabel.Width = 119
-      EditLabel.Height = 13
+      EditLabel.Width = 146
+      EditLabel.Height = 17
       EditLabel.Caption = 'Laborat'#243'rio Respons'#225'vel'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 1
     end
     object edLoteVacina: TLabeledEdit
@@ -88,9 +116,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 169
       Height = 21
-      EditLabel.Width = 21
-      EditLabel.Height = 13
+      EditLabel.Width = 25
+      EditLabel.Height = 17
       EditLabel.Caption = 'Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 2
     end
     object edQuantidade: TLabeledEdit
@@ -98,9 +132,15 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 284
       Height = 21
-      EditLabel.Width = 95
-      EditLabel.Height = 13
+      EditLabel.Width = 117
+      EditLabel.Height = 17
       EditLabel.Caption = 'Quantidade do Lote'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -13
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
       TabOrder = 3
     end
     object edVencimento: TMaskEdit
@@ -128,6 +168,7 @@ inherited frmDeposito: TfrmDeposito
     TitleFont.Style = []
   end
   object tbDeposito: TSQLTable
+    Active = True
     MaxBlobSize = -1
     SQLConnection = SQLConnection1
     TableName = 'LOTE_VACINA'
@@ -140,6 +181,7 @@ inherited frmDeposito: TfrmDeposito
     Top = 368
   end
   object ClientDataSet1: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProvider1'
@@ -194,6 +236,7 @@ inherited frmDeposito: TfrmDeposito
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
+    Connected = True
     Left = 136
     Top = 368
   end

@@ -9,7 +9,7 @@ uses
  type
   TVACINANOVA= Class (TENTIDADE)
     public
-      ID              : Integer;
+      //ID              : Integer;
       //COD_SUS         : TPACIENTE;
       IDADE           : String;
       VACINA          : String;

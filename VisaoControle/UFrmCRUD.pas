@@ -86,14 +86,10 @@ type
 
     function RetornaSelecaoTodos(const csNomeTabelaOuView: String): String;
     function RetornaEntidade(const ciId: Integer): TENTIDADE; virtual;
-    function PreencheComInfromacoesEstadoCidade(CarregaEstado: boolean;
-                                     NomeEstado: string): TStringList;
   public
     procedure AdicionaOpcaoPesquisa(const coOpcaoPesquisa: TOpcaoPesquisa);
   end;
-const
-  CNT_SELECIONA_UF = 'select uf from cidade group by uf order by uf';
-  CNT_SELECIONA_CIDADE = 'select * from cidade where uf = ''%s'' ';
+
 implementation
 
 {$R *.dfm}
@@ -347,30 +343,6 @@ begin
       loOpcaoPesquisa := FListaOpcoesPesquisa[loMenuItem.Tag];
 
       ExecutaPesquisa(loOpcaoPesquisa);
-    end;
-end;
-
-function TFrmCRUD.PreencheComInfromacoesEstadoCidade(CarregaEstado: boolean;
-  NomeEstado: string): TStringList;
-var
-  NomeCampo: string;
-begin
-  if CarregaEstado then
-    NomeCampo := 'UF'
-  else
-    NomeCampo := 'Nome';
-  result:= TStringList.Create;
-  UDM.dmENTRA21.SQLSelect.Close;
-  if CarregaEstado then
-    UDM.dmENTRA21.SQLSelect.CommandText := CNT_SELECIONA_UF
-  else
-    UDM.dmENTRA21.SQLSelect.CommandText := Format(CNT_SELECIONA_CIDADE,[NomeEstado]);
-  UDM.dmENTRA21.SQLSelect.Open;
-
-  while not UDM.dmENTRA21.SQLSelect.Eof do
-    begin
-      result.Add(dmENTRA21.SQLSelect.FieldByName(NomeCampo).AsString);
-      dmENTRA21.SQLSelect.Next
     end;
 end;
 

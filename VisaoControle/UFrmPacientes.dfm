@@ -1,15 +1,15 @@
 inherited frmPacientes: TfrmPacientes
+  AlignWithMargins = True
+  Anchors = [akLeft, akTop, akRight, akBottom]
   Caption = 'Cadastro/Altera'#231#227'o de Pacientes - SUS'
-  ClientHeight = 572
-  ClientWidth = 1012
-  ExplicitWidth = 1030
-  ExplicitHeight = 619
+  ClientHeight = 594
+  ClientWidth = 1049
+  ExplicitWidth = 1065
+  ExplicitHeight = 633
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
-    Width = 1012
-    Color = 6176512
-    ParentBackground = False
+    Width = 1049
     ExplicitWidth = 1012
     inherited lbCabecalho: TLabel
       Top = 2
@@ -25,44 +25,42 @@ inherited frmPacientes: TfrmPacientes
     end
   end
   inherited gbLocalizar: TGroupBox
-    Width = 1012
-    Color = 6176512
+    Width = 1049
     Font.Color = clWhite
     Font.Height = -12
     Font.Name = 'Segoe UI Semilight'
     Font.Style = []
-    ParentBackground = False
-    ParentColor = False
     ExplicitWidth = 1012
   end
   inherited pnlBotoes: TPanel
-    Top = 531
-    Width = 1012
+    Top = 553
+    Width = 1049
     Color = 6176512
     ParentBackground = False
     ExplicitTop = 531
     ExplicitWidth = 1012
     inherited btnLimpar: TBitBtn
-      Left = 802
-      ExplicitLeft = 802
+      Left = 811
+      ExplicitLeft = 774
     end
     inherited btnExcluir: TBitBtn
-      Left = 685
-      ExplicitLeft = 685
+      Left = 694
+      ExplicitLeft = 657
     end
     inherited btnGravar: TBitBtn
-      Left = 568
-      ExplicitLeft = 568
+      Left = 576
+      ExplicitLeft = 539
     end
     inherited btnSair: TBitBtn
-      Left = 919
-      ExplicitLeft = 919
+      Left = 928
+      ExplicitLeft = 891
     end
   end
   object gbIdentificacao: TGroupBox [3]
-    Left = 0
-    Top = 86
-    Width = 1012
+    AlignWithMargins = True
+    Left = 3
+    Top = 89
+    Width = 1043
     Height = 171
     Hint = 'Identifica'#231#227'o do paciente'
     Align = alTop
@@ -79,6 +77,9 @@ inherited frmPacientes: TfrmPacientes
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
+    ExplicitLeft = 0
+    ExplicitTop = 80
+    ExplicitWidth = 1012
     object lbSexo: TLabel
       Left = 836
       Top = 16
@@ -295,9 +296,10 @@ inherited frmPacientes: TfrmPacientes
     end
   end
   object gbLogradouro: TGroupBox [4]
-    Left = 0
-    Top = 257
-    Width = 1012
+    AlignWithMargins = True
+    Left = 3
+    Top = 266
+    Width = 1043
     Height = 152
     Align = alTop
     Caption = 'Logradouro'
@@ -311,6 +313,7 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 4
+    ExplicitLeft = 8
     object lbUF: TLabel
       Left = 582
       Top = 14
@@ -411,10 +414,11 @@ inherited frmPacientes: TfrmPacientes
     end
   end
   object gbAdicionais: TGroupBox [5]
-    Left = 0
-    Top = 409
-    Width = 1012
-    Height = 122
+    AlignWithMargins = True
+    Left = 3
+    Top = 424
+    Width = 1043
+    Height = 126
     Align = alClient
     Caption = 'Informa'#231#245'es Adicionais'
     Color = 6176512
@@ -427,6 +431,10 @@ inherited frmPacientes: TfrmPacientes
     ParentColor = False
     ParentFont = False
     TabOrder = 5
+    ExplicitLeft = 0
+    ExplicitTop = 409
+    ExplicitWidth = 1012
+    ExplicitHeight = 122
     object lbCartaoSUS: TLabel
       Left = 8
       Top = 16

@@ -1,8 +1,8 @@
 object dmEntra21: TdmEntra21
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Height = 136
-  Width = 175
+  Height = 117
+  Width = 204
   object SQLConnection: TSQLConnection
     ConnectionName = 'IBConnection'
     DriverName = 'Firebird'
@@ -30,8 +30,8 @@ object dmEntra21: TdmEntra21
       'LibraryName=dbx4fb.dll'
       'VendorLib=fdbclient.dll'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
+        'DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
@@ -55,7 +55,11 @@ object dmEntra21: TdmEntra21
     GetMetadata = False
     DbxCommandType = 'Dbx.SQL'
     MaxBlobSize = -1
-    Params = <>
+    Params = <
+      item
+        DataType = ftUnknown
+        ParamType = ptUnknown
+      end>
     SQLConnection = SQLConnection
     Left = 112
     Top = 24

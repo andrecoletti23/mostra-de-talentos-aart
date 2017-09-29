@@ -17,6 +17,7 @@ type
     lbNome: TLabel;
     lbCoren: TLabel;
     Panel2: TPanel;
+    Label1: TLabel;
     procedure miSairClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
@@ -49,8 +50,21 @@ begin
 end;
 
 procedure TFrmPrincipal.AtualizaUsuarioLogado;
+var
+ i: integer;
+ dia: string;
 begin
-  lbNome.Caption := TAgenteLogado.Unico.UAgente.AGENTE_NOME;
+  I := Trunc(Time * 24);
+  if I < 6 then
+     dia := 'Boa madrugada'
+  else if I < 12 then
+     dia :=('Bom dia')
+  else if I < 18 then
+     dia := ('Boa tarde')
+  else
+     dia :=('Boa Noite');
+
+  lbNome.Caption :='Bem Vindo, ' + TAgenteLogado.Unico.UAgente.AGENTE_NOME ;
   lbCoren.Caption := TAgenteLogado.Unico.UAgente.AGENTE_COREN;
 end;
 
