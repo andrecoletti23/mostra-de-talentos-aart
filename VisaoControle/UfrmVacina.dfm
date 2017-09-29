@@ -235,7 +235,7 @@ inherited frmVacinas: TfrmVacinas
     ExplicitLeft = -3
     ExplicitTop = 353
     ExplicitHeight = 139
-    object dbVacincao: TDBGrid
+    object dbVacinacao: TDBGrid
       AlignWithMargins = True
       Left = 5
       Top = 18

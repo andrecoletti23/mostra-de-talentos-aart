@@ -33,7 +33,7 @@ type
     edLoteVacina: TLabeledEdit;
     edUnidadeSaude: TLabeledEdit;
     gbHistorico: TGroupBox;
-    dbVacincao: TDBGrid;
+    dbVacinacao: TDBGrid;
     btnLocalizarPaciente: TButton;
     stCodigoSUS: TStaticText;
     stNome: TStaticText;
@@ -47,14 +47,11 @@ type
     DataSetVacinaNova: TDataSetProvider;
     ClientDataSetVacina: TClientDataSet;
     procedure FormCreate(Sender: TObject);
-    //procedure cbVacinasExit(Sender: TObject);
     procedure btnLocalizarPacienteClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);
     procedure btnGravarExit(Sender: TObject);
 protected
     FCARTEIRA_VACINACAO: TCARTEIRA_VACINACAO;
-    {FPROXIMAVACINA  : TPROXIMAVACINA;
-     FRegraCRUDProximaVacina:  TRegraCRUDProximaVacina; }
     FFRMAGENDAVACINA : TFRMAGENDAVACINA;
     FRegraCRUDPaciente : TRegraCRUDPaciente;
     FRegraCRUDCarteiraVacinacao: TRegraCRUDCarteiraVacinacao;
@@ -105,12 +102,12 @@ begin
     .DefineVisao(TBL_PACIENTE)
     .DefineNomeCampoRetorno(FLD_ENTIDADE_ID)
     .DefineNomePesquisa(STR_PACIENTE)
-    .AdicionaFiltro(FLD_CODIGO_SUS)
     .AdicionaFiltro(FLD_NOME));
 
   if Trim(edCodSus.Text) <> EmptyStr then
     edCodSus.OnExit(btnLocalizarPaciente);
 end;
+
 
 procedure TfrmVacinas.edCodSusExit(Sender: TObject);
 begin
@@ -150,7 +147,7 @@ begin
       dmEntra21.SQLSelect.Next;
     end;
   dmEntra21.SQLSelect.Close;
-  dmEntra21.SQLSelect.CommandText := 'select dose from vacina_nova group by dose;';
+  dmEntra21.SQLSelect.CommandText := CNT_SELECIONA_DOSE;
   dmEntra21.SQLSelect.Open;
   while not dmEntra21.SQLSelect.Eof do
     begin

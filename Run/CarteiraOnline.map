@@ -1,6 +1,6 @@
 
  Start         Length     Name                   Class
- 0001:00401000 002B0ABCH .text                   CODE
+ 0001:00401000 002B0A90H .text                   CODE
  0002:006B2000 000016FCH .itext                  ICODE
  0003:006B4000 00006CF8H .data                   DATA
  0004:006BB000 000054E8H .bss                    BSS
@@ -163,15 +163,15 @@ Detailed map of segments
  0001:002A262C 0000160C C=CODE     S=.text    G=(none)   M=URepositorioProximaVacina ACBP=A9
  0001:002A3C38 00000218 C=CODE     S=.text    G=(none)   M=URegraCRUDProximaVacina ACBP=A9
  0001:002A3E50 000009A8 C=CODE     S=.text    G=(none)   M=UFrmAgendaVacina ACBP=A9
- 0001:002A47F8 00001354 C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
- 0001:002A5B4C 00001650 C=CODE     S=.text    G=(none)   M=URepositorioLoteVacina ACBP=A9
- 0001:002A719C 00000250 C=CODE     S=.text    G=(none)   M=URegraCRUDLoteVacina ACBP=A9
- 0001:002A73EC 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
- 0001:002A7C80 0000049C C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
- 0001:002A811C 000009C8 C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
- 0001:002A8AE4 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:002A8F7C 000004FC C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
- 0001:002A9478 00007644 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:002A47F8 00001328 C=CODE     S=.text    G=(none)   M=UfrmVacina ACBP=A9
+ 0001:002A5B20 00001650 C=CODE     S=.text    G=(none)   M=URepositorioLoteVacina ACBP=A9
+ 0001:002A7170 00000250 C=CODE     S=.text    G=(none)   M=URegraCRUDLoteVacina ACBP=A9
+ 0001:002A73C0 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
+ 0001:002A7C54 0000049C C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
+ 0001:002A80F0 000009C8 C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
+ 0001:002A8AB8 00000498 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:002A8F50 000004FC C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
+ 0001:002A944C 00007644 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -565,7 +565,7 @@ Detailed map of segments
  0001:00100954       Buttons.TGlyphList.Destroy
  0003:00002A48       Buttons.WordBreakFlag
  0002:00001628       CarteiraOnline.CarteiraOnline
- 0001:002A9478       CarteiraOnline.Finalization
+ 0001:002A944C       CarteiraOnline.Finalization
  0001:0000D6F8       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -16447,16 +16447,16 @@ Detailed map of segments
  0001:002A4624       UFrmAgendaVacina.TFrmAgendaVacina.PreencheEntidade
  0001:002A472C       UFrmAgendaVacina.TFrmAgendaVacina.PreencheFormulario
  0004:000054D4       UFrmAgente..2
- 0001:002A811C       UFrmAgente..TfrmAgente
- 0001:002A8AA8       UFrmAgente.Finalization
+ 0001:002A80F0       UFrmAgente..TfrmAgente
+ 0001:002A8A7C       UFrmAgente.Finalization
  0004:000054D0       UFrmAgente.frmAgente
  0004:000054DC       UFrmAgente.HashMessageDigest5
  0004:000054D8       UFrmAgente.SenhaHash
- 0001:002A85F4       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:002A862C       UFrmAgente.TfrmAgente.Inicializa
- 0001:002A8740       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:002A875C       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:002A8968       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:002A85C8       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:002A8600       UFrmAgente.TfrmAgente.Inicializa
+ 0001:002A8714       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:002A8730       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:002A893C       UFrmAgente.TfrmAgente.PreencheFormulario
  0002:00001620       UFrmAgente.UFrmAgente
  0001:00265460       UFrmCRUD..TFrmCRUD
  0001:00265F48       UFrmCRUD..{Generics.Collections}TEnumerable<UOpcaoPesquisa.TOpcaoPesquisa>
@@ -16555,19 +16555,19 @@ Detailed map of segments
  0001:00268EB4       UFrmCRUD.{Generics.Defaults}TComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Default
  0001:002690C8       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Compare
  0001:00269080       UFrmCRUD.{Generics.Defaults}TDelegatedComparer<UOpcaoPesquisa.TOpcaoPesquisa>.Create
- 0001:002A73EC       UFrmDeposito..TfrmDeposito
+ 0001:002A73C0       UFrmDeposito..TfrmDeposito
  0004:000054CC       UFrmDeposito.frmDeposito
- 0001:002A78E0       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:002A7918       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:002A7A34       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:002A7A50       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002A7B7C       UFrmDeposito.TfrmDeposito.PreencheFormulario
- 0001:002A7C54       UFrmDeposito.TfrmDeposito.Timer1Timer
- 0001:002A8F7C       UFrmLogin..TFrmLogin
+ 0001:002A78B4       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:002A78EC       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:002A7A08       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:002A7A24       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:002A7B50       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:002A7C28       UFrmDeposito.TfrmDeposito.Timer1Timer
+ 0001:002A8F50       UFrmLogin..TFrmLogin
  0004:000054E4       UFrmLogin.FrmLogin
- 0001:002A9340       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002A9368       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002A9444       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002A9314       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002A933C       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002A9418       UFrmLogin.TFrmLogin.edSenhaKeyDown
  0001:0026BAD4       UFrmPacientes..TfrmPacientes
  0004:000053D0       UFrmPacientes.frmPacientes
  0001:0026C2C0       UFrmPacientes.TfrmPacientes.cbUFSelect
@@ -16593,24 +16593,24 @@ Detailed map of segments
  0001:002A028C       UFrmPrincipal.TFrmPrincipal.AtualizaUsuarioLogado
  0001:002A02D8       UFrmPrincipal.TFrmPrincipal.FormShow
  0001:002A0274       UFrmPrincipal.TFrmPrincipal.miSairClick
- 0001:002A8AE4       UFrmTelaInicial..TfrmTelaInicial
+ 0001:002A8AB8       UFrmTelaInicial..TfrmTelaInicial
  0004:000054E0       UFrmTelaInicial.frmTelaInicial
- 0001:002A8EDC       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002A8F04       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:002A8F2C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:002A8F54       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:002A8EB0       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002A8ED8       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:002A8F00       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:002A8F28       UFrmTelaInicial.TfrmTelaInicial.Button4Click
  0001:002A47F8       UfrmVacina..TfrmVacinas
  0004:000054C8       UfrmVacina.frmVacinas
- 0001:002A4FF0       UfrmVacina.TfrmVacinas.btnGravarExit
- 0001:002A5080       UfrmVacina.TfrmVacinas.btnLocalizarPacienteClick
- 0001:002A5218       UfrmVacina.TfrmVacinas.edCodSusExit
- 0001:002A53A0       UfrmVacina.TfrmVacinas.Finaliza
- 0001:002A53D8       UfrmVacina.TfrmVacinas.FormCreate
- 0001:002A5658       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:002A5690       UfrmVacina.TfrmVacinas.Inicializa
- 0001:002A57C4       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:002A57E0       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:002A59F4       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:002A4FF4       UfrmVacina.TfrmVacinas.btnGravarExit
+ 0001:002A5084       UfrmVacina.TfrmVacinas.btnLocalizarPacienteClick
+ 0001:002A51EC       UfrmVacina.TfrmVacinas.edCodSusExit
+ 0001:002A5374       UfrmVacina.TfrmVacinas.Finaliza
+ 0001:002A53AC       UfrmVacina.TfrmVacinas.FormCreate
+ 0001:002A562C       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:002A5664       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:002A5798       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:002A57B4       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:002A59C8       UfrmVacina.TfrmVacinas.PreencheFormulario
  0001:002A03C8       ULoteVacina..TLOTEVACINA
  0001:00261E1C       UOpcaoPesquisa..TOpcaoPesquisa
  0001:00262418       UOpcaoPesquisa..{Generics.Collections}TList<System.string>
@@ -16697,16 +16697,16 @@ Detailed map of segments
  0001:00261CC8       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.Retorna
  0001:00261264       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaNovoId
  0001:002616DC       URegraCRUD.{URepositorioDB}TRepositorioDB<UEntidade.TENTIDADE>.RetornaParametros
- 0001:002A7C80       URegraCRUDAgente..TRegraCRUDAgente
- 0001:002A7DA8       URegraCRUDAgente.TRegraCRUDAgente.Create
- 0001:002A7DFC       URegraCRUDAgente.TRegraCRUDAgente.ValidaInsercao
- 0001:002A8010       URegraCRUDAgente.TRegraCRUDAgente.ValidarEMail
+ 0001:002A7C54       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:002A7D7C       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:002A7DD0       URegraCRUDAgente.TRegraCRUDAgente.ValidaInsercao
+ 0001:002A7FE4       URegraCRUDAgente.TRegraCRUDAgente.ValidarEMail
  0001:002A2178       URegraCRUDCarteiraVacinacao..TRegraCRUDCarteiraVacinacao
  0001:002A2280       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.Create
  0001:002A22D4       URegraCRUDCarteiraVacinacao.TRegraCRUDCarteiraVacinacao.ValidaInsercao
- 0001:002A719C       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
- 0001:002A728C       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
- 0001:002A72E0       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.ValidaInsercao
+ 0001:002A7170       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
+ 0001:002A7260       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
+ 0001:002A72B4       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.ValidaInsercao
  0001:0026B6B4       URegraCRUDPaciente..TRegraCRUDPaciente
  0001:0026B7A0       URegraCRUDPaciente.TRegraCRUDPaciente.Create
  0001:0026B7F4       URegraCRUDPaciente.TRegraCRUDPaciente.ValidaInsercao
@@ -16756,26 +16756,26 @@ Detailed map of segments
  0001:002A2024       URepositorioCarteiraVacinacao.{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>.Retorna
  0001:002A15C0       URepositorioCarteiraVacinacao.{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>.RetornaNovoId
  0001:002A1A38       URepositorioCarteiraVacinacao.{URepositorioDB}TRepositorioDB<UCarteiraVacinacao.TCARTEIRA_VACINACAO>.RetornaParametros
- 0001:002A5B4C       URepositorioLoteVacina..TRepositorioLoteVacina
- 0001:002A5DD4       URepositorioLoteVacina..{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>
- 0001:002A62C8       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiDBParaEntidade
- 0001:002A6488       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiEntidadeParaDB
- 0001:002A61FC       URepositorioLoteVacina.TRepositorioLoteVacina.Create
- 0001:002A7088       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Achou
- 0001:002A69DC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiDBParaEntidade
- 0001:002A6A1C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiEntidadeParaDB
- 0001:002A6FC0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Atualiza
- 0001:002A6BBC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Create
- 0001:002A6DBC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Destroy
- 0001:002A6E90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Exclui
- 0001:002A69A0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaAtualizacao
- 0001:002A6838       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaInsercao
- 0001:002A7008       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Insere
- 0001:002A6854       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaAtualizacao
- 0001:002A66FC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaInsercao
- 0001:002A7048       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Retorna
- 0001:002A65E4       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaNovoId
- 0001:002A6A5C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaParametros
+ 0001:002A5B20       URepositorioLoteVacina..TRepositorioLoteVacina
+ 0001:002A5DA8       URepositorioLoteVacina..{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>
+ 0001:002A629C       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiDBParaEntidade
+ 0001:002A645C       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiEntidadeParaDB
+ 0001:002A61D0       URepositorioLoteVacina.TRepositorioLoteVacina.Create
+ 0001:002A705C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Achou
+ 0001:002A69B0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiDBParaEntidade
+ 0001:002A69F0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiEntidadeParaDB
+ 0001:002A6F94       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Atualiza
+ 0001:002A6B90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Create
+ 0001:002A6D90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Destroy
+ 0001:002A6E64       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Exclui
+ 0001:002A6974       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaAtualizacao
+ 0001:002A680C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaInsercao
+ 0001:002A6FDC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Insere
+ 0001:002A6828       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaAtualizacao
+ 0001:002A66D0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaInsercao
+ 0001:002A701C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Retorna
+ 0001:002A65B8       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaNovoId
+ 0001:002A6A30       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaParametros
  0001:00269958       URepositorioPaciente..TRepositorioPaciente
  0001:00269BD4       URepositorioPaciente..{URepositorioDB}TRepositorioDB<UPaciente.TPACIENTE>
  0001:0026A0BC       URepositorioPaciente.TRepositorioPaciente.AtribuiDBParaEntidade
@@ -33960,67 +33960,67 @@ Detailed map of segments
  0001:002A4624       UFrmAgendaVacina.TFrmAgendaVacina.PreencheEntidade
  0001:002A472C       UFrmAgendaVacina.TFrmAgendaVacina.PreencheFormulario
  0001:002A47F8       UfrmVacina..TfrmVacinas
- 0001:002A4FF0       UfrmVacina.TfrmVacinas.btnGravarExit
- 0001:002A5080       UfrmVacina.TfrmVacinas.btnLocalizarPacienteClick
- 0001:002A5218       UfrmVacina.TfrmVacinas.edCodSusExit
- 0001:002A53A0       UfrmVacina.TfrmVacinas.Finaliza
- 0001:002A53D8       UfrmVacina.TfrmVacinas.FormCreate
- 0001:002A5658       UfrmVacina.TfrmVacinas.HabilitaCampos
- 0001:002A5690       UfrmVacina.TfrmVacinas.Inicializa
- 0001:002A57C4       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
- 0001:002A57E0       UfrmVacina.TfrmVacinas.PreencheEntidade
- 0001:002A59F4       UfrmVacina.TfrmVacinas.PreencheFormulario
- 0001:002A5B4C       URepositorioLoteVacina..TRepositorioLoteVacina
- 0001:002A5DD4       URepositorioLoteVacina..{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>
- 0001:002A61FC       URepositorioLoteVacina.TRepositorioLoteVacina.Create
- 0001:002A62C8       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiDBParaEntidade
- 0001:002A6488       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiEntidadeParaDB
- 0001:002A65E4       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaNovoId
- 0001:002A66FC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaInsercao
- 0001:002A6838       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaInsercao
- 0001:002A6854       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaAtualizacao
- 0001:002A69A0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaAtualizacao
- 0001:002A69DC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiDBParaEntidade
- 0001:002A6A1C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiEntidadeParaDB
- 0001:002A6A5C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaParametros
- 0001:002A6BBC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Create
- 0001:002A6DBC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Destroy
- 0001:002A6E90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Exclui
- 0001:002A6FC0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Atualiza
- 0001:002A7008       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Insere
- 0001:002A7048       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Retorna
- 0001:002A7088       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Achou
- 0001:002A719C       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
- 0001:002A728C       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
- 0001:002A72E0       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.ValidaInsercao
- 0001:002A73EC       UFrmDeposito..TfrmDeposito
- 0001:002A78E0       UFrmDeposito.TfrmDeposito.HabilitaCampos
- 0001:002A7918       UFrmDeposito.TfrmDeposito.Inicializa
- 0001:002A7A34       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
- 0001:002A7A50       UFrmDeposito.TfrmDeposito.PreencheEntidade
- 0001:002A7B7C       UFrmDeposito.TfrmDeposito.PreencheFormulario
- 0001:002A7C54       UFrmDeposito.TfrmDeposito.Timer1Timer
- 0001:002A7C80       URegraCRUDAgente..TRegraCRUDAgente
- 0001:002A7DA8       URegraCRUDAgente.TRegraCRUDAgente.Create
- 0001:002A7DFC       URegraCRUDAgente.TRegraCRUDAgente.ValidaInsercao
- 0001:002A8010       URegraCRUDAgente.TRegraCRUDAgente.ValidarEMail
- 0001:002A811C       UFrmAgente..TfrmAgente
- 0001:002A85F4       UFrmAgente.TfrmAgente.HabilitaCampos
- 0001:002A862C       UFrmAgente.TfrmAgente.Inicializa
- 0001:002A8740       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
- 0001:002A875C       UFrmAgente.TfrmAgente.PreencheEntidade
- 0001:002A8968       UFrmAgente.TfrmAgente.PreencheFormulario
- 0001:002A8AA8       UFrmAgente.Finalization
- 0001:002A8AE4       UFrmTelaInicial..TfrmTelaInicial
- 0001:002A8EDC       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002A8F04       UFrmTelaInicial.TfrmTelaInicial.Button2Click
- 0001:002A8F2C       UFrmTelaInicial.TfrmTelaInicial.Button3Click
- 0001:002A8F54       UFrmTelaInicial.TfrmTelaInicial.Button4Click
- 0001:002A8F7C       UFrmLogin..TFrmLogin
- 0001:002A9340       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002A9368       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002A9444       UFrmLogin.TFrmLogin.edSenhaKeyDown
- 0001:002A9478       CarteiraOnline.Finalization
+ 0001:002A4FF4       UfrmVacina.TfrmVacinas.btnGravarExit
+ 0001:002A5084       UfrmVacina.TfrmVacinas.btnLocalizarPacienteClick
+ 0001:002A51EC       UfrmVacina.TfrmVacinas.edCodSusExit
+ 0001:002A5374       UfrmVacina.TfrmVacinas.Finaliza
+ 0001:002A53AC       UfrmVacina.TfrmVacinas.FormCreate
+ 0001:002A562C       UfrmVacina.TfrmVacinas.HabilitaCampos
+ 0001:002A5664       UfrmVacina.TfrmVacinas.Inicializa
+ 0001:002A5798       UfrmVacina.TfrmVacinas.PosicionaCursorPrimeiroCampo
+ 0001:002A57B4       UfrmVacina.TfrmVacinas.PreencheEntidade
+ 0001:002A59C8       UfrmVacina.TfrmVacinas.PreencheFormulario
+ 0001:002A5B20       URepositorioLoteVacina..TRepositorioLoteVacina
+ 0001:002A5DA8       URepositorioLoteVacina..{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>
+ 0001:002A61D0       URepositorioLoteVacina.TRepositorioLoteVacina.Create
+ 0001:002A629C       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiDBParaEntidade
+ 0001:002A645C       URepositorioLoteVacina.TRepositorioLoteVacina.AtribuiEntidadeParaDB
+ 0001:002A65B8       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaNovoId
+ 0001:002A66D0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaInsercao
+ 0001:002A680C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaInsercao
+ 0001:002A6828       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.PreparaAtualizacao
+ 0001:002A6974       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.ExecutaAtualizacao
+ 0001:002A69B0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiDBParaEntidade
+ 0001:002A69F0       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.AtribuiEntidadeParaDB
+ 0001:002A6A30       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.RetornaParametros
+ 0001:002A6B90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Create
+ 0001:002A6D90       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Destroy
+ 0001:002A6E64       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Exclui
+ 0001:002A6F94       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Atualiza
+ 0001:002A6FDC       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Insere
+ 0001:002A701C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Retorna
+ 0001:002A705C       URepositorioLoteVacina.{URepositorioDB}TRepositorioDB<ULoteVacina.TLOTEVACINA>.Achou
+ 0001:002A7170       URegraCRUDLoteVacina..TRegraCRUDLoteVacina
+ 0001:002A7260       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.Create
+ 0001:002A72B4       URegraCRUDLoteVacina.TRegraCRUDLoteVacina.ValidaInsercao
+ 0001:002A73C0       UFrmDeposito..TfrmDeposito
+ 0001:002A78B4       UFrmDeposito.TfrmDeposito.HabilitaCampos
+ 0001:002A78EC       UFrmDeposito.TfrmDeposito.Inicializa
+ 0001:002A7A08       UFrmDeposito.TfrmDeposito.PosicionaCursorPrimeiroCampo
+ 0001:002A7A24       UFrmDeposito.TfrmDeposito.PreencheEntidade
+ 0001:002A7B50       UFrmDeposito.TfrmDeposito.PreencheFormulario
+ 0001:002A7C28       UFrmDeposito.TfrmDeposito.Timer1Timer
+ 0001:002A7C54       URegraCRUDAgente..TRegraCRUDAgente
+ 0001:002A7D7C       URegraCRUDAgente.TRegraCRUDAgente.Create
+ 0001:002A7DD0       URegraCRUDAgente.TRegraCRUDAgente.ValidaInsercao
+ 0001:002A7FE4       URegraCRUDAgente.TRegraCRUDAgente.ValidarEMail
+ 0001:002A80F0       UFrmAgente..TfrmAgente
+ 0001:002A85C8       UFrmAgente.TfrmAgente.HabilitaCampos
+ 0001:002A8600       UFrmAgente.TfrmAgente.Inicializa
+ 0001:002A8714       UFrmAgente.TfrmAgente.PosicionaCursorPrimeiroCampo
+ 0001:002A8730       UFrmAgente.TfrmAgente.PreencheEntidade
+ 0001:002A893C       UFrmAgente.TfrmAgente.PreencheFormulario
+ 0001:002A8A7C       UFrmAgente.Finalization
+ 0001:002A8AB8       UFrmTelaInicial..TfrmTelaInicial
+ 0001:002A8EB0       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002A8ED8       UFrmTelaInicial.TfrmTelaInicial.Button2Click
+ 0001:002A8F00       UFrmTelaInicial.TfrmTelaInicial.Button3Click
+ 0001:002A8F28       UFrmTelaInicial.TfrmTelaInicial.Button4Click
+ 0001:002A8F50       UFrmLogin..TFrmLogin
+ 0001:002A9314       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002A933C       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002A9418       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002A944C       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -36017,159 +36017,159 @@ Line numbers for UFrmAgendaVacina(UFrmAgendaVacina.pas) segment .text
 
 Line numbers for UfrmVacina(UfrmVacina.pas) segment .text
 
-    93 0001:002A4FF0    95 0001:002A4FFC    97 0001:002A501B    99 0001:002A5033
-   102 0001:002A5080   103 0001:002A50A4   111 0001:002A511A   112 0001:002A5148
-   113 0001:002A5166   116 0001:002A5218   117 0001:002A523B   118 0001:002A5251
-   119 0001:002A5283   120 0001:002A5291   121 0001:002A52BC   124 0001:002A52F3
-   125 0001:002A5310   127 0001:002A5348   129 0001:002A534B   130 0001:002A5358
-   133 0001:002A536E   136 0001:002A53A0   137 0001:002A53A9   138 0001:002A53B1
-   139 0001:002A53D3   142 0001:002A53D8   143 0001:002A53FA   144 0001:002A5405
-   145 0001:002A5414   146 0001:002A542B   149 0001:002A543C   150 0001:002A546F
-   147 0001:002A547E   152 0001:002A5491   153 0001:002A54A0   154 0001:002A54B7
-   157 0001:002A54C8   158 0001:002A54FB   155 0001:002A550A   160 0001:002A551D
-   162 0001:002A552C   166 0001:002A5658   167 0001:002A5664   168 0001:002A566F
-   169 0001:002A568C   172 0001:002A5690   173 0001:002A56AC   174 0001:002A56B4
-   175 0001:002A56CB   177 0001:002A56E2   184 0001:002A572D   185 0001:002A5742
-   188 0001:002A57C4   190 0001:002A57CB   191 0001:002A57DC   194 0001:002A57E0
-   196 0001:002A5800   197 0001:002A5828   198 0001:002A584D   199 0001:002A5872
-   200 0001:002A5897   201 0001:002A58D5   202 0001:002A58FA   203 0001:002A591F
-   204 0001:002A5944   205 0001:002A5982   207 0001:002A59A7   210 0001:002A59F4
-   213 0001:002A5A0E   214 0001:002A5A28   215 0001:002A5A42   216 0001:002A5A5C
-   217 0001:002A5A8D   218 0001:002A5AA7   219 0001:002A5AC1   220 0001:002A5ADB
-   221 0001:002A5B0C   223 0001:002A5B26   225 0001:002A5B53
+    90 0001:002A4FF4    92 0001:002A5000    94 0001:002A501F    96 0001:002A5037
+    99 0001:002A5084   100 0001:002A50A8   107 0001:002A5114   108 0001:002A5142
+   109 0001:002A5160   113 0001:002A51EC   114 0001:002A520F   115 0001:002A5225
+   116 0001:002A5257   117 0001:002A5265   118 0001:002A5290   121 0001:002A52C7
+   122 0001:002A52E4   124 0001:002A531C   126 0001:002A531F   127 0001:002A532C
+   130 0001:002A5342   133 0001:002A5374   134 0001:002A537D   135 0001:002A5385
+   136 0001:002A53A7   139 0001:002A53AC   140 0001:002A53CE   141 0001:002A53D9
+   142 0001:002A53E8   143 0001:002A53FF   146 0001:002A5410   147 0001:002A5443
+   144 0001:002A5452   149 0001:002A5465   150 0001:002A5474   151 0001:002A548B
+   154 0001:002A549C   155 0001:002A54CF   152 0001:002A54DE   157 0001:002A54F1
+   159 0001:002A5500   163 0001:002A562C   164 0001:002A5638   165 0001:002A5643
+   166 0001:002A5660   169 0001:002A5664   170 0001:002A5680   171 0001:002A5688
+   172 0001:002A569F   174 0001:002A56B6   181 0001:002A5701   182 0001:002A5716
+   185 0001:002A5798   187 0001:002A579F   188 0001:002A57B0   191 0001:002A57B4
+   193 0001:002A57D4   194 0001:002A57FC   195 0001:002A5821   196 0001:002A5846
+   197 0001:002A586B   198 0001:002A58A9   199 0001:002A58CE   200 0001:002A58F3
+   201 0001:002A5918   202 0001:002A5956   204 0001:002A597B   207 0001:002A59C8
+   210 0001:002A59E2   211 0001:002A59FC   212 0001:002A5A16   213 0001:002A5A30
+   214 0001:002A5A61   215 0001:002A5A7B   216 0001:002A5A95   217 0001:002A5AAF
+   218 0001:002A5AE0   220 0001:002A5AFA   222 0001:002A5B27
 
 Line numbers for URepositorioLoteVacina(URepositorioLoteVacina.pas) segment .text
 
-    36 0001:002A61FC    37 0001:002A6227    38 0001:002A6252    41 0001:002A62C8
-    42 0001:002A62E8    43 0001:002A62F3    46 0001:002A62FC    47 0001:002A631F
-    48 0001:002A6342    49 0001:002A6365    50 0001:002A637E    52 0001:002A63A1
-    56 0001:002A6488    57 0001:002A6497    61 0001:002A64A5    62 0001:002A64BD
-    63 0001:002A64D5    64 0001:002A64ED    65 0001:002A6508    67 0001:002A6520
+    36 0001:002A61D0    37 0001:002A61FB    38 0001:002A6226    41 0001:002A629C
+    42 0001:002A62BC    43 0001:002A62C7    46 0001:002A62D0    47 0001:002A62F3
+    48 0001:002A6316    49 0001:002A6339    50 0001:002A6352    52 0001:002A6375
+    56 0001:002A645C    57 0001:002A646B    61 0001:002A6479    62 0001:002A6491
+    63 0001:002A64A9    64 0001:002A64C1    65 0001:002A64DC    67 0001:002A64F4
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   221 0001:002A65E4   222 0001:002A6600   223 0001:002A660B   224 0001:002A663C
-   226 0001:002A6647   227 0001:002A665F
+   221 0001:002A65B8   222 0001:002A65D4   223 0001:002A65DF   224 0001:002A6610
+   226 0001:002A661B   227 0001:002A6633
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   188 0001:002A66FC   189 0001:002A671B   192 0001:002A6729   193 0001:002A6734
-   194 0001:002A6745   197 0001:002A67A3   198 0001:002A67B0
+   188 0001:002A66D0   189 0001:002A66EF   192 0001:002A66FD   193 0001:002A6708
+   194 0001:002A6719   197 0001:002A6777   198 0001:002A6784
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   169 0001:002A6838   170 0001:002A683F   171 0001:002A684F
+   169 0001:002A680C   170 0001:002A6813   171 0001:002A6823
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   174 0001:002A6854   175 0001:002A6873   180 0001:002A687E   181 0001:002A688F
-   184 0001:002A68ED   185 0001:002A68FA
+   174 0001:002A6828   175 0001:002A6847   180 0001:002A6852   181 0001:002A6863
+   184 0001:002A68C1   185 0001:002A68CE
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   163 0001:002A69A0   164 0001:002A69AC   165 0001:002A69C5   166 0001:002A69D5
+   163 0001:002A6974   164 0001:002A6980   165 0001:002A6999   166 0001:002A69A9
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   239 0001:002A69DC   240 0001:002A69E8   241 0001:002A6A03
+   239 0001:002A69B0   240 0001:002A69BC   241 0001:002A69D7
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   245 0001:002A6A1C   246 0001:002A6A2B   247 0001:002A6A43
+   245 0001:002A69F0   246 0001:002A69FF   247 0001:002A6A17
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   204 0001:002A6A5C   205 0001:002A6A82   207 0001:002A6A92   208 0001:002A6A9F
-   209 0001:002A6AB0   211 0001:002A6AC0   213 0001:002A6AEC   214 0001:002A6AFA
-   211 0001:002A6B23   215 0001:002A6B3C   217 0001:002A6B59   218 0001:002A6B91
+   204 0001:002A6A30   205 0001:002A6A56   207 0001:002A6A66   208 0001:002A6A73
+   209 0001:002A6A84   211 0001:002A6A94   213 0001:002A6AC0   214 0001:002A6ACE
+   211 0001:002A6AF7   215 0001:002A6B10   217 0001:002A6B2D   218 0001:002A6B65
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   101 0001:002A6BBC   102 0001:002A6BEB   103 0001:002A6BF5   104 0001:002A6BFE
-   105 0001:002A6C0C   106 0001:002A6C1A   107 0001:002A6C28   109 0001:002A6C60
-   110 0001:002A6C7A   112 0001:002A6C92   113 0001:002A6CAC   115 0001:002A6CC4
-   116 0001:002A6CDE   118 0001:002A6CF6   119 0001:002A6D10   121 0001:002A6D28
-   122 0001:002A6D42   123 0001:002A6D5A
+   101 0001:002A6B90   102 0001:002A6BBF   103 0001:002A6BC9   104 0001:002A6BD2
+   105 0001:002A6BE0   106 0001:002A6BEE   107 0001:002A6BFC   109 0001:002A6C34
+   110 0001:002A6C4E   112 0001:002A6C66   113 0001:002A6C80   115 0001:002A6C98
+   116 0001:002A6CB2   118 0001:002A6CCA   119 0001:002A6CE4   121 0001:002A6CFC
+   122 0001:002A6D16   123 0001:002A6D2E
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   126 0001:002A6DBC   127 0001:002A6DCD   128 0001:002A6DED   129 0001:002A6E0D
-   130 0001:002A6E2D   131 0001:002A6E4D   132 0001:002A6E6D   133 0001:002A6E7B
+   126 0001:002A6D90   127 0001:002A6DA1   128 0001:002A6DC1   129 0001:002A6DE1
+   130 0001:002A6E01   131 0001:002A6E21   132 0001:002A6E41   133 0001:002A6E4F
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   150 0001:002A6E90   151 0001:002A6EAF   153 0001:002A6EBB   154 0001:002A6EC6
-   155 0001:002A6ED7   157 0001:002A6F1B   158 0001:002A6F28   159 0001:002A6F41
-   160 0001:002A6F51
+   150 0001:002A6E64   151 0001:002A6E83   153 0001:002A6E8F   154 0001:002A6E9A
+   155 0001:002A6EAB   157 0001:002A6EEF   158 0001:002A6EFC   159 0001:002A6F15
+   160 0001:002A6F25
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   250 0001:002A6FC0   251 0001:002A6FCD   253 0001:002A6FD9   254 0001:002A6FE1
-   255 0001:002A6FF2   256 0001:002A7000
+   250 0001:002A6F94   251 0001:002A6FA1   253 0001:002A6FAD   254 0001:002A6FB5
+   255 0001:002A6FC6   256 0001:002A6FD4
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   230 0001:002A7008   231 0001:002A7015   232 0001:002A701D   233 0001:002A702E
-   235 0001:002A7036   236 0001:002A7042
+   230 0001:002A6FDC   231 0001:002A6FE9   232 0001:002A6FF1   233 0001:002A7002
+   235 0001:002A700A   236 0001:002A7016
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   259 0001:002A7048   260 0001:002A7054   261 0001:002A7059   263 0001:002A7068
-   264 0001:002A7075   266 0001:002A707F
+   259 0001:002A701C   260 0001:002A7028   261 0001:002A702D   263 0001:002A703C
+   264 0001:002A7049   266 0001:002A7053
 
 Line numbers for URepositorioLoteVacina(URepositorioDB.pas) segment .text
 
-   136 0001:002A7088   137 0001:002A70A7   141 0001:002A70B2   143 0001:002A70F3
-   144 0001:002A710C   146 0001:002A7117   147 0001:002A7128
+   136 0001:002A705C   137 0001:002A707B   141 0001:002A7086   143 0001:002A70C7
+   144 0001:002A70E0   146 0001:002A70EB   147 0001:002A70FC
 
 Line numbers for URegraCRUDLoteVacina(URegraCRUDLoteVacina.pas) segment .text
 
-    33 0001:002A728C    34 0001:002A72A4    35 0001:002A72AE    36 0001:002A72C0
-    39 0001:002A72E0    40 0001:002A7300    42 0001:002A730B    43 0001:002A732B
-    45 0001:002A734C    46 0001:002A7361    48 0001:002A7382    49 0001:002A73A2
-    54 0001:002A73C3
+    33 0001:002A7260    34 0001:002A7278    35 0001:002A7282    36 0001:002A7294
+    39 0001:002A72B4    40 0001:002A72D4    42 0001:002A72DF    43 0001:002A72FF
+    45 0001:002A7320    46 0001:002A7335    48 0001:002A7356    49 0001:002A7376
+    54 0001:002A7397
 
 Line numbers for URegraCRUDLoteVacina(URepositorioDB.pas) segment .text
 
-   147 0001:002A73F0
+   147 0001:002A73C4
 
 Line numbers for UFrmDeposito(UFrmDeposito.pas) segment .text
 
-    58 0001:002A78E0    59 0001:002A78EC    60 0001:002A78F7    61 0001:002A7914
-    64 0001:002A7918    65 0001:002A7934    66 0001:002A793C    67 0001:002A7953
-    69 0001:002A796A    75 0001:002A79B5    78 0001:002A7A34    80 0001:002A7A3B
-    81 0001:002A7A4C    84 0001:002A7A50    87 0001:002A7A71    88 0001:002A7A96
-    89 0001:002A7ABB    90 0001:002A7AE0    91 0001:002A7B1E    93 0001:002A7B43
-    96 0001:002A7B7C    99 0001:002A7B98   100 0001:002A7BB2   101 0001:002A7BCC
-   102 0001:002A7BE6   103 0001:002A7C17   105 0001:002A7C31   108 0001:002A7C54
-   110 0001:002A7C60   111 0001:002A7C6E   112 0001:002A7C7C   114 0001:002A7C87
+    58 0001:002A78B4    59 0001:002A78C0    60 0001:002A78CB    61 0001:002A78E8
+    64 0001:002A78EC    65 0001:002A7908    66 0001:002A7910    67 0001:002A7927
+    69 0001:002A793E    75 0001:002A7989    78 0001:002A7A08    80 0001:002A7A0F
+    81 0001:002A7A20    84 0001:002A7A24    87 0001:002A7A45    88 0001:002A7A6A
+    89 0001:002A7A8F    90 0001:002A7AB4    91 0001:002A7AF2    93 0001:002A7B17
+    96 0001:002A7B50    99 0001:002A7B6C   100 0001:002A7B86   101 0001:002A7BA0
+   102 0001:002A7BBA   103 0001:002A7BEB   105 0001:002A7C05   108 0001:002A7C28
+   110 0001:002A7C34   111 0001:002A7C42   112 0001:002A7C50   114 0001:002A7C5B
 
 Line numbers for URegraCRUDAgente(URegraCRUDAgente.pas) segment .text
 
-    33 0001:002A7DA8    34 0001:002A7DC0    35 0001:002A7DCA    36 0001:002A7DDC
-    39 0001:002A7DFC    40 0001:002A7E20    44 0001:002A7E2B    45 0001:002A7E4B
-    47 0001:002A7E6C    48 0001:002A7E81    50 0001:002A7EA2    51 0001:002A7EC2
-    53 0001:002A7EE3    54 0001:002A7F03    56 0001:002A7F24    57 0001:002A7F44
-    62 0001:002A7F65    63 0001:002A7F85    65 0001:002A7FA6    66 0001:002A7FC6
-    67 0001:002A7FE7    70 0001:002A8010    71 0001:002A803A    72 0001:002A805B
-    74 0001:002A806B    75 0001:002A8087    78 0001:002A80C6    79 0001:002A80CA
+    33 0001:002A7D7C    34 0001:002A7D94    35 0001:002A7D9E    36 0001:002A7DB0
+    39 0001:002A7DD0    40 0001:002A7DF4    44 0001:002A7DFF    45 0001:002A7E1F
+    47 0001:002A7E40    48 0001:002A7E55    50 0001:002A7E76    51 0001:002A7E96
+    53 0001:002A7EB7    54 0001:002A7ED7    56 0001:002A7EF8    57 0001:002A7F18
+    62 0001:002A7F39    63 0001:002A7F59    65 0001:002A7F7A    66 0001:002A7F9A
+    67 0001:002A7FBB    70 0001:002A7FE4    71 0001:002A800E    72 0001:002A802F
+    74 0001:002A803F    75 0001:002A805B    78 0001:002A809A    79 0001:002A809E
 
 Line numbers for URegraCRUDAgente(URepositorioDB.pas) segment .text
 
-   147 0001:002A8123
+   147 0001:002A80F7
 
 Line numbers for UFrmAgente(UFrmAgente.pas) segment .text
 
-    66 0001:002A85F4    67 0001:002A8600    68 0001:002A860B    69 0001:002A8628
-    72 0001:002A862C    73 0001:002A8648    74 0001:002A8650    75 0001:002A8667
-    77 0001:002A867E    83 0001:002A86C9    86 0001:002A8740    88 0001:002A8747
-    89 0001:002A8758    92 0001:002A875C    94 0001:002A877C    95 0001:002A87A1
-    97 0001:002A87C6    98 0001:002A87D7    99 0001:002A8808   100 0001:002A881F
-   101 0001:002A8844   102 0001:002A8869   103 0001:002A888E   104 0001:002A88CC
-   105 0001:002A88F1   106 0001:002A8916   109 0001:002A8968   111 0001:002A8984
-   112 0001:002A899E   113 0001:002A89B8   114 0001:002A89D2   115 0001:002A89EC
-   116 0001:002A8A06   117 0001:002A8A20   118 0001:002A8A51   119 0001:002A8A6B
-   120 0001:002A8A85
+    66 0001:002A85C8    67 0001:002A85D4    68 0001:002A85DF    69 0001:002A85FC
+    72 0001:002A8600    73 0001:002A861C    74 0001:002A8624    75 0001:002A863B
+    77 0001:002A8652    83 0001:002A869D    86 0001:002A8714    88 0001:002A871B
+    89 0001:002A872C    92 0001:002A8730    94 0001:002A8750    95 0001:002A8775
+    97 0001:002A879A    98 0001:002A87AB    99 0001:002A87DC   100 0001:002A87F3
+   101 0001:002A8818   102 0001:002A883D   103 0001:002A8862   104 0001:002A88A0
+   105 0001:002A88C5   106 0001:002A88EA   109 0001:002A893C   111 0001:002A8958
+   112 0001:002A8972   113 0001:002A898C   114 0001:002A89A6   115 0001:002A89C0
+   116 0001:002A89DA   117 0001:002A89F4   118 0001:002A8A25   119 0001:002A8A3F
+   120 0001:002A8A59
 
 Line numbers for UFrmAgente(UFrmAgente.pas) segment .itext
 
@@ -36177,10 +36177,10 @@ Line numbers for UFrmAgente(UFrmAgente.pas) segment .itext
 
 Line numbers for UFrmTelaInicial(UFrmTelaInicial.pas) segment .text
 
-    45 0001:002A8EDC    46 0001:002A8EE8    47 0001:002A8F00    50 0001:002A8F04
-    51 0001:002A8F10    52 0001:002A8F28    55 0001:002A8F2C    56 0001:002A8F38
-    57 0001:002A8F50    60 0001:002A8F54    61 0001:002A8F60    62 0001:002A8F78
-    64 0001:002A8F83
+    45 0001:002A8EB0    46 0001:002A8EBC    47 0001:002A8ED4    50 0001:002A8ED8
+    51 0001:002A8EE4    52 0001:002A8EFC    55 0001:002A8F00    56 0001:002A8F0C
+    57 0001:002A8F24    60 0001:002A8F28    61 0001:002A8F34    62 0001:002A8F4C
+    64 0001:002A8F57
 
 Line numbers for UEstado(UEstado.pas) segment .text
 
@@ -36200,11 +36200,11 @@ Line numbers for URegraCRUDTodasVacinas(URepositorioDB.pas) segment .text
 
 Line numbers for UFrmLogin(UFrmLogin.pas) segment .text
 
-    41 0001:002A9340    42 0001:002A934C    43 0001:002A9359    44 0001:002A9361
-    47 0001:002A9368    48 0001:002A938D    49 0001:002A939B    51 0001:002A93D6
-    52 0001:002A93E3    54 0001:002A9406    55 0001:002A9409    57 0001:002A941B
-    61 0001:002A9444    62 0001:002A9454    63 0001:002A945D    64 0001:002A946F
-    65 0001:002A947D
+    41 0001:002A9314    42 0001:002A9320    43 0001:002A932D    44 0001:002A9335
+    47 0001:002A933C    48 0001:002A9361    49 0001:002A936F    51 0001:002A93AA
+    52 0001:002A93B7    54 0001:002A93DA    55 0001:002A93DD    57 0001:002A93EF
+    61 0001:002A9418    62 0001:002A9428    63 0001:002A9431    64 0001:002A9443
+    65 0001:002A9451
 
 Line numbers for UPapel(UPapel.pas) segment .text
 
