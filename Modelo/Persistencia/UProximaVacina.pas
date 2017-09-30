@@ -24,7 +24,7 @@ type
 const
    TBL_PROX_VACINA      = 'PROX_VACINA';
    //FLD_ID               = 'ID';
-   FLD_SUS_CODIGO       = 'SUS_COGIDO';
+   FLD_SUS_CODIGO       = 'SUS_CODIGO';
    FLD_NOME             = 'NOME';
    FLD_DATA_RETORNO     = 'DATA_RETORNO';
    FLD_VACINA_RETORNO   = 'VACINA_RETORNO';
@@ -35,7 +35,7 @@ resourcestring
   STR_PROX_VACINA = 'Agendamento de retorno de pacientes';
 
 implementation
-USES
+uses
     SysUtils
   , Dialogs
   ;

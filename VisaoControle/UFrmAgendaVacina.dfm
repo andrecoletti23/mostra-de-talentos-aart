@@ -1,9 +1,9 @@
 inherited FrmAgendaVacina: TFrmAgendaVacina
   Caption = 'Agendamento de Vacinas - SUS'
-  ClientHeight = 262
+  ClientHeight = 286
   ClientWidth = 819
   ExplicitWidth = 835
-  ExplicitHeight = 301
+  ExplicitHeight = 325
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCabecalho: TPanel
@@ -15,8 +15,10 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     ExplicitWidth = 819
   end
   inherited pnlBotoes: TPanel
-    Top = 221
+    Top = 245
     Width = 819
+    Color = 6176512
+    ParentBackground = False
     ExplicitTop = 221
     ExplicitWidth = 819
     inherited btnLimpar: TBitBtn
@@ -41,10 +43,11 @@ inherited FrmAgendaVacina: TFrmAgendaVacina
     Left = 0
     Top = 86
     Width = 819
-    Height = 135
+    Height = 159
     Align = alClient
     Caption = 'Agendamento de Vacinas'
     TabOrder = 3
+    ExplicitHeight = 135
     object lbData: TLabel
       Left = 8
       Top = 69

@@ -6181,6 +6181,15 @@ object frmTelaInicial: TfrmTelaInicial
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object Button1: TButton
+    Left = 40
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
   object SQLConInicio: TSQLConnection
     ConnectionName = 'FBConnection'
     DriverName = 'Firebird'

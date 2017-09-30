@@ -20,10 +20,12 @@ type
     ClientDataSetInicio: TClientDataSet;
     DataSetPInicio: TDataSetProvider;
     DataSource1: TDataSource;
+    Button1: TButton;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure SpeedButton4Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,11 +42,17 @@ uses
   , UfrmVacina
   , UFrmDeposito
   , UFrmAgente
+  , UFrmAgendaVacina
   ;
 
 
 
 {$R *.dfm}
+
+procedure TfrmTelaInicial.Button1Click(Sender: TObject);
+begin
+  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+end;
 
 procedure TfrmTelaInicial.SpeedButton1Click(Sender: TObject);
 begin
