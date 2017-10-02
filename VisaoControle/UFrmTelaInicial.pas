@@ -20,12 +20,13 @@ type
     ClientDataSetInicio: TClientDataSet;
     DataSetPInicio: TDataSetProvider;
     DataSource1: TDataSource;
-    Button1: TButton;
     pnlLinks: TPanel;
     Label2: TLabel;
     Label1: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    SpeedButton5: TSpeedButton;
+    Label5: TLabel;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
