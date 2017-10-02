@@ -3,8 +3,8 @@ object frmTelaInicial: TfrmTelaInicial
   Top = 0
   Anchors = [akLeft, akTop, akRight, akBottom]
   BorderStyle = bsNone
-  ClientHeight = 322
-  ClientWidth = 1166
+  ClientHeight = 382
+  ClientWidth = 1012
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object frmTelaInicial: TfrmTelaInicial
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    1166
-    322)
+    1012
+    382)
   PixelsPerInch = 96
   TextHeight = 13
   object lbProx: TLabel
@@ -35,7 +35,7 @@ object frmTelaInicial: TfrmTelaInicial
     ParentFont = False
   end
   object SpeedButton1: TSpeedButton
-    Left = 632
+    Left = 447
     Top = 0
     Width = 129
     Height = 137
@@ -1569,7 +1569,7 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-    Left = 190
+    Left = 158
     Top = 0
     Width = 129
     Height = 137
@@ -3103,7 +3103,7 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton2Click
   end
   object SpeedButton3: TSpeedButton
-    Left = 464
+    Left = 303
     Top = 0
     Width = 129
     Height = 137
@@ -4637,7 +4637,7 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton3Click
   end
   object SpeedButton4: TSpeedButton
-    Left = 32
+    Left = 15
     Top = 0
     Width = 129
     Height = 137
@@ -6175,7 +6175,7 @@ object frmTelaInicial: TfrmTelaInicial
     Left = 3
     Top = 239
     Width = 1160
-    Height = 80
+    Height = 140
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
     TabOrder = 0
@@ -6195,7 +6195,7 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = Button1Click
   end
   object pnlLinks: TPanel
-    Left = 800
+    Left = 603
     Top = 0
     Width = 363
     Height = 137
@@ -6205,7 +6205,7 @@ object frmTelaInicial: TfrmTelaInicial
     TabOrder = 2
     object Label2: TLabel
       Left = 48
-      Top = 16
+      Top = 34
       Width = 288
       Height = 17
       Caption = 'Secretaria da Sa'#250'de do Estado de Santa Catarina'
@@ -6220,7 +6220,7 @@ object frmTelaInicial: TfrmTelaInicial
     end
     object Label1: TLabel
       Left = 48
-      Top = 39
+      Top = 55
       Width = 265
       Height = 17
       Caption = 'Secretaria da Sa'#250'de - Prefeitura de Blumenau'
@@ -6235,10 +6235,25 @@ object frmTelaInicial: TfrmTelaInicial
     end
     object Label3: TLabel
       Left = 48
-      Top = 62
+      Top = 75
       Width = 229
       Height = 17
       Caption = 'Minist'#233'rio da Sa'#250'de '#8211' Portal da Sa'#250'de '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = Label3MouseMove
+      OnMouseLeave = Label3MouseLeave
+    end
+    object Label4: TLabel
+      Left = 64
+      Top = 0
+      Width = 68
+      Height = 17
+      Caption = 'Links Uteis: '
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
       Font.Height = -13
@@ -6258,8 +6273,8 @@ object frmTelaInicial: TfrmTelaInicial
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
+        'OUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -6273,12 +6288,10 @@ object frmTelaInicial: TfrmTelaInicial
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 112
     Top = 320
   end
   object tbProxInicio: TSQLTable
-    Active = True
     MasterSource = DataSource1
     MaxBlobSize = -1
     SQLConnection = SQLConInicio
@@ -6287,7 +6300,6 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 320
   end
   object ClientDataSetInicio: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetPInicio'

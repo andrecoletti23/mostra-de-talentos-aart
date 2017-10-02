@@ -2,6 +2,7 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
+  ExplicitTop = -147
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -355,8 +356,8 @@ inherited frmVacinas: TfrmVacinas
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
-        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
+        'OUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -370,12 +371,10 @@ inherited frmVacinas: TfrmVacinas
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 32
     Top = 392
   end
   object tbVacinaNova: TSQLTable
-    Active = True
     MasterSource = DataSourceVacina
     MaxBlobSize = -1
     SQLConnection = SQLConVacina
@@ -394,7 +393,6 @@ inherited frmVacinas: TfrmVacinas
     Top = 400
   end
   object ClientDataSetVacina: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetVacinaNova'
