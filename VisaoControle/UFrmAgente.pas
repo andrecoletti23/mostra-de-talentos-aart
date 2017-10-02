@@ -19,7 +19,6 @@ type
     edEmail: TLabeledEdit;
     edCoren: TLabeledEdit;
     edEspec: TLabeledEdit;
-    edContato: TLabeledEdit;
     edDataNasc: TMaskEdit;
     GroupBox1: TGroupBox;
     lbConfirmacaoSenha: TLabeledEdit;
@@ -31,6 +30,9 @@ type
     LbAviso2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    edContato: TMaskEdit;
+    lbTel: TLabel;
+    edUnidSau: TLabeledEdit;
 protected
     FAgente: TAgente;
 

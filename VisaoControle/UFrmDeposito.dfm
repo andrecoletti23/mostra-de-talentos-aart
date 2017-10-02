@@ -147,10 +147,11 @@ inherited frmDeposito: TfrmDeposito
     end
   end
   object dbDeposito: TDBGrid [4]
-    Left = 0
-    Top = 273
-    Width = 749
-    Height = 144
+    AlignWithMargins = True
+    Left = 3
+    Top = 276
+    Width = 743
+    Height = 138
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
@@ -213,8 +214,8 @@ inherited frmDeposito: TfrmDeposito
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'

@@ -6199,8 +6199,8 @@ object frmTelaInicial: TfrmTelaInicial
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'

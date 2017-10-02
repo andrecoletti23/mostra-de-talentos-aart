@@ -46,6 +46,8 @@ type
     DataSourceVacina: TDataSource;
     DataSetVacinaNova: TDataSetProvider;
     ClientDataSetVacina: TClientDataSet;
+    lbCod: TLabel;
+    lbNomepac: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure btnLocalizarPacienteClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);

@@ -63,9 +63,6 @@ inherited frmVacinas: TfrmVacinas
     ParentBackground = False
     ParentColor = False
     TabOrder = 3
-    DesignSize = (
-      1012
-      227)
     object lbVacina: TLabel
       Left = 8
       Top = 60
@@ -124,12 +121,41 @@ inherited frmVacinas: TfrmVacinas
       ParentColor = False
       ParentFont = False
     end
+    object lbCod: TLabel
+      Left = 107
+      Top = 13
+      Width = 115
+      Height = 20
+      Caption = 'Codigo de Sa'#250'de'
+      Color = 6176512
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbNomepac: TLabel
+      Left = 278
+      Top = 13
+      Width = 124
+      Height = 20
+      Caption = 'Nome do paciente'
+      Color = 6176512
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
     object edCodSus: TLabeledEdit
       Left = 8
       Top = 36
       Width = 57
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditLabel.Width = 74
       EditLabel.Height = 20
       EditLabel.Caption = 'ID Paciente'
@@ -147,7 +173,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 84
       Width = 353
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end
     object cbDose: TComboBox
@@ -155,7 +180,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 80
       Width = 145
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       TabOrder = 3
     end
     object edAplicador: TLabeledEdit
@@ -163,7 +187,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 127
       Width = 520
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditLabel.Width = 65
       EditLabel.Height = 20
       EditLabel.Caption = 'Aplicador'
@@ -180,7 +203,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 124
       Width = 177
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditLabel.Width = 108
       EditLabel.Height = 20
       EditLabel.Caption = 'Coren Aplicador'
@@ -197,7 +219,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 172
       Width = 177
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditLabel.Width = 97
       EditLabel.Height = 20
       EditLabel.Caption = 'Lote da Vacina'
@@ -214,7 +235,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 172
       Width = 320
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditLabel.Width = 185
       EditLabel.Height = 20
       EditLabel.Caption = 'Unidade de Sa'#250'de Aplicada'
@@ -248,7 +268,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 37
       Width = 147
       Height = 19
-      Anchors = [akLeft, akTop, akRight]
       AutoSize = False
       BorderStyle = sbsSingle
       Caption = 'stCodigoSUS'
@@ -268,7 +287,6 @@ inherited frmVacinas: TfrmVacinas
       Top = 80
       Width = 176
       Height = 21
-      Anchors = [akLeft, akTop, akRight]
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
       TabOrder = 4
@@ -314,7 +332,6 @@ inherited frmVacinas: TfrmVacinas
     Top = 123
     Width = 458
     Height = 19
-    Anchors = [akLeft, akTop, akRight]
     AutoSize = False
     BorderStyle = sbsSingle
     Caption = 'stNome'
@@ -338,8 +355,8 @@ inherited frmVacinas: TfrmVacinas
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -358,6 +375,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 392
   end
   object tbVacinaNova: TSQLTable
+    Active = True
     MasterSource = DataSourceVacina
     MaxBlobSize = -1
     SQLConnection = SQLConVacina
@@ -376,6 +394,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 400
   end
   object ClientDataSetVacina: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetVacinaNova'
