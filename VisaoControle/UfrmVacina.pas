@@ -46,6 +46,8 @@ type
     DataSourceVacina: TDataSource;
     DataSetVacinaNova: TDataSetProvider;
     ClientDataSetVacina: TClientDataSet;
+    lbCod: TLabel;
+    lbNomepac: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure btnLocalizarPacienteClick(Sender: TObject);
     procedure edCodSusExit(Sender: TObject);
@@ -91,6 +93,7 @@ begin
   inherited;
    If(MessageBox(Handle,PChar('Deseja registrar retorno?'),'Confirmar',Mb_YesNo + MB_ICONINFORMATION)) = IDYes then
      begin
+       btnSair.Click;
        Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
      end;
 end;
@@ -207,7 +210,7 @@ procedure TfrmVacinas.PreencheFormulario;
 begin
   inherited;
   //edCodSus.Text         :=IntToStr(FCARTEIRA_VACINACAO.ID_SUS.ID)          ;
-  stNome.Caption           :=FCARTEIRA_VACINACAO.NOME              ;
+  stNome.Caption        :=FCARTEIRA_VACINACAO.NOME              ;
   cbVacinas.text        :=FCARTEIRA_VACINACAO.VACINA            ;
   cbDose.Text           :=FCARTEIRA_VACINACAO.DOSE              ;
   edDataApli.Text       :=DateToStr(FCARTEIRA_VACINACAO.DATA)   ;

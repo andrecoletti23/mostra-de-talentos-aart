@@ -17,9 +17,11 @@ type
     lbNome: TLabel;
     lbCoren: TLabel;
     Panel2: TPanel;
-    Label1: TLabel;
+    lbSaudacao: TLabel;
+    Timer1: TTimer;
     procedure miSairClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { Private declaration }
   public
@@ -49,6 +51,11 @@ begin
 
 end;
 
+procedure TFrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+ lbSaudacao.Caption := DateTimeToStr(Now);
+end;
+
 procedure TFrmPrincipal.AtualizaUsuarioLogado;
 var
  i: integer;
@@ -56,16 +63,16 @@ var
 begin
   I := Trunc(Time * 24);
   if I < 6 then
-     dia := 'Boa madrugada'
+     dia := 'Boa madrugada, '
   else if I < 12 then
      dia :=('Bom dia')
   else if I < 18 then
-     dia := ('Boa tarde')
+     dia := ('Boa tarde, ')
   else
-     dia :=('Boa Noite');
+     dia :=('Boa Noite, ');
 
-  lbNome.Caption :='Bem Vindo, ' + TAgenteLogado.Unico.UAgente.AGENTE_NOME ;
-  lbCoren.Caption := TAgenteLogado.Unico.UAgente.AGENTE_COREN;
+  lbNome.Caption :=dia + TAgenteLogado.Unico.UAgente.AGENTE_NOME ;
+  lbCoren.Caption := 'Coren: ' +  TAgenteLogado.Unico.UAgente.AGENTE_COREN;
 end;
 
 procedure TFrmPrincipal.FormShow(Sender: TObject);

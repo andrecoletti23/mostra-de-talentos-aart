@@ -16,19 +16,6 @@ inherited frmDeposito: TfrmDeposito
   inherited gbLocalizar: TGroupBox
     Width = 749
     ExplicitWidth = 749
-    inherited lbCodigo: TLabel
-      Left = 58
-      Top = 22
-      Width = 43
-      Height = 17
-      Font.Color = clWhite
-      Font.Height = -13
-      Font.Name = 'Segoe UI'
-      ExplicitLeft = 58
-      ExplicitTop = 22
-      ExplicitWidth = 43
-      ExplicitHeight = 17
-    end
     inherited edCodigo: TEdit
       Color = clWindow
     end
@@ -36,6 +23,8 @@ inherited frmDeposito: TfrmDeposito
   inherited pnlBotoes: TPanel
     Top = 419
     Width = 749
+    Color = 6176512
+    ParentBackground = False
     ExplicitTop = 419
     ExplicitWidth = 749
     inherited btnLimpar: TBitBtn
@@ -68,13 +57,13 @@ inherited frmDeposito: TfrmDeposito
     TabOrder = 3
     object lbVencimento: TLabel
       Left = 235
-      Top = 71
-      Width = 96
-      Height = 17
+      Top = 63
+      Width = 111
+      Height = 20
       Caption = 'Vencimento Lote'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
-      Font.Height = -13
+      Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
@@ -84,12 +73,12 @@ inherited frmDeposito: TfrmDeposito
       Top = 37
       Width = 726
       Height = 21
-      EditLabel.Width = 96
-      EditLabel.Height = 17
+      EditLabel.Width = 109
+      EditLabel.Height = 20
       EditLabel.Caption = 'Nome da Vacina'
       EditLabel.Font.Charset = ANSI_CHARSET
       EditLabel.Font.Color = clWhite
-      EditLabel.Font.Height = -13
+      EditLabel.Font.Height = -15
       EditLabel.Font.Name = 'Segoe UI'
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
@@ -100,12 +89,12 @@ inherited frmDeposito: TfrmDeposito
       Top = 133
       Width = 726
       Height = 21
-      EditLabel.Width = 146
-      EditLabel.Height = 17
+      EditLabel.Width = 164
+      EditLabel.Height = 20
       EditLabel.Caption = 'Laborat'#243'rio Respons'#225'vel'
       EditLabel.Font.Charset = ANSI_CHARSET
       EditLabel.Font.Color = clWhite
-      EditLabel.Font.Height = -13
+      EditLabel.Font.Height = -15
       EditLabel.Font.Name = 'Segoe UI'
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
@@ -116,12 +105,12 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 169
       Height = 21
-      EditLabel.Width = 25
-      EditLabel.Height = 17
+      EditLabel.Width = 29
+      EditLabel.Height = 20
       EditLabel.Caption = 'Lote'
       EditLabel.Font.Charset = ANSI_CHARSET
       EditLabel.Font.Color = clWhite
-      EditLabel.Font.Height = -13
+      EditLabel.Font.Height = -15
       EditLabel.Font.Name = 'Segoe UI'
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
@@ -132,12 +121,12 @@ inherited frmDeposito: TfrmDeposito
       Top = 88
       Width = 284
       Height = 21
-      EditLabel.Width = 117
-      EditLabel.Height = 17
+      EditLabel.Width = 133
+      EditLabel.Height = 20
       EditLabel.Caption = 'Quantidade do Lote'
       EditLabel.Font.Charset = ANSI_CHARSET
       EditLabel.Font.Color = clWhite
-      EditLabel.Font.Height = -13
+      EditLabel.Font.Height = -15
       EditLabel.Font.Name = 'Segoe UI'
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
@@ -147,15 +136,22 @@ inherited frmDeposito: TfrmDeposito
       Left = 235
       Top = 88
       Width = 168
-      Height = 21
+      Height = 23
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 4
     end
   end
   object dbDeposito: TDBGrid [4]
-    Left = 0
-    Top = 273
-    Width = 749
-    Height = 144
+    AlignWithMargins = True
+    Left = 3
+    Top = 276
+    Width = 743
+    Height = 138
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
@@ -168,7 +164,6 @@ inherited frmDeposito: TfrmDeposito
     TitleFont.Style = []
   end
   object tbDeposito: TSQLTable
-    Active = True
     MaxBlobSize = -1
     SQLConnection = SQLConnection1
     TableName = 'LOTE_VACINA'
@@ -181,7 +176,6 @@ inherited frmDeposito: TfrmDeposito
     Top = 368
   end
   object ClientDataSet1: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetProvider1'
@@ -218,8 +212,8 @@ inherited frmDeposito: TfrmDeposito
       'LibraryName=dbxfb.dll'
       'VendorLib=fbclient.DLL'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
+        'OUSUARIOS.GDB'
       'User_Name=sysdba'
       'Password=masterkey'
       'Role=RoleName'
@@ -236,7 +230,6 @@ inherited frmDeposito: TfrmDeposito
       'ServerCharSet='
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 136
     Top = 368
   end
