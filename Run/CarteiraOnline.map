@@ -35408,11 +35408,11 @@ Detailed map of segments
  0005:00000048       SysInit.TlsLast
 
 
-Line numbers for UMensagens(Modelo\UMensagens.pas) segment .text
+Line numbers for UMensagens(UMensagens.pas) segment .text
 
     77 0001:00000000
 
-Line numbers for UUtilitarios(Modelo\UUtilitarios.pas) segment .text
+Line numbers for UUtilitarios(UUtilitarios.pas) segment .text
 
     65 0001:0014B5A8    66 0001:0014B5B4    68 0001:0014B5B9    69 0001:0014B5C6
     70 0001:0014B5D0    72 0001:0014B5D6    66 0001:0014B5D9    74 0001:0014B5DF
@@ -35424,15 +35424,15 @@ Line numbers for UUtilitarios(Modelo\UUtilitarios.pas) segment .text
    110 0001:0014B78B   113 0001:0014B791    82 0001:0014B794   114 0001:0014B79D
    115 0001:0014B7A1
 
-Line numbers for UUtilitarios(Modelo\UUtilitarios.pas) segment .itext
+Line numbers for UUtilitarios(UUtilitarios.pas) segment .itext
 
    117 0002:00000EC0
 
-Line numbers for UEntidade(Modelo\Persistencia\UEntidade.pas) segment .text
+Line numbers for UEntidade(UEntidade.pas) segment .text
 
     32 0001:0014B9A4    33 0001:0014B9BC    34 0001:0014B9C6    36 0001:0014B9EC
 
-Line numbers for URepositorio(Modelo\Persistencia\URepositorio.pas) segment .text
+Line numbers for URepositorio(URepositorio.pas) segment .text
 
     24 0001:00000000
 
@@ -35539,7 +35539,7 @@ Line numbers for URegraCRUD(Modelo\Persistencia\URepositorioDB.pas) segment .tex
    136 0001:00265868   137 0001:00265887   141 0001:00265892   143 0001:002658D3
    144 0001:002658EC   146 0001:002658F7   147 0001:00265908
 
-Line numbers for UOpcaoPesquisa(Modelo\UOpcaoPesquisa.pas) segment .text
+Line numbers for UOpcaoPesquisa(UOpcaoPesquisa.pas) segment .text
 
     42 0001:002668F0    43 0001:00266908    44 0001:0026691A    47 0001:0026693C
     48 0001:00266948    49 0001:00266956    50 0001:0026695C    53 0001:00266964
@@ -35567,7 +35567,7 @@ Line numbers for UFrmPesquisa(UFrmPesquisa.pas) segment .text
    153 0001:00268A07   156 0001:00268A2C   157 0001:00268A55   160 0001:00268A69
    161 0001:00268A96   163 0001:00268AA5   165 0001:00268AB2
 
-Line numbers for UDialogo(Modelo\UDialogo.pas) segment .text
+Line numbers for UDialogo(UDialogo.pas) segment .text
 
     35 0001:00268CD4    36 0001:00268CF3    39 0001:00268D22    42 0001:00268D44
     43 0001:00268D63    46 0001:00268D92    49 0001:00268DB4    50 0001:00268DC0
@@ -35621,7 +35621,7 @@ Line numbers for UFrmCRUD(VisaoControle\UFrmCRUD.pas) segment .text
    383 0001:0026B770   384 0001:0026B77C   385 0001:0026B79A   388 0001:0026B7A0
    389 0001:0026B7A7   390 0001:0026B7BA   391 0001:0026B7D4   393 0001:0026B7EB
 
-Line numbers for UPaciente(Modelo\Persistencia\UPaciente.pas) segment .text
+Line numbers for UPaciente(UPaciente.pas) segment .text
 
     67 0001:00000000
 
@@ -35717,7 +35717,7 @@ Line numbers for URepositorioPaciente(Modelo\Persistencia\URepositorioDB.pas) se
    136 0001:0026F100   137 0001:0026F11F   141 0001:0026F12A   143 0001:0026F16B
    144 0001:0026F184   146 0001:0026F18F   147 0001:0026F1A0
 
-Line numbers for UConstantes(Modelo\UConstantes.pas) segment .text
+Line numbers for UConstantes(UConstantes.pas) segment .text
 
     13 0001:00000000
 
@@ -35735,7 +35735,7 @@ Line numbers for URegraCRUDPaciente(Modelo\Persistencia\URepositorioDB.pas) segm
 
    147 0001:0026F639
 
-Line numbers for UCidade(Modelo\Persistencia\UCidade.pas) segment .text
+Line numbers for UCidade(UCidade.pas) segment .text
 
     26 0001:00000000
 
@@ -35767,7 +35767,7 @@ Line numbers for UFrmPacientes(VisaoControle\UFrmPacientes.pas) segment .text
    212 0001:00270A2F   213 0001:00270A49   214 0001:00270A63   215 0001:00270A7D
    217 0001:00270AAA
 
-Line numbers for UAgente(Modelo\Persistencia\UAgente.pas) segment .text
+Line numbers for UAgente(UAgente.pas) segment .text
 
     47 0001:00000000
 
@@ -35861,7 +35861,7 @@ Line numbers for URepositorioAgente(Modelo\Persistencia\URepositorioDB.pas) segm
    136 0001:002A3B98   137 0001:002A3BB7   141 0001:002A3BC2   143 0001:002A3C03
    144 0001:002A3C1C   146 0001:002A3C27   147 0001:002A3C38
 
-Line numbers for UAgenteLogado(Modelo\Persistencia\UAgenteLogado.pas) segment .text
+Line numbers for UAgenteLogado(UAgenteLogado.pas) segment .text
 
     43 0001:002A3EC0    44 0001:002A3ED8    45 0001:002A3EEA    48 0001:002A3F0C
     49 0001:002A3F1D    50 0001:002A3F3D    51 0001:002A3F4B    54 0001:002A3F60
@@ -35881,27 +35881,27 @@ Line numbers for UFrmPrincipal(VisaoControle\UFrmPrincipal.pas) segment .text
     73 0001:002A46C4    74 0001:002A46E6    77 0001:002A4733    78 0001:002A473B
     80 0001:002A47BB
 
-Line numbers for ULoteVacina(Modelo\Persistencia\ULoteVacina.pas) segment .text
+Line numbers for ULoteVacina(ULoteVacina.pas) segment .text
 
     53 0001:00000000
 
-Line numbers for UCoren(Modelo\Persistencia\UCoren.pas) segment .text
+Line numbers for UCoren(UCoren.pas) segment .text
 
     36 0001:00000000
 
-Line numbers for UGenero(Modelo\Persistencia\UGenero.pas) segment .text
+Line numbers for UGenero(UGenero.pas) segment .text
 
     24 0001:00000000
 
-Line numbers for UFaixaEtaria(Modelo\Persistencia\UFaixaEtaria.pas) segment .text
+Line numbers for UFaixaEtaria(UFaixaEtaria.pas) segment .text
 
     25 0001:00000000
 
-Line numbers for UVacina(Modelo\Persistencia\UVacina.pas) segment .text
+Line numbers for UVacina(UVacina.pas) segment .text
 
     63 0001:00000000
 
-Line numbers for UCarteiraVacinacao(Modelo\Persistencia\UCarteiraVacinacao.pas) segment .text
+Line numbers for UCarteiraVacinacao(UCarteiraVacinacao.pas) segment .text
 
     58 0001:002A4B34    59 0001:002A4B4C    60 0001:002A4B56    63 0001:002A4B68
     66 0001:002A4B88    67 0001:002A4B99    70 0001:002A4BB9    71 0001:002A4BC7
@@ -36106,7 +36106,7 @@ Line numbers for URegraCRUDProximaVacina(Modelo\Persistencia\URepositorioDB.pas)
 
    147 0001:002A82A5
 
-Line numbers for UVacinaNova(Modelo\Persistencia\UVacinaNova.pas) segment .text
+Line numbers for UVacinaNova(UVacinaNova.pas) segment .text
 
     57 0001:00000000
 
@@ -36295,11 +36295,11 @@ Line numbers for UFrmTelaInicial(VisaoControle\UFrmTelaInicial.pas) segment .tex
     62 0001:002AD4D4    65 0001:002AD4D8    66 0001:002AD4E4    67 0001:002AD4FC
     69 0001:002AD507
 
-Line numbers for UEstado(Modelo\Persistencia\UEstado.pas) segment .text
+Line numbers for UEstado(UEstado.pas) segment .text
 
     29 0001:00000000
 
-Line numbers for UTodasVacinas(Modelo\Persistencia\UTodasVacinas.pas) segment .text
+Line numbers for UTodasVacinas(UTodasVacinas.pas) segment .text
 
     34 0001:00000000
 
@@ -36319,7 +36319,7 @@ Line numbers for UFrmLogin(VisaoControle\UFrmLogin.pas) segment .text
     61 0001:002AD9C8    62 0001:002AD9D8    63 0001:002AD9E1    64 0001:002AD9F3
     65 0001:002ADA01
 
-Line numbers for UPapel(Modelo\Persistencia\UPapel.pas) segment .text
+Line numbers for UPapel(UPapel.pas) segment .text
 
     25 0001:00000000
 

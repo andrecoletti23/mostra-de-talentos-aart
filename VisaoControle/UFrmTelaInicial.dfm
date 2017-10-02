@@ -6190,8 +6190,8 @@ object frmTelaInicial: TfrmTelaInicial
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
+        'OUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -6205,12 +6205,10 @@ object frmTelaInicial: TfrmTelaInicial
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
-    Connected = True
-    Left = 112
+    Left = 120
     Top = 320
   end
   object tbProxInicio: TSQLTable
-    Active = True
     MaxBlobSize = -1
     SQLConnection = SQLConInicio
     TableName = 'PROX_VACINA'
@@ -6218,7 +6216,6 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 320
   end
   object ClientDataSetInicio: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetPInicio'
