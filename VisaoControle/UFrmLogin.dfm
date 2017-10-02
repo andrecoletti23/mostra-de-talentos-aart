@@ -30,11 +30,7 @@ object FrmLogin: TFrmLogin
   end
   object Label2: TLabel
     Left = 15
-<<<<<<< HEAD
-    Top = 107
-=======
     Top = 91
->>>>>>> Final
     Width = 43
     Height = 20
     Caption = 'Senha:'
@@ -44,8 +40,6 @@ object FrmLogin: TFrmLogin
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
-<<<<<<< HEAD
-=======
   end
   object Label3: TLabel
     Left = 198
@@ -61,7 +55,6 @@ object FrmLogin: TFrmLogin
     ParentFont = False
     OnMouseMove = Label3MouseMove
     OnMouseLeave = Label3MouseLeave
->>>>>>> Final
   end
   object edLogin: TEdit
     Left = 64

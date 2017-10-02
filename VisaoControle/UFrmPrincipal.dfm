@@ -1148,11 +1148,7 @@ object FrmPrincipal: TFrmPrincipal
     end
     object lbCoren: TLabel
       Left = 199
-<<<<<<< HEAD
-      Top = 68
-=======
       Top = 53
->>>>>>> Final
       Width = 42
       Height = 25
       Caption = 'Teste'
@@ -1164,15 +1160,9 @@ object FrmPrincipal: TFrmPrincipal
       ParentFont = False
     end
     object lbSaudacao: TLabel
-<<<<<<< HEAD
-      Left = 671
-      Top = 68
-      Width = 78
-=======
       Left = 553
       Top = 71
       Width = 10
->>>>>>> Final
       Height = 47
       Anchors = [akRight, akBottom]
       Font.Charset = ANSI_CHARSET

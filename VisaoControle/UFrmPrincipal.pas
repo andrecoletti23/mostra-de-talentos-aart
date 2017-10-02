@@ -18,10 +18,7 @@ type
     lbCoren: TLabel;
     Panel2: TPanel;
     lbSaudacao: TLabel;
-<<<<<<< HEAD
-=======
     Timer1: TTimer;
->>>>>>> Final
     procedure miSairClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -74,14 +71,8 @@ begin
   else
      dia :=('Boa Noite, ');
 
-<<<<<<< HEAD
-  lbNome.Caption :='Bem Vindo, ' + TAgenteLogado.Unico.UAgente.AGENTE_NOME ;
-  lbCoren.Caption := 'Coren: ' +  TAgenteLogado.Unico.UAgente.AGENTE_COREN;
-  lbSaudacao.Caption := dia;
-=======
   lbNome.Caption :=dia + TAgenteLogado.Unico.UAgente.AGENTE_NOME ;
   lbCoren.Caption := 'Coren: ' +  TAgenteLogado.Unico.UAgente.AGENTE_COREN;
->>>>>>> Final
 end;
 
 procedure TFrmPrincipal.FormShow(Sender: TObject);

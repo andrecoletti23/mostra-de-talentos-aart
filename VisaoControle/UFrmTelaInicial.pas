@@ -5,20 +5,12 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Grids, DBGrids,UFrmPacientes, Buttons, DBXFirebird, FMTBcd,
-<<<<<<< HEAD
-  DB, Provider, DBClient, SqlExpr;
-=======
   DB, Provider, DBClient, SqlExpr, ExtCtrls;
->>>>>>> Final
 
 type
   TfrmTelaInicial = class(TForm)
     DBGrid1: TDBGrid;
-<<<<<<< HEAD
-    Label1: TLabel;
-=======
     lbProx: TLabel;
->>>>>>> Final
     SpeedButton1: TSpeedButton;
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
@@ -28,20 +20,15 @@ type
     ClientDataSetInicio: TClientDataSet;
     DataSetPInicio: TDataSetProvider;
     DataSource1: TDataSource;
-<<<<<<< HEAD
-=======
     Button1: TButton;
     pnlLinks: TPanel;
     Label2: TLabel;
     Label1: TLabel;
     Label3: TLabel;
->>>>>>> Final
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure SpeedButton4Click(Sender: TObject);
-<<<<<<< HEAD
-=======
     procedure Button1Click(Sender: TObject);
     procedure Label2MouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
@@ -52,7 +39,6 @@ type
     procedure Label3MouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
     procedure Label3MouseLeave(Sender: TObject);
->>>>>>> Final
   private
     { Private declarations }
   public
@@ -76,13 +62,8 @@ uses
 
 {$R *.dfm}
 
-procedure TfrmTelaInicial.SpeedButton1Click(Sender: TObject);
+procedure TfrmTelaInicial.Button1Click(Sender: TObject);
 begin
-<<<<<<< HEAD
-   Application.CreateForm(TfrmAGENTE, frmAGENTE)
-end;
-
-=======
   Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
 end;
 
@@ -136,7 +117,6 @@ begin
    Application.CreateForm(TfrmAGENTE, frmAGENTE)
 end;
 
->>>>>>> Final
 procedure TfrmTelaInicial.SpeedButton2Click(Sender: TObject);
 begin
   Application.CreateForm(TfrmVacinas, frmVacinas);

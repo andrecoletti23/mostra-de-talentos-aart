@@ -47,11 +47,7 @@ inherited frmAgente: TfrmAgente
     Caption = 'Informa'#231#245'es de Login'
     Color = 6176512
     Font.Charset = ANSI_CHARSET
-<<<<<<< HEAD
-    Font.Color = clWhite
-=======
     Font.Color = clBlack
->>>>>>> Final
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
@@ -156,11 +152,7 @@ inherited frmAgente: TfrmAgente
     Caption = 'Informa'#231#245'es do Agente'
     Color = 6176512
     Font.Charset = ANSI_CHARSET
-<<<<<<< HEAD
-    Font.Color = clHighlightText
-=======
     Font.Color = clBlack
->>>>>>> Final
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
@@ -170,11 +162,7 @@ inherited frmAgente: TfrmAgente
     TabOrder = 4
     object Label1: TLabel
       Left = 421
-<<<<<<< HEAD
-      Top = 23
-=======
       Top = 17
->>>>>>> Final
       Width = 136
       Height = 20
       Caption = 'Data de Nascimento'
@@ -197,8 +185,6 @@ inherited frmAgente: TfrmAgente
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
-<<<<<<< HEAD
-=======
     end
     object lbTel: TLabel
       Left = 577
@@ -212,42 +198,17 @@ inherited frmAgente: TfrmAgente
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
->>>>>>> Final
     end
     object edDataNasc: TMaskEdit
       Left = 421
       Top = 40
-<<<<<<< HEAD
-      Width = 103
-=======
       Width = 136
->>>>>>> Final
       Height = 23
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
       TabOrder = 0
       Text = '  /  /    '
     end
-<<<<<<< HEAD
-    object edContato: TLabeledEdit
-      Left = 571
-      Top = 40
-      Width = 174
-      Height = 23
-      EditLabel.Width = 53
-      EditLabel.Height = 20
-      EditLabel.Caption = 'Contato'
-      EditLabel.Font.Charset = ANSI_CHARSET
-      EditLabel.Font.Color = clWhite
-      EditLabel.Font.Height = -15
-      EditLabel.Font.Name = 'Segoe UI'
-      EditLabel.Font.Style = []
-      EditLabel.ParentFont = False
-      MaxLength = 15
-      TabOrder = 1
-    end
-=======
->>>>>>> Final
     object edCoren: TLabeledEdit
       Left = 16
       Top = 87
@@ -304,11 +265,7 @@ inherited frmAgente: TfrmAgente
       Top = 87
       Width = 218
       Height = 23
-<<<<<<< HEAD
-      TabOrder = 5
-=======
       TabOrder = 4
->>>>>>> Final
       Items.Strings = (
         'Matutino'
         'Vespertino'

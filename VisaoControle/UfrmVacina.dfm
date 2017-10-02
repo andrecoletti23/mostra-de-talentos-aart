@@ -2,7 +2,6 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
-  ExplicitTop = -210
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -118,8 +117,6 @@ inherited frmVacinas: TfrmVacinas
       Font.Color = clWhite
       Font.Height = -15
       Font.Name = 'Segoe UI'
-<<<<<<< HEAD
-=======
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -150,7 +147,6 @@ inherited frmVacinas: TfrmVacinas
       Font.Color = clWhite
       Font.Height = -15
       Font.Name = 'Segoe UI'
->>>>>>> Final
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -379,6 +375,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 392
   end
   object tbVacinaNova: TSQLTable
+    Active = True
     MasterSource = DataSourceVacina
     MaxBlobSize = -1
     SQLConnection = SQLConVacina
@@ -397,6 +394,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 400
   end
   object ClientDataSetVacina: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetVacinaNova'

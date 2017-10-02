@@ -3,8 +3,8 @@ object frmTelaInicial: TfrmTelaInicial
   Top = 0
   Anchors = [akLeft, akTop, akRight, akBottom]
   BorderStyle = bsNone
-  ClientHeight = 385
-  ClientWidth = 1012
+  ClientHeight = 322
+  ClientWidth = 1166
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object frmTelaInicial: TfrmTelaInicial
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    1012
-    385)
+    1166
+    322)
   PixelsPerInch = 96
   TextHeight = 13
   object lbProx: TLabel
@@ -35,18 +35,11 @@ object frmTelaInicial: TfrmTelaInicial
     ParentFont = False
   end
   object SpeedButton1: TSpeedButton
-<<<<<<< HEAD
-    Left = 688
-    Top = 48
-    Width = 129
-    Height = 137
-=======
-    Left = 480
+    Left = 632
     Top = 0
     Width = 129
     Height = 137
     Cursor = crHandPoint
->>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000EDEDDDF4F4E4
@@ -1576,18 +1569,11 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-<<<<<<< HEAD
-    Left = 510
-    Top = 47
-    Width = 129
-    Height = 137
-=======
-    Left = 182
+    Left = 190
     Top = 0
     Width = 129
     Height = 137
     Cursor = crHandPoint
->>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000EDEDDDF4F4E4
@@ -3117,18 +3103,11 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton2Click
   end
   object SpeedButton3: TSpeedButton
-<<<<<<< HEAD
-    Left = 336
-    Top = 47
-    Width = 129
-    Height = 137
-=======
-    Left = 328
+    Left = 464
     Top = 0
     Width = 129
     Height = 137
     Cursor = crHandPoint
->>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000F0EEE3F6F4E9
@@ -4658,18 +4637,11 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton3Click
   end
   object SpeedButton4: TSpeedButton
-<<<<<<< HEAD
-    Left = 168
-    Top = 47
-    Width = 129
-    Height = 137
-=======
     Left = 32
     Top = 0
     Width = 129
     Height = 137
     Cursor = crHandPoint
->>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000E9E9D9F9F9E9
@@ -6201,15 +6173,9 @@ object frmTelaInicial: TfrmTelaInicial
   object DBGrid1: TDBGrid
     AlignWithMargins = True
     Left = 3
-<<<<<<< HEAD
-    Top = 286
-    Width = 994
-    Height = 132
-=======
     Top = 239
     Width = 1160
-    Height = 143
->>>>>>> Final
+    Height = 80
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
     TabOrder = 0
@@ -6219,49 +6185,6 @@ object frmTelaInicial: TfrmTelaInicial
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-<<<<<<< HEAD
-  object SQLConInicio: TSQLConnection
-    ConnectionName = 'FBConnection'
-    DriverName = 'Firebird'
-    GetDriverFunc = 'getSQLDriverINTERBASE'
-    LibraryName = 'dbxfb.dll'
-    LoginPrompt = False
-    Params.Strings = (
-      'DriverName=Firebird'
-      
-        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
-        'OUSUARIOS.GDB'
-      'RoleName=RoleName'
-      'User_Name=sysdba'
-      'Password=masterkey'
-      'ServerCharSet='
-      'SQLDialect=3'
-      'ErrorResourceFile='
-      'LocaleCode=0000'
-      'BlobSize=-1'
-      'CommitRetain=False'
-      'WaitOnLocks=True'
-      'IsolationLevel=ReadCommitted'
-      'Trim Char=False')
-    VendorLib = 'fbclient.DLL'
-    Left = 120
-    Top = 320
-  end
-  object tbProxInicio: TSQLTable
-    MaxBlobSize = -1
-    SQLConnection = SQLConInicio
-    TableName = 'PROX_VACINA'
-    Left = 184
-    Top = 320
-  end
-  object ClientDataSetInicio: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    ProviderName = 'DataSetPInicio'
-    Left = 376
-    Top = 328
-  end
-=======
   object Button1: TButton
     Left = 922
     Top = 196
@@ -6272,7 +6195,7 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = Button1Click
   end
   object pnlLinks: TPanel
-    Left = 634
+    Left = 800
     Top = 0
     Width = 363
     Height = 137
@@ -6335,8 +6258,8 @@ object frmTelaInicial: TfrmTelaInicial
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
-        'OUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'
@@ -6350,10 +6273,12 @@ object frmTelaInicial: TfrmTelaInicial
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
+    Connected = True
     Left = 112
     Top = 320
   end
   object tbProxInicio: TSQLTable
+    Active = True
     MasterSource = DataSource1
     MaxBlobSize = -1
     SQLConnection = SQLConInicio
@@ -6362,13 +6287,13 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 320
   end
   object ClientDataSetInicio: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetPInicio'
     Left = 376
     Top = 328
   end
->>>>>>> Final
   object DataSetPInicio: TDataSetProvider
     DataSet = tbProxInicio
     Left = 288
