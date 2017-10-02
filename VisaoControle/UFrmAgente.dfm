@@ -47,7 +47,11 @@ inherited frmAgente: TfrmAgente
     Caption = 'Informa'#231#245'es de Login'
     Color = 6176512
     Font.Charset = ANSI_CHARSET
+<<<<<<< HEAD
     Font.Color = clWhite
+=======
+    Font.Color = clBlack
+>>>>>>> Final
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
@@ -57,7 +61,7 @@ inherited frmAgente: TfrmAgente
     TabOrder = 3
     object edLogin: TLabeledEdit
       Left = 16
-      Top = 32
+      Top = 38
       Width = 225
       Height = 23
       EditLabel.Width = 37
@@ -74,7 +78,7 @@ inherited frmAgente: TfrmAgente
     end
     object edSenha: TLabeledEdit
       Left = 272
-      Top = 32
+      Top = 38
       Width = 225
       Height = 23
       EditLabel.Width = 40
@@ -92,7 +96,7 @@ inherited frmAgente: TfrmAgente
     end
     object lbConfirmacaoSenha: TLabeledEdit
       Left = 525
-      Top = 32
+      Top = 38
       Width = 188
       Height = 23
       EditLabel.Width = 150
@@ -110,7 +114,7 @@ inherited frmAgente: TfrmAgente
     end
     object edEmail: TLabeledEdit
       Left = 16
-      Top = 78
+      Top = 87
       Width = 345
       Height = 23
       EditLabel.Width = 43
@@ -125,6 +129,23 @@ inherited frmAgente: TfrmAgente
       MaxLength = 60
       TabOrder = 3
     end
+    object edUnidSau: TLabeledEdit
+      Left = 384
+      Top = 87
+      Width = 329
+      Height = 23
+      EditLabel.Width = 122
+      EditLabel.Height = 20
+      EditLabel.Caption = 'Unidade de Sa'#250'de'
+      EditLabel.Font.Charset = ANSI_CHARSET
+      EditLabel.Font.Color = clWhite
+      EditLabel.Font.Height = -15
+      EditLabel.Font.Name = 'Segoe UI'
+      EditLabel.Font.Style = []
+      EditLabel.ParentFont = False
+      MaxLength = 60
+      TabOrder = 4
+    end
   end
   object GroupBox1: TGroupBox [4]
     Left = 0
@@ -135,7 +156,11 @@ inherited frmAgente: TfrmAgente
     Caption = 'Informa'#231#245'es do Agente'
     Color = 6176512
     Font.Charset = ANSI_CHARSET
+<<<<<<< HEAD
     Font.Color = clHighlightText
+=======
+    Font.Color = clBlack
+>>>>>>> Final
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
@@ -145,7 +170,11 @@ inherited frmAgente: TfrmAgente
     TabOrder = 4
     object Label1: TLabel
       Left = 421
+<<<<<<< HEAD
       Top = 23
+=======
+      Top = 17
+>>>>>>> Final
       Width = 136
       Height = 20
       Caption = 'Data de Nascimento'
@@ -168,17 +197,38 @@ inherited frmAgente: TfrmAgente
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
+<<<<<<< HEAD
+=======
+    end
+    object lbTel: TLabel
+      Left = 577
+      Top = 17
+      Width = 53
+      Height = 20
+      Caption = 'Contato'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+>>>>>>> Final
     end
     object edDataNasc: TMaskEdit
       Left = 421
       Top = 40
+<<<<<<< HEAD
       Width = 103
+=======
+      Width = 136
+>>>>>>> Final
       Height = 23
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
       TabOrder = 0
       Text = '  /  /    '
     end
+<<<<<<< HEAD
     object edContato: TLabeledEdit
       Left = 571
       Top = 40
@@ -196,6 +246,8 @@ inherited frmAgente: TfrmAgente
       MaxLength = 15
       TabOrder = 1
     end
+=======
+>>>>>>> Final
     object edCoren: TLabeledEdit
       Left = 16
       Top = 87
@@ -211,7 +263,7 @@ inherited frmAgente: TfrmAgente
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
       MaxLength = 60
-      TabOrder = 2
+      TabOrder = 1
     end
     object edNome: TLabeledEdit
       Left = 16
@@ -228,7 +280,7 @@ inherited frmAgente: TfrmAgente
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
       MaxLength = 60
-      TabOrder = 3
+      TabOrder = 2
     end
     object edEspec: TLabeledEdit
       Left = 201
@@ -245,18 +297,32 @@ inherited frmAgente: TfrmAgente
       EditLabel.Font.Style = []
       EditLabel.ParentFont = False
       MaxLength = 60
-      TabOrder = 4
+      TabOrder = 3
     end
     object edTurno: TComboBox
       Left = 495
       Top = 87
       Width = 218
       Height = 23
+<<<<<<< HEAD
       TabOrder = 5
+=======
+      TabOrder = 4
+>>>>>>> Final
       Items.Strings = (
         'Matutino'
         'Vespertino'
         'Noturno')
+    end
+    object edContato: TMaskEdit
+      Left = 577
+      Top = 40
+      Width = 133
+      Height = 23
+      EditMask = '!\(99\)0000-0000;1;_'
+      MaxLength = 13
+      TabOrder = 5
+      Text = '(  )    -    '
     end
   end
   object gbInformacoesAdicionais: TGroupBox [5]
@@ -265,6 +331,7 @@ inherited frmAgente: TfrmAgente
     Width = 950
     Height = 150
     Align = alBottom
+    Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = 'Informa'#231#245'es Adicionais'
     Color = 6176512
     Font.Charset = ANSI_CHARSET

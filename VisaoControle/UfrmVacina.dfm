@@ -118,6 +118,39 @@ inherited frmVacinas: TfrmVacinas
       Font.Color = clWhite
       Font.Height = -15
       Font.Name = 'Segoe UI'
+<<<<<<< HEAD
+=======
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbCod: TLabel
+      Left = 107
+      Top = 13
+      Width = 115
+      Height = 20
+      Caption = 'Codigo de Sa'#250'de'
+      Color = 6176512
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbNomepac: TLabel
+      Left = 278
+      Top = 13
+      Width = 124
+      Height = 20
+      Caption = 'Nome do paciente'
+      Color = 6176512
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+>>>>>>> Final
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -326,8 +359,8 @@ inherited frmVacinas: TfrmVacinas
     Params.Strings = (
       'DriverName=Firebird'
       
-        'Database=localhost:T:\Documentos\GitHub\mostra-de-talentos-aart\' +
-        'DB\DBDEFINITIVOUSUARIOS.GDB'
+        'Database=localhost:D:\Downloads\Delphi Projetos\PROJETO TCC\most' +
+        'ra-de-talentos-aart\DB\DBDEFINITIVOUSUARIOS.GDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'

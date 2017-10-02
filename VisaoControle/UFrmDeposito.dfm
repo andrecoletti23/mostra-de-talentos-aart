@@ -147,10 +147,11 @@ inherited frmDeposito: TfrmDeposito
     end
   end
   object dbDeposito: TDBGrid [4]
-    Left = 0
-    Top = 273
-    Width = 749
-    Height = 144
+    AlignWithMargins = True
+    Left = 3
+    Top = 276
+    Width = 743
+    Height = 138
     Align = alTop
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1

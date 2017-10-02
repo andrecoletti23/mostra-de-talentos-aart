@@ -30,19 +30,23 @@ object FrmPrincipal: TFrmPrincipal
       end>
   end
   object Panel1: TPanel
-    Left = 0
-    Top = 0
-    Width = 898
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 892
     Height = 121
     Align = alTop
     Color = 4142595
     ParentBackground = False
     TabOrder = 1
+    DesignSize = (
+      892
+      121)
     object Image1: TImage
-      Left = 16
-      Top = 16
-      Width = 105
-      Height = 89
+      Left = 14
+      Top = 8
+      Width = 115
+      Height = 105
       Picture.Data = {
         0A544A504547496D61676543870000FFD8FFE000104A46494600010100000100
         010000FFDB008400010101010101010101010101010101010101010101010101
@@ -1131,7 +1135,7 @@ object FrmPrincipal: TFrmPrincipal
     end
     object lbNome: TLabel
       Left = 143
-      Top = 16
+      Top = 1
       Width = 78
       Height = 47
       Caption = 'Teste'
@@ -1144,7 +1148,11 @@ object FrmPrincipal: TFrmPrincipal
     end
     object lbCoren: TLabel
       Left = 199
+<<<<<<< HEAD
       Top = 68
+=======
+      Top = 53
+>>>>>>> Final
       Width = 42
       Height = 25
       Caption = 'Teste'
@@ -1156,11 +1164,17 @@ object FrmPrincipal: TFrmPrincipal
       ParentFont = False
     end
     object lbSaudacao: TLabel
+<<<<<<< HEAD
       Left = 671
       Top = 68
       Width = 78
+=======
+      Left = 553
+      Top = 71
+      Width = 10
+>>>>>>> Final
       Height = 47
-      Caption = 'Teste'
+      Anchors = [akRight, akBottom]
       Font.Charset = ANSI_CHARSET
       Font.Color = clWhite
       Font.Height = -35
@@ -1171,7 +1185,7 @@ object FrmPrincipal: TFrmPrincipal
   end
   object Panel2: TPanel
     Left = 0
-    Top = 121
+    Top = 127
     Width = 898
     Height = 16
     Align = alTop
@@ -1179,5 +1193,12 @@ object FrmPrincipal: TFrmPrincipal
     Color = clBackground
     ParentBackground = False
     TabOrder = 2
+    ExplicitTop = 121
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 792
+    Top = 48
   end
 end

@@ -3,8 +3,8 @@ object frmTelaInicial: TfrmTelaInicial
   Top = 0
   Anchors = [akLeft, akTop, akRight, akBottom]
   BorderStyle = bsNone
-  ClientHeight = 426
-  ClientWidth = 1005
+  ClientHeight = 385
+  ClientWidth = 1012
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,28 +17,36 @@ object frmTelaInicial: TfrmTelaInicial
   Visible = True
   WindowState = wsMaximized
   DesignSize = (
-    1005
-    426)
+    1012
+    385)
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
+  object lbProx: TLabel
     Left = 0
-    Top = 229
-    Width = 244
+    Top = 182
+    Width = 233
     Height = 37
     Caption = 'Pr'#243'ximos Pacientes '
     Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clWhite
     Font.Height = -27
-    Font.Name = 'Segoe UI Semibold'
-    Font.Style = [fsBold]
+    Font.Name = 'Segoe UI'
+    Font.Style = []
     ParentFont = False
   end
   object SpeedButton1: TSpeedButton
+<<<<<<< HEAD
     Left = 688
     Top = 48
     Width = 129
     Height = 137
+=======
+    Left = 480
+    Top = 0
+    Width = 129
+    Height = 137
+    Cursor = crHandPoint
+>>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000EDEDDDF4F4E4
@@ -1568,10 +1576,18 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
+<<<<<<< HEAD
     Left = 510
     Top = 47
     Width = 129
     Height = 137
+=======
+    Left = 182
+    Top = 0
+    Width = 129
+    Height = 137
+    Cursor = crHandPoint
+>>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000EDEDDDF4F4E4
@@ -3101,10 +3117,18 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton2Click
   end
   object SpeedButton3: TSpeedButton
+<<<<<<< HEAD
     Left = 336
     Top = 47
     Width = 129
     Height = 137
+=======
+    Left = 328
+    Top = 0
+    Width = 129
+    Height = 137
+    Cursor = crHandPoint
+>>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000F0EEE3F6F4E9
@@ -4634,10 +4658,18 @@ object frmTelaInicial: TfrmTelaInicial
     OnClick = SpeedButton3Click
   end
   object SpeedButton4: TSpeedButton
+<<<<<<< HEAD
     Left = 168
     Top = 47
     Width = 129
     Height = 137
+=======
+    Left = 32
+    Top = 0
+    Width = 129
+    Height = 137
+    Cursor = crHandPoint
+>>>>>>> Final
     Glyph.Data = {
       92BE0000424D92BE00000000000036000000280000007B000000830000000100
       1800000000005CBE0000C40E0000C40E00000000000000000000E9E9D9F9F9E9
@@ -6169,9 +6201,15 @@ object frmTelaInicial: TfrmTelaInicial
   object DBGrid1: TDBGrid
     AlignWithMargins = True
     Left = 3
+<<<<<<< HEAD
     Top = 286
     Width = 994
     Height = 132
+=======
+    Top = 239
+    Width = 1160
+    Height = 143
+>>>>>>> Final
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataSource = DataSource1
     TabOrder = 0
@@ -6181,6 +6219,7 @@ object frmTelaInicial: TfrmTelaInicial
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+<<<<<<< HEAD
   object SQLConInicio: TSQLConnection
     ConnectionName = 'FBConnection'
     DriverName = 'Firebird'
@@ -6222,6 +6261,114 @@ object frmTelaInicial: TfrmTelaInicial
     Left = 376
     Top = 328
   end
+=======
+  object Button1: TButton
+    Left = 922
+    Top = 196
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object pnlLinks: TPanel
+    Left = 634
+    Top = 0
+    Width = 363
+    Height = 137
+    Anchors = [akTop, akRight]
+    Color = 6176512
+    ParentBackground = False
+    TabOrder = 2
+    object Label2: TLabel
+      Left = 48
+      Top = 16
+      Width = 288
+      Height = 17
+      Caption = 'Secretaria da Sa'#250'de do Estado de Santa Catarina'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = Label2MouseMove
+      OnMouseLeave = Label2MouseLeave
+    end
+    object Label1: TLabel
+      Left = 48
+      Top = 39
+      Width = 265
+      Height = 17
+      Caption = 'Secretaria da Sa'#250'de - Prefeitura de Blumenau'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = Label1MouseMove
+      OnMouseLeave = Label1MouseLeave
+    end
+    object Label3: TLabel
+      Left = 48
+      Top = 62
+      Width = 229
+      Height = 17
+      Caption = 'Minist'#233'rio da Sa'#250'de '#8211' Portal da Sa'#250'de '
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      OnMouseMove = Label3MouseMove
+      OnMouseLeave = Label3MouseLeave
+    end
+  end
+  object SQLConInicio: TSQLConnection
+    ConnectionName = 'FBConnection'
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=Firebird'
+      
+        'Database=localhost:T:\tcc\mostra-de-talentos-aart\DB\DBDEFINITIV' +
+        'OUSUARIOS.GDB'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    VendorLib = 'fbclient.DLL'
+    Left = 112
+    Top = 320
+  end
+  object tbProxInicio: TSQLTable
+    MasterSource = DataSource1
+    MaxBlobSize = -1
+    SQLConnection = SQLConInicio
+    TableName = 'PROX_VACINA'
+    Left = 184
+    Top = 320
+  end
+  object ClientDataSetInicio: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetPInicio'
+    Left = 376
+    Top = 328
+  end
+>>>>>>> Final
   object DataSetPInicio: TDataSetProvider
     DataSet = tbProxInicio
     Left = 288

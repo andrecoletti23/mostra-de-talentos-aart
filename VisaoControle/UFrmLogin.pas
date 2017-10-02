@@ -14,10 +14,14 @@ type
     btnCancelar: TButton;
     Label1: TLabel;
     Label2: TLabel;
+    Label3: TLabel;
     procedure btnEntrarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure edSenhaKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
+    procedure Label3MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure Label3MouseLeave(Sender: TObject);
   private
     { Private declarations }
   public
@@ -62,5 +66,20 @@ begin
    if key = VK_RETURN then
     btnEntrar.Click;
 end;
+procedure TFrmLogin.Label3MouseLeave(Sender: TObject);
+begin
+  TLabel(Sender).Font.Color := clWhite;
+  TLabel(Sender).Font.Style := [];
+  Cursor := crDefault;
+end;
+
+procedure TFrmLogin.Label3MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+  TLabel(Sender).Font.Color := clBlue;
+  TLabel(Sender).Font.Style := [fsUnderline];
+  Cursor := crHandPoint;
+end;
+
 end.
 

@@ -4,8 +4,6 @@ interface
 
 uses
     UProximaVacina
-  , URepositorioPaciente
-  , UPAciente
   , UEntidade
   , URepositorioDB
   , SqlExpr
@@ -14,7 +12,7 @@ uses
 type
   TRepositorioProximaVacina = class(TRepositorioDB<TPROXIMAVACINA>)
   private
-   FRepositorioPaciente: TRepositorioPaciente;
+
   public
     constructor Create;
     //destructor Destroy; override;
@@ -36,7 +34,8 @@ uses
 { TRepositorioProximaVacina }
 constructor TRepositorioPROXIMAVACINA.Create;
 begin
-  inherited Create(TPROXIMAVACINA, TBL_PROX_VACINA, FLD_ENTIDADE_ID, STR_PROX_VACINA);
+  inherited
+  Create(TPROXIMAVACINA, TBL_PROX_VACINA, FLD_ENTIDADE_ID, STR_PROX_VACINA);
 end;
 
 procedure TRepositorioPROXIMAVACINA.AtribuiDBParaEntidade(const coPROXIMAVACINA: TPROXIMAVACINA);

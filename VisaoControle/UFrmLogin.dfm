@@ -1,9 +1,10 @@
 object FrmLogin: TFrmLogin
   Left = 0
   Top = 0
-  Caption = 'FrmLogin'
-  ClientHeight = 201
-  ClientWidth = 346
+  BorderStyle = bsSingle
+  Caption = 'Login do Sistema'
+  ClientHeight = 194
+  ClientWidth = 356
   Color = 6176512
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -29,7 +30,11 @@ object FrmLogin: TFrmLogin
   end
   object Label2: TLabel
     Left = 15
+<<<<<<< HEAD
     Top = 107
+=======
+    Top = 91
+>>>>>>> Final
     Width = 43
     Height = 20
     Caption = 'Senha:'
@@ -39,6 +44,24 @@ object FrmLogin: TFrmLogin
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+<<<<<<< HEAD
+=======
+  end
+  object Label3: TLabel
+    Left = 198
+    Top = 120
+    Width = 123
+    Height = 17
+    Caption = 'Esqueceu sua senha?'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    OnMouseMove = Label3MouseMove
+    OnMouseLeave = Label3MouseLeave
+>>>>>>> Final
   end
   object edLogin: TEdit
     Left = 64
@@ -49,7 +72,7 @@ object FrmLogin: TFrmLogin
   end
   object edSenha: TEdit
     Left = 64
-    Top = 109
+    Top = 93
     Width = 257
     Height = 21
     PasswordChar = '*'

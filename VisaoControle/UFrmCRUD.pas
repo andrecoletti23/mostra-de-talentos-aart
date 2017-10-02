@@ -100,7 +100,6 @@ uses
   , UDialogo
   ;
 
-
 { TFrmCRUD }
 
 procedure TFrmCRUD.DefineEntidade(const coEntidadePonteiro: TEntidadePonteiro;
