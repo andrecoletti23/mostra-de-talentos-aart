@@ -36024,7 +36024,7 @@ Line numbers for URegraCRUDCarteiraVacinacao(Modelo\Persistencia\URepositorioDB.
 
    147 0001:002A6994
 
-Line numbers for UProximaVacina(UProximaVacina.pas) segment .text
+Line numbers for UProximaVacina(Modelo\Persistencia\UProximaVacina.pas) segment .text
 
     53 0001:00000000
 
@@ -36279,7 +36279,7 @@ Line numbers for URegraCRUDAgente(Modelo\Persistencia\URepositorioDB.pas) segmen
 
    147 0001:002AC693
 
-Line numbers for UFrmAgente(UFrmAgente.pas) segment .text
+Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .text
 
     68 0001:002ACBA8    69 0001:002ACBB4    70 0001:002ACBBF    71 0001:002ACBDC
     74 0001:002ACBE0    75 0001:002ACBFC    76 0001:002ACC04    77 0001:002ACC1B
@@ -36292,7 +36292,7 @@ Line numbers for UFrmAgente(UFrmAgente.pas) segment .text
    118 0001:002ACFBE   119 0001:002ACFD8   120 0001:002AD009   121 0001:002AD023
    122 0001:002AD03D
 
-Line numbers for UFrmAgente(UFrmAgente.pas) segment .itext
+Line numbers for UFrmAgente(VisaoControle\UFrmAgente.pas) segment .itext
 
    124 0002:00001620
 
@@ -36327,7 +36327,7 @@ Line numbers for URegraCRUDTodasVacinas(Modelo\Persistencia\URepositorioDB.pas) 
 
    147 0001:00000000
 
-Line numbers for UFrmLogin(UFrmLogin.pas) segment .text
+Line numbers for UFrmLogin(VisaoControle\UFrmLogin.pas) segment .text
 
     45 0001:002AE0A4    46 0001:002AE0B0    47 0001:002AE0BD    48 0001:002AE0C5
     51 0001:002AE0CC    52 0001:002AE0F1    53 0001:002AE0FF    55 0001:002AE13A
