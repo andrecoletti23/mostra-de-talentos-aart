@@ -2,7 +2,7 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
-  ExplicitTop = -147
+  ExplicitTop = -210
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96
@@ -371,6 +371,7 @@ inherited frmVacinas: TfrmVacinas
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
+    Connected = True
     Left = 32
     Top = 392
   end
@@ -393,6 +394,7 @@ inherited frmVacinas: TfrmVacinas
     Top = 400
   end
   object ClientDataSetVacina: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetVacinaNova'

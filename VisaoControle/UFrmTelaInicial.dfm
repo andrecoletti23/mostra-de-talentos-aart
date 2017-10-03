@@ -7827,6 +7827,7 @@ object frmTelaInicial: TfrmTelaInicial
       'IsolationLevel=ReadCommitted'
       'Trim Char=False')
     VendorLib = 'fbclient.DLL'
+    Connected = True
     Left = 112
     Top = 320
   end
@@ -7839,6 +7840,7 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 320
   end
   object ClientDataSetInicio: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'DataSetPInicio'
