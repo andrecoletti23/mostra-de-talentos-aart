@@ -27,12 +27,10 @@ type
     Label4: TLabel;
     SpeedButton5: TSpeedButton;
     Label5: TLabel;
-    Button1: TButton;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure SpeedButton4Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
     procedure Label2MouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
     procedure Label2MouseLeave(Sender: TObject);
@@ -67,10 +65,6 @@ uses
 
 {$R *.dfm}
 
-procedure TfrmTelaInicial.Button1Click(Sender: TObject);
-begin
-  Application.CreateForm(TFrmRegistro, FrmRegistro);
-end;
 
 procedure TfrmTelaInicial.Label1MouseLeave(Sender: TObject);
 begin
@@ -139,7 +133,7 @@ end;
 
 procedure TfrmTelaInicial.SpeedButton5Click(Sender: TObject);
 begin
-    Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+    Application.CreateForm(TFrmRegistro, FrmRegistro);
 end;
 
 end.

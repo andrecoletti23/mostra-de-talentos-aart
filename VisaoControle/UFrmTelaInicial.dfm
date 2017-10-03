@@ -7803,15 +7803,6 @@ object frmTelaInicial: TfrmTelaInicial
       OnMouseLeave = Label3MouseLeave
     end
   end
-  object Button1: TButton
-    Left = 496
-    Top = 160
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 2
-    OnClick = Button1Click
-  end
   object SQLConInicio: TSQLConnection
     ConnectionName = 'FBConnection'
     DriverName = 'Firebird'

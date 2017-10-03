@@ -1,5 +1,7 @@
 inherited FrmRegistro: TFrmRegistro
   Caption = 'Resgistro'
+  ExplicitWidth = 320
+  ExplicitHeight = 240
   PixelsPerInch = 96
   TextHeight = 13
   object GroupBox1: TGroupBox [3]
