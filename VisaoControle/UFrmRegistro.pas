@@ -10,17 +10,20 @@ uses
   , UProximaVacina
   , URepositorioProximaVacina
   , URegraCRUDProximaVacina
-  , UUtilitarios
+  , UUtilitarios, Mask
   ;
 
 type
   TFrmRegistro = class(TFrmCRUD)
-    LabeledEdit1: TLabeledEdit;
-    LabeledEdit2: TLabeledEdit;
-    LabeledEdit3: TLabeledEdit;
-    LabeledEdit4: TLabeledEdit;
-    LabeledEdit5: TLabeledEdit;
+    lbTelefone: TLabeledEdit;
+    edPaciente: TLabeledEdit;
     GroupBox1: TGroupBox;
+    cbVacina: TComboBox;
+    lbVacina: TLabel;
+    cbDose: TComboBox;
+    lbDose: TLabel;
+    edData: TMaskEdit;
+    lbData: TLabel;
  protected
     FPROXIMAVACINA : TPROXIMAVACINA;
     FRegraCRUDProximaVacina: TRegraCRUDProximaVacina;
@@ -70,27 +73,27 @@ end;
 procedure TFrmRegistro.PosicionaCursorPrimeiroCampo;
 begin
   inherited;
-  LabeledEdit1.SetFocus;
+  lbTelefone.SetFocus;
 end;
 
 procedure TFrmRegistro.PreencheEntidade;
 begin
   inherited;
-   FPROXIMAVACINA.SUS_CODIGO        := LabeledEdit1.Text;
-   FPROXIMAVACINA.NOME              := LabeledEdit3.Text;
-   FPROXIMAVACINA.DATA_RETORNO      := StrToDate(LabeledEdit2.Text);
-   FPROXIMAVACINA.DOSE              :=LabeledEdit4.Text;
-   FPROXIMAVACINA.VACINA_RETORNO    := LabeledEdit5.Text;
+   FPROXIMAVACINA.SUS_CODIGO        := lbTelefone.Text;
+   FPROXIMAVACINA.NOME              := edPaciente.Text;
+   FPROXIMAVACINA.DATA_RETORNO      := StrToDate(edData.Text);
+   FPROXIMAVACINA.DOSE              := cbDose.Text;
+   FPROXIMAVACINA.VACINA_RETORNO    := cbVacina.Text;
 end;
 
 procedure TFrmRegistro.PreencheFormulario;
 begin
   inherited;
-   LabeledEdit1.Text      :=FPROXIMAVACINA.SUS_CODIGO ;
-   LabeledEdit3.Text      :=FPROXIMAVACINA.NOME ;
-   LabeledEdit2.Text      := DateTOStr(FPROXIMAVACINA.DATA_RETORNO) ;
-   LabeledEdit4.Text      :=FPROXIMAVACINA.DOSE;
-    LabeledEdit5.Text     :=FPROXIMAVACINA.VACINA_RETORNO  ;
+   lbTelefone.Text      :=FPROXIMAVACINA.SUS_CODIGO ;
+   edPaciente.Text      :=FPROXIMAVACINA.NOME ;
+   edData.Text          := DateTOStr(FPROXIMAVACINA.DATA_RETORNO) ;
+   cbDose.Text          :=FPROXIMAVACINA.DOSE;
+   cbVacina.Text        :=FPROXIMAVACINA.VACINA_RETORNO  ;
 end;
 
 end.

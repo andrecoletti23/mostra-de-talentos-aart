@@ -2,7 +2,6 @@ inherited frmVacinas: TfrmVacinas
   Caption = 'Registro de Vacinas'
   ClientHeight = 616
   ClientWidth = 1012
-  ExplicitTop = -210
   ExplicitWidth = 1028
   ExplicitHeight = 655
   PixelsPerInch = 96

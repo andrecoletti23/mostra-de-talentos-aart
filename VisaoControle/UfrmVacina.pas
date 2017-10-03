@@ -10,6 +10,7 @@ uses
   , UCarteiraVacinacao
   , UUtilitarios
   , UCoren
+  , UFrmRegistro
   , ULoteVacina
   , UPaciente
   , UProximaVacina
@@ -94,7 +95,7 @@ begin
    If(MessageBox(Handle,PChar('Deseja registrar retorno?'),'Confirmar',Mb_YesNo + MB_ICONINFORMATION)) = IDYes then
      begin
        btnSair.Click;
-       Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+       Application.CreateForm(TFrmRegistro, FrmRegistro);
      end;
 end;
 

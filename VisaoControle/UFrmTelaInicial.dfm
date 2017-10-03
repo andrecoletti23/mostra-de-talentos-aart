@@ -7832,6 +7832,7 @@ object frmTelaInicial: TfrmTelaInicial
     Top = 320
   end
   object tbProxInicio: TSQLTable
+    Active = True
     MasterSource = DataSource1
     MaxBlobSize = -1
     SQLConnection = SQLConInicio
