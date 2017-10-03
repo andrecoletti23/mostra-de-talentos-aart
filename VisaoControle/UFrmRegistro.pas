@@ -15,7 +15,6 @@ uses
 
 type
   TFrmRegistro = class(TFrmCRUD)
-    lbTelefone: TLabeledEdit;
     edPaciente: TLabeledEdit;
     GroupBox1: TGroupBox;
     cbVacina: TComboBox;
@@ -24,6 +23,7 @@ type
     lbDose: TLabel;
     edData: TMaskEdit;
     lbData: TLabel;
+    lbTelefone: TMaskEdit;
  protected
     FPROXIMAVACINA : TPROXIMAVACINA;
     FRegraCRUDProximaVacina: TRegraCRUDProximaVacina;

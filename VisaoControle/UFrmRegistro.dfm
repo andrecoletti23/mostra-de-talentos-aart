@@ -67,16 +67,6 @@ inherited FrmRegistro: TFrmRegistro
       Height = 13
       Caption = 'Data Retorno'
     end
-    object lbTelefone: TLabeledEdit
-      Left = 8
-      Top = 51
-      Width = 121
-      Height = 21
-      EditLabel.Width = 42
-      EditLabel.Height = 13
-      EditLabel.Caption = 'Telefone'
-      TabOrder = 0
-    end
     object edPaciente: TLabeledEdit
       Left = 152
       Top = 51
@@ -85,21 +75,21 @@ inherited FrmRegistro: TFrmRegistro
       EditLabel.Width = 86
       EditLabel.Height = 13
       EditLabel.Caption = 'Nome do Paciente'
-      TabOrder = 1
+      TabOrder = 0
     end
     object cbVacina: TComboBox
       Left = 8
       Top = 102
       Width = 185
       Height = 21
-      TabOrder = 2
+      TabOrder = 1
     end
     object cbDose: TComboBox
       Left = 207
       Top = 102
       Width = 145
       Height = 21
-      TabOrder = 3
+      TabOrder = 2
     end
     object edData: TMaskEdit
       Left = 368
@@ -108,8 +98,18 @@ inherited FrmRegistro: TFrmRegistro
       Height = 21
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
-      TabOrder = 4
+      TabOrder = 3
       Text = '  /  /    '
+    end
+    object lbTelefone: TMaskEdit
+      Left = 10
+      Top = 51
+      Width = 117
+      Height = 21
+      EditMask = '!\(99\)0000-0000;1;_'
+      MaxLength = 13
+      TabOrder = 4
+      Text = '(  )    -    '
     end
   end
 end
