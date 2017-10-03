@@ -8,7 +8,9 @@ uses
   , URepositorioProximaVacina
   , URegraCrudProximaVacina
   , UProximaVacina
-  , UUtilitarios, Mask, Grids, DBGrids, DBXFirebird, FMTBcd, DB, DBClient,
+  , UUtilitarios
+  , UDM
+  , Mask, Grids, DBGrids, DBXFirebird, FMTBcd, DB, DBClient,
   Provider, SqlExpr
   ;
 
@@ -43,7 +45,6 @@ implementation
   , UEntidade
   , UFrmPesquisa
   , UDialogo
-  , UDM
   ;
 const
 CNT_SELECIONA_VAC_RETORNO = 'select vacina from vacina_nova group by Vacina';
@@ -86,7 +87,7 @@ procedure TFrmAgendaVacina.Inicializa;
 begin
   inherited;
   DefineEntidade(@FPROXIMAVACINA, TPROXIMAVACINA);
-  DefineRegraCRUD(@FRegraCRUDProximaVacina, TRegraCRUDProximaVacina);
+  DefineRegraCRUD(@FregraCRUDPROXIMAVACINA, TRegraCRUDPROXIMAVACINA);
 
     AdicionaOpcaoPesquisa(TOpcaoPesquisa
     .Create

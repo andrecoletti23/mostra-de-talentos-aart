@@ -52,7 +52,8 @@ uses
   UPapel in 'Modelo\Persistencia\UPapel.pas',
   UFrmAgendaVacina in 'VisaoControle\UFrmAgendaVacina.pas' {FrmAgendaVacina},
   UVacinaNova in 'Modelo\Persistencia\UVacinaNova.pas',
-  URepositorioVacinaNova in 'Modelo\Persistencia\URepositorioVacinaNova.pas';
+  URepositorioVacinaNova in 'Modelo\Persistencia\URepositorioVacinaNova.pas',
+  UFrmRegistro in 'VisaoControle\UFrmRegistro.pas' {FrmRegistro};
 
 //URegraCRUDCadAgente in 'Modelo\Regra\URegraCRUDCadAgente.pas',
   //URepositorioAgente in 'Modelo\Persistencia\URepositorioAgente.pas';

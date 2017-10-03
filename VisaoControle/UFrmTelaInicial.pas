@@ -27,6 +27,7 @@ type
     Label4: TLabel;
     SpeedButton5: TSpeedButton;
     Label5: TLabel;
+    Button1: TButton;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
@@ -41,6 +42,7 @@ type
     procedure Label3MouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
     procedure Label3MouseLeave(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -58,6 +60,7 @@ uses
   , UFrmDeposito
   , UFrmAgente
   , UFrmAgendaVacina
+  , UFrmRegistro
   ;
 
 
@@ -66,7 +69,7 @@ uses
 
 procedure TfrmTelaInicial.Button1Click(Sender: TObject);
 begin
-  Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
+  Application.CreateForm(TFrmRegistro, FrmRegistro);
 end;
 
 procedure TfrmTelaInicial.Label1MouseLeave(Sender: TObject);
@@ -132,6 +135,11 @@ end;
 procedure TfrmTelaInicial.SpeedButton4Click(Sender: TObject);
 begin
   Application.CreateForm(TfrmPacientes, frmPacientes);
+end;
+
+procedure TfrmTelaInicial.SpeedButton5Click(Sender: TObject);
+begin
+    Application.CreateForm(TFrmAgendaVacina, FrmAgendaVacina);
 end;
 
 end.

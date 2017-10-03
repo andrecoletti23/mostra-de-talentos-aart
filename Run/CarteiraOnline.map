@@ -1,9 +1,9 @@
 
  Start         Length     Name                   Class
- 0001:00401000 002B58ECH .text                   CODE
- 0002:006B7000 000016FCH .itext                  ICODE
- 0003:006B9000 00006D10H .data                   DATA
- 0004:006C0000 000054E0H .bss                    BSS
+ 0001:00401000 002B6304H .text                   CODE
+ 0002:006B8000 000016FCH .itext                  ICODE
+ 0003:006BA000 00006D14H .data                   DATA
+ 0004:006C1000 000054E4H .bss                    BSS
  0005:00000000 00000048H .tls                    TLS
  000A:00000000 00000000H .xdata                  PDATA
 
@@ -169,9 +169,10 @@ Detailed map of segments
  0001:002AB95C 00000894 C=CODE     S=.text    G=(none)   M=UFrmDeposito ACBP=A9
  0001:002AC1F0 0000049C C=CODE     S=.text    G=(none)   M=URegraCRUDAgente ACBP=A9
  0001:002AC68C 00000A10 C=CODE     S=.text    G=(none)   M=UFrmAgente ACBP=A9
- 0001:002AD09C 00000B88 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
- 0001:002ADC24 00000684 C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
- 0001:002AE2A8 00007644 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
+ 0001:002AD09C 0000094C C=CODE     S=.text    G=(none)   M=UFrmRegistro ACBP=A9
+ 0001:002AD9E8 00000C38 C=CODE     S=.text    G=(none)   M=UFrmTelaInicial ACBP=A9
+ 0001:002AE620 00000684 C=CODE     S=.text    G=(none)   M=UFrmLogin ACBP=A9
+ 0001:002AECA4 00007660 C=CODE     S=.text    G=(none)   M=CarteiraOnline ACBP=A9
  0002:00000000 000000AC C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
  0002:000000AC 00000018 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
  0002:000000C4 00000020 C=ICODE    S=.itext   G=(none)   M=ExcUtils ACBP=A9
@@ -370,8 +371,9 @@ Detailed map of segments
  0004:000054C0 00000004 C=BSS      S=.bss     G=DGROUP   M=UfrmVacina ACBP=A9
  0004:000054C4 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmDeposito ACBP=A9
  0004:000054C8 00000010 C=BSS      S=.bss     G=DGROUP   M=UFrmAgente ACBP=A9
- 0004:000054D8 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmTelaInicial ACBP=A9
- 0004:000054DC 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmLogin ACBP=A9
+ 0004:000054D8 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmRegistro ACBP=A9
+ 0004:000054DC 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmTelaInicial ACBP=A9
+ 0004:000054E0 00000004 C=BSS      S=.bss     G=DGROUP   M=UFrmLogin ACBP=A9
  0005:00000000 00000008 C=TLS      S=.tls     G=(none)   M=System   ACBP=A9
  0005:00000008 0000000C C=TLS      S=.tls     G=(none)   M=Classes  ACBP=A9
  0005:00000014 00000004 C=TLS      S=.tls     G=(none)   M=SyncObjs ACBP=A9
@@ -619,7 +621,7 @@ Detailed map of segments
  0001:00102F20       Buttons.TSpeedButtonActionLink.SetImageIndex
  0003:00002A60       Buttons.WordBreakFlag
  0002:00001628       CarteiraOnline.CarteiraOnline
- 0001:002AE2A8       CarteiraOnline.Finalization
+ 0001:002AECA4       CarteiraOnline.Finalization
  0001:0000D704       Character.bin_data
  0004:00002C54       Character.CategoryTable
  0004:00002C4C       Character.CatIndexPrimary
@@ -16616,13 +16618,13 @@ Detailed map of segments
  0001:002ABFC0       UFrmDeposito.TfrmDeposito.PreencheEntidade
  0001:002AC0EC       UFrmDeposito.TfrmDeposito.PreencheFormulario
  0001:002AC1C4       UFrmDeposito.TfrmDeposito.Timer1Timer
- 0001:002ADC24       UFrmLogin..TFrmLogin
- 0004:000054DC       UFrmLogin.FrmLogin
- 0001:002AE0E8       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002AE110       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002AE1EC       UFrmLogin.TFrmLogin.edSenhaKeyDown
- 0001:002AE220       UFrmLogin.TFrmLogin.Label3MouseLeave
- 0001:002AE260       UFrmLogin.TFrmLogin.Label3MouseMove
+ 0001:002AE620       UFrmLogin..TFrmLogin
+ 0004:000054E0       UFrmLogin.FrmLogin
+ 0001:002AEAE4       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002AEB0C       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002AEBE8       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002AEC1C       UFrmLogin.TFrmLogin.Label3MouseLeave
+ 0001:002AEC5C       UFrmLogin.TFrmLogin.Label3MouseMove
  0001:0026F634       UFrmPacientes..TfrmPacientes
  0004:000053D0       UFrmPacientes.frmPacientes
  0001:0026FE20       UFrmPacientes.TfrmPacientes.cbUFSelect
@@ -16649,19 +16651,28 @@ Detailed map of segments
  0001:002A4780       UFrmPrincipal.TFrmPrincipal.FormShow
  0001:002A4548       UFrmPrincipal.TFrmPrincipal.miSairClick
  0001:002A4560       UFrmPrincipal.TFrmPrincipal.Timer1Timer
- 0001:002AD09C       UFrmTelaInicial..TfrmTelaInicial
- 0004:000054D8       UFrmTelaInicial.frmTelaInicial
- 0001:002AD9C4       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002AD9EC       UFrmTelaInicial.TfrmTelaInicial.Label1MouseLeave
- 0001:002ADA2C       UFrmTelaInicial.TfrmTelaInicial.Label1MouseMove
- 0001:002ADA74       UFrmTelaInicial.TfrmTelaInicial.Label2MouseLeave
- 0001:002ADAB4       UFrmTelaInicial.TfrmTelaInicial.Label2MouseMove
- 0001:002ADAFC       UFrmTelaInicial.TfrmTelaInicial.Label3MouseLeave
- 0001:002ADB3C       UFrmTelaInicial.TfrmTelaInicial.Label3MouseMove
- 0001:002ADB84       UFrmTelaInicial.TfrmTelaInicial.SpeedButton1Click
- 0001:002ADBAC       UFrmTelaInicial.TfrmTelaInicial.SpeedButton2Click
- 0001:002ADBD4       UFrmTelaInicial.TfrmTelaInicial.SpeedButton3Click
- 0001:002ADBFC       UFrmTelaInicial.TfrmTelaInicial.SpeedButton4Click
+ 0001:002AD09C       UFrmRegistro..TFrmRegistro
+ 0004:000054D8       UFrmRegistro.FrmRegistro
+ 0001:002AD410       UFrmRegistro.TFrmRegistro.FormCreate
+ 0001:002AD690       UFrmRegistro.TFrmRegistro.HabilitaCampos
+ 0001:002AD6C8       UFrmRegistro.TFrmRegistro.Inicializa
+ 0001:002AD7D8       UFrmRegistro.TFrmRegistro.PosicionaCursorPrimeiroCampo
+ 0001:002AD7F4       UFrmRegistro.TFrmRegistro.PreencheEntidade
+ 0001:002AD910       UFrmRegistro.TFrmRegistro.PreencheFormulario
+ 0001:002AD9E8       UFrmTelaInicial..TfrmTelaInicial
+ 0004:000054DC       UFrmTelaInicial.frmTelaInicial
+ 0001:002AE398       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002AE3C0       UFrmTelaInicial.TfrmTelaInicial.Label1MouseLeave
+ 0001:002AE400       UFrmTelaInicial.TfrmTelaInicial.Label1MouseMove
+ 0001:002AE448       UFrmTelaInicial.TfrmTelaInicial.Label2MouseLeave
+ 0001:002AE488       UFrmTelaInicial.TfrmTelaInicial.Label2MouseMove
+ 0001:002AE4D0       UFrmTelaInicial.TfrmTelaInicial.Label3MouseLeave
+ 0001:002AE510       UFrmTelaInicial.TfrmTelaInicial.Label3MouseMove
+ 0001:002AE558       UFrmTelaInicial.TfrmTelaInicial.SpeedButton1Click
+ 0001:002AE580       UFrmTelaInicial.TfrmTelaInicial.SpeedButton2Click
+ 0001:002AE5A8       UFrmTelaInicial.TfrmTelaInicial.SpeedButton3Click
+ 0001:002AE5D0       UFrmTelaInicial.TfrmTelaInicial.SpeedButton4Click
+ 0001:002AE5F8       UFrmTelaInicial.TfrmTelaInicial.SpeedButton5Click
  0001:002A8D40       UfrmVacina..TfrmVacinas
  0004:000054C0       UfrmVacina.frmVacinas
  0001:002A957C       UfrmVacina.TfrmVacinas.btnGravarExit
@@ -29211,8 +29222,8 @@ Detailed map of segments
  0001:001B13D8       Rtti.InsufficientRtti
  0001:001B13EC       Rtti.CheckCodeAddress
  0001:001B1400       Rtti..TListHelper
- 0001:001B14A8       Rtti.DerefPointer
  0001:001B14A8       Rtti.TListHelper.ToArray
+ 0001:001B14A8       Rtti.DerefPointer
  0001:001B14B0       Rtti.NopRefCount
  0001:001B14BC       Rtti.NopQueryInterface
  0001:001B14C8       Rtti.NopRet0
@@ -34126,25 +34137,33 @@ Detailed map of segments
  0001:002ACD10       UFrmAgente.TfrmAgente.PreencheEntidade
  0001:002ACF20       UFrmAgente.TfrmAgente.PreencheFormulario
  0001:002AD060       UFrmAgente.Finalization
- 0001:002AD09C       UFrmTelaInicial..TfrmTelaInicial
- 0001:002AD9C4       UFrmTelaInicial.TfrmTelaInicial.Button1Click
- 0001:002AD9EC       UFrmTelaInicial.TfrmTelaInicial.Label1MouseLeave
- 0001:002ADA2C       UFrmTelaInicial.TfrmTelaInicial.Label1MouseMove
- 0001:002ADA74       UFrmTelaInicial.TfrmTelaInicial.Label2MouseLeave
- 0001:002ADAB4       UFrmTelaInicial.TfrmTelaInicial.Label2MouseMove
- 0001:002ADAFC       UFrmTelaInicial.TfrmTelaInicial.Label3MouseLeave
- 0001:002ADB3C       UFrmTelaInicial.TfrmTelaInicial.Label3MouseMove
- 0001:002ADB84       UFrmTelaInicial.TfrmTelaInicial.SpeedButton1Click
- 0001:002ADBAC       UFrmTelaInicial.TfrmTelaInicial.SpeedButton2Click
- 0001:002ADBD4       UFrmTelaInicial.TfrmTelaInicial.SpeedButton3Click
- 0001:002ADBFC       UFrmTelaInicial.TfrmTelaInicial.SpeedButton4Click
- 0001:002ADC24       UFrmLogin..TFrmLogin
- 0001:002AE0E8       UFrmLogin.TFrmLogin.btnCancelarClick
- 0001:002AE110       UFrmLogin.TFrmLogin.btnEntrarClick
- 0001:002AE1EC       UFrmLogin.TFrmLogin.edSenhaKeyDown
- 0001:002AE220       UFrmLogin.TFrmLogin.Label3MouseLeave
- 0001:002AE260       UFrmLogin.TFrmLogin.Label3MouseMove
- 0001:002AE2A8       CarteiraOnline.Finalization
+ 0001:002AD09C       UFrmRegistro..TFrmRegistro
+ 0001:002AD410       UFrmRegistro.TFrmRegistro.FormCreate
+ 0001:002AD690       UFrmRegistro.TFrmRegistro.HabilitaCampos
+ 0001:002AD6C8       UFrmRegistro.TFrmRegistro.Inicializa
+ 0001:002AD7D8       UFrmRegistro.TFrmRegistro.PosicionaCursorPrimeiroCampo
+ 0001:002AD7F4       UFrmRegistro.TFrmRegistro.PreencheEntidade
+ 0001:002AD910       UFrmRegistro.TFrmRegistro.PreencheFormulario
+ 0001:002AD9E8       UFrmTelaInicial..TfrmTelaInicial
+ 0001:002AE398       UFrmTelaInicial.TfrmTelaInicial.Button1Click
+ 0001:002AE3C0       UFrmTelaInicial.TfrmTelaInicial.Label1MouseLeave
+ 0001:002AE400       UFrmTelaInicial.TfrmTelaInicial.Label1MouseMove
+ 0001:002AE448       UFrmTelaInicial.TfrmTelaInicial.Label2MouseLeave
+ 0001:002AE488       UFrmTelaInicial.TfrmTelaInicial.Label2MouseMove
+ 0001:002AE4D0       UFrmTelaInicial.TfrmTelaInicial.Label3MouseLeave
+ 0001:002AE510       UFrmTelaInicial.TfrmTelaInicial.Label3MouseMove
+ 0001:002AE558       UFrmTelaInicial.TfrmTelaInicial.SpeedButton1Click
+ 0001:002AE580       UFrmTelaInicial.TfrmTelaInicial.SpeedButton2Click
+ 0001:002AE5A8       UFrmTelaInicial.TfrmTelaInicial.SpeedButton3Click
+ 0001:002AE5D0       UFrmTelaInicial.TfrmTelaInicial.SpeedButton4Click
+ 0001:002AE5F8       UFrmTelaInicial.TfrmTelaInicial.SpeedButton5Click
+ 0001:002AE620       UFrmLogin..TFrmLogin
+ 0001:002AEAE4       UFrmLogin.TFrmLogin.btnCancelarClick
+ 0001:002AEB0C       UFrmLogin.TFrmLogin.btnEntrarClick
+ 0001:002AEBE8       UFrmLogin.TFrmLogin.edSenhaKeyDown
+ 0001:002AEC1C       UFrmLogin.TFrmLogin.Label3MouseLeave
+ 0001:002AEC5C       UFrmLogin.TFrmLogin.Label3MouseMove
+ 0001:002AECA4       CarteiraOnline.Finalization
  0002:00000000       System.System
  0002:000000AC       Windows.Windows
  0002:000000C4       ExcUtils.ExcUtils
@@ -35400,8 +35419,9 @@ Detailed map of segments
  0004:000054CC       UFrmAgente..2
  0004:000054D0       UFrmAgente.SenhaHash
  0004:000054D4       UFrmAgente.HashMessageDigest5
- 0004:000054D8       UFrmTelaInicial.frmTelaInicial
- 0004:000054DC       UFrmLogin.FrmLogin
+ 0004:000054D8       UFrmRegistro.FrmRegistro
+ 0004:000054DC       UFrmTelaInicial.frmTelaInicial
+ 0004:000054E0       UFrmLogin.FrmLogin
  0005:00000000       System.RaiseListPtr
  0005:00000004       System.InOutRes
  0005:00000008       Classes.TThread.FCurrentThread
@@ -36124,17 +36144,17 @@ Line numbers for URegraCRUDProximaVacina(Modelo\Persistencia\URepositorioDB.pas)
 
 Line numbers for UFrmAgendaVacina(VisaoControle\UFrmAgendaVacina.pas) segment .text
 
-    56 0001:002A8768    57 0001:002A878A    58 0001:002A8795    59 0001:002A87A4
-    60 0001:002A87BB    63 0001:002A87CC    64 0001:002A87FF    61 0001:002A880E
-    66 0001:002A8821    67 0001:002A8830    68 0001:002A8847    71 0001:002A8858
-    72 0001:002A888B    69 0001:002A889A    74 0001:002A88AD    76 0001:002A88BC
-    80 0001:002A89E8    81 0001:002A89F4    82 0001:002A89FF    83 0001:002A8A1C
-    86 0001:002A8A20    87 0001:002A8A3C    88 0001:002A8A44    89 0001:002A8A5B
-    91 0001:002A8A72    97 0001:002A8ABD   100 0001:002A8B30   102 0001:002A8B37
-   103 0001:002A8B48   106 0001:002A8B4C   108 0001:002A8B6D   109 0001:002A8B92
-   110 0001:002A8BB7   111 0001:002A8BF5   112 0001:002A8C1A   113 0001:002A8C3F
-   116 0001:002A8C68   118 0001:002A8C84   119 0001:002A8C9E   120 0001:002A8CB8
-   121 0001:002A8CE9   122 0001:002A8D03   123 0001:002A8D1D   125 0001:002A8D45
+    57 0001:002A8768    58 0001:002A878A    59 0001:002A8795    60 0001:002A87A4
+    61 0001:002A87BB    64 0001:002A87CC    65 0001:002A87FF    62 0001:002A880E
+    67 0001:002A8821    68 0001:002A8830    69 0001:002A8847    72 0001:002A8858
+    73 0001:002A888B    70 0001:002A889A    75 0001:002A88AD    77 0001:002A88BC
+    81 0001:002A89E8    82 0001:002A89F4    83 0001:002A89FF    84 0001:002A8A1C
+    87 0001:002A8A20    88 0001:002A8A3C    89 0001:002A8A44    90 0001:002A8A5B
+    92 0001:002A8A72    98 0001:002A8ABD   101 0001:002A8B30   103 0001:002A8B37
+   104 0001:002A8B48   107 0001:002A8B4C   109 0001:002A8B6D   110 0001:002A8B92
+   111 0001:002A8BB7   112 0001:002A8BF5   113 0001:002A8C1A   114 0001:002A8C3F
+   117 0001:002A8C68   119 0001:002A8C84   120 0001:002A8C9E   121 0001:002A8CB8
+   122 0001:002A8CE9   123 0001:002A8D03   124 0001:002A8D1D   126 0001:002A8D45
 
 Line numbers for UfrmVacina(VisaoControle\UfrmVacina.pas) segment .text
 
@@ -36296,20 +36316,35 @@ Line numbers for UFrmAgente(UFrmAgente.pas) segment .itext
 
    124 0002:00001620
 
+Line numbers for UFrmRegistro(VisaoControle\UFrmRegistro.pas) segment .text
+
+    53 0001:002AD410    54 0001:002AD432    55 0001:002AD43D    56 0001:002AD44C
+    57 0001:002AD463    60 0001:002AD474    61 0001:002AD4A7    58 0001:002AD4B6
+    63 0001:002AD4C9    64 0001:002AD4D8    65 0001:002AD4EF    68 0001:002AD500
+    69 0001:002AD533    66 0001:002AD542    71 0001:002AD555    73 0001:002AD564
+    77 0001:002AD690    78 0001:002AD69C    79 0001:002AD6A7    80 0001:002AD6C4
+    83 0001:002AD6C8    84 0001:002AD6E4    85 0001:002AD6EC    86 0001:002AD703
+    88 0001:002AD71A    94 0001:002AD765    97 0001:002AD7D8    99 0001:002AD7DF
+   100 0001:002AD7F0   103 0001:002AD7F4   105 0001:002AD815   106 0001:002AD83A
+   107 0001:002AD85F   108 0001:002AD89D   109 0001:002AD8C2   115 0001:002AD8E7
+   118 0001:002AD910   120 0001:002AD92C   121 0001:002AD946   122 0001:002AD960
+   123 0001:002AD991   124 0001:002AD9AB   130 0001:002AD9C5   132 0001:002AD9ED
+
 Line numbers for UFrmTelaInicial(VisaoControle\UFrmTelaInicial.pas) segment .text
 
-    68 0001:002AD9C4    69 0001:002AD9D0    70 0001:002AD9E8    73 0001:002AD9EC
-    74 0001:002AD9F8    75 0001:002ADA08    76 0001:002ADA19    77 0001:002ADA23
-    81 0001:002ADA2C    82 0001:002ADA3C    83 0001:002ADA4C    84 0001:002ADA5D
-    85 0001:002ADA69    88 0001:002ADA74    89 0001:002ADA80    90 0001:002ADA90
-    91 0001:002ADAA1    92 0001:002ADAAB    96 0001:002ADAB4    97 0001:002ADAC4
-    98 0001:002ADAD4    99 0001:002ADAE5   100 0001:002ADAF1   103 0001:002ADAFC
-   104 0001:002ADB08   105 0001:002ADB18   106 0001:002ADB29   107 0001:002ADB33
-   111 0001:002ADB3C   112 0001:002ADB4C   113 0001:002ADB5C   114 0001:002ADB6D
-   115 0001:002ADB79   118 0001:002ADB84   119 0001:002ADB90   120 0001:002ADBA8
-   123 0001:002ADBAC   124 0001:002ADBB8   125 0001:002ADBD0   128 0001:002ADBD4
-   129 0001:002ADBE0   130 0001:002ADBF8   133 0001:002ADBFC   134 0001:002ADC08
-   135 0001:002ADC20   137 0001:002ADC2B
+    71 0001:002AE398    72 0001:002AE3A4    73 0001:002AE3BC    76 0001:002AE3C0
+    77 0001:002AE3CC    78 0001:002AE3DC    79 0001:002AE3ED    80 0001:002AE3F7
+    84 0001:002AE400    85 0001:002AE410    86 0001:002AE420    87 0001:002AE431
+    88 0001:002AE43D    91 0001:002AE448    92 0001:002AE454    93 0001:002AE464
+    94 0001:002AE475    95 0001:002AE47F    99 0001:002AE488   100 0001:002AE498
+   101 0001:002AE4A8   102 0001:002AE4B9   103 0001:002AE4C5   106 0001:002AE4D0
+   107 0001:002AE4DC   108 0001:002AE4EC   109 0001:002AE4FD   110 0001:002AE507
+   114 0001:002AE510   115 0001:002AE520   116 0001:002AE530   117 0001:002AE541
+   118 0001:002AE54D   121 0001:002AE558   122 0001:002AE564   123 0001:002AE57C
+   126 0001:002AE580   127 0001:002AE58C   128 0001:002AE5A4   131 0001:002AE5A8
+   132 0001:002AE5B4   133 0001:002AE5CC   136 0001:002AE5D0   137 0001:002AE5DC
+   138 0001:002AE5F4   141 0001:002AE5F8   142 0001:002AE604   143 0001:002AE61C
+   145 0001:002AE627
 
 Line numbers for UEstado(UEstado.pas) segment .text
 
@@ -36329,13 +36364,13 @@ Line numbers for URegraCRUDTodasVacinas(Modelo\Persistencia\URepositorioDB.pas) 
 
 Line numbers for UFrmLogin(VisaoControle\UFrmLogin.pas) segment .text
 
-    45 0001:002AE0E8    46 0001:002AE0F4    47 0001:002AE101    48 0001:002AE109
-    51 0001:002AE110    52 0001:002AE135    53 0001:002AE143    55 0001:002AE17E
-    56 0001:002AE18B    58 0001:002AE1AE    59 0001:002AE1B1    61 0001:002AE1C3
-    65 0001:002AE1EC    66 0001:002AE1FC    67 0001:002AE205    68 0001:002AE217
-    70 0001:002AE220    71 0001:002AE22C    72 0001:002AE23C    73 0001:002AE24D
-    74 0001:002AE257    78 0001:002AE260    79 0001:002AE270    80 0001:002AE280
-    81 0001:002AE291    82 0001:002AE29D    84 0001:002AE2AF
+    45 0001:002AEAE4    46 0001:002AEAF0    47 0001:002AEAFD    48 0001:002AEB05
+    51 0001:002AEB0C    52 0001:002AEB31    53 0001:002AEB3F    55 0001:002AEB7A
+    56 0001:002AEB87    58 0001:002AEBAA    59 0001:002AEBAD    61 0001:002AEBBF
+    65 0001:002AEBE8    66 0001:002AEBF8    67 0001:002AEC01    68 0001:002AEC13
+    70 0001:002AEC1C    71 0001:002AEC28    72 0001:002AEC38    73 0001:002AEC49
+    74 0001:002AEC53    78 0001:002AEC5C    79 0001:002AEC6C    80 0001:002AEC7C
+    81 0001:002AEC8D    82 0001:002AEC99    84 0001:002AECAB
 
 Line numbers for UPapel(UPapel.pas) segment .text
 
@@ -36359,9 +36394,9 @@ Line numbers for URepositorioVacinaNova(Modelo\Persistencia\URepositorioDB.pas) 
 
 Line numbers for CarteiraOnline(CarteiraOnline.dpr) segment .itext
 
-    62 0002:00001628    64 0002:00001638    65 0002:00001644    67 0002:0000165C
-    68 0002:00001672    70 0002:00001686    71 0002:000016A1    72 0002:000016B9
-    73 0002:000016D1    77 0002:000016DF    78 0002:000016EB    86 0002:000016F7
+    63 0002:00001628    65 0002:00001638    66 0002:00001644    68 0002:0000165C
+    69 0002:00001672    71 0002:00001686    72 0002:000016A1    73 0002:000016B9
+    74 0002:000016D1    78 0002:000016DF    79 0002:000016EB    87 0002:000016F7
 
 Bound resource files
 
@@ -36380,6 +36415,7 @@ c:\program files (x86)\embarcadero\rad studio\8.0\lib\Win32\release\DBGrids.res
 .\VisaoControle\UfrmVacina.dfm
 .\VisaoControle\UFrmDeposito.dfm
 .\VisaoControle\UFrmAgente.dfm
+.\VisaoControle\UFrmRegistro.dfm
 .\VisaoControle\UFrmTelaInicial.dfm
 .\VisaoControle\UFrmLogin.dfm
 CarteiraOnline.res
