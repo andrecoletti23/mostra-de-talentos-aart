@@ -75,21 +75,95 @@ inherited FrmRegistro: TFrmRegistro
       EditLabel.Width = 86
       EditLabel.Height = 13
       EditLabel.Caption = 'Nome do Paciente'
-      TabOrder = 0
+      TabOrder = 1
     end
     object cbVacina: TComboBox
       Left = 8
       Top = 102
       Width = 185
       Height = 21
-      TabOrder = 1
+      TabOrder = 2
+      Items.Strings = (
+        'BCG'
+        'Hepatite B'
+        'Hepatite B'
+        'Vacina Oral contra a P'#243'lio'
+        'Vacina Tetravalente '
+        'Vacina Oral contra Rotav'#237'rus Humano'
+        'Vacina contra Pneumococos'
+        'Vacina contra Meningococo C'
+        'Vacina Oral contra a P'#243'lio'
+        'Vacina Tetravalente'
+        'Vacina Oral contra Rotav'#237'rus Humano'
+        'Vacina contra Pneumococos'
+        'Vacina contra Meningococo C'
+        'Vacina contra Hepatite B'
+        'Vacina Oral contra a P'#243'lio'
+        'Vacina Tetravalente'
+        'Vacina contra Pneumococos'
+        'Vacina contra febre amarela '
+        'Tr'#237'plice Viral'
+        'Vacina contra Pneumococos'
+        'Vacina Oral contra a P'#243'lio'
+        'Vacina Tr'#237'plice Bacteriana'
+        'Vacina contra Meningococo C'
+        'Tr'#237'plice Viral'
+        'Vacina Tr'#237'plice Bacteriana'
+        'Dupla Adulto'
+        'Hepatite B'
+        'Febre Amarela'
+        'Tr'#237'plice Viral '
+        'Hepatite B'
+        'Hepatite B'
+        'Dupla Adulto'
+        'Dupla Adulto'
+        'Dupla Adulto'
+        'Febre Amarela'
+        'Influenza')
     end
     object cbDose: TComboBox
       Left = 207
       Top = 102
       Width = 145
       Height = 21
-      TabOrder = 2
+      TabOrder = 3
+      Items.Strings = (
+        'Dose '#250'nica'
+        '1'#170' dose'
+        '2'#170' dose'
+        '1'#170' dose'
+        '1'#170' dose'
+        '1'#170' dose'
+        '1'#170' dose'
+        #9'1'#170' dose'
+        '2'#170' dose'
+        '2'#170' dose'
+        '2'#170' dose'
+        '2'#170' dose'
+        '2'#170' dose'
+        '3'#170' dose'
+        '3'#170' dose'
+        '3'#170' dose'
+        '3'#170' dose'
+        '1'#170' dose'
+        '1'#170' dose'
+        'Refor'#231'o'
+        'Refor'#231'o'
+        '1'#186' Refor'#231'o'
+        'Refor'#231'o'
+        'Refor'#231'o'
+        '2'#186' Refor'#231'o'
+        '1'#170' dose'
+        '1'#170' dose'
+        'Refor'#231'o'
+        #218'nica'
+        '2'#170' dose'
+        '3'#170' dose'
+        '2'#170' dose'
+        '3'#170' dose'
+        'Refor'#231'o'
+        'Refor'#231'o'
+        'Anual')
     end
     object edData: TMaskEdit
       Left = 368
@@ -98,7 +172,7 @@ inherited FrmRegistro: TFrmRegistro
       Height = 21
       EditMask = '!99/99/0000;1;_'
       MaxLength = 10
-      TabOrder = 3
+      TabOrder = 4
       Text = '  /  /    '
     end
     object lbTelefone: TMaskEdit
@@ -108,7 +182,7 @@ inherited FrmRegistro: TFrmRegistro
       Height = 21
       EditMask = '!\(99\)0000-0000;1;_'
       MaxLength = 13
-      TabOrder = 4
+      TabOrder = 0
       Text = '(  )    -    '
     end
   end
